@@ -47,14 +47,22 @@ for num in Input_num:
     for n in range(1, num+1):
         print(f"\t\t {n:2}", end=".\t")
 
-        if not (n % 3 and n % 5):
+        if (not n % 3) and (not n % 5):
             print(Fizz+Buzz)
+            answerOut.append(Fizz+Buzz)
+
         elif not n % 3:
             print(Fizz)
+            answerOut.append(Fizz)
+
         elif not n % 5:
             print(Buzz)
+            answerOut.append(Buzz)
+
         else:
             print(str(n))
+            answerOut.append(str(n))
 
+    print(f"\n\t\tFinal String: {answerOut}")
     print()
 
