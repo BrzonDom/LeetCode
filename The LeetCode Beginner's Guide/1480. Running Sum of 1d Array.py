@@ -63,6 +63,7 @@ def runSumV1(numLst):
 
     return sumLst
 
+
 def runSumV2(numLst):
 
     sumLst = [numLst[0]]
@@ -71,6 +72,7 @@ def runSumV2(numLst):
         sumLst.append(sumLst[-1] + num)
 
     return sumLst
+
 
 Input_NumLst = [[1, 2, 3, 4],
              [1, 1, 1, 1, 1],
