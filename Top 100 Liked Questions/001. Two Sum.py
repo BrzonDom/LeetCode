@@ -28,7 +28,36 @@ https://leetcode.com/problems/two-sum/description/
 import copy
 
 
-def findTargSum(numArr, targ):
+def findTargSum_Stp(numArr, targ):
+
+    print("\tNumbers array:", numArr)
+    print("\t       Target:", targ)
+    print()
+
+    for nRang in range(len(numArr)):
+        numComb = ""
+        numSum = 0
+        numInd = []
+
+        for n, num in enumerate(numArr[nRang:]):
+            # print(num, end=", ")
+            numInd.append(n + nRang)
+            numComb += f"{num} + "
+            numSum += num
+            print(f"\t\t{numSum:2} = {numComb[:-3]}")
+
+            if numSum == targ:
+                sumTarg = f"{numSum:2} = {numComb[:-3]}"
+                indTarg = copy.deepcopy(numInd)
+
+                print("\n\t\tTarget sum:", sumTarg)
+                print("\t\t\tTarget index:", indTarg)
+                print("\n")
+
+                return indTarg
+
+
+def findTargSum_Prt(numArr, targ):
 
     print("\tNumbers array:", numArr)
     print("\t       Target:", targ)
@@ -53,6 +82,8 @@ def findTargSum(numArr, targ):
     print("\n\t\tTarget sum:", sumTarg)
     print("\t\t\tTarget index:", indTarg)
     print("\n")
+
+    return indTarg
 
 
 
@@ -91,10 +122,18 @@ for numLst in Input_numsLst:
     print("\n")
 
 
-print("Function solution:\n")
+print("Function print solution:\n")
 
 for numLst in Input_numsLst:
     numArr = numLst[0]
     targ = numLst[1]
 
-    findTargSum(numArr, targ)
+    findTargSum_Prt(numArr, targ)
+
+print("Function stop solution:\n")
+
+for numLst in Input_numsLst:
+    numArr = numLst[0]
+    targ = numLst[1]
+
+    findTargSum_Stp(numArr, targ)
