@@ -25,6 +25,7 @@ https://leetcode.com/problems/two-sum/description/
         Output: [0,1]
 
 """
+import copy
 
 Input_numsLst = [[[2, 7, 11, 15], 9],
                  [[3, 2, 4], 6],
@@ -43,18 +44,19 @@ for numLst in Input_numsLst:
     for nRang in range(len(numArr)):
         numComb = ""
         numSum = 0
-        numInd = [nRang]
+        numInd = []
 
-        for num in numArr[nRang:]:
+        for n, num in enumerate(numArr[nRang:]):
             # print(num, end=", ")
-            numInd.append(numInd[-1] + 1)
+            numInd.append(n + nRang)
             numComb += f"{num} + "
             numSum += num
             print(f"\t\t{numSum:2} = {numComb[:-3]}")
 
             if numSum == targ:
                 sumTarg = f"{numSum:2} = {numComb[:-3]}"
+                indTarg = copy.deepcopy(numInd)
 
     print("\n\t\tTarget sum:", sumTarg)
-    print("\t\t\tTarget index:", numInd)
+    print("\t\t\tTarget index:", indTarg)
     print("\n")
