@@ -30,6 +30,8 @@ Input_numsLst = [[[2, 7, 11, 15], 9],
                  [[3, 2, 4], 6],
                  [[3, 3], 6]]
 
+print("Driver solution:\n")
+
 for numLst in Input_numsLst:
     numArr = numLst[0]
     targ = numLst[1]
@@ -41,16 +43,18 @@ for numLst in Input_numsLst:
     for nRang in range(len(numArr)):
         numComb = ""
         numSum = 0
+        numInd = [nRang]
+
         for num in numArr[nRang:]:
             # print(num, end=", ")
+            numInd.append(numInd[-1] + 1)
             numComb += f"{num} + "
             numSum += num
             print(f"\t\t{numSum:2} = {numComb[:-3]}")
 
             if numSum == targ:
-                sumTarg = f"\t\t{numSum:2} = {numComb[:-3]}"
+                sumTarg = f"{numSum:2} = {numComb[:-3]}"
 
-    print(f"\n\t{sumTarg}")
-    print()
-
-print()
+    print("\n\t\tTarget sum:", sumTarg)
+    print("\t\t\tTarget index:", numInd)
+    print("\n")
