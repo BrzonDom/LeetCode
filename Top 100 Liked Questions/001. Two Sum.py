@@ -27,6 +27,35 @@ https://leetcode.com/problems/two-sum/description/
 """
 import copy
 
+
+def findTargSum(numArr, targ):
+
+    print("\tNumbers array:", numArr)
+    print("\t       Target:", targ)
+    print()
+
+    for nRang in range(len(numArr)):
+        numComb = ""
+        numSum = 0
+        numInd = []
+
+        for n, num in enumerate(numArr[nRang:]):
+            # print(num, end=", ")
+            numInd.append(n + nRang)
+            numComb += f"{num} + "
+            numSum += num
+            print(f"\t\t{numSum:2} = {numComb[:-3]}")
+
+            if numSum == targ:
+                sumTarg = f"{numSum:2} = {numComb[:-3]}"
+                indTarg = copy.deepcopy(numInd)
+
+    print("\n\t\tTarget sum:", sumTarg)
+    print("\t\t\tTarget index:", indTarg)
+    print("\n")
+
+
+
 Input_numsLst = [[[2, 7, 11, 15], 9],
                  [[3, 2, 4], 6],
                  [[3, 3], 6]]
@@ -60,3 +89,12 @@ for numLst in Input_numsLst:
     print("\n\t\tTarget sum:", sumTarg)
     print("\t\t\tTarget index:", indTarg)
     print("\n")
+
+
+print("Function solution:\n")
+
+for numLst in Input_numsLst:
+    numArr = numLst[0]
+    targ = numLst[1]
+
+    findTargSum(numArr, targ)
