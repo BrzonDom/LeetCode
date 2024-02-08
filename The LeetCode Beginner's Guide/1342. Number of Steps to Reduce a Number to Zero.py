@@ -34,13 +34,16 @@ for num in Input_num:
 
     step = 0
 
-    print(f"\tFor number: {num}")
+    print(f"\tFor number: {num}\n")
 
     while (num > 0):
-        if num % 2 == 0:
-            num = num / 2
-        else:
-            num = num - 1
         step += 1
 
-    print(f"\t\tSteps: {step}")
+        if num % 2 == 0:
+            print(f"\t\t\t{step:2}. {num:2} -> {num:2} / 2 = {num//2:2}")
+            num = num // 2
+        else:
+            print(f"\t\t\t{step:2}. {num:2} -> {num:2} - 1 = {num-1:2}")
+            num = num - 1
+
+    print(f"\n\t\tSteps: {step}\n\n")
