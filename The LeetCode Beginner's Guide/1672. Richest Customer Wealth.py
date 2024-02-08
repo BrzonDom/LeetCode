@@ -43,13 +43,21 @@ print("Driver solution:\n")
 
 for mat in Input_matLst:
     sumLst = []
+    maxSum = 0
+    maxI = 0
     for r, row in enumerate(mat):
         print(f"\t{r+1}.Pers.\t\t{row}")
-        print(f"\t\tSum: {sum(row)}")
-        sumLst.append(sum(row))
+        sumRow = sum(row)
+
+        print(f"\t\tSum: {sumRow}")
+        sumLst.append(sumRow)
+
+        if sumRow > maxSum:
+            maxSum = sumRow
+            maxI = r + 1
+
     print()
-    maxSum = max(sumLst)
-    print(f"\tMax sum: {maxSum}")
+    print(f"\tMax sum: {maxI} person with {maxSum}")
 
     print("\n")
 
