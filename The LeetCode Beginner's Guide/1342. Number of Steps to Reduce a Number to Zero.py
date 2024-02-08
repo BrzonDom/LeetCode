@@ -28,6 +28,21 @@ https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/descrip
         0 <= num <= 10^6
 """
 
+def NumOfSteps_Sol(num):
+    step = 0
+
+    while (num != 0):
+        step += 1
+
+        if num % 2 == 0:
+            num /= 2
+
+        else:
+            num -= 1
+
+    return step
+
+
 def NumOfSteps_Prt(num):
 
     step = 0
@@ -76,5 +91,10 @@ print("Function solution:\n")
 for num in Input_num:
 
     step = NumOfSteps_Prt(num)
-    print(f"\t\t\tSteps: {step}")
-    print("\t"*4 + "Steps from print fun")
+    print("\t"*4 + f"Steps: {step}")
+    print("\t"*5 + "Steps from print fun")
+
+    step = NumOfSteps_Sol(num)
+    print("\t"*4 + f"Steps: {step}")
+    print("\t"*5 + "Steps from solution fun")
+    print("\n")
