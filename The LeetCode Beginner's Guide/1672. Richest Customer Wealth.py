@@ -33,6 +33,24 @@ Constraints:
 
 """
 
+def maxSumMat(mat):
+
+    maxSum = 0
+    maxI = 0
+
+    for r, row in enumerate(mat):
+        print(f"\t{r+1}.Pers.\t\t{row}")
+        sumRow = sum(row)
+
+        print(f"\t\tSum: {sumRow}")
+
+        if sumRow > maxSum:
+            maxSum = sumRow
+            maxI = r + 1
+
+    return maxSum, maxI
+
+
 
 Input_matLst = [[[1, 2, 3], [3, 2, 1]],
                 [[1, 5], [7, 3], [3, 5]],
@@ -56,9 +74,18 @@ for mat in Input_matLst:
             maxSum = sumRow
             maxI = r + 1
 
-    print()
-    print(f"\tMax sum: {maxI} person with {maxSum}")
-
+    print(f"\n\tMax sum: {maxI} person with {maxSum}")
     print("\n")
+
+
+print("Function solution:\n")
+
+for mat in Input_matLst:
+
+    maxSum, maxI = maxSumMat(mat)
+
+    print(f"\n\tMax sum: {maxI} person with {maxSum}")
+    print("\n")
+
 
 
