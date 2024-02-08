@@ -40,20 +40,39 @@ Constraints:
 
 """
 
+def runSum(numLst):
+
+    sumLst = []
+    sum = 0
+    for num in numLst:
+        sum += num
+        sumLst.append(sum)
+
+    return sumLst
+
+
 Input_NumLst = [[1, 2, 3, 4],
              [1, 1, 1, 1, 1],
              [3, 1, 2, 10, 1]]
 
 Out_Lst = []
 
+print("Driver solution:\n")
 for NumLst in Input_NumLst:
     sum = 0
-    print(f"Input:  {NumLst}")
+    print(f"\tInput:  {NumLst}")
     for num in NumLst:
         sum += num
         Out_Lst.append(sum)
 
-    print(f"Output: {Out_Lst}\n\n")
+    print(f"\tOutput: {Out_Lst}\n\n")
     # print(Out_Lst)
     Out_Lst = []
 
+print("Function solution:\n")
+
+for numLst in Input_NumLst:
+    print(f"\tInput:  {NumLst}")
+
+    Out_Lst = runSum(numLst)
+    print(f"\tOutput: {Out_Lst}\n\n")
