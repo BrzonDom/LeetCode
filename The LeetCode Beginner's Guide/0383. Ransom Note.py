@@ -67,8 +67,25 @@ for key in Note_dic:
         print(f"\t\t\tMissing {key} letter !")
 print()
 
+print("Driver solution:\n")
 
+for charLst in Input_charLst:
 
+    Note = charLst[0]
+    Magaz = charLst[1]
 
+    print(f"\tNote:      {Note}")
+    print(f"\tMagazine:  {Magaz}")
+    print()
+
+    Note_visit = []
+
+    for char in Note:
+        if char not in Note_visit:
+            Note_visit.append(char)
+            print(f"\t\t{char} : {Note.count(char)} / {Magaz.count(char)}")
+            if Note.count(char) > Magaz.count(char):
+                print(f"\t\t\tMissing '{char}' letter")
+    print()
 
 
