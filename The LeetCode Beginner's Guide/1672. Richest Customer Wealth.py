@@ -33,6 +33,19 @@ Constraints:
 
 """
 
+def maxSumMatSimp(mat):
+
+    maxSum = 0
+
+    for row in mat:
+        sumRow = sum(row)
+
+        if sumRow > maxSum:
+            maxSum = sumRow
+
+    return maxSum
+
+
 def maxSumMat(mat):
 
     maxSum = 0
@@ -85,6 +98,7 @@ for mat in Input_matLst:
     maxSum, maxI = maxSumMat(mat)
 
     print(f"\n\tMax sum: {maxI} person with {maxSum}")
+    print(f"\t\tMax sum: {maxSumMatSimp(mat)}")
     print("\n")
 
 
