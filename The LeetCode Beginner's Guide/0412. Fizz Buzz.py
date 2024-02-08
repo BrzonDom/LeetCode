@@ -32,6 +32,29 @@ https://leetcode.com/problems/fizz-buzz/description/
 
 """
 
+def Sol_FizzBuzzSort(num):
+
+    answerOut = []
+    Fizz = "Fizz"
+    Buzz = "Buzz"
+
+    for n in range(1, num+1):
+
+        if (not n % 3) and (not n % 5):
+            answerOut.append(Fizz+Buzz)
+
+        elif not n % 3:
+            answerOut.append(Fizz)
+
+        elif not n % 5:
+            answerOut.append(Buzz)
+
+        else:
+            answerOut.append(str(n))
+
+    return answerOut
+
+
 def FizzBuzzSort(num):
 
     answerOut = []
@@ -101,7 +124,9 @@ print("Function solution:\n")
 for num in Input_num:
 
     answerOut = FizzBuzzSort(num)
+    answerSol = Sol_FizzBuzzSort(num)
 
     print(f"\n\t\tFinal String: {answerOut}")
+    print(f"\t\tFinal String: {answerOut}")
     print()
 
