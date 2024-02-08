@@ -27,6 +27,21 @@ https://leetcode.com/problems/two-sum/description/
 """
 import copy
 
+def findTargSum_Sol(numArr, targ):
+
+    for nRang in range(len(numArr)):
+        numSum = 0
+        indTarg = []
+
+        for n, num in enumerate(numArr[nRang:]):
+
+            indTarg.append(n + nRang)
+            numSum += num
+
+            if numSum == targ:
+
+                return indTarg
+
 
 def findTargSum_Stp(numArr, targ):
 
@@ -52,7 +67,7 @@ def findTargSum_Stp(numArr, targ):
 
                 print("\n\t\tTarget sum:", sumTarg)
                 print("\t\t\tTarget index:", indTarg)
-                print("\n")
+                # print("\n")
 
                 return indTarg
 
@@ -130,10 +145,12 @@ for numLst in Input_numsLst:
 
     findTargSum_Prt(numArr, targ)
 
-print("Function stop solution:\n")
+print("Function stop and solve solution:\n")
 
 for numLst in Input_numsLst:
     numArr = numLst[0]
     targ = numLst[1]
 
     findTargSum_Stp(numArr, targ)
+    print(f"\t\t\tTarget index: {findTargSum_Sol(numArr, targ)}")
+    print("\n")
