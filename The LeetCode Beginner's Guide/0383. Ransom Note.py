@@ -86,6 +86,6 @@ for charLst in Input_charLst:
             print(f"\t\t{char} : {Note.count(char)} / {Magaz.count(char)}")
             if Note.count(char) > Magaz.count(char):
                 print(f"\t\t\tMissing '{char}' letter")
-    print()
+    print("\n")
 
 
