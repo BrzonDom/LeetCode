@@ -1,4 +1,6 @@
 """
+https://leetcode.com/problems/running-sum-of-1d-array/
+
 Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
 Return the running sum of nums.
@@ -39,6 +41,17 @@ Constraints:
     -10^6 <= nums[i] <= 10^6
 
 """
+
+
+class sumSol():
+    def run(self, numLst):
+        sumLst = [numLst[0]]
+
+        for num in numLst[1:]:
+            sumLst.append(sumLst[-1] + num)
+
+        return sumLst
+
 
 def runSumV1(numLst):
 
@@ -96,3 +109,12 @@ for numLst in Input_NumLst:
     Out_Lst = runSumV2(numLst)
     print(f"\tOutput: {Out_Lst}\n\n")
 
+
+print("Class solution:\n")
+
+for numLst in Input_NumLst:
+    print(f"\tInput:  {NumLst}")
+
+    Cls_Lst = sumSol()
+    Out_Lst = Cls_Lst.run(numLst)
+    print(f"\tOutput: {Out_Lst}\n\n")
