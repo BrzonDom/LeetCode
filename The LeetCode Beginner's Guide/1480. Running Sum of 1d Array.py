@@ -48,11 +48,12 @@ Out_Lst = []
 
 for NumLst in Input_NumLst:
     sum = 0
+    print(f"Input:  {NumLst}")
     for num in NumLst:
         sum += num
         Out_Lst.append(sum)
 
-    print(Out_Lst)
+    print(f"Output: {Out_Lst}\n\n")
+    # print(Out_Lst)
     Out_Lst = []
-
 
