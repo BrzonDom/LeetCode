@@ -28,7 +28,7 @@ https://leetcode.com/problems/fizz-buzz/description/
 
     Constraints:
 
-        1 <= n <= 104
+        1 <= n <= 10^4
 
 """
 
