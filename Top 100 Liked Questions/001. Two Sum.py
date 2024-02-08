@@ -46,6 +46,11 @@ for numLst in Input_numsLst:
             numComb += f"{num} + "
             numSum += num
             print(f"\t\t{numSum:2} = {numComb[:-3]}")
-        # numComb = numComb[:-2] + f"= {numSum}"
-        # print("\t\t", numComb)
+
+            if numSum == targ:
+                sumTarg = f"\t\t{numSum:2} = {numComb[:-3]}"
+
+    print(f"\n\t{sumTarg}")
     print()
+
+print()
