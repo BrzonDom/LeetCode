@@ -29,7 +29,21 @@ https://leetcode.com/problems/ransom-note/description/
 
 """
 
-def noteComplt(Note, Magazine):
+def noteComplt_Sol(Note, Magazine):
+
+    Note_visit = ""
+
+    for char in Note:
+        if char not in Note_visit:
+
+            if Note.count(char) > Magazine.count(char):
+                return False
+            Note_visit += char
+
+    return True
+
+
+def noteComplt_Prt(Note, Magazine):
 
     Note_visit = []
 
@@ -47,7 +61,8 @@ def noteComplt(Note, Magazine):
                 print(f"\t\t\tMissing '{char}' letter")
                 complt = False
 
-    print("\n")
+    print()
+
     return complt
 
 
@@ -117,5 +132,6 @@ for charLst in Input_charLst:
     Note = charLst[0]
     Magaz = charLst[1]
 
-    noteComplt(Note, Magaz)
+    noteComplt_Prt(Note, Magaz)
+    print(f"\tCompleted: {noteComplt_Sol(Note, Magaz)}\n\n")
 
