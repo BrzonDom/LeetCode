@@ -40,13 +40,13 @@ def Sol_FizzBuzzSort(num):
 
     for n in range(1, num+1):
 
-        if (not n % 3) and (not n % 5):
+        if (n % 3 == 0) and (n % 5 == 0):
             answerOut.append(Fizz+Buzz)
 
-        elif not n % 3:
+        elif n % 3 == 0:
             answerOut.append(Fizz)
 
-        elif not n % 5:
+        elif n % 5 == 0:
             answerOut.append(Buzz)
 
         else:
