@@ -40,7 +40,7 @@ Constraints:
 
 """
 
-def runSum(numLst):
+def runSumV1(numLst):
 
     sumLst = []
     sum = 0
@@ -50,6 +50,14 @@ def runSum(numLst):
 
     return sumLst
 
+def runSumV2(numLst):
+
+    sumLst = [numLst[0]]
+
+    for num in numLst[1:]:
+        sumLst.append(sumLst[-1] + num)
+
+    return sumLst
 
 Input_NumLst = [[1, 2, 3, 4],
              [1, 1, 1, 1, 1],
@@ -58,6 +66,7 @@ Input_NumLst = [[1, 2, 3, 4],
 Out_Lst = []
 
 print("Driver solution:\n")
+
 for NumLst in Input_NumLst:
     sum = 0
     print(f"\tInput:  {NumLst}")
@@ -69,10 +78,21 @@ for NumLst in Input_NumLst:
     # print(Out_Lst)
     Out_Lst = []
 
-print("Function solution:\n")
+
+print("1.Function solution:\n")
 
 for numLst in Input_NumLst:
     print(f"\tInput:  {NumLst}")
 
-    Out_Lst = runSum(numLst)
+    Out_Lst = runSumV1(numLst)
     print(f"\tOutput: {Out_Lst}\n\n")
+
+
+print("2.Function solution:\n")
+
+for numLst in Input_NumLst:
+    print(f"\tInput:  {NumLst}")
+
+    Out_Lst = runSumV2(numLst)
+    print(f"\tOutput: {Out_Lst}\n\n")
+
