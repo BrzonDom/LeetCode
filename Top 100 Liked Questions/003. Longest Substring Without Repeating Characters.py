@@ -34,34 +34,35 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/des
         s consists of English letters, digits, symbols and spaces.
 """
 
-def subStrLen_Sol(string):
+def subStrLen_Sol(s):
 
     subLen = 0
     maxSubLen = 0
 
     used = set()
 
-    for char in string:
-        if char not in used:
+    for c in range(len(s)):
 
-            subLen += 1
+        used.clear()
+        subLen = 0
 
-            used.add(char)
+        for char in s[c:]:
 
-        else:
-            if subLen > maxSubLen:
-                maxSubLen = subLen
+            if char not in used:
 
-            subLen = 1
+                used.add(char)
+                subLen += 1
 
-            used.clear()
-            used.add(char)
+            else:
 
-    if subLen > maxSubLen:
-        return subLen
+                if subLen > maxSubLen:
+                    maxSubLen = subLen
 
-    else:
-        return maxSubLen
+                break
+        if subLen > maxSubLen:
+            maxSubLen = subLen
+
+    return maxSubLen
 
 
 Input_strLst = ["abcabcbb",
@@ -137,6 +138,7 @@ for string in Input_strLst:
 
     print("\t\tMax len of substring: ", subStrLen_Sol(string))
     print("\n")
+
 
 
 
