@@ -34,9 +34,40 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/des
         s consists of English letters, digits, symbols and spaces.
 """
 
+def subStrLen_Sol(string):
+
+    subLen = 0
+    maxSubLen = 0
+
+    used = set()
+
+    for char in string:
+        if char not in used:
+
+            subLen += 1
+
+            used.add(char)
+
+        else:
+            if subLen > maxSubLen:
+                maxSubLen = subLen
+
+            subLen = 1
+
+            used.clear()
+            used.add(char)
+
+    if subLen > maxSubLen:
+        return subLen
+
+    else:
+        return maxSubLen
+
+
 Input_strLst = ["abcabcbb",
                 "bbbbb",
-                "pwwkew"]
+                "pwwkew",
+                "dvdf"]
 
 print("Driver solution:\n")
 
@@ -76,6 +107,15 @@ for string in Input_strLst:
     print("\n\n\tMax len of substring: ", maxSubLen)
     print("\n")
 
+print("Function solve solution:\n")
+
+for string in Input_strLst:
+
+    print("\tString: ", string)
+    print()
+
+    print("\t\tMax len of substring: ", subStrLen_Sol(string))
+    print("\n")
 
 
 
