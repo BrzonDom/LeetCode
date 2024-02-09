@@ -69,40 +69,59 @@ Input_strLst = ["abcabcbb",
                 "pwwkew",
                 "dvdf"]
 
-print("Driver solution:\n")
+
+print("Substring print:\n")
 
 for string in Input_strLst:
 
     print("\tString: ", string)
     print()
 
+    for c in range(len(string)):
+        print("\t\t", string[c:])
+
+    print("\n")
+
+
+print("Driver solution:\n")
+
+for string in Input_strLst:
+
+    print("\tString: ", string)
+
     subLen = 0
     maxSubLen = 0
 
     used = set()
 
-    print("\t", end="\t")
-    for char in string:
 
-        if char not in used:
-            print(char, end="")
+    for c in range(len(string)):
+        used.clear()
+        subLen = 0
 
-            used.add(char)
-            subLen += 1
+        print("\n\t", end="\t")
 
-        else:
-            print("\n\t", end="\t")
-            print(char, end="")
+        for char in string[c:]:
 
-            if subLen > maxSubLen:
-                maxSubLen = subLen
+            if char not in used:
+                print(char, end="")
 
-            subLen = 1
-            used.clear()
-            used.add(char)
+                used.add(char)
+                subLen += 1
 
-    if subLen > maxSubLen:
-        maxSubLen = subLen
+            else:
+                print("\n\t", end="\t")
+                print(char, end="")
+
+                if subLen > maxSubLen:
+                    maxSubLen = subLen
+
+                used.clear()
+                used.add(char)
+                subLen = 1
+
+        if subLen > maxSubLen:
+            maxSubLen = subLen
 
     print("\n\n\tMax len of substring: ", maxSubLen)
     print("\n")
