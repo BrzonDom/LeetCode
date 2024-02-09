@@ -25,88 +25,14 @@ https://leetcode.com/problems/two-sum/description/
         Output: [0,1]
 
 """
-import copy
-
-def findTargSum_Sol(numArr, targ):
-
-    for nRang in range(len(numArr)):
-        numSum = 0
-        indTarg = []
-
-        for n, num in enumerate(numArr[nRang:]):
-
-            indTarg.append(n + nRang)
-            numSum += num
-
-            if numSum == targ:
-
-                return indTarg
-
-
-def findTargSum_Stp(numArr, targ):
-
-    print("\tNumbers array:", numArr)
-    print("\t       Target:", targ)
-    print()
-
-    for nRang in range(len(numArr)):
-        numComb = ""
-        numSum = 0
-        numInd = []
-
-        for n, num in enumerate(numArr[nRang:]):
-            # print(num, end=", ")
-            numInd.append(n + nRang)
-            numComb += f"{num} + "
-            numSum += num
-            print(f"\t\t{numSum:2} = {numComb[:-3]}")
-
-            if numSum == targ:
-                sumTarg = f"{numSum:2} = {numComb[:-3]}"
-                indTarg = copy.deepcopy(numInd)
-
-                print("\n\t\tTarget sum:", sumTarg)
-                print("\t\t\tTarget index:", indTarg)
-                # print("\n")
-
-                return indTarg
-
-
-def findTargSum_Prt(numArr, targ):
-
-    print("\tNumbers array:", numArr)
-    print("\t       Target:", targ)
-    print()
-
-    for nRang in range(len(numArr)):
-        numComb = ""
-        numSum = 0
-        numInd = []
-
-        for n, num in enumerate(numArr[nRang:]):
-            # print(num, end=", ")
-            numInd.append(n + nRang)
-            numComb += f"{num} + "
-            numSum += num
-            print(f"\t\t{numSum:2} = {numComb[:-3]}")
-
-            if numSum == targ:
-                sumTarg = f"{numSum:2} = {numComb[:-3]}"
-                indTarg = copy.deepcopy(numInd)
-
-    print("\n\t\tTarget sum:", sumTarg)
-    print("\t\t\tTarget index:", indTarg)
-    print("\n")
-
-    return indTarg
-
 
 
 Input_numsLst = [[[2, 7, 11, 15], 9],
                  [[3, 2, 4], 6],
-                 [[3, 3], 6]]
+                 [[3, 3], 6],
+                 [[3, 2, 3], 6]]
 
-print("Driver solution:\n")
+print("Combinations print:\n")
 
 for numLst in Input_numsLst:
     numArr = numLst[0]
@@ -116,41 +42,42 @@ for numLst in Input_numsLst:
     print("\t       Target:", targ)
     print()
 
-    for nRang in range(len(numArr)):
-        numComb = ""
-        numSum = 0
-        numInd = []
+    for n1, num1 in enumerate(numArr):
+        for n2, num2 in enumerate(numArr):
+            if n1 != n2:
+                print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+        print()
 
-        for n, num in enumerate(numArr[nRang:]):
-            # print(num, end=", ")
-            numInd.append(n + nRang)
-            numComb += f"{num} + "
-            numSum += num
-            print(f"\t\t{numSum:2} = {numComb[:-3]}")
+    print()
 
-            if numSum == targ:
-                sumTarg = f"{numSum:2} = {numComb[:-3]}"
-                indTarg = copy.deepcopy(numInd)
-
-    print("\n\t\tTarget sum:", sumTarg)
-    print("\t\t\tTarget index:", indTarg)
-    print("\n")
-
-
-print("Function print solution:\n")
+print("1.Driver solution:\n")
 
 for numLst in Input_numsLst:
     numArr = numLst[0]
     targ = numLst[1]
 
-    findTargSum_Prt(numArr, targ)
+    print("\tNumbers array:", numArr)
+    print("\t       Target:", targ)
+    print()
 
-print("Function stop and solve solution:\n")
+    combFound = False
+    combTarg = []
 
-for numLst in Input_numsLst:
-    numArr = numLst[0]
-    targ = numLst[1]
+    for n1, num1 in enumerate(numArr):
+        if combFound:
+            break
 
-    findTargSum_Stp(numArr, targ)
-    print(f"\t\t\tTarget index: {findTargSum_Sol(numArr, targ)}")
+        for n2, num2 in enumerate(numArr):
+            if n1 != n2:
+                print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+
+                if num1 + num2 == targ:
+                    print("\n\tFound combination:")
+                    print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+
+                    combTarg.append([n1, num1])
+                    combTarg.append([n2, num2])
+                    combFound = True
+                    break
+
     print("\n")
