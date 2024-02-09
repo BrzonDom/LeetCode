@@ -129,10 +129,13 @@ for numLst in Input_numsLst:
         if remain in numArr[n1+1:]:
             num2 = remain
             n2 = numArr.index(num2, n1+1)
+
             print("\n\t\tFound combination:")
             print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+
             break
     print("\n")
+
 
 
 
