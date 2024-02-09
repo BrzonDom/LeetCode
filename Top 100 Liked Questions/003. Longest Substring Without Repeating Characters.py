@@ -110,15 +110,17 @@ for string in Input_strLst:
                 subLen += 1
 
             else:
-                print("\n\t", end="\t")
-                print(char, end="")
+                # print("\n\t", end="\t")
+                # print(char, end="")
 
                 if subLen > maxSubLen:
                     maxSubLen = subLen
 
-                used.clear()
-                used.add(char)
-                subLen = 1
+                break
+
+                # used.clear()
+                # used.add(char)
+                # subLen = 1
 
         if subLen > maxSubLen:
             maxSubLen = subLen
