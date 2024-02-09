@@ -41,8 +41,44 @@ Input_strLst = ["abcabcbb",
 print("Driver solution:\n")
 
 for string in Input_strLst:
+
     print("\tString: ", string)
     print()
+
+    subLen = 0
+    maxSubLen = 0
+
+    used = set()
+
+    print("\t", end="\t")
+    for char in string:
+
+        if char not in used:
+            print(char, end="")
+
+            used.add(char)
+            subLen += 1
+
+        else:
+            print("\n\t", end="\t")
+            print(char, end="")
+
+            if subLen > maxSubLen:
+                maxSubLen = subLen
+
+            subLen = 1
+            used.clear()
+            used.add(char)
+
+    if subLen > maxSubLen:
+        maxSubLen = subLen
+
+    print("\n\n\tMax len of substring: ", maxSubLen)
+    print("\n")
+
+
+
+
 
 
 
