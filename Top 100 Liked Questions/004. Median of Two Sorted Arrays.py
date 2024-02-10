@@ -32,7 +32,8 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/
 """
 
 Input_ArrLst = [[[1, 3], [2]],
-                [[1, 2], [3, 4]]]
+                [[1, 2], [3, 4]],
+                [[1, 2, 3, 5, 6], [2, 4, 4, 6]]]
 
 print("Driver solution:\n")
 
@@ -40,7 +41,48 @@ for arrLst in Input_ArrLst:
 
     print("\t1. Array: ", arrLst[0])
     print("\t2. Array: ", arrLst[1])
-    print("\n")
+    print("")
 
     arr1 = arrLst[0]
     arr2 = arrLst[1]
+
+    lenAr1 = len(arr1)
+    lenAr2 = len(arr2)
+
+    medIndAr1 = lenAr1 // 2
+    medIndAr2 = lenAr2 // 2
+
+
+    print("\t\t1. Median index: ", medIndAr1)
+    print("\t\t2. Median index: ", medIndAr2)
+    print()
+    # print(1 % 2 == 0)
+
+    if lenAr1 == 1:
+
+        medAr1 = float(arr1[0])
+
+    elif lenAr1 % 2 == 0:
+
+        medAr1 = arr1[medIndAr1-1] + arr1[medIndAr1]
+        medAr1 /= 2
+
+    else:
+        medAr1 = float(arr1[medIndAr1])
+
+
+    if lenAr2 == 0:
+
+        medAr2 = float(arr2[0])
+
+    elif lenAr2 % 2 == 0:
+
+        medAr2 = arr2[medIndAr2-1] + arr2[medIndAr2]
+        medAr2 /= 2
+
+    else:
+        medAr2 = float(arr2[medIndAr2])
+
+    print("\t\t1. Median: ", medAr1)
+    print("\t\t2. Median: ", medAr2)
+    print("\n")
