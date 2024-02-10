@@ -85,4 +85,9 @@ for arrLst in Input_ArrLst:
 
     print("\t\t1. Median: ", medAr1)
     print("\t\t2. Median: ", medAr2)
+    print("")
+
+    median = (medAr1 + medAr2) / 2
+
+    print("\t\tMedian: ", median)
     print("\n")
