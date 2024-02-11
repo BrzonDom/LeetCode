@@ -38,6 +38,7 @@ def fndMedian_Prt(arrLst):
 
     print("\t1. Array: ", arr1)
     print("\t2. Array: ", arr2)
+    print()
 
     lenAr1 = len(arr1)
     lenAr2 = len(arr2)
@@ -83,7 +84,7 @@ def fndMedian_Prt(arrLst):
     print("\t\t2. Median: ", medAr2)
     print("")
     print("\t\tMedian: ", median)
-    print("\n")
+    # print("\n")
 
     return median
 
@@ -155,4 +156,6 @@ print("Function solution:\n")
 
 for arrLst in Input_ArrLst:
 
-    fndMedian_Prt(arrLst)
+    median = fndMedian_Prt(arrLst)
+    print("\t\tMedian: ", median)
+    print("\n")
