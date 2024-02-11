@@ -31,7 +31,48 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/
         -10⁶ <= nums1[i], nums2[i] <= 10⁶
 """
 
-def fndMedian_Prt(arrLst):
+def findMedianV2_Prt(arrLst):
+
+    arr1 = arrLst[0]
+    arr2 = arrLst[1]
+
+    print("\t1. Array: ", arr1)
+    print("\t2. Array: ", arr2)
+    print()
+
+    arr = sorted(arr1 + arr2)
+    print("\tArray: ", arr)
+    print()
+
+    lenAr = len(arr)
+    medInd = lenAr // 2
+
+
+    print("\t\tMedian index: ", medInd)
+    print()
+
+    if lenAr % 2:
+
+        median = float(arr[medInd])
+
+        print("\t\tMedian: ", median)
+        print()
+
+        return median
+
+    else:
+
+        med1 = float(arr[medInd-1])
+        med2 = float(arr[medInd])
+        median = (med1 + med2) / 2
+
+        print("\t\tMedian: ", median)
+        print()
+
+        return median
+
+
+def fndMedianV1_Prt(arrLst):
 
     arr1 = arrLst[0]
     arr2 = arrLst[1]
@@ -152,10 +193,17 @@ for arrLst in Input_ArrLst:
 
 print()
 
-print("Function solution:\n")
+print("1. Function solution:\n")
 
 for arrLst in Input_ArrLst:
 
-    median = fndMedian_Prt(arrLst)
+    median = fndMedianV1_Prt(arrLst)
     print("\t\tMedian: ", median)
     print("\n")
+
+print("2. Function solution:\n")
+
+for arrLst in Input_ArrLst:
+
+    findMedianV2_Prt(arrLst)
+    print()
