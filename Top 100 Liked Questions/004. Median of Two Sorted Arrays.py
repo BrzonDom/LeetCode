@@ -36,6 +36,9 @@ def fndMedian_Prt(arrLst):
     arr1 = arrLst[0]
     arr2 = arrLst[1]
 
+    print("\t1. Array: ", arr1)
+    print("\t2. Array: ", arr2)
+
     lenAr1 = len(arr1)
     lenAr2 = len(arr2)
 
