@@ -62,7 +62,7 @@ def fndMedian_Prt(arrLst):
 
 
 
-    if lenAr2 == 0:
+    if lenAr2 == 1:
 
         medAr2 = float(arr2[0])
 
