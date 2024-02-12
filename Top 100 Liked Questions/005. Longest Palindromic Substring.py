@@ -73,16 +73,18 @@ for str in Input_strLst:
                 maxPal = pal
                 palLen = len(pal)
 
-            for d in range(1, len(str[c:])):
-                if len(str[c:-d]) > palLen:
+            else:
 
-                    pal = str[c:-d]
-                    pal = pal[::-1]
+                for d in range(1, len(str[c:])):
+                    if len(str[c:-d]) > palLen:
 
-                    if str[c:-d] == pal:
-                        print("\t\t", pal)
-                        maxPal = pal
-                        palLen = len(pal)
+                        pal = str[c:-d]
+                        pal = pal[::-1]
+
+                        if str[c:-d] == pal:
+                            print("\t\t", pal)
+                            maxPal = pal
+                            palLen = len(pal)
 
     print()
     print("\t\tMax Pal.str.:", maxPal)
