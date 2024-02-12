@@ -54,13 +54,17 @@ for str in Input_strLst:
     print("\tString: ", str)
     print()
 
+    palLen = 0
 
     for c in range(len(str)):
         for d in range(1, len(str[c:])):
-            pal = str[c:-d]
-            pal = pal[::-1]
+            if len(str[c:-d]) > palLen:
 
-            if str[c:-d] == pal:
-                print("\t\t", pal)
+                pal = str[c:-d]
+                pal = pal[::-1]
+
+                if str[c:-d] == pal:
+                    print("\t\t", pal)
+                    palLen = len(pal)
 
     print("\n")
