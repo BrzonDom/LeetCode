@@ -94,10 +94,10 @@ for str in Input_strLst:
                 print()
         print()
     print()
-print()
+print("\n")
 
 
-print("Driver solution:\n")
+print("1.Driver solution:\n")
 
 for str in Input_strLst:
 
@@ -135,6 +135,48 @@ for str in Input_strLst:
     print("\n")
 
 
+print("2. Driver solution:\n")
+
+for s in Input_strLst:
+
+    print("\tString: ", s, "\n")
+
+    maxLen = 1
+    maxPal = s[0]
+    palFnd = True
+
+    for ind, char in enumerate(s):
+
+        l = ind
+        r = ind
+
+        curLen = 1
+
+        while True:
+
+            if l-1 >= 0 and r+1 < len(s) and s[l-1] == s[r+1]:
+
+                l -= 1
+                r += 1
+                curLen += 2
+                continue
+
+            if l == ind and r+1 < len(s) and s[r+1] == char:
+
+                r += 1
+                curLen += 1
+                continue
+
+            break
+
+        if curLen > maxLen:
+            maxLen = curLen
+            maxPal = s[l:r + 1]
+
+    print("\t\tPalindorme: ", maxPal, "\n")
+
+
+print()
 print("1. Function solution:\n")
 
 for str in Input_strLst:
