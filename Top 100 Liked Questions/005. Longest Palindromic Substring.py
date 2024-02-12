@@ -25,6 +25,41 @@ https://leetcode.com/problems/longest-palindromic-substring/description/
 # def findPalStr_Prt(str):
 #
 
+def findPalStrV1_Prt(str):
+
+    print("\tString: ", str)
+    print()
+
+    palLen = 0
+
+    for c in range(len(str)):
+        if len(str[c:]) > palLen:
+
+            pal = str[c:]
+            pal = pal[::-1]
+
+            if str[c:] == pal:
+                print("\t\t", pal)
+                maxPal = pal
+                palLen = len(pal)
+
+            else:
+
+                for d in range(1, len(str[c:])):
+                    if len(str[c:-d]) > palLen:
+
+                        pal = str[c:-d]
+                        pal = pal[::-1]
+
+                        if str[c:-d] == pal:
+                            print("\t\t", pal)
+                            maxPal = pal
+                            palLen = len(pal)
+
+    print()
+    print("\t\tMax Pal.str.:", maxPal)
+
+    return maxPal
 
 
 Input_strLst = ["babad", "cbbd", "a", "bb"]
@@ -98,3 +133,14 @@ for str in Input_strLst:
     print()
     print("\t\tMax Pal.str.:", maxPal)
     print("\n")
+
+
+print("1. Function solution:\n")
+
+for str in Input_strLst:
+
+    maxPal = findPalStrV1_Prt(str)
+    print()
+    print("\t\t\tMax Pal.str.:", maxPal)
+    print("\n")
+
