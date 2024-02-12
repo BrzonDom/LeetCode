@@ -3,28 +3,28 @@
 
 https://leetcode.com/problems/longest-palindromic-substring/description/
 
-    Given a string s, return the longest palindromic substring in s.
+    Given a string d, return the longest palindromic substring in d.
 
     Example 1:
 
-        Input: s = "babad"
+        Input: d = "babad"
         Output: "bab"
         Explanation: "aba" is also a valid answer.
 
     Example 2:
 
-        Input: s = "cbbd"
+        Input: d = "cbbd"
         Output: "bb
 
     Constraints:
 
-        1 <= s.length <= 1000
-        s consist of only digits and English letters.
+        1 <= d.length <= 1000
+        d consist of only digits and English letters.
 """
 
 Input_strLst = ["babad", "cbbd"]
 
-print("Driver solution:\n")
+print("Driver print:\n")
 
 for str in Input_strLst:
 
@@ -34,14 +34,33 @@ for str in Input_strLst:
     for c in range(len(str)):
         print("\t\t", str[c:])
         # print("\t\t", end="")
-        for s in range(1, len(str[c:])):
-            print("\t\t", str[c:-s])
+        for d in range(1, len(str[c:])):
+            print("\t\t", str[c:-d])
 
-            pal = str[c:-s]
+            pal = str[c:-d]
             pal = pal[::-1]
 
-            if str[c:-s] == pal:
+            if str[c:-d] == pal:
                 print("\t\t\tPalindromic string:", pal)
         print()
+
+    print("\n")
+print()
+
+print("Driver solution:\n")
+
+for str in Input_strLst:
+
+    print("\tString: ", str)
+    print()
+
+
+    for c in range(len(str)):
+        for d in range(1, len(str[c:])):
+            pal = str[c:-d]
+            pal = pal[::-1]
+
+            if str[c:-d] == pal:
+                print("\t\t", pal)
 
     print("\n")
