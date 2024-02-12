@@ -22,6 +22,11 @@ https://leetcode.com/problems/longest-palindromic-substring/description/
         d consist of only digits and English letters.
 """
 
+# def findPalStr_Prt(str):
+#
+
+
+
 Input_strLst = ["babad", "cbbd"]
 
 print("Driver print:\n")
@@ -65,6 +70,10 @@ for str in Input_strLst:
 
                 if str[c:-d] == pal:
                     print("\t\t", pal)
+                    maxPal = pal
                     palLen = len(pal)
 
+
+    print()
+    print("\t\tMax Pal.str.:", maxPal)
     print("\n")
