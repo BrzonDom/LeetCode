@@ -27,7 +27,7 @@ https://leetcode.com/problems/longest-palindromic-substring/description/
 
 
 
-Input_strLst = ["babad", "cbbd"]
+Input_strLst = ["babad", "cbbd", "a", "bb"]
 
 print("Driver print:\n")
 
@@ -39,6 +39,7 @@ for str in Input_strLst:
     for c in range(len(str)):
         print("\t\t", str[c:])
         # print("\t\t", end="")
+
         for d in range(1, len(str[c:])):
             print("\t\t", str[c:-d])
 
@@ -48,9 +49,9 @@ for str in Input_strLst:
             if str[c:-d] == pal:
                 print("\t\t\tPalindromic string:", pal)
         print()
-
-    print("\n")
+    print()
 print()
+
 
 print("Driver solution:\n")
 
@@ -62,17 +63,26 @@ for str in Input_strLst:
     palLen = 0
 
     for c in range(len(str)):
-        for d in range(1, len(str[c:])):
-            if len(str[c:-d]) > palLen:
+        if len(str[c:]) > palLen:
 
-                pal = str[c:-d]
-                pal = pal[::-1]
+            pal = str[c:]
+            pal = pal[::-1]
 
-                if str[c:-d] == pal:
-                    print("\t\t", pal)
-                    maxPal = pal
-                    palLen = len(pal)
+            if str[c:] == pal:
+                print("\t\t", pal)
+                maxPal = pal
+                palLen = len(pal)
 
+            for d in range(1, len(str[c:])):
+                if len(str[c:-d]) > palLen:
+
+                    pal = str[c:-d]
+                    pal = pal[::-1]
+
+                    if str[c:-d] == pal:
+                        print("\t\t", pal)
+                        maxPal = pal
+                        palLen = len(pal)
 
     print()
     print("\t\tMax Pal.str.:", maxPal)
