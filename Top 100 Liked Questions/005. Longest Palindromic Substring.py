@@ -22,8 +22,8 @@ https://leetcode.com/problems/longest-palindromic-substring/description/
         d consist of only digits and English letters.
 """
 
-# def findPalStr_Prt(str):
-#
+# def findPalStrV2_Prt(str):
+
 
 def findPalStrV1_Prt(str):
 
@@ -156,6 +156,7 @@ for s in Input_strLst:
 
             if l-1 >= 0 and r+1 < len(s) and s[l-1] == s[r+1]:
 
+                print("\t\t", s[l-1:r+2])
                 l -= 1
                 r += 1
                 curLen += 2
@@ -163,6 +164,7 @@ for s in Input_strLst:
 
             if l == ind and r+1 < len(s) and s[r+1] == char:
 
+                print("\t\t", s[l:r+2])
                 r += 1
                 curLen += 1
                 continue
@@ -173,7 +175,8 @@ for s in Input_strLst:
             maxLen = curLen
             maxPal = s[l:r + 1]
 
-    print("\t\tPalindorme: ", maxPal, "\n")
+    print()
+    print("\t\tMax Pal.str.: ", maxPal, "\n")
 
 
 print()
