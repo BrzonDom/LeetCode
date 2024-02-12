@@ -31,6 +31,27 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/
         -10⁶ <= nums1[i], nums2[i] <= 10⁶
 """
 
+def findMedian_Sol(arrLst):
+    arr1 = arrLst[0]
+    arr2 = arrLst[1]
+
+    arr = sorted(arr1 + arr2)
+
+    lenAr = len(arr)
+    medInd = lenAr // 2
+
+    if lenAr % 2:
+
+        return float(arr[medInd])
+
+    else:
+
+        median = arr[medInd-1]
+        median += arr[medInd]
+
+        return median / 2
+
+
 def findMedianV2_Prt(arrLst):
 
     arr1 = arrLst[0]
@@ -206,4 +227,7 @@ print("2. Function solution:\n")
 for arrLst in Input_ArrLst:
 
     findMedianV2_Prt(arrLst)
-    print()
+    median = findMedian_Sol(arrLst)
+    print("\t\tMedian: ", median)
+    print("\n")
+
