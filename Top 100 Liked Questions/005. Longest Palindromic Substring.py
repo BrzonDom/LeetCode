@@ -29,7 +29,7 @@ https://leetcode.com/problems/longest-palindromic-substring/description/
 
 Input_strLst = ["babad", "cbbd", "a", "bb"]
 
-print("Driver print:\n")
+print("Driver combinations print:\n")
 
 for str in Input_strLst:
 
@@ -37,17 +37,26 @@ for str in Input_strLst:
     print()
 
     for c in range(len(str)):
-        print("\t\t", str[c:])
+        print("\t\t", str[c:], end="")
         # print("\t\t", end="")
+        pal = str[c:]
+        pal = pal[::-1]
+
+        if str[c:] == pal:
+            print("\t\tPalindromic string")
+        else:
+            print()
 
         for d in range(1, len(str[c:])):
-            print("\t\t", str[c:-d])
+            print("\t\t", str[c:-d], end="")
 
             pal = str[c:-d]
             pal = pal[::-1]
 
             if str[c:-d] == pal:
-                print("\t\t\tPalindromic string:", pal)
+                print("\t\tPalindromic string")
+            else:
+                print()
         print()
     print()
 print()
