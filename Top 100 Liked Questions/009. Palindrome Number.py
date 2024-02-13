@@ -34,6 +34,26 @@ https://leetcode.com/problems/palindrome-number/description/
         -2³¹ <= x <= 2³¹ - 1
 """
 
+def palindromeNum_Prt(num):
+    print("\tIn num.: ", num)
+
+    revNum = str(num)
+    revNum = revNum[::-1]
+
+    print("\tRev num.:", revNum)
+    print()
+
+    if revNum == str(num):
+
+        print("\t\tNumber IS a palindrome")
+        return True
+
+    else:
+
+        print("\t\tNumber is NOT a palindrome")
+        return False
+
+
 Input_numLst = [121, -121, 10]
 
 print("Driver print:\n")
@@ -58,4 +78,11 @@ for num in Input_numLst:
     else:
         print("\t\tNumber is NOT a palindrome")
 
+    print("\n")
+
+print("Function solution:\n")
+
+for num in Input_numLst:
+
+    palindromeNum_Prt(num)
     print("\n")
