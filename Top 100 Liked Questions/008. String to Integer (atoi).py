@@ -88,8 +88,142 @@ https://leetcode.com/problems/string-to-integer-atoi/description/
 
 """
 
+def myAtoi_Prt(strNum):
+
+    print(f"\tIn str num.: \"{strNum}\"")
+    print()
+
+    """     Read in and ignore any leading whitespace.  """
+    print("\t\t1.Step:")
+
+    if strNum[0] == ' ':
+        print(f"\t\t\t\"{strNum}\" -> ", end="")
+
+        while True:
+            if strNum[0] == ' ':
+                strNum = strNum[1:]
+
+            else:
+                break
+
+        print(f"\"{strNum}\"")
+
+    else:
+        print("\t\t\tNo leading white spaces found")
+
+    print()
+
+    """     Check if the next character is '-' or '+'
+                (if not at the end of the string)   """
+    print("\t\t2.Step:")
+
+    negat = False
+
+    if len(strNum):
+        if strNum[0] == '-':
+            negat = True
+            strNum = strNum[1:]
+            print("\t\t\tNegative sign read")
+
+        elif strNum[0] == '+':
+            negat = False
+            strNum = strNum[1:]
+            print("\t\t\tPlus sign read")
+
+        else:
+            print("\t\t\tNo sign read")
+
+
+    else:
+        print("\t\t\tString is empty")
+
+
+    print()
+
+    """     Read in next the characters until the next non-digit character      
+                or the end of the input is reached.     """
+    print("\t\t3.Step:")
+
+    digCnt = 0
+
+    for char in strNum:
+
+        if '0' <= char <= '9':
+            digCnt += 1
+
+        else:
+            break
+
+    print(f"\t\t\t\"{strNum}\" -> \"{strNum[:digCnt]}\"")
+    strNum = strNum[:digCnt]
+
+    print()
+
+    """     Convert these digits into an integer    
+                If no digits were read, then the integer is 0   """
+    print("\t\t4.Step:")
+
+    if len(strNum):
+        num = int(strNum)
+
+        if negat:
+            num *= -1
+    else:
+
+        print()
+        print(f"\t\t\tIn strNum: \"{In_str}\"")
+        print(f"\t\t\tOut num:    0")
+        print("")
+
+        return 0
+
+    print(f"\t\t\tNum: {num}")
+    print()
+
+    """     If the integer is out of the 32-bit signed integer range [-2³¹, 2³¹ - 1],
+                then clamp the integer so that it remains in the range.     """
+    print("\t\t5.Step:")
+
+    if num < -(2**31):
+
+        print("\t\t\tNumber lesser than low limit of integer range")
+        print()
+        print(f"\t\t\tIn strNum: \"{In_str}\"")
+        print(f"\t\t\tOut num:    -2147483648")
+        print("")
+
+        return -(2**31)
+
+    elif num > (2**31)-1:
+
+        print("\t\t\tNumber greater than high limit of integer range")
+        print()
+        print(f"\t\t\tIn strNum: \"{In_str}\"")
+        print(f"\t\t\tOut num: 2147483647")
+        print("")
+
+        return (2**31)-1
+
+    else:
+        print("\t\t\tNumber within the limits of integer range")
+    print()
+
+    """     Return the integer as the final result.     """
+    print("\t\t6.Step:")
+
+    Out_num = num
+
+    print(f"\t\t\tNum: {num}")
+    print()
+    print(f"\t\t\tIn strNum: \"{In_str}\"")
+    print(f"\t\t\tOut num:    {Out_num}")
+    print("")
+
+    return Out_num
+
+
 Input_strNumLst = ["42", "   -42", "4193 with words",
-                   "     -a"]
+                   "     -a", "  2147483650"]
 
 print("Driver print:\n")
 
@@ -212,4 +346,12 @@ for strNum in Input_strNumLst:
     print()
     print(f"\t\t\tIn strNum: \"{In_str}\"")
     print(f"\t\t\tOut num:    {Out_num}")
+    print("\n")
+
+
+for strNum in Input_strNumLst:
+
+    Out_num = myAtoi_Prt(strNum)
+
+    print(f"\t\t\t\tOut num: {Out_num}")
     print("\n")
