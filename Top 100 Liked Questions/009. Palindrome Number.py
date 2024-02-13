@@ -41,3 +41,21 @@ print("Driver print:\n")
 for num in Input_numLst:
     print("\tNum: ", num)
     print()
+
+print("Dirver solution:\n")
+
+for num in Input_numLst:
+    print("\tIn num.: ", num)
+
+    revNum = str(num)
+    revNum = revNum[::-1]
+
+    print("\tRev num.:", revNum)
+    print()
+
+    if revNum == str(num):
+        print("\t\tNumber IS a palindrome")
+    else:
+        print("\t\tNumber is NOT a palindrome")
+
+    print("\n")
