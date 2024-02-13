@@ -65,6 +65,42 @@ def ZigZagEncodeV2_Sol(strIn, rows):
     return ''.join(rowMat)
 
 
+def ZigZagEncodeV2_Prt(strIn, rows):
+
+    if rows == 1 or rows >= len(strIn):
+        """     If rows == 1 or rows >= len(strIn)
+                    we can straight up return the original string   """
+        return strIn
+
+    print("\tIn string:      ", strIn)
+    print("\t\tStr. len.:  ", strLen)
+    print("\tNum. of rows.:  ", rows)
+    print()
+
+    """     rowMat ~ matrix of filled rows     """
+    rowMat = [''] * rows
+    """     direct ~ direction of row fill      """
+    direct = 1
+    """     row ~ count of rows     """
+    row = 0
+
+    for char in strIn:
+        rowMat[row] += char
+        row += direct
+
+        if row == 0 or row == rows-1:
+            direct *= -1
+
+    for r, row in enumerate(rowMat):
+        print(f"\t\t{r+1}. {row}")
+    print()
+
+    strOut = ''.join(rowMat)
+    print("\tOut string:", strOut)
+
+    return ''.join(rowMat)
+
+
 def ZigZagEncodeV1_Sol(strIn, rows):
 
     if rows == 1 or rows >= len(strIn):
@@ -124,18 +160,18 @@ def ZigZagEncodeV1_Sol(strIn, rows):
             if colFillCnt == colFillLen:
                 colFillCnt = 0
 
-            strOut = ""
+    strOut = ""
 
-            for row in zzMat:
-                for col in row:
+    for row in zzMat:
+        for col in row:
 
-                    if col != " ":
-                        strOut += col
+            if col != " ":
+                strOut += col
 
-            return strOut
+    return strOut
 
 
-def ZigZagEncode_Prt(strIn, rows):
+def ZigZagEncodeV1_Prt(strIn, rows):
 
     print("\tString:         ", strIn)
 
@@ -248,6 +284,8 @@ Input_encodeLst = [["PAYPALISHIRING", 3],
                    ["A", 1],
                    ["AB", 1]]
 
+encodeLst = Input_encodeLst[:-2]
+
 # print("Driver print:\n")
 #
 # for encode in Input_encodeLst:
@@ -261,7 +299,7 @@ Input_encodeLst = [["PAYPALISHIRING", 3],
 
 print("Driver solution:\n")
 
-for encode in Input_encodeLst:
+for encode in encodeLst:
     strIn = encode[0]
     rows = encode[1]
     strLen = len(strIn)
@@ -370,11 +408,11 @@ for encode in Input_encodeLst:
 
 print("1. Function solution:\n")
 
-for encode in Input_encodeLst:
+for encode in encodeLst:
     strIn = encode[0]
     rows = encode[1]
 
-    ZigZagEncode_Prt(strIn, rows)
+    ZigZagEncodeV1_Prt(strIn, rows)
 
     strOut = ZigZagEncodeV1_Sol(strIn, rows)
     print("\t\tOut string: ", strOut)
@@ -383,15 +421,13 @@ for encode in Input_encodeLst:
 
 print("2. Function solution:\n")
 
-for encode in Input_encodeLst:
+for encode in encodeLst:
     strIn = encode[0]
     rows = encode[1]
 
     strLen = len(strIn)
 
-    print("\tIn string:      ", strIn)
-    print("\t\tStr. len.:  ", strLen)
-    print("\tNum. of rows.:  ", rows)
+    ZigZagEncodeV2_Prt(strIn, rows)
     print()
 
     strOut = ZigZagEncodeV2_Sol(strIn, rows)
