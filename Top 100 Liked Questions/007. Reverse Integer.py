@@ -36,3 +36,32 @@ print("Driver print:\n")
 for num in Input_numLst:
     print("\tNum.:", num)
     print("\n")
+
+
+print("Driver solution:\n")
+
+for num in Input_numLst:
+    print("\tIn num.:", num)
+    print()
+
+    if num < 0:
+        pol = -1
+        strNum = str(num)[1:]
+
+    elif num > 0:
+        pol = 1
+        strNum = str(num)
+
+    else:
+        print("\tOut num.:", num)
+        print("\n")
+        continue
+
+    print("\t\tStr num.:", strNum)
+    print()
+
+    numOut = pol * int(strNum[::-1])
+
+    print("\tOut num.:", numOut)
+
+    print("\n")
