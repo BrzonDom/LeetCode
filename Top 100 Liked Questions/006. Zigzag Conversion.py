@@ -95,17 +95,50 @@ for encode in Input_encodeLst:
             """     Return the pattern to its beginning     """
             colFillCnt = 0
 
+    strLen = len(str)
+    cols = colCnt
+
     print("\tNum. of cols.:  ", colCnt)
     print()
     print("\tCol fill pattern:", colFill)
     print()
     print("\tZigZag matrix:\n")
 
-    zigMat = [[' ' for col in range(colCnt)] for row in range(rows)]
+    zzMat = [[' ' for col in range(cols)] for row in range(rows)]
 
-    for row in zigMat:
+    for row in zzMat:
         print("\t\t", row)
 
+    colFillCnt = 0
+    fillCnt = 0
+
+    for c in range(cols):
+        for r in range(rows):
+
+            if fillCnt >= strLen:
+                break
+
+            if colFillCnt == 0:
+                zzMat[r][c] = str[fillCnt]
+                fillCnt += 1
+                if r == rows-1:
+                    colFillCnt += 1
+
+            elif r == rows-1 - colFillCnt:
+                zzMat[r][c] = str[fillCnt]
+                fillCnt += 1
+                colFillCnt += 1
+
+                if colFillCnt == colFillLen:
+                    colFillCnt = 0
+
+                break
+
+    print("\n\tZigZag matrix filled:\n")
+    for row in zzMat:
+        print("\n", end="\t\t")
+        for col in row:
+            print(col, end=" ")
 
     print("\n")
 
