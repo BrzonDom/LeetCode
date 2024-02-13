@@ -54,7 +54,7 @@ def regExpMatch_Prt(txt, pat):
     p = 0
     match = True
 
-    for c, char in enumerate(txt):
+    for char in txt:
 
         if p >= len(pat):
             match = False
@@ -117,7 +117,7 @@ for strPat in Input_strsLst:
 
     match = True
 
-    for c, char in enumerate(txt):
+    for char in txt:
 
         if p >= len(pat):
             match = False
