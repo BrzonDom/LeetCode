@@ -96,4 +96,33 @@ for strNum in Input_strNumLst:
 
     print(f"\tIn str num.: \"{strNum}\"")
     print()
+print()
+
+print("Driver solution:\n")
+
+for strNum in Input_strNumLst:
+    print(f"\tIn str num.: \"{strNum}\"")
+    print()
+
+    """     Read in and ignore any leading whitespace.  """
+    print("\t\t1.Step:\n")
+
+    if strNum[0] == ' ':
+        print(f"\t\t\t\"{strNum}\" -> ", end="")
+
+        while True:
+            if strNum[0] == ' ':
+                strNum = strNum[1:]
+
+            else:
+                break
+
+        print(f"\"{strNum}\"")
+
+    else:
+        print("\t\t\tNo leading white spaces found")
+
+    print()
+
+    print()
 
