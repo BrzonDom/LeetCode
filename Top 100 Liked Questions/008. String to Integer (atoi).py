@@ -150,5 +150,21 @@ for strNum in Input_strNumLst:
 
     print()
 
+    """     Read in next the characters until the next non-digit character      
+                or the end of the input is reached.     """
+    print("\t\t3.Step:")
+
+    digCnt = 0
+
+    for char in strNum:
+
+        if '0' <= char <= '9':
+            digCnt += 1
+
+        else:
+            break
+
+    print(f"\t\t\t\"{strNum}\" -> \"{strNum[:digCnt]}\"")
+
     print()
 
