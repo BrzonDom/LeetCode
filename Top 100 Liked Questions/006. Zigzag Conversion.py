@@ -45,6 +45,7 @@ https://leetcode.com/problems/zigzag-conversion/
         1 <= numRows <= 1000
 """
 
+
 def ZigZagEncode_Prt(strIn, rows):
 
     print("\tString:         ", strIn)
@@ -132,6 +133,10 @@ def ZigZagEncode_Prt(strIn, rows):
                 """     Skip to next column     """
                 break
 
+            if colFillCnt == colFillLen:
+                """     Return the pattern to its beginning     """
+                colFillCnt = 0
+
     print("\n\tZigZag matrix filled:")
     strOut = ""
 
@@ -151,7 +156,8 @@ def ZigZagEncode_Prt(strIn, rows):
 
 Input_encodeLst = [["PAYPALISHIRING", 3],
                    ["PAYPALISHIRING", 4],
-                   ["A", 1]]
+                   ["A", 1],
+                   ["AB", 1]]
 
 # print("Driver print:\n")
 #
@@ -253,6 +259,10 @@ for encode in Input_encodeLst:
 
                 """     Skip to next column     """
                 break
+
+            if colFillCnt == colFillLen:
+                """     Return the pattern to its beginning     """
+                colFillCnt = 0
 
     print("\n\tZigZag matrix filled:")
     strOut = ""
