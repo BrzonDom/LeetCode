@@ -60,8 +60,15 @@ for num in Input_numLst:
     print("\t\tStr num.:", strNum)
     print()
 
-    numOut = pol * int(strNum[::-1])
+    numOut = int(strNum[::-1])
 
-    print("\tOut num.:", numOut)
+    if pol == 1 and numOut < (2**31)-1:
+        print("\tOut num.:", numOut)
+
+    elif pol == -1 and numOut < (2**31):
+        print("\tOut num.:", pol * numOut)
+    else:
+        print("\tOut num.:", 0)
+        print("\t\tOut of int range !")
 
     print("\n")
