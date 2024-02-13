@@ -72,14 +72,15 @@ for encode in Input_encodeLst:
     print("\tNum. of rows.:  ", rows)
     print()
 
+    """     Pattern for filling up the ZigZag matrix     
+                1. it fills the first column with num. of letters as num. of rows   """
     colFill = [rows]
 
-    if rows > 1:
-        for zigFill in range(rows-2):
-            colFill.append(1)
+    for zigFill in range(rows-2):
+        """     2. 3... it fills the rest of the columns in pattern with
+                    a single letter     """
+        colFill.append(1)
 
-    # print("\t", colFill)
-    # print()
 
     colCnt = 0
     colFillCnt = 0
@@ -91,6 +92,7 @@ for encode in Input_encodeLst:
         colFillCnt += 1
 
         if colFillCnt == colFillLen:
+            """     Return the pattern to its beginning     """
             colFillCnt = 0
 
     print("\tNum. of cols.:  ", colCnt)
