@@ -52,10 +52,10 @@ Input_encodeLst = [["PAYPALISHIRING", 3],
 # print("Driver print:\n")
 #
 # for encode in Input_encodeLst:
-#     str = encode[0]
+#     strIn = encode[0]
 #     rows = encode[1]
 #
-#     print("\tString:       ", str)
+#     print("\tString:       ", strIn)
 #     print("\tNum. of rows: ", rows)
 #     print("\n")
 #
@@ -63,11 +63,11 @@ Input_encodeLst = [["PAYPALISHIRING", 3],
 print("Driver solution:\n")
 
 for encode in Input_encodeLst:
-    str = encode[0]
+    strIn = encode[0]
     rows = encode[1]
-    strLen = len(str)
+    strLen = len(strIn)
 
-    print("\tString:         ", str)
+    print("\tIn string:      ", strIn)
     print("\t\tStr. len.:  ", strLen)
     print("\tNum. of rows.:  ", rows)
     print()
@@ -95,14 +95,14 @@ for encode in Input_encodeLst:
             """     Return the pattern to its beginning     """
             colFillCnt = 0
 
-    strLen = len(str)
+    strLen = len(strIn)
     cols = colCnt
 
     print("\tNum. of cols.:  ", colCnt)
     print()
     print("\tCol fill pattern:", colFill)
     print()
-    print("\tZigZag matrix:\n")
+    print("\tZigZag matrix slots:\n")
 
     zzMat = [[' ' for col in range(cols)] for row in range(rows)]
 
@@ -119,13 +119,13 @@ for encode in Input_encodeLst:
                 break
 
             if colFillCnt == 0:
-                zzMat[r][c] = str[fillCnt]
+                zzMat[r][c] = strIn[fillCnt]
                 fillCnt += 1
                 if r == rows-1:
                     colFillCnt += 1
 
             elif r == rows-1 - colFillCnt:
-                zzMat[r][c] = str[fillCnt]
+                zzMat[r][c] = strIn[fillCnt]
                 fillCnt += 1
                 colFillCnt += 1
 
@@ -134,11 +134,23 @@ for encode in Input_encodeLst:
 
                 break
 
-    print("\n\tZigZag matrix filled:\n")
+    print("\n\tZigZag matrix filled:")
+    strOut = ""
+
     for row in zzMat:
-        print("\n", end="\t\t")
+        print("\n", end="\t\t ")
         for col in row:
             print(col, end=" ")
+            if col != " ":
+                strOut += col
+    print("\n")
+
+    print("\tOut string:", strOut)
+
+
+
 
     print("\n")
+
+
 
