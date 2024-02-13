@@ -105,6 +105,8 @@ for strNum in Input_strNumLst:
     print(f"\tIn str num.: \"{strNum}\"")
     print()
 
+    In_str = strNum
+
     """     Read in and ignore any leading whitespace.  """
     print("\t\t1.Step:")
 
@@ -201,7 +203,13 @@ for strNum in Input_strNumLst:
         print("\t\t\tNumber within the limits of integer range")
     print()
 
-    print()
+    """     Return the integer as the final result.     """
+    print("\t\t6.Step:")
 
-    print()
+    Out_num = num
 
+    print(f"\t\t\tNum: {num}")
+    print()
+    print(f"\t\t\tIn strNum: \"{In_str}\"")
+    print(f"\t\t\tOut num:    {Out_num}")
+    print("\n")
