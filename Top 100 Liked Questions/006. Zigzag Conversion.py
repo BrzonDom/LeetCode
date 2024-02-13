@@ -46,15 +46,64 @@ https://leetcode.com/problems/zigzag-conversion/
 """
 
 Input_encodeLst = [["PAYPALISHIRING", 3],
-                   ["PAYPALISHIRING", 2],
+                   ["PAYPALISHIRING", 4],
                    ["A", 1]]
 
-print("Driver print:\n")
+# print("Driver print:\n")
+#
+# for encode in Input_encodeLst:
+#     str = encode[0]
+#     rows = encode[1]
+#
+#     print("\tString:       ", str)
+#     print("\tNum. of rows: ", rows)
+#     print("\n")
+#
+
+print("Driver solution:\n")
 
 for encode in Input_encodeLst:
     str = encode[0]
     rows = encode[1]
+    strLen = len(str)
 
-    print("\tString:       ", str)
-    print("\tNum. of rows: ", rows)
+    print("\tString:         ", str)
+    print("\t\tStr. len.:  ", strLen)
+    print("\tNum. of rows.:  ", rows)
+    print()
+
+    colFill = [rows]
+
+    if rows > 1:
+        for zigFill in range(rows-2):
+            colFill.append(1)
+
+    # print("\t", colFill)
+    # print()
+
+    colCnt = 0
+    colFillCnt = 0
+    colFillLen = len(colFill)
+
+    while strLen > 0:
+        strLen -= colFill[colFillCnt]
+        colCnt += 1
+        colFillCnt += 1
+
+        if colFillCnt == colFillLen:
+            colFillCnt = 0
+
+    print("\tNum. of cols.:  ", colCnt)
+    print()
+    print("\tCol fill pattern:", colFill)
+    print()
+    print("\tZigZag matrix:\n")
+
+    zigMat = [[' ' for col in range(colCnt)] for row in range(rows)]
+
+    for row in zigMat:
+        print("\t\t", row)
+
+
     print("\n")
+
