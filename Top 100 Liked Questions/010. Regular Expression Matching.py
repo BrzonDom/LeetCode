@@ -51,39 +51,58 @@ def regExpMatch_Prt(txt, pat):
     print("\tPat.:", pat)
     print()
 
-    p = 0
-    match = True
+    match = False
 
-    for char in txt:
-
-        if p >= len(pat):
-            match = False
+    for pS in range(len(pat)):
+        # print("\t", pat[pS:])
+        if match:
             break
 
-        if char == pat[p]:
-            p += 1
-            continue
+        patS = pat[pS:]
+        p = 0
+        match = True
 
-        elif pat[p] == '.':
-            p += 1
-            continue
+        for char in txt:
 
-        elif pat[p] == '*':
+            if p >= len(patS):
+                match = False
+                break
 
-            if char == pat[p - 1]:
-                continue
+            if char == patS[p]:
+                p += 1
 
-            elif pat[p - 1] == '.':
-                continue
+            elif patS[p] == '.':
+                p += 1
 
-        match = False
+            elif patS[p] == '*':
+
+                if p - 1 >= 0:
+
+                    if char == patS[p - 1]:
+                        p += 0
+
+                    elif patS[p - 1] == '.':
+                        p += 0
+
+                    else:
+                        p += 1
+
+                else:
+                    match = False
+                    break
+
+            else:
+                match = False
+                break
 
     if match:
         print("\t\tStrings DO match")
+        print("\t\t\tUsing pattern:", patS)
+        print("\n")
+
     else:
         print("\t\tStrings DON'T match")
-
-    print("\n")
+        print("\n")
 
 
 Input_strsLst = [["aa", "a"],
@@ -92,7 +111,7 @@ Input_strsLst = [["aa", "a"],
                  ["aab", "c*a*b"],
                  ["aabbb", "aab*"]]
 
-strsLst = Input_strsLst[3:]
+strsLst = Input_strsLst
 
 print("Driver print:\n")
 
@@ -142,14 +161,19 @@ for strPat in strsLst:
             elif patS[p] == '*':
 
                 if p-1 >= 0:
+
                     if char == patS[p-1]:
                         p += 0
 
                     elif patS[p-1] == '.':
                         p += 0
 
+                    else:
+                        p += 1
+
                 else:
-                    p += 1
+                    match = False
+                    break
 
             else:
                 match = False
@@ -163,3 +187,12 @@ for strPat in strsLst:
     else:
         print("\t\tStrings DON'T match")
         print("\n")
+
+print("Function solution:\n")
+
+for strPat in strsLst:
+
+    txt = strPat[0]
+    pat = strPat[1]
+
+    regExpMatch_Prt(txt, pat)
