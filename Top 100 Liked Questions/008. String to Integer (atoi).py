@@ -90,27 +90,36 @@ https://leetcode.com/problems/string-to-integer-atoi/description/
 
 def myAtoi_Sol(strNum):
 
-    if strNum[0] == ' ':
+    if len(strNum):
+        if strNum[0] == ' ':
 
-        while True:
-            if strNum[0] == ' ':
-                strNum = strNum[1:]
+            while True:
+                if strNum[0] == ' ':
+                    strNum = strNum[1:]
 
-            else:
-                break
+                    if len(strNum) == 0:
+                        return 0
+
+                else:
+                    break
+
+    else:
+        return 0
 
     negat = False
 
-    if len(strNum):
-        if strNum[0] == '-':
+    if strNum[0] == '-':
 
-            negat = True
-            strNum = strNum[1:]
+        negat = True
+        strNum = strNum[1:]
 
-        elif strNum[0] == '+':
+    elif strNum[0] == '+':
 
-            negat = False
-            strNum = strNum[1:]
+        negat = False
+        strNum = strNum[1:]
+
+    if len(strNum) == 0:
+        return 0
 
     digCnt = 0
 
