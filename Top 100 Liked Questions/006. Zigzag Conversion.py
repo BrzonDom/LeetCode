@@ -45,6 +45,110 @@ https://leetcode.com/problems/zigzag-conversion/
         1 <= numRows <= 1000
 """
 
+def ZigZagEncode_Prt(strIn, rows):
+
+    print("\tString:         ", strIn)
+
+    strLen = len(strIn)
+    print("\t\tStr. len.:  ", strLen)
+    print("\tNum. of rows.:  ", rows)
+    print()
+
+    """     Pattern for filling up the ZigZag matrix     
+                1. it fills the first column with num. of letters as num. of rows   """
+    colFill = [rows]
+
+    for zigFill in range(rows-2):
+        """     2. 3... it fills the rest of the columns in pattern with
+                    a single letter     """
+        colFill.append(1)
+
+    """     colCnt ~ count of needed columns    """
+    colCnt = 0
+    """     colFillCnt ~ count of the pattern   """
+    colFillCnt = 0
+    """     colFillLen ~ length of the pattern  """
+    colFillLen = len(colFill)
+
+    while strLen > 0:
+        strLen -= colFill[colFillCnt]
+        colCnt += 1
+        colFillCnt += 1
+
+        if colFillCnt == colFillLen:
+            """     Return the pattern to its beginning     """
+            colFillCnt = 0
+
+    strLen = len(strIn)
+    cols = colCnt
+
+    print("\tNum. of cols.:  ", colCnt)
+    print()
+    print("\tCol fill pattern:", colFill)
+    print()
+    print("\tZigZag matrix slots:\n")
+
+    zzMat = [[' ' for col in range(cols)] for row in range(rows)]
+
+    for row in zzMat:
+        print("\t\t", row)
+
+    """     colFillCnt ~ count of the pattern   """
+    colFillCnt = 0
+    """     fillCnt ~ count of used characters  """
+    fillCnt = 0
+
+    for c in range(cols):
+        for r in range(rows):
+
+            if fillCnt >= strLen:
+                """     If all the characters from In string were used """
+                break
+
+            if colFillCnt == 0:
+                """     1. pattern numb.
+                            fills the entire column     """
+
+                zzMat[r][c] = strIn[fillCnt]
+                fillCnt += 1
+
+                if r == rows-1:
+                    """     When column filled
+                                shift to next pattern numb.     """
+                    colFillCnt += 1
+
+            elif r == rows-1 - colFillCnt:
+                """     If matching row for n. pattern numb.
+                            fill the space      """
+
+                zzMat[r][c] = strIn[fillCnt]
+                fillCnt += 1
+                colFillCnt += 1
+
+                if colFillCnt == colFillLen:
+                    """     Return the pattern to its beginning     """
+                    colFillCnt = 0
+
+                """     Skip to next column     """
+                break
+
+    print("\n\tZigZag matrix filled:")
+    strOut = ""
+
+    for row in zzMat:
+        print("\n", end="\t\t ")
+        for col in row:
+            print(col, end=" ")
+            if col != " ":
+                strOut += col
+    print("\n")
+
+    print("\tOut string:", strOut)
+    print()
+
+    return strOut
+
+
 Input_encodeLst = [["PAYPALISHIRING", 3],
                    ["PAYPALISHIRING", 4],
                    ["A", 1]]
@@ -111,7 +215,9 @@ for encode in Input_encodeLst:
     for row in zzMat:
         print("\t\t", row)
 
+    """     colFillCnt ~ count of the pattern   """
     colFillCnt = 0
+    """     fillCnt ~ count of used characters  """
     fillCnt = 0
 
     for c in range(cols):
@@ -163,3 +269,11 @@ for encode in Input_encodeLst:
 
     print("\n")
 
+print("Function solution:\n")
+
+for encode in Input_encodeLst:
+    strIn = encode[0]
+    rows = encode[1]
+
+    strOut = ZigZagEncode_Prt(strIn, rows)
+    print("\t\tOut string: ", strOut)
