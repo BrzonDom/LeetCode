@@ -35,35 +35,47 @@ def reverInt_Prt(num):
     print()
 
     if num < 0:
+        """     For a negative number   """
         pol = -1
         strNum = str(num)[1:]
 
     elif num > 0:
+        """     For a postive number   """
         pol = 1
         strNum = str(num)
 
     else:
+        """     For 0   """
         print("\tOut num.:", num)
         print()
         return num
 
+    """     int number converted to str number   """
     print("\t\tStr num.:", strNum)
     print()
 
+    """     str number converted to int number   """
     numOut = int(strNum[::-1])
 
     if pol == 1 and numOut < (2**31)-1:
+        """     For a positive number within range of int   """
+
         print("\tOut num.:", numOut)
         print()
         return numOut
 
     elif pol == -1 and numOut < (2**31):
+        """     For a negative number within range of int   """
+
         numOut *= pol
 
         print("\tOut num.:", numOut)
         print()
         return numOut
+
     else:
+        """     For a number outside range of int   """
+
         print("\tOut num.:", 0)
         print("\t\tOut of int range !")
         print()
