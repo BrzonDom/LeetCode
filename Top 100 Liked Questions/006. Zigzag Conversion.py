@@ -47,7 +47,7 @@ https://leetcode.com/problems/zigzag-conversion/
 
 def ZigZagEncode_Sol(strIn, rows):
 
-    if rows == 1:
+    if rows == 1 or rows >= len(strIn):
         return strIn
 
 
