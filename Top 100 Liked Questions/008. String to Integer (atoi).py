@@ -225,9 +225,11 @@ def myAtoi_Prt(strNum):
 Input_strNumLst = ["42", "   -42", "4193 with words",
                    "     -a", "  2147483650"]
 
+strNumLst = Input_strNumLst[:3]
+
 print("Driver print:\n")
 
-for strNum in Input_strNumLst:
+for strNum in strNumLst:
 
     print(f"\tIn str num.: \"{strNum}\"")
     print()
@@ -348,8 +350,9 @@ for strNum in Input_strNumLst:
     print(f"\t\t\tOut num:    {Out_num}")
     print("\n")
 
+print("Function solution:\n")
 
-for strNum in Input_strNumLst:
+for strNum in strNumLst:
 
     Out_num = myAtoi_Prt(strNum)
 
