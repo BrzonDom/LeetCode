@@ -45,6 +45,75 @@ https://leetcode.com/problems/zigzag-conversion/
         1 <= numRows <= 1000
 """
 
+def ZigZagEncode_Sol(strIn, rows):
+
+    if rows == 1:
+        return strIn
+
+
+    strLen = len(strIn)
+
+    colFill = [rows]
+
+    for zigFill in range(rows - 2):
+        colFill.append(1)
+
+    colCnt = 0
+    colFillCnt = 0
+    colFillLen = len(colFill)
+
+    while strLen > 0:
+        strLen -= colFill[colFillCnt]
+        colCnt += 1
+        colFillCnt += 1
+
+        if colFillCnt == colFillLen:
+            colFillCnt = 0
+
+    strLen = len(strIn)
+    cols = colCnt
+
+    zzMat = [[' ' for col in range(cols)] for row in range(rows)]
+
+    colFillCnt = 0
+    fillCnt = 0
+
+    for c in range(cols):
+        for r in range(rows):
+
+            if fillCnt >= strLen:
+                break
+
+            if colFillCnt == 0:
+                zzMat[r][c] = strIn[fillCnt]
+                fillCnt += 1
+
+                if r == rows-1:
+                    colFillCnt += 1
+
+            elif r == rows - 1 - colFillCnt:
+                zzMat[r][c] = strIn[fillCnt]
+                fillCnt += 1
+                colFillCnt += 1
+
+                if colFillCnt == colFillLen:
+                    colFillCnt = 0
+
+                break
+
+            if colFillCnt == colFillLen:
+                colFillCnt = 0
+
+            strOut = ""
+
+            for row in zzMat:
+                for col in row:
+
+                    if col != " ":
+                        strOut += col
+
+            return strOut
+
 
 def ZigZagEncode_Prt(strIn, rows):
 
@@ -285,5 +354,8 @@ for encode in Input_encodeLst:
     strIn = encode[0]
     rows = encode[1]
 
-    strOut = ZigZagEncode_Prt(strIn, rows)
+    ZigZagEncode_Prt(strIn, rows)
+
+    strOut = ZigZagEncode_Sol(strIn, rows)
     print("\t\tOut string: ", strOut)
+
