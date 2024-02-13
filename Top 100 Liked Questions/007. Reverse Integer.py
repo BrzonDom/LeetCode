@@ -29,6 +29,47 @@ https://leetcode.com/problems/reverse-integer/description/
         -2³¹ <= x <= 2³¹ - 1
 """
 
+def reverInt_Prt(num):
+
+    print("\tIn num.:", num)
+    print()
+
+    if num < 0:
+        pol = -1
+        strNum = str(num)[1:]
+
+    elif num > 0:
+        pol = 1
+        strNum = str(num)
+
+    else:
+        print("\tOut num.:", num)
+        print()
+        return num
+
+    print("\t\tStr num.:", strNum)
+    print()
+
+    numOut = int(strNum[::-1])
+
+    if pol == 1 and numOut < (2**31)-1:
+        print("\tOut num.:", numOut)
+        print()
+        return numOut
+
+    elif pol == -1 and numOut < (2**31):
+        numOut *= pol
+
+        print("\tOut num.:", numOut)
+        print()
+        return numOut
+    else:
+        print("\tOut num.:", 0)
+        print("\t\tOut of int range !")
+        print()
+        return 0
+
+
 Input_numLst = [123, -123, 120]
 
 print("Driver print:\n")
@@ -71,4 +112,12 @@ for num in Input_numLst:
         print("\tOut num.:", 0)
         print("\t\tOut of int range !")
 
+    print("\n")
+
+print("Function solution:\n")
+
+for num in Input_numLst:
+
+    outNum = reverInt_Prt(num)
+    print("\t\tOut num.:", outNum)
     print("\n")
