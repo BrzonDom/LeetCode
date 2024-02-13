@@ -45,7 +45,27 @@ https://leetcode.com/problems/zigzag-conversion/
         1 <= numRows <= 1000
 """
 
-def ZigZagEncode_Sol(strIn, rows):
+def ZigZagEncodeV2_Sol(strIn, rows):
+
+    if rows == 1 or rows >= len(strIn):
+        return strIn
+
+    rowMat = [''] * rows
+
+    direct = 1
+    row = 0
+
+    for char in strIn:
+        rowMat[row] += char
+        row += direct
+
+        if row == 0 or row == rows-1:
+            direct *= -1
+
+    return ''.join(rowMat)
+
+
+def ZigZagEncodeV1_Sol(strIn, rows):
 
     if rows == 1 or rows >= len(strIn):
         return strIn
@@ -348,7 +368,7 @@ for encode in Input_encodeLst:
 
     print("\n")
 
-print("Function solution:\n")
+print("1. Function solution:\n")
 
 for encode in Input_encodeLst:
     strIn = encode[0]
@@ -356,6 +376,24 @@ for encode in Input_encodeLst:
 
     ZigZagEncode_Prt(strIn, rows)
 
-    strOut = ZigZagEncode_Sol(strIn, rows)
+    strOut = ZigZagEncodeV1_Sol(strIn, rows)
     print("\t\tOut string: ", strOut)
+    print("\n")
 
+
+print("2. Function solution:\n")
+
+for encode in Input_encodeLst:
+    strIn = encode[0]
+    rows = encode[1]
+
+    strLen = len(strIn)
+
+    print("\tIn string:      ", strIn)
+    print("\t\tStr. len.:  ", strLen)
+    print("\tNum. of rows.:  ", rows)
+    print()
+
+    strOut = ZigZagEncodeV2_Sol(strIn, rows)
+    print("\t\tOut string: ", strOut)
+    print("\n")
