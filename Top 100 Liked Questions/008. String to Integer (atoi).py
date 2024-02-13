@@ -88,6 +88,60 @@ https://leetcode.com/problems/string-to-integer-atoi/description/
 
 """
 
+def myAtoi_Sol(strNum):
+
+    if strNum[0] == ' ':
+
+        while True:
+            if strNum[0] == ' ':
+                strNum = strNum[1:]
+
+            else:
+                break
+
+    negat = False
+
+    if len(strNum):
+        if strNum[0] == '-':
+
+            negat = True
+            strNum = strNum[1:]
+
+        elif strNum[0] == '+':
+
+            negat = False
+            strNum = strNum[1:]
+
+    digCnt = 0
+
+    for char in strNum:
+
+        if '0' <= char <= '9':
+            digCnt += 1
+
+        else:
+            break
+
+    strNum = strNum[:digCnt]
+
+    if len(strNum):
+        num = int(strNum)
+
+        if negat:
+            num *= -1
+
+    else:
+        return 0
+
+    if num < -(2 ** 31):
+        return -(2 ** 31)
+
+    elif num > (2 ** 31) - 1:
+        return (2 ** 31) - 1
+
+    return num
+
+
 def myAtoi_Prt(strNum):
 
     print(f"\tIn str num.: \"{strNum}\"")
@@ -357,4 +411,8 @@ for strNum in strNumLst:
     Out_num = myAtoi_Prt(strNum)
 
     print(f"\t\t\t\tOut num: {Out_num}")
+
+    Out_num = myAtoi_Sol(strNum)
+    print(f"\t\t\t\tOut num: {Out_num}")
+
     print("\n")
