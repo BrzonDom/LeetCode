@@ -81,9 +81,11 @@ for encode in Input_encodeLst:
                     a single letter     """
         colFill.append(1)
 
-
+    """     colCnt ~ count of needed columns    """
     colCnt = 0
+    """     colFillCnt ~ count of the pattern   """
     colFillCnt = 0
+    """     colFillLen ~ length of the pattern  """
     colFillLen = len(colFill)
 
     while strLen > 0:
@@ -116,22 +118,34 @@ for encode in Input_encodeLst:
         for r in range(rows):
 
             if fillCnt >= strLen:
+                """     If all the characters from In string were used """
                 break
 
             if colFillCnt == 0:
+                """     1. pattern numb.
+                            fills the entire column     """
+
                 zzMat[r][c] = strIn[fillCnt]
                 fillCnt += 1
+
                 if r == rows-1:
+                    """     When column filled
+                                shift to next pattern numb.     """
                     colFillCnt += 1
 
             elif r == rows-1 - colFillCnt:
+                """     If matching row for n. pattern numb.
+                            fill the space      """
+
                 zzMat[r][c] = strIn[fillCnt]
                 fillCnt += 1
                 colFillCnt += 1
 
                 if colFillCnt == colFillLen:
+                    """     Return the pattern to its beginning     """
                     colFillCnt = 0
 
+                """     Skip to next column     """
                 break
 
     print("\n\tZigZag matrix filled:")
@@ -147,10 +161,5 @@ for encode in Input_encodeLst:
 
     print("\tOut string:", strOut)
 
-
-
-
     print("\n")
-
-
 
