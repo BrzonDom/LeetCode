@@ -105,7 +105,7 @@ for strNum in Input_strNumLst:
     print()
 
     """     Read in and ignore any leading whitespace.  """
-    print("\t\t1.Step:\n")
+    print("\t\t1.Step:")
 
     if strNum[0] == ' ':
         print(f"\t\t\t\"{strNum}\" -> ", end="")
@@ -121,6 +121,32 @@ for strNum in Input_strNumLst:
 
     else:
         print("\t\t\tNo leading white spaces found")
+
+    print()
+
+    """     Check if the next character is '-' or '+'
+                (if not at the end of the string)   """
+    print("\t\t2.Step:")
+
+    pol = True
+
+    if len(strNum):
+        if strNum[0] == '-':
+            pol = False
+            strNum = strNum[1:]
+            print("\t\t\tNegative sign read")
+
+        elif strNum[0] == '+':
+            pol = True
+            strNum = strNum[1:]
+            print("\t\t\tPlus sign read")
+
+        else:
+            print("\t\t\tNo sign read")
+
+
+    else:
+        print("\t\t\tString is empty")
 
     print()
 
