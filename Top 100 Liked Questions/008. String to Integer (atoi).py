@@ -185,6 +185,23 @@ for strNum in Input_strNumLst:
     print(f"\t\t\tNum: {num}")
     print()
 
+    """     If the integer is out of the 32-bit signed integer range [-2³¹, 2³¹ - 1],
+                then clamp the integer so that it remains in the range.     """
+    print("\t\t5.Step:")
+
+    if num < -(2**31):
+        num = -(2**31)
+        print("\t\t\tNumber lesser than low limit of integer range")
+
+    elif num > (2**31)-1:
+        num = (2**31)-1
+        print("\t\t\tNumber greater than high limit of integer range")
+
+    else:
+        print("\t\t\tNumber within the limits of integer range")
+    print()
+
+    print()
 
     print()
 
