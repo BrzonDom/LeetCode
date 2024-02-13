@@ -45,6 +45,56 @@ https://leetcode.com/problems/regular-expression-matching/
 
 """
 
+def regExpMatch_Sol(txt, par):
+
+    match = False
+
+    for pS in range(len(pat)):
+        # print("\t", pat[pS:])
+        if match:
+            return True
+
+
+        patS = pat[pS:]
+        p = 0
+        match = True
+
+        for char in txt:
+
+            if p >= len(patS):
+                match = False
+                break
+
+            if char == patS[p]:
+                p += 1
+
+            elif patS[p] == '.':
+                p += 1
+
+            elif patS[p] == '*':
+
+                if p - 1 >= 0:
+
+                    if char == patS[p - 1]:
+                        p += 0
+
+                    elif patS[p - 1] == '.':
+                        p += 0
+
+                    else:
+                        p += 1
+
+                else:
+                    match = False
+                    break
+
+            else:
+                match = False
+                break
+
+    return False
+
+
 def regExpMatch_Prt(txt, pat):
 
     print("\tStr: ", txt)
@@ -98,11 +148,11 @@ def regExpMatch_Prt(txt, pat):
     if match:
         print("\t\tStrings DO match")
         print("\t\t\tUsing pattern:", patS)
-        print("\n")
+        print()
 
     else:
         print("\t\tStrings DON'T match")
-        print("\n")
+        print()
 
 
 Input_strsLst = [["aa", "a"],
@@ -196,3 +246,12 @@ for strPat in strsLst:
     pat = strPat[1]
 
     regExpMatch_Prt(txt, pat)
+
+    match = regExpMatch_Sol(txt, pat)
+
+    if match:
+        print("\t\t\tStrings DO match")
+    else:
+        print("\t\t\tStrings DON'T match")
+
+    print("\n")
