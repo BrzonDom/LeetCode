@@ -121,8 +121,6 @@ for strPat in strsLst:
     for pS in range(len(pat)):
         # print("\t", pat[pS:])
         if match:
-            print("\t\t", patS)
-            print("\n")
             break
 
         patS = pat[pS:]
@@ -157,45 +155,11 @@ for strPat in strsLst:
                 match = False
                 break
 
-    # for c, char in enumerate(txt):
-    #
-    #     if p >= len(pat):
-    #         match = False
-    #         break
-    #
-        # if char == pat[p]:
-        #     p += 1
-        #
-        # elif pat[p] == '.':
-        #     p += 1
-    #
-    #     elif pat[p] == '*':
-    #
-    #         if char == pat[p-1]:
-    #             continue
-    #
-    #         elif pat[p-1] == '.':
-    #             continue
-    #
-    #     else:
-    #         p += 1
-    #
-    #         if c >= len(txt):
-    #             match = False
-    #             break
-    #
-    # if match:
-    #     print("\t\tStrings DO match")
-    # else:
-    #     print("\t\tStrings DON'T match")
-    #
-    # print("\n")
+    if match:
+        print("\t\tStrings DO match")
+        print("\t\t\tUsing pattern:", patS)
+        print("\n")
 
-# print("Function solution:\n")
-#
-# for strPat in Input_strsLst:
-#
-#     txt = strPat[0]
-#     pat = strPat[1]
-#
-#     regExpMatch_Prt(txt, pat)
+    else:
+        print("\t\tStrings DON'T match")
+        print("\n")
