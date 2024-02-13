@@ -45,16 +45,16 @@ https://leetcode.com/problems/regular-expression-matching/
 
 """
 
-def regExpMatch_Prt(str, pat):
+def regExpMatch_Prt(txt, pat):
 
-    print("\tStr: ", str)
+    print("\tStr: ", txt)
     print("\tPat.:", pat)
     print()
 
     p = 0
     match = True
 
-    for c, char in enumerate(str):
+    for c, char in enumerate(txt):
 
         if p >= len(pat):
             match = False
@@ -95,10 +95,10 @@ print("Driver print:\n")
 
 for strPat in Input_strsLst:
 
-    str = strPat[0]
+    txt = strPat[0]
     pat = strPat[1]
 
-    print("\tStr: ", str)
+    print("\tStr: ", txt)
     print("\tPat.:", pat)
     print("\n")
 
@@ -106,10 +106,10 @@ print("Driver solution:\n")
 
 for strPat in Input_strsLst:
 
-    str = strPat[0]
+    txt = strPat[0]
     pat = strPat[1]
 
-    print("\tStr: ", str)
+    print("\tStr: ", txt)
     print("\tPat.:", pat)
     print()
 
@@ -117,7 +117,7 @@ for strPat in Input_strsLst:
 
     match = True
 
-    for c, char in enumerate(str):
+    for c, char in enumerate(txt):
 
         if p >= len(pat):
             match = False
@@ -152,7 +152,7 @@ print("Function solution:\n")
 
 for strPat in Input_strsLst:
 
-    str = strPat[0]
+    txt = strPat[0]
     pat = strPat[1]
 
-    regExpMatch_Prt(str, pat)
+    regExpMatch_Prt(txt, pat)
