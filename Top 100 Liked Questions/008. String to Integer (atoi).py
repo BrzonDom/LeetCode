@@ -88,7 +88,8 @@ https://leetcode.com/problems/string-to-integer-atoi/description/
 
 """
 
-Input_strNumLst = ["42", "   -42", "4193 with words"]
+Input_strNumLst = ["42", "   -42", "4193 with words",
+                   "     -a"]
 
 print("Driver print:\n")
 
@@ -128,16 +129,16 @@ for strNum in Input_strNumLst:
                 (if not at the end of the string)   """
     print("\t\t2.Step:")
 
-    pol = True
+    negat = False
 
     if len(strNum):
         if strNum[0] == '-':
-            pol = False
+            negat = True
             strNum = strNum[1:]
             print("\t\t\tNegative sign read")
 
         elif strNum[0] == '+':
-            pol = True
+            negat = False
             strNum = strNum[1:]
             print("\t\t\tPlus sign read")
 
@@ -165,6 +166,25 @@ for strNum in Input_strNumLst:
             break
 
     print(f"\t\t\t\"{strNum}\" -> \"{strNum[:digCnt]}\"")
+    strNum = strNum[:digCnt]
+
+    print()
+
+    """     Convert these digits into an integer    
+                If no digits were read, then the integer is 0   """
+    print("\t\t4.Step:")
+
+    if len(strNum):
+        num = int(strNum)
+
+        if negat:
+            num *= -1
+    else:
+        num = 0
+
+    print(f"\t\t\tNum: {num}")
+    print()
+
 
     print()
 
