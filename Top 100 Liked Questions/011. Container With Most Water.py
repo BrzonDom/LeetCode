@@ -55,6 +55,7 @@ for heighs in Input_heighLst:
     print("\n")
 
     maxVol = 0
+    maxVolDim = []
 
     # print(len(heiDim))
 
@@ -69,4 +70,12 @@ for heighs in Input_heighLst:
             vol = min(hei[0], heiBs[0]) * (hei[1] - heiBs[1])
             print(vol)
 
+            if vol >= maxVol:
+                maxVol = vol
+                maxVolDim = [heiBs, hei]
         print()
+
+    print("\tMax volume:", maxVol)
+    print("\t\t", maxVolDim)
+
+    print("\n")
