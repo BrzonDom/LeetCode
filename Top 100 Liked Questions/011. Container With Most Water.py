@@ -54,14 +54,19 @@ for heighs in Input_heighLst:
     print("\t\t", heiDim)
     print("\n")
 
+    maxVol = 0
+
     # print(len(heiDim))
 
     for h in range(len(heiDim)):
         # print(h, end=", ")
 
-        print("\t", heiDim[h], end="\n\t\t")
+        print("\t", heiDim[h])
+        heiBs = heiDim[h]
 
         for hei in heiDim[h+1:]:
-            print(hei, end=" ")
+            print("\t\t", hei, end=": ")
+            vol = min(hei[0], heiBs[0]) * (hei[1] - heiBs[1])
+            print(vol)
 
         print()
