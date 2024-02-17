@@ -40,6 +40,28 @@ https://leetcode.com/problems/container-with-most-water/description/
 Input_heighLst = [[1, 8, 6, 2, 5, 4, 8, 3, 7],
                   [1, 1]]
 
+print("Driver print:\n")
+
 for heighs in Input_heighLst:
     print("\tHeights:", heighs)
     print()
+
+    heiDim = []
+
+    for h, hei in enumerate(heighs):
+        heiDim.append([hei, h])
+
+    print("\t\t", heiDim)
+    print("\n")
+
+    # print(len(heiDim))
+
+    for h in range(len(heiDim)):
+        # print(h, end=", ")
+
+        print("\t", heiDim[h], end="\n\t\t")
+
+        for hei in heiDim[h+1:]:
+            print(hei, end=" ")
+
+        print()
