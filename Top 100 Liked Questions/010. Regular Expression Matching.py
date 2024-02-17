@@ -159,9 +159,10 @@ Input_strsLst = [["aa", "a"],
                  ["aa", "a*"],
                  ["ab", ".*"],
                  ["aab", "c*a*b"],
+                 ["mississippi", "mis*is*ip*."],
                  ["aabbb", "aab*"]]
 
-strsLst = Input_strsLst
+strsLst = Input_strsLst[4:5]
 
 print("Driver print:\n")
 
@@ -194,9 +195,12 @@ for strPat in strsLst:
 
         patS = pat[pS:]
         p = 0
+        pDif = 0
         match = True
 
+
         for char in txt:
+            # debug_pat = patS[p]
 
             if p >= len(patS):
                 match = False
@@ -213,13 +217,14 @@ for strPat in strsLst:
                 if p-1 >= 0:
 
                     if char == patS[p-1]:
-                        p += 0
+                        pDif += 1
 
                     elif patS[p-1] == '.':
-                        p += 0
+                        pDif += 1
 
                     else:
-                        p += 1
+                        p += pDif + 1
+                        pDif = 0
 
                 else:
                     match = False
