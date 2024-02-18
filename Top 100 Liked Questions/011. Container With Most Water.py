@@ -38,7 +38,7 @@ https://leetcode.com/problems/container-with-most-water/description/
 """
 
 
-def contVol_Prt(heights):
+def comb_contVol_Prt(heights):
 
     print("\tHeights:", heights)
     print()
@@ -92,24 +92,6 @@ for heights in Input_heightLst:
     print("\tHeights:", heights)
     print()
 
-    borDim = []
-
-    print("\t\t[height, position]")
-
-    for pos, hei in enumerate(heights):
-        borDim.append([hei, pos])
-
-    print("\t\t", borDim)
-    print("\n")
-
-
-print()
-print("Driver solution:\n")
-
-for heights in Input_heightLst:
-    print("\tHeights:", heights)
-    print()
-
     """     borDim ~ Border dimensions  """
     borDim = []
 
@@ -119,6 +101,14 @@ for heights in Input_heightLst:
 
     print("\t\t", borDim)
     print("\n")
+
+
+print()
+print("1. Driver solution via combinations:\n")
+
+for heights in Input_heightLst:
+    print("\tHeights:", heights)
+    print()
 
     """     maxVol ~ Maximal volume of the container    """
     maxVol = 0
@@ -144,7 +134,7 @@ for heights in Input_heightLst:
             """     pos - posBs ~ Width of the container    """
             print(f"\t\t\tCont. height / width:  {min(hei, heiBs)} / {(pos - posBs)}")
 
-            """     vol ~ Volume of the container   
+            """     vol ~ Volume of the container
                         Volume = Height * Width     """
             vol = min(hei, heiBs) * (pos - posBs)
             print("\t\t\tCont. volume: ", vol)
@@ -159,9 +149,59 @@ for heights in Input_heightLst:
 
     print("\n")
 
+
 print()
-print("Function solution:\n")
+print("1. Function solution via combinations:\n")
 
 for heights in Input_heightLst:
 
-    contVol_Prt(heights)
+    comb_contVol_Prt(heights)
+
+
+print()
+print("2. Driver solution via enclosing:\n")
+
+for heights in Input_heightLst:
+
+    print("\tHeights:", heights)
+    print()
+
+    """     maxVol ~ Maximal volume of the container    """
+    maxVol = 0
+    """     maxVolDim ~ Dimensions of the maximal volume of the container"""
+    maxVolDim = []
+
+    posL = 0
+    posR = len(heights) - 1
+
+    while posL != posR:
+
+        heiL = heights[posL]
+        heiR = heights[posR]
+
+        print(f"\t\tContainer boarders:  [{heiL}, {posL}] [{heiR}, {posR}]")
+
+        height = min(heiL, heiR)
+        width = posR - posL
+        volume = height * width
+
+        print(f"\t\tContainer volume: {volume}")
+        print(f"\t\t\tContainer width:  {width}")
+        print(f"\t\t\tContainer height: {height}")
+        print()
+
+        if volume > maxVol:
+            maxVol = volume
+            maxVolDim = [height, width]
+
+        if heiL >= heiR:
+            posR -= 1
+        else:
+            posL += 1
+
+    print()
+    print("\tMax cont. volume:", maxVol)
+    print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
+
+
+    print("\n")
