@@ -206,6 +206,102 @@ def romNumConv_Prt(num):
     return romNum
 
 
+def romNumConv_Sol(num):
+
+    romNumCnt = {}
+    romNum = ""
+
+    if 1000 <= num:
+        romNumCnt[1000] = 1
+        num -= 1000
+
+        while 1000 <= num:
+            romNumCnt[1000] += 1
+            num -= 1000
+
+        romNum += romNumCnt[1000] * romCnv[1000]
+
+    if 500 <= num:
+        romNumCnt[500] = 1
+        num -= 500
+
+        romNum += 'D'
+
+    if 100 <= num:
+        romNumCnt[100] = 1
+        num -= 100
+
+        while 100 <= num:
+            romNumCnt[100] += 1
+            num -= 100
+
+        if romNumCnt[100] == 4:
+
+            if 500 in romNumCnt:
+                romNum = romNum[:-1]
+                romNum += "CM"
+
+            else:
+                romNum += "CD"
+
+        else:
+            romNum += romNumCnt[100] * romCnv[100]
+
+    if 50 <= num:
+        romNumCnt[50] = 1
+        num -= 50
+
+        romNum += 'L'
+
+    if 10 <= num:
+        romNumCnt[10] = 1
+        num -= 10
+
+        while 10 <= num:
+            romNumCnt[10] += 1
+            num -= 10
+
+        if romNumCnt[10] == 4:
+
+            if 50 in romNumCnt:
+                romNum = romNum[:-1]
+                romNum += "XC"
+
+            else:
+                romNum += "XL"
+
+        else:
+            romNum += romNumCnt[10] * romCnv[10]
+
+    if 5 <= num:
+        romNumCnt[5] = 1
+        num -= 5
+
+        romNum += 'V'
+
+    if 1 <= num:
+        romNumCnt[1] = 1
+        num -= 1
+
+        while 1 <= num:
+            romNumCnt[1] += 1
+            num -= 1
+
+        if romNumCnt[1] == 4:
+
+            if 5 in romNumCnt:
+                romNum = romNum[:-1]
+                romNum += "IX"
+
+            else:
+                romNum += "IV"
+
+        else:
+            romNum += romNumCnt[1] * romCnv[1]
+
+    return romNum
+
+
 Input_numLst = [3, 58, 1994,
                 14, 39, 1984, 2014, 798]
 
@@ -497,3 +593,12 @@ for num in Input_numLst:
 
     romNumConv_Prt(num)
 
+print()
+print("Function solve solution:\n")
+
+for num in Input_numLst:
+
+    print("\tNum.:     ", num)
+    romNum = romNumConv_Sol(num)
+    print("\tRom. num.:", romNum)
+    print("\n")
