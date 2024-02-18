@@ -37,47 +37,44 @@ https://leetcode.com/problems/container-with-most-water/description/
 
 """
 
+
 def contVol_Prt(heights):
 
     print("\tHeights:", heights)
     print()
-
-    """     borDim ~ Border dimensions  """
-    borDim = []
-
-    print("\t\t[height, position]")
-    for pos, hei in enumerate(heights):
-        borDim.append([hei, pos])
-
-    print("\t\t", borDim)
-    print("\n")
 
     """     maxVol ~ Maximal volume of the container    """
     maxVol = 0
     """     maxVolDim ~ Dimensions of the maximal volume of the container"""
     maxVolDim = []
 
-    for h in range(len(borDim)):
+    for posBs in range(len(heights)):
 
-        """     borBs ~ Base border, 1. border of the container     """
-        borBs = borDim[h]
+        """     posBs ~ Base position, 1. position of a boarder of the container     """
+        """     heiBs ~ Base height, 1. height of a boarder of the container     """
+        heiBs = heights[posBs]
 
-        for bor in borDim[h + 1:]:
-            """     bor ~ Next border, 2. border of the container   """
-            print("\t\t", borBs, bor)
+        """     pos ~ Next position, 2. position of a boarder of the container    """
+        pos = posBs
 
-            """     min(bor[0], borBs[0]) ~ Height of the container     """
-            """     (bor[1] - borBs[1]) ~ Width of the container    """
-            print(f"\t\t\tCont. height / width:  {min(bor[0], borBs[0])} / {(bor[1] - borBs[1])}")
+        for hei in heights[posBs + 1:]:
+            pos += 1
+
+            """     hei ~ Next border, 2. height of a boarder of the container   """
+            print(f"\t\t [{heiBs}, {posBs}] [{hei}, {pos}]")
+
+            """     min(hei, heiBs) ~ Height of the container     """
+            """     pos - posBs ~ Width of the container    """
+            print(f"\t\t\tCont. height / width:  {min(hei, heiBs)} / {(pos - posBs)}")
 
             """     vol ~ Volume of the container   
                         Volume = Height * Width     """
-            vol = min(bor[0], borBs[0]) * (bor[1] - borBs[1])
+            vol = min(hei, heiBs) * (pos - posBs)
             print("\t\t\tCont. volume: ", vol)
 
             if vol >= maxVol:
                 maxVol = vol
-                maxVolDim = [min(bor[0], borBs[0]), bor[1] - borBs[1]]
+                maxVolDim = [min(hei, heiBs), pos - posBs]
         print()
 
     print("\tMax cont. volume:", maxVol)
@@ -99,8 +96,8 @@ for heights in Input_heightLst:
 
     print("\t\t[height, position]")
 
-    for pos, bor in enumerate(heights):
-        borDim.append([bor, pos])
+    for pos, hei in enumerate(heights):
+        borDim.append([hei, pos])
 
     print("\t\t", borDim)
     print("\n")
@@ -128,27 +125,33 @@ for heights in Input_heightLst:
     """     maxVolDim ~ Dimensions of the maximal volume of the container"""
     maxVolDim = []
 
-    for h in range(len(borDim)):
+    for posBs in range(len(heights)):
 
-        """     borBs ~ Base border, 1. border of the container     """
-        borBs = borDim[h]
+        """     posBs ~ Base position, 1. position of a boarder of the container     """
+        """     heiBs ~ Base height, 1. height of a boarder of the container     """
+        heiBs = heights[posBs]
 
-        for bor in borDim[h + 1:]:
-            """     bor ~ Next border, 2. border of the container   """
-            print("\t\t", borBs, bor)
+        """     pos ~ Next position, 2. position of a boarder of the container    """
+        pos = posBs
 
-            """     min(bor[0], borBs[0]) ~ Height of the container     """
-            """     (bor[1] - borBs[1]) ~ Width of the container    """
-            print(f"\t\t\tCont. height / width:  {min(bor[0], borBs[0])} / {(bor[1] - borBs[1])}")
+        for hei in heights[posBs + 1:]:
+            pos += 1
+
+            """     hei ~ Next border, 2. height of a boarder of the container   """
+            print(f"\t\t [{heiBs}, {posBs}] [{hei}, {pos}]")
+
+            """     min(hei, heiBs) ~ Height of the container     """
+            """     pos - posBs ~ Width of the container    """
+            print(f"\t\t\tCont. height / width:  {min(hei, heiBs)} / {(pos - posBs)}")
 
             """     vol ~ Volume of the container   
                         Volume = Height * Width     """
-            vol = min(bor[0], borBs[0]) * (bor[1] - borBs[1])
+            vol = min(hei, heiBs) * (pos - posBs)
             print("\t\t\tCont. volume: ", vol)
 
             if vol >= maxVol:
                 maxVol = vol
-                maxVolDim = [min(bor[0], borBs[0]), bor[1] - borBs[1]]
+                maxVolDim = [min(hei, heiBs), pos - posBs]
         print()
 
     print("\tMax cont. volume:", maxVol)
