@@ -37,6 +37,45 @@ https://leetcode.com/problems/container-with-most-water/description/
 
 """
 
+def contVol_Prt(heigh):
+
+    print("\tHeights:", heighs)
+    print()
+
+    heiDim = []
+
+    print("\t\t[height, position]")
+    for h, hei in enumerate(heighs):
+        heiDim.append([hei, h])
+
+    print("\t\t", heiDim)
+    print("\n")
+
+    maxVol = 0
+    maxVolDim = []
+
+    for h in range(len(heiDim)):
+
+        heiBs = heiDim[h]
+
+        for hei in heiDim[h+1:]:
+            print("\t\t", heiBs, hei)
+            print(f"\t\t\tCont. height / width:  {min(hei[0], heiBs[0])} / {(hei[1] - heiBs[1])}")
+
+            vol = min(hei[0], heiBs[0]) * (hei[1] - heiBs[1])
+            print("\t\t\tCont. volume: ", vol)
+
+            if vol >= maxVol:
+                maxVol = vol
+                maxVolDim = [min(hei[0], heiBs[0]), hei[1] - heiBs[1]]
+        print()
+
+    print("\tMax cont. volume:", maxVol)
+    print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
+
+    print("\n")
+
+
 Input_heighLst = [[1, 8, 6, 2, 5, 4, 8, 3, 7],
                   [1, 1]]
 
@@ -76,10 +115,8 @@ for heighs in Input_heighLst:
     maxVol = 0
     maxVolDim = []
 
-
     for h in range(len(heiDim)):
 
-        # print("\t", heiDim[h])
         heiBs = heiDim[h]
 
         for hei in heiDim[h+1:]:
@@ -98,3 +135,10 @@ for heighs in Input_heighLst:
     print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
 
     print("\n")
+
+print()
+print("Function solution:\n")
+
+for heighs in Input_heighLst:
+
+    contVol_Prt(heighs)
