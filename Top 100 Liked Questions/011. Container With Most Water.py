@@ -82,6 +82,8 @@ def comb_contVol_Prt(heights):
 
     print("\n")
 
+    return maxVol
+
 
 def encl_contVol_Prt(heights):
 
@@ -126,6 +128,8 @@ def encl_contVol_Prt(heights):
     print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
 
     print("\n")
+
+    return maxVol
 
 
 Input_heightLst = [[1, 8, 6, 2, 5, 4, 8, 3, 7],
