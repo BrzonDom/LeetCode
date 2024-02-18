@@ -48,6 +48,25 @@ for heighs in Input_heighLst:
 
     heiDim = []
 
+    print("\t\t[height, position]")
+
+    for h, hei in enumerate(heighs):
+        heiDim.append([hei, h])
+
+    print("\t\t", heiDim)
+    print("\n")
+
+
+print()
+print("Driver solution:\n")
+
+for heighs in Input_heighLst:
+    print("\tHeights:", heighs)
+    print()
+
+    heiDim = []
+
+    print("\t\t[height, position]")
     for h, hei in enumerate(heighs):
         heiDim.append([hei, h])
 
@@ -57,25 +76,25 @@ for heighs in Input_heighLst:
     maxVol = 0
     maxVolDim = []
 
-    # print(len(heiDim))
 
     for h in range(len(heiDim)):
-        # print(h, end=", ")
 
-        print("\t", heiDim[h])
+        # print("\t", heiDim[h])
         heiBs = heiDim[h]
 
         for hei in heiDim[h+1:]:
-            print("\t\t", hei, end=": ")
+            print("\t\t", heiBs, hei)
+            print(f"\t\t\tCont. height / width:  {min(hei[0], heiBs[0])} / {(hei[1] - heiBs[1])}")
+
             vol = min(hei[0], heiBs[0]) * (hei[1] - heiBs[1])
-            print(vol)
+            print("\t\t\tCont. volume: ", vol)
 
             if vol >= maxVol:
                 maxVol = vol
-                maxVolDim = [heiBs, hei]
+                maxVolDim = [min(hei[0], heiBs[0]), hei[1] - heiBs[1]]
         print()
 
-    print("\tMax volume:", maxVol)
-    print("\t\t", maxVolDim)
+    print("\tMax cont. volume:", maxVol)
+    print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
 
     print("\n")
