@@ -72,8 +72,13 @@ romCnv = {
 print("Roman numeral conversion:\n")
 
 for decNum in romCnv:
-    print(f"\t{decNum:4} = {romCnv[decNum]}")
+    print(f"\t{decNum:>4} = {romCnv[decNum]}")
 print("\n")
+
+# for decNum in list(romCnv)[::-1]:
+#
+#     print(type(decNum), decNum)
+# print()
 
 
 print("Driver print:\n")
@@ -84,76 +89,89 @@ for num in Input_numLst:
 
     romNumCnt = {}
 
-    if 1000 <= num:
-        romNumCnt[1000] = 1
+    for decNum in list(romCnv)[::-1]:
 
-        num -= 1000
-        while 1000 <= num:
-            romNumCnt[1000] += 1
-            num -= 1000
+        if decNum <= num:
+            romNumCnt[decNum] = 1
 
-        print(f"\t\t{romCnv[1000]} = 1000 : {romNumCnt[1000]} =>", romNumCnt[1000] * romCnv[1000])
+            num -= decNum
+            while decNum <= num:
+                romNumCnt[decNum] += 1
+                num -= decNum
+
+            print(f"\t\t{romCnv[decNum]} = {decNum:<4} : {romNumCnt[decNum]} =>", romNumCnt[decNum] * romCnv[decNum])
 
 
-    if 500 <= num:
-        romNumCnt[500] = 1
-
-        num -= 500
-        while 500 <= num:
-            romNumCnt[500] += 1
-            num -= 500
-
-        print(f"\t\t{romCnv[500]} = 500  : {romNumCnt[500]} =>", romNumCnt[500] * romCnv[500])
-
-    if 100 <= num:
-        romNumCnt[100] = 1
-
-        num -= 100
-        while 100 <= num:
-            romNumCnt[100] += 1
-            num -= 100
-
-        print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} =>", romNumCnt[100] * romCnv[100])
-
-    if 50 <= num:
-        romNumCnt[50] = 1
-
-        num -= 50
-        while 50 <= num:
-            romNumCnt[50] += 1
-            num -= 50
-
-        print(f"\t\t{romCnv[50]} = 50   : {romNumCnt[50]} =>", romNumCnt[50] * romCnv[50])
-
-    if 10 <= num:
-        romNumCnt[10] = 1
-
-        num -= 10
-        while 10 <= num:
-            romNumCnt[10] += 1
-            num -= 10
-
-        print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} =>", romNumCnt[10] * romCnv[10])
-
-    if 5 <= num:
-        romNumCnt[5] = 1
-
-        num -= 5
-        while 5 <= num:
-            romNumCnt[5] += 1
-            num -= 5
-
-        print(f"\t\t{romCnv[5]} = 5    : {romNumCnt[5]} =>", romNumCnt[5] * romCnv[5])
-
-    if 1 <= num:
-        romNumCnt[1] = 1
-
-        num -= 1
-        while 1 <= num:
-            romNumCnt[1] += 1
-            num -= 1
-
-        print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} =>", romNumCnt[1] * romCnv[1])
+    # if 1000 <= num:
+    #     romNumCnt[1000] = 1
+    #
+    #     num -= 1000
+    #     while 1000 <= num:
+    #         romNumCnt[1000] += 1
+    #         num -= 1000
+    #
+    #     print(f"\t\t{romCnv[1000]} = 1000 : {romNumCnt[1000]} =>", romNumCnt[1000] * romCnv[1000])
+    #
+    #
+    # if 500 <= num:
+    #     romNumCnt[500] = 1
+    #
+    #     num -= 500
+    #     while 500 <= num:
+    #         romNumCnt[500] += 1
+    #         num -= 500
+    #
+    #     print(f"\t\t{romCnv[500]} = 500  : {romNumCnt[500]} =>", romNumCnt[500] * romCnv[500])
+    #
+    # if 100 <= num:
+    #     romNumCnt[100] = 1
+    #
+    #     num -= 100
+    #     while 100 <= num:
+    #         romNumCnt[100] += 1
+    #         num -= 100
+    #
+    #     print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} =>", romNumCnt[100] * romCnv[100])
+    #
+    # if 50 <= num:
+    #     romNumCnt[50] = 1
+    #
+    #     num -= 50
+    #     while 50 <= num:
+    #         romNumCnt[50] += 1
+    #         num -= 50
+    #
+    #     print(f"\t\t{romCnv[50]} = 50   : {romNumCnt[50]} =>", romNumCnt[50] * romCnv[50])
+    #
+    # if 10 <= num:
+    #     romNumCnt[10] = 1
+    #
+    #     num -= 10
+    #     while 10 <= num:
+    #         romNumCnt[10] += 1
+    #         num -= 10
+    #
+    #     print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} =>", romNumCnt[10] * romCnv[10])
+    #
+    # if 5 <= num:
+    #     romNumCnt[5] = 1
+    #
+    #     num -= 5
+    #     while 5 <= num:
+    #         romNumCnt[5] += 1
+    #         num -= 5
+    #
+    #     print(f"\t\t{romCnv[5]} = 5    : {romNumCnt[5]} =>", romNumCnt[5] * romCnv[5])
+    #
+    # if 1 <= num:
+    #     romNumCnt[1] = 1
+    #
+    #     num -= 1
+    #     while 1 <= num:
+    #         romNumCnt[1] += 1
+    #         num -= 1
+    #
+    #     print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} =>", romNumCnt[1] * romCnv[1])
 
     print()
     print("\t\t", romNumCnt)
