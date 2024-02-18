@@ -229,7 +229,16 @@ for num in Input_numLst:
             romNumCnt[100] += 1
             num -= 100
 
-        print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} =>", romNumCnt[100] * romCnv[100])
+        """     C can be placed before D (500) and M (1000) to make 400 and 900.    """
+        if romNumCnt[100] == 4 and 500 in romNumCnt:
+            print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} ( + {romCnv[500]} = 500) => CM")
+
+        elif romNumCnt[100] == 4:
+            print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} => CD")
+
+        else:
+            print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} =>", romNumCnt[100] * romCnv[100])
+
 
     if 50 <= num:
         romNumCnt[50] = 1
@@ -249,7 +258,15 @@ for num in Input_numLst:
             romNumCnt[10] += 1
             num -= 10
 
-        print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} =>", romNumCnt[10] * romCnv[10])
+        """     X can be placed before L (50) and C (100) to make 40 and 90.    """
+        if romNumCnt[10] == 4 and 50 in romNumCnt:
+            print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} ( + {romCnv[50]} = 50) => XC")
+
+        elif romNumCnt[10] == 4:
+            print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} => XL")
+
+        else:
+            print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} =>", romNumCnt[10] * romCnv[10])
 
     if 5 <= num:
         romNumCnt[5] = 1
@@ -269,7 +286,15 @@ for num in Input_numLst:
             romNumCnt[1] += 1
             num -= 1
 
-        print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} =>", romNumCnt[1] * romCnv[1])
+        """     I can be placed before V (5) and X (10) to make 4 and 9.    """
+        if romNumCnt[1] == 4 and 5 in romNumCnt:
+            print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} ( + {romCnv[10]} = 10) => IX")
+
+        elif romNumCnt[1] == 4:
+            print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} => IV")
+
+        else:
+            print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} =>", romNumCnt[1] * romCnv[1])
 
     print()
     print("\t\t", romNumCnt)
