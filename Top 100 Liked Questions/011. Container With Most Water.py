@@ -80,7 +80,7 @@ def comb_contVol_Prt(heights):
     print("\tMax cont. volume:", maxVol)
     print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
 
-    print("\n")
+    # print("\n")
 
     return maxVol
 
@@ -95,18 +95,25 @@ def encl_contVol_Prt(heights):
     """     maxVolDim ~ Dimensions of the maximal volume of the container"""
     maxVolDim = []
 
+    """     posL ~ Position of the Left boarder     """
     posL = 0
+    """     posR ~ Position of the Right boarder    """
     posR = len(heights) - 1
 
     while posL != posR:
 
+        """     heiL ~ Height of the Left boarder   """
         heiL = heights[posL]
+        """     heiR ~ Height of the Right boarder  """
         heiR = heights[posR]
 
         print(f"\t\tContainer boarders:  [{heiL}, {posL}] [{heiR}, {posR}]")
 
+        """     height ~ Height of the container, height = min(heiL, heiR)  """
         height = min(heiL, heiR)
+        """     width ~ Width of the container, width = posR - posL     """
         width = posR - posL
+        """     volume ~ Volume of the container, volume = height * width   """
         volume = height * width
 
         print(f"\t\tContainer volume: {volume}")
@@ -119,15 +126,19 @@ def encl_contVol_Prt(heights):
             maxVolDim = [height, width]
 
         if heiL >= heiR:
+            """     If height of the Left boarder is bigger
+                        shift position of the Right boarder to the left     """
             posR -= 1
         else:
+            """     If height of the Right boarder is bigger
+                        shift position of the Left boarder to the right     """
             posL += 1
 
     print()
     print("\tMax cont. volume:", maxVol)
     print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
 
-    print("\n")
+    # print("\n")
 
     return maxVol
 
@@ -220,18 +231,25 @@ for heights in Input_heightLst:
     """     maxVolDim ~ Dimensions of the maximal volume of the container"""
     maxVolDim = []
 
+    """     posL ~ Position of the Left boarder     """
     posL = 0
+    """     posR ~ Position of the Right boarder    """
     posR = len(heights) - 1
 
     while posL != posR:
 
+        """     heiL ~ Height of the Left boarder   """
         heiL = heights[posL]
+        """     heiR ~ Height of the Right boarder  """
         heiR = heights[posR]
 
         print(f"\t\tContainer boarders:  [{heiL}, {posL}] [{heiR}, {posR}]")
 
+        """     height ~ Height of the container, height = min(heiL, heiR)  """
         height = min(heiL, heiR)
+        """     width ~ Width of the container, width = posR - posL     """
         width = posR - posL
+        """     volume ~ Volume of the container, volume = height * width   """
         volume = height * width
 
         print(f"\t\tContainer volume: {volume}")
@@ -244,8 +262,12 @@ for heights in Input_heightLst:
             maxVolDim = [height, width]
 
         if heiL >= heiR:
+            """     If height of the Left boarder is bigger
+                        shift position of the Right boarder to the left     """
             posR -= 1
         else:
+            """     If height of the Right boarder is bigger
+                        shift position of the Left boarder to the right     """
             posL += 1
 
     print()
@@ -258,4 +280,8 @@ print()
 print("2. Function solution via enclosing:\n")
 
 for heights in Input_heightLst:
-    encl_contVol_Prt(heights)
+    maxVol = encl_contVol_Prt(heights)
+    print()
+
+    print("\t\tMax cont. volume:", maxVol)
+    print("\n")
