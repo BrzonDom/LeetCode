@@ -59,6 +59,17 @@ https://leetcode.com/problems/integer-to-roman/description/
 Input_numLst = [3, 58, 1994,
                 14, 39, 1984, 2014, 798]
 
+"""
+    3    = III
+    58   = LVIII
+    1994 = MCMXCIV
+    14   = XIV
+    39   = XXXIX
+    1984 = MCMLXXXIV
+    2014 = MMXIV
+    798  = DCCXCVIII
+"""
+
 
 romCnv = {
        1 : 'I',
@@ -104,7 +115,6 @@ for num in Input_numLst:
     print()
     print("\t\t", romNumCnt)
     print("\n")
-
 
     # if 1000 <= num:
     #     romNumCnt[1000] = 1
@@ -181,6 +191,7 @@ for num in Input_numLst:
     # print("\t\t", romNumCnt)
     # print("\n")
 
+
 print()
 print("Driver solution:\n")
 
@@ -199,104 +210,133 @@ for num in Input_numLst:
             C can be placed before D (500) and M (1000) to make 400 and 900.
     """
 
-
     if 1000 <= num:
         romNumCnt[1000] = 1
-
         num -= 1000
+
         while 1000 <= num:
             romNumCnt[1000] += 1
             num -= 1000
 
         print(f"\t\t{romCnv[1000]} = 1000 : {romNumCnt[1000]} =>", romNumCnt[1000] * romCnv[1000])
 
+        romNum += romNumCnt[1000] * romCnv[1000]
 
     if 500 <= num:
         romNumCnt[500] = 1
-
         num -= 500
-        # while 500 <= num:
-        #     romNumCnt[500] += 1
-        #     num -= 500
 
-        print(f"\t\t{romCnv[500]} = 500  : {romNumCnt[500]} =>", romNumCnt[500] * romCnv[500])
+        print(f"\t\t{romCnv[500]} = 500  : {romNumCnt[500]} => D")
+
+        romNum += 'D'
 
     if 100 <= num:
         romNumCnt[100] = 1
-
         num -= 100
+
         while 100 <= num:
             romNumCnt[100] += 1
             num -= 100
 
-        """     C can be placed before D (500) and M (1000) to make 400 and 900.    """
-        if romNumCnt[100] == 4 and 500 in romNumCnt:
-            print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} ( + {romCnv[500]} = 500) => CM")
+        if romNumCnt[100] == 4:
+            """     C can be placed before D (500) and M (1000) to make 400 and 900.    """
 
-        elif romNumCnt[100] == 4:
-            print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} => CD")
+            if 500 in romNumCnt:
+                """     C can be placed before M (1000) to 900.    """
+                print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} ( + {romCnv[500]} = 500) => CM")
+
+                romNum = romNum[:-1]
+                romNum += "CM"
+
+            else:
+                """     C can be placed before D (500) to make 400.    """
+                print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} => CD")
+
+                romNum += "CD"
 
         else:
             print(f"\t\t{romCnv[100]} = 100  : {romNumCnt[100]} =>", romNumCnt[100] * romCnv[100])
 
+            romNum += romNumCnt[100] * romCnv[100]
 
     if 50 <= num:
         romNumCnt[50] = 1
-
         num -= 50
-        # while 50 <= num:
-        #     romNumCnt[50] += 1
-        #     num -= 50
 
-        print(f"\t\t{romCnv[50]} = 50   : {romNumCnt[50]} =>", romNumCnt[50] * romCnv[50])
+        print(f"\t\t{romCnv[50]} = 50   : {romNumCnt[50]} => L")
+
+        romNum += 'L'
 
     if 10 <= num:
         romNumCnt[10] = 1
-
         num -= 10
+
         while 10 <= num:
             romNumCnt[10] += 1
             num -= 10
 
-        """     X can be placed before L (50) and C (100) to make 40 and 90.    """
-        if romNumCnt[10] == 4 and 50 in romNumCnt:
-            print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} ( + {romCnv[50]} = 50) => XC")
+        if romNumCnt[10] == 4:
+            """     X can be placed before L (50) and C (100) to make 40 and 90.    """
 
-        elif romNumCnt[10] == 4:
-            print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} => XL")
+            if 50 in romNumCnt:
+                """     X can be placed before C (100) 90.    """
+                print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} ( + {romCnv[50]} = 50) => XC")
+
+                romNum = romNum[:-1]
+                romNum += "XC"
+
+            else:
+                """     X can be placed before L (50) to make 40.    """
+                print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} => XL")
+
+                romNum += "XL"
 
         else:
             print(f"\t\t{romCnv[10]} = 10   : {romNumCnt[10]} =>", romNumCnt[10] * romCnv[10])
 
+            romNum += romNumCnt[10] * romCnv[10]
+
     if 5 <= num:
         romNumCnt[5] = 1
-
         num -= 5
-        # while 5 <= num:
-        #     romNumCnt[5] += 1
-        #     num -= 5
 
-        print(f"\t\t{romCnv[5]} = 5    : {romNumCnt[5]} =>", romNumCnt[5] * romCnv[5])
+        print(f"\t\t{romCnv[5]} = 5    : {romNumCnt[5]} => V")
+
+        romNum += 'V'
 
     if 1 <= num:
         romNumCnt[1] = 1
-
         num -= 1
+
         while 1 <= num:
             romNumCnt[1] += 1
             num -= 1
 
-        """     I can be placed before V (5) and X (10) to make 4 and 9.    """
-        if romNumCnt[1] == 4 and 5 in romNumCnt:
-            print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} ( + {romCnv[10]} = 10) => IX")
+        if romNumCnt[1] == 4:
+            """     I can be placed before V (5) and X (10) to make 4 and 9.    """
 
-        elif romNumCnt[1] == 4:
-            print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} => IV")
+            if 5 in romNumCnt:
+                """     I can be placed before X (10) 9.    """
+                print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} ( + {romCnv[10]} = 10) => IX")
+
+                romNum = romNum[:-1]
+                romNum += "IX"
+
+            else:
+                """     I can be placed before V (5) to make 4.    """
+                print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} => IV")
+
+                romNum += "IV"
 
         else:
             print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} =>", romNumCnt[1] * romCnv[1])
 
+            romNum += romNumCnt[1] * romCnv[1]
+
     print()
     print("\t\t", romNumCnt)
+
+    print()
+    print("\tRom. num.:", romNum)
     print("\n")
 
