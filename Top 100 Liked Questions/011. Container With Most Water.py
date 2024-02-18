@@ -83,6 +83,51 @@ def comb_contVol_Prt(heights):
     print("\n")
 
 
+def encl_contVol_Prt(heights):
+
+    print("\tHeights:", heights)
+    print()
+
+    """     maxVol ~ Maximal volume of the container    """
+    maxVol = 0
+    """     maxVolDim ~ Dimensions of the maximal volume of the container"""
+    maxVolDim = []
+
+    posL = 0
+    posR = len(heights) - 1
+
+    while posL != posR:
+
+        heiL = heights[posL]
+        heiR = heights[posR]
+
+        print(f"\t\tContainer boarders:  [{heiL}, {posL}] [{heiR}, {posR}]")
+
+        height = min(heiL, heiR)
+        width = posR - posL
+        volume = height * width
+
+        print(f"\t\tContainer volume: {volume}")
+        print(f"\t\t\tContainer width:  {width}")
+        print(f"\t\t\tContainer height: {height}")
+        print()
+
+        if volume > maxVol:
+            maxVol = volume
+            maxVolDim = [height, width]
+
+        if heiL >= heiR:
+            posR -= 1
+        else:
+            posL += 1
+
+    print()
+    print("\tMax cont. volume:", maxVol)
+    print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
+
+    print("\n")
+
+
 Input_heightLst = [[1, 8, 6, 2, 5, 4, 8, 3, 7],
                    [1, 1]]
 
@@ -203,5 +248,10 @@ for heights in Input_heightLst:
     print("\tMax cont. volume:", maxVol)
     print(f"\t\tMax cont. height / width: {maxVolDim[0]} / {maxVolDim[1]}")
 
-
     print("\n")
+
+print()
+print("2. Function solution via enclosing:\n")
+
+for heights in Input_heightLst:
+    encl_contVol_Prt(heights)
