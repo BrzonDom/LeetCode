@@ -206,7 +206,7 @@ def romNumConv_Prt(num):
     return romNum
 
 
-def romNumConv_Sol(num):
+def romNumConvV1_Sol(num):
 
     romNumCnt = {}
     romNum = ""
@@ -302,6 +302,65 @@ def romNumConv_Sol(num):
     return romNum
 
 
+def romNumConvV2_Sol(num):
+
+    romNum = ""
+
+    while num >= 1000:
+        num -= 1000
+        romNum += 'M'
+
+    if num >= 900:
+        num -= 900
+        romNum += "CM"
+
+    if num >= 500:
+        num -= 500
+        romNum += 'D'
+
+    if num >= 400:
+        num -= 400
+        romNum += "CD"
+
+    while num >= 100:
+        num -= 100
+        romNum += 'C'
+
+    if num >= 90:
+        num -= 90
+        romNum += "XC"
+
+    if num >= 50:
+        num -= 50
+        romNum += 'L'
+
+    if num >= 40:
+        num -= 40
+        romNum += "XL"
+
+    while num >= 10:
+        num -= 10
+        romNum += 'X'
+
+    if num >= 9:
+        num -= 9
+        romNum += "IX"
+
+    if num >= 5:
+        num -= 5
+        romNum += 'V'
+
+    if num >= 4:
+        num -= 4
+        romNum += "IV"
+
+    while num >= 1:
+        num -= 1
+        romNum += 'I'
+
+    return romNum
+
+
 Input_numLst = [3, 58, 1994,
                 14, 39, 1984, 2014, 798]
 
@@ -333,7 +392,6 @@ for decNum in romCnv:
 print("\n")
 
 # for decNum in list(romCnv)[::-1]:
-#
 #     print(type(decNum), decNum)
 # print()
 
@@ -587,18 +645,30 @@ for num in Input_numLst:
     print("\n")
 
 print()
-print("Function print solution:\n")
+print("1. Function print solution:\n")
 
 for num in Input_numLst:
 
     romNumConv_Prt(num)
 
 print()
-print("Function solve solution:\n")
+print("1. Function solve solution:\n")
 
 for num in Input_numLst:
 
     print("\tNum.:     ", num)
-    romNum = romNumConv_Sol(num)
+    romNum = romNumConvV1_Sol(num)
     print("\tRom. num.:", romNum)
     print("\n")
+
+
+print()
+print("2. Function solve solution:\n")
+
+for num in Input_numLst:
+
+    print("\tNum.:     ", num)
+    romNum = romNumConvV2_Sol(num)
+    print("\tRom. num.:", romNum)
+    print("\n")
+
