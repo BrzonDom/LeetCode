@@ -179,7 +179,7 @@ def romNumConv_Prt(num):
             """     I can be placed before V (5) and X (10) to make 4 and 9.    """
 
             if 5 in romNumCnt:
-                """     I can be placed before X (10) 9.    """
+                """     I can be placed before X (10) to make 9.    """
                 print(f"\t\t{romCnv[1]} = 1    : {romNumCnt[1]} ( + {romCnv[10]} = 10) => IX")
 
                 romNum = romNum[:-1]
