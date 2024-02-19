@@ -14,7 +14,7 @@ https://leetcode.com/problems/roman-to-integer/description/
             D             500
             M             1000
 
-    For example, 2 is written as II in Roman numeral, just two one's added together.
+    For example, 2 is written as II in Roman numeral, just two ones added together.
     12 is written as XII, which is simply X + II.
     The number 27 is written as XXVII, which is XX + V + II.
 
@@ -70,6 +70,9 @@ def romNumConv_Prt(romNum):
     num = 0
 
     while True:
+        """     While loop just for the print solutions
+                    Stops evaluating when string is empty    """
+
         cnt = 0
 
         while romNum[0] == 'M':
@@ -91,6 +94,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "CM":
+            """     C can be placed before M (1000) to 900.    """
             romNum = romNum[2:]
             num += 900
 
@@ -100,6 +104,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "CD":
+            """     C can be placed before D (500) to make 400.    """
             romNum = romNum[2:]
             num += 400
 
@@ -136,6 +141,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "XC":
+            """     X can be placed before C (100) 90.    """
             romNum = romNum[2:]
             num += 90
 
@@ -145,6 +151,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "XL":
+            """     X can be placed before L (50) to make 40.    """
             romNum = romNum[2:]
             num += 40
 
@@ -181,6 +188,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "IX":
+            """     I can be placed before X (10) to make 9.    """
             romNum = romNum[2:]
             num += 9
 
@@ -190,6 +198,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "IV":
+            """     I can be placed before V (5) to make 4.    """
             romNum = romNum[2:]
             num += 4
 
@@ -236,7 +245,6 @@ def romNumConv_Sol(romNum):
 
         if not len(romNum):
             return num
-
 
     if romNum[:2] == "CM":
         romNum = romNum[2:]
@@ -365,6 +373,9 @@ for romNum in Input_romNum:
     num = 0
 
     while True:
+        """     While loop just for the print solutions
+                    Stops evaluating when string is empty    """
+
         cnt = 0
 
         while romNum[0] == 'M':
@@ -386,6 +397,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "CM":
+            """     C can be placed before M (1000) to 900.    """
             romNum = romNum[2:]
             num += 900
 
@@ -395,6 +407,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "CD":
+            """     C can be placed before D (500) to make 400.    """
             romNum = romNum[2:]
             num += 400
 
@@ -431,6 +444,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "XC":
+            """     X can be placed before C (100) 90.    """
             romNum = romNum[2:]
             num += 90
 
@@ -440,6 +454,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "XL":
+            """     X can be placed before L (50) to make 40.    """
             romNum = romNum[2:]
             num += 40
 
@@ -476,6 +491,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "IX":
+            """     I can be placed before X (10) to make 9.    """
             romNum = romNum[2:]
             num += 9
 
@@ -485,6 +501,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "IV":
+            """     I can be placed before V (5) to make 4.    """
             romNum = romNum[2:]
             num += 4
 
