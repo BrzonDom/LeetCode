@@ -76,12 +76,18 @@ romCnv = {
         }
 
 
-Input_romNum = ["III", "LVIII", "MCMXCIV"]
+Input_romNum = ["III", "LVIII", "MCMXCIV",
+                "XIV", "XXXIX", "MCMLXXXIV", "MMXIV", "DCCXCVIII"]
 
 """
     3    = III
     58   = LVIII
     1994 = MCMXCIV
+    14   = XIV
+    39   = XXXIX
+    1984 = MCMLXXXIV
+    2014 = MMXIV
+    798  = DCCXCVIII
 """
 
 print("Driver print solution:\n")
@@ -193,12 +199,12 @@ for romNum in Input_romNum:
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tX = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
                 cnt = 0
                 break
 
-            elif romNum[0] != 'C':
-                print(f"\t\tX = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+            elif romNum[0] != 'X':
+                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
                 cnt = 0
                 break
 
