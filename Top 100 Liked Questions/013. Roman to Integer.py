@@ -71,23 +71,38 @@ print("Driver print solution:\n")
 
 for romNum in Input_romNum:
     print("\tRom. num.:", romNum)
+    print()
+
+    romNumOrg = romNum
 
     num = 0
+    cnt = 0
 
     while True:
 
         while romNum[0] == 'M':
             romNum = romNum[1:]
             num += 1000
+            cnt += 1
 
             if not len(romNum):
+                print(f"\t\tM  = 1000 : {cnt} => num + {cnt * 1000} = {num}")
+                cnt = 0
                 break
+
+            elif romNum[0] != 'M':
+                print(f"\t\tM  = 1000 : {cnt} => num + {cnt*1000} = {num}")
+                cnt = 0
+                break
+
         if not len(romNum):
             break
 
         if romNum[:2] == "CM":
             romNum = romNum[2:]
             num += 900
+
+            print(f"\t\tCM =  900 : 1 => num +  900 = {num}")
 
         if not len(romNum):
             break
@@ -96,6 +111,8 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 400
 
+            print(f"\t\tCD =  400 : 1 => num +  400 = {num}")
+
         if not len(romNum):
             break
 
@@ -103,21 +120,34 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 500
 
+            print(f"\t\tD  =  500 : 1 => num +  500 = {num}")
+
         if not len(romNum):
             break
 
         while romNum[0] == 'C':
             romNum = romNum[1:]
             num += 100
+            cnt += 1
 
             if not len(romNum):
+                print(f"\t\tC  =  100 : {cnt} => num +  {cnt*100} = {num}")
+                cnt = 0
                 break
+
+            elif romNum[0] != 'C':
+                print(f"\t\tC  =  100 : {cnt} => num +  {cnt*100} = {num}")
+                cnt = 0
+                break
+
         if not len(romNum):
             break
 
         if romNum[:2] == "XC":
             romNum = romNum[2:]
             num += 90
+
+            print(f"\t\tXC =   90 : 1 => num +   90 = {num}")
 
         if not len(romNum):
             break
@@ -126,6 +156,8 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 40
 
+            print(f"\t\tXL =   40 : 1 => num +   40 = {num}")
+
         if not len(romNum):
             break
 
@@ -133,21 +165,34 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 50
 
+            print(f"\t\tL  =   50 : 1 => num +   50 = {num}")
+
         if not len(romNum):
             break
 
         while romNum[0] == 'X':
             romNum = romNum[1:]
             num += 10
+            cnt += 1
 
             if not len(romNum):
+                print(f"\t\tX  =   10 : {cnt} => num +   {cnt * 10} = {num}")
+                cnt = 0
                 break
+
+            elif romNum[0] != 'C':
+                print(f"\t\tX  =   10 : {cnt} => num +   {cnt * 10} = {num}")
+                cnt = 0
+                break
+
         if not len(romNum):
             break
 
         if romNum[:2] == "IX":
             romNum = romNum[2:]
             num += 9
+
+            print(f"\t\tIX =    9 : 1 => num +    9 = {num}")
 
         if not len(romNum):
             break
@@ -156,6 +201,8 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 4
 
+            print(f"\t\tIV =    4 : 1 => num +    4 = {num}")
+
         if not len(romNum):
             break
 
@@ -163,17 +210,25 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 5
 
+            print(f"\t\tV  =    5 : 1 => num +    5 = {num}")
+
         if not len(romNum):
             break
 
         while romNum[0] == 'I':
             romNum = romNum[1:]
             num += 1
+            cnt += 1
 
             if not len(romNum):
+                print(f"\t\tI  =    1 : {cnt} => num +    {cnt * 1} = {num}")
                 break
+
         if not len(romNum):
             break
+
+    print()
+    print("\tRom. num.:", romNumOrg)
 
     print("\tNum.:     ", num)
     print("\n")
