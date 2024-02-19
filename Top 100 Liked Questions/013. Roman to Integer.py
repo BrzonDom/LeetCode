@@ -235,7 +235,7 @@ def romNumConv_Prt(romNum):
     print("\n")
 
 
-def romNumConv_Sol(romNum):
+def romNumConvV1_Sol(romNum):
 
     num = 0
 
@@ -329,6 +329,29 @@ def romNumConv_Sol(romNum):
 
         if not len(romNum):
             return num
+
+
+def romNumConvV2_Sol(romNum):
+
+    num = 0
+    prev = ' '
+
+    for symb in romNum:
+
+        num += romCnv[symb]
+
+        if prev == 'I' and (symb == 'X' or symb == 'V'):
+            num -= 2
+
+        if prev == 'X' and (symb == 'C' or symb == 'L'):
+            num -= 20
+
+        if prev == 'C' and (symb == 'D' or symb == 'M'):
+            num -= 200
+
+        prev = symb
+
+    return num
 
 
 romCnvAll = {
@@ -578,22 +601,35 @@ for romNum in Input_romNum:
 
 
 print()
-print("Function print solution:\n")
+print("1. Function print solution:\n")
 
 for romNum in Input_romNum:
 
     romNumConv_Prt(romNum)
 
 print()
-print("Function solve solution:\n")
+print("1. Function solve solution:\n")
 
 for romNum in Input_romNum:
 
     print("\tRom. num.:", romNum)
 
-    num = romNumConv_Sol(romNum)
+    num = romNumConvV1_Sol(romNum)
 
     print("\tNum.:     ", num)
     print("\n")
+
+print()
+print("2. Function solve solution:\n")
+
+for romNum in Input_romNum:
+
+    print("\tRom. num.:", romNum)
+
+    num = romNumConvV2_Sol(romNum)
+
+    print("\tNum.:     ", num)
+    print("\n")
+
 
 
