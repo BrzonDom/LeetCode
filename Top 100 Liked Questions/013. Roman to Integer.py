@@ -76,6 +76,7 @@ def romNumConv_Prt(romNum):
         cnt = 0
 
         while romNum[0] == 'M':
+
             romNum = romNum[1:]
             num += 1000
             cnt += 1
@@ -95,6 +96,7 @@ def romNumConv_Prt(romNum):
 
         if romNum[:2] == "CM":
             """     C can be placed before M (1000) to 900.    """
+
             romNum = romNum[2:]
             num += 900
 
@@ -105,6 +107,7 @@ def romNumConv_Prt(romNum):
 
         if romNum[:2] == "CD":
             """     C can be placed before D (500) to make 400.    """
+
             romNum = romNum[2:]
             num += 400
 
@@ -114,6 +117,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[0] == 'D':
+
             romNum = romNum[1:]
             num += 500
 
@@ -123,6 +127,7 @@ def romNumConv_Prt(romNum):
             break
 
         while romNum[0] == 'C':
+
             romNum = romNum[1:]
             num += 100
             cnt += 1
@@ -141,7 +146,8 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[:2] == "XC":
-            """     X can be placed before C (100) 90.    """
+            """     X can be placed before C (100) to make 90.    """
+
             romNum = romNum[2:]
             num += 90
 
@@ -152,6 +158,7 @@ def romNumConv_Prt(romNum):
 
         if romNum[:2] == "XL":
             """     X can be placed before L (50) to make 40.    """
+
             romNum = romNum[2:]
             num += 40
 
@@ -161,6 +168,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[0] == 'L':
+
             romNum = romNum[1:]
             num += 50
 
@@ -170,6 +178,7 @@ def romNumConv_Prt(romNum):
             break
 
         while romNum[0] == 'X':
+
             romNum = romNum[1:]
             num += 10
             cnt += 1
@@ -189,6 +198,7 @@ def romNumConv_Prt(romNum):
 
         if romNum[:2] == "IX":
             """     I can be placed before X (10) to make 9.    """
+
             romNum = romNum[2:]
             num += 9
 
@@ -199,6 +209,7 @@ def romNumConv_Prt(romNum):
 
         if romNum[:2] == "IV":
             """     I can be placed before V (5) to make 4.    """
+
             romNum = romNum[2:]
             num += 4
 
@@ -208,6 +219,7 @@ def romNumConv_Prt(romNum):
             break
 
         if romNum[0] == 'V':
+
             romNum = romNum[1:]
             num += 5
 
@@ -217,6 +229,7 @@ def romNumConv_Prt(romNum):
             break
 
         while romNum[0] == 'I':
+
             romNum = romNum[1:]
             num += 1
             cnt += 1
@@ -240,6 +253,7 @@ def romNumConvV1_Sol(romNum):
     num = 0
 
     while romNum[0] == 'M':
+
         romNum = romNum[1:]
         num += 1000
 
@@ -247,6 +261,8 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[:2] == "CM":
+        """     C can be placed before M (1000) to 900.    """
+
         romNum = romNum[2:]
         num += 900
 
@@ -254,6 +270,8 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[:2] == "CD":
+        """     C can be placed before D (500) to make 400.    """
+
         romNum = romNum[2:]
         num += 400
 
@@ -261,6 +279,7 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[0] == 'D':
+
         romNum = romNum[1:]
         num += 500
 
@@ -268,6 +287,7 @@ def romNumConvV1_Sol(romNum):
             return num
 
     while romNum[0] == 'C':
+
         romNum = romNum[1:]
         num += 100
 
@@ -275,6 +295,8 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[:2] == "XC":
+        """     X can be placed before C (100) to make 90.    """
+
         romNum = romNum[2:]
         num += 90
 
@@ -282,6 +304,8 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[:2] == "XL":
+        """     X can be placed before L (50) to make 40.    """
+
         romNum = romNum[2:]
         num += 40
 
@@ -289,6 +313,7 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[0] == 'L':
+
         romNum = romNum[1:]
         num += 50
 
@@ -296,6 +321,7 @@ def romNumConvV1_Sol(romNum):
             return num
 
     while romNum[0] == 'X':
+
         romNum = romNum[1:]
         num += 10
 
@@ -303,6 +329,8 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[:2] == "IX":
+        """     I can be placed before X (10) to make 9.    """
+
         romNum = romNum[2:]
         num += 9
 
@@ -310,6 +338,8 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[:2] == "IV":
+        """     I can be placed before V (5) to make 4.    """
+
         romNum = romNum[2:]
         num += 4
 
@@ -317,6 +347,7 @@ def romNumConvV1_Sol(romNum):
             return num
 
     if romNum[0] == 'V':
+
         romNum = romNum[1:]
         num += 5
 
@@ -324,6 +355,7 @@ def romNumConvV1_Sol(romNum):
             return num
 
     while romNum[0] == 'I':
+
         romNum = romNum[1:]
         num += 1
 
