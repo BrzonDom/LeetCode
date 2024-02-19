@@ -81,12 +81,12 @@ def romNumConv_Prt(romNum):
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tM  = {romCnv['M']:4} : {cnt} => num + {cnt * romCnv['M']:4} = {num}")
+                print(f"\t\tM  = {romCnvAll['M']:4} : {cnt} => num + {cnt * romCnvAll['M']:4} = {num}")
                 cnt = 0
                 break
 
             elif romNum[0] != 'M':
-                print(f"\t\tM  = {romCnv['M']:4} : {cnt} => num + {cnt * romCnv['M']:4} = {num}")
+                print(f"\t\tM  = {romCnvAll['M']:4} : {cnt} => num + {cnt * romCnvAll['M']:4} = {num}")
                 cnt = 0
                 break
 
@@ -98,7 +98,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[2:]
             num += 900
 
-            print(f"\t\tCM = {romCnv['CM']:4} : 1 => num + {romCnv['CM']:4} = {num}")
+            print(f"\t\tCM = {romCnvAll['CM']:4} : 1 => num + {romCnvAll['CM']:4} = {num}")
 
         if not len(romNum):
             break
@@ -108,7 +108,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[2:]
             num += 400
 
-            print(f"\t\tCD = {romCnv['CD']:4} : 1 => num + {romCnv['CD']:4} = {num}")
+            print(f"\t\tCD = {romCnvAll['CD']:4} : 1 => num + {romCnvAll['CD']:4} = {num}")
 
         if not len(romNum):
             break
@@ -117,7 +117,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[1:]
             num += 500
 
-            print(f"\t\tD  = {romCnv['D']:4} : 1 => num + {romCnv['D']:4} = {num}")
+            print(f"\t\tD  = {romCnvAll['D']:4} : 1 => num + {romCnvAll['D']:4} = {num}")
 
         if not len(romNum):
             break
@@ -128,12 +128,12 @@ def romNumConv_Prt(romNum):
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tC  = {romCnv['C']:4} : {cnt} => num + {cnt * romCnv['C']:4} = {num}")
+                print(f"\t\tC  = {romCnvAll['C']:4} : {cnt} => num + {cnt * romCnvAll['C']:4} = {num}")
                 cnt = 0
                 break
 
             elif romNum[0] != 'C':
-                print(f"\t\tC  = {romCnv['C']:4} : {cnt} => num + {cnt * romCnv['C']:4} = {num}")
+                print(f"\t\tC  = {romCnvAll['C']:4} : {cnt} => num + {cnt * romCnvAll['C']:4} = {num}")
                 cnt = 0
                 break
 
@@ -145,7 +145,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[2:]
             num += 90
 
-            print(f"\t\tXC = {romCnv['XC']:4} : 1 => num + {romCnv['XC']:4} = {num}")
+            print(f"\t\tXC = {romCnvAll['XC']:4} : 1 => num + {romCnvAll['XC']:4} = {num}")
 
         if not len(romNum):
             break
@@ -155,7 +155,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[2:]
             num += 40
 
-            print(f"\t\tXL = {romCnv['XL']:4} : 1 => num + {romCnv['XL']:4} = {num}")
+            print(f"\t\tXL = {romCnvAll['XL']:4} : 1 => num + {romCnvAll['XL']:4} = {num}")
 
         if not len(romNum):
             break
@@ -164,7 +164,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[1:]
             num += 50
 
-            print(f"\t\tL  = {romCnv['L']:4} : 1 => num + {romCnv['L']:4} = {num}")
+            print(f"\t\tL  = {romCnvAll['L']:4} : 1 => num + {romCnvAll['L']:4} = {num}")
 
         if not len(romNum):
             break
@@ -175,12 +175,12 @@ def romNumConv_Prt(romNum):
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                print(f"\t\tX  = {romCnvAll['X']:4} : {cnt} => num + {cnt * romCnvAll['X']:4} = {num}")
                 cnt = 0
                 break
 
             elif romNum[0] != 'X':
-                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                print(f"\t\tX  = {romCnvAll['X']:4} : {cnt} => num + {cnt * romCnvAll['X']:4} = {num}")
                 cnt = 0
                 break
 
@@ -192,7 +192,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[2:]
             num += 9
 
-            print(f"\t\tIX = {romCnv['IX']:4} : 1 => num + {romCnv['IX']:4} = {num}")
+            print(f"\t\tIX = {romCnvAll['IX']:4} : 1 => num + {romCnvAll['IX']:4} = {num}")
 
         if not len(romNum):
             break
@@ -202,7 +202,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[2:]
             num += 4
 
-            print(f"\t\tIV = {romCnv['IV']:4} : 1 => num + {romCnv['IV']:4} = {num}")
+            print(f"\t\tIV = {romCnvAll['IV']:4} : 1 => num + {romCnvAll['IV']:4} = {num}")
 
         if not len(romNum):
             break
@@ -211,7 +211,7 @@ def romNumConv_Prt(romNum):
             romNum = romNum[1:]
             num += 5
 
-            print(f"\t\tV  = {romCnv['V']:4} : 1 => num + {romCnv['V']:4} = {num}")
+            print(f"\t\tV  = {romCnvAll['V']:4} : 1 => num + {romCnvAll['V']:4} = {num}")
 
         if not len(romNum):
             break
@@ -222,7 +222,7 @@ def romNumConv_Prt(romNum):
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tI  = {romCnv['I']:4} : {cnt} => num + {cnt * romCnv['I']:4} = {num}")
+                print(f"\t\tI  = {romCnvAll['I']:4} : {cnt} => num + {cnt * romCnvAll['I']:4} = {num}")
                 break
 
         if not len(romNum):
@@ -331,7 +331,7 @@ def romNumConv_Sol(romNum):
             return num
 
 
-romCnv = {
+romCnvAll = {
             'I'  :    1,
             'IV' :    4,
             'V'  :    5,
@@ -344,6 +344,16 @@ romCnv = {
             'CD' :  400,
             'D'  :  500,
             'CM' :  900,
+            'M'  : 1000
+        }
+
+romCnv = {
+            'I'  :    1,
+            'V'  :    5,
+            'X'  :   10,
+            'L'  :   50,
+            'C'  :  100,
+            'D'  :  500,
             'M'  : 1000
         }
 
@@ -362,9 +372,10 @@ Input_romNum = ["III", "LVIII", "MCMXCIV",
     798  = DCCXCVIII
 """
 
-print("Driver print solution:\n")
+print("1. Driver print solution:\n")
 
 for romNum in Input_romNum:
+
     print("\tRom. num.:", romNum)
     print()
 
@@ -384,12 +395,12 @@ for romNum in Input_romNum:
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tM  = {romCnv['M']:4} : {cnt} => num + {cnt * romCnv['M']:4} = {num}")
+                print(f"\t\tM  = {romCnvAll['M']:4} : {cnt} => num + {cnt * romCnvAll['M']:4} = {num}")
                 cnt = 0
                 break
 
             elif romNum[0] != 'M':
-                print(f"\t\tM  = {romCnv['M']:4} : {cnt} => num + {cnt * romCnv['M']:4} = {num}")
+                print(f"\t\tM  = {romCnvAll['M']:4} : {cnt} => num + {cnt * romCnvAll['M']:4} = {num}")
                 cnt = 0
                 break
 
@@ -401,7 +412,7 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 900
 
-            print(f"\t\tCM = {romCnv['CM']:4} : 1 => num + {romCnv['CM']:4} = {num}")
+            print(f"\t\tCM = {romCnvAll['CM']:4} : 1 => num + {romCnvAll['CM']:4} = {num}")
 
         if not len(romNum):
             break
@@ -411,7 +422,7 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 400
 
-            print(f"\t\tCD = {romCnv['CD']:4} : 1 => num + {romCnv['CD']:4} = {num}")
+            print(f"\t\tCD = {romCnvAll['CD']:4} : 1 => num + {romCnvAll['CD']:4} = {num}")
 
         if not len(romNum):
             break
@@ -420,7 +431,7 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 500
 
-            print(f"\t\tD  = {romCnv['D']:4} : 1 => num + {romCnv['D']:4} = {num}")
+            print(f"\t\tD  = {romCnvAll['D']:4} : 1 => num + {romCnvAll['D']:4} = {num}")
 
         if not len(romNum):
             break
@@ -431,12 +442,12 @@ for romNum in Input_romNum:
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tC  = {romCnv['C']:4} : {cnt} => num + {cnt * romCnv['C']:4} = {num}")
+                print(f"\t\tC  = {romCnvAll['C']:4} : {cnt} => num + {cnt * romCnvAll['C']:4} = {num}")
                 cnt = 0
                 break
 
             elif romNum[0] != 'C':
-                print(f"\t\tC  = {romCnv['C']:4} : {cnt} => num + {cnt * romCnv['C']:4} = {num}")
+                print(f"\t\tC  = {romCnvAll['C']:4} : {cnt} => num + {cnt * romCnvAll['C']:4} = {num}")
                 cnt = 0
                 break
 
@@ -448,7 +459,7 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 90
 
-            print(f"\t\tXC = {romCnv['XC']:4} : 1 => num + {romCnv['XC']:4} = {num}")
+            print(f"\t\tXC = {romCnvAll['XC']:4} : 1 => num + {romCnvAll['XC']:4} = {num}")
 
         if not len(romNum):
             break
@@ -458,7 +469,7 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 40
 
-            print(f"\t\tXL = {romCnv['XL']:4} : 1 => num + {romCnv['XL']:4} = {num}")
+            print(f"\t\tXL = {romCnvAll['XL']:4} : 1 => num + {romCnvAll['XL']:4} = {num}")
 
         if not len(romNum):
             break
@@ -467,7 +478,7 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 50
 
-            print(f"\t\tL  = {romCnv['L']:4} : 1 => num + {romCnv['L']:4} = {num}")
+            print(f"\t\tL  = {romCnvAll['L']:4} : 1 => num + {romCnvAll['L']:4} = {num}")
 
         if not len(romNum):
             break
@@ -478,12 +489,12 @@ for romNum in Input_romNum:
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                print(f"\t\tX  = {romCnvAll['X']:4} : {cnt} => num + {cnt * romCnvAll['X']:4} = {num}")
                 cnt = 0
                 break
 
             elif romNum[0] != 'X':
-                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                print(f"\t\tX  = {romCnvAll['X']:4} : {cnt} => num + {cnt * romCnvAll['X']:4} = {num}")
                 cnt = 0
                 break
 
@@ -495,7 +506,7 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 9
 
-            print(f"\t\tIX = {romCnv['IX']:4} : 1 => num + {romCnv['IX']:4} = {num}")
+            print(f"\t\tIX = {romCnvAll['IX']:4} : 1 => num + {romCnvAll['IX']:4} = {num}")
 
         if not len(romNum):
             break
@@ -505,7 +516,7 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 4
 
-            print(f"\t\tIV = {romCnv['IV']:4} : 1 => num + {romCnv['IV']:4} = {num}")
+            print(f"\t\tIV = {romCnvAll['IV']:4} : 1 => num + {romCnvAll['IV']:4} = {num}")
 
         if not len(romNum):
             break
@@ -514,7 +525,7 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 5
 
-            print(f"\t\tV  = {romCnv['V']:4} : 1 => num + {romCnv['V']:4} = {num}")
+            print(f"\t\tV  = {romCnvAll['V']:4} : 1 => num + {romCnvAll['V']:4} = {num}")
 
         if not len(romNum):
             break
@@ -525,7 +536,7 @@ for romNum in Input_romNum:
             cnt += 1
 
             if not len(romNum):
-                print(f"\t\tI  = {romCnv['I']:4} : {cnt} => num + {cnt * romCnv['I']:4} = {num}")
+                print(f"\t\tI  = {romCnvAll['I']:4} : {cnt} => num + {cnt * romCnvAll['I']:4} = {num}")
                 break
 
         if not len(romNum):
@@ -533,6 +544,34 @@ for romNum in Input_romNum:
 
     print()
     print("\tRom. num.:", romNumOrg)
+
+    print("\tNum.:     ", num)
+    print("\n")
+
+print()
+print("2. Driver solve solution:\n")
+
+for romNum in Input_romNum:
+
+    print("\tRom. num.:", romNum)
+
+    num = 0
+    prev = ' '
+
+    for symb in romNum:
+
+        num += romCnv[symb]
+
+        if prev == 'I' and (symb == 'X' or symb == 'V'):
+            num -= 2
+
+        if prev == 'X' and (symb == 'C' or symb == 'L'):
+            num -= 20
+
+        if prev == 'C' and (symb == 'D' or symb == 'M'):
+            num -= 200
+
+        prev = symb
 
     print("\tNum.:     ", num)
     print("\n")
