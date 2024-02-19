@@ -61,8 +61,13 @@ https://leetcode.com/problems/roman-to-integer/description/
 
 Input_romNum = ["III", "LVIII", "MCMXCIV"]
 
+"""
+    3    = III
+    58   = LVIII
+    1994 = MCMXCIV
+"""
 
-print("Driver solution:\n")
+print("Driver print solution:\n")
 
 for romNum in Input_romNum:
     print("\tRom. num.:", romNum)
@@ -84,8 +89,6 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 900
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -93,8 +96,6 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 400
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -102,8 +103,6 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 500
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -120,8 +119,6 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 90
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -129,8 +126,6 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 40
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -138,8 +133,6 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 50
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -156,8 +149,6 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 9
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -165,8 +156,6 @@ for romNum in Input_romNum:
             romNum = romNum[2:]
             num += 4
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -174,8 +163,6 @@ for romNum in Input_romNum:
             romNum = romNum[1:]
             num += 5
 
-            if not len(romNum):
-                break
         if not len(romNum):
             break
 
@@ -190,7 +177,4 @@ for romNum in Input_romNum:
 
     print("\tNum.:     ", num)
     print("\n")
-
-
-
 
