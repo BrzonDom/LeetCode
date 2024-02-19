@@ -59,6 +59,7 @@ https://leetcode.com/problems/roman-to-integer/description/
 
 """
 
+
 def romNumConv_Prt(romNum):
 
     print("\tRom. num.:", romNum)
@@ -223,6 +224,105 @@ def romNumConv_Prt(romNum):
 
     print("\tNum.:     ", num)
     print("\n")
+
+
+def romNumConv_Sol(romNum):
+
+    num = 0
+
+    while True:
+
+        while romNum[0] == 'M':
+            romNum = romNum[1:]
+            num += 1000
+
+            if not len(romNum):
+                return num
+
+
+        if romNum[:2] == "CM":
+            romNum = romNum[2:]
+            num += 900
+
+            if not len(romNum):
+                return num
+
+        if romNum[:2] == "CD":
+            romNum = romNum[2:]
+            num += 400
+
+            if not len(romNum):
+                return num
+
+        if romNum[0] == 'D':
+            romNum = romNum[1:]
+            num += 500
+
+            if not len(romNum):
+                return num
+
+        while romNum[0] == 'C':
+            romNum = romNum[1:]
+            num += 100
+
+            if not len(romNum):
+                return num
+
+        if romNum[:2] == "XC":
+            romNum = romNum[2:]
+            num += 90
+
+            if not len(romNum):
+                return num
+
+        if romNum[:2] == "XL":
+            romNum = romNum[2:]
+            num += 40
+
+            if not len(romNum):
+                return num
+
+        if romNum[0] == 'L':
+            romNum = romNum[1:]
+            num += 50
+
+            if not len(romNum):
+                return num
+
+        while romNum[0] == 'X':
+            romNum = romNum[1:]
+            num += 10
+
+            if not len(romNum):
+                return num
+
+        if romNum[:2] == "IX":
+            romNum = romNum[2:]
+            num += 9
+
+            if not len(romNum):
+                return num
+
+        if romNum[:2] == "IV":
+            romNum = romNum[2:]
+            num += 4
+
+            if not len(romNum):
+                return num
+
+        if romNum[0] == 'V':
+            romNum = romNum[1:]
+            num += 5
+
+            if not len(romNum):
+                return num
+
+        while romNum[0] == 'I':
+            romNum = romNum[1:]
+            num += 1
+
+            if not len(romNum):
+                return num
 
 
 romCnv = {
@@ -424,10 +524,22 @@ for romNum in Input_romNum:
 
 
 print()
-print("Function solution:\n")
+print("Function print solution:\n")
 
 for romNum in Input_romNum:
 
     romNumConv_Prt(romNum)
+
+print()
+print("Function solve solution:\n")
+
+for romNum in Input_romNum:
+
+    print("\tRom. num.:", romNum)
+
+    num = romNumConv_Sol(romNum)
+
+    print("\tNum.:     ", num)
+    print("\n")
 
 
