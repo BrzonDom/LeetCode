@@ -586,12 +586,21 @@ for romNum in Input_romNum:
         num += romCnv[symb]
 
         if prev == 'I' and (symb == 'X' or symb == 'V'):
+            """     I can be placed before V (5) and X (10) to make 4 and 9.    """
+
+            """     Subtract 2 * I, because I was added on previous iteration   """
             num -= 2
 
         if prev == 'X' and (symb == 'C' or symb == 'L'):
+            """     X can be placed before L (50) and C (100) to make 40 and 90.    """
+
+            """     Subtract 2 * X, because X was added on previous iteration   """
             num -= 20
 
         if prev == 'C' and (symb == 'D' or symb == 'M'):
+            """     C can be placed before D (500) and M (1000) to make 400 and 900.    """
+
+            """     Subtract 2 * C, because C was added on previous iteration   """
             num -= 200
 
         prev = symb
@@ -630,6 +639,3 @@ for romNum in Input_romNum:
 
     print("\tNum.:     ", num)
     print("\n")
-
-
-
