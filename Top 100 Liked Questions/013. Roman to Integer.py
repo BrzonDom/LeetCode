@@ -59,6 +59,172 @@ https://leetcode.com/problems/roman-to-integer/description/
 
 """
 
+def romNumConv_Prt(romNum):
+
+    print("\tRom. num.:", romNum)
+    print()
+
+    romNumOrg = romNum
+
+    num = 0
+
+    while True:
+        cnt = 0
+
+        while romNum[0] == 'M':
+            romNum = romNum[1:]
+            num += 1000
+            cnt += 1
+
+            if not len(romNum):
+                print(f"\t\tM  = {romCnv['M']:4} : {cnt} => num + {cnt * romCnv['M']:4} = {num}")
+                cnt = 0
+                break
+
+            elif romNum[0] != 'M':
+                print(f"\t\tM  = {romCnv['M']:4} : {cnt} => num + {cnt * romCnv['M']:4} = {num}")
+                cnt = 0
+                break
+
+        if not len(romNum):
+            break
+
+        if romNum[:2] == "CM":
+            romNum = romNum[2:]
+            num += 900
+
+            print(f"\t\tCM = {romCnv['CM']:4} : 1 => num + {romCnv['CM']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        if romNum[:2] == "CD":
+            romNum = romNum[2:]
+            num += 400
+
+            print(f"\t\tCD = {romCnv['CD']:4} : 1 => num + {romCnv['CD']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        if romNum[0] == 'D':
+            romNum = romNum[1:]
+            num += 500
+
+            print(f"\t\tD  = {romCnv['D']:4} : 1 => num + {romCnv['D']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        while romNum[0] == 'C':
+            romNum = romNum[1:]
+            num += 100
+            cnt += 1
+
+            if not len(romNum):
+                print(f"\t\tC  = {romCnv['C']:4} : {cnt} => num + {cnt * romCnv['C']:4} = {num}")
+                cnt = 0
+                break
+
+            elif romNum[0] != 'C':
+                print(f"\t\tC  = {romCnv['C']:4} : {cnt} => num + {cnt * romCnv['C']:4} = {num}")
+                cnt = 0
+                break
+
+        if not len(romNum):
+            break
+
+        if romNum[:2] == "XC":
+            romNum = romNum[2:]
+            num += 90
+
+            print(f"\t\tXC = {romCnv['XC']:4} : 1 => num + {romCnv['XC']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        if romNum[:2] == "XL":
+            romNum = romNum[2:]
+            num += 40
+
+            print(f"\t\tXL = {romCnv['XL']:4} : 1 => num + {romCnv['XL']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        if romNum[0] == 'L':
+            romNum = romNum[1:]
+            num += 50
+
+            print(f"\t\tL  = {romCnv['L']:4} : 1 => num + {romCnv['L']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        while romNum[0] == 'X':
+            romNum = romNum[1:]
+            num += 10
+            cnt += 1
+
+            if not len(romNum):
+                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                cnt = 0
+                break
+
+            elif romNum[0] != 'X':
+                print(f"\t\tX  = {romCnv['X']:4} : {cnt} => num + {cnt * romCnv['X']:4} = {num}")
+                cnt = 0
+                break
+
+        if not len(romNum):
+            break
+
+        if romNum[:2] == "IX":
+            romNum = romNum[2:]
+            num += 9
+
+            print(f"\t\tIX = {romCnv['IX']:4} : 1 => num + {romCnv['IX']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        if romNum[:2] == "IV":
+            romNum = romNum[2:]
+            num += 4
+
+            print(f"\t\tIV = {romCnv['IV']:4} : 1 => num + {romCnv['IV']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        if romNum[0] == 'V':
+            romNum = romNum[1:]
+            num += 5
+
+            print(f"\t\tV  = {romCnv['V']:4} : 1 => num + {romCnv['V']:4} = {num}")
+
+        if not len(romNum):
+            break
+
+        while romNum[0] == 'I':
+            romNum = romNum[1:]
+            num += 1
+            cnt += 1
+
+            if not len(romNum):
+                print(f"\t\tI  = {romCnv['I']:4} : {cnt} => num + {cnt * romCnv['I']:4} = {num}")
+                break
+
+        if not len(romNum):
+            break
+
+    print()
+    print("\tRom. num.:", romNumOrg)
+
+    print("\tNum.:     ", num)
+    print("\n")
+
+
 romCnv = {
             'I'  :    1,
             'IV' :    4,
@@ -255,4 +421,13 @@ for romNum in Input_romNum:
 
     print("\tNum.:     ", num)
     print("\n")
+
+
+print()
+print("Function solution:\n")
+
+for romNum in Input_romNum:
+
+    romNumConv_Prt(romNum)
+
 
