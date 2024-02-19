@@ -72,7 +72,7 @@ for romNum in Input_romNum:
     while True:
 
         while romNum[0] == 'M':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 1000
 
             if not len(romNum):
@@ -81,7 +81,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "CM":
-            romNum = romNum[:-2]
+            romNum = romNum[2:]
             num += 900
 
             if not len(romNum):
@@ -90,7 +90,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "CD":
-            romNum = romNum[:-2]
+            romNum = romNum[2:]
             num += 400
 
             if not len(romNum):
@@ -99,7 +99,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[0] == 'D':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 500
 
             if not len(romNum):
@@ -108,7 +108,7 @@ for romNum in Input_romNum:
             break
 
         while romNum[0] == 'C':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 100
 
             if not len(romNum):
@@ -117,7 +117,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "XC":
-            romNum = romNum[:-2]
+            romNum = romNum[2:]
             num += 90
 
             if not len(romNum):
@@ -126,7 +126,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "XL":
-            romNum = romNum[:-2]
+            romNum = romNum[2:]
             num += 40
 
             if not len(romNum):
@@ -135,7 +135,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[0] == 'L':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 50
 
             if not len(romNum):
@@ -144,7 +144,7 @@ for romNum in Input_romNum:
             break
 
         while romNum[0] == 'X':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 10
 
             if not len(romNum):
@@ -153,7 +153,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "IX":
-            romNum = romNum[:-2]
+            romNum = romNum[2:]
             num += 9
 
             if not len(romNum):
@@ -162,7 +162,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[:2] == "IV":
-            romNum = romNum[:-2]
+            romNum = romNum[2:]
             num += 4
 
             if not len(romNum):
@@ -171,7 +171,7 @@ for romNum in Input_romNum:
             break
 
         if romNum[0] == 'V':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 5
 
             if not len(romNum):
@@ -180,7 +180,7 @@ for romNum in Input_romNum:
             break
 
         while romNum[0] == 'I':
-            romNum = romNum[:-1]
+            romNum = romNum[1:]
             num += 1
 
             if not len(romNum):
