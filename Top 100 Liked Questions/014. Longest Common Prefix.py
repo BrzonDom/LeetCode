@@ -25,6 +25,8 @@ https://leetcode.com/problems/longest-common-prefix/
         0 <= strs[i].length <= 200
         strs[i] consists of only lowercase English letters.
 """
+import copy
+
 
 def maxPerfx_Sol(strLst):
 
@@ -49,6 +51,7 @@ def maxPerfx_Sol(strLst):
 Input_strLst = [["flower", "flow", "flight"],
                 ["dog", "racecar", "car"]]
 
+Org_strLst = copy.deepcopy(Input_strLst)
 
 print("Driver print:\n")
 
@@ -62,6 +65,8 @@ for strLst in Input_strLst:
 
 print()
 print("Driver solve solution:\n")
+
+Input_strLst = copy.deepcopy(Org_strLst)
 
 for strLst in Input_strLst:
 
@@ -98,6 +103,8 @@ for strLst in Input_strLst:
 
 print()
 print("Function solve solution:\n")
+
+Input_strLst = copy.deepcopy(Org_strLst)
 
 for strLst in Input_strLst:
 
