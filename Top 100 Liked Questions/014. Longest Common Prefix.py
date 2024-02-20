@@ -26,6 +26,26 @@ https://leetcode.com/problems/longest-common-prefix/
         strs[i] consists of only lowercase English letters.
 """
 
+def maxPerfx_Sol(strLst):
+
+    baseStr = min(strLst, key=len)
+
+    strLst.remove(baseStr)
+
+    prefix = ""
+
+    for c, char, in enumerate(baseStr):
+
+        for str in strLst:
+
+            if str[c] != char:
+                return prefix
+
+        prefix += char
+
+    return prefix
+
+
 Input_strLst = [["flower", "flow", "flight"],
                 ["dog", "racecar", "car"]]
 
@@ -41,7 +61,7 @@ for strLst in Input_strLst:
     print("\n")
 
 print()
-print("Driver print solution:\n")
+print("Driver solve solution:\n")
 
 for strLst in Input_strLst:
 
@@ -75,3 +95,20 @@ for strLst in Input_strLst:
             break
 
     print("\n")
+
+print()
+print("Function solve solution:\n")
+
+for strLst in Input_strLst:
+
+    for i, str in enumerate(strLst):
+
+        print(f"\t\t{i+1}. Str: {str}")
+    print()
+
+    prefix = maxPerfx_Sol(strLst)
+
+    print(f"\tPrefix: \"{prefix}\"")
+
+    print("\n")
+
