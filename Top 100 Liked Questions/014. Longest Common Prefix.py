@@ -36,6 +36,42 @@ for strLst in Input_strLst:
 
     for i, str in enumerate(strLst):
 
-        print(f"\t{i}. Str: {str}")
+        print(f"\t{i+1}. Str: {str}")
+
+    print("\n")
+
+print()
+print("Driver print solution:\n")
+
+for strLst in Input_strLst:
+
+    baseStr = min(strLst, key=len)
+
+    print(f"\tBase str:   {baseStr}")
+    print()
+
+    strLst.remove(baseStr)
+
+    for i, str in enumerate(strLst):
+
+        print(f"\t\t{i+1}. Str: {str}")
+    print()
+
+    match = True
+
+    print("\tPrefix: \"", end="")
+
+    for c, char in enumerate(baseStr):
+
+        for str in strLst:
+
+            if str[c] != char:
+                match = False
+
+        if match:
+            print(char, end="")
+        else:
+            print("\"")
+            break
 
     print("\n")
