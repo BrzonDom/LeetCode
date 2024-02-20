@@ -26,5 +26,16 @@ https://leetcode.com/problems/longest-common-prefix/
         strs[i] consists of only lowercase English letters.
 """
 
-Input_strsLst = [["flower", "flow", "flight"],
+Input_strLst = [["flower", "flow", "flight"],
                 ["dog", "racecar", "car"]]
+
+
+print("Driver print:\n")
+
+for strLst in Input_strLst:
+
+    for i, str in enumerate(strLst):
+
+        print(f"\t{i}. Str: {str}")
+
+    print("\n")
