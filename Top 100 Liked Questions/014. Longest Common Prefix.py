@@ -30,8 +30,10 @@ import copy
 
 def maxPerfx_Sol(strLst):
 
+    """     baseStr ~ base string, a shortest string from the list  """
     baseStr = min(strLst, key=len)
 
+    """     Remove the baseStr from the list for optimisation   """
     strLst.remove(baseStr)
 
     prefix = ""
@@ -43,6 +45,7 @@ def maxPerfx_Sol(strLst):
             if str[c] != char:
                 return prefix
 
+        """     If the char passed the loop add it to the prefix    """
         prefix += char
 
     return prefix
