@@ -9,8 +9,8 @@ https://leetcode.com/problems/3sum/description/
 
     Example 1:
 
-        Input: nums = [-1,0,1,2,-1,-4]
-        Output: [[-1,-1,2],[-1,0,1]]
+        Input: nums = [-1, 0, 1, 2, -1, -4]
+        Output: [[-1, -1, 2], [-1, 0, 1]]
 
         Explanation:
             nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
@@ -21,7 +21,7 @@ https://leetcode.com/problems/3sum/description/
 
     Example 2:
 
-        Input: nums = [0,1,1]
+        Input: nums = [0, 1, 1]
         Output: []
 
         Explanation:
@@ -29,8 +29,8 @@ https://leetcode.com/problems/3sum/description/
 
     Example 3:
 
-        Input: nums = [0,0,0]
-        Output: [[0,0,0]]
+        Input: nums = [0, 0, 0]
+        Output: [[0, 0, 0]]
 
         Explanation:
             The only possible triplet sums up to 0.
@@ -42,3 +42,17 @@ https://leetcode.com/problems/3sum/description/
         -10^5 <= nums[i] <= 10^5
 
 """
+
+Input_strLst = [[-1, 0, 1, 2, -1, -4],
+                [0, 1, 1],
+                [0, 0, 0]]
+
+print("Driver print:\n")
+
+for case, InLst in enumerate(Input_strLst):
+
+    print(f"\t{case+1}.Case:")
+    print()
+
+    print(f"\t\tList: {InLst}")
+    print("\n")
