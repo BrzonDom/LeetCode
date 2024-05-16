@@ -73,7 +73,15 @@ for case, InLst in enumerate(Input_Lst):
 
             print(f"\t\t\t{numI:2} + {numJ:2} + {numK:2} = 0")
 
-            if set(trip) not in OutLst:
-                OutLst.append(list(trip))
+            trip = sorted(list(trip))
+
+            if trip not in OutLst:
+                OutLst.append(trip)
+    print()
+
+    print("\t\tOutput:")
+
+    for Out in OutLst:
+        print(f"\t\t\t{list(Out)}")
 
     print("\n")
