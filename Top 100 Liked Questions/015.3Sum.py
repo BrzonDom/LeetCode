@@ -3,7 +3,8 @@
 
 https://leetcode.com/problems/3sum/description/
 
-    Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+    Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k,
+    and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
     Notice that the solution set must not contain duplicate triplets.
 
@@ -42,17 +43,32 @@ https://leetcode.com/problems/3sum/description/
         -10^5 <= nums[i] <= 10^5
 
 """
+from itertools import combinations
 
-Input_strLst = [[-1, 0, 1, 2, -1, -4],
+Input_Lst = [[-1, 0, 1, 2, -1, -4],
                 [0, 1, 1],
                 [0, 0, 0]]
 
 print("Driver print:\n")
 
-for case, InLst in enumerate(Input_strLst):
+for case, InLst in enumerate(Input_Lst):
 
     print(f"\t{case+1}.Case:")
     print()
 
     print(f"\t\tList: {InLst}")
+    print()
+
+    # for indxI, numI in enumerate(InLst):
+    #     for indxJ, numJ in enumerate(InLst[:indxI] + InLst[indxI+1:]):
+    #         print(f"\t\t\t{numI:2} + {numJ:2} = {numI + numJ:2}")
+
+    tripComb = combinations(InLst, 3)
+
+    for trip in tripComb:
+        if sum(trip) == 0:
+            numI, numJ, numK = trip
+
+            print(f"\t\t\t{numI:2} + {numJ:2} + {numK:2} = 0")
+
     print("\n")
