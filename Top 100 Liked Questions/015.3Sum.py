@@ -65,10 +65,15 @@ for case, InLst in enumerate(Input_Lst):
 
     tripComb = combinations(InLst, 3)
 
+    OutLst = []
+
     for trip in tripComb:
         if sum(trip) == 0:
             numI, numJ, numK = trip
 
             print(f"\t\t\t{numI:2} + {numJ:2} + {numK:2} = 0")
+
+            if set(trip) not in OutLst:
+                OutLst.append(list(trip))
 
     print("\n")
