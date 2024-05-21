@@ -85,6 +85,39 @@ for case, InLst in enumerate(Input_Lst):
     print(f"\t\tList: {InLst}")
     print()
 
-    fndTrip_combSol(InLst)
+    # fndTrip_combSol(InLst)
+
+    OutLst = []
+    NumLst = sorted(InLst)
+
+    for i, num in enumerate(NumLst):
+
+        if num > 0:
+            break
+
+        if i != 0 and num == NumLst[i-1]:
+            continue
+
+        lft = i + 1
+        rgt = len(NumLst) - 1
+
+        while lft < rgt:
+            tripSum = num + NumLst[lft] + NumLst[rgt]
+
+            if tripSum > 0:
+                rgt -= 1
+
+            elif tripSum < 0:
+                lft += 1
+
+            else:
+                trip = [num, NumLst[lft], NumLst[rgt]]
+                OutLst.append(trip)
+
+                lft += 1
+                rgt -= 1
+
+                while NumLst[lft] == NumLst[lft-1] and lft < rgt:
+                    lft += 1
 
     print("\n")
