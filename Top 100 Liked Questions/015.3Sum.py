@@ -46,22 +46,11 @@ https://leetcode.com/problems/3sum/description/
 from itertools import combinations
 
 Input_Lst = [[-1, 0, 1, 2, -1, -4],
-                [0, 1, 1],
-                [0, 0, 0]]
+             [0, 1, 1],
+             [0, 0, 0]]
 
-print("Driver print:\n")
 
-for case, InLst in enumerate(Input_Lst):
-
-    print(f"\t{case+1}.Case:")
-    print()
-
-    print(f"\t\tList: {InLst}")
-    print()
-
-    # for indxI, numI in enumerate(InLst):
-    #     for indxJ, numJ in enumerate(InLst[:indxI] + InLst[indxI+1:]):
-    #         print(f"\t\t\t{numI:2} + {numJ:2} = {numI + numJ:2}")
+def fndTrip_combSol(InLst):
 
     tripComb = combinations(InLst, 3)
 
@@ -77,11 +66,25 @@ for case, InLst in enumerate(Input_Lst):
 
             if trip not in OutLst:
                 OutLst.append(trip)
+
     print()
 
     print("\t\tOutput:")
 
     for Out in OutLst:
         print(f"\t\t\t{list(Out)}")
+
+    return OutLst
+
+
+for case, InLst in enumerate(Input_Lst):
+
+    print(f"\t{case+1}.Case:")
+    print()
+
+    print(f"\t\tList: {InLst}")
+    print()
+
+    fndTrip_combSol(InLst)
 
     print("\n")
