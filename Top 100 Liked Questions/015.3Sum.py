@@ -120,4 +120,7 @@ for case, InLst in enumerate(Input_Lst):
                 while NumLst[lft] == NumLst[lft-1] and lft < rgt:
                     lft += 1
 
+        for Out in OutLst:
+            print(f"\t\t\t{list(Out)}")
+
     print("\n")
