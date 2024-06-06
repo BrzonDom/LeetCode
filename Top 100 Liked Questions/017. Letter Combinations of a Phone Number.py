@@ -53,20 +53,23 @@ for numCnt, numComb in enumerate(Input_numComb):
 
     lenComb = len(numComb)
 
-    for dig in numComb:
-        print(f"\t{dig}: {phoneConv[dig]}")
-    print()
+    if lenComb:
+        for dig in numComb:
+            print(f"\t{dig}: {phoneConv[dig]}")
+        print()
 
     if lenComb == 1:
 
         for letter in phoneConv[numComb]:
             print("\t\t", letter)
+        print()
 
     elif lenComb == 2:
         letterComb = list(itertools.product(phoneConv[numComb[0]], phoneConv[numComb[1]]))
 
         for comb in letterComb:
             print("\t\t", ''.join(comb))
+        print()
 
     elif lenComb == 3:
         letterComb = list(itertools.product(phoneConv[numComb[0]], phoneConv[numComb[1]],
@@ -74,6 +77,7 @@ for numCnt, numComb in enumerate(Input_numComb):
 
         for comb in letterComb:
             print("\t\t", ''.join(comb))
+        print()
 
     elif lenComb == 4:
         letterComb = list(itertools.product(phoneConv[numComb[0]], phoneConv[numComb[1]],
@@ -81,5 +85,6 @@ for numCnt, numComb in enumerate(Input_numComb):
 
         for comb in letterComb:
             print("\t\t", ''.join(comb))
+        print()
 
-    print("\n")
+    print()
