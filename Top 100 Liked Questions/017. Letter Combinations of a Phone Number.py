@@ -60,10 +60,12 @@ for numCnt, numComb in enumerate(Input_numComb):
             print(f"\t\t{dig}: {phoneConv[dig]}")
         print()
 
+    print("\t\tCombinations:")
+
     if lenComb == 1:
 
         for letter in phoneConv[numComb]:
-            print("\t\t\t", letter)
+            print("\t\t\t\t\t", letter)
         print()
 
     elif lenComb == 2:
