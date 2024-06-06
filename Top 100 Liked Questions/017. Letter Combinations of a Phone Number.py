@@ -33,10 +33,24 @@ https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 
 Input_numComb=["23", "", "2"]
 
+phoneConv = {"1": "_",
+             "2": "abc",
+             "3": "def",
+             "4": "ghi",
+             "5": "jkl",
+             "6": "mno",
+             "7": "pqrs",
+             "8": "tuv",
+             "9": "wxyz"}
+
+
 for numCnt, numComb in enumerate(Input_numComb):
 
     print(f"{numCnt+1}. case:\n")
 
-    print(f"\t\"{numComb}\"")
+    print(f"\t\"{numComb}\"\n")
 
-    print()
+    for dig in numComb:
+        print(f"\t{dig}: {phoneConv[dig]}")
+
+    print("\n")
