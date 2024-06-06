@@ -65,79 +65,81 @@ def subStrLen_Sol(s):
     return maxSubLen
 
 
-Input_strLst = ["abcabcbb",
-                "bbbbb",
-                "pwwkew",
-                "dvdf"]
+if __name__ == '__main__':
+
+    Input_strLst = ["abcabcbb",
+                    "bbbbb",
+                    "pwwkew",
+                    "dvdf"]
 
 
-print("Substring print:\n")
+    print("Substring print:\n")
 
-for string in Input_strLst:
+    for string in Input_strLst:
 
-    print("\tString: ", string)
-    print()
+        print("\tString: ", string)
+        print()
 
-    for c in range(len(string)):
-        print("\t\t", string[c:])
+        for c in range(len(string)):
+            print("\t\t", string[c:])
 
-    print("\n")
-
-
-print("Driver solution:\n")
-
-for string in Input_strLst:
-
-    print("\tString: ", string)
-
-    subLen = 0
-    maxSubLen = 0
-
-    used = set()
+        print("\n")
 
 
-    for c in range(len(string)):
-        used.clear()
+    print("Driver solution:\n")
+
+    for string in Input_strLst:
+
+        print("\tString: ", string)
+
         subLen = 0
+        maxSubLen = 0
 
-        print("\n\t", end="\t")
+        used = set()
 
-        for char in string[c:]:
 
-            if char not in used:
-                print(char, end="")
+        for c in range(len(string)):
+            used.clear()
+            subLen = 0
 
-                used.add(char)
-                subLen += 1
+            print("\n\t", end="\t")
 
-            else:
-                # print("\n\t", end="\t")
-                # print(char, end="")
+            for char in string[c:]:
 
-                if subLen > maxSubLen:
-                    maxSubLen = subLen
+                if char not in used:
+                    print(char, end="")
 
-                break
+                    used.add(char)
+                    subLen += 1
 
-                # used.clear()
-                # used.add(char)
-                # subLen = 1
+                else:
+                    # print("\n\t", end="\t")
+                    # print(char, end="")
 
-        if subLen > maxSubLen:
-            maxSubLen = subLen
+                    if subLen > maxSubLen:
+                        maxSubLen = subLen
 
-    print("\n\n\tMax len of substring: ", maxSubLen)
-    print("\n")
+                    break
 
-print("Function solve solution:\n")
+                    # used.clear()
+                    # used.add(char)
+                    # subLen = 1
 
-for string in Input_strLst:
+            if subLen > maxSubLen:
+                maxSubLen = subLen
 
-    print("\tString: ", string)
-    print()
+        print("\n\n\tMax len of substring: ", maxSubLen)
+        print("\n")
 
-    print("\t\tMax len of substring: ", subStrLen_Sol(string))
-    print("\n")
+    print("Function solve solution:\n")
+
+    for string in Input_strLst:
+
+        print("\tString: ", string)
+        print()
+
+        print("\t\tMax len of substring: ", subStrLen_Sol(string))
+        print("\n")
 
 
 
