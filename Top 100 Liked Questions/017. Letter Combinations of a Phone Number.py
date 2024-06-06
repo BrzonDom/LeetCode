@@ -30,3 +30,13 @@ https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
         digits[i] is a digit in the range ['2', '9'].
 
 """
+
+Input_numComb=["23", "", "2"]
+
+for numCnt, numComb in enumerate(Input_numComb):
+
+    print(f"{numCnt+1}. case:\n")
+
+    print(f"\t\"{numComb}\"")
+
+    print()
