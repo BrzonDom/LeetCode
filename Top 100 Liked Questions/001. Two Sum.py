@@ -26,18 +26,11 @@ https://leetcode.com/problems/two-sum/description/
 
 """
 
-
-if __name__ == '__main__':
-
-
-    Input_numsLst = [[[2, 7, 11, 15], 9],
-                     [[3, 2, 4], 6],
-                     [[3, 3], 6],
-                     [[3, 2, 3], 6]]
+def Comb_Print(numsLst):
 
     print("Combinations print:\n")
 
-    for numLst in Input_numsLst:
+    for numLst in numsLst:
         numArr = numLst[0]
         targ = numLst[1]
 
@@ -50,8 +43,35 @@ if __name__ == '__main__':
                 if n1 != n2:
                     print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
             print()
-
         print()
+
+
+if __name__ == '__main__':
+
+
+    Input_numsLst = [[[2, 7, 11, 15], 9],
+                     [[3, 2, 4], 6],
+                     [[3, 3], 6],
+                     [[3, 2, 3], 6]]
+
+    Comb_Print(Input_numsLst)
+
+    # print("Combinations print:\n")
+    #
+    # for numLst in Input_numsLst:
+    #     numArr = numLst[0]
+    #     targ = numLst[1]
+    #
+    #     print("\tNumbers array:", numArr)
+    #     print("\t       Target:", targ)
+    #     print()
+    #
+    #     for n1, num1 in enumerate(numArr):
+    #         for n2, num2 in enumerate(numArr):
+    #             if n1 != n2:
+    #                 print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+    #         print()
+    #     print()
 
 
     print("1.Driver solution:\n")
