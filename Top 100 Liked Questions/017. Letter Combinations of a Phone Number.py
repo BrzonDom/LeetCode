@@ -45,25 +45,25 @@ phoneConv = {"2": ["a", "b", "c"],
              "9": ["w", "x", "y", "z"]}
 
 
-print("Driver solution:")
+print("Driver solution:\n")
 
 for numCnt, numComb in enumerate(Input_numComb):
 
-    print(f"{numCnt+1}. case:\n")
+    print(f"\t{numCnt+1}. case:\n")
 
-    print(f"\t\"{numComb}\"\n")
+    print(f"\t\t\"{numComb}\"\n")
 
     lenComb = len(numComb)
 
     if lenComb:
         for dig in numComb:
-            print(f"\t{dig}: {phoneConv[dig]}")
+            print(f"\t\t{dig}: {phoneConv[dig]}")
         print()
 
     if lenComb == 1:
 
         for letter in phoneConv[numComb]:
-            print("\t\t", letter)
+            print("\t\t\t", letter)
         print()
 
     elif lenComb == 2:
@@ -72,7 +72,7 @@ for numCnt, numComb in enumerate(Input_numComb):
         letterComb = ["".join(elem) for elem in letterComb]
 
         for comb in letterComb:
-            print("\t\t", comb)
+            print("\t\t\t", comb)
         print()
 
     elif lenComb == 3:
@@ -82,7 +82,7 @@ for numCnt, numComb in enumerate(Input_numComb):
         letterComb = ["".join(elem) for elem in letterComb]
 
         for comb in letterComb:
-            print("\t\t", comb)
+            print("\t\t\t", comb)
         print()
 
     elif lenComb == 4:
@@ -92,7 +92,7 @@ for numCnt, numComb in enumerate(Input_numComb):
         letterComb = ["".join(elem) for elem in letterComb]
 
         for comb in letterComb:
-            print("\t\t", comb)
+            print("\t\t\t", comb)
         print()
 
     print()
