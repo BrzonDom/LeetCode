@@ -27,86 +27,84 @@ https://leetcode.com/problems/two-sum/description/
 """
 
 
-Input_numsLst = [[[2, 7, 11, 15], 9],
-                 [[3, 2, 4], 6],
-                 [[3, 3], 6],
-                 [[3, 2, 3], 6]]
+if __name__ == '__main__':
 
-print("Combinations print:\n")
 
-for numLst in Input_numsLst:
-    numArr = numLst[0]
-    targ = numLst[1]
+    Input_numsLst = [[[2, 7, 11, 15], 9],
+                     [[3, 2, 4], 6],
+                     [[3, 3], 6],
+                     [[3, 2, 3], 6]]
 
-    print("\tNumbers array:", numArr)
-    print("\t       Target:", targ)
-    print()
+    print("Combinations print:\n")
 
-    for n1, num1 in enumerate(numArr):
-        for n2, num2 in enumerate(numArr):
-            if n1 != n2:
-                print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+    for numLst in Input_numsLst:
+        numArr = numLst[0]
+        targ = numLst[1]
+
+        print("\tNumbers array:", numArr)
+        print("\t       Target:", targ)
         print()
 
-    print()
+        for n1, num1 in enumerate(numArr):
+            for n2, num2 in enumerate(numArr):
+                if n1 != n2:
+                    print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+            print()
+
+        print()
 
 
-print("1.Driver solution:\n")
+    print("1.Driver solution:\n")
 
-for numLst in Input_numsLst:
-    numArr = numLst[0]
-    targ = numLst[1]
+    for numLst in Input_numsLst:
+        numArr = numLst[0]
+        targ = numLst[1]
 
-    print("\tNumbers array:", numArr)
-    print("\t       Target:", targ)
-    print()
+        print("\tNumbers array:", numArr)
+        print("\t       Target:", targ)
+        print()
 
-    combFound = False
+        combFound = False
 
-    for n1, num1 in enumerate(numArr):
-        if combFound:
-            break
+        for n1, num1 in enumerate(numArr):
+            if combFound:
+                break
 
-        for n2, num2 in enumerate(numArr[n1+1:]):
-            print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+            for n2, num2 in enumerate(numArr[n1+1:]):
+                print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
-            if num1 + num2 == targ:
+                if num1 + num2 == targ:
+                    print("\n\t\tFound combination:")
+                    print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+
+                    combFound = True
+                    break
+            print()
+        print()
+
+    print("2.Driver solution:\n")
+
+    for numLst in Input_numsLst:
+        numArr = numLst[0]
+        targ = numLst[1]
+
+        print("\tNumbers array:", numArr)
+        print("\t       Target:", targ)
+        print()
+
+        combFound = False
+
+        for n1, num1 in enumerate(numArr):
+
+            remain = targ - num1
+            print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
+
+            if remain in numArr[n1+1:]:
+                num2 = remain
+                n2 = numArr.index(num2, n1+1)
+
                 print("\n\t\tFound combination:")
                 print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
-                combFound = True
                 break
-        print()
-    print()
-
-print("2.Driver solution:\n")
-
-for numLst in Input_numsLst:
-    numArr = numLst[0]
-    targ = numLst[1]
-
-    print("\tNumbers array:", numArr)
-    print("\t       Target:", targ)
-    print()
-
-    combFound = False
-
-    for n1, num1 in enumerate(numArr):
-
-        remain = targ - num1
-        print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
-
-        if remain in numArr[n1+1:]:
-            num2 = remain
-            n2 = numArr.index(num2, n1+1)
-
-            print("\n\t\tFound combination:")
-            print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-
-            break
-    print("\n")
-
-
-
-
-
+        print("\n")
