@@ -68,4 +68,18 @@ for numCnt, numComb in enumerate(Input_numComb):
         for comb in letterComb:
             print("\t\t", ''.join(comb))
 
+    elif lenComb == 3:
+        letterComb = list(itertools.product(phoneConv[numComb[0]], phoneConv[numComb[1]],
+                                            phoneConv[numComb[2]]))
+
+        for comb in letterComb:
+            print("\t\t", ''.join(comb))
+
+    elif lenComb == 4:
+        letterComb = list(itertools.product(phoneConv[numComb[0]], phoneConv[numComb[1]],
+                                            phoneConv[numComb[2]], phoneConv[numComb[3]]))
+
+        for comb in letterComb:
+            print("\t\t", ''.join(comb))
+
     print("\n")
