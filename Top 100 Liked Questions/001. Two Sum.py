@@ -89,34 +89,6 @@ if __name__ == '__main__':
 
     twoSum_Sol01_Prt(Input_numsLst)
 
-    # print("1.Driver solution:\n")
-    #
-    # for numLst in Input_numsLst:
-    #     numArr = numLst[0]
-    #     targ = numLst[1]
-    #
-    #     print("\tNumbers array:", numArr)
-    #     print("\t       Target:", targ)
-    #     print()
-    #
-    #     combFound = False
-    #
-    #     for n1, num1 in enumerate(numArr):
-    #         if combFound:
-    #             break
-    #
-    #         for n2, num2 in enumerate(numArr[n1+1:]):
-    #             print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-    #
-    #             if num1 + num2 == targ:
-    #                 print("\n\t\tFound combination:")
-    #                 print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-    #
-    #                 combFound = True
-    #                 break
-    #         print()
-    #     print()
-
 
     print("2.Driver solution:\n")
 
