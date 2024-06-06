@@ -77,22 +77,11 @@ def twoSum_Sol01_Prt(inNumsLst):
         print()
 
 
-if __name__ == '__main__':
+def twoSum_Sol02_Prt(inNumsLst):
 
+    print("2.Function solution:\n")
 
-    Input_numsLst = [[[2, 7, 11, 15], 9],
-                     [[3, 2, 4], 6],
-                     [[3, 3], 6],
-                     [[3, 2, 3], 6]]
-
-    comb_Print(Input_numsLst)
-
-    twoSum_Sol01_Prt(Input_numsLst)
-
-
-    print("2.Driver solution:\n")
-
-    for numLst in Input_numsLst:
+    for numLst in inNumsLst:
         numArr = numLst[0]
         targ = numLst[1]
 
@@ -116,3 +105,45 @@ if __name__ == '__main__':
 
                 break
         print("\n")
+
+
+if __name__ == '__main__':
+
+
+    Input_numsLst = [[[2, 7, 11, 15], 9],
+                     [[3, 2, 4], 6],
+                     [[3, 3], 6],
+                     [[3, 2, 3], 6]]
+
+    comb_Print(Input_numsLst)
+
+    twoSum_Sol01_Prt(Input_numsLst)
+
+    twoSum_Sol02_Prt(Input_numsLst)
+
+    # print("2.Driver solution:\n")
+    #
+    # for numLst in Input_numsLst:
+    #     numArr = numLst[0]
+    #     targ = numLst[1]
+    #
+    #     print("\tNumbers array:", numArr)
+    #     print("\t       Target:", targ)
+    #     print()
+    #
+    #     combFound = False
+    #
+    #     for n1, num1 in enumerate(numArr):
+    #
+    #         remain = targ - num1
+    #         print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
+    #
+    #         if remain in numArr[n1+1:]:
+    #             num2 = remain
+    #             n2 = numArr.index(num2, n1+1)
+    #
+    #             print("\n\t\tFound combination:")
+    #             print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+    #
+    #             break
+    #     print("\n")
