@@ -130,6 +130,22 @@ def twoSum_Sol03_Prt(inNumsLst):
 
         while True:
 
+            print("\t\t\t", end="")
+            for ind, num in enumerate(nums):
+
+                if ind == strt:
+                    print(f"[{num}]", end="")
+
+                elif ind == end:
+                    print(f"[{num}]", end="")
+
+                else:
+                    print(num, end="")
+
+                if ind != lenNum-1:
+                    print(", ", end="")
+            print()
+
             if nums[strt] + nums[end] == targ:
                 return
 
