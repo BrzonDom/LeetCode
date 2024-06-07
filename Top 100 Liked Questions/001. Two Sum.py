@@ -119,6 +119,11 @@ def twoSum_Sol03_Prt(inNumsLst):
         print("\t       Target:", targ)
         print()
 
+        lenNum = len(numArr)
+        end = lenNum-1
+        strt = 0
+
+        print("\t\tArray lenght:", lenNum)
         print()
 
     return
