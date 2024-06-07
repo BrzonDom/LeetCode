@@ -85,95 +85,6 @@ def Sol01_ForLoops_Prt(inNumsLst):
         print()
 
 
-def Sol02_LoopRemain_Prt(inNumsLst):
-
-    print("2.Function solution:\n")
-
-    for numLst in inNumsLst:
-        numArr = numLst[0]
-        targ = numLst[1]
-
-        print("\tNumbers array:", numArr)
-        print("\t       Target:", targ)
-        print()
-
-        combFound = False
-
-        for n1, num1 in enumerate(numArr):
-
-            remain = targ - num1
-            print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
-
-            if remain in numArr[n1+1:]:
-                num2 = remain
-                n2 = numArr.index(num2, n1+1)
-
-                print("\n\t\tFound combination:")
-                print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-
-                break
-        print("\n")
-
-
-def Sol03_TwoPointer_Prt(inNumsLst):
-
-    print("3.Function solution:\n")
-
-    for numLst in inNumsLst:
-        nums = numLst[0]
-        targ = numLst[1]
-
-        nums.sort()
-
-        print("\tNumbers array:", nums)
-        print("\t       Target:", targ)
-        print()
-
-        lenNum = len(nums)
-        rgt = lenNum-1
-        lft = 0
-
-        print("\t\tArray length:", lenNum)
-        print()
-
-        while lft < rgt:
-
-            print("\t\t\t", end="")
-            for ind, num in enumerate(nums):
-
-                if ind == lft or ind == rgt:
-                    print(f"[{num}]", end="")
-
-                else:
-                    print(num, end="")
-
-                if ind != lenNum-1:
-                    print(", ", end="")
-            print()
-
-            if nums[lft] + nums[rgt] == targ:
-                print("\n\t\tFound combination:")
-                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
-
-                break
-
-            elif nums[lft] + nums[rgt] < targ:
-                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
-
-                lft += 1
-
-            elif nums[lft] + nums[rgt] > targ:
-                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
-
-                rgt -= 1
-
-            print()
-
-        print("\n")
-
-    return
-
-
 if __name__ == '__main__':
 
 
@@ -185,7 +96,3 @@ if __name__ == '__main__':
     comb_Print(Input_numsLst)
 
     Sol01_ForLoops_Prt(Input_numsLst)
-
-    Sol02_LoopRemain_Prt(Input_numsLst)
-
-    Sol03_TwoPointer_Prt(Input_numsLst)
