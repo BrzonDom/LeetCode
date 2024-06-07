@@ -128,6 +128,20 @@ def twoSum_Sol03_Prt(inNumsLst):
         print("\t\tArray lenght:", lenNum)
         print()
 
+        while True:
+
+            if nums[strt] + nums[end] == targ:
+                return
+
+            elif nums[strt] + nums[end] < targ:
+                strt += 1
+
+            elif nums[strt] + nums[end] > targ:
+                end -= 1
+
+            elif strt == end:
+                break
+
     return
 
 
