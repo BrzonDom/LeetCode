@@ -75,6 +75,8 @@ def Sol01_ForLoops_Prt(numArr, targ):
                 # print("\n\t\tFound combination:")
                 # print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
+                return [n1, n2]
+
                 combFound = True
                 break
     #     print()
