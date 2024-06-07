@@ -54,7 +54,7 @@ def comb_Print(inNumsLst):
         print()
 
 
-def twoSum_Sol01_Prt(inNumsLst):
+def Sol01_ForLoops_Prt(inNumsLst):
 
     print("1.Function solution:\n")
 
@@ -85,7 +85,7 @@ def twoSum_Sol01_Prt(inNumsLst):
         print()
 
 
-def twoSum_Sol02_Prt(inNumsLst):
+def Sol02_LoopRemain_Prt(inNumsLst):
 
     print("2.Function solution:\n")
 
@@ -115,7 +115,7 @@ def twoSum_Sol02_Prt(inNumsLst):
         print("\n")
 
 
-def twoSum_Sol03_Prt(inNumsLst):
+def Sol03_TwoPointer_Prt(inNumsLst):
 
     print("3.Function solution:\n")
 
@@ -184,8 +184,8 @@ if __name__ == '__main__':
 
     comb_Print(Input_numsLst)
 
-    # twoSum_Sol01_Prt(Input_numsLst)
+    # Sol01_ForLoops_Prt(Input_numsLst)
     #
-    # twoSum_Sol02_Prt(Input_numsLst)
+    # Sol02_LoopRemain_Prt(Input_numsLst)
 
-    twoSum_Sol03_Prt(Input_numsLst)
+    Sol03_TwoPointer_Prt(Input_numsLst)
