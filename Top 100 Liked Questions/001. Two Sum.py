@@ -122,10 +122,10 @@ def twoSum_Sol03_Prt(inNumsLst):
         print()
 
         lenNum = len(nums)
-        end = lenNum-1
-        strt = 0
+        rgt = lenNum-1
+        lft = 0
 
-        print("\t\tArray lenght:", lenNum)
+        print("\t\tArray length:", lenNum)
         print()
 
         while True:
@@ -133,7 +133,7 @@ def twoSum_Sol03_Prt(inNumsLst):
             print("\t\t\t", end="")
             for ind, num in enumerate(nums):
 
-                if ind == strt or ind == end:
+                if ind == lft or ind == rgt:
                     print(f"[{num}]", end="")
 
                 else:
@@ -143,16 +143,16 @@ def twoSum_Sol03_Prt(inNumsLst):
                     print(", ", end="")
             print()
 
-            if nums[strt] + nums[end] == targ:
+            if nums[lft] + nums[rgt] == targ:
                 break
 
-            elif nums[strt] + nums[end] < targ:
-                strt += 1
+            elif nums[lft] + nums[rgt] < targ:
+                lft += 1
 
-            elif nums[strt] + nums[end] > targ:
-                end -= 1
+            elif nums[lft] + nums[rgt] > targ:
+                rgt -= 1
 
-            elif strt == end:
+            elif lft == rgt:
                 break
 
         print("\n")
