@@ -109,6 +109,18 @@ def twoSum_Sol02_Prt(inNumsLst):
 
 def twoSum_Sol03_Prt(inNumsLst):
 
+    print("3.Function solution:\n")
+
+    for numLst in inNumsLst:
+        numArr = numLst[0]
+        targ = numLst[1]
+
+        print("\tNumbers array:", numArr)
+        print("\t       Target:", targ)
+        print()
+
+        print()
+
     return
 
 
