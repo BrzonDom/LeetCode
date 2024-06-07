@@ -144,16 +144,25 @@ def twoSum_Sol03_Prt(inNumsLst):
             print()
 
             if nums[lft] + nums[rgt] == targ:
+                print("\n\t\tFound combination:")
+                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+
                 break
 
             elif nums[lft] + nums[rgt] < targ:
+                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+
                 lft += 1
 
             elif nums[lft] + nums[rgt] > targ:
+                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+
                 rgt -= 1
 
             elif lft == rgt:
                 break
+
+            print()
 
         print("\n")
 
