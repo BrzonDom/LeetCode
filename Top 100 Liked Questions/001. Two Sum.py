@@ -77,7 +77,7 @@ def Sol01_ForLoops_Prt(inNumsLst):
 
                 if num1 + num2 == targ:
                     print("\n\t\tFound combination:")
-                    print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+                    print(f"\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
                     combFound = True
                     break
@@ -184,7 +184,7 @@ if __name__ == '__main__':
 
     comb_Print(Input_numsLst)
 
-    # Sol01_ForLoops_Prt(Input_numsLst)
+    Sol01_ForLoops_Prt(Input_numsLst)
     #
     # Sol02_LoopRemain_Prt(Input_numsLst)
 
