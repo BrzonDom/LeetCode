@@ -56,15 +56,15 @@ def comb_Print(inNumsLst):
 
 def Sol01_ForLoops_Prt(inNumsLst):
 
-    print("1.Function solution:\n")
+    # print("1.Function solution:\n")
 
     for numLst in inNumsLst:
         numArr = numLst[0]
         targ = numLst[1]
 
-        print("\tNumbers array:", numArr)
-        print("\t       Target:", targ)
-        print()
+        # print("\tNumbers array:", numArr)
+        # print("\t       Target:", targ)
+        # print()
 
         combFound = False
 
@@ -73,16 +73,16 @@ def Sol01_ForLoops_Prt(inNumsLst):
                 break
 
             for n2, num2 in enumerate(numArr[n1+1:]):
-                print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+                # print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
                 if num1 + num2 == targ:
-                    print("\n\t\tFound combination:")
-                    print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+                    # print("\n\t\tFound combination:")
+                    # print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
                     combFound = True
                     break
-            print()
-        print()
+        #     print()
+        # print()
 
 
 if __name__ == '__main__':
@@ -93,6 +93,6 @@ if __name__ == '__main__':
                      [[3, 3], 6],
                      [[3, 2, 3], 6]]
 
-    comb_Print(Input_numsLst)
+    # comb_Print(Input_numsLst)
 
     Sol01_ForLoops_Prt(Input_numsLst)
