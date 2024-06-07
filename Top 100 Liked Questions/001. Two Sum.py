@@ -112,14 +112,16 @@ def twoSum_Sol03_Prt(inNumsLst):
     print("3.Function solution:\n")
 
     for numLst in inNumsLst:
-        numArr = numLst[0]
+        nums = numLst[0]
         targ = numLst[1]
 
-        print("\tNumbers array:", numArr)
+        nums.sort()
+
+        print("\tNumbers array:", nums)
         print("\t       Target:", targ)
         print()
 
-        lenNum = len(numArr)
+        lenNum = len(nums)
         end = lenNum-1
         strt = 0
 
