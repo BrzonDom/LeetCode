@@ -58,9 +58,6 @@ def Sol01_ForLoops_Prt(numArr, targ):
 
     # print("1.Function solution:\n")
 
-    # numArr = numLst[0]
-    # targ = numLst[1]
-
     # print("\tNumbers array:", numArr)
     # print("\t       Target:", targ)
     # print()
