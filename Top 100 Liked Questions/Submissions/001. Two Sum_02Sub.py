@@ -96,4 +96,4 @@ if __name__ == '__main__':
         numArr = case[0]
         targ = case[1]
 
-        Sol02_LoopRemain_Prt(InputLst)
+        Sol02_LoopRemain_Prt(numArr, targ)
