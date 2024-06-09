@@ -58,9 +58,6 @@ def Sol02_LoopRemain_Prt(numArr, targ):
 
     # print("2.Function solution:\n")
 
-    # numArr = numLst[0]
-    # targ = numLst[1]
-
     # print("\tNumbers array:", numArr)
     # print("\t       Target:", targ)
     # print()
