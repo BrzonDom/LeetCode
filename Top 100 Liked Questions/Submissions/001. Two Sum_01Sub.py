@@ -48,9 +48,9 @@ def Sol01_ForLoops_Prt(numArr, targ):
 
             if num1 + num2 == targ:
                 # print("\n\t\tFound combination:")
-                # print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+                # print(f"\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
-                return [n1, n2]
+                return [n1, n1+n2+1]
 
     #     print()
     # print()
