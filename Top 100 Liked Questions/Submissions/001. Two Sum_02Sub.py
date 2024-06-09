@@ -54,34 +54,33 @@ def comb_Print(inLst):
         print()
 
 
-def Sol02_LoopRemain_Prt(inLst):
+def Sol02_LoopRemain_Prt(numArr, targ):
 
     # print("2.Function solution:\n")
 
-    for numLst in inLst:
-        numArr = numLst[0]
-        targ = numLst[1]
+    # numArr = numLst[0]
+    # targ = numLst[1]
 
-        # print("\tNumbers array:", numArr)
-        # print("\t       Target:", targ)
-        # print()
+    # print("\tNumbers array:", numArr)
+    # print("\t       Target:", targ)
+    # print()
 
-        combFound = False
+    combFound = False
 
-        for n1, num1 in enumerate(numArr):
+    for n1, num1 in enumerate(numArr):
 
-            remain = targ - num1
-            # print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
+        remain = targ - num1
+        # print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
 
-            if remain in numArr[n1+1:]:
-                num2 = remain
-                n2 = numArr.index(num2, n1+1)
+        if remain in numArr[n1+1:]:
+            num2 = remain
+            n2 = numArr.index(num2, n1+1)
 
-                # print("\n\t\tFound combination:")
-                # print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
+            # print("\n\t\tFound combination:")
+            # print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
-                break
-        # print("\n")
+            break
+    # print("\n")
 
 
 if __name__ == '__main__':
@@ -94,4 +93,8 @@ if __name__ == '__main__':
 
     # comb_Print(InputLst)
 
-    Sol02_LoopRemain_Prt(InputLst)
+    for case in InputLst:
+        numArr = case[0]
+        targ = case[1]
+
+        Sol02_LoopRemain_Prt(InputLst)
