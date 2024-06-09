@@ -34,26 +34,6 @@ https://leetcode.com/problems/two-sum/description/
 """
 
 
-def comb_Print(inLst):
-
-    print("Combinations print:\n")
-
-    for numLst in inLst:
-        numArr = numLst[0]
-        targ = numLst[1]
-
-        print("\tNumbers array:", numArr)
-        print("\t       Target:", targ)
-        print()
-
-        for n1, num1 in enumerate(numArr):
-            for n2, num2 in enumerate(numArr):
-                if n1 != n2:
-                    print(f"\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-            print()
-        print()
-
-
 def Sol01_ForLoops_Prt(numArr, targ):
 
     # print("1.Function solution:\n")
@@ -82,8 +62,6 @@ if __name__ == '__main__':
                 [[3, 2, 4], 6],
                 [[3, 3], 6],
                 [[3, 2, 3], 6]]
-
-    # comb_Print(InputLst)
 
     for case in InputLst:
         numArr = case[0]
