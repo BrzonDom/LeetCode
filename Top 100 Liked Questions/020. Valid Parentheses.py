@@ -36,7 +36,8 @@ https://leetcode.com/problems/valid-parentheses/description/
 
 InputLst = ["()",
             "()[]{}",
-            "(]"]
+            "(]",
+            "(([]{}))"]
 
 for cs, prnths in enumerate(InputLst):
 
@@ -54,18 +55,19 @@ for cs, prnths in enumerate(InputLst):
             print(f"\t\t\"{par}\"\tLeft parentheses")
 
             if par == '(':
-                stckPrnth += [')']
+                stckPrnth = [')'] + stckPrnth
 
             elif par == '[':
-                stckPrnth += [']']
+                stckPrnth = [']'] + stckPrnth
 
             elif par == '{':
-                stckPrnth += ['}']
+                stckPrnth = ['}'] + stckPrnth
 
-            print("\t\t", stckPrnth)
+            print("\t\t\t", stckPrnth)
+            print()
 
         elif par in ")]}":
-            print(f"\t\t\t\"{par}\"\tRight parentheses")
+            print(f"\t\t\"{par}\"\tRight parentheses")
 
             if par == ')':
                 if ')' == stckPrnth[0]:
@@ -79,7 +81,8 @@ for cs, prnths in enumerate(InputLst):
                 if '}' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
 
-            print("\t\t", stckPrnth)
+            print("\t\t\t", stckPrnth)
+            print()
 
         else:
             print("\t\tNo parentheses")
