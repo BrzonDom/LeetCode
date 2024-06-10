@@ -141,21 +141,11 @@ def Sol02_IterQue_Prt(prnths):
 
             return False
 
-            # lessPrnth = True
-            # break
-
         elif stckPrnth.pop() != par:
             # print(f"\t\t\"{par}\"\tRight parentheses")
             # print("\t\t\t", stckPrnth)
 
             return False
-
-            # wrngPrnth = True
-            # break
-
-        # else:
-            # print(f"\t\t\"{par}\"\tRight parentheses")
-            # print("\t\t\t", stckPrnth)
 
         # print()
 
