@@ -32,3 +32,19 @@ https://leetcode.com/problems/merge-two-sorted-lists/description/
         Both list1 and list2 are sorted in non-decreasing order.
 
 """
+
+InputLst = [[[1,2,4], [1,3,4]],
+            [[], []],
+            [[], [0]]]
+
+for csCnt, Lsts in enumerate(InputLst):
+
+    lst1 = Lsts[0]
+    lst2 = Lsts[1]
+
+    print(f"{csCnt+1}. Case:\n")
+
+    print(f"\t1.List: {lst1}")
+    print(f"\t2.List: {lst2}")
+
+    print("\n")
