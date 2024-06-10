@@ -72,28 +72,22 @@ def Sol01A_IfTreeList_Prt(inLst):
                     if ')' == stckPrnth[0]:
                         stckPrnth = stckPrnth[1:]
                     else:
-                        print()
-                        print("\tInvalid - Wrong parentheses")
-
-                        return False
+                        wrngPrnth = True
+                        break
 
                 elif par == ']':
                     if ']' == stckPrnth[0]:
                         stckPrnth = stckPrnth[1:]
                     else:
-                        print()
-                        print("\tInvalid - Wrong parentheses")
-
-                        return False
+                        wrngPrnth = True
+                        break
 
                 elif par == '}':
                     if '}' == stckPrnth[0]:
                         stckPrnth = stckPrnth[1:]
                     else:
-                        print()
-                        print("\tInvalid - Wrong parentheses")
-
-                        return False
+                        wrngPrnth = True
+                        break
 
                 print("\t\t\t", stckPrnth)
                 print()
@@ -102,19 +96,15 @@ def Sol01A_IfTreeList_Prt(inLst):
                 print("\t\tNo parentheses")
                 break
 
-        # if wrngPrnth:
-        #     print()
-        #     print("\tInvalid - Wrong parentheses")
+        if wrngPrnth:
+            print()
+            print("\tInvalid - Wrong parentheses")
 
-        if stckPrnth:
+        elif stckPrnth:
             print("\tInvalid - Not enough parentheses")
-
-            return False
 
         else:
             print("\tValid")
-
-            return True
 
         print("\n")
 
