@@ -35,6 +35,81 @@ https://leetcode.com/problems/valid-parentheses/description/
 """
 
 
+def Sol01A_IfTreeList_Prt(inLst):
+
+    for cs, prnths in enumerate(inLst):
+
+        print(f"{cs+1}. Case")
+        print()
+
+        print(f"\tParentheses: {prnths}")
+        print()
+
+        stckPrnth = []
+        wrngPrnth = False
+
+        for par in prnths:
+
+            if par in "([{":
+                print(f"\t\t\"{par}\"\tLeft parentheses")
+
+                if par == '(':
+                    stckPrnth = [')'] + stckPrnth
+
+                elif par == '[':
+                    stckPrnth = [']'] + stckPrnth
+
+                elif par == '{':
+                    stckPrnth = ['}'] + stckPrnth
+
+                print("\t\t\t", stckPrnth)
+                print()
+
+            elif par in ")]}":
+                print(f"\t\t\"{par}\"\tRight parentheses")
+
+                if par == ')':
+                    if ')' == stckPrnth[0]:
+                        stckPrnth = stckPrnth[1:]
+                    else:
+                        wrngPrnth = True
+                        break
+
+                elif par == ']':
+                    if ']' == stckPrnth[0]:
+                        stckPrnth = stckPrnth[1:]
+                    else:
+                        wrngPrnth = True
+                        break
+
+                elif par == '}':
+                    if '}' == stckPrnth[0]:
+                        stckPrnth = stckPrnth[1:]
+                    else:
+                        wrngPrnth = True
+                        break
+
+                print("\t\t\t", stckPrnth)
+                print()
+
+            else:
+                print("\t\tNo parentheses")
+                break
+
+        if wrngPrnth:
+            print()
+            print("\tInvalid - Wrong parentheses")
+
+        elif stckPrnth:
+            print("\tInvalid - Not enough parentheses")
+
+        else:
+            print("\tValid")
+
+        print("\n")
+
+
+
 if __name__ == '__main__':
 
     InputLst = ["()",
