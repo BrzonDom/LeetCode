@@ -236,9 +236,17 @@ if __name__ == '__main__':
 
             elif stckPrnth.pop() != par:
                 print(f"\t\t\"{par}\"\tRight parentheses")
+                print("\t\t\t", stckPrnth)
 
             elif not stckPrnth:
                 print(f"\t\t\"{par}\"\tRight parentheses")
+                print("\t\t\t", stckPrnth)
+
+            else:
+                print(f"\t\t\"{par}\"\tRight parentheses")
+                print("\t\t\t", stckPrnth)
+
+            print()
 
         print()
 
