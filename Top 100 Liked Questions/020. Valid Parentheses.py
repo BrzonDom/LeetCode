@@ -213,6 +213,8 @@ if __name__ == '__main__':
         print()
 
         stckPrnth = []
+        wrngPrnth = False
+        lessPrnth = False
 
         for par in prnths:
 
@@ -238,9 +240,15 @@ if __name__ == '__main__':
                 print(f"\t\t\"{par}\"\tRight parentheses")
                 print("\t\t\t", stckPrnth)
 
+                wrngPrnth = True
+                break
+
             elif not stckPrnth:
                 print(f"\t\t\"{par}\"\tRight parentheses")
                 print("\t\t\t", stckPrnth)
+
+                lessPrnth = True
+                break
 
             else:
                 print(f"\t\t\"{par}\"\tRight parentheses")
@@ -249,4 +257,15 @@ if __name__ == '__main__':
             print()
 
         print()
+
+        if wrngPrnth:
+            print("\tInvalid - Wrong parentheses")
+
+        elif stckPrnth or lessPrnth:
+            print("\tInvalid - Not enough parentheses")
+
+        else:
+            print("\tValid")
+
+        print("\n")
 
