@@ -272,67 +272,67 @@ if __name__ == '__main__':
     #
     #     print("\n")
 
-    for csCnt, prnths in enumerate(InputLst):
-        print(f"{csCnt + 1}. Case")
-        print()
-
-        print(f"\tParentheses: {prnths}")
-        print()
-
-        stckPrnth = []
-        wrngPrnth = False
-        lessPrnth = False
-
-        for par in prnths:
-
-            if par == '(':
-                stckPrnth.append(')')
-
-                print(f"\t\t\"{par}\"\tLeft parentheses")
-                print("\t\t\t", stckPrnth)
-
-            elif par == '[':
-                stckPrnth.append(']')
-
-                print(f"\t\t\"{par}\"\tLeft parentheses")
-                print("\t\t\t", stckPrnth)
-
-            elif par == '{':
-                stckPrnth.append('}')
-
-                print(f"\t\t\"{par}\"\tLeft parentheses")
-                print("\t\t\t", stckPrnth)
-
-            elif not stckPrnth:
-                print(f"\t\t\"{par}\"\tRight parentheses")
-                print("\t\t\t", stckPrnth)
-
-                lessPrnth = True
-                break
-
-            elif stckPrnth.pop() != par:
-                print(f"\t\t\"{par}\"\tRight parentheses")
-                print("\t\t\t", stckPrnth)
-
-                wrngPrnth = True
-                break
-
-            else:
-                print(f"\t\t\"{par}\"\tRight parentheses")
-                print("\t\t\t", stckPrnth)
-
-            print()
-
-        print()
-
-        if wrngPrnth:
-            print("\tInvalid - Wrong parentheses")
-
-        elif stckPrnth or lessPrnth:
-            print("\tInvalid - Not enough parentheses")
-
-        else:
-            print("\tValid")
-
-        print("\n")
+    # for csCnt, prnths in enumerate(InputLst):
+    #     print(f"{csCnt + 1}. Case")
+    #     print()
+    #
+    #     print(f"\tParentheses: {prnths}")
+    #     print()
+    #
+    #     stckPrnth = []
+    #     wrngPrnth = False
+    #     lessPrnth = False
+    #
+    #     for par in prnths:
+    #
+    #         if par == '(':
+    #             stckPrnth.append(')')
+    #
+    #             print(f"\t\t\"{par}\"\tLeft parentheses")
+    #             print("\t\t\t", stckPrnth)
+    #
+    #         elif par == '[':
+    #             stckPrnth.append(']')
+    #
+    #             print(f"\t\t\"{par}\"\tLeft parentheses")
+    #             print("\t\t\t", stckPrnth)
+    #
+    #         elif par == '{':
+    #             stckPrnth.append('}')
+    #
+    #             print(f"\t\t\"{par}\"\tLeft parentheses")
+    #             print("\t\t\t", stckPrnth)
+    #
+    #         elif not stckPrnth:
+    #             print(f"\t\t\"{par}\"\tRight parentheses")
+    #             print("\t\t\t", stckPrnth)
+    #
+    #             lessPrnth = True
+    #             break
+    #
+    #         elif stckPrnth.pop() != par:
+    #             print(f"\t\t\"{par}\"\tRight parentheses")
+    #             print("\t\t\t", stckPrnth)
+    #
+    #             wrngPrnth = True
+    #             break
+    #
+    #         else:
+    #             print(f"\t\t\"{par}\"\tRight parentheses")
+    #             print("\t\t\t", stckPrnth)
+    #
+    #         print()
+    #
+    #     print()
+    #
+    #     if wrngPrnth:
+    #         print("\tInvalid - Wrong parentheses")
+    #
+    #     elif stckPrnth or lessPrnth:
+    #         print("\tInvalid - Not enough parentheses")
+    #
+    #     else:
+    #         print("\tValid")
+    #
+    #     print("\n")
 
