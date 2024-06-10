@@ -61,7 +61,7 @@ def Sol03_TwoPointer_Prt(nums, targ):
 
     numsInd = [(num, ind) for ind, num in enumerate(nums)]
 
-    numsInd.sort()
+    numsInd.sort(key=lambda num: num[0])
     nums.sort()
     print(numsInd)
 
@@ -82,9 +82,9 @@ def Sol03_TwoPointer_Prt(nums, targ):
             # print("\n\t\tFound combination:")
             # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
 
-            print(lft, rgt)
-            print(numsInd[lft][1], numsInd[rgt][1])
-            print()
+            # print(lft, rgt)
+            # print(numsInd[lft][1], numsInd[rgt][1])
+            # print()
 
             return [numsInd[lft][1], numsInd[rgt][1]]
 
