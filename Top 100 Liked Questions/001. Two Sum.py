@@ -97,8 +97,6 @@ def Sol02_LoopRemain_Prt(inNumsLst):
         print("\t       Target:", targ)
         print()
 
-        combFound = False
-
         for n1, num1 in enumerate(numArr):
 
             remain = targ - num1
@@ -184,8 +182,8 @@ if __name__ == '__main__':
 
     comb_Print(Input_numsLst)
 
-    Sol01_ForLoops_Prt(Input_numsLst)
-    #
+    # Sol01_ForLoops_Prt(Input_numsLst)
+
     # Sol02_LoopRemain_Prt(Input_numsLst)
 
     Sol03_TwoPointer_Prt(Input_numsLst)
