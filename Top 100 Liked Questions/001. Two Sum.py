@@ -121,7 +121,10 @@ def Sol03_TwoPointer_Prt(inNumsLst):
         nums = numLst[0]
         targ = numLst[1]
 
+        numsInd = [(num, ind) for ind, num in enumerate(nums)]
+
         nums.sort()
+        numsInd.sort()
 
         print("\tNumbers array:", nums)
         print("\t       Target:", targ)
