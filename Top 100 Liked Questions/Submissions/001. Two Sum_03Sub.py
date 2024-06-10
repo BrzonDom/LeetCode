@@ -58,10 +58,6 @@ def Sol03_TwoPointer_Prt(nums, targ):
 
     # print("3.Function solution:\n")
 
-    # for numLst in inLst:
-    #     nums = numLst[0]
-    #     targ = numLst[1]
-
     nums.sort()
 
     # print("\tNumbers array:", nums)
@@ -76,19 +72,6 @@ def Sol03_TwoPointer_Prt(nums, targ):
     # print()
 
     while lft < rgt:
-
-        # print("\t\t\t", end="")
-        # for ind, num in enumerate(nums):
-
-            # if ind == lft or ind == rgt:
-                # print(f"[{num}]", end="")
-
-            # else:
-                # print(num, end="")
-
-            # if ind != lenNum-1:
-        #         print(", ", end="")
-        # print()
 
         if nums[lft] + nums[rgt] == targ:
             # print("\n\t\tFound combination:")
@@ -107,8 +90,6 @@ def Sol03_TwoPointer_Prt(nums, targ):
             rgt -= 1
 
         # print()
-
-    # print("\n")
 
     return
 
