@@ -119,6 +119,82 @@ def Sol01A_IfTreeList_Prt(inLst):
         print("\n")
 
 
+def Sol01_IfTreeList_Prt(prnths):
+
+    print(f"\tParentheses: {prnths}")
+    print()
+
+    stckPrnth = []
+    wrngPrnth = False
+
+    for par in prnths:
+
+        if par in "([{":
+            print(f"\t\t\"{par}\"\tLeft parentheses")
+
+            if par == '(':
+                stckPrnth = [')'] + stckPrnth
+
+            elif par == '[':
+                stckPrnth = [']'] + stckPrnth
+
+            elif par == '{':
+                stckPrnth = ['}'] + stckPrnth
+
+            print("\t\t\t", stckPrnth)
+            print()
+
+        elif par in ")]}":
+            print(f"\t\t\"{par}\"\tRight parentheses")
+
+            if par == ')':
+                if ')' == stckPrnth[0]:
+                    stckPrnth = stckPrnth[1:]
+                else:
+                    print()
+                    print("\tInvalid - Wrong parentheses")
+
+                    return False
+
+            elif par == ']':
+                if ']' == stckPrnth[0]:
+                    stckPrnth = stckPrnth[1:]
+                else:
+                    print()
+                    print("\tInvalid - Wrong parentheses")
+
+                    return False
+
+            elif par == '}':
+                if '}' == stckPrnth[0]:
+                    stckPrnth = stckPrnth[1:]
+                else:
+                    print()
+                    print("\tInvalid - Wrong parentheses")
+
+                    return False
+
+            print("\t\t\t", stckPrnth)
+            print()
+
+        else:
+            print("\t\tNo parentheses")
+            break
+
+    # if wrngPrnth:
+    #     print()
+    #     print("\tInvalid - Wrong parentheses")
+
+    if stckPrnth:
+        print("\tInvalid - Not enough parentheses")
+
+        return False
+
+    else:
+        print("\tValid")
+
+        return True
+
 
 if __name__ == '__main__':
 
