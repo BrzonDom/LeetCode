@@ -54,61 +54,61 @@ def comb_Print(inLst):
         print()
 
 
-def Sol03_TwoPointer_Prt(inLst):
+def Sol03_TwoPointer_Prt(nums, targ):
 
     # print("3.Function solution:\n")
 
-    for numLst in inLst:
-        nums = numLst[0]
-        targ = numLst[1]
+    # for numLst in inLst:
+    #     nums = numLst[0]
+    #     targ = numLst[1]
 
-        nums.sort()
+    nums.sort()
 
-        # print("\tNumbers array:", nums)
-        # print("\t       Target:", targ)
+    # print("\tNumbers array:", nums)
+    # print("\t       Target:", targ)
+    # print()
+
+    lenNum = len(nums)
+    rgt = lenNum-1
+    lft = 0
+
+    # print("\t\tArray length:", lenNum)
+    # print()
+
+    while lft < rgt:
+
+        # print("\t\t\t", end="")
+        # for ind, num in enumerate(nums):
+
+            # if ind == lft or ind == rgt:
+                # print(f"[{num}]", end="")
+
+            # else:
+                # print(num, end="")
+
+            # if ind != lenNum-1:
+        #         print(", ", end="")
         # print()
 
-        lenNum = len(nums)
-        rgt = lenNum-1
-        lft = 0
+        if nums[lft] + nums[rgt] == targ:
+            # print("\n\t\tFound combination:")
+            # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
 
-        # print("\t\tArray length:", lenNum)
+            break
+
+        elif nums[lft] + nums[rgt] < targ:
+            # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+
+            lft += 1
+
+        elif nums[lft] + nums[rgt] > targ:
+            # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+
+            rgt -= 1
+
         # print()
 
-        while lft < rgt:
-
-            # print("\t\t\t", end="")
-            # for ind, num in enumerate(nums):
-
-                # if ind == lft or ind == rgt:
-                    # print(f"[{num}]", end="")
-
-                # else:
-                    # print(num, end="")
-
-                # if ind != lenNum-1:
-            #         print(", ", end="")
-            # print()
-
-            if nums[lft] + nums[rgt] == targ:
-                # print("\n\t\tFound combination:")
-                # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
-
-                break
-
-            elif nums[lft] + nums[rgt] < targ:
-                # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
-
-                lft += 1
-
-            elif nums[lft] + nums[rgt] > targ:
-                # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
-
-                rgt -= 1
-
-            # print()
-
-        # print("\n")
+    # print("\n")
 
     return
 
@@ -123,4 +123,8 @@ if __name__ == '__main__':
 
     comb_Print(InputLst)
 
-    Sol03_TwoPointer_Prt(InputLst)
+    for case in InputLst:
+        nums = case[0]
+        targ = case[1]
+
+        Sol03_TwoPointer_Prt(nums, targ)
