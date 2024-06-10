@@ -49,6 +49,7 @@ for cs, prnths in enumerate(InputLst):
     print()
 
     stckPrnth = []
+    wrngPrnth = False
 
     for par in prnths:
 
@@ -74,18 +75,21 @@ for cs, prnths in enumerate(InputLst):
                 if ')' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
                 else:
+                    wrngPrnth = True
                     break
 
             elif par == ']':
                 if ']' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
                 else:
+                    wrngPrnth = True
                     break
 
             elif par == '}':
                 if '}' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
                 else:
+                    wrngPrnth = True
                     break
 
             print("\t\t\t", stckPrnth)
@@ -94,5 +98,15 @@ for cs, prnths in enumerate(InputLst):
         else:
             print("\t\tNo parentheses")
             break
+
+    if wrngPrnth:
+        print()
+        print("\tInvalid - Wrong parentheses")
+
+    elif stckPrnth:
+        print("\tInvalid - Not enough parentheses")
+
+    else:
+        print("\tValid")
 
     print("\n")
