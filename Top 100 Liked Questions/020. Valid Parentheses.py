@@ -46,13 +46,40 @@ for cs, prnths in enumerate(InputLst):
     print(f"\tParentheses: {prnths}")
     print()
 
+    stckPrnth = []
+
     for par in prnths:
 
         if par in "([{":
             print(f"\t\t\"{par}\"\tLeft parentheses")
 
+            if par == '(':
+                stckPrnth += [')']
+
+            elif par == '[':
+                stckPrnth += [']']
+
+            elif par == '{':
+                stckPrnth += ['}']
+
+            print("\t\t", stckPrnth)
+
         elif par in ")]}":
-            print(f"\t\t\"{par}\"\tRight parentheses")
+            print(f"\t\t\t\"{par}\"\tRight parentheses")
+
+            if par == ')':
+                if ')' == stckPrnth[0]:
+                    stckPrnth = stckPrnth[1:]
+
+            elif par == ']':
+                if ']' == stckPrnth[0]:
+                    stckPrnth = stckPrnth[1:]
+
+            elif par == '}':
+                if '}' == stckPrnth[0]:
+                    stckPrnth = stckPrnth[1:]
+
+            print("\t\t", stckPrnth)
 
         else:
             print("\t\tNo parentheses")
