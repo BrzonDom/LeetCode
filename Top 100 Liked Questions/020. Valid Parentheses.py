@@ -340,5 +340,13 @@ if __name__ == '__main__':
     #     print("\n")
 
 
-    Sol02A_IterQue_Prt(InputLst)
+    # Sol02A_IterQue_Prt(InputLst)
 
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt+1}. Case")
+        print()
+
+        Sol02_IterQue_Prt(case)
+
+        print("\n")
