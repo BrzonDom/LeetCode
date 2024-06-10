@@ -34,79 +34,82 @@ https://leetcode.com/problems/valid-parentheses/description/
 
 """
 
-InputLst = ["()",
-            "()[]{}",
-            "(]",
-            "(([]{}))",
-            "([]{(}))"]
 
-for cs, prnths in enumerate(InputLst):
+if __name__ == '__main__':
 
-    print(f"{cs+1}. Case")
-    print()
+    InputLst = ["()",
+                "()[]{}",
+                "(]",
+                "(([]{}))",
+                "([]{(}))"]
 
-    print(f"\tParentheses: {prnths}")
-    print()
+    for cs, prnths in enumerate(InputLst):
 
-    stckPrnth = []
-    wrngPrnth = False
+        print(f"{cs+1}. Case")
+        print()
 
-    for par in prnths:
+        print(f"\tParentheses: {prnths}")
+        print()
 
-        if par in "([{":
-            print(f"\t\t\"{par}\"\tLeft parentheses")
+        stckPrnth = []
+        wrngPrnth = False
 
-            if par == '(':
-                stckPrnth = [')'] + stckPrnth
+        for par in prnths:
 
-            elif par == '[':
-                stckPrnth = [']'] + stckPrnth
+            if par in "([{":
+                print(f"\t\t\"{par}\"\tLeft parentheses")
 
-            elif par == '{':
-                stckPrnth = ['}'] + stckPrnth
+                if par == '(':
+                    stckPrnth = [')'] + stckPrnth
 
-            print("\t\t\t", stckPrnth)
+                elif par == '[':
+                    stckPrnth = [']'] + stckPrnth
+
+                elif par == '{':
+                    stckPrnth = ['}'] + stckPrnth
+
+                print("\t\t\t", stckPrnth)
+                print()
+
+            elif par in ")]}":
+                print(f"\t\t\"{par}\"\tRight parentheses")
+
+                if par == ')':
+                    if ')' == stckPrnth[0]:
+                        stckPrnth = stckPrnth[1:]
+                    else:
+                        wrngPrnth = True
+                        break
+
+                elif par == ']':
+                    if ']' == stckPrnth[0]:
+                        stckPrnth = stckPrnth[1:]
+                    else:
+                        wrngPrnth = True
+                        break
+
+                elif par == '}':
+                    if '}' == stckPrnth[0]:
+                        stckPrnth = stckPrnth[1:]
+                    else:
+                        wrngPrnth = True
+                        break
+
+                print("\t\t\t", stckPrnth)
+                print()
+
+            else:
+                print("\t\tNo parentheses")
+                break
+
+        if wrngPrnth:
             print()
+            print("\tInvalid - Wrong parentheses")
 
-        elif par in ")]}":
-            print(f"\t\t\"{par}\"\tRight parentheses")
-
-            if par == ')':
-                if ')' == stckPrnth[0]:
-                    stckPrnth = stckPrnth[1:]
-                else:
-                    wrngPrnth = True
-                    break
-
-            elif par == ']':
-                if ']' == stckPrnth[0]:
-                    stckPrnth = stckPrnth[1:]
-                else:
-                    wrngPrnth = True
-                    break
-
-            elif par == '}':
-                if '}' == stckPrnth[0]:
-                    stckPrnth = stckPrnth[1:]
-                else:
-                    wrngPrnth = True
-                    break
-
-            print("\t\t\t", stckPrnth)
-            print()
+        elif stckPrnth:
+            print("\tInvalid - Not enough parentheses")
 
         else:
-            print("\t\tNo parentheses")
-            break
+            print("\tValid")
 
-    if wrngPrnth:
-        print()
-        print("\tInvalid - Wrong parentheses")
-
-    elif stckPrnth:
-        print("\tInvalid - Not enough parentheses")
-
-    else:
-        print("\tValid")
-
-    print("\n")
+        print("\n")
