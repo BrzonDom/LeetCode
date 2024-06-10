@@ -63,6 +63,9 @@ def Sol01_IfTreeList_Prt(prnths):
         elif par in ")]}":
             # print(f"\t\t\"{par}\"\tRight parentheses")
 
+            if not stckPrnth:
+                return False
+
             if par == ')':
                 if ')' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
