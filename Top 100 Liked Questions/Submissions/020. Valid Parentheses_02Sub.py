@@ -112,8 +112,6 @@ def Sol02_IterQue_Prt(prnths):
     # print()
 
     stckPrnth = []
-    wrngPrnth = False
-    lessPrnth = False
 
     for par in prnths:
 
