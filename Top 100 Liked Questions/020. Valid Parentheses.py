@@ -33,3 +33,15 @@ https://leetcode.com/problems/valid-parentheses/description/
         s consists of parentheses only '()[]{}'.
 
 """
+
+InputLst = ["()",
+            "()[]{}",
+            "(]"]
+
+for cs, prnths in enumerate(InputLst):
+
+    print(f"{cs}. Case")
+    print()
+
+    print(f"\tParentheses: {prnths}")
+    print("\n")
