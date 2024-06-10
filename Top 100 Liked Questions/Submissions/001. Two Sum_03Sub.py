@@ -54,65 +54,6 @@ def comb_Print(inNumsLst):
         print()
 
 
-def Sol01_ForLoops_Prt(inNumsLst):
-
-    print("1.Function solution:\n")
-
-    for numLst in inNumsLst:
-        numArr = numLst[0]
-        targ = numLst[1]
-
-        print("\tNumbers array:", numArr)
-        print("\t       Target:", targ)
-        print()
-
-        combFound = False
-
-        for n1, num1 in enumerate(numArr):
-            if combFound:
-                break
-
-            for n2, num2 in enumerate(numArr[n1+1:]):
-                print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-
-                if num1 + num2 == targ:
-                    print("\n\t\tFound combination:")
-                    print(f"\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-
-                    combFound = True
-                    break
-            print()
-        print()
-
-
-def Sol02_LoopRemain_Prt(inNumsLst):
-
-    print("2.Function solution:\n")
-
-    for numLst in inNumsLst:
-        numArr = numLst[0]
-        targ = numLst[1]
-
-        print("\tNumbers array:", numArr)
-        print("\t       Target:", targ)
-        print()
-
-        for n1, num1 in enumerate(numArr):
-
-            remain = targ - num1
-            print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
-
-            if remain in numArr[n1+1:]:
-                num2 = remain
-                n2 = numArr.index(num2, n1+1)
-
-                print("\n\t\tFound combination:")
-                print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
-
-                break
-        print("\n")
-
-
 def Sol03_TwoPointer_Prt(inNumsLst):
 
     print("3.Function solution:\n")
@@ -181,9 +122,5 @@ if __name__ == '__main__':
                      [[3, 2, 3], 6]]
 
     comb_Print(Input_numsLst)
-
-    # Sol01_ForLoops_Prt(Input_numsLst)
-
-    # Sol02_LoopRemain_Prt(Input_numsLst)
 
     Sol03_TwoPointer_Prt(Input_numsLst)
