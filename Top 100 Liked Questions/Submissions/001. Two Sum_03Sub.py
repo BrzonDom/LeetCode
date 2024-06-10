@@ -56,7 +56,7 @@ def comb_Print(inNumsLst):
 
 def Sol03_TwoPointer_Prt(inNumsLst):
 
-    print("3.Function solution:\n")
+    # print("3.Function solution:\n")
 
     for numLst in inNumsLst:
         nums = numLst[0]
@@ -64,51 +64,51 @@ def Sol03_TwoPointer_Prt(inNumsLst):
 
         nums.sort()
 
-        print("\tNumbers array:", nums)
-        print("\t       Target:", targ)
-        print()
+        # print("\tNumbers array:", nums)
+        # print("\t       Target:", targ)
+        # print()
 
         lenNum = len(nums)
         rgt = lenNum-1
         lft = 0
 
-        print("\t\tArray length:", lenNum)
-        print()
+        # print("\t\tArray length:", lenNum)
+        # print()
 
         while lft < rgt:
 
-            print("\t\t\t", end="")
-            for ind, num in enumerate(nums):
+            # print("\t\t\t", end="")
+            # for ind, num in enumerate(nums):
 
-                if ind == lft or ind == rgt:
-                    print(f"[{num}]", end="")
+                # if ind == lft or ind == rgt:
+                    # print(f"[{num}]", end="")
 
-                else:
-                    print(num, end="")
+                # else:
+                    # print(num, end="")
 
-                if ind != lenNum-1:
-                    print(", ", end="")
-            print()
+                # if ind != lenNum-1:
+            #         print(", ", end="")
+            # print()
 
             if nums[lft] + nums[rgt] == targ:
-                print("\n\t\tFound combination:")
-                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+                # print("\n\t\tFound combination:")
+                # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
 
                 break
 
             elif nums[lft] + nums[rgt] < targ:
-                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+                # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
 
                 lft += 1
 
             elif nums[lft] + nums[rgt] > targ:
-                print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
+                # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
 
                 rgt -= 1
 
-            print()
+            # print()
 
-        print("\n")
+        # print("\n")
 
     return
 
