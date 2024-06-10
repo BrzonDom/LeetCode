@@ -206,7 +206,7 @@ if __name__ == '__main__':
     #     print("\n")
 
     for csCnt, prnths in enumerate(InputLst):
-        print(f"{cs + 1}. Case")
+        print(f"{csCnt + 1}. Case")
         print()
 
         print(f"\tParentheses: {prnths}")
@@ -228,11 +228,11 @@ if __name__ == '__main__':
                 print(f"\t\t\"{par}\"\tLeft parentheses")
                 stckPrnth.append('}')
 
-            else:
+            elif stckPrnth.pop() != par:
                 print(f"\t\t\"{par}\"\tRight parentheses")
 
-
-
+            elif not stckPrnth:
+                print(f"\t\t\"{par}\"\tRight parentheses")
 
         print()
 
