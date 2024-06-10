@@ -196,11 +196,13 @@ if __name__ == '__main__':
 
     # Sol01A_IfTreeList_Prt(InputLst)
 
-    for csCnt, case in enumerate(InputLst):
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt+1}. Case")
+    #     print()
+    #
+    #     Sol01_IfTreeList_Prt(case)
+    #
+    #     print("\n")
 
-        print(f"{csCnt+1}. Case")
-        print()
 
-        Sol01_IfTreeList_Prt(case)
-
-        print("\n")
