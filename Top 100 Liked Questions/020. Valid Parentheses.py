@@ -45,3 +45,15 @@ for cs, prnths in enumerate(InputLst):
 
     print(f"\tParentheses: {prnths}")
     print("\n")
+
+    for par in prnths:
+
+        if par in "([{":
+            print("Left parentheses")
+
+        elif par in ")]}":
+            print("Right parentheses")
+
+        else:
+            print("No parentheses")
+            break
