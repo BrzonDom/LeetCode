@@ -205,4 +205,12 @@ if __name__ == '__main__':
     #
     #     print("\n")
 
+    for csCnt, prnths in enumerate(InputLst):
+        print(f"{cs + 1}. Case")
+        print()
+
+        print(f"\tParentheses: {prnths}")
+        print()
+
+        print()
 
