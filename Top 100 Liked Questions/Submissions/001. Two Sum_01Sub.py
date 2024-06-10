@@ -34,16 +34,16 @@ https://leetcode.com/problems/two-sum/description/
 """
 
 
-def Sol01_ForLoops_Prt(numArr, targ):
+def Sol01_ForLoops_Prt(nums, targ):
 
     # print("1.Function solution:\n")
 
-    # print("\tNumbers array:", numArr)
+    # print("\tNumbers array:", nums)
     # print("\t       Target:", targ)
     # print()
 
-    for n1, num1 in enumerate(numArr):
-        for n2, num2 in enumerate(numArr[n1+1:]):
+    for n1, num1 in enumerate(nums):
+        for n2, num2 in enumerate(nums[n1 + 1:]):
             # print(f"\t\t\t\tnums[{n1}] + nums[{n1+n2+1}] = {num1:2} + {num2:2} = {num1 + num2:2}")
 
             if num1 + num2 == targ:
