@@ -212,5 +212,27 @@ if __name__ == '__main__':
         print(f"\tParentheses: {prnths}")
         print()
 
+        stckPrnth = []
+
+        for par in prnths:
+
+            if par == '(':
+                print(f"\t\t\"{par}\"\tLeft parentheses")
+                stckPrnth.append(')')
+
+            elif par == '[':
+                print(f"\t\t\"{par}\"\tLeft parentheses")
+                stckPrnth.append(']')
+
+            elif par == '{':
+                print(f"\t\t\"{par}\"\tLeft parentheses")
+                stckPrnth.append('}')
+
+            else:
+                print(f"\t\t\"{par}\"\tRight parentheses")
+
+
+
+
         print()
 
