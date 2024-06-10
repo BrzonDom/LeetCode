@@ -92,8 +92,6 @@ def Sol03_TwoPointer_Prt(nums, targ):
 
         # print()
 
-    return [lft, rgt]
-
 
 if __name__ == '__main__':
 
