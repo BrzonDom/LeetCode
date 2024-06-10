@@ -37,8 +37,8 @@ https://leetcode.com/problems/valid-parentheses/description/
 
 def Sol01_IfTreeList_Prt(prnths):
 
-    print(f"\tParentheses: {prnths}")
-    print()
+    # print(f"\tParentheses: {prnths}")
+    # print()
 
     stckPrnth = []
     wrngPrnth = False
@@ -46,7 +46,7 @@ def Sol01_IfTreeList_Prt(prnths):
     for par in prnths:
 
         if par in "([{":
-            print(f"\t\t\"{par}\"\tLeft parentheses")
+            # print(f"\t\t\"{par}\"\tLeft parentheses")
 
             if par == '(':
                 stckPrnth = [')'] + stckPrnth
@@ -57,18 +57,18 @@ def Sol01_IfTreeList_Prt(prnths):
             elif par == '{':
                 stckPrnth = ['}'] + stckPrnth
 
-            print("\t\t\t", stckPrnth)
-            print()
+            # print("\t\t\t", stckPrnth)
+            # print()
 
         elif par in ")]}":
-            print(f"\t\t\"{par}\"\tRight parentheses")
+            # print(f"\t\t\"{par}\"\tRight parentheses")
 
             if par == ')':
                 if ')' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
                 else:
-                    print()
-                    print("\tInvalid - Wrong parentheses")
+                    # print()
+                    # print("\tInvalid - Wrong parentheses")
 
                     return False
 
@@ -76,8 +76,8 @@ def Sol01_IfTreeList_Prt(prnths):
                 if ']' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
                 else:
-                    print()
-                    print("\tInvalid - Wrong parentheses")
+                    # print()
+                    # print("\tInvalid - Wrong parentheses")
 
                     return False
 
@@ -85,16 +85,16 @@ def Sol01_IfTreeList_Prt(prnths):
                 if '}' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
                 else:
-                    print()
-                    print("\tInvalid - Wrong parentheses")
+                    # print()
+                    # print("\tInvalid - Wrong parentheses")
 
                     return False
 
-            print("\t\t\t", stckPrnth)
-            print()
+            # print("\t\t\t", stckPrnth)
+            # print()
 
         else:
-            print("\t\tNo parentheses")
+            # print("\t\tNo parentheses")
             break
 
     # if wrngPrnth:
@@ -102,12 +102,12 @@ def Sol01_IfTreeList_Prt(prnths):
     #     print("\tInvalid - Wrong parentheses")
 
     if stckPrnth:
-        print("\tInvalid - Not enough parentheses")
+        # print("\tInvalid - Not enough parentheses")
 
         return False
 
     else:
-        print("\tValid")
+        # print("\tValid")
 
         return True
 
@@ -125,6 +125,6 @@ if __name__ == '__main__':
         print(f"{csCnt+1}. Case")
         print()
 
-        Sol01_IfTreeList_Prt(case)
+        print(Sol01_IfTreeList_Prt(case))
 
         print("\n")
