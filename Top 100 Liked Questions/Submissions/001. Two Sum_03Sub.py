@@ -34,11 +34,11 @@ https://leetcode.com/problems/two-sum/description/
 """
 
 
-def comb_Print(inNumsLst):
+def comb_Print(inLst):
 
     print("Combinations print:\n")
 
-    for numLst in inNumsLst:
+    for numLst in inLst:
         numArr = numLst[0]
         targ = numLst[1]
 
@@ -54,11 +54,11 @@ def comb_Print(inNumsLst):
         print()
 
 
-def Sol03_TwoPointer_Prt(inNumsLst):
+def Sol03_TwoPointer_Prt(inLst):
 
     # print("3.Function solution:\n")
 
-    for numLst in inNumsLst:
+    for numLst in inLst:
         nums = numLst[0]
         targ = numLst[1]
 
@@ -116,11 +116,11 @@ def Sol03_TwoPointer_Prt(inNumsLst):
 if __name__ == '__main__':
 
 
-    Input_numsLst = [[[2, 7, 11, 15], 9],
-                     [[3, 2, 4], 6],
-                     [[3, 3], 6],
-                     [[3, 2, 3], 6]]
+    InputLst = [[[2, 7, 11, 15], 9],
+                [[3, 2, 4], 6],
+                [[3, 3], 6],
+                [[3, 2, 3], 6]]
 
-    comb_Print(Input_numsLst)
+    comb_Print(InputLst)
 
-    Sol03_TwoPointer_Prt(Input_numsLst)
+    Sol03_TwoPointer_Prt(InputLst)
