@@ -40,20 +40,22 @@ InputLst = ["()",
 
 for cs, prnths in enumerate(InputLst):
 
-    print(f"{cs}. Case")
+    print(f"{cs+1}. Case")
     print()
 
     print(f"\tParentheses: {prnths}")
-    print("\n")
+    print()
 
     for par in prnths:
 
         if par in "([{":
-            print("Left parentheses")
+            print(f"\t\t\"{par}\"\tLeft parentheses")
 
         elif par in ")]}":
-            print("Right parentheses")
+            print(f"\t\t\"{par}\"\tRight parentheses")
 
         else:
-            print("No parentheses")
+            print("\t\tNo parentheses")
             break
+
+    print("\n")
