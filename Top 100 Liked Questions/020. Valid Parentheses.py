@@ -37,7 +37,8 @@ https://leetcode.com/problems/valid-parentheses/description/
 InputLst = ["()",
             "()[]{}",
             "(]",
-            "(([]{}))"]
+            "(([]{}))",
+            "([]{(}))"]
 
 for cs, prnths in enumerate(InputLst):
 
@@ -72,14 +73,20 @@ for cs, prnths in enumerate(InputLst):
             if par == ')':
                 if ')' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
+                else:
+                    break
 
             elif par == ']':
                 if ']' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
+                else:
+                    break
 
             elif par == '}':
                 if '}' == stckPrnth[0]:
                     stckPrnth = stckPrnth[1:]
+                else:
+                    break
 
             print("\t\t\t", stckPrnth)
             print()
