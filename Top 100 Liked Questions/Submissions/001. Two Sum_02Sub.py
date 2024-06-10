@@ -54,22 +54,22 @@ def comb_Print(inLst):
         print()
 
 
-def Sol02_LoopRemain_Prt(numArr, targ):
+def Sol02_LoopRemain_Prt(nums, targ):
 
     # print("2.Function solution:\n")
 
-    # print("\tNumbers array:", numArr)
+    # print("\tNumbers array:", nums)
     # print("\t       Target:", targ)
     # print()
 
-    for n1, num1 in enumerate(numArr):
+    for n1, num1 in enumerate(nums):
 
         remain = targ - num1
         # print(f"\t\t\t\tTarget - nums[{n1}] = {targ:2} - {num1:2} = {remain}")
 
-        if remain in numArr[n1+1:]:
+        if remain in nums[n1 + 1:]:
             num2 = remain
-            n2 = numArr.index(num2, n1+1)
+            n2 = nums.index(num2, n1 + 1)
 
             # print("\n\t\tFound combination:")
             # print(f"\t\t\tnums[{n1}] + nums[{n2}] = {num1:2} + {num2:2} = {num1 + num2:2}")
