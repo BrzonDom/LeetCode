@@ -217,16 +217,22 @@ if __name__ == '__main__':
         for par in prnths:
 
             if par == '(':
-                print(f"\t\t\"{par}\"\tLeft parentheses")
                 stckPrnth.append(')')
 
-            elif par == '[':
                 print(f"\t\t\"{par}\"\tLeft parentheses")
+                print("\t\t\t", stckPrnth)
+
+            elif par == '[':
                 stckPrnth.append(']')
 
-            elif par == '{':
                 print(f"\t\t\"{par}\"\tLeft parentheses")
+                print("\t\t\t", stckPrnth)
+
+            elif par == '{':
                 stckPrnth.append('}')
+
+                print(f"\t\t\"{par}\"\tLeft parentheses")
+                print("\t\t\t", stckPrnth)
 
             elif stckPrnth.pop() != par:
                 print(f"\t\t\"{par}\"\tRight parentheses")
