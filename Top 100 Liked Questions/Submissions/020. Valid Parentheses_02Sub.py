@@ -149,7 +149,7 @@ def Sol02_IterQue_Prt(prnths):
             wrngPrnth = True
             break
 
-        else:
+        # else:
             # print(f"\t\t\"{par}\"\tRight parentheses")
             # print("\t\t\t", stckPrnth)
 
