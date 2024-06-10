@@ -139,11 +139,17 @@ def Sol02_IterQue_Prt(prnths):
             # print(f"\t\t\"{par}\"\tRight parentheses")
             # print("\t\t\t", stckPrnth)
 
+            # print()
+            # print("\tInvalid - Not enough parentheses")
+
             return False
 
         elif stckPrnth.pop() != par:
             # print(f"\t\t\"{par}\"\tRight parentheses")
             # print("\t\t\t", stckPrnth)
+
+            # print()
+            # print("\tInvalid - Wrong parentheses")
 
             return False
 
@@ -154,26 +160,6 @@ def Sol02_IterQue_Prt(prnths):
 
     else:
         return True
-
-
-    # print()
-
-    # if wrngPrnth:
-    #     print("\tInvalid - Wrong parentheses")
-
-        # return False
-
-    # elif stckPrnth or lessPrnth:
-    #     print("\tInvalid - Not enough parentheses")
-
-        # return False
-
-    # else:
-    #     print("\tValid")
-
-        # return True
-
-    # print("\n")
 
 
 if __name__ == '__main__':
