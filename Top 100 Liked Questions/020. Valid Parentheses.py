@@ -223,12 +223,16 @@ def Sol02A_IterQue_Prt(inLst):
                 print(f"\t\t\"{par}\"\tRight parentheses")
                 print("\t\t\t", stckPrnth)
 
+                return False
+
                 lessPrnth = True
                 break
 
             elif stckPrnth.pop() != par:
                 print(f"\t\t\"{par}\"\tRight parentheses")
                 print("\t\t\t", stckPrnth)
+
+                return False
 
                 wrngPrnth = True
                 break
@@ -247,8 +251,12 @@ def Sol02A_IterQue_Prt(inLst):
         elif stckPrnth or lessPrnth:
             print("\tInvalid - Not enough parentheses")
 
+            return False
+
         else:
             print("\tValid")
+
+            return True
 
         print("\n")
 
