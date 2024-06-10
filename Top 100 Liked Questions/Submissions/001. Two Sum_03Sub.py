@@ -32,6 +32,7 @@ https://leetcode.com/problems/two-sum/description/
         Only one valid answer exists
 
 """
+import copy
 
 
 def comb_Print(inLst):
@@ -77,7 +78,7 @@ def Sol03_TwoPointer_Prt(nums, targ):
             # print("\n\t\tFound combination:")
             # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
 
-            break
+            return [lft, rgt]
 
         elif nums[lft] + nums[rgt] < targ:
             # print(f"\t\t\t\tnums[{lft}] + nums[{rgt}] = {nums[lft]:2} + {nums[rgt]:2} = {nums[lft] + nums[rgt]:2}")
