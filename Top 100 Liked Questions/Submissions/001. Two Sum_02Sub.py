@@ -62,7 +62,7 @@ def Sol02_LoopRemain_Prt(numArr, targ):
     # print("\t       Target:", targ)
     # print()
 
-    combFound = False
+    # combFound = False
 
     for n1, num1 in enumerate(numArr):
 
@@ -78,7 +78,7 @@ def Sol02_LoopRemain_Prt(numArr, targ):
 
             return [n1, n2]
 
-            break
+            # break
     # print("\n")
 
 
