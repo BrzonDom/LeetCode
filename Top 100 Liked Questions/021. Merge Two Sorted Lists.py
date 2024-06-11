@@ -84,7 +84,7 @@ class LinkList:
         return valLst
 
 
-def Sol01A_While_Prt(inLst):
+def Sol01A_WhlWhl_Prt(inLst):
 
     for csCnt, Lsts in enumerate(inLst):
 
@@ -168,7 +168,7 @@ def Sol01A_While_Prt(inLst):
         print("\n")
 
 
-def Sol01_While_Prt(hdLL1, hdLL2):
+def Sol01_WhlWhl_Prt(hdLL1, hdLL2):
 
     if hdLL1:
         print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
@@ -238,7 +238,7 @@ if __name__ == '__main__':
                 [[], []],
                 [[], [0]]]
 
-    # Sol01A_While_Prt(InputLst)
+    # Sol01A_WhlWhl_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
@@ -262,4 +262,4 @@ if __name__ == '__main__':
         # print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
         # print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
 
-        Sol01_While_Prt(hdLL1, hdLL2)
+        Sol01_WhlWhl_Prt(hdLL1, hdLL2)
