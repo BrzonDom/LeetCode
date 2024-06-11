@@ -35,7 +35,7 @@ https://leetcode.com/problems/merge-two-sorted-lists/description/
 
 
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val = 0, next = None):
         self.val = val
         self.next = next
 
@@ -56,6 +56,11 @@ class LinkList:
             while curNd.next:
                 curNd = curNd.next
             curNd.next = newNd
+
+    def returnLst(self, strtNd = None):
+
+        if strtNd is None:
+            strtNd = self.head
 
 
 InputLst = [[[1, 2, 4], [1, 3,  4]],
