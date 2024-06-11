@@ -168,6 +168,56 @@ def Sol01A_While_Prt(inLst):
         print("\n")
 
 
+def Sol01_While_Prt(hdLL1, hdLL2):
+    preHdFnLL = ListNode()
+    lnkLstFn = LinkList()
+
+    curNd1 = hdLL1
+    curNd2 = hdLL2
+
+    curNdFn = preHdFnLL
+
+    # print(f"\tFin. Linked list: ", end="")
+    while curNd1 and curNd2:
+
+        if curNd1.val < curNd2.val:
+            curNdFn.next = curNd1
+            curNd1 = curNd1.next
+
+        else:
+            curNdFn.next = curNd2
+            curNd2 = curNd2.next
+
+        curNdFn = curNdFn.next
+
+        # print(curNdFn.val, end=" ")
+        lnkLstFn.append(curNdFn.val)
+
+    while curNd1:
+        # print(curNd1.val, end=" ")
+        lnkLstFn.append(curNd1.val)
+        curNdFn.next = curNd1
+
+        curNd1 = curNd1.next
+        curNdFn = curNdFn.next
+
+    while curNd2:
+        # print(curNd2.val, end=" ")
+        lnkLstFn.append(curNd2.val)
+        curNdFn.next = curNd2
+
+        curNd2 = curNd2.next
+        curNdFn = curNdFn.next
+
+    print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
+
+    hdFnLL = preHdFnLL.next
+    if hdFnLL:
+        print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
+
+    print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [[[1, 2, 4], [1, 3,  4]],
