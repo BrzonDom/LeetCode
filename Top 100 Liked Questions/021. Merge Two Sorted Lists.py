@@ -109,6 +109,8 @@ for csCnt, Lsts in enumerate(InputLst):
         lnkLst2.append(num)
 
     print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
+    print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
+    print()
 
     # curNode = lnkLst1.head
     # while curNode:
@@ -118,6 +120,7 @@ for csCnt, Lsts in enumerate(InputLst):
     # print()
 
     print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
+    print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
     print()
 
     # curNode = lnkLst2.head
