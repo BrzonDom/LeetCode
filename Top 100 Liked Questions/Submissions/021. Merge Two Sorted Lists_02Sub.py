@@ -165,6 +165,7 @@ def Sol02_WhlIf(hdLL1, hdLL2):
         curNdFn.next = curNd2
 
     hdFnLL = preHdFnLL.next
+    return hdFnLL
 
 
 if __name__ == '__main__':
