@@ -247,12 +247,7 @@ if __name__ == '__main__':
         hdLL1 = lnkLst1.head
         hdLL2 = lnkLst2.head
 
-        print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
-        print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
+        # print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
+        # print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
 
-        print("\n")
-
-
-
-
-
+        Sol01_While_Prt(hdLL1, hdLL2)
