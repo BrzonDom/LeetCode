@@ -120,6 +120,7 @@ for csCnt, Lsts in enumerate(InputLst):
     hdLL2 = lnkLst2.head
 
     preHdFnLL = ListNode()
+    lnkLstFn = LinkList()
 
     curNd1 = hdLL1
     curNd2 = hdLL2
@@ -143,9 +144,11 @@ for csCnt, Lsts in enumerate(InputLst):
         curNdFn = curNdFn.next
 
         print(curNdFn.val, end=" ")
+        lnkLstFn.append(curNdFn)
 
     while curNd1:
         print(curNd1.val, end=" ")
+        lnkLstFn.append(curNd1)
 
         curNdFn.next = curNd1.next
 
@@ -154,6 +157,7 @@ for csCnt, Lsts in enumerate(InputLst):
 
     while curNd2:
         print(curNd2.val, end=" ")
+        lnkLstFn.append(curNd2)
 
         curNdFn.next = curNd2.next
 
