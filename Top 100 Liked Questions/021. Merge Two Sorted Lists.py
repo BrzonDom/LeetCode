@@ -73,9 +73,13 @@ for csCnt, Lsts in enumerate(InputLst):
     print(f"\t2.List:    {lst2}")
     print()
 
-    finLst = lst1 + lst2
-    finLst.sort()
+    lnkLst1 = LinkList()
+    lnkLst2 = LinkList()
 
-    print(f"\tFin. List: {finLst}")
+    for num in lst1:
+        lnkLst1.append(num)
+
+    for num in lst2:
+        lnkLst2.append(num)
 
     print("\n")
