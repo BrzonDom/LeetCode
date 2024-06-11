@@ -82,4 +82,22 @@ for csCnt, Lsts in enumerate(InputLst):
     for num in lst2:
         lnkLst2.append(num)
 
+    print(f"\t1. Linked list: ", end="")
+
+    curNode = lnkLst1.head
+    while curNode:
+        print(f"{curNode.val}", end=" ")
+
+        curNode = curNode.next
+    print()
+
+    print(f"\t2. Linked list: ", end="")
+
+    curNode = lnkLst2.head
+    while curNode:
+        print(f"{curNode.val}", end=" ")
+
+        curNode = curNode.next
+    print()
+
     print("\n")
