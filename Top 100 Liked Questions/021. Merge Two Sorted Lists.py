@@ -86,7 +86,6 @@ for csCnt, Lsts in enumerate(InputLst):
     print(f"\t1. Linked list: ", end="")
 
     curNode = lnkLst1.head
-    hdLnkLst1 = lnkLst1.head
     while curNode:
         print(f"{curNode.val}", end=" ")
 
@@ -96,11 +95,20 @@ for csCnt, Lsts in enumerate(InputLst):
     print(f"\t2. Linked list: ", end="")
 
     curNode = lnkLst2.head
-    hdLnkLst2 = lnkLst2.head
     while curNode:
         print(f"{curNode.val}", end=" ")
 
         curNode = curNode.next
     print()
+
+    hdLL1 = lnkLst1.head
+    hdLL2 = lnkLst2.head
+
+    hdFnLL = ListNode()
+
+    curNd1 = hdLL1
+    curNd2 = hdLL2
+
+    curNfFn = hdFnLL
 
     print("\n")
