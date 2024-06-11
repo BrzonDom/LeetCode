@@ -45,7 +45,13 @@ for csCnt, Lsts in enumerate(InputLst):
 
     print(f"{csCnt+1}. Case:\n")
 
-    print(f"\t1.List: {lst1}")
-    print(f"\t2.List: {lst2}")
+    print(f"\t1.List:    {lst1}")
+    print(f"\t2.List:    {lst2}")
+    print()
+
+    finLst = lst1 + lst2
+    finLst.sort()
+
+    print(f"\tFin. List: {finLst}")
 
     print("\n")
