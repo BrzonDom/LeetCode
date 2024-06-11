@@ -83,7 +83,7 @@ for csCnt, Lsts in enumerate(InputLst):
     for num in lst2:
         lnkLst2.append(num)
 
-    print(f"\t1. Linked list: ", end="")
+    print(f"\t\t1. Linked list: ", end="")
 
     curNode = lnkLst1.head
     while curNode:
@@ -92,7 +92,7 @@ for csCnt, Lsts in enumerate(InputLst):
         curNode = curNode.next
     print()
 
-    print(f"\t2. Linked list: ", end="")
+    print(f"\t\t2. Linked list: ", end="")
 
     curNode = lnkLst2.head
     while curNode:
@@ -111,6 +111,8 @@ for csCnt, Lsts in enumerate(InputLst):
 
     curNdFn = hdFnLL
 
+    print(f"\tFin. Linked list: ", end="")
+
     while curNd1 and curNd2:
 
         if curNd1.val < curNd2.val:
@@ -124,6 +126,8 @@ for csCnt, Lsts in enumerate(InputLst):
             curNd2 = curNd2.next
 
         curNdFn = curNdFn.next
+
+        print(curNdFn.val, end=" ")
 
     if curNd1:
         while curNd1:
@@ -139,4 +143,4 @@ for csCnt, Lsts in enumerate(InputLst):
             curNd2 = curNd2.next
             curNdFn = curNdFn.next
 
-    print("\n")
+    print("\n\n")
