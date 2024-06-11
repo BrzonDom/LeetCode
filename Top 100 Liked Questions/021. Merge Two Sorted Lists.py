@@ -45,18 +45,18 @@ class LinkList:
         self.head = None
 
     def append(self, val):
-        nwNode = ListNode(val)
+        newNd = ListNode(val)
 
         if self.head is None:
-            self.head = nwNode
+            self.head = newNd
 
         else:
-            crNode = self.head
+            curNd = self.head
 
-            while crNode:
-                crNode = crNode.next
+            while curNd:
+                curNd = curNd.next
 
-            crNode.next = nwNode
+            curNd.next = newNd
 
 
 InputLst = [[[1, 2, 4], [1, 3,  4]],
