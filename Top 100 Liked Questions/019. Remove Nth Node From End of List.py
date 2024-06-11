@@ -42,6 +42,8 @@ for csCnt, case in enumerate(InputLst):
     rmvNd = case[1]
 
     print(f"\tLinked list: {lnkLst}")
-    print(f"\tIndex node: -{rmvNd}")
+    print()
+    print(f"\t\tNode index: -{rmvNd}")
+    print(f"\t\tNode value: {lnkLst[-rmvNd]}")
 
     print("\n")
