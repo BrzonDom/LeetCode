@@ -167,4 +167,9 @@ for csCnt, Lsts in enumerate(InputLst):
 
     print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
+    hdFnLL = preHdFnLL.next
+
+    if hdFnLL:
+        print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
+
     print("\n")
