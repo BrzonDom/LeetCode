@@ -117,13 +117,13 @@ for csCnt, Lsts in enumerate(InputLst):
             curNdFn.next = curNd1
 
             curNd1 = curNd1.next
-            curNdFn = curNdFn.next
 
         else:
             curNdFn.next = curNd2
 
             curNd2 = curNd2.next
-            curNdFn = curNdFn.next
+
+        curNdFn = curNdFn.next
 
 
     print("\n")
