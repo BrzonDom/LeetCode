@@ -39,10 +39,16 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def LstFrmNd(self):
+    def valLst_Nd(self):
 
         curNd = self
-        nxtNd = curNd.next
+        valLst = []
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.next
+
+        return valLst
 
 
 class LinkList:
@@ -62,19 +68,19 @@ class LinkList:
                 curNd = curNd.next
             curNd.next = newNd
 
-    def LstFrmLnk(self, strtNd = None):
+    def valLst_Lnk(self, strtNd = None):
 
         if strtNd is None:
             strtNd = self.head
 
         curNd = strtNd
-        lnkLst = []
+        valLst = []
 
         while curNd:
-            lnkLst.append(curNd.val)
+            valLst.append(curNd.val)
             curNd = curNd.next
 
-        return lnkLst
+        return valLst
 
 
 InputLst = [[[1, 2, 4], [1, 3,  4]],
@@ -102,7 +108,7 @@ for csCnt, Lsts in enumerate(InputLst):
     for num in lst2:
         lnkLst2.append(num)
 
-    print(f"\t\t1. Linked list: {lnkLst1.LstFrmLnk()}")
+    print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
 
     # curNode = lnkLst1.head
     # while curNode:
@@ -111,7 +117,7 @@ for csCnt, Lsts in enumerate(InputLst):
     #     curNode = curNode.next
     # print()
 
-    print(f"\t\t2. Linked list: {lnkLst2.LstFrmLnk()}")
+    print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
     print()
 
     # curNode = lnkLst2.head
@@ -168,6 +174,6 @@ for csCnt, Lsts in enumerate(InputLst):
         curNd2 = curNd2.next
         curNdFn = curNdFn.next
 
-    print(f"\tFin. Linked list: {lnkLstFn.LstFrmLnk()}")
+    print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
     print("\n\n")
