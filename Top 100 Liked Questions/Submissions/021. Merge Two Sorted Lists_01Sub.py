@@ -86,16 +86,16 @@ class LinkList:
 
 def Sol01_While_Prt(hdLL1, hdLL2):
 
-    if hdLL1:
-        print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
-    else:
-        print(f"\t\t1. Linked list: ")
-
-    if hdLL2:
-        print(f"\t\t2. Linked list: {hdLL2.valLst_Nd()}")
-    else:
-        print(f"\t\t2. Linked list: ")
-    print()
+    # if hdLL1:
+    #     print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
+    # else:
+    #     print(f"\t\t1. Linked list: ")
+    #
+    # if hdLL2:
+    #     print(f"\t\t2. Linked list: {hdLL2.valLst_Nd()}")
+    # else:
+    #     print(f"\t\t2. Linked list: ")
+    # print()
 
     preHdFnLL = ListNode()
     lnkLstFn = LinkList()
@@ -139,12 +139,12 @@ def Sol01_While_Prt(hdLL1, hdLL2):
     # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
     hdFnLL = preHdFnLL.next
-    if hdFnLL:
-        print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
-    else:
-        print(f"\tFin. Linked list: ")
-
-    print("\n")
+    # if hdFnLL:
+    #     print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
+    # else:
+    #     print(f"\tFin. Linked list: ")
+    #
+    # print("\n")
 
 
 if __name__ == '__main__':
