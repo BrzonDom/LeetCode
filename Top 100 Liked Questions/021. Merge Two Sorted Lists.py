@@ -39,7 +39,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def returnLst(self):
+    def LstFrmNd(self):
 
         curNd = self
         nxtNd = curNd.next
@@ -62,7 +62,7 @@ class LinkList:
                 curNd = curNd.next
             curNd.next = newNd
 
-    def returnLst(self, strtNd = None):
+    def LstFrmLnk(self, strtNd = None):
 
         if strtNd is None:
             strtNd = self.head
@@ -102,7 +102,7 @@ for csCnt, Lsts in enumerate(InputLst):
     for num in lst2:
         lnkLst2.append(num)
 
-    print(f"\t\t1. Linked list: {lnkLst1.returnLst()}")
+    print(f"\t\t1. Linked list: {lnkLst1.LstFrmLnk()}")
 
     # curNode = lnkLst1.head
     # while curNode:
@@ -111,7 +111,7 @@ for csCnt, Lsts in enumerate(InputLst):
     #     curNode = curNode.next
     # print()
 
-    print(f"\t\t2. Linked list: {lnkLst2.returnLst()}")
+    print(f"\t\t2. Linked list: {lnkLst2.LstFrmLnk()}")
     print()
 
     # curNode = lnkLst2.head
@@ -168,6 +168,6 @@ for csCnt, Lsts in enumerate(InputLst):
         curNd2 = curNd2.next
         curNdFn = curNdFn.next
 
-    print(f"\tFin. Linked list: {lnkLstFn.returnLst()}")
+    print(f"\tFin. Linked list: {lnkLstFn.LstFrmLnk()}")
 
     print("\n\n")
