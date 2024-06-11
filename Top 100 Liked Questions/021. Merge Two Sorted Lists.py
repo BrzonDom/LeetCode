@@ -109,11 +109,13 @@ for csCnt, Lsts in enumerate(InputLst):
         lnkLst2.append(num)
 
     print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
-    print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
+    if lnkLst1.head:
+        print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
     print()
 
     print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
-    print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
+    if lnkLst2.head:
+        print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
     print()
 
     hdLL1 = lnkLst1.head
@@ -165,4 +167,4 @@ for csCnt, Lsts in enumerate(InputLst):
 
     print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
-    print("\n\n")
+    print("\n")
