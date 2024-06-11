@@ -62,6 +62,14 @@ class LinkList:
         if strtNd is None:
             strtNd = self.head
 
+        lnkLst = []
+
+        while strtNd:
+            lnkLst.append(strtNd.val)
+            strtNd = strtNd.next
+
+        return lnkLst
+
 
 InputLst = [[[1, 2, 4], [1, 3,  4]],
             [[1, 3, 4, 7, 8], [2, 3, 5, 6]],
