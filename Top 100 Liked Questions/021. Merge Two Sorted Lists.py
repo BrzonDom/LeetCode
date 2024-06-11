@@ -99,7 +99,7 @@ for csCnt, Lsts in enumerate(InputLst):
         print(f"{curNode.val}", end=" ")
 
         curNode = curNode.next
-    print()
+    print("\n")
 
     hdLL1 = lnkLst1.head
     hdLL2 = lnkLst2.head
@@ -109,6 +109,21 @@ for csCnt, Lsts in enumerate(InputLst):
     curNd1 = hdLL1
     curNd2 = hdLL2
 
-    curNfFn = hdFnLL
+    curNdFn = hdFnLL
+
+    while curNd1 and curNd2:
+
+        if curNd1.val < curNd2.val:
+            curNdFn.next = curNd1
+
+            curNd1 = curNd1.next
+            curNdFn = curNdFn.next
+
+        else:
+            curNdFn.next = curNd2
+
+            curNd2 = curNd2.next
+            curNdFn = curNdFn.next
+
 
     print("\n")
