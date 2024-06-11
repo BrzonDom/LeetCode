@@ -53,9 +53,8 @@ class LinkList:
         else:
             curNd = self.head
 
-            while curNd:
+            while curNd.next:
                 curNd = curNd.next
-
             curNd.next = newNd
 
 
