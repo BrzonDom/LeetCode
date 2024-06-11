@@ -170,6 +170,10 @@ def Sol01A_While_Prt(inLst):
 
 def Sol01_While_Prt(hdLL1, hdLL2):
 
+    print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
+    print(f"\t\t2. Linked list: {hdLL1.valLst_Nd()}")
+    print()
+
     preHdFnLL = ListNode()
     lnkLstFn = LinkList()
 
@@ -178,7 +182,6 @@ def Sol01_While_Prt(hdLL1, hdLL2):
 
     curNdFn = preHdFnLL
 
-    # print(f"\tFin. Linked list: ", end="")
     while curNd1 and curNd2:
 
         if curNd1.val < curNd2.val:
