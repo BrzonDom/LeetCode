@@ -5,7 +5,8 @@ https://leetcode.com/problems/merge-two-sorted-lists/description/
 
     You are given the heads of two sorted linked lists list1 and list2.
 
-    Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+    Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two
+    lists.
 
     Return the head of the merged linked list.
 
@@ -35,7 +36,7 @@ https://leetcode.com/problems/merge-two-sorted-lists/description/
 
 
 class ListNode:
-    def __init__(self, val = 0, next = None):
+    def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
@@ -68,7 +69,7 @@ class LinkList:
                 curNd = curNd.next
             curNd.next = newNd
 
-    def valLst_Lnk(self, strtNd = None):
+    def valLst_Lnk(self, strtNd=None):
 
         if strtNd is None:
             strtNd = self.head
@@ -85,15 +86,15 @@ class LinkList:
 
 InputLst = [[[1, 2, 4], [1, 3,  4]],
             [[1, 3, 4, 7, 8], [2, 3, 5, 6]],
-            # [[], []],
+            [[], []],
             [[], [0]]]
 
 for csCnt, Lsts in enumerate(InputLst):
 
+    print(f"{csCnt+1}. Case:\n")
+
     lst1 = Lsts[0]
     lst2 = Lsts[1]
-
-    print(f"{csCnt+1}. Case:\n")
 
     print(f"\t1. List: {lst1}")
     print(f"\t2. List: {lst2}")
@@ -109,13 +110,13 @@ for csCnt, Lsts in enumerate(InputLst):
         lnkLst2.append(num)
 
     print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
-    if lnkLst1.head:
-        print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
-    print()
+    # if lnkLst1.head:
+    #     print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
+    # print()
 
     print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
-    if lnkLst2.head:
-        print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
+    # if lnkLst2.head:
+    #     print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
     print()
 
     hdLL1 = lnkLst1.head
@@ -134,12 +135,10 @@ for csCnt, Lsts in enumerate(InputLst):
 
         if curNd1.val < curNd2.val:
             curNdFn.next = curNd1
-
             curNd1 = curNd1.next
 
         else:
             curNdFn.next = curNd2
-
             curNd2 = curNd2.next
 
         curNdFn = curNdFn.next
@@ -150,7 +149,6 @@ for csCnt, Lsts in enumerate(InputLst):
     while curNd1:
         # print(curNd1.val, end=" ")
         lnkLstFn.append(curNd1.val)
-
         curNdFn.next = curNd1
 
         curNd1 = curNd1.next
@@ -159,7 +157,6 @@ for csCnt, Lsts in enumerate(InputLst):
     while curNd2:
         # print(curNd2.val, end=" ")
         lnkLstFn.append(curNd2.val)
-
         curNdFn.next = curNd2
 
         curNd2 = curNd2.next
@@ -168,7 +165,6 @@ for csCnt, Lsts in enumerate(InputLst):
     print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
     hdFnLL = preHdFnLL.next
-
     if hdFnLL:
         print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
 
