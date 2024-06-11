@@ -84,80 +84,6 @@ class LinkList:
         return valLst
 
 
-def Sol02A_WhlIf_Prt(inLst):
-
-    for csCnt, Lsts in enumerate(inLst):
-
-        print(f"{csCnt+1}. Case:\n")
-
-        lst1 = Lsts[0]
-        lst2 = Lsts[1]
-
-        print(f"\t1. List: {lst1}")
-        print(f"\t2. List: {lst2}")
-        print()
-
-        lnkLst1 = LinkList()
-        lnkLst2 = LinkList()
-
-        for num in lst1:
-            lnkLst1.append(num)
-
-        for num in lst2:
-            lnkLst2.append(num)
-
-        print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
-        # if lnkLst1.head:
-        #     print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
-        # print()
-
-        print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
-        # if lnkLst2.head:
-        #     print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
-        print()
-
-        hdLL1 = lnkLst1.head
-        hdLL2 = lnkLst2.head
-
-        preHdFnLL = ListNode()
-        lnkLstFn = LinkList()
-
-        curNd1 = hdLL1
-        curNd2 = hdLL2
-
-        curNdFn = preHdFnLL
-
-        # print(f"\tFin. Linked list: ", end="")
-        while curNd1 and curNd2:
-
-            if curNd1.val < curNd2.val:
-                curNdFn.next = curNd1
-                curNd1 = curNd1.next
-
-            else:
-                curNdFn.next = curNd2
-                curNd2 = curNd2.next
-
-            curNdFn = curNdFn.next
-
-            # print(curNdFn.val, end=" ")
-            lnkLstFn.append(curNdFn.val)
-
-        if curNd1:
-            curNdFn.next = curNd1
-
-        elif curNd2:
-            curNdFn.next = curNd2
-
-        # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
-
-        hdFnLL = preHdFnLL.next
-        if hdFnLL:
-            print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
-
-        print("\n")
-
-
 def Sol02_WhlIf_Prt(hdLL1, hdLL2):
 
     if hdLL1:
@@ -217,8 +143,6 @@ if __name__ == '__main__':
                 [[1, 3, 4, 7, 8], [2, 3, 5, 6]],
                 [[], []],
                 [[], [0]]]
-
-    # Sol02A_WhlIf_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
