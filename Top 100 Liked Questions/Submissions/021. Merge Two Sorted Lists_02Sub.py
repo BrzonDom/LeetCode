@@ -84,153 +84,6 @@ class LinkList:
         return valLst
 
 
-def Sol01A_WhlWhl_Prt(inLst):
-
-    for csCnt, Lsts in enumerate(inLst):
-
-        print(f"{csCnt+1}. Case:\n")
-
-        lst1 = Lsts[0]
-        lst2 = Lsts[1]
-
-        print(f"\t1. List: {lst1}")
-        print(f"\t2. List: {lst2}")
-        print()
-
-        lnkLst1 = LinkList()
-        lnkLst2 = LinkList()
-
-        for num in lst1:
-            lnkLst1.append(num)
-
-        for num in lst2:
-            lnkLst2.append(num)
-
-        print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
-        # if lnkLst1.head:
-        #     print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
-        # print()
-
-        print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
-        # if lnkLst2.head:
-        #     print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
-        print()
-
-        hdLL1 = lnkLst1.head
-        hdLL2 = lnkLst2.head
-
-        preHdFnLL = ListNode()
-        lnkLstFn = LinkList()
-
-        curNd1 = hdLL1
-        curNd2 = hdLL2
-
-        curNdFn = preHdFnLL
-
-        # print(f"\tFin. Linked list: ", end="")
-        while curNd1 and curNd2:
-
-            if curNd1.val < curNd2.val:
-                curNdFn.next = curNd1
-                curNd1 = curNd1.next
-
-            else:
-                curNdFn.next = curNd2
-                curNd2 = curNd2.next
-
-            curNdFn = curNdFn.next
-
-            # print(curNdFn.val, end=" ")
-            lnkLstFn.append(curNdFn.val)
-
-        while curNd1:
-            # print(curNd1.val, end=" ")
-            lnkLstFn.append(curNd1.val)
-            curNdFn.next = curNd1
-
-            curNd1 = curNd1.next
-            curNdFn = curNdFn.next
-
-        while curNd2:
-            # print(curNd2.val, end=" ")
-            lnkLstFn.append(curNd2.val)
-            curNdFn.next = curNd2
-
-            curNd2 = curNd2.next
-            curNdFn = curNdFn.next
-
-        print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
-
-        hdFnLL = preHdFnLL.next
-        if hdFnLL:
-            print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
-
-        print("\n")
-
-
-def Sol01_WhlWhl_Prt(hdLL1, hdLL2):
-
-    if hdLL1:
-        print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
-    else:
-        print(f"\t\t1. Linked list: ")
-
-    if hdLL2:
-        print(f"\t\t2. Linked list: {hdLL2.valLst_Nd()}")
-    else:
-        print(f"\t\t2. Linked list: ")
-    print()
-
-    preHdFnLL = ListNode()
-    lnkLstFn = LinkList()
-
-    curNd1 = hdLL1
-    curNd2 = hdLL2
-
-    curNdFn = preHdFnLL
-
-    while curNd1 and curNd2:
-
-        if curNd1.val < curNd2.val:
-            curNdFn.next = curNd1
-            curNd1 = curNd1.next
-
-        else:
-            curNdFn.next = curNd2
-            curNd2 = curNd2.next
-
-        curNdFn = curNdFn.next
-
-        # print(curNdFn.val, end=" ")
-        lnkLstFn.append(curNdFn.val)
-
-    while curNd1:
-        # print(curNd1.val, end=" ")
-        lnkLstFn.append(curNd1.val)
-        curNdFn.next = curNd1
-
-        curNd1 = curNd1.next
-        curNdFn = curNdFn.next
-
-    while curNd2:
-        # print(curNd2.val, end=" ")
-        lnkLstFn.append(curNd2.val)
-        curNdFn.next = curNd2
-
-        curNd2 = curNd2.next
-        curNdFn = curNdFn.next
-
-    # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
-
-    hdFnLL = preHdFnLL.next
-    if hdFnLL:
-        print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
-    else:
-        print(f"\tFin. Linked list: ")
-
-    print("\n")
-
-
 def Sol02A_WhlIf_Prt(inLst):
 
     for csCnt, Lsts in enumerate(inLst):
@@ -365,7 +218,6 @@ if __name__ == '__main__':
                 [[], []],
                 [[], [0]]]
 
-    # Sol01A_WhlWhl_Prt(InputLst)
     # Sol02A_WhlIf_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
@@ -390,6 +242,5 @@ if __name__ == '__main__':
         # print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
         # print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
 
-        # Sol01_WhlWhl_Prt(hdLL1, hdLL2)
         Sol02_WhlIf_Prt(hdLL1, hdLL2)
 
