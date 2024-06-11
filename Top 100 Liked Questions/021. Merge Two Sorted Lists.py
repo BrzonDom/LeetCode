@@ -129,22 +129,20 @@ for csCnt, Lsts in enumerate(InputLst):
 
         print(curNdFn.val, end=" ")
 
-    if curNd1:
-        while curNd1:
-            print(curNd1.val, end=" ")
+    while curNd1:
+        print(curNd1.val, end=" ")
 
-            curNdFn.next = curNd1.next
+        curNdFn.next = curNd1.next
 
-            curNd1 = curNd1.next
-            curNdFn = curNdFn.next
+        curNd1 = curNd1.next
+        curNdFn = curNdFn.next
 
-    elif curNd2:
-        while curNd2:
-            print(curNd2.val, end=" ")
+    while curNd2:
+        print(curNd2.val, end=" ")
 
-            curNdFn.next = curNd2.next
+        curNdFn.next = curNd2.next
 
-            curNd2 = curNd2.next
-            curNdFn = curNdFn.next
+        curNd2 = curNd2.next
+        curNdFn = curNdFn.next
 
     print("\n\n")
