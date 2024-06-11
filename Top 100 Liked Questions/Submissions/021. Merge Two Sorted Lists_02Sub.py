@@ -139,17 +139,6 @@ def Sol02_WhlIf_Prt(hdLL1, hdLL2):
 
 def Sol02_WhlIf(hdLL1, hdLL2):
 
-    # if hdLL1:
-    #     print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
-    # else:
-    #     print(f"\t\t1. Linked list: ")
-
-    # if hdLL2:
-    #     print(f"\t\t2. Linked list: {hdLL2.valLst_Nd()}")
-    # else:
-    #     print(f"\t\t2. Linked list: ")
-    # print()
-
     preHdFnLL = ListNode()
     lnkLstFn = LinkList()
 
@@ -170,7 +159,6 @@ def Sol02_WhlIf(hdLL1, hdLL2):
 
         curNdFn = curNdFn.next
 
-        # print(curNdFn.val, end=" ")
         lnkLstFn.append(curNdFn.val)
 
     if curNd1:
@@ -179,15 +167,8 @@ def Sol02_WhlIf(hdLL1, hdLL2):
     elif curNd2:
         curNdFn.next = curNd2
 
-    # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
     hdFnLL = preHdFnLL.next
-    # if hdFnLL:
-    #     print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
-    # else:
-    #     print(f"\tFin. Linked list: ")
-    #
-    # print("\n")
 
 
 if __name__ == '__main__':
