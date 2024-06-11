@@ -127,8 +127,7 @@ for csCnt, Lsts in enumerate(InputLst):
 
     curNdFn = preHdFnLL
 
-    print(f"\tFin. Linked list: ", end="")
-
+    # print(f"\tFin. Linked list: ", end="")
     while curNd1 and curNd2:
 
         if curNd1.val < curNd2.val:
@@ -143,12 +142,12 @@ for csCnt, Lsts in enumerate(InputLst):
 
         curNdFn = curNdFn.next
 
-        print(curNdFn.val, end=" ")
-        lnkLstFn.append(curNdFn)
+        # print(curNdFn.val, end=" ")
+        lnkLstFn.append(curNdFn.val)
 
     while curNd1:
-        print(curNd1.val, end=" ")
-        lnkLstFn.append(curNd1)
+        # print(curNd1.val, end=" ")
+        lnkLstFn.append(curNd1.val)
 
         curNdFn.next = curNd1.next
 
@@ -156,12 +155,14 @@ for csCnt, Lsts in enumerate(InputLst):
         curNdFn = curNdFn.next
 
     while curNd2:
-        print(curNd2.val, end=" ")
-        lnkLstFn.append(curNd2)
+        # print(curNd2.val, end=" ")
+        lnkLstFn.append(curNd2.val)
 
         curNdFn.next = curNd2.next
 
         curNd2 = curNd2.next
         curNdFn = curNdFn.next
+
+    print(f"\tFin. Linked list: {lnkLstFn.returnLst()}")
 
     print("\n\n")
