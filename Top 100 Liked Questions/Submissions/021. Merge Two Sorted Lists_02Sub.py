@@ -140,7 +140,6 @@ def Sol02_WhlIf_Prt(hdLL1, hdLL2):
 def Sol02_WhlIf(hdLL1, hdLL2):
 
     preHdFnLL = ListNode()
-    lnkLstFn = LinkList()
 
     curNd1 = hdLL1
     curNd2 = hdLL2
@@ -159,14 +158,11 @@ def Sol02_WhlIf(hdLL1, hdLL2):
 
         curNdFn = curNdFn.next
 
-        lnkLstFn.append(curNdFn.val)
-
     if curNd1:
         curNdFn.next = curNd1
 
     elif curNd2:
         curNdFn.next = curNd2
-
 
     hdFnLL = preHdFnLL.next
 
