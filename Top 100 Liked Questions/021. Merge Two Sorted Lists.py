@@ -104,12 +104,12 @@ for csCnt, Lsts in enumerate(InputLst):
     hdLL1 = lnkLst1.head
     hdLL2 = lnkLst2.head
 
-    hdFnLL = ListNode()
+    preHdFnLL = ListNode()
 
     curNd1 = hdLL1
     curNd2 = hdLL2
 
-    curNdFn = hdFnLL
+    curNdFn = preHdFnLL
 
     print(f"\tFin. Linked list: ", end="")
 
