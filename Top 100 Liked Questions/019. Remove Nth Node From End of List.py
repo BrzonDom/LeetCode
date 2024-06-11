@@ -7,8 +7,8 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
     Example 1:
 
-        Input: head = [1,2,3,4,5], n = 2
-        Output: [1,2,3,5]
+        Input: head = [1, 2, 3, 4, 5], n = 2
+        Output: [1, 2, 3, 5]
 
     Example 2:
 
@@ -17,7 +17,7 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
     Example 3:
 
-        Input: head = [1,2], n = 1
+        Input: head = [1, 2], n = 1
         Output: [1]
 
 
@@ -30,9 +30,9 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
 """
 
-InputLst = [[[1,2,3,4,5], 2],
+InputLst = [[[1, 2, 3, 4, 5], 2],
             [[1], 1],
-            [[1,2], 1]]
+            [[1, 2], 1]]
 
 for csCnt, case in enumerate(InputLst):
 
