@@ -341,21 +341,27 @@ def Sol02_WhlWhl_Prt(hdLL1, hdLL2):
         # print(curNdFn.val, end=" ")
         lnkLstFn.append(curNdFn.val)
 
-    while curNd1:
-        # print(curNd1.val, end=" ")
-        lnkLstFn.append(curNd1.val)
+    if curNd1:
         curNdFn.next = curNd1
 
-        curNd1 = curNd1.next
-        curNdFn = curNdFn.next
+    # while curNd1:
+    #     # print(curNd1.val, end=" ")
+    #     lnkLstFn.append(curNd1.val)
+    #     curNdFn.next = curNd1
+    #
+    #     curNd1 = curNd1.next
+    #     curNdFn = curNdFn.next
 
-    while curNd2:
-        # print(curNd2.val, end=" ")
-        lnkLstFn.append(curNd2.val)
+    if curNd2:
         curNdFn.next = curNd2
 
-        curNd2 = curNd2.next
-        curNdFn = curNdFn.next
+    # while curNd2:
+    #     # print(curNd2.val, end=" ")
+    #     lnkLstFn.append(curNd2.val)
+    #     curNdFn.next = curNd2
+    #
+    #     curNd2 = curNd2.next
+    #     curNdFn = curNdFn.next
 
     # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
@@ -377,29 +383,30 @@ if __name__ == '__main__':
 
     # Sol01A_WhlWhl_Prt(InputLst)
 
-    Sol02A_WhlWhl_Prt(InputLst)
+    # Sol02A_WhlWhl_Prt(InputLst)
 
-    # for csCnt, case in enumerate(InputLst):
-    #
-    #     print(f"{csCnt+1}. Case:\n")
-    #
-    #     lst1 = case[0]
-    #     lst2 = case[1]
-    #
-    #     lnkLst1 = LinkList()
-    #     lnkLst2 = LinkList()
-    #
-    #     for num in lst1:
-    #         lnkLst1.append(num)
-    #
-    #     for num in lst2:
-    #         lnkLst2.append(num)
-    #
-    #     hdLL1 = lnkLst1.head
-    #     hdLL2 = lnkLst2.head
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt+1}. Case:\n")
+
+        lst1 = case[0]
+        lst2 = case[1]
+
+        lnkLst1 = LinkList()
+        lnkLst2 = LinkList()
+
+        for num in lst1:
+            lnkLst1.append(num)
+
+        for num in lst2:
+            lnkLst2.append(num)
+
+        hdLL1 = lnkLst1.head
+        hdLL2 = lnkLst2.head
 
         # print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
         # print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
 
         # Sol01_WhlWhl_Prt(hdLL1, hdLL2)
+        Sol02_WhlWhl_Prt(hdLL1, hdLL2)
 
