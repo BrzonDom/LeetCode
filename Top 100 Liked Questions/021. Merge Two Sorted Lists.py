@@ -84,88 +84,90 @@ class LinkList:
         return valLst
 
 
-InputLst = [[[1, 2, 4], [1, 3,  4]],
-            [[1, 3, 4, 7, 8], [2, 3, 5, 6]],
-            [[], []],
-            [[], [0]]]
+if __name__ == '__main__':
 
-for csCnt, Lsts in enumerate(InputLst):
+    InputLst = [[[1, 2, 4], [1, 3,  4]],
+                [[1, 3, 4, 7, 8], [2, 3, 5, 6]],
+                [[], []],
+                [[], [0]]]
 
-    print(f"{csCnt+1}. Case:\n")
+    for csCnt, Lsts in enumerate(InputLst):
 
-    lst1 = Lsts[0]
-    lst2 = Lsts[1]
+        print(f"{csCnt+1}. Case:\n")
 
-    print(f"\t1. List: {lst1}")
-    print(f"\t2. List: {lst2}")
-    print()
+        lst1 = Lsts[0]
+        lst2 = Lsts[1]
 
-    lnkLst1 = LinkList()
-    lnkLst2 = LinkList()
+        print(f"\t1. List: {lst1}")
+        print(f"\t2. List: {lst2}")
+        print()
 
-    for num in lst1:
-        lnkLst1.append(num)
+        lnkLst1 = LinkList()
+        lnkLst2 = LinkList()
 
-    for num in lst2:
-        lnkLst2.append(num)
+        for num in lst1:
+            lnkLst1.append(num)
 
-    print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
-    # if lnkLst1.head:
-    #     print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
-    # print()
+        for num in lst2:
+            lnkLst2.append(num)
 
-    print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
-    # if lnkLst2.head:
-    #     print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
-    print()
+        print(f"\t\t1. Linked list: {lnkLst1.valLst_Lnk()}")
+        # if lnkLst1.head:
+        #     print(f"\t\t1. Linked list: {lnkLst1.head.valLst_Nd()}")
+        # print()
 
-    hdLL1 = lnkLst1.head
-    hdLL2 = lnkLst2.head
+        print(f"\t\t2. Linked list: {lnkLst2.valLst_Lnk()}")
+        # if lnkLst2.head:
+        #     print(f"\t\t2. Linked list: {lnkLst2.head.valLst_Nd()}")
+        print()
 
-    preHdFnLL = ListNode()
-    lnkLstFn = LinkList()
+        hdLL1 = lnkLst1.head
+        hdLL2 = lnkLst2.head
 
-    curNd1 = hdLL1
-    curNd2 = hdLL2
+        preHdFnLL = ListNode()
+        lnkLstFn = LinkList()
 
-    curNdFn = preHdFnLL
+        curNd1 = hdLL1
+        curNd2 = hdLL2
 
-    # print(f"\tFin. Linked list: ", end="")
-    while curNd1 and curNd2:
+        curNdFn = preHdFnLL
 
-        if curNd1.val < curNd2.val:
+        # print(f"\tFin. Linked list: ", end="")
+        while curNd1 and curNd2:
+
+            if curNd1.val < curNd2.val:
+                curNdFn.next = curNd1
+                curNd1 = curNd1.next
+
+            else:
+                curNdFn.next = curNd2
+                curNd2 = curNd2.next
+
+            curNdFn = curNdFn.next
+
+            # print(curNdFn.val, end=" ")
+            lnkLstFn.append(curNdFn.val)
+
+        while curNd1:
+            # print(curNd1.val, end=" ")
+            lnkLstFn.append(curNd1.val)
             curNdFn.next = curNd1
+
             curNd1 = curNd1.next
+            curNdFn = curNdFn.next
 
-        else:
+        while curNd2:
+            # print(curNd2.val, end=" ")
+            lnkLstFn.append(curNd2.val)
             curNdFn.next = curNd2
+
             curNd2 = curNd2.next
+            curNdFn = curNdFn.next
 
-        curNdFn = curNdFn.next
+        print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
-        # print(curNdFn.val, end=" ")
-        lnkLstFn.append(curNdFn.val)
+        hdFnLL = preHdFnLL.next
+        if hdFnLL:
+            print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
 
-    while curNd1:
-        # print(curNd1.val, end=" ")
-        lnkLstFn.append(curNd1.val)
-        curNdFn.next = curNd1
-
-        curNd1 = curNd1.next
-        curNdFn = curNdFn.next
-
-    while curNd2:
-        # print(curNd2.val, end=" ")
-        lnkLstFn.append(curNd2.val)
-        curNdFn.next = curNd2
-
-        curNd2 = curNd2.next
-        curNdFn = curNdFn.next
-
-    print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
-
-    hdFnLL = preHdFnLL.next
-    if hdFnLL:
-        print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
-
-    print("\n")
+        print("\n")
