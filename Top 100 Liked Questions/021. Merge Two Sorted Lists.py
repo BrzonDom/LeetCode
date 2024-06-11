@@ -344,7 +344,7 @@ def Sol02_WhlWhl_Prt(hdLL1, hdLL2):
     if curNd1:
         curNdFn.next = curNd1
 
-    if curNd2:
+    elif curNd2:
         curNdFn.next = curNd2
 
     # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
