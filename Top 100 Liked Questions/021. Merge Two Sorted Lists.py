@@ -136,11 +136,15 @@ for csCnt, Lsts in enumerate(InputLst):
             curNd1 = curNd1.next
             curNdFn = curNdFn.next
 
+            print(curNdFn.val, end=" ")
+
     elif curNd2:
         while curNd2:
             curNdFn.next = curNd2.next
 
             curNd2 = curNd2.next
             curNdFn = curNdFn.next
+
+            print(curNdFn.val, end=" ")
 
     print("\n\n")
