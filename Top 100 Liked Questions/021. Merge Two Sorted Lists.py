@@ -344,24 +344,8 @@ def Sol02_WhlWhl_Prt(hdLL1, hdLL2):
     if curNd1:
         curNdFn.next = curNd1
 
-    # while curNd1:
-    #     # print(curNd1.val, end=" ")
-    #     lnkLstFn.append(curNd1.val)
-    #     curNdFn.next = curNd1
-    #
-    #     curNd1 = curNd1.next
-    #     curNdFn = curNdFn.next
-
     if curNd2:
         curNdFn.next = curNd2
-
-    # while curNd2:
-    #     # print(curNd2.val, end=" ")
-    #     lnkLstFn.append(curNd2.val)
-    #     curNdFn.next = curNd2
-    #
-    #     curNd2 = curNd2.next
-    #     curNdFn = curNdFn.next
 
     # print(f"\tFin. Linked list: {lnkLstFn.valLst_Lnk()}")
 
