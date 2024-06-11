@@ -169,6 +169,7 @@ def Sol01A_While_Prt(inLst):
 
 
 def Sol01_While_Prt(hdLL1, hdLL2):
+
     preHdFnLL = ListNode()
     lnkLstFn = LinkList()
 
@@ -225,5 +226,33 @@ if __name__ == '__main__':
                 [[], []],
                 [[], [0]]]
 
-    Sol01A_While_Prt(InputLst)
+    # Sol01A_While_Prt(InputLst)
+
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt+1}. Case:\n")
+
+        lst1 = case[0]
+        lst2 = case[1]
+
+        lnkLst1 = LinkList()
+        lnkLst2 = LinkList()
+
+        for num in lst1:
+            lnkLst1.append(num)
+
+        for num in lst2:
+            lnkLst2.append(num)
+
+        hdLL1 = lnkLst1.head
+        hdLL2 = lnkLst2.head
+
+        print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
+        print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
+
+        print("\n")
+
+
+
+
 
