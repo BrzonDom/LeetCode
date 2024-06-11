@@ -86,6 +86,65 @@ class LinkList:
 
 def Sol01_WhlWhl_Prt(hdLL1, hdLL2):
 
+    if hdLL1:
+        print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
+    else:
+        print(f"\t\t1. Linked list: ")
+
+    if hdLL2:
+        print(f"\t\t2. Linked list: {hdLL2.valLst_Nd()}")
+    else:
+        print(f"\t\t2. Linked list: ")
+    print()
+
+    preHdFnLL = ListNode()
+
+    curNd1 = hdLL1
+    curNd2 = hdLL2
+
+    curNdFn = preHdFnLL
+
+    while curNd1 and curNd2:
+
+        if curNd1.val < curNd2.val:
+            curNdFn.next = curNd1
+            curNd1 = curNd1.next
+
+        else:
+            curNdFn.next = curNd2
+            curNd2 = curNd2.next
+
+        curNdFn = curNdFn.next
+
+        # print(curNdFn.val, end=" ")
+
+    while curNd1:
+        # print(curNd1.val, end=" ")
+        curNdFn.next = curNd1
+
+        curNd1 = curNd1.next
+        curNdFn = curNdFn.next
+
+    while curNd2:
+        # print(curNd2.val, end=" ")
+        curNdFn.next = curNd2
+
+        curNd2 = curNd2.next
+        curNdFn = curNdFn.next
+
+    hdFnLL = preHdFnLL.next
+    if hdFnLL:
+        print(f"\tFin. Linked list: {hdFnLL.valLst_Nd()}")
+    else:
+        print(f"\tFin. Linked list: ")
+
+    print("\n")
+
+    return hdFnLL
+
+
+def Sol01_WhlWhl(hdLL1, hdLL2):
+
     # if hdLL1:
     #     print(f"\t\t1. Linked list: {hdLL1.valLst_Nd()}")
     # else:
@@ -172,4 +231,6 @@ if __name__ == '__main__':
         # print(f"\t1. Linked list: {lnkLst1.valLst_Lnk()}")
         # print(f"\t2. Linked list: {lnkLst2.valLst_Lnk()}")
 
-        Sol01_WhlWhl_Prt(hdLL1, hdLL2)
+        # Sol01_WhlWhl_Prt(hdLL1, hdLL2)
+
+        Sol01_WhlWhl(hdLL1, hdLL2)
