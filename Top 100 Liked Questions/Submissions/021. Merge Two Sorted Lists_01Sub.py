@@ -146,6 +146,8 @@ def Sol01_While_Prt(hdLL1, hdLL2):
     #
     # print("\n")
 
+    return hdFnLL
+
 
 if __name__ == '__main__':
 
