@@ -70,8 +70,8 @@ for csCnt, Lsts in enumerate(InputLst):
 
     print(f"{csCnt+1}. Case:\n")
 
-    print(f"\t1.List:    {lst1}")
-    print(f"\t2.List:    {lst2}")
+    print(f"\t1. List: {lst1}")
+    print(f"\t2. List: {lst2}")
     print()
 
     lnkLst1 = LinkList()
@@ -86,6 +86,7 @@ for csCnt, Lsts in enumerate(InputLst):
     print(f"\t1. Linked list: ", end="")
 
     curNode = lnkLst1.head
+    hdLnkLst1 = lnkLst1.head
     while curNode:
         print(f"{curNode.val}", end=" ")
 
@@ -95,6 +96,7 @@ for csCnt, Lsts in enumerate(InputLst):
     print(f"\t2. Linked list: ", end="")
 
     curNode = lnkLst2.head
+    hdLnkLst2 = lnkLst2.head
     while curNode:
         print(f"{curNode.val}", end=" ")
 
