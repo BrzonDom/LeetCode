@@ -151,7 +151,7 @@ for csCnt, Lsts in enumerate(InputLst):
         # print(curNd1.val, end=" ")
         lnkLstFn.append(curNd1.val)
 
-        curNdFn.next = curNd1.next
+        curNdFn.next = curNd1
 
         curNd1 = curNd1.next
         curNdFn = curNdFn.next
@@ -160,7 +160,7 @@ for csCnt, Lsts in enumerate(InputLst):
         # print(curNd2.val, end=" ")
         lnkLstFn.append(curNd2.val)
 
-        curNdFn.next = curNd2.next
+        curNdFn.next = curNd2
 
         curNd2 = curNd2.next
         curNdFn = curNdFn.next
