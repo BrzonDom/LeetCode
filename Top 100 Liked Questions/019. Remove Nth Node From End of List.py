@@ -29,3 +29,16 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
         1 <= n <= sz
 
 """
+
+InputLst = [[[1,2,3,4,5], 2],
+            [[1], 1],
+            [[1,2], 1]]
+
+for csCnt, case in enumerate(InputLst):
+
+    lnkLst = case[0]
+    rmvNd = case[1]
+
+    print(lnkLst)
+    print(rmvNd)
+    print()
