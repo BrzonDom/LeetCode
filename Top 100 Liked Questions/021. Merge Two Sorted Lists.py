@@ -97,22 +97,22 @@ for csCnt, Lsts in enumerate(InputLst):
     for num in lst2:
         lnkLst2.append(num)
 
-    print(f"\t\t1. Linked list: ", end="")
+    print(f"\t\t1. Linked list: {lnkLst1.returnLst()}", end="")
 
-    curNode = lnkLst1.head
-    while curNode:
-        print(f"{curNode.val}", end=" ")
-
-        curNode = curNode.next
+    # curNode = lnkLst1.head
+    # while curNode:
+    #     print(f"{curNode.val}", end=" ")
+    #
+    #     curNode = curNode.next
     print()
 
-    print(f"\t\t2. Linked list: ", end="")
+    print(f"\t\t2. Linked list: {lnkLst2.returnLst()}", end="")
 
-    curNode = lnkLst2.head
-    while curNode:
-        print(f"{curNode.val}", end=" ")
-
-        curNode = curNode.next
+    # curNode = lnkLst2.head
+    # while curNode:
+    #     print(f"{curNode.val}", end=" ")
+    #
+    #     curNode = curNode.next
     print("\n")
 
     hdLL1 = lnkLst1.head
