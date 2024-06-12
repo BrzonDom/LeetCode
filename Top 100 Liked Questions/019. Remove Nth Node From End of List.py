@@ -68,7 +68,7 @@ if __name__ == '__main__':
         lst = case[0]
         rmvNd = case[1]
 
-        print(f"\tLinked list: {lst}")
+        print(f"\tList: {lst}")
         print()
         print(f"\t\tNode index: -{rmvNd}")
         print(f"\t\tNode value: {lst[-rmvNd]}")
@@ -78,5 +78,13 @@ if __name__ == '__main__':
 
         for num in lst:
             lnkLst.append(num)
+
+        print(f"\t\tLinked list: ", end="")
+        curNode = lnkLst.head
+        while curNode:
+            print(f"{curNode.val}", end=" ")
+
+            curNode = curNode.next
+        print()
 
         print("\n")
