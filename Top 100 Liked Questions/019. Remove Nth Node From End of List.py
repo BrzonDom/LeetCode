@@ -248,54 +248,56 @@ if __name__ == '__main__':
     #
     #     Sol01_LstScan_Prt(hdLLIn, idxNd)
 
-    for csCnt, case in enumerate(InputLst):
+    Sol02A_FstSlwAlg_Prt(InputLst)
 
-        print(f"{csCnt + 1}. Case:\n")
-
-        lst = case[0]
-        idxNd = case[1]
-
-        lnkLst = LinkList()
-
-        for val in lst:
-            lnkLst.append(val)
-
-        print(f"\tIn Linked list: {lnkLst.valLst_Lnk()}")
-        print()
-        print(f"\t\tNode index: -{idxNd}")
-        print(f"\t\tNode value: {lst[-idxNd]}")
-        print()
-
-        hdLL = lnkLst.head
-        preHdLL = ListNode(0, hdLL)
-
-        fstNd = slwNd = preHdLL
-
-        for shft in range(idxNd):
-            fstNd = fstNd.next
-
-        print(f"\t\tFast shift:")
-        print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
-        print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
-        print()
-
-        if fstNd.next:
-            while fstNd.next:
-                fstNd = fstNd.next
-                slwNd = slwNd.next
-
-            print(f"\t\tFast and slow shift:")
-            print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
-            print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
-            print()
-
-        slwNd.next = slwNd.next.next
-        preHdLL = preHdLL.next
-
-        # print(f"\tOut Link list: {hdLL.valLst_nd()}")
-        if preHdLL:
-            print(f"\tOut Link list: {preHdLL.valLst_nd()}")
-        else:
-            print(f"\tOut Link list: []")
-
-        print("\n")
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case:\n")
+    #
+    #     lst = case[0]
+    #     idxNd = case[1]
+    #
+    #     lnkLst = LinkList()
+    #
+    #     for val in lst:
+    #         lnkLst.append(val)
+    #
+    #     print(f"\tIn Linked list: {lnkLst.valLst_Lnk()}")
+    #     print()
+    #     print(f"\t\tNode index: -{idxNd}")
+    #     print(f"\t\tNode value: {lst[-idxNd]}")
+    #     print()
+    #
+    #     hdLL = lnkLst.head
+    #     preHdLL = ListNode(0, hdLL)
+    #
+    #     fstNd = slwNd = preHdLL
+    #
+    #     for shft in range(idxNd):
+    #         fstNd = fstNd.next
+    #
+    #     print(f"\t\tFast shift:")
+    #     print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
+    #     print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
+    #     print()
+    #
+    #     if fstNd.next:
+    #         while fstNd.next:
+    #             fstNd = fstNd.next
+    #             slwNd = slwNd.next
+    #
+    #         print(f"\t\tFast and slow shift:")
+    #         print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
+    #         print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
+    #         print()
+    #
+    #     slwNd.next = slwNd.next.next
+    #     preHdLL = preHdLL.next
+    #
+    #     # print(f"\tOut Link list: {hdLL.valLst_nd()}")
+    #     if preHdLL:
+    #         print(f"\tOut Link list: {preHdLL.valLst_nd()}")
+    #     else:
+    #         print(f"\tOut Link list: []")
+    #
+    #     print("\n")
