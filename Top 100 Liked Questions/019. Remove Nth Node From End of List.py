@@ -221,5 +221,15 @@ if __name__ == '__main__':
 
         print(f"\t\tFast link list: {fstNd.valLst_nd()}")
         print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
+        print()
+
+        while fstNd.next:
+            fstNd = fstNd.next
+            slwNd = slwNd.next
+
+        print(f"\t\tFast link list: {fstNd.valLst_nd()}")
+        print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
+        print()
+
 
         print("\n")
