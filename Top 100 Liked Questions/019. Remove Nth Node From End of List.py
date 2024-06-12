@@ -178,6 +178,21 @@ if __name__ == '__main__':
 
     # Sol01A_LstScan_Prt(InputLst)
 
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case:\n")
+    #
+    #     lst = case[0]
+    #     idxNd = case[1]
+    #
+    #     lnkLst = LinkList()
+    #     for val in lst:
+    #         lnkLst.append(val)
+    #
+    #     hdLLIn = lnkLst.head
+    #
+    #     Sol01_LstScan_Prt(hdLLIn, idxNd)
+
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}. Case:\n")
@@ -185,10 +200,18 @@ if __name__ == '__main__':
         lst = case[0]
         idxNd = case[1]
 
+        print(f"\tList: {lst}")
+        print()
+        print(f"\t\tNode index: -{idxNd}")
+        print(f"\t\tNode value: {lst[-idxNd]}")
+        print()
+
         lnkLst = LinkList()
+
         for val in lst:
             lnkLst.append(val)
 
-        hdLLIn = lnkLst.head
+        print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
+        print()
 
-        Sol01_LstScan_Prt(hdLLIn, idxNd)
+        print()
