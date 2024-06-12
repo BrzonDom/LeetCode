@@ -211,10 +211,10 @@ if __name__ == '__main__':
         print(f"\t\tNode value: {lst[-idxNd]}")
         print()
 
-        hdLLIn = lnkLst.head
-        preHdLLIn = ListNode(0, hdLLIn)
+        hdLL = lnkLst.head
+        preHdLL = ListNode(0, hdLL)
 
-        fstNd = slwNd = preHdLLIn
+        fstNd = slwNd = preHdLL
 
         for shft in range(idxNd):
             fstNd = fstNd.next
@@ -223,16 +223,17 @@ if __name__ == '__main__':
         print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
         print()
 
-        while fstNd.next:
-            fstNd = fstNd.next
-            slwNd = slwNd.next
+        if fstNd.next:
+            while fstNd.next:
+                fstNd = fstNd.next
+                slwNd = slwNd.next
 
-        print(f"\t\tFast link list: {fstNd.valLst_nd()}")
-        print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
-        print()
+            print(f"\t\tFast link list: {fstNd.valLst_nd()}")
+            print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
+            print()
 
         slwNd.next = slwNd.next.next
 
-        print(f"\tOut Link list: {hdLLIn.valLst_nd()}")
+        print(f"\tOut Link list: {hdLL.valLst_nd()}")
 
         print("\n")
