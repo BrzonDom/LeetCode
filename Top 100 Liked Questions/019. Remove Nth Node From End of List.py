@@ -95,4 +95,11 @@ if __name__ == '__main__':
         if len(ndLst) == 1:
             hdLLOut = None
 
+        elif idxNd == len(ndLst):
+            hdLLOut = ndLst[1]
+
+        elif idxNd == 1:
+            ndLst[-2].next = None
+            hdLLOut = ndLst[0]
+
         print("\n")
