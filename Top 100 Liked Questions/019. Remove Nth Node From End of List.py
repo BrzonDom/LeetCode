@@ -65,12 +65,18 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case:\n")
 
-        lnkLst = case[0]
+        lst = case[0]
         rmvNd = case[1]
 
-        print(f"\tLinked list: {lnkLst}")
+        print(f"\tLinked list: {lst}")
         print()
         print(f"\t\tNode index: -{rmvNd}")
-        print(f"\t\tNode value: {lnkLst[-rmvNd]}")
+        print(f"\t\tNode value: {lst[-rmvNd]}")
+        print()
+
+        lnkLst = LinkList()
+
+        for num in lst:
+            lnkLst.append(num)
 
         print("\n")
