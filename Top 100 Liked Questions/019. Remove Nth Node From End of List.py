@@ -85,6 +85,16 @@ if __name__ == '__main__':
             print(f"{curNode.val}", end=" ")
 
             curNode = curNode.next
-        print()
+        print("\n")
+
+        hdLLIn = lnkLst.head
+
+        ndLst = []
+        curNode = lnkLst.head
+
+        while curNode:
+            ndLst.append(curNode)
+
+            curNode = curNode.next
 
         print("\n")
