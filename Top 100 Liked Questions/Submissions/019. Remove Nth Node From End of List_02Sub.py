@@ -79,95 +79,6 @@ class LinkList:
         return valLst
 
 
-def Sol01A_LstScan_Prt(inLst):
-    for csCnt, case in enumerate(inLst):
-
-        print(f"{csCnt + 1}. Case:\n")
-
-        lst = case[0]
-        idxNd = case[1]
-
-        print(f"\tList: {lst}")
-        print()
-        print(f"\t\tNode index: -{idxNd}")
-        print(f"\t\tNode value: {lst[-idxNd]}")
-        print()
-
-        lnkLst = LinkList()
-
-        for val in lst:
-            lnkLst.append(val)
-
-        print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
-        print()
-
-        hdLLIn = lnkLst.head
-
-        ndLst = []
-        curNd = hdLLIn
-
-        while curNd:
-            ndLst.append(curNd)
-            curNd = curNd.next
-
-        if len(ndLst) == 1:
-            hdLLOut = None
-
-        elif idxNd == len(ndLst):
-            hdLLOut = ndLst[1]
-
-        elif idxNd == 1:
-            ndLst[-2].next = None
-            hdLLOut = ndLst[0]
-
-        else:
-            ndLst[-idxNd - 1].next = ndLst[-idxNd + 1]
-            hdLLOut = ndLst[0]
-
-        if hdLLOut:
-            print(f"\tOut Linked list: {hdLLOut.valLst_Nd()}")
-        else:
-            print("\tOut Linked list: []")
-
-        print("\n")
-
-
-def Sol01_LstScan_Prt(hdLLIn, idxNd):
-    print(f"\tIn Linked list: {hdLLIn.valLst_Nd()}")
-    print()
-    print(f"\t\tNode index: -{idxNd}")
-    print(f"\t\tNode value: {lst[-idxNd]}")
-    print()
-
-    ndLst = []
-    curNd = hdLLIn
-
-    while curNd:
-        ndLst.append(curNd)
-        curNd = curNd.next
-
-    if len(ndLst) == 1:
-        hdLLOut = None
-
-    elif idxNd == len(ndLst):
-        hdLLOut = ndLst[1]
-
-    elif idxNd == 1:
-        ndLst[-2].next = None
-        hdLLOut = ndLst[0]
-
-    else:
-        ndLst[-idxNd - 1].next = ndLst[-idxNd + 1]
-        hdLLOut = ndLst[0]
-
-    if hdLLOut:
-        print(f"\tOut Linked list: {hdLLOut.valLst_Nd()}")
-    else:
-        print("\tOut Linked list: []")
-
-    print("\n")
-
-
 def Sol02A_FstSlwAlg_Prt(inLst):
     for csCnt, case in enumerate(inLst):
 
@@ -266,7 +177,6 @@ if __name__ == '__main__':
                 [[1], 1],
                 [[1, 2], 1]]
 
-    # Sol01A_LstScan_Prt(InputLst)
     # Sol02A_FstSlwAlg_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
@@ -282,5 +192,4 @@ if __name__ == '__main__':
 
         hdLLIn = lnkLst.head
 
-        # Sol01_LstScan_Prt(hdLLIn, idxNd)
         Sol02_FstSlwAlg_Prt(hdLLIn, idxNd)
