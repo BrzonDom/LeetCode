@@ -65,9 +65,18 @@ class LinkList:
             curNd.next = newNd
 
     def valLst_Lnk(self, strNd=None):
-
+        
         if strNd is None:
             strNd = self.head
+
+        curNd = strNd
+        valLst = []
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.next
+
+        return valLst
 
 
 if __name__ == '__main__':
