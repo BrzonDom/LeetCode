@@ -195,20 +195,20 @@ if __name__ == '__main__':
         lst = case[0]
         idxNd = case[1]
 
-        print(f"\tList: {lst}")
-        print()
-        print(f"\t\tNode index: -{idxNd}")
-        print(f"\t\tNode value: {lst[-idxNd]}")
-        print()
-
         lnkLst = LinkList()
 
         for val in lst:
             lnkLst.append(val)
 
-        print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
+        hdLLIn = lnkLst.head
+
+        print(f"\tIn Linked list: {hdLLIn.valLst_nd()}")
+        print()
+        print(f"\t\tNode index: -{idxNd}")
+        print(f"\t\tNode value: {lst[-idxNd]}")
         print()
 
-        hdLLIn = lnkLst.head
+        # print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
+        # print()
 
         Sol01_LstScan_Prt(lst, idxNd)
