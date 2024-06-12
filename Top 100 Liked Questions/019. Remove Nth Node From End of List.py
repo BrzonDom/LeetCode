@@ -231,5 +231,8 @@ if __name__ == '__main__':
         print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
         print()
 
+        slwNd.next = slwNd.next.next
+
+        print(f"\tOut Link list: {hdLLIn.valLst_nd()}")
 
         print("\n")
