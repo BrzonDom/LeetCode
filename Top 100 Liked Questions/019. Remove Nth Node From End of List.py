@@ -84,7 +84,7 @@ if __name__ == '__main__':
         ndLst = []
         curNd = lnkLst.head
 
-        print(f"\t\tLinked list: ", end="")
+        print(f"\t\tIn Linked list: ", end="")
         while curNd:
             print(f"{curNd.val}", end=" ")
 
@@ -106,4 +106,12 @@ if __name__ == '__main__':
             ndLst[-idxNd-1].next = ndLst[-idxNd+1]
             hdLLOut = ndLst[0]
 
-        print("\n")
+        curNd = hdLLOut
+
+        print(f"\tOut Linked list: ", end="")
+        while curNd:
+            print(f"{curNd.val}", end=" ")
+
+            curNd = curNd.next
+
+        print("\n\n")
