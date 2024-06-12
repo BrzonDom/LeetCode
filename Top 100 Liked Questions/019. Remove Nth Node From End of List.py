@@ -104,6 +104,7 @@ if __name__ == '__main__':
             lnkLst.append(val)
 
         print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
+        print()
 
         hdLLIn = lnkLst.head
 
@@ -116,7 +117,6 @@ if __name__ == '__main__':
 
             ndLst.append(curNd)
             curNd = curNd.next
-        print("\n")
 
         if len(ndLst) == 1:
             hdLLOut = None
@@ -132,7 +132,10 @@ if __name__ == '__main__':
             ndLst[-idxNd-1].next = ndLst[-idxNd+1]
             hdLLOut = ndLst[0]
 
-        print(f"\tOut Linked list: {hdLLOut.valLst_nd()}")
+        if hdLLOut:
+            print(f"\tOut Linked list: {hdLLOut.valLst_nd()}")
+        else:
+            print("\tOut Linked list: []")
 
         # curNd = hdLLOut
         #
@@ -142,4 +145,4 @@ if __name__ == '__main__':
         #
         #     curNd = curNd.next
 
-        print("\n\n")
+        print("\n")
