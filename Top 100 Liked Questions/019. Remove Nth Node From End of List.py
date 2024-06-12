@@ -135,19 +135,19 @@ def Sol01A_LstScan_Prt(inLst):
 
 def Sol01_LstScan_Prt(lst, idxNd):
 
-    print(f"\tList: {lst}")
-    print()
-    print(f"\t\tNode index: -{idxNd}")
-    print(f"\t\tNode value: {lst[-idxNd]}")
-    print()
+    # print(f"\tList: {lst}")
+    # print()
+    # print(f"\t\tNode index: -{idxNd}")
+    # print(f"\t\tNode value: {lst[-idxNd]}")
+    # print()
 
     lnkLst = LinkList()
 
     for val in lst:
         lnkLst.append(val)
 
-    print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
-    print()
+    # print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
+    # print()
 
     hdLLIn = lnkLst.head
 
@@ -194,5 +194,21 @@ if __name__ == '__main__':
 
         lst = case[0]
         idxNd = case[1]
+
+        print(f"\tList: {lst}")
+        print()
+        print(f"\t\tNode index: -{idxNd}")
+        print(f"\t\tNode value: {lst[-idxNd]}")
+        print()
+
+        lnkLst = LinkList()
+
+        for val in lst:
+            lnkLst.append(val)
+
+        print(f"\t\tIn Linked list: {lnkLst.valLst_Lnk()}")
+        print()
+
+        hdLLIn = lnkLst.head
 
         Sol01_LstScan_Prt(lst, idxNd)
