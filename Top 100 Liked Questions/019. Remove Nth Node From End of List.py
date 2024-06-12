@@ -36,7 +36,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def valLst_nd(self):
+    def valLst_Nd(self):
         curNd = self
         valLst = []
 
@@ -126,7 +126,7 @@ def Sol01A_LstScan_Prt(inLst):
             hdLLOut = ndLst[0]
 
         if hdLLOut:
-            print(f"\tOut Linked list: {hdLLOut.valLst_nd()}")
+            print(f"\tOut Linked list: {hdLLOut.valLst_Nd()}")
         else:
             print("\tOut Linked list: []")
 
@@ -135,7 +135,7 @@ def Sol01A_LstScan_Prt(inLst):
 
 def Sol01_LstScan_Prt(hdLLIn, idxNd):
 
-    print(f"\tIn Linked list: {hdLLIn.valLst_nd()}")
+    print(f"\tIn Linked list: {hdLLIn.valLst_Nd()}")
     print()
     print(f"\t\tNode index: -{idxNd}")
     print(f"\t\tNode value: {lst[-idxNd]}")
@@ -163,7 +163,7 @@ def Sol01_LstScan_Prt(hdLLIn, idxNd):
         hdLLOut = ndLst[0]
 
     if hdLLOut:
-        print(f"\tOut Linked list: {hdLLOut.valLst_nd()}")
+        print(f"\tOut Linked list: {hdLLOut.valLst_Nd()}")
     else:
         print("\tOut Linked list: []")
 
@@ -199,8 +199,8 @@ def Sol02A_FstSlwAlg_Prt(inLst):
             fstNd = fstNd.next
 
         print(f"\t\tFast shift:")
-        print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
-        print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
+        print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
+        print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
         print()
 
         if fstNd.next:
@@ -209,15 +209,15 @@ def Sol02A_FstSlwAlg_Prt(inLst):
                 slwNd = slwNd.next
 
             print(f"\t\tFast and slow shift:")
-            print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
-            print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
+            print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
+            print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
             print()
 
         slwNd.next = slwNd.next.next
         preHdLL = preHdLL.next
 
         if preHdLL:
-            print(f"\tOut Link list: {preHdLL.valLst_nd()}")
+            print(f"\tOut Link list: {preHdLL.valLst_Nd()}")
         else:
             print(f"\tOut Link list: []")
 
@@ -226,7 +226,7 @@ def Sol02A_FstSlwAlg_Prt(inLst):
 
 def Sol02_FstSlwAlg_Prt(hdLL, idxNd):
 
-    print(f"\tIn Linked list: {hdLL.valLst_nd()}")
+    print(f"\tIn Linked list: {hdLL.valLst_Nd()}")
     print()
     print(f"\t\tNode index: -{idxNd}")
     print(f"\t\tNode value: {lst[-idxNd]}")
@@ -239,8 +239,8 @@ def Sol02_FstSlwAlg_Prt(hdLL, idxNd):
         fstNd = fstNd.next
 
     print(f"\t\tFast shift:")
-    print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
-    print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
+    print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
+    print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
     print()
 
     if fstNd.next:
@@ -249,15 +249,15 @@ def Sol02_FstSlwAlg_Prt(hdLL, idxNd):
             slwNd = slwNd.next
 
         print(f"\t\tFast and slow shift:")
-        print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
-        print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
+        print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
+        print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
         print()
 
     slwNd.next = slwNd.next.next
     preHdLL = preHdLL.next
 
     if preHdLL:
-        print(f"\tOut Link list: {preHdLL.valLst_nd()}")
+        print(f"\tOut Link list: {preHdLL.valLst_Nd()}")
     else:
         print(f"\tOut Link list: []")
 
