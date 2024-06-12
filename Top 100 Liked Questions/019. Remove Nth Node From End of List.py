@@ -211,4 +211,8 @@ if __name__ == '__main__':
         print(f"\t\tNode value: {lst[-idxNd]}")
         print()
 
+        hdLLIn = lnkLst.head
+
+        fstNd = slwNd = hdLLIn
+
         print()
