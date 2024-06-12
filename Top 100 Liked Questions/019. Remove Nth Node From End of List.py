@@ -30,6 +30,13 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
 """
 
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 InputLst = [[[1, 2, 3, 4, 5], 2],
             [[1], 1],
             [[1, 2], 1]]
