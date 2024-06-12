@@ -133,6 +133,8 @@ def Sol02_FstSlwAlg(hdLL, idxNd):
     slwNd.next = slwNd.next.next
     preHdLL = preHdLL.next
 
+    return preHdLL
+
 
 if __name__ == '__main__':
 
