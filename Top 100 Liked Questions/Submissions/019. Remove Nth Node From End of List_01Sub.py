@@ -116,11 +116,6 @@ def Sol01_LstScan_Prt(hdLLIn, idxNd):
 
 
 def Sol01_LstScan(hdLLIn, idxNd):
-    # print(f"\tIn Linked list: {hdLLIn.valLst_Nd()}")
-    # print()
-    # print(f"\t\tNode index: -{idxNd}")
-    # print(f"\t\tNode value: {lst[-idxNd]}")
-    # print()
 
     ndLst = []
     curNd = hdLLIn
@@ -142,13 +137,6 @@ def Sol01_LstScan(hdLLIn, idxNd):
     else:
         ndLst[-idxNd - 1].next = ndLst[-idxNd + 1]
         hdLLOut = ndLst[0]
-
-    # if hdLLOut:
-    #     print(f"\tOut Linked list: {hdLLOut.valLst_Nd()}")
-    # else:
-    #     print("\tOut Linked list: []")
-    #
-    # print("\n")
 
 
 if __name__ == '__main__':
