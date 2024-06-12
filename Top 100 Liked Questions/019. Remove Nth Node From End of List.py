@@ -37,9 +37,14 @@ class ListNode:
         self.next = next
 
     def valLst_nd(self):
-
         curNd = self
-        nxtNd = curNd.next
+        valLst = []
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.next
+
+        return valLst
 
 
 class LinkList:
