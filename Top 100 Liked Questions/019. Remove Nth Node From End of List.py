@@ -111,10 +111,7 @@ if __name__ == '__main__':
         ndLst = []
         curNd = lnkLst.head
 
-        # print(f"\t\tIn Linked list: ", end="")
         while curNd:
-            # print(f"{curNd.val}", end=" ")
-
             ndLst.append(curNd)
             curNd = curNd.next
 
@@ -136,13 +133,5 @@ if __name__ == '__main__':
             print(f"\tOut Linked list: {hdLLOut.valLst_nd()}")
         else:
             print("\tOut Linked list: []")
-
-        # curNd = hdLLOut
-        #
-        # print(f"\tOut Linked list: ", end="")
-        # while curNd:
-        #     print(f"{curNd.val}", end=" ")
-        #
-        #     curNd = curNd.next
 
         print("\n")
