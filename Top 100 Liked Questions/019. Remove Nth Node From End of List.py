@@ -186,4 +186,13 @@ if __name__ == '__main__':
                 [[1], 1],
                 [[1, 2], 1]]
 
-    Sol01A_LstScan_Prt(InputLst)
+    # Sol01A_LstScan_Prt(InputLst)
+
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case:\n")
+
+        lst = case[0]
+        idxNd = case[1]
+
+        Sol01_LstScan_Prt(lst, idxNd)
