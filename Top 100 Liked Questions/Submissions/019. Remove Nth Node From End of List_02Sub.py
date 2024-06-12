@@ -126,10 +126,9 @@ def Sol02_FstSlwAlg(hdLL, idxNd):
     for shft in range(idxNd):
         fstNd = fstNd.next
 
-    if fstNd.next:
-        while fstNd.next:
-            fstNd = fstNd.next
-            slwNd = slwNd.next
+    while fstNd.next:
+        fstNd = fstNd.next
+        slwNd = slwNd.next
 
     slwNd.next = slwNd.next.next
     preHdLL = preHdLL.next
