@@ -215,4 +215,7 @@ if __name__ == '__main__':
 
         fstNd = slwNd = hdLLIn
 
+        for shft in range(idxNd):
+            fstNd = fstNd.next
+
         print()
