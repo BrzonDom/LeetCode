@@ -125,18 +125,18 @@ def Sol01_LstScan(hdLLIn, idxNd):
         curNd = curNd.next
 
     if len(ndLst) == 1:
-        hdLLOut = None
+        return None
 
     elif idxNd == len(ndLst):
-        hdLLOut = ndLst[1]
+        return ndLst[1]
 
     elif idxNd == 1:
         ndLst[-2].next = None
-        hdLLOut = ndLst[0]
+        return ndLst[0]
 
     else:
         ndLst[-idxNd - 1].next = ndLst[-idxNd + 1]
-        hdLLOut = ndLst[0]
+        return ndLst[0]
 
 
 if __name__ == '__main__':
