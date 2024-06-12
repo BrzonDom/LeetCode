@@ -66,30 +66,30 @@ if __name__ == '__main__':
         print(f"{csCnt + 1}. Case:\n")
 
         lst = case[0]
-        rmvNd = case[1]
+        idxNd = case[1]
 
         print(f"\tList: {lst}")
         print()
-        print(f"\t\tNode index: -{rmvNd}")
-        print(f"\t\tNode value: {lst[-rmvNd]}")
+        print(f"\t\tNode index: -{idxNd}")
+        print(f"\t\tNode value: {lst[-idxNd]}")
         print()
 
         lnkLst = LinkList()
 
-        for num in lst:
-            lnkLst.append(num)
+        for val in lst:
+            lnkLst.append(val)
 
         hdLLIn = lnkLst.head
 
         ndLst = []
-        curNode = lnkLst.head
+        curNd = lnkLst.head
 
         print(f"\t\tLinked list: ", end="")
-        while curNode:
-            print(f"{curNode.val}", end=" ")
+        while curNd:
+            print(f"{curNd.val}", end=" ")
 
-            ndLst.append(curNode)
-            curNode = curNode.next
+            ndLst.append(curNd)
+            curNd = curNd.next
         print()
 
         print("\n")
