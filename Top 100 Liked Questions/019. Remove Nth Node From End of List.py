@@ -79,22 +79,17 @@ if __name__ == '__main__':
         for num in lst:
             lnkLst.append(num)
 
-        print(f"\t\tLinked list: ", end="")
-        curNode = lnkLst.head
-        while curNode:
-            print(f"{curNode.val}", end=" ")
-
-            curNode = curNode.next
-        print("\n")
-
         hdLLIn = lnkLst.head
 
         ndLst = []
         curNode = lnkLst.head
 
+        print(f"\t\tLinked list: ", end="")
         while curNode:
-            ndLst.append(curNode)
+            print(f"{curNode.val}", end=" ")
 
+            ndLst.append(curNode)
             curNode = curNode.next
+        print()
 
         print("\n")
