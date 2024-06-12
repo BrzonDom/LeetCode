@@ -219,8 +219,9 @@ if __name__ == '__main__':
         for shft in range(idxNd):
             fstNd = fstNd.next
 
-        print(f"\t\tFast link list: {fstNd.valLst_nd()}")
-        print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
+        print(f"\t\tFast shift:")
+        print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
+        print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
         print()
 
         if fstNd.next:
@@ -228,8 +229,9 @@ if __name__ == '__main__':
                 fstNd = fstNd.next
                 slwNd = slwNd.next
 
-            print(f"\t\tFast link list: {fstNd.valLst_nd()}")
-            print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
+            print(f"\t\tFast and slow shift:")
+            print(f"\t\t\tFast link list: {fstNd.valLst_nd()}")
+            print(f"\t\t\tSlow link list: {slwNd.valLst_nd()}")
             print()
 
         slwNd.next = slwNd.next.next
