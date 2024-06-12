@@ -168,98 +168,6 @@ def Sol01_LstScan_Prt(hdLLIn, idxNd):
     print("\n")
 
 
-def Sol02A_FstSlwAlg_Prt(inLst):
-    for csCnt, case in enumerate(inLst):
-
-        print(f"{csCnt + 1}. Case:\n")
-
-        lst = case[0]
-        idxNd = case[1]
-
-        lnkLst = LinkList()
-
-        for val in lst:
-            lnkLst.append(val)
-
-        print(f"\tIn Linked list: {lnkLst.valLst_Lnk()}")
-        print()
-        print(f"\t\tNode index: -{idxNd}")
-        print(f"\t\tNode value: {lst[-idxNd]}")
-        print()
-
-        hdLL = lnkLst.head
-        preHdLL = ListNode(0, hdLL)
-
-        fstNd = slwNd = preHdLL
-
-        for shft in range(idxNd):
-            fstNd = fstNd.next
-
-        print(f"\t\tFast shift:")
-        print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
-        print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
-        print()
-
-        if fstNd.next:
-            while fstNd.next:
-                fstNd = fstNd.next
-                slwNd = slwNd.next
-
-            print(f"\t\tFast and slow shift:")
-            print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
-            print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
-            print()
-
-        slwNd.next = slwNd.next.next
-        preHdLL = preHdLL.next
-
-        if preHdLL:
-            print(f"\tOut Link list: {preHdLL.valLst_Nd()}")
-        else:
-            print(f"\tOut Link list: []")
-
-        print("\n")
-
-
-def Sol02_FstSlwAlg_Prt(hdLL, idxNd):
-    print(f"\tIn Linked list: {hdLL.valLst_Nd()}")
-    print()
-    print(f"\t\tNode index: -{idxNd}")
-    print(f"\t\tNode value: {lst[-idxNd]}")
-    print()
-
-    preHdLL = ListNode(0, hdLL)
-    fstNd = slwNd = preHdLL
-
-    for shft in range(idxNd):
-        fstNd = fstNd.next
-
-    print(f"\t\tFast shift:")
-    print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
-    print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
-    print()
-
-    if fstNd.next:
-        while fstNd.next:
-            fstNd = fstNd.next
-            slwNd = slwNd.next
-
-        print(f"\t\tFast and slow shift:")
-        print(f"\t\t\tFast link list: {fstNd.valLst_Nd()}")
-        print(f"\t\t\tSlow link list: {slwNd.valLst_Nd()}")
-        print()
-
-    slwNd.next = slwNd.next.next
-    preHdLL = preHdLL.next
-
-    if preHdLL:
-        print(f"\tOut Link list: {preHdLL.valLst_Nd()}")
-    else:
-        print(f"\tOut Link list: []")
-
-    print("\n")
-
-
 if __name__ == '__main__':
 
     InputLst = [[[1, 2, 3, 4, 5], 2],
@@ -267,7 +175,6 @@ if __name__ == '__main__':
                 [[1, 2], 1]]
 
     # Sol01A_LstScan_Prt(InputLst)
-    # Sol02A_FstSlwAlg_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
@@ -283,4 +190,3 @@ if __name__ == '__main__':
         hdLLIn = lnkLst.head
 
         Sol01_LstScan_Prt(hdLLIn, idxNd)
-        # Sol02_FstSlwAlg_Prt(hdLLIn, idxNd)
