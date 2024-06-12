@@ -215,7 +215,9 @@ if __name__ == '__main__':
 
         fstNd = slwNd = hdLLIn
 
-        for shft in range(idxNd):
+        for shft in range(idxNd-1):
             fstNd = fstNd.next
+
+        print(f"\t\tFast link list: {fstNd.valLst_nd()}")
 
         print()
