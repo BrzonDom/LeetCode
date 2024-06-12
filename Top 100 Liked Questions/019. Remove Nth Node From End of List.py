@@ -231,20 +231,19 @@ if __name__ == '__main__':
                 [[1, 2], 1]]
 
     # Sol01A_LstScan_Prt(InputLst)
+    # Sol02A_FstSlwAlg_Prt(InputLst)
 
-    # for csCnt, case in enumerate(InputLst):
-    #
-    #     print(f"{csCnt + 1}. Case:\n")
-    #
-    #     lst = case[0]
-    #     idxNd = case[1]
-    #
-    #     lnkLst = LinkList()
-    #     for val in lst:
-    #         lnkLst.append(val)
-    #
-    #     hdLLIn = lnkLst.head
-    #
-    #     Sol01_LstScan_Prt(hdLLIn, idxNd)
+    for csCnt, case in enumerate(InputLst):
 
-    Sol02A_FstSlwAlg_Prt(InputLst)
+        print(f"{csCnt + 1}. Case:\n")
+
+        lst = case[0]
+        idxNd = case[1]
+
+        lnkLst = LinkList()
+        for val in lst:
+            lnkLst.append(val)
+
+        hdLLIn = lnkLst.head
+
+        # Sol01_LstScan_Prt(hdLLIn, idxNd)
