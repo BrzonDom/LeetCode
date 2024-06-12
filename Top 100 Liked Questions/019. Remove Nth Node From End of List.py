@@ -226,15 +226,13 @@ def Sol02A_FstSlwAlg_Prt(inLst):
 
 def Sol02_FstSlwAlg_Prt(hdLL, idxNd):
 
-    print(f"\tIn Linked list: {lnkLst.valLst_Lnk()}")
+    print(f"\tIn Linked list: {hdLL.valLst_nd()}")
     print()
     print(f"\t\tNode index: -{idxNd}")
     print(f"\t\tNode value: {lst[-idxNd]}")
     print()
 
-    hdLL = lnkLst.head
     preHdLL = ListNode(0, hdLL)
-
     fstNd = slwNd = preHdLL
 
     for shft in range(idxNd):
@@ -289,3 +287,4 @@ if __name__ == '__main__':
         hdLLIn = lnkLst.head
 
         # Sol01_LstScan_Prt(hdLLIn, idxNd)
+        Sol02_FstSlwAlg_Prt(hdLLIn, idxNd)
