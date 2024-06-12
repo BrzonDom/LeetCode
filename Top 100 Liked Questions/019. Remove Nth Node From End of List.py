@@ -212,12 +212,14 @@ if __name__ == '__main__':
         print()
 
         hdLLIn = lnkLst.head
+        preHdLLIn = ListNode(0, hdLLIn)
 
-        fstNd = slwNd = hdLLIn
+        fstNd = slwNd = preHdLLIn
 
-        for shft in range(idxNd-1):
+        for shft in range(idxNd):
             fstNd = fstNd.next
 
         print(f"\t\tFast link list: {fstNd.valLst_nd()}")
+        print(f"\t\tSlow link list: {slwNd.valLst_nd()}")
 
-        print()
+        print("\n")
