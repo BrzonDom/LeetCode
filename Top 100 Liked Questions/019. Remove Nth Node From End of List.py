@@ -90,6 +90,9 @@ if __name__ == '__main__':
 
             ndLst.append(curNd)
             curNd = curNd.next
-        print()
+        print("\n")
+
+        if len(ndLst) == 1:
+            hdLLOut = None
 
         print("\n")
