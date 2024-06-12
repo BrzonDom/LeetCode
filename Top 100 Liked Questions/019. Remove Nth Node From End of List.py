@@ -235,7 +235,12 @@ if __name__ == '__main__':
             print()
 
         slwNd.next = slwNd.next.next
+        preHdLL = preHdLL.next
 
-        print(f"\tOut Link list: {hdLL.valLst_nd()}")
+        # print(f"\tOut Link list: {hdLL.valLst_nd()}")
+        if preHdLL:
+            print(f"\tOut Link list: {preHdLL.valLst_nd()}")
+        else:
+            print(f"\tOut Link list: []")
 
         print("\n")
