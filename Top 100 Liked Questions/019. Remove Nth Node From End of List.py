@@ -102,4 +102,8 @@ if __name__ == '__main__':
             ndLst[-2].next = None
             hdLLOut = ndLst[0]
 
+        else:
+            ndLst[-idxNd-1].next = ndLst[-idxNd+1]
+            hdLLOut = ndLst[0]
+
         print("\n")
