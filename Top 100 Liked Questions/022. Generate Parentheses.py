@@ -21,3 +21,11 @@ https://leetcode.com/problems/generate-parentheses/description/
         1 <= n <= 8
 
 """
+
+InputLst = [3, 1]
+
+for csCnt, case in InputLst:
+
+    print(f"{csCnt+1}. Case\n")
+
+    print(F"\tNum. of parentheses: {case[0]}")
