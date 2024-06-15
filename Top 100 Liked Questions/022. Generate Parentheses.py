@@ -35,6 +35,9 @@ for csCnt in range(1, 9):
     for p in range(csCnt):
         parentLst += "("
 
+    for p in range(csCnt):
+        parentLst += ")"
+
     print(f"\t\tParentheses: {parentLst}")
 
     print("\n")
