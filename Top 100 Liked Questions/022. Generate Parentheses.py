@@ -29,3 +29,12 @@ for csCnt in range(1, 9):
     print(f"{csCnt}. Case\n")
 
     print(f"\tNum. of parentheses: {csCnt}")
+
+    parentLst = ""
+
+    for p in range(csCnt):
+        parentLst += "("
+
+    print(f"\t\tParentheses: {parentLst}")
+
+    print("\n")
