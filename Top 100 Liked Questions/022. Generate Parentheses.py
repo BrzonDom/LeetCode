@@ -24,8 +24,8 @@ https://leetcode.com/problems/generate-parentheses/description/
 
 InputLst = [3, 1]
 
-for csCnt, case in InputLst:
+for csCnt in range(1, 9):
 
-    print(f"{csCnt+1}. Case\n")
+    print(f"{csCnt}. Case\n")
 
-    print(F"\tNum. of parentheses: {case[0]}")
+    print(f"\tNum. of parentheses: {csCnt}")
