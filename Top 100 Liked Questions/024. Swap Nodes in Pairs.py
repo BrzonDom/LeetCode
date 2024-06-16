@@ -8,8 +8,8 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
 
     Example 1:
 
-        Input: head = [1,2,3,4]
-        Output: [2,1,4,3]
+        Input: head = [1, 2, 3, 4]
+        Output: [2, 1, 4, 3]
 
     Example 2:
 
@@ -29,7 +29,7 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
 
 """
 
-InputLst = [[1,2,3,4],
+InputLst = [[1, 2, 3, 4],
             [],
             [1]]
 
