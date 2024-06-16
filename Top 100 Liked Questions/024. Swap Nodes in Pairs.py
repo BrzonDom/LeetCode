@@ -28,3 +28,15 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
         0 <= Node.val <= 100
 
 """
+
+InputLst = [[1,2,3,4],
+            [],
+            [1]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt}. Case\n")
+
+    print(f"\t\tLinked list: {case}")
+
+    print("\n")
