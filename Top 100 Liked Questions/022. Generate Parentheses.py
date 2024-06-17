@@ -33,10 +33,7 @@ for csCnt in range(1, 9):
     parentLst = ""
 
     for p in range(csCnt):
-        parentLst += "("
-
-    for p in range(csCnt):
-        parentLst += ")"
+        parentLst += "()"
 
     print(f"\t\tParentheses: {parentLst}")
 
