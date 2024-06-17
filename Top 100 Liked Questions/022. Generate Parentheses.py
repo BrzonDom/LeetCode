@@ -22,6 +22,12 @@ https://leetcode.com/problems/generate-parentheses/description/
 
 """
 
+
+def backtrack(prthStr, prnthLst, lftPrth, rgtPrth, csCnt):
+
+    return
+
+
 InputLst = [3, 1]
 
 for csCnt in range(1, 9):
