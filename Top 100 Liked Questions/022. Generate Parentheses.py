@@ -23,6 +23,11 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
+def checkValPrth(prthStr):
+
+    return
+
+
 def backtrack(prthStr, prnthLst, lftPrth, rgtPrth, csCnt):
 
     return
