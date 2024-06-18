@@ -31,16 +31,10 @@ def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
         return prnthComb
 
     if lftPrth < csCnt:
-        prthCs += '('
-        lftPrth += 1
-
-        backtrack(prthCs, lftPrth, rgtPrth, csCnt)
+        backtrack(prthCs + '(', lftPrth + 1, rgtPrth, csCnt)
 
     if rgtPrth < lftPrth:
-        prthCs += ')'
-        rgtPrth += 1
-
-        backtrack(prthCs, lftPrth, rgtPrth, csCnt)
+        backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
 
 
 InputLst = [3, 1]
