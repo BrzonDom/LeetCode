@@ -28,7 +28,13 @@ def backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt):
     if len(prthCs) == 2 * csCnt:
         prnthLst.append(prthCs)
 
-        return
+        return prnthLst
+
+    if lftPrth < csCnt:
+        backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt)
+
+    if rgtPrth < lftPrth:
+        backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt)
 
 
 InputLst = [3, 1]
