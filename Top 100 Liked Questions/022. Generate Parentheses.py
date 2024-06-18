@@ -56,15 +56,14 @@ for csCnt in range(1, 9):
     prnthComb = []
     backtrack("", 0, 0, csCnt)
 
-    print("\t\tValid combinations:")
+    print(f"\tNum. of valid combinations: {len(prnthComb)}")
+    print("\tValid combinations:")
 
-    print("\t\t\t", end="")
+    print("\t\t", end="")
     for c, comb in enumerate(prnthComb):
-        if (c + 1) % 5 == 0:
-            print(comb)
-            print(f"\t\t\t", end="")
+        print(comb, end=", ")
 
-        else:
-            print(comb, end=", ")
+        if (c + 1) % 5 == 0:
+            print(f"\n\t\t", end="")
 
     print("\n")
