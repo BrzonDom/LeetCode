@@ -31,9 +31,15 @@ def backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt):
         return prnthLst
 
     if lftPrth < csCnt:
+        prthCs += '('
+        lftPrth += 1
+
         backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt)
 
     if rgtPrth < lftPrth:
+        prthCs += ')'
+        rgtPrth += 1
+
         backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt)
 
 
