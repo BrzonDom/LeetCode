@@ -86,6 +86,8 @@ def Sol01_BackTrackGlob(csNum):
     prnthComb = []
     backtrack("", 0, 0, csNum)
 
+    return prnthComb
+
 
 if __name__ == '__main__':
 
