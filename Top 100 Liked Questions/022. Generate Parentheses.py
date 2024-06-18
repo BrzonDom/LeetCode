@@ -37,6 +37,38 @@ def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
         backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
 
 
+def Sol01A_BackTrackGlob_Prt():
+
+    for csCnt in range(1, 9):
+
+        print(f"{csCnt}. Case\n")
+
+        print(f"\tNum. of parentheses: {csCnt}")
+
+        parentExamp = ""
+
+        for p in range(csCnt):
+            parentExamp += "()"
+
+        print(f"\t\tParentheses: {parentExamp}")
+        print()
+
+        prnthComb = []
+        backtrack("", 0, 0, csCnt)
+
+        print(f"\tNum. of valid combinations: {len(prnthComb)}")
+        print("\tValid combinations:")
+
+        print("\t\t", end="")
+        for c, comb in enumerate(prnthComb):
+            print(comb, end=", ")
+
+            if (c + 1) % 5 == 0:
+                print(f"\n\t\t", end="")
+
+        print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [3, 1]
