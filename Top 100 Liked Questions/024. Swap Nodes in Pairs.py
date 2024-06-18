@@ -66,4 +66,9 @@ if __name__ == '__main__':
 
         print(f"\t\tLinked list: {case}")
 
+        lnkLst = LinkList()
+
+        for num in case:
+            lnkLst.append(num)
+
         print("\n")
