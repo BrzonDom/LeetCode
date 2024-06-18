@@ -23,7 +23,7 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
-def Sol01_BackTrackGlob_Prt():
+def Sol01_BackTrackGlob_Prt(csCnt):
 
     def backtrack(prthCs, lftPrth, rgtPrth, prthNum):
 
@@ -38,34 +38,33 @@ def Sol01_BackTrackGlob_Prt():
         if rgtPrth < lftPrth:
             backtrack(prthCs + ')', lftPrth, rgtPrth + 1, prthNum)
 
-    for csCnt in range(1, 9):
 
-        print(f"{csCnt}. Case\n")
+    print(f"{csCnt}. Case\n")
 
-        print(f"\tNum. of parentheses: {csCnt}")
+    print(f"\tNum. of parentheses: {csCnt}")
 
-        parentExamp = ""
+    parentExamp = ""
 
-        for p in range(csCnt):
-            parentExamp += "()"
+    for p in range(csCnt):
+        parentExamp += "()"
 
-        print(f"\t\tParentheses: {parentExamp}")
-        print()
+    print(f"\t\tParentheses: {parentExamp}")
+    print()
 
-        prnthComb = []
-        backtrack("", 0, 0, csCnt)
+    prnthComb = []
+    backtrack("", 0, 0, csCnt)
 
-        print(f"\tNum. of valid combinations: {len(prnthComb)}")
-        print("\tValid combinations:")
+    print(f"\tNum. of valid combinations: {len(prnthComb)}")
+    print("\tValid combinations:")
 
-        print("\t\t", end="")
-        for c, comb in enumerate(prnthComb):
-            print(comb, end=", ")
+    print("\t\t", end="")
+    for c, comb in enumerate(prnthComb):
+        print(comb, end=", ")
 
-            if (c + 1) % 5 == 0:
-                print(f"\n\t\t", end="")
+        if (c + 1) % 5 == 0:
+            print(f"\n\t\t", end="")
 
-        print("\n")
+    print("\n")
 
 
 def Sol01A_BackTrackGlob_Prt():
