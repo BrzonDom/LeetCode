@@ -37,33 +37,35 @@ def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
         backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
 
 
-InputLst = [3, 1]
+if __name__ == '__main__':
 
-for csCnt in range(1, 9):
+    InputLst = [3, 1]
 
-    print(f"{csCnt}. Case\n")
+    for csCnt in range(1, 9):
 
-    print(f"\tNum. of parentheses: {csCnt}")
+        print(f"{csCnt}. Case\n")
 
-    parentExamp = ""
+        print(f"\tNum. of parentheses: {csCnt}")
 
-    for p in range(csCnt):
-        parentExamp += "()"
+        parentExamp = ""
 
-    print(f"\t\tParentheses: {parentExamp}")
-    print()
+        for p in range(csCnt):
+            parentExamp += "()"
 
-    prnthComb = []
-    backtrack("", 0, 0, csCnt)
+        print(f"\t\tParentheses: {parentExamp}")
+        print()
 
-    print(f"\tNum. of valid combinations: {len(prnthComb)}")
-    print("\tValid combinations:")
+        prnthComb = []
+        backtrack("", 0, 0, csCnt)
 
-    print("\t\t", end="")
-    for c, comb in enumerate(prnthComb):
-        print(comb, end=", ")
+        print(f"\tNum. of valid combinations: {len(prnthComb)}")
+        print("\tValid combinations:")
 
-        if (c + 1) % 5 == 0:
-            print(f"\n\t\t", end="")
+        print("\t\t", end="")
+        for c, comb in enumerate(prnthComb):
+            print(comb, end=", ")
 
-    print("\n")
+            if (c + 1) % 5 == 0:
+                print(f"\n\t\t", end="")
+
+        print("\n")
