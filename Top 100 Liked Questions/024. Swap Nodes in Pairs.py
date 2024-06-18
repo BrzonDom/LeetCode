@@ -54,14 +54,16 @@ class LinkList:
             curNd.next = newNd
 
 
-InputLst = [[1, 2, 3, 4],
-            [],
-            [1]]
+if __name__ == '__main__':
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[1, 2, 3, 4],
+                [],
+                [1]]
 
-    print(f"{csCnt}. Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t\tLinked list: {case}")
+        print(f"{csCnt}. Case\n")
 
-    print("\n")
+        print(f"\t\tLinked list: {case}")
+
+        print("\n")
