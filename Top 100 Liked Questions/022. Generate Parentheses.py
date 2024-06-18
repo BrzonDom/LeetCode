@@ -113,6 +113,7 @@ def Sol01A_BackTrackGlob_Prt():
 
 
 if __name__ == '__main__':
+
     InputLst = [3, 1]
 
     # Sol01A_BackTrackGlob_Prt()
