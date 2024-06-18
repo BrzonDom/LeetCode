@@ -23,14 +23,12 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
-def checkValPrth(prthStr):
+def backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt):
 
-    return
+    if len(prthCs) == 2 * csCnt:
+        prnthLst.append(prthCs)
 
-
-def backtrack(prthStr, prnthLst, lftPrth, rgtPrth, csCnt):
-
-    return
+        return
 
 
 InputLst = [3, 1]
