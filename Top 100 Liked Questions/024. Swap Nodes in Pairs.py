@@ -111,17 +111,17 @@ if __name__ == '__main__':
         # curRgtNd.next = curLftNd
         # curLftNd.next = nxtRgtNd
 
-
-        prvLftNd = hdLLOrg.next
-        curLftNd = hdLLOrg.next.next
-        nxtLftNd = hdLLOrg.next.next.next
-
-        prvRgtNd = hdLLOrg.next.next
-        curRgtNd = hdLLOrg.next.next.next
-
-        prvLftNd.next = curRgtNd
-        curRgtNd.next = curLftNd
-        curLftNd.next = None
+        #       Swap 3 and 4
+        # prvLftNd = hdLLOrg.next
+        # curLftNd = hdLLOrg.next.next
+        # nxtLftNd = hdLLOrg.next.next.next
+        #
+        # prvRgtNd = hdLLOrg.next.next
+        # curRgtNd = hdLLOrg.next.next.next
+        #
+        # prvLftNd.next = curRgtNd
+        # curRgtNd.next = curLftNd
+        # curLftNd.next = None
 
         valLst = []
         curNd = lnkLst.head
