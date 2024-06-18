@@ -64,11 +64,20 @@ if __name__ == '__main__':
 
         print(f"{csCnt}. Case\n")
 
-        print(f"\t\tLinked list: {case}")
+        print(f"\t\tList: {case}")
 
         lnkLst = LinkList()
 
         for num in case:
             lnkLst.append(num)
+
+        valLst = []
+        curNd = lnkLst.head
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.next
+
+        print(f"\t\tLinked list: {valLst}")
 
         print("\n")
