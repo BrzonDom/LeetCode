@@ -29,6 +29,13 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
 
 """
 
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 InputLst = [[1, 2, 3, 4],
             [],
             [1]]
