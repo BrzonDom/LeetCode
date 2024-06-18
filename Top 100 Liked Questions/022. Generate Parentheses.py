@@ -57,5 +57,11 @@ for csCnt in range(1, 9):
         parentLst += "()"
 
     print(f"\t\tParentheses: {parentLst}")
+    print()
+
+    prnthLst = backtrack("", [], 0, 0, csCnt)
+
+    print("\t\tValid combinations:")
+    print(f"\t\t{prnthLst}")
 
     print("\n")
