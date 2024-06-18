@@ -23,24 +23,24 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
-def backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt):
+def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
 
     if len(prthCs) == 2 * csCnt:
-        prnthLst.append(prthCs)
+        prnthComb.append(prthCs)
 
-        return prnthLst
+        return prnthComb
 
     if lftPrth < csCnt:
         prthCs += '('
         lftPrth += 1
 
-        backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt)
+        backtrack(prthCs, lftPrth, rgtPrth, csCnt)
 
     if rgtPrth < lftPrth:
         prthCs += ')'
         rgtPrth += 1
 
-        backtrack(prthCs, prnthLst, lftPrth, rgtPrth, csCnt)
+        backtrack(prthCs, lftPrth, rgtPrth, csCnt)
 
 
 InputLst = [3, 1]
@@ -51,17 +51,18 @@ for csCnt in range(1, 9):
 
     print(f"\tNum. of parentheses: {csCnt}")
 
-    parentLst = ""
+    parentExamp = ""
 
     for p in range(csCnt):
-        parentLst += "()"
+        parentExamp += "()"
 
-    print(f"\t\tParentheses: {parentLst}")
+    print(f"\t\tParentheses: {parentExamp}")
     print()
 
-    prnthLst = backtrack("", [], 0, 0, csCnt)
+    prnthComb = []
+    backtrack("", 0, 0, csCnt)
 
     print("\t\tValid combinations:")
-    print(f"\t\t{prnthLst}")
+    print(f"\t\t\t{prnthComb}")
 
     print("\n")
