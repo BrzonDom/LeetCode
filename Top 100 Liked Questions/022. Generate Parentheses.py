@@ -25,18 +25,18 @@ https://leetcode.com/problems/generate-parentheses/description/
 
 def Sol01_BackTrackGlob_Prt():
 
-    def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
+    def backtrack(prthCs, lftPrth, rgtPrth, prthNum):
 
-        if len(prthCs) == 2 * csCnt:
+        if len(prthCs) == 2 * prthNum:
             prnthComb.append(prthCs)
 
             return prnthComb
 
-        if lftPrth < csCnt:
-            backtrack(prthCs + '(', lftPrth + 1, rgtPrth, csCnt)
+        if lftPrth < prthNum:
+            backtrack(prthCs + '(', lftPrth + 1, rgtPrth, prthNum)
 
         if rgtPrth < lftPrth:
-            backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
+            backtrack(prthCs + ')', lftPrth, rgtPrth + 1, prthNum)
 
     for csCnt in range(1, 9):
 
@@ -70,18 +70,18 @@ def Sol01_BackTrackGlob_Prt():
 
 def Sol01A_BackTrackGlob_Prt():
 
-    def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
+    def backtrack(prthCs, lftPrth, rgtPrth, prthNum):
 
-        if len(prthCs) == 2 * csCnt:
+        if len(prthCs) == 2 * prthNum:
             prnthComb.append(prthCs)
 
             return prnthComb
 
-        if lftPrth < csCnt:
-            backtrack(prthCs + '(', lftPrth + 1, rgtPrth, csCnt)
+        if lftPrth < prthNum:
+            backtrack(prthCs + '(', lftPrth + 1, rgtPrth, prthNum)
 
         if rgtPrth < lftPrth:
-            backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
+            backtrack(prthCs + ')', lftPrth, rgtPrth + 1, prthNum)
 
     for csCnt in range(1, 9):
 
