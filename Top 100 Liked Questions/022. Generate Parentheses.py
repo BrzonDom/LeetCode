@@ -23,7 +23,7 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
-def Sol01_BackTrackGlob_Prt(csCnt):
+def Sol01_BackTrackGlob_Prt(csNum):
 
     def backtrack(prthCs, lftPrth, rgtPrth, prthNum):
 
@@ -39,20 +39,20 @@ def Sol01_BackTrackGlob_Prt(csCnt):
             backtrack(prthCs + ')', lftPrth, rgtPrth + 1, prthNum)
 
 
-    print(f"{csCnt}. Case\n")
+    print(f"{csNum}. Case\n")
 
-    print(f"\tNum. of parentheses: {csCnt}")
+    print(f"\tNum. of parentheses: {csNum}")
 
     parentExamp = ""
 
-    for p in range(csCnt):
+    for p in range(csNum):
         parentExamp += "()"
 
     print(f"\t\tParentheses: {parentExamp}")
     print()
 
     prnthComb = []
-    backtrack("", 0, 0, csCnt)
+    backtrack("", 0, 0, csNum)
 
     print(f"\tNum. of valid combinations: {len(prnthComb)}")
     print("\tValid combinations:")
