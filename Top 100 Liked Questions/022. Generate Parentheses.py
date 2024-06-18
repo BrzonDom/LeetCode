@@ -23,8 +23,7 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
-def Sol01A_BackTrackGlob_Prt():
-
+def Sol01_BackTrackGlob_Prt():
 
     def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
 
@@ -39,6 +38,50 @@ def Sol01A_BackTrackGlob_Prt():
         if rgtPrth < lftPrth:
             backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
 
+    for csCnt in range(1, 9):
+
+        print(f"{csCnt}. Case\n")
+
+        print(f"\tNum. of parentheses: {csCnt}")
+
+        parentExamp = ""
+
+        for p in range(csCnt):
+            parentExamp += "()"
+
+        print(f"\t\tParentheses: {parentExamp}")
+        print()
+
+        prnthComb = []
+        backtrack("", 0, 0, csCnt)
+
+        print(f"\tNum. of valid combinations: {len(prnthComb)}")
+        print("\tValid combinations:")
+
+        print("\t\t", end="")
+        for c, comb in enumerate(prnthComb):
+            print(comb, end=", ")
+
+            if (c + 1) % 5 == 0:
+                print(f"\n\t\t", end="")
+
+        print("\n")
+
+
+def Sol01A_BackTrackGlob_Prt():
+
+    def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
+
+        if len(prthCs) == 2 * csCnt:
+            prnthComb.append(prthCs)
+
+            return prnthComb
+
+        if lftPrth < csCnt:
+            backtrack(prthCs + '(', lftPrth + 1, rgtPrth, csCnt)
+
+        if rgtPrth < lftPrth:
+            backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
 
     for csCnt in range(1, 9):
 
