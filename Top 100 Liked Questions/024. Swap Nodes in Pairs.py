@@ -60,6 +60,8 @@ if __name__ == '__main__':
                 [],
                 [1]]
 
+    InputLst = [[1, 2, 3, 4]]
+
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt+1}. Case\n")
@@ -79,6 +81,30 @@ if __name__ == '__main__':
             valLst.append(curNd.val)
             curNd = curNd.next
 
-        print(f"\tIn Linked list: {valLst}")
+        print(f"\tOrg Linked list: {valLst}")
+
+        hdLLOrg = lnkLst.head
+
+        prvLftNd = hdLLOrg
+        curLftNd = hdLLOrg.next
+        nxtLftNd = hdLLOrg.next.next
+
+        prvRgtNd = hdLLOrg.next
+        curRgtNd = hdLLOrg.next.next
+        nxtRgtNd = hdLLOrg.next.next.next
+
+        hdLLOrg.next = curRgtNd
+        curRgtNd.next = curLftNd
+        curLftNd.next = nxtRgtNd
+
+        valLst = []
+        curNd = lnkLst.head
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.next
+
+        print(f"\tOut Linked list: {valLst}")
+        print()
 
         print("\n")
