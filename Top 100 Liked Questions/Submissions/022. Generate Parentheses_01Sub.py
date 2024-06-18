@@ -83,32 +83,8 @@ def Sol01_BackTrackGlob(csNum):
             backtrack(prthCs + ')', lftPrth, rgtPrth + 1, prthNum)
 
 
-    # print(f"{csNum}. Case\n")
-    #
-    # print(f"\tNum. of parentheses: {csNum}")
-    #
-    # parentExamp = ""
-    #
-    # for p in range(csNum):
-    #     parentExamp += "()"
-    #
-    # print(f"\t\tParentheses: {parentExamp}")
-    # print()
-
     prnthComb = []
     backtrack("", 0, 0, csNum)
-
-    # print(f"\tNum. of valid combinations: {len(prnthComb)}")
-    # print("\tValid combinations:")
-    #
-    # print("\t\t", end="")
-    # for c, comb in enumerate(prnthComb):
-    #     print(comb, end=", ")
-    #
-    #     if (c + 1) % 5 == 0:
-    #         print(f"\n\t\t", end="")
-    #
-    # print("\n")
 
 
 if __name__ == '__main__':
