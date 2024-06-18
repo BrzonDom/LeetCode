@@ -85,17 +85,30 @@ if __name__ == '__main__':
 
         hdLLOrg = lnkLst.head
 
-        prvLftNd = hdLLOrg
-        curLftNd = hdLLOrg.next
-        nxtLftNd = hdLLOrg.next.next
+        curLftNd = hdLLOrg
+        nxtLftNd = hdLLOrg.next
 
-        prvRgtNd = hdLLOrg.next
-        curRgtNd = hdLLOrg.next.next
-        nxtRgtNd = hdLLOrg.next.next.next
+        prvRgtNd = hdLLOrg
+        curRgtNd = hdLLOrg.next
+        nxtRgtNd = hdLLOrg.next.next
 
-        hdLLOrg.next = curRgtNd
+        lnkLst.head = curRgtNd
         curRgtNd.next = curLftNd
         curLftNd.next = nxtRgtNd
+
+
+        #       Swap 2 and 3
+        # prvLftNd = hdLLOrg
+        # curLftNd = hdLLOrg.next
+        # nxtLftNd = hdLLOrg.next.next
+        #
+        # prvRgtNd = hdLLOrg.next
+        # curRgtNd = hdLLOrg.next.next
+        # nxtRgtNd = hdLLOrg.next.next.next
+        #
+        # hdLLOrg.next = curRgtNd
+        # curRgtNd.next = curLftNd
+        # curLftNd.next = nxtRgtNd
 
         valLst = []
         curNd = lnkLst.head
