@@ -23,20 +23,6 @@ https://leetcode.com/problems/generate-parentheses/description/
 """
 
 
-def backtrack(prthCs, lftPrth, rgtPrth, csCnt):
-
-    if len(prthCs) == 2 * csCnt:
-        prnthComb.append(prthCs)
-
-        return prnthComb
-
-    if lftPrth < csCnt:
-        backtrack(prthCs + '(', lftPrth + 1, rgtPrth, csCnt)
-
-    if rgtPrth < lftPrth:
-        backtrack(prthCs + ')', lftPrth, rgtPrth + 1, csCnt)
-
-
 def Sol01A_BackTrackGlob_Prt():
 
 
