@@ -62,9 +62,10 @@ if __name__ == '__main__':
 
     for csCnt, case in enumerate(InputLst):
 
-        print(f"{csCnt}. Case\n")
+        print(f"{csCnt+1}. Case\n")
 
-        print(f"\t\tList: {case}")
+        print(f"\tList: {case}")
+        print()
 
         lnkLst = LinkList()
 
@@ -78,6 +79,6 @@ if __name__ == '__main__':
             valLst.append(curNd.val)
             curNd = curNd.next
 
-        print(f"\t\tLinked list: {valLst}")
+        print(f"\tIn Linked list: {valLst}")
 
         print("\n")
