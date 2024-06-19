@@ -92,7 +92,9 @@ if __name__ == '__main__':
         # curNd = HdNd.nxt
         # nxtNd = HdNd.nxt.nxt
 
-        swtIdx = (1, 5)
+        swtIdx = [1, 5]
+        swtIdx.sort()
+
         idxLft = 0
         idxRgt = 0
 
@@ -126,6 +128,9 @@ if __name__ == '__main__':
         else:
             print(f"\t\t\t{swtIdx[1]}.Node: None")
         print()
+
+        if swtIdx[0] == swtIdx[1]:
+            continue
 
         """
               Left Node  =  Head
