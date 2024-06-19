@@ -100,6 +100,8 @@ if __name__ == '__main__':
         curLftNd = HdNd
 
         while curLftNd is not None and idxLft != swtIdx[0]:
+            idxLft += 1
+
             prvLftNd = curLftNd
             curLftNd = curLftNd.nxt
 
@@ -107,6 +109,8 @@ if __name__ == '__main__':
         curRgtNd = HdNd
 
         while curRgtNd is not None and idxRgt != swtIdx[1]:
+            idxRgt += 1
+
             prvRgtNd = curRgtNd
             curRgtNd = curRgtNd.nxt
 
