@@ -54,11 +54,10 @@ class LinkList:
             curNd.nxt = newNd
 
 
-def Hlp01_Swp_PrvCurNxt_Prt(swpVal, lnkLst):
+def Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst):
 
     HdNd = lnkLst.head
-    preHdNd = ListNode()
-    preHdNd.nxt = HdNd
+    preHdNd = ListNode(0, HdNd)
 
     valLft = swpVal
     valRgt = swpVal + 1
@@ -156,7 +155,7 @@ if __name__ == '__main__':
 
         swpVal = 2
 
-        lnkLst = Hlp01_Swp_PrvCurNxt_Prt(swpVal, lnkLst)
+        lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
 
         valLst = []
         curNd = lnkLst.head
