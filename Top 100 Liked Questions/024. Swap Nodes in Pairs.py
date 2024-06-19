@@ -140,6 +140,11 @@ if __name__ == '__main__':
             lnkLst.head = curRgtNd
             curRgtNd.nxt = curLftNd
 
+        elif curRgtNd.nxt is None:
+            prvLftNd.nxt = curRgtNd
+            curRgtNd.nxt = curLftNd
+            curLftNd.nxt = None
+
         """
               Left Node  =  Head
               Right Node != Tail
