@@ -54,9 +54,74 @@ class LinkList:
             curNd.nxt = newNd
 
 
-def Hlp01_PrvCurNxt_Prt():
+def Hlp01_PrvCurNxt_Prt(val1, val2, lnkLst):
 
-    return
+    HdNd = lnkLst.head
+    preHdNd = ListNode()
+    preHdNd.nxt = HdNd
+
+    valLft = min(val1, val2)
+    valRgt = max(val1, val2)
+
+    idxLft = valLft - 1
+    idxRgt = valRgt - 1
+
+    cntLft = 0
+    cntRgt = 0
+
+    print(f"\t\tSwitch: {idxLft}.Node and {idxRgt}.Node")
+
+    prvLftNd = preHdNd
+    curLftNd = HdNd
+
+    while curLftNd is not None and cntLft != idxLft:
+        cntLft += 1
+
+        prvLftNd = curLftNd
+        curLftNd = curLftNd.nxt
+
+    prvRgtNd = preHdNd
+    curRgtNd = HdNd
+
+    while curRgtNd is not None and cntRgt != idxRgt:
+        cntRgt += 1
+
+        prvRgtNd = curRgtNd
+        curRgtNd = curRgtNd.nxt
+
+    if curLftNd:
+        print(f"\t\t\t{idxLft}.Node: {curLftNd.val}")
+    else:
+        print(f"\t\t\t{idxLft}.Node: None")
+
+    if curRgtNd:
+        print(f"\t\t\t{idxRgt}.Node: {curRgtNd.val}")
+    else:
+        print(f"\t\t\t{idxRgt}.Node: None")
+    print()
+
+    if valLft == valRgt:
+        return lnkLst
+
+    elif curLftNd is None or curRgtNd is None:
+        return lnkLst
+
+    elif curLftNd == HdNd:
+        curLftNd.nxt = curRgtNd.nxt
+        lnkLst.head = curRgtNd
+        curRgtNd.nxt = curLftNd
+
+    elif curRgtNd.nxt is None:
+        prvLftNd.nxt = curRgtNd
+        curRgtNd.nxt = curLftNd
+        curLftNd.nxt = None
+
+    else:
+        prvLftNd.nxt = curRgtNd
+        curLftNd.nxt = curRgtNd.nxt
+        curRgtNd.nxt = curLftNd
+
+    return lnkLst
 
 
 if __name__ == '__main__':
