@@ -175,6 +175,19 @@ if __name__ == '__main__':
         HdNd = lnkLst.head
         prHdNd = ListNode(0, HdNd)
 
+        curNd = prHdNd
+
+        lftNd = curNd.nxt
+        rgtNd = curNd.nxt.nxt
+
+        lftNd.nxt = rgtNd.nxt
+
+        curNd.nxt = rgtNd
+        curNd.nxt.nxt = lftNd
+
+        curNd = curNd.nxt.nxt
+
+
         # swpVal = 2
         # lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
 
