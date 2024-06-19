@@ -60,7 +60,7 @@ if __name__ == '__main__':
                 [],
                 [1]]
 
-    InputLst = [[1, 2, 3, 4]]
+    # InputLst = [[1, 2, 3, 4]]
 
     for csCnt, case in enumerate(InputLst):
 
@@ -83,6 +83,15 @@ if __name__ == '__main__':
 
         print(f"\tOrg Linked list: {valLst}")
         print()
+
+        hdLLOrg = lnkLst.head
+
+        preHdNd = ListNode()
+        preHdNd.next = hdLLOrg
+
+        prvNd = hdLLOrg
+        curNd = hdLLOrg.next
+        nxtNd = hdLLOrg.next.next
 
 
         #       Swap 1 and 2
@@ -131,14 +140,14 @@ if __name__ == '__main__':
         # curLftNd.next = None
 
 
-        valLst = []
-        curNd = lnkLst.head
-
-        while curNd:
-            valLst.append(curNd.val)
-            curNd = curNd.next
-
-        print(f"\tOut Linked list: {valLst}")
-        print()
+        # valLst = []
+        # curNd = lnkLst.head
+        #
+        # while curNd:
+        #     valLst.append(curNd.val)
+        #     curNd = curNd.next
+        #
+        # print(f"\tOut Linked list: {valLst}")
+        # print()
 
         print("\n")
