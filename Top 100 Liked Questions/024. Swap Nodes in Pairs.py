@@ -92,7 +92,7 @@ if __name__ == '__main__':
         # curNd = HdNd.nxt
         # nxtNd = HdNd.nxt.nxt
 
-        swtIdx = (1, 2)
+        swtIdx = (1, 5)
         idxLft = 0
         idxRgt = 0
 
@@ -116,8 +116,15 @@ if __name__ == '__main__':
             prvRgtNd = curRgtNd
             curRgtNd = curRgtNd.nxt
 
-        print(f"\t\t\t{swtIdx[0]}.Node: {curLftNd.val}")
-        print(f"\t\t\t{swtIdx[1]}.Node: {curRgtNd.val}")
+        if curLftNd:
+            print(f"\t\t\t{swtIdx[0]}.Node: {curLftNd.val}")
+        else:
+            print(f"\t\t\t{swtIdx[0]}.Node: None")
+
+        if curRgtNd:
+            print(f"\t\t\t{swtIdx[1]}.Node: {curRgtNd.val}")
+        else:
+            print(f"\t\t\t{swtIdx[1]}.Node: None")
         print()
 
         """
