@@ -84,14 +84,31 @@ if __name__ == '__main__':
         print(f"\tOrg Linked list: {valLst}")
         print()
 
-        # HdNd = lnkLst.head
-        #
-        # preHdNd = ListNode()
-        # preHdNd.nxt = HdNd
-        #
+        HdNd = lnkLst.head
+        preHdNd = ListNode()
+        preHdNd.nxt = HdNd
+
         # prvNd = HdNd
         # curNd = HdNd.nxt
         # nxtNd = HdNd.nxt.nxt
+
+        swtIdx = (1, 2)
+        idxLft = 0
+        idxRgt = 0
+
+        prvLftNd = preHdNd
+        curLftNd = HdNd
+
+        while curLftNd is not None and idxLft != swtIdx[0]:
+            prvLftNd = curLftNd
+            curLftNd = curLftNd.nxt
+
+        prvRgtNd = preHdNd
+        curRgtNd = HdNd
+
+        while curRgtNd is not None and idxRgt != swtIdx[1]:
+            prvRgtNd = curRgtNd
+            curRgtNd = curRgtNd.nxt
 
         """
               Left Node  =  Head
