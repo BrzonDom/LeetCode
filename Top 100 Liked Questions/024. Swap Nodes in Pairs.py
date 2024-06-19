@@ -95,36 +95,33 @@ if __name__ == '__main__':
 
         #       Left Node  =  Head
         #       Right Node != Tail
+        # HdNd = lnkLst.head
+        # preHdNd = ListNode()
+        # preHdNd.nxt = HdNd
+        #
+        # prvLftNd = preHdNd
+        # curLftNd = HdNd
+        # prvRgtNd = HdNd
+        # curRgtNd = HdNd.nxt
+        #
+        # curLftNd.nxt = curRgtNd.nxt
+        # lnkLst.head = curRgtNd
+        # curRgtNd.nxt = curLftNd
+
+        #       Left Node  != Head
+        #       Right Node != Tail
         HdNd = lnkLst.head
         preHdNd = ListNode()
         preHdNd.nxt = HdNd
 
-        prvLftNd = preHdNd
-        curLftNd = HdNd
-        prvRgtNd = HdNd
-        curRgtNd = HdNd.nxt
+        prvLftNd = HdNd
+        curLftNd = HdNd.nxt
+        prvRgtNd = HdNd.nxt
+        curRgtNd = HdNd.nxt.nxt
 
+        prvLftNd.nxt = curRgtNd
         curLftNd.nxt = curRgtNd.nxt
-        lnkLst.head = curRgtNd
         curRgtNd.nxt = curLftNd
-
-        #       Swap 2 and 3
-        # HdNd = lnkLst.head
-        #
-        # preHdNd = ListNode()
-        # preHdNd.nxt = HdNd
-        #
-        # prvLftNd = HdNd
-        # curLftNd = HdNd.nxt
-        # nxtLftNd = HdNd.nxt.nxt
-        #
-        # prvRgtNd = HdNd.nxt
-        # curRgtNd = HdNd.nxt.nxt
-        # nxtRgtNd = HdNd.nxt.nxt.nxt
-        #
-        # HdNd.nxt = curRgtNd
-        # curRgtNd.nxt = curLftNd
-        # curLftNd.nxt = nxtRgtNd
 
 
         #       Swap 3 and 4
