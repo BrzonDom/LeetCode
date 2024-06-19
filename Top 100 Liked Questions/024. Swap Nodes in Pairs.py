@@ -82,20 +82,31 @@ if __name__ == '__main__':
             curNd = curNd.next
 
         print(f"\tOrg Linked list: {valLst}")
+        print()
 
         hdLLOrg = lnkLst.head
 
         #       Swap 1 and 2
-        # curLftNd = hdLLOrg
-        # nxtLftNd = hdLLOrg.next
+        curLftNd = hdLLOrg
+        nxtLftNd = hdLLOrg.next
+
+        prvRgtNd = hdLLOrg
+        curRgtNd = hdLLOrg.next
+        nxtRgtNd = hdLLOrg.next.next
+
+        lnkLst.head = curRgtNd
+        curRgtNd.next = curLftNd
+        curLftNd.next = nxtRgtNd
+
+        # valLst = []
+        # curNd = lnkLst.head
         #
-        # prvRgtNd = hdLLOrg
-        # curRgtNd = hdLLOrg.next
-        # nxtRgtNd = hdLLOrg.next.next
+        # while curNd:
+        #     valLst.append(curNd.val)
+        #     curNd = curNd.next
         #
-        # lnkLst.head = curRgtNd
-        # curRgtNd.next = curLftNd
-        # curLftNd.next = nxtRgtNd
+        # print(f"\tOut Linked list: {valLst}")
+        # print()
 
 
         #       Swap 2 and 3
@@ -111,17 +122,19 @@ if __name__ == '__main__':
         # curRgtNd.next = curLftNd
         # curLftNd.next = nxtRgtNd
 
+        hdLLOrg = lnkLst.head
+
         #       Swap 3 and 4
-        # prvLftNd = hdLLOrg.next
-        # curLftNd = hdLLOrg.next.next
-        # nxtLftNd = hdLLOrg.next.next.next
-        #
-        # prvRgtNd = hdLLOrg.next.next
-        # curRgtNd = hdLLOrg.next.next.next
-        #
-        # prvLftNd.next = curRgtNd
-        # curRgtNd.next = curLftNd
-        # curLftNd.next = None
+        prvLftNd = hdLLOrg.next
+        curLftNd = hdLLOrg.next.next
+        nxtLftNd = hdLLOrg.next.next.next
+
+        prvRgtNd = hdLLOrg.next.next
+        curRgtNd = hdLLOrg.next.next.next
+
+        prvLftNd.next = curRgtNd
+        curRgtNd.next = curLftNd
+        curLftNd.next = None
 
         valLst = []
         curNd = lnkLst.head
