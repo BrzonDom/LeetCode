@@ -132,6 +132,9 @@ if __name__ == '__main__':
         if swtIdx[0] == swtIdx[1]:
             continue
 
+        elif curLftNd is None or curRgtNd is None:
+            continue
+
         """
               Left Node  =  Head
               Right Node != Tail
