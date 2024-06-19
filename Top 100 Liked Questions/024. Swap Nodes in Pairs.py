@@ -92,7 +92,7 @@ if __name__ == '__main__':
         # curNd = HdNd.nxt
         # nxtNd = HdNd.nxt.nxt
 
-        swtIdx = [1, 5]
+        swtIdx = [0, 1]
         swtIdx.sort()
 
         idxLft = 0
@@ -134,6 +134,11 @@ if __name__ == '__main__':
 
         elif curLftNd is None or curRgtNd is None:
             continue
+
+        elif curLftNd == HdNd:
+            curLftNd.nxt = curRgtNd.nxt
+            lnkLst.head = curRgtNd
+            curRgtNd.nxt = curLftNd
 
         """
               Left Node  =  Head
