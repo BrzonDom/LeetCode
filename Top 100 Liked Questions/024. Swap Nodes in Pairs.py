@@ -54,14 +54,14 @@ class LinkList:
             curNd.nxt = newNd
 
 
-def Hlp01_PrvCurNxt_Prt(val1, val2, lnkLst):
+def Hlp01_Swp_PrvCurNxt_Prt(swpVal, lnkLst):
 
     HdNd = lnkLst.head
     preHdNd = ListNode()
     preHdNd.nxt = HdNd
 
-    valLft = min(val1, val2)
-    valRgt = max(val1, val2)
+    valLft = swpVal
+    valRgt = swpVal + 1
 
     idxLft = valLft - 1
     idxRgt = valRgt - 1
@@ -154,10 +154,9 @@ if __name__ == '__main__':
         print(f"\tOrg Linked list: {valLst}")
         print()
 
-        val1 = 1
-        val2 = 2
+        swpVal = 2
 
-        Hlp01_PrvCurNxt_Prt(val1, val2, lnkLst)
+        lnkLst = Hlp01_Swp_PrvCurNxt_Prt(swpVal, lnkLst)
 
         valLst = []
         curNd = lnkLst.head
