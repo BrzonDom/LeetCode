@@ -158,11 +158,6 @@ if __name__ == '__main__':
             lnkLst.append(num)
 
         valLst = lnkLst.valLst_Lnk()
-        # curNd = lnkLst.head
-        #
-        # while curNd:
-        #     valLst.append(curNd.val)
-        #     curNd = curNd.nxt
 
         print(f"\tOrg Linked list: {valLst}")
         print()
@@ -172,11 +167,6 @@ if __name__ == '__main__':
         lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
 
         valLst = lnkLst.valLst_Lnk()
-        # curNd = lnkLst.head
-        #
-        # while curNd:
-        #     valLst.append(curNd.val)
-        #     curNd = curNd.nxt
 
         print(f"\tOut Linked list: {valLst}")
 
