@@ -60,7 +60,7 @@ if __name__ == '__main__':
     #             [],
     #             [1]]
 
-    InputLst = [[1, 2, 3, 4]]
+    InputLst = [[1, 2, 3, 4, 5]]
 
     for csCnt, case in enumerate(InputLst):
 
@@ -92,19 +92,25 @@ if __name__ == '__main__':
         # curNd = HdNd.nxt
         # nxtNd = HdNd.nxt.nxt
 
-        swtIdx = [1, 2]
-        swtIdx.sort()
+        val1 = 1
+        val2 = 2
 
-        idxLft = 0
-        idxRgt = 0
+        valLft = min(val1, val2)
+        valRgt = max(val1, val2)
 
-        print(f"\t\tSwitch: {swtIdx[0]}.Node and {swtIdx[1]}.Node")
+        idxLft = valLft-1
+        idxRgt = valRgt-1
+
+        cntLft = 0
+        cntRgt = 0
+
+        print(f"\t\tSwitch: {idxLft}.Node and {idxRgt}.Node")
 
         prvLftNd = preHdNd
         curLftNd = HdNd
 
-        while curLftNd is not None and idxLft != swtIdx[0]:
-            idxLft += 1
+        while curLftNd is not None and cntLft != idxLft:
+            cntLft += 1
 
             prvLftNd = curLftNd
             curLftNd = curLftNd.nxt
@@ -112,24 +118,24 @@ if __name__ == '__main__':
         prvRgtNd = preHdNd
         curRgtNd = HdNd
 
-        while curRgtNd is not None and idxRgt != swtIdx[1]:
-            idxRgt += 1
+        while curRgtNd is not None and cntRgt != idxRgt:
+            cntRgt += 1
 
             prvRgtNd = curRgtNd
             curRgtNd = curRgtNd.nxt
 
         if curLftNd:
-            print(f"\t\t\t{swtIdx[0]}.Node: {curLftNd.val}")
+            print(f"\t\t\t{idxLft}.Node: {curLftNd.val}")
         else:
-            print(f"\t\t\t{swtIdx[0]}.Node: None")
+            print(f"\t\t\t{idxLft}.Node: None")
 
         if curRgtNd:
-            print(f"\t\t\t{swtIdx[1]}.Node: {curRgtNd.val}")
+            print(f"\t\t\t{idxRgt}.Node: {curRgtNd.val}")
         else:
-            print(f"\t\t\t{swtIdx[1]}.Node: None")
+            print(f"\t\t\t{idxRgt}.Node: None")
         print()
 
-        if swtIdx[0] == swtIdx[1]:
+        if valLft == valRgt:
             continue
 
         elif curLftNd is None or curRgtNd is None:
