@@ -31,9 +31,9 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
 
 
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, nxt=None):
         self.val = val
-        self.nxt = next
+        self.nxt = nxt
 
 
 class LinkList:
