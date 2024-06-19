@@ -172,9 +172,11 @@ if __name__ == '__main__':
         print(f"\tOrg Linked list: {valLst}")
         print()
 
-        swpVal = 2
+        HdNd = lnkLst.head
+        prHdNd = ListNode(0, HdNd)
 
-        lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
+        # swpVal = 2
+        # lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
 
         valLst = lnkLst.valLst_Lnk()
 
