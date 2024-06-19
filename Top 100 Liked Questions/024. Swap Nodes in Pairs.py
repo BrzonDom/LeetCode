@@ -93,8 +93,10 @@ if __name__ == '__main__':
         # curNd = HdNd.nxt
         # nxtNd = HdNd.nxt.nxt
 
-        #       Left Node  =  Head
-        #       Right Node != Tail
+        """
+              Left Node  =  Head
+              Right Node != Tail
+        """
         # HdNd = lnkLst.head
         # preHdNd = ListNode()
         # preHdNd.nxt = HdNd
@@ -108,8 +110,10 @@ if __name__ == '__main__':
         # lnkLst.head = curRgtNd
         # curRgtNd.nxt = curLftNd
 
-        #       Left Node  != Head
-        #       Right Node != Tail
+        """
+              Left Node  != Head
+              Right Node != Tail
+        """
         # HdNd = lnkLst.head
         # preHdNd = ListNode()
         # preHdNd.nxt = HdNd
@@ -123,20 +127,22 @@ if __name__ == '__main__':
         # curLftNd.nxt = curRgtNd.nxt
         # curRgtNd.nxt = curLftNd
 
-        #       Left Node  != Head
-        #       Right Node  = Tail
-        HdNd = lnkLst.head
-        preHdNd = ListNode()
-        preHdNd.nxt = HdNd
-
-        prvLftNd = HdNd.nxt
-        curLftNd = HdNd.nxt.nxt
-        prvRgtNd = HdNd.nxt.nxt
-        curRgtNd = HdNd.nxt.nxt.nxt
-
-        prvLftNd.nxt = curRgtNd
-        curRgtNd.nxt = curLftNd
-        curLftNd.nxt = None
+        """
+              Left Node  != Head
+              Right Node  = Tail
+        """
+        # HdNd = lnkLst.head
+        # preHdNd = ListNode()
+        # preHdNd.nxt = HdNd
+        #
+        # prvLftNd = HdNd.nxt
+        # curLftNd = HdNd.nxt.nxt
+        # prvRgtNd = HdNd.nxt.nxt
+        # curRgtNd = HdNd.nxt.nxt.nxt
+        #
+        # prvLftNd.nxt = curRgtNd
+        # curRgtNd.nxt = curLftNd
+        # curLftNd.nxt = None
 
 
         valLst = []
