@@ -187,6 +187,7 @@ if __name__ == '__main__':
 
         curNd = curNd.nxt.nxt
 
+        lnkLst.head = prHdNd.nxt
 
         # swpVal = 2
         # lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
