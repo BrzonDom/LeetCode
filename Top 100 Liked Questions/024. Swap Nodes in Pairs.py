@@ -177,15 +177,17 @@ if __name__ == '__main__':
 
         curNd = prHdNd
 
-        lftNd = curNd.nxt
-        rgtNd = curNd.nxt.nxt
+        while curNd.nxt and curNd.nxt.nxt:
 
-        lftNd.nxt = rgtNd.nxt
+            lftNd = curNd.nxt
+            rgtNd = curNd.nxt.nxt
 
-        curNd.nxt = rgtNd
-        curNd.nxt.nxt = lftNd
+            lftNd.nxt = rgtNd.nxt
 
-        curNd = curNd.nxt.nxt
+            curNd.nxt = rgtNd
+            curNd.nxt.nxt = lftNd
+
+            curNd = curNd.nxt.nxt
 
         lnkLst.head = prHdNd.nxt
 
