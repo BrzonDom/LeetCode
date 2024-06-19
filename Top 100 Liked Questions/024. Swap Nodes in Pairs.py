@@ -84,32 +84,25 @@ if __name__ == '__main__':
         print(f"\tOrg Linked list: {valLst}")
         print()
 
-        hdLLOrg = lnkLst.head
 
         #       Swap 1 and 2
-        curLftNd = hdLLOrg
-        nxtLftNd = hdLLOrg.next
+        # hdLLOrg = lnkLst.head
 
-        prvRgtNd = hdLLOrg
-        curRgtNd = hdLLOrg.next
-        nxtRgtNd = hdLLOrg.next.next
-
-        lnkLst.head = curRgtNd
-        curRgtNd.next = curLftNd
-        curLftNd.next = nxtRgtNd
-
-        # valLst = []
-        # curNd = lnkLst.head
+        # curLftNd = hdLLOrg
+        # nxtLftNd = hdLLOrg.next
         #
-        # while curNd:
-        #     valLst.append(curNd.val)
-        #     curNd = curNd.next
+        # prvRgtNd = hdLLOrg
+        # curRgtNd = hdLLOrg.next
+        # nxtRgtNd = hdLLOrg.next.next
         #
-        # print(f"\tOut Linked list: {valLst}")
-        # print()
+        # lnkLst.head = curRgtNd
+        # curRgtNd.next = curLftNd
+        # curLftNd.next = nxtRgtNd
 
 
         #       Swap 2 and 3
+        # hdLLOrg = lnkLst.head
+
         # prvLftNd = hdLLOrg
         # curLftNd = hdLLOrg.next
         # nxtLftNd = hdLLOrg.next.next
@@ -122,19 +115,21 @@ if __name__ == '__main__':
         # curRgtNd.next = curLftNd
         # curLftNd.next = nxtRgtNd
 
-        hdLLOrg = lnkLst.head
 
         #       Swap 3 and 4
-        prvLftNd = hdLLOrg.next
-        curLftNd = hdLLOrg.next.next
-        nxtLftNd = hdLLOrg.next.next.next
+        # hdLLOrg = lnkLst.head
 
-        prvRgtNd = hdLLOrg.next.next
-        curRgtNd = hdLLOrg.next.next.next
+        # prvLftNd = hdLLOrg.next
+        # curLftNd = hdLLOrg.next.next
+        # nxtLftNd = hdLLOrg.next.next.next
+        #
+        # prvRgtNd = hdLLOrg.next.next
+        # curRgtNd = hdLLOrg.next.next.next
+        #
+        # prvLftNd.next = curRgtNd
+        # curRgtNd.next = curLftNd
+        # curLftNd.next = None
 
-        prvLftNd.next = curRgtNd
-        curRgtNd.next = curLftNd
-        curLftNd.next = None
 
         valLst = []
         curNd = lnkLst.head
