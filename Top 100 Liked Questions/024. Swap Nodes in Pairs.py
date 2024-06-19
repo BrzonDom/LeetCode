@@ -53,6 +53,11 @@ class LinkList:
                 curNd = curNd.nxt
             curNd.nxt = newNd
 
+    def valLst_Lnk(self, strNd=None):
+
+        if strNd is None:
+            strNd = self.head
+
 
 def Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst):
 
