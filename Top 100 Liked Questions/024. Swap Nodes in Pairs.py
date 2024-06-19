@@ -58,6 +58,14 @@ class LinkList:
         if strNd is None:
             strNd = self.head
 
+        lnkLst = []
+
+        while strNd:
+            lnkLst.append(strNd.val)
+            strNd = strNd.next
+
+        return lnkLst
+
 
 def Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst):
 
