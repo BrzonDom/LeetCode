@@ -33,7 +33,7 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
-        self.next = next
+        self.nxt = next
 
 
 class LinkList:
@@ -49,9 +49,9 @@ class LinkList:
         else:
             curNd = self.head
 
-            while curNd.next:
-                curNd = curNd.next
-            curNd.next = newNd
+            while curNd.nxt:
+                curNd = curNd.nxt
+            curNd.nxt = newNd
 
 
 if __name__ == '__main__':
@@ -79,7 +79,7 @@ if __name__ == '__main__':
 
         while curNd:
             valLst.append(curNd.val)
-            curNd = curNd.next
+            curNd = curNd.nxt
 
         print(f"\tOrg Linked list: {valLst}")
         print()
@@ -87,57 +87,57 @@ if __name__ == '__main__':
         hdLLOrg = lnkLst.head
 
         preHdNd = ListNode()
-        preHdNd.next = hdLLOrg
+        preHdNd.nxt = hdLLOrg
 
         prvNd = hdLLOrg
-        curNd = hdLLOrg.next
-        nxtNd = hdLLOrg.next.next
+        curNd = hdLLOrg.nxt
+        nxtNd = hdLLOrg.nxt.nxt
 
 
         #       Swap 1 and 2
         # hdLLOrg = lnkLst.head
 
         # curLftNd = hdLLOrg
-        # nxtLftNd = hdLLOrg.next
+        # nxtLftNd = hdLLOrg.nxt
         #
         # prvRgtNd = hdLLOrg
-        # curRgtNd = hdLLOrg.next
-        # nxtRgtNd = hdLLOrg.next.next
+        # curRgtNd = hdLLOrg.nxt
+        # nxtRgtNd = hdLLOrg.nxt.nxt
         #
         # lnkLst.head = curRgtNd
-        # curRgtNd.next = curLftNd
-        # curLftNd.next = nxtRgtNd
+        # curRgtNd.nxt = curLftNd
+        # curLftNd.nxt = nxtRgtNd
 
 
         #       Swap 2 and 3
         # hdLLOrg = lnkLst.head
 
         # prvLftNd = hdLLOrg
-        # curLftNd = hdLLOrg.next
-        # nxtLftNd = hdLLOrg.next.next
+        # curLftNd = hdLLOrg.nxt
+        # nxtLftNd = hdLLOrg.nxt.nxt
         #
-        # prvRgtNd = hdLLOrg.next
-        # curRgtNd = hdLLOrg.next.next
-        # nxtRgtNd = hdLLOrg.next.next.next
+        # prvRgtNd = hdLLOrg.nxt
+        # curRgtNd = hdLLOrg.nxt.nxt
+        # nxtRgtNd = hdLLOrg.nxt.nxt.nxt
         #
-        # hdLLOrg.next = curRgtNd
-        # curRgtNd.next = curLftNd
-        # curLftNd.next = nxtRgtNd
+        # hdLLOrg.nxt = curRgtNd
+        # curRgtNd.nxt = curLftNd
+        # curLftNd.nxt = nxtRgtNd
 
 
         #       Swap 3 and 4
         # hdLLOrg = lnkLst.head
 
-        # prvLftNd = hdLLOrg.next
-        # curLftNd = hdLLOrg.next.next
-        # nxtLftNd = hdLLOrg.next.next.next
+        # prvLftNd = hdLLOrg.nxt
+        # curLftNd = hdLLOrg.nxt.nxt
+        # nxtLftNd = hdLLOrg.nxt.nxt.nxt
         #
-        # prvRgtNd = hdLLOrg.next.next
-        # curRgtNd = hdLLOrg.next.next.next
+        # prvRgtNd = hdLLOrg.nxt.nxt
+        # curRgtNd = hdLLOrg.nxt.nxt.nxt
         #
-        # prvLftNd.next = curRgtNd
-        # curRgtNd.next = curLftNd
-        # curLftNd.next = None
+        # prvLftNd.nxt = curRgtNd
+        # curRgtNd.nxt = curLftNd
+        # curLftNd.nxt = None
 
 
         # valLst = []
@@ -145,7 +145,7 @@ if __name__ == '__main__':
         #
         # while curNd:
         #     valLst.append(curNd.val)
-        #     curNd = curNd.next
+        #     curNd = curNd.nxt
         #
         # print(f"\tOut Linked list: {valLst}")
         # print()
