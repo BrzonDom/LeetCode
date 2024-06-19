@@ -56,11 +56,11 @@ class LinkList:
 
 if __name__ == '__main__':
 
-    InputLst = [[1, 2, 3, 4],
-                [],
-                [1]]
+    # InputLst = [[1, 2, 3, 4],
+    #             [],
+    #             [1]]
 
-    # InputLst = [[1, 2, 3, 4]]
+    InputLst = [[1, 2, 3, 4]]
 
     for csCnt, case in enumerate(InputLst):
 
@@ -84,25 +84,25 @@ if __name__ == '__main__':
         print(f"\tOrg Linked list: {valLst}")
         print()
 
-        hdLLOrg = lnkLst.head
-
-        preHdNd = ListNode()
-        preHdNd.nxt = hdLLOrg
-
-        prvNd = hdLLOrg
-        curNd = hdLLOrg.nxt
-        nxtNd = hdLLOrg.nxt.nxt
+        # HdNd = lnkLst.head
+        #
+        # preHdNd = ListNode()
+        # preHdNd.nxt = HdNd
+        #
+        # prvNd = HdNd
+        # curNd = HdNd.nxt
+        # nxtNd = HdNd.nxt.nxt
 
 
         #       Swap 1 and 2
-        # hdLLOrg = lnkLst.head
-
-        # curLftNd = hdLLOrg
-        # nxtLftNd = hdLLOrg.nxt
+        # HdNd = lnkLst.head
         #
-        # prvRgtNd = hdLLOrg
-        # curRgtNd = hdLLOrg.nxt
-        # nxtRgtNd = hdLLOrg.nxt.nxt
+        # curLftNd = HdNd
+        # nxtLftNd = HdNd.nxt
+        #
+        # prvRgtNd = HdNd
+        # curRgtNd = HdNd.nxt
+        # nxtRgtNd = HdNd.nxt.nxt
         #
         # lnkLst.head = curRgtNd
         # curRgtNd.nxt = curLftNd
@@ -110,30 +110,30 @@ if __name__ == '__main__':
 
 
         #       Swap 2 and 3
-        # hdLLOrg = lnkLst.head
+        # HdNd = lnkLst.head
 
-        # prvLftNd = hdLLOrg
-        # curLftNd = hdLLOrg.nxt
-        # nxtLftNd = hdLLOrg.nxt.nxt
+        # prvLftNd = HdNd
+        # curLftNd = HdNd.nxt
+        # nxtLftNd = HdNd.nxt.nxt
         #
-        # prvRgtNd = hdLLOrg.nxt
-        # curRgtNd = hdLLOrg.nxt.nxt
-        # nxtRgtNd = hdLLOrg.nxt.nxt.nxt
+        # prvRgtNd = HdNd.nxt
+        # curRgtNd = HdNd.nxt.nxt
+        # nxtRgtNd = HdNd.nxt.nxt.nxt
         #
-        # hdLLOrg.nxt = curRgtNd
+        # HdNd.nxt = curRgtNd
         # curRgtNd.nxt = curLftNd
         # curLftNd.nxt = nxtRgtNd
 
 
         #       Swap 3 and 4
-        # hdLLOrg = lnkLst.head
+        # HdNd = lnkLst.head
 
-        # prvLftNd = hdLLOrg.nxt
-        # curLftNd = hdLLOrg.nxt.nxt
-        # nxtLftNd = hdLLOrg.nxt.nxt.nxt
+        # prvLftNd = HdNd.nxt
+        # curLftNd = HdNd.nxt.nxt
+        # nxtLftNd = HdNd.nxt.nxt.nxt
         #
-        # prvRgtNd = hdLLOrg.nxt.nxt
-        # curRgtNd = hdLLOrg.nxt.nxt.nxt
+        # prvRgtNd = HdNd.nxt.nxt
+        # curRgtNd = HdNd.nxt.nxt.nxt
         #
         # prvLftNd.nxt = curRgtNd
         # curRgtNd.nxt = curLftNd
