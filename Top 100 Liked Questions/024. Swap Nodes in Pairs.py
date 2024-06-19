@@ -132,31 +132,30 @@ if __name__ == '__main__':
 
 
         #       Swap 3 and 4
-        HdNd = lnkLst.head
-
-        preHdNd = ListNode()
-        preHdNd.nxt = HdNd
-
-        prvLftNd = HdNd.nxt
-        curLftNd = HdNd.nxt.nxt
-        nxtLftNd = HdNd.nxt.nxt.nxt
-
-        prvRgtNd = HdNd.nxt.nxt
-        curRgtNd = HdNd.nxt.nxt.nxt
-
-        prvLftNd.nxt = curRgtNd
-        curRgtNd.nxt = curLftNd
-        curLftNd.nxt = None
-
-
-        # valLst = []
-        # curNd = lnkLst.head
+        # HdNd = lnkLst.head
         #
-        # while curNd:
-        #     valLst.append(curNd.val)
-        #     curNd = curNd.nxt
+        # preHdNd = ListNode()
+        # preHdNd.nxt = HdNd
         #
-        # print(f"\tOut Linked list: {valLst}")
-        # print()
+        # prvLftNd = HdNd.nxt
+        # curLftNd = HdNd.nxt.nxt
+        # nxtLftNd = HdNd.nxt.nxt.nxt
+        #
+        # prvRgtNd = HdNd.nxt.nxt
+        # curRgtNd = HdNd.nxt.nxt.nxt
+        #
+        # prvLftNd.nxt = curRgtNd
+        # curRgtNd.nxt = curLftNd
+        # curLftNd.nxt = None
+
+
+        valLst = []
+        curNd = lnkLst.head
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.nxt
+
+        print(f"\tOut Linked list: {valLst}")
 
         print("\n")
