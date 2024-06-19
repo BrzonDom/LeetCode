@@ -157,12 +157,12 @@ if __name__ == '__main__':
         for num in case:
             lnkLst.append(num)
 
-        valLst = []
-        curNd = lnkLst.head
-
-        while curNd:
-            valLst.append(curNd.val)
-            curNd = curNd.nxt
+        valLst = lnkLst.valLst_Lnk()
+        # curNd = lnkLst.head
+        #
+        # while curNd:
+        #     valLst.append(curNd.val)
+        #     curNd = curNd.nxt
 
         print(f"\tOrg Linked list: {valLst}")
         print()
@@ -171,12 +171,12 @@ if __name__ == '__main__':
 
         lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
 
-        valLst = []
-        curNd = lnkLst.head
-
-        while curNd:
-            valLst.append(curNd.val)
-            curNd = curNd.nxt
+        valLst = lnkLst.valLst_Lnk()
+        # curNd = lnkLst.head
+        #
+        # while curNd:
+        #     valLst.append(curNd.val)
+        #     curNd = curNd.nxt
 
         print(f"\tOut Linked list: {valLst}")
 
