@@ -59,13 +59,13 @@ class LinkList:
             strNd = self.head
 
         curNd = strNd
-        lnkLst = []
+        valLst = []
 
         while curNd:
-            lnkLst.append(curNd.val)
-            curNd = curNd.next
+            valLst.append(curNd.val)
+            curNd = curNd.nxt
 
-        return lnkLst
+        return valLst
 
 
 def Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst):
