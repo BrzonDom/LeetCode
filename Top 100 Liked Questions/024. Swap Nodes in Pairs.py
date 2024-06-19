@@ -96,6 +96,8 @@ if __name__ == '__main__':
         idxLft = 0
         idxRgt = 0
 
+        print(f"\t\tSwitch: {swtIdx[0]}.Node and {swtIdx[1]}.Node")
+
         prvLftNd = preHdNd
         curLftNd = HdNd
 
@@ -113,6 +115,10 @@ if __name__ == '__main__':
 
             prvRgtNd = curRgtNd
             curRgtNd = curRgtNd.nxt
+
+        print(f"\t\t\t{swtIdx[0]}.Node: {curLftNd.val}")
+        print(f"\t\t\t{swtIdx[1]}.Node: {curRgtNd.val}")
+        print()
 
         """
               Left Node  =  Head
