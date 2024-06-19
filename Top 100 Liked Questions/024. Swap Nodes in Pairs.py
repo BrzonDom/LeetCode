@@ -149,18 +149,18 @@ def Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst):
 
 if __name__ == '__main__':
 
-    # InputLst = [[1, 2, 3, 4],
-    #             [],
-    #             [1]]
+    InputLst = [[1, 2, 3, 4],
+                [],
+                [1]]
 
-    InputLst = [[1, 2, 3, 4, 5]]
+    # InputLst = [[1, 2, 3, 4, 5]]
 
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt+1}. Case\n")
 
-        print(f"\tList: {case}")
-        print()
+        # print(f"\tList: {case}")
+        # print()
 
         lnkLst = LinkList()
 
