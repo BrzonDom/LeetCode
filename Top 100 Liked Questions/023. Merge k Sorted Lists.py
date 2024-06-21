@@ -41,3 +41,15 @@ https://leetcode.com/problems/merge-k-sorted-lists/
         The sum of lists[i].length will not exceed 104.
 
 """
+
+InputLst = [[[[1,4,5],[1,3,4],[2,6]]],
+            [[]],
+            [[[]]]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}. Case:\n")
+
+    print(f"\tInput: {case}")
+
+    print("\n")
