@@ -189,46 +189,42 @@ def Sol01A_SwpWhlLftRgt_Prt(InLst):
         print("\n")
 
 
-def Sol01_SwpWhlLftRgt_Prt(InLst):
+def Sol01_SwpWhlLftRgt_Prt(case):
 
-    for csCnt, case in enumerate(InputLst):
+    lnkLst = LinkList()
 
-        print(f"{csCnt+1}. Case\n")
+    for num in case:
+        lnkLst.append(num)
 
-        lnkLst = LinkList()
+    valLst = lnkLst.valLst_Lnk()
 
-        for num in case:
-            lnkLst.append(num)
+    print(f"\tOrg Linked list: {valLst}")
+    print()
 
-        valLst = lnkLst.valLst_Lnk()
+    HdNd = lnkLst.head
+    prHdNd = ListNode(0, HdNd)
 
-        print(f"\tOrg Linked list: {valLst}")
-        print()
+    curNd = prHdNd
 
-        HdNd = lnkLst.head
-        prHdNd = ListNode(0, HdNd)
+    while curNd.nxt and curNd.nxt.nxt:
 
-        curNd = prHdNd
+        lftNd = curNd.nxt
+        rgtNd = curNd.nxt.nxt
 
-        while curNd.nxt and curNd.nxt.nxt:
+        lftNd.nxt = rgtNd.nxt
 
-            lftNd = curNd.nxt
-            rgtNd = curNd.nxt.nxt
+        curNd.nxt = rgtNd
+        curNd.nxt.nxt = lftNd
 
-            lftNd.nxt = rgtNd.nxt
+        curNd = curNd.nxt.nxt
 
-            curNd.nxt = rgtNd
-            curNd.nxt.nxt = lftNd
+    lnkLst.head = prHdNd.nxt
 
-            curNd = curNd.nxt.nxt
+    valLst = lnkLst.valLst_Lnk()
 
-        lnkLst.head = prHdNd.nxt
+    print(f"\tOut Linked list: {valLst}")
 
-        valLst = lnkLst.valLst_Lnk()
-
-        print(f"\tOut Linked list: {valLst}")
-
-        print("\n")
+    print("\n")
 
 
 if __name__ == '__main__':
@@ -240,4 +236,6 @@ if __name__ == '__main__':
     # InputLst = [[1, 2, 3, 4, 5]]
 
     Sol01A_SwpWhlLftRgt_Prt(InputLst)
+
+
 
