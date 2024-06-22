@@ -177,8 +177,9 @@ if __name__ == '__main__':
             else:
                 numSet.add(num)
 
-        print(f"\t\tList Set:  {numSet}")
-        print(f"\t\tDup. List: {dupLst}")
+        print(f"\t\tRemv. List: {inLst}")
+        print(f"\t\tList Set:   {numSet}")
+        print(f"\t\tDup. List:  {dupLst}")
 
         print("\n")
 
