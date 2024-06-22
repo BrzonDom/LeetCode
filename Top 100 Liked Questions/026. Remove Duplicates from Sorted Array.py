@@ -154,5 +154,12 @@ if __name__ == '__main__':
     InputLst = [[1, 1, 2],
                 [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]]
 
-    Sol01A_ItrSet_Prt(InputLst)
+    # Sol01A_ItrSet_Prt(InputLst)
 
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        inLst = case
+
+        Sol01_ItrSet_Prt(inLst)
