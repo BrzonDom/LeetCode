@@ -149,7 +149,7 @@ def Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst):
 
 def Sol01A_SwpWhlLftRgt_Prt(InLst):
 
-    for csCnt, case in enumerate(InputLst):
+    for csCnt, case in enumerate(InLst):
 
         print(f"{csCnt+1}. Case\n")
 
