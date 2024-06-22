@@ -166,7 +166,7 @@ if __name__ == '__main__':
         print()
 
         numSet = set()
-        unqLst = []
+        setLst = []
         dupLst = []
 
         for num in inLst:
@@ -176,16 +176,16 @@ if __name__ == '__main__':
                 dupLst.append('_')
             else:
                 numSet.add(num)
-                unqLst.append(num)
+                setLst.append(num)
 
-        print(f"\t\tUniq. List: {unqLst}")
+        print(f"\t\tUniq. List: {setLst}")
         print(f"\t\tList Set:   {numSet}")
         print(f"\t\tDup. List:  {dupLst}")
         print()
 
-        outLst = unqLst + dupLst
+        outLst = setLst + dupLst
 
-        print(f"\tOut List: {unqLst}")
+        print(f"\tOut List: {setLst}")
 
         print("\n")
 
