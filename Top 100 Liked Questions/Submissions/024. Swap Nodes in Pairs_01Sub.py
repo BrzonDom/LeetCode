@@ -116,14 +116,8 @@ def Sol01_SwpWhlLftRgt_Prt(case):
     print("\n")
 
 
-def Sol01_SwpWhlLftRgt(case):
+def Sol01_SwpWhlLftRgt(HdNd):
 
-    lnkLst = LinkList()
-
-    for num in case:
-        lnkLst.append(num)
-
-    HdNd = lnkLst.head
     prHdNd = ListNode(0, HdNd)
 
     curNd = prHdNd
@@ -155,5 +149,12 @@ if __name__ == '__main__':
 
         # print(f"{csCnt+1}. Case\n")
 
-        Sol01_SwpWhlLftRgt(case)
+        lnkLst = LinkList()
+
+        for num in case:
+            lnkLst.append(num)
+
+        csHdLL = lnkLst.head
+
+        Sol01_SwpWhlLftRgt(csHdLL)
 
