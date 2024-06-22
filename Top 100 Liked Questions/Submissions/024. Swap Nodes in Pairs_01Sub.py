@@ -31,9 +31,9 @@ https://leetcode.com/problems/swap-nodes-in-pairs/description/
 
 
 class ListNode:
-    def __init__(self, val=0, nxt=None):
+    def __init__(self, val=0, next=None):
         self.val = val
-        self.nxt = nxt
+        self.next = next
 
     def valLst_Nd(self):
         curNd = self
@@ -41,7 +41,7 @@ class ListNode:
 
         while curNd:
             valLst.append(curNd.val)
-            curNd = curNd.nxt
+            curNd = curNd.next
 
         return valLst
 
@@ -59,9 +59,9 @@ class LinkList:
         else:
             curNd = self.head
 
-            while curNd.nxt:
-                curNd = curNd.nxt
-            curNd.nxt = newNd
+            while curNd.next:
+                curNd = curNd.next
+            curNd.next = newNd
 
     def valLst_Lnk(self, strNd=None):
 
@@ -73,7 +73,7 @@ class LinkList:
 
         while curNd:
             valLst.append(curNd.val)
-            curNd = curNd.nxt
+            curNd = curNd.next
 
         return valLst
 
@@ -95,19 +95,19 @@ def Sol01_SwpWhlLftRgt_Prt(case):
 
     curNd = prHdNd
 
-    while curNd.nxt and curNd.nxt.nxt:
+    while curNd.next and curNd.next.next:
 
-        lftNd = curNd.nxt
-        rgtNd = curNd.nxt.nxt
+        lftNd = curNd.next
+        rgtNd = curNd.next.next
 
-        lftNd.nxt = rgtNd.nxt
+        lftNd.next = rgtNd.next
 
-        curNd.nxt = rgtNd
-        curNd.nxt.nxt = lftNd
+        curNd.next = rgtNd
+        curNd.next.next = lftNd
 
-        curNd = curNd.nxt.nxt
+        curNd = curNd.next.next
 
-    lnkLst.head = prHdNd.nxt
+    lnkLst.head = prHdNd.next
 
     valLst = lnkLst.valLst_Lnk()
 
@@ -122,19 +122,19 @@ def Sol01_SwpWhlLftRgt(HdNd):
 
     curNd = prHdNd
 
-    while curNd.nxt and curNd.nxt.nxt:
+    while curNd.next and curNd.next.next:
 
-        lftNd = curNd.nxt
-        rgtNd = curNd.nxt.nxt
+        lftNd = curNd.next
+        rgtNd = curNd.next.next
 
-        lftNd.nxt = rgtNd.nxt
+        lftNd.next = rgtNd.next
 
-        curNd.nxt = rgtNd
-        curNd.nxt.nxt = lftNd
+        curNd.next = rgtNd
+        curNd.next.next = lftNd
 
-        curNd = curNd.nxt.nxt
+        curNd = curNd.next.next
 
-    lnkLst.head = prHdNd.nxt
+    lnkLst.head = prHdNd.next
 
     return lnkLst.head
 
