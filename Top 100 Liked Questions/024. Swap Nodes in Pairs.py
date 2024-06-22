@@ -235,7 +235,11 @@ if __name__ == '__main__':
 
     # InputLst = [[1, 2, 3, 4, 5]]
 
-    Sol01A_SwpWhlLftRgt_Prt(InputLst)
+    # Sol01A_SwpWhlLftRgt_Prt(InputLst)
 
+    for csCnt, case in enumerate(InputLst):
 
+        print(f"{csCnt+1}. Case\n")
+
+        Sol01_SwpWhlLftRgt_Prt(case)
 
