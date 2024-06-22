@@ -183,9 +183,15 @@ if __name__ == '__main__':
         print(f"\t\tDup. List:  {dupLst}")
         print()
 
-        outLst = setLst + dupLst
+        outLst = list(map(str, setLst)) + dupLst
 
-        print(f"\tOut List: {setLst}")
+        print(f"\tOut List: ", end="[")
+        for i, itm in enumerate(outLst):
+            if (i + 1) >= len(outLst):
+
+                print(f"{itm}]")
+            else:
+                print(f"{itm}, ", end="")
 
         print("\n")
 
