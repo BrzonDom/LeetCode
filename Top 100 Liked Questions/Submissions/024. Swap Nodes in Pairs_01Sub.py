@@ -134,9 +134,9 @@ def Sol01_SwpWhlLftRgt(HdNd):
 
         curNd = curNd.next.next
 
-    lnkLst.head = prHdNd.next
+    HdNd = prHdNd.next
 
-    return lnkLst.head
+    return HdNd
 
 
 if __name__ == '__main__':
