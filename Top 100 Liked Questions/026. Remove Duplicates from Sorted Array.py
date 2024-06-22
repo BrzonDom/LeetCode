@@ -61,4 +61,15 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tInput List: {case}")
 
+    numSet = set()
+
+    for num in case:
+
+        if num in numSet:
+            continue
+        else:
+            numSet.add(num)
+
+    print(f"\tList Set: {numSet}")
+
     print("\n")
