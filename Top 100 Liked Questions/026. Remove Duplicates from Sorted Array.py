@@ -163,6 +163,7 @@ if __name__ == '__main__':
         inLst = case
 
         print(f"\tInput List: {inLst}")
+        print()
 
         numSet = set()
         dupLst = []
@@ -172,6 +173,7 @@ if __name__ == '__main__':
             if num in numSet:
 
                 dupLst.append('_')
+                inLst.remove(num)
             else:
                 numSet.add(num)
 
