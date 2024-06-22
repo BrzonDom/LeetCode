@@ -164,6 +164,16 @@ if __name__ == '__main__':
 
         print(f"\tInput List: {inLst}")
 
+        numSet = set()
+
+        for num in inLst:
+
+            if num in numSet:
+
+                continue
+            else:
+                numSet.add(num)
+
         print("\n")
 
         # Sol01_ItrSet_Prt(inLst)
