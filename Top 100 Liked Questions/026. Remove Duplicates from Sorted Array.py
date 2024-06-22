@@ -78,6 +78,10 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\tList Set: {numSet}")
     print()
 
-    outLst = list(numSet)
+    setLst = list(numSet)
+    dupLst = ["_" for dup in range(dupCnt)]
+
+    print(f"\t\tSet List:  {setLst}")
+    print(f"\t\tDup. List: {dupLst}")
 
     print("\n")
