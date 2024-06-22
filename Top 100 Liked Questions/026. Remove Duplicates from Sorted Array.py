@@ -50,3 +50,14 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
         nums is sorted in non-decreasing order.
 
 """
+
+InputLst = [[1,1,2],
+            [0,0,1,1,1,2,2,3,3,4]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}. Case\n")
+
+    print(f"\tInput List: {InputLst}")
+
+    print("\n")
