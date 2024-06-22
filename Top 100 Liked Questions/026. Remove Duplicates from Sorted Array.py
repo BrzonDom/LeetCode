@@ -162,4 +162,8 @@ if __name__ == '__main__':
 
         inLst = case
 
-        Sol01_ItrSet_Prt(inLst)
+        print(f"\tInput List: {inLst}")
+
+        print("\n")
+
+        # Sol01_ItrSet_Prt(inLst)
