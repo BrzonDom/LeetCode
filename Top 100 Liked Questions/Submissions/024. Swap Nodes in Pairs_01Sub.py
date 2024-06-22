@@ -125,8 +125,8 @@ def Sol01_SwpWhlLftRgt(case):
 
     valLst = lnkLst.valLst_Lnk()
 
-    print(f"\tOrg Linked list: {valLst}")
-    print()
+    # print(f"\tOrg Linked list: {valLst}")
+    # print()
 
     HdNd = lnkLst.head
     prHdNd = ListNode(0, HdNd)
@@ -149,9 +149,9 @@ def Sol01_SwpWhlLftRgt(case):
 
     valLst = lnkLst.valLst_Lnk()
 
-    print(f"\tOut Linked list: {valLst}")
-
-    print("\n")
+    # print(f"\tOut Linked list: {valLst}")
+    #
+    # print("\n")
 
 
 if __name__ == '__main__':
@@ -162,7 +162,7 @@ if __name__ == '__main__':
 
     for csCnt, case in enumerate(InputLst):
 
-        print(f"{csCnt+1}. Case\n")
+        # print(f"{csCnt+1}. Case\n")
 
         Sol01_SwpWhlLftRgt(case)
 
