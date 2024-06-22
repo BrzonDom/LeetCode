@@ -46,7 +46,7 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
     Constraints:
 
-        1 <= nums.length <= 3 * 104
+        1 <= nums.length <= 3 * 10^4
         -100 <= nums[i] <= 100
         nums is sorted in non-decreasing order.
 
