@@ -52,53 +52,56 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
 """
 
-InputLst = [[1, 1, 2],
-            [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]]
 
-for csCnt, case in enumerate(InputLst):
+if __name__ == '__main__':
 
-    print(f"{csCnt + 1}. Case\n")
+    InputLst = [[1, 1, 2],
+                [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]]
 
-    inLst = case
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\tInput List: {inLst}")
-    print()
+        print(f"{csCnt + 1}. Case\n")
 
-    numSet = set()
-    dupCnt = 0
-    numCnt = 0
+        inLst = case
 
-    for num in inLst:
+        print(f"\tInput List: {inLst}")
+        print()
 
-        if num in numSet:
+        numSet = set()
+        dupCnt = 0
+        numCnt = 0
 
-            dupCnt += 1
-        else:
-            numSet.add(num)
-            numCnt += 1
+        for num in inLst:
 
-    print(f"\t\tList Set: {numSet}")
-    print()
+            if num in numSet:
 
-    setLst = list(numSet)
-    dupLst = ["_" for dup in range(dupCnt)]
+                dupCnt += 1
+            else:
+                numSet.add(num)
+                numCnt += 1
 
-    print(f"\t\tSet List:  {setLst}")
-    print(f"\t\tDup. List: {dupLst}")
-    print()
+        print(f"\t\tList Set: {numSet}")
+        print()
 
-    outLst = list(map(str, setLst)) + dupLst
+        setLst = list(numSet)
+        dupLst = ["_" for dup in range(dupCnt)]
 
-    print(f"\tOut List: ", end="[")
-    for i, itm in enumerate(outLst):
-        if (i+1) >= len(outLst):
+        print(f"\t\tSet List:  {setLst}")
+        print(f"\t\tDup. List: {dupLst}")
+        print()
 
-            print(f"{itm}]")
-        else:
-            print(f"{itm}, ", end="")
-    print()
+        outLst = list(map(str, setLst)) + dupLst
 
-    print(f"\t\tNumbers:    {numCnt}")
-    print(f"\t\tDuplicates: {dupCnt}")
+        print(f"\tOut List: ", end="[")
+        for i, itm in enumerate(outLst):
+            if (i+1) >= len(outLst):
 
-    print("\n")
+                print(f"{itm}]")
+            else:
+                print(f"{itm}, ", end="")
+        print()
+
+        print(f"\t\tNumbers:    {numCnt}")
+        print(f"\t\tDuplicates: {dupCnt}")
+
+        print("\n")
