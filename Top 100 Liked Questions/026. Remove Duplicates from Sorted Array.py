@@ -104,6 +104,56 @@ def Sol01A_ItrSet_Prt(InLst):
         print("\n")
 
 
+def Sol01_ItrSet_Prt(InLst):
+
+    for csCnt, case in enumerate(InLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        inLst = case
+
+        print(f"\tInput List: {inLst}")
+        print()
+
+        numSet = set()
+        dupCnt = 0
+        numCnt = 0
+
+        for num in inLst:
+
+            if num in numSet:
+
+                dupCnt += 1
+            else:
+                numSet.add(num)
+                numCnt += 1
+
+        print(f"\t\tList Set: {numSet}")
+        print()
+
+        setLst = list(numSet)
+        dupLst = ["_" for dup in range(dupCnt)]
+
+        print(f"\t\tSet List:  {setLst}")
+        print(f"\t\tDup. List: {dupLst}")
+        print()
+
+        outLst = list(map(str, setLst)) + dupLst
+
+        print(f"\tOut List: ", end="[")
+        for i, itm in enumerate(outLst):
+            if (i + 1) >= len(outLst):
+
+                print(f"{itm}]")
+            else:
+                print(f"{itm}, ", end="")
+        print()
+
+        print(f"\t\tNumbers:    {numCnt}")
+        print(f"\t\tDuplicates: {dupCnt}")
+
+        print("\n")
+
 
 if __name__ == '__main__':
 
