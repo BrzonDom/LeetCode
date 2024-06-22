@@ -165,12 +165,13 @@ if __name__ == '__main__':
         print(f"\tInput List: {inLst}")
 
         numSet = set()
+        dupLst = []
 
         for num in inLst:
 
             if num in numSet:
 
-                continue
+                dupLst.append('_')
             else:
                 numSet.add(num)
 
