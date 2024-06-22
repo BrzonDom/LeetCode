@@ -142,6 +142,8 @@ def Sol01_SwpWhlLftRgt(case):
 
     lnkLst.head = prHdNd.nxt
 
+    return lnkLst.head
+
 
 if __name__ == '__main__':
 
