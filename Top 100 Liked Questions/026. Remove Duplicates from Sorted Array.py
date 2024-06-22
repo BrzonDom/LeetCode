@@ -175,6 +175,9 @@ if __name__ == '__main__':
             else:
                 numSet.add(num)
 
+        print(f"\t\tList Set:  {numSet}")
+        print(f"\t\tDup. List: {dupLst}")
+
         print("\n")
 
         # Sol01_ItrSet_Prt(inLst)
