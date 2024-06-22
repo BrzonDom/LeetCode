@@ -153,9 +153,6 @@ def Sol01A_SwpWhlLftRgt_Prt(InLst):
 
         print(f"{csCnt+1}. Case\n")
 
-        # print(f"\tList: {case}")
-        # print()
-
         lnkLst = LinkList()
 
         for num in case:
@@ -184,9 +181,6 @@ def Sol01A_SwpWhlLftRgt_Prt(InLst):
             curNd = curNd.nxt.nxt
 
         lnkLst.head = prHdNd.nxt
-
-        # swpVal = 2
-        # lnkLst = Hlp01_Swp_PrvCur_Prt(swpVal, lnkLst)
 
         valLst = lnkLst.valLst_Lnk()
 
