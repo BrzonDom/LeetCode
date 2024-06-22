@@ -181,6 +181,11 @@ if __name__ == '__main__':
         print(f"\t\tUniq. List: {unqLst}")
         print(f"\t\tList Set:   {numSet}")
         print(f"\t\tDup. List:  {dupLst}")
+        print()
+
+        outLst = unqLst + dupLst
+
+        print(f"\tOut List: {unqLst}")
 
         print("\n")
 
