@@ -89,7 +89,13 @@ for csCnt, case in enumerate(InputLst):
 
     outLst = list(map(str, setLst)) + dupLst
 
-    print(f"\tOut List: {outLst}")
+    print(f"\tOut List: ", end="[")
+    for i, itm in enumerate(outLst):
+        if (i+1) >= len(outLst):
+
+            print(f"{itm}]")
+        else:
+            print(f"{itm}, ", end="")
     print()
 
     print(f"\t\tNumbers:    {numCnt}")
