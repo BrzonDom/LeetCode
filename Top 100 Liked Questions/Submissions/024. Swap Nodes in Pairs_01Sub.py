@@ -123,11 +123,6 @@ def Sol01_SwpWhlLftRgt(case):
     for num in case:
         lnkLst.append(num)
 
-    valLst = lnkLst.valLst_Lnk()
-
-    # print(f"\tOrg Linked list: {valLst}")
-    # print()
-
     HdNd = lnkLst.head
     prHdNd = ListNode(0, HdNd)
 
@@ -146,12 +141,6 @@ def Sol01_SwpWhlLftRgt(case):
         curNd = curNd.nxt.nxt
 
     lnkLst.head = prHdNd.nxt
-
-    valLst = lnkLst.valLst_Lnk()
-
-    # print(f"\tOut Linked list: {valLst}")
-    #
-    # print("\n")
 
 
 if __name__ == '__main__':
