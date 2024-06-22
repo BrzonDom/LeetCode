@@ -60,16 +60,19 @@ for csCnt, case in enumerate(InputLst):
     print(f"{csCnt + 1}. Case\n")
 
     print(f"\tInput List: {case}")
+    print()
 
     numSet = set()
+    dupCnt = 0
 
     for num in case:
 
         if num in numSet:
-            continue
+
+            dupCnt += 1
         else:
             numSet.add(num)
 
-    print(f"\tList Set: {numSet}")
+    print(f"\t\tList Set: {numSet}")
 
     print("\n")
