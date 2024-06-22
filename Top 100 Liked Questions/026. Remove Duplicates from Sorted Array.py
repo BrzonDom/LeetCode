@@ -83,5 +83,10 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\t\tSet List:  {setLst}")
     print(f"\t\tDup. List: {dupLst}")
+    print()
+
+    outLst = setLst + dupLst
+
+    print(f"\tOut List: {outLst}")
 
     print("\n")
