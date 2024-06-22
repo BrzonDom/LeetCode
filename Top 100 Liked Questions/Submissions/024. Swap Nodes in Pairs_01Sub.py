@@ -78,48 +78,6 @@ class LinkList:
         return valLst
 
 
-def Sol01A_SwpWhlLftRgt_Prt(InLst):
-
-    for csCnt, case in enumerate(InLst):
-
-        print(f"{csCnt+1}. Case\n")
-
-        lnkLst = LinkList()
-
-        for num in case:
-            lnkLst.append(num)
-
-        valLst = lnkLst.valLst_Lnk()
-
-        print(f"\tOrg Linked list: {valLst}")
-        print()
-
-        HdNd = lnkLst.head
-        prHdNd = ListNode(0, HdNd)
-
-        curNd = prHdNd
-
-        while curNd.nxt and curNd.nxt.nxt:
-
-            lftNd = curNd.nxt
-            rgtNd = curNd.nxt.nxt
-
-            lftNd.nxt = rgtNd.nxt
-
-            curNd.nxt = rgtNd
-            curNd.nxt.nxt = lftNd
-
-            curNd = curNd.nxt.nxt
-
-        lnkLst.head = prHdNd.nxt
-
-        valLst = lnkLst.valLst_Lnk()
-
-        print(f"\tOut Linked list: {valLst}")
-
-        print("\n")
-
-
 def Sol01_SwpWhlLftRgt_Prt(case):
 
     lnkLst = LinkList()
@@ -163,10 +121,6 @@ if __name__ == '__main__':
     InputLst = [[1, 2, 3, 4],
                 [],
                 [1]]
-
-    # InputLst = [[1, 2, 3, 4, 5]]
-
-    # Sol01A_SwpWhlLftRgt_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
