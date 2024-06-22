@@ -66,6 +66,7 @@ for csCnt, case in enumerate(InputLst):
 
     numSet = set()
     dupCnt = 0
+    numCnt = 0
 
     for num in inLst:
 
@@ -74,6 +75,7 @@ for csCnt, case in enumerate(InputLst):
             dupCnt += 1
         else:
             numSet.add(num)
+            numCnt += 1
 
     print(f"\t\tList Set: {numSet}")
     print()
@@ -88,5 +90,9 @@ for csCnt, case in enumerate(InputLst):
     outLst = setLst + dupLst
 
     print(f"\tOut List: {outLst}")
+    print()
+
+    print(f"\t\tNumbers:    {numCnt}")
+    print(f"\t\tDuplicates: {dupCnt}")
 
     print("\n")
