@@ -71,5 +71,9 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tInput List: {inLst}")
     print(f"\t\tValue: {val}")
+    print()
+
+    for n, num in enumerate(inLst):
+        print(f"\t\t{n}. {num}")
 
     print("\n")
