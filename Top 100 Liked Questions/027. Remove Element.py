@@ -73,7 +73,11 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\tValue: {val}")
     print()
 
-    for n, num in enumerate(inLst):
-        print(f"\t\t{n}. {num}")
+    nCnt = 0
+
+    for num in inLst:
+        print(f"\t\t{nCnt}. {num}")
+
+        nCnt += 1
 
     print("\n")
