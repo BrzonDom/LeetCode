@@ -301,11 +301,12 @@ if __name__ == '__main__':
     # Sol03A_SlwFstPnt_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
-        inLst = case
 
         print(f"{csCnt + 1}. Case\n")
 
-        # Sol01_ItrSet_Prt(inLst)
+        # Sol01_ItrSet_Prt(case)
 
-        # Sol02_WhlPop_Prt(inLst)
+        # Sol02_WhlPop_Prt(case)
+
+        Sol03_SlwFstPnt_Prt(case)
 
