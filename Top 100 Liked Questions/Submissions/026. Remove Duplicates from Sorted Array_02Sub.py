@@ -53,163 +53,6 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 """
 
 
-def Sol01A_ItrSet_Prt(InLst):
-
-    for csCnt, case in enumerate(InLst):
-
-        print(f"{csCnt + 1}. Case\n")
-
-        inLst = case
-
-        print(f"\tInput List: {inLst}")
-        print()
-
-        numSet = set()
-        dupCnt = 0
-        numCnt = 0
-
-        for num in inLst:
-
-            if num in numSet:
-
-                dupCnt += 1
-            else:
-                numSet.add(num)
-                numCnt += 1
-
-        print(f"\t\tList Set: {numSet}")
-        print()
-
-        setLst = list(numSet)
-        dupLst = ["_" for dup in range(dupCnt)]
-
-        print(f"\t\tSet List:  {setLst}")
-        print(f"\t\tDup. List: {dupLst}")
-        print()
-
-        outLst = list(map(str, setLst)) + dupLst
-
-        print(f"\tOut List: ", end="[")
-        for i, itm in enumerate(outLst):
-            if (i + 1) >= len(outLst):
-
-                print(f"{itm}]")
-            else:
-                print(f"{itm}, ", end="")
-        print()
-
-        print(f"\t\tNumbers:    {numCnt}")
-        print(f"\t\tDuplicates: {dupCnt}")
-
-        print("\n")
-
-
-def Sol01_ItrSet_Prt(inLst):
-
-    print(f"\tInput List: {inLst}")
-    print()
-
-    numSet = set()
-    dupCnt = 0
-    numCnt = 0
-
-    for num in inLst:
-
-        if num in numSet:
-
-            dupCnt += 1
-        else:
-            numSet.add(num)
-            numCnt += 1
-
-    print(f"\t\tList Set: {numSet}")
-    print()
-
-    setLst = list(numSet)
-    dupLst = ["_" for dup in range(dupCnt)]
-
-    print(f"\t\tSet List:  {setLst}")
-    print(f"\t\tDup. List: {dupLst}")
-    print()
-
-    outLst = list(map(str, setLst)) + dupLst
-
-    print(f"\tOut List: ", end="[")
-    for i, itm in enumerate(outLst):
-        if (i + 1) >= len(outLst):
-
-            print(f"{itm}]")
-        else:
-            print(f"{itm}, ", end="")
-    print()
-
-    print(f"\t\tNumbers:    {numCnt}")
-    print(f"\t\tDuplicates: {dupCnt}")
-
-    print("\n")
-
-
-def Sol02A_WhlPop_Prt(InLst):
-
-    for csCnt, case in enumerate(InLst):
-
-        print(f"{csCnt + 1}. Case\n")
-
-        inLst = case
-        orgLen = len(inLst)
-
-        print(f"\tInput List: {inLst}")
-        print(f"\t\tOrg. len.: {orgLen}")
-        print()
-
-        i = 1
-        while i < len(inLst):
-
-            if inLst[i] == inLst[i - 1]:
-                inLst.pop(i)
-
-            else:
-                i += 1
-
-        outLen = len(inLst)
-        dupLen = orgLen - outLen
-
-        print(f"\tOutput List: {inLst}")
-        print(f"\t\tOut  len.: {outLen}")
-        print(f"\t\tDup. len.: {dupLen}")
-
-        print("\n")
-
-
-def Sol02_WhlPop_Prt(inLst):
-
-    orgLen = len(inLst)
-
-    print(f"\tInput List: {inLst}")
-    print(f"\t\tOrg. len.: {orgLen}")
-    print()
-
-    i = 1
-    while i < len(inLst):
-
-        if inLst[i] == inLst[i - 1]:
-            inLst.pop(i)
-
-        else:
-            i += 1
-
-    outLen = len(inLst)
-    dupLen = orgLen - outLen
-
-    print(f"\tOutput List: {inLst}")
-    print(f"\t\tOut  len.: {outLen}")
-    print(f"\t\tDup. len.: {dupLen}")
-
-    print("\n")
-
-    return outLen
-
-
 def Sol03A_SlwFstPnt_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
@@ -296,19 +139,11 @@ if __name__ == '__main__':
     InputLst = [[1, 1, 2],
                 [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]]
 
-    # Sol01A_ItrSet_Prt(InputLst)
-
-    # Sol02A_WhlPop_Prt(InputLst)
-
     # Sol03A_SlwFstPnt_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}. Case\n")
-
-        # Sol01_ItrSet_Prt(case)
-
-        # Sol02_WhlPop_Prt(case)
 
         Sol03_SlwFstPnt_Prt(case)
 
