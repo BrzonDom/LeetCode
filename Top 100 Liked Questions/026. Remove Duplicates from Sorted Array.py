@@ -179,34 +179,28 @@ def Sol02A_WhlPop_Prt(InLst):
         print("\n")
 
 
-def Sol02_WhlPop_Prt(InLst):
+def Sol02_WhlPop_Prt(inLst):
 
-    for csCnt, case in enumerate(InLst):
+    print(f"\tInput List: {inLst}")
+    print()
 
-        print(f"{csCnt + 1}. Case\n")
+    i = 1
+    dupCnt = 0
 
-        inLst = case
+    while i < len(inLst):
 
-        print(f"\tInput List: {inLst}")
-        print()
+        if inLst[i] == inLst[i-1]:
+            inLst.pop(i)
 
-        i = 1
-        dupCnt = 0
+            dupCnt += 1
 
-        while i < len(inLst):
+        else:
+            i += 1
 
-            if inLst[i] == inLst[i-1]:
-                inLst.pop(i)
+    print(f"\tOutput List: {inLst}")
+    print(f"\t\tDuplic. num.: {dupCnt}")
 
-                dupCnt += 1
-
-            else:
-                i += 1
-
-        print(f"\tOutput List: {inLst}")
-        print(f"\t\tDuplic. num.: {dupCnt}")
-
-        print("\n")
+    print("\n")
 
 
 if __name__ == '__main__':
