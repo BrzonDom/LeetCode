@@ -161,6 +161,7 @@ if __name__ == '__main__':
         print(f"{csCnt + 1}. Case\n")
 
         inLst = case
+        dupCnt = 0
 
         print(f"\tInput List: {inLst}")
         print()
@@ -172,10 +173,13 @@ if __name__ == '__main__':
             if inLst[i] == inLst[i-1]:
                 inLst.pop(i)
 
+                dupCnt += 1
+
             else:
                 i += 1
 
         print(f"\tOutput List: {inLst}")
+        print(f"\t\tDuplic. num.: {dupCnt}")
 
         print("\n")
 
