@@ -288,6 +288,8 @@ def Sol03_SlwFstPnt_Prt(inLst):
 
     print("\n")
 
+    return outLen
+
 
 if __name__ == '__main__':
 
