@@ -53,38 +53,6 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 """
 
 
-def Sol02A_WhlPop_Prt(InLst):
-
-    for csCnt, case in enumerate(InLst):
-
-        print(f"{csCnt + 1}. Case\n")
-
-        inLst = case
-        orgLen = len(inLst)
-
-        print(f"\tInput List: {inLst}")
-        print(f"\t\tOrg. len.: {orgLen}")
-        print()
-
-        i = 1
-        while i < len(inLst):
-
-            if inLst[i] == inLst[i - 1]:
-                inLst.pop(i)
-
-            else:
-                i += 1
-
-        outLen = len(inLst)
-        dupLen = orgLen - outLen
-
-        print(f"\tOutput List: {inLst}")
-        print(f"\t\tOut  len.: {outLen}")
-        print(f"\t\tDup. len.: {dupLen}")
-
-        print("\n")
-
-
 def Sol02_WhlPop_Prt(inLst):
 
     orgLen = len(inLst)
@@ -118,8 +86,6 @@ if __name__ == '__main__':
 
     InputLst = [[1, 1, 2],
                 [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]]
-
-    # Sol02A_WhlPop_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
