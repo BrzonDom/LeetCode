@@ -213,12 +213,16 @@ def Sol02_WhlPop_Prt(inLst):
 def Sol03A_SlwFstPnt_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
-        inLst = case
 
         print(f"{csCnt + 1}. Case\n")
 
+        inLst = case
+        orgLen = len(inLst)
+
         print(f"\tInput List: {inLst}")
         print()
+
+        dupCnt = 0
 
         slwP = 0
         fstP = 1
@@ -227,6 +231,8 @@ def Sol03A_SlwFstPnt_Prt(InLst):
 
             if inLst[slwP] == inLst[fstP]:
                 fstP += 1
+
+                dupCnt += 1
 
             else:
                 inLst[slwP + 1] = inLst[fstP]
