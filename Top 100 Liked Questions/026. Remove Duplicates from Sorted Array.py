@@ -310,5 +310,5 @@ if __name__ == '__main__':
 
         # Sol02_WhlPop_Prt(case)
 
-        Sol03_SlwFstPnt_Prt(case)
+        # Sol03_SlwFstPnt_Prt(case)
 
