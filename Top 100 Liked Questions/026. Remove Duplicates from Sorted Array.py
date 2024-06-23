@@ -226,6 +226,13 @@ if __name__ == '__main__':
 
         print(f"\tInput List: {inLst}")
 
+        slwP = 0
+        fstP = 1
+
+        while fstP < len(inLst):
+
+            fstP += 1
+
         print("\n")
 
         # Sol01_ItrSet_Prt(inLst)
