@@ -252,9 +252,8 @@ def Sol03A_SlwFstPnt_Prt(InLst):
         print("\n")
 
 
-def Sol03_SlwFstPnt_Prt(case):
+def Sol03_SlwFstPnt_Prt(inLst):
 
-    inLst = case
     orgLen = len(inLst)
 
     print(f"\tInput List: {inLst}")
