@@ -202,6 +202,8 @@ def Sol02_WhlPop_Prt(inLst):
 
     print("\n")
 
+    return len(inLst)
+
 
 if __name__ == '__main__':
 
