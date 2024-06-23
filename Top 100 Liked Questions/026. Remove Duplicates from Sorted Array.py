@@ -163,6 +163,12 @@ if __name__ == '__main__':
         inLst = case
 
         print(f"\tInput List: {inLst}")
+        print()
+
+        lenLst = len(inLst)
+
+        for i in range(lenLst):
+            print(f"\t\t{i}. {inLst[i]}")
 
         print("\n")
 
