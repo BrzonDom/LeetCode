@@ -94,10 +94,6 @@ def Sol03_SlwFstPnt_Prt(inLst):
 
 def Sol03_SlwFstPnt(inLst):
 
-    orgLen = len(inLst)
-
-    dupCnt = 0
-
     slwP = 0
     fstP = 1
 
@@ -106,8 +102,6 @@ def Sol03_SlwFstPnt(inLst):
         if inLst[slwP] == inLst[fstP]:
             fstP += 1
 
-            dupCnt += 1
-
         else:
             inLst[slwP + 1] = inLst[fstP]
 
@@ -115,7 +109,6 @@ def Sol03_SlwFstPnt(inLst):
             slwP += 1
 
     outLen = slwP + 1
-    dupLen = orgLen - outLen
 
     return outLen
 
