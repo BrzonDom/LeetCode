@@ -306,6 +306,12 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
+        inLst = case
+
+        print(f"\tInput List: {inLst}")
+
+        print("\n")
+
         # Sol01_ItrSet_Prt(case)
 
         # Sol02_WhlPop_Prt(case)
