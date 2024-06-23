@@ -242,6 +242,7 @@ if __name__ == '__main__':
                 slwP += 1
 
         print(f"\tOut List: {inLst[:slwP + 1]}")
+        print(f"\t\tOut  len.: {slwP + 1}")
 
         print("\n")
 
