@@ -156,8 +156,10 @@ def Sol02A_WhlPop_Prt(InLst):
         print(f"{csCnt + 1}. Case\n")
 
         inLst = case
+        orgLen = len(inLst)
 
         print(f"\tInput List: {inLst}")
+        print(f"\t\tInput len.: {orgLen}")
         print()
 
         i = 1
@@ -174,7 +176,7 @@ def Sol02A_WhlPop_Prt(InLst):
                 i += 1
 
         print(f"\tOutput List: {inLst}")
-        print(f"\t\tDuplic. num.: {dupCnt}")
+        print(f"\t\tDup. cnt.: {dupCnt}")
 
         print("\n")
 
