@@ -252,46 +252,42 @@ def Sol03A_SlwFstPnt_Prt(InLst):
         print("\n")
 
 
-def Sol03_SlwFstPnt_Prt(InLst):
+def Sol03_SlwFstPnt_Prt(case):
 
-    for csCnt, case in enumerate(InLst):
+    inLst = case
+    orgLen = len(inLst)
 
-        print(f"{csCnt + 1}. Case\n")
+    print(f"\tInput List: {inLst}")
+    print(f"\t\tOrg. len.: {orgLen}")
+    print()
 
-        inLst = case
-        orgLen = len(inLst)
+    dupCnt = 0
 
-        print(f"\tInput List: {inLst}")
-        print(f"\t\tOrg. len.: {orgLen}")
-        print()
+    slwP = 0
+    fstP = 1
 
-        dupCnt = 0
+    while fstP < len(inLst):
 
-        slwP = 0
-        fstP = 1
+        if inLst[slwP] == inLst[fstP]:
+            fstP += 1
 
-        while fstP < len(inLst):
+            dupCnt += 1
 
-            if inLst[slwP] == inLst[fstP]:
-                fstP += 1
+        else:
+            inLst[slwP + 1] = inLst[fstP]
 
-                dupCnt += 1
+            fstP += 1
+            slwP += 1
 
-            else:
-                inLst[slwP + 1] = inLst[fstP]
+    outLen = slwP + 1
+    dupLen = orgLen - outLen
 
-                fstP += 1
-                slwP += 1
+    print(f"\tOut List: {inLst[:outLen]}")
+    print(f"\t\tOut  len.: {outLen}")
+    print(f"\t\tDup. len.: {dupLen}")
+    # print(f"\t\tDup. cnt.: {dupCnt}")
 
-        outLen = slwP + 1
-        dupLen = orgLen - outLen
-
-        print(f"\tOut List: {inLst[:outLen]}")
-        print(f"\t\tOut  len.: {outLen}")
-        print(f"\t\tDup. len.: {dupLen}")
-        # print(f"\t\tDup. cnt.: {dupCnt}")
-
-        print("\n")
+    print("\n")
 
 
 if __name__ == '__main__':
