@@ -74,14 +74,21 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     nCnt = 0
+    while nCnt < len(inLst):
 
-    for num in inLst:
-        print(f"\t\t{nCnt}. {num}")
-
-        if num == val:
+        if inLst[nCnt] == val:
             inLst.pop(nCnt)
 
         else:
             nCnt += 1
+
+    # for num in inLst:
+    #     print(f"\t\t{nCnt}. {num}")
+    #
+    #     if num == val:
+    #         inLst.pop(nCnt)
+    #
+    #     else:
+    #         nCnt += 1
 
     print("\n")
