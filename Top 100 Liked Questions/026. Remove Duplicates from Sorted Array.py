@@ -210,6 +210,36 @@ def Sol02_WhlPop_Prt(inLst):
     return outLen
 
 
+def Sol03A_SlwFstPnt_Prt(InLst):
+
+    for csCnt, case in enumerate(InLst):
+        inLst = case
+
+        print(f"{csCnt + 1}. Case\n")
+
+        print(f"\tInput List: {inLst}")
+        print()
+
+        slwP = 0
+        fstP = 1
+
+        while fstP < len(inLst):
+
+            if inLst[slwP] == inLst[fstP]:
+                fstP += 1
+
+            else:
+                inLst[slwP + 1] = inLst[fstP]
+
+                fstP += 1
+                slwP += 1
+
+        print(f"\tOut List: {inLst[:slwP + 1]}")
+        print(f"\t\tOut  len.: {slwP + 1}")
+
+        print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [[1, 1, 2],
