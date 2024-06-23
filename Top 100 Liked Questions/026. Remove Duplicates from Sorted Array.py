@@ -231,7 +231,14 @@ if __name__ == '__main__':
 
         while fstP < len(inLst):
 
-            fstP += 1
+            if inLst[slwP] == inLst[fstP]:
+                fstP += 1
+
+            else:
+                inLst[slwP + 1] = inLst[fstP]
+
+                fstP += 1
+                slwP += 1
 
         print("\n")
 
