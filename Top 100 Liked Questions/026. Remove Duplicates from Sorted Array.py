@@ -169,6 +169,13 @@ if __name__ == '__main__':
 
         for i in range(lenLst):
             print(f"\t\t{i}. {inLst[i]}")
+        print()
+
+        i = 0
+
+        while i < lenLst:
+            print(f"\t\t{i}. {inLst[i]}")
+            i += 1
 
         print("\n")
 
