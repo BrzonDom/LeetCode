@@ -149,6 +149,36 @@ def Sol01_ItrSet_Prt(inLst):
     print("\n")
 
 
+def Sol02A_WhlPop_Prt(InLst):
+
+    for csCnt, case in enumerate(InLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        inLst = case
+        dupCnt = 0
+
+        print(f"\tInput List: {inLst}")
+        print()
+
+        i = 1
+
+        while i < len(inLst):
+
+            if inLst[i] == inLst[i-1]:
+                inLst.pop(i)
+
+                dupCnt += 1
+
+            else:
+                i += 1
+
+        print(f"\tOutput List: {inLst}")
+        print(f"\t\tDuplic. num.: {dupCnt}")
+
+        print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [[1, 1, 2],
