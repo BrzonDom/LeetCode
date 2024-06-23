@@ -220,6 +220,7 @@ def Sol03A_SlwFstPnt_Prt(InLst):
         orgLen = len(inLst)
 
         print(f"\tInput List: {inLst}")
+        print(f"\t\tOrg. len.: {orgLen}")
         print()
 
         dupCnt = 0
@@ -242,6 +243,7 @@ def Sol03A_SlwFstPnt_Prt(InLst):
 
         print(f"\tOut List: {inLst[:slwP + 1]}")
         print(f"\t\tOut  len.: {slwP + 1}")
+        print(f"\t\tDup. cnt.: {dupCnt}")
 
         print("\n")
 
