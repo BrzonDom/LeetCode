@@ -249,32 +249,12 @@ if __name__ == '__main__':
 
     # Sol02A_WhlPop_Prt(InputLst)
 
+    Sol03A_SlwFstPnt_Prt(InputLst)
+
     for csCnt, case in enumerate(InputLst):
         inLst = case
 
         print(f"{csCnt + 1}. Case\n")
-
-        # print(f"\tInput List: {inLst}")
-        # print()
-        #
-        # slwP = 0
-        # fstP = 1
-        #
-        # while fstP < len(inLst):
-        #
-        #     if inLst[slwP] == inLst[fstP]:
-        #         fstP += 1
-        #
-        #     else:
-        #         inLst[slwP + 1] = inLst[fstP]
-        #
-        #         fstP += 1
-        #         slwP += 1
-        #
-        # print(f"\tOut List: {inLst[:slwP + 1]}")
-        # print(f"\t\tOut  len.: {slwP + 1}")
-        #
-        # print("\n")
 
         # Sol01_ItrSet_Prt(inLst)
 
