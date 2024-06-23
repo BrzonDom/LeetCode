@@ -226,4 +226,4 @@ if __name__ == '__main__':
 
         # Sol01_ItrSet_Prt(inLst)
 
-        Sol02_WhlPop_Prt(inLst)
+        # Sol02_WhlPop_Prt(inLst)
