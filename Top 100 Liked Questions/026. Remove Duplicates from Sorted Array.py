@@ -220,10 +220,15 @@ if __name__ == '__main__':
     # Sol02A_WhlPop_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
+        inLst = case
 
         print(f"{csCnt + 1}. Case\n")
-        inLst = case
+
+        print(f"\tInput List: {inLst}")
+
+        print("\n")
 
         # Sol01_ItrSet_Prt(inLst)
 
         # Sol02_WhlPop_Prt(inLst)
+
