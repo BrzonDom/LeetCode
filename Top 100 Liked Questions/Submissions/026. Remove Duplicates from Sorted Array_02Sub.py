@@ -108,9 +108,7 @@ def Sol03_SlwFstPnt(inLst):
             fstP += 1
             slwP += 1
 
-    outLen = slwP + 1
-
-    return outLen
+    return slwP + 1
 
 
 if __name__ == '__main__':
@@ -120,7 +118,9 @@ if __name__ == '__main__':
 
     for csCnt, case in enumerate(InputLst):
 
-        print(f"{csCnt + 1}. Case\n")
+        # print(f"{csCnt + 1}. Case\n")
+        #
+        # Sol03_SlwFstPnt_Prt(case)
 
-        Sol03_SlwFstPnt_Prt(case)
+        Sol03_SlwFstPnt(case)
 
