@@ -78,6 +78,10 @@ for csCnt, case in enumerate(InputLst):
     for num in inLst:
         print(f"\t\t{nCnt}. {num}")
 
-        nCnt += 1
+        if num == val:
+            inLst.pop(nCnt)
+
+        else:
+            nCnt += 1
 
     print("\n")
