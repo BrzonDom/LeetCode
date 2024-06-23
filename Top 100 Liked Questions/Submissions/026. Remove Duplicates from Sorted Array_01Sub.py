@@ -84,8 +84,6 @@ def Sol02_WhlPop_Prt(inLst):
 
 def Sol02_WhlPop(inLst):
 
-    orgLen = len(inLst)
-
     i = 1
     while i < len(inLst):
 
@@ -96,7 +94,6 @@ def Sol02_WhlPop(inLst):
             i += 1
 
     outLen = len(inLst)
-    dupLen = orgLen - outLen
 
     return outLen
 
