@@ -252,6 +252,48 @@ def Sol03A_SlwFstPnt_Prt(InLst):
         print("\n")
 
 
+def Sol03_SlwFstPnt_Prt(InLst):
+
+    for csCnt, case in enumerate(InLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        inLst = case
+        orgLen = len(inLst)
+
+        print(f"\tInput List: {inLst}")
+        print(f"\t\tOrg. len.: {orgLen}")
+        print()
+
+        dupCnt = 0
+
+        slwP = 0
+        fstP = 1
+
+        while fstP < len(inLst):
+
+            if inLst[slwP] == inLst[fstP]:
+                fstP += 1
+
+                dupCnt += 1
+
+            else:
+                inLst[slwP + 1] = inLst[fstP]
+
+                fstP += 1
+                slwP += 1
+
+        outLen = slwP + 1
+        dupLen = orgLen - outLen
+
+        print(f"\tOut List: {inLst[:outLen]}")
+        print(f"\t\tOut  len.: {outLen}")
+        print(f"\t\tDup. len.: {dupLen}")
+        # print(f"\t\tDup. cnt.: {dupCnt}")
+
+        print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [[1, 1, 2],
@@ -261,7 +303,7 @@ if __name__ == '__main__':
 
     # Sol02A_WhlPop_Prt(InputLst)
 
-    Sol03A_SlwFstPnt_Prt(InputLst)
+    # Sol03A_SlwFstPnt_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
         inLst = case
