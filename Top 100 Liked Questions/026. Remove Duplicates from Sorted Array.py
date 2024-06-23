@@ -242,10 +242,12 @@ def Sol03A_SlwFstPnt_Prt(InLst):
                 slwP += 1
 
         outLen = slwP + 1
+        dupLen = orgLen - outLen
 
         print(f"\tOut List: {inLst[:outLen]}")
         print(f"\t\tOut  len.: {outLen}")
-        print(f"\t\tDup. cnt.: {dupCnt}")
+        print(f"\t\tDup. len.: {dupLen}")
+        # print(f"\t\tDup. cnt.: {dupCnt}")
 
         print("\n")
 
