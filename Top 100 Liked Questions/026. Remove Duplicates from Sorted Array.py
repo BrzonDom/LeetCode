@@ -175,6 +175,9 @@ def Sol02A_WhlPop_Prt(InLst):
             else:
                 i += 1
 
+        outLen = len(inLst)
+        dupLen = orgLen - outLen
+
         print(f"\tOutput List: {inLst}")
         print(f"\t\tDup. cnt.: {dupCnt}")
 
