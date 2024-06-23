@@ -92,6 +92,45 @@ def Sol03_SlwFstPnt_Prt(inLst):
     return outLen
 
 
+def Sol03_SlwFstPnt(inLst):
+
+    orgLen = len(inLst)
+
+    print(f"\tInput List: {inLst}")
+    print(f"\t\tOrg. len.: {orgLen}")
+    print()
+
+    dupCnt = 0
+
+    slwP = 0
+    fstP = 1
+
+    while fstP < len(inLst):
+
+        if inLst[slwP] == inLst[fstP]:
+            fstP += 1
+
+            dupCnt += 1
+
+        else:
+            inLst[slwP + 1] = inLst[fstP]
+
+            fstP += 1
+            slwP += 1
+
+    outLen = slwP + 1
+    dupLen = orgLen - outLen
+
+    print(f"\tOut List: {inLst[:outLen]}")
+    print(f"\t\tOut  len.: {outLen}")
+    print(f"\t\tDup. len.: {dupLen}")
+    # print(f"\t\tDup. cnt.: {dupCnt}")
+
+    print("\n")
+
+    return outLen
+
+
 if __name__ == '__main__':
 
     InputLst = [[1, 1, 2],
