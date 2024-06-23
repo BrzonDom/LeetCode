@@ -163,14 +163,10 @@ def Sol02A_WhlPop_Prt(InLst):
         print()
 
         i = 1
-        dupCnt = 0
-
         while i < len(inLst):
 
             if inLst[i] == inLst[i - 1]:
                 inLst.pop(i)
-
-                dupCnt += 1
 
             else:
                 i += 1
@@ -181,7 +177,6 @@ def Sol02A_WhlPop_Prt(InLst):
         print(f"\tOutput List: {inLst}")
         print(f"\t\tOut  len.: {outLen}")
         print(f"\t\tDup. len.: {dupLen}")
-        print(f"\t\tDup. num.: {dupCnt}")
 
         print("\n")
 
@@ -195,7 +190,6 @@ def Sol02_WhlPop_Prt(inLst):
     print()
 
     i = 1
-
     while i < len(inLst):
 
         if inLst[i] == inLst[i - 1]:
