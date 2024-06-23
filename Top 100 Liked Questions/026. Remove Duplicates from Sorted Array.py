@@ -186,31 +186,31 @@ if __name__ == '__main__':
 
     # Sol01A_ItrSet_Prt(InputLst)
 
-    for csCnt, case in enumerate(InputLst):
-
-        print(f"{csCnt + 1}. Case\n")
-
-        inLst = case
-
-        print(f"\tInput List: {inLst}")
-        print()
-
-        i = 1
-        dupCnt = 0
-
-        while i < len(inLst):
-
-            if inLst[i] == inLst[i-1]:
-                inLst.pop(i)
-
-                dupCnt += 1
-
-            else:
-                i += 1
-
-        print(f"\tOutput List: {inLst}")
-        print(f"\t\tDuplic. num.: {dupCnt}")
-
-        print("\n")
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case\n")
+    #
+    #     inLst = case
+    #
+    #     print(f"\tInput List: {inLst}")
+    #     print()
+    #
+    #     i = 1
+    #     dupCnt = 0
+    #
+    #     while i < len(inLst):
+    #
+    #         if inLst[i] == inLst[i-1]:
+    #             inLst.pop(i)
+    #
+    #             dupCnt += 1
+    #
+    #         else:
+    #             i += 1
+    #
+    #     print(f"\tOutput List: {inLst}")
+    #     print(f"\t\tDuplic. num.: {dupCnt}")
+    #
+    #     print("\n")
 
         # Sol01_ItrSet_Prt(inLst)
