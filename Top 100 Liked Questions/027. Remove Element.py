@@ -58,3 +58,19 @@ https://leetcode.com/problems/remove-element/description/
         0 <= val <= 100
 
 """
+
+
+InputLst = [[[3,2,2,3], 3],
+            [[0,1,2,2,3,0,4,2], 2]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}. Case\n")
+
+    inLst = case[0]
+    val = case[1]
+
+    print(f"\tInput List: {inLst}")
+    print(f"\t\tValue: {val}")
+
+    print("\n")
