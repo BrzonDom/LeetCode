@@ -43,5 +43,11 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tString: {Str}")
     print(f"\tSub-string: {Sub}")
+    print()
+
+    if Sub in Str:
+        print(Str.index(Sub))
+    else:
+        print(-1)
 
     print("\n")
