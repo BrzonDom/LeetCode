@@ -212,8 +212,11 @@ if __name__ == '__main__':
 
     Sol02A_WhlPop_Prt(InputLst)
 
-    # for csCnt, case in enumerate(InputLst):
-    #
-    #     print(f"{csCnt + 1}. Case\n")
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case\n")
+        inLst = case
 
         # Sol01_ItrSet_Prt(inLst)
+
+        Sol02_WhlPop_Prt(inLst)
