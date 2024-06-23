@@ -217,7 +217,7 @@ if __name__ == '__main__':
 
     # Sol01A_ItrSet_Prt(InputLst)
 
-    Sol02A_WhlPop_Prt(InputLst)
+    # Sol02A_WhlPop_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
