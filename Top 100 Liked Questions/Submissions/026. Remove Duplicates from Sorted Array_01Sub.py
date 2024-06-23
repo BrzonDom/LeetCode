@@ -82,6 +82,35 @@ def Sol02_WhlPop_Prt(inLst):
     return outLen
 
 
+def Sol02_WhlPop(inLst):
+
+    orgLen = len(inLst)
+
+    print(f"\tInput List: {inLst}")
+    print(f"\t\tOrg. len.: {orgLen}")
+    print()
+
+    i = 1
+    while i < len(inLst):
+
+        if inLst[i] == inLst[i - 1]:
+            inLst.pop(i)
+
+        else:
+            i += 1
+
+    outLen = len(inLst)
+    dupLen = orgLen - outLen
+
+    print(f"\tOutput List: {inLst}")
+    print(f"\t\tOut  len.: {outLen}")
+    print(f"\t\tDup. len.: {dupLen}")
+
+    print("\n")
+
+    return outLen
+
+
 if __name__ == '__main__':
 
     InputLst = [[1, 1, 2],
