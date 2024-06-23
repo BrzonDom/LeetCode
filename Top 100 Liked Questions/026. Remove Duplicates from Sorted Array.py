@@ -163,35 +163,6 @@ if __name__ == '__main__':
         inLst = case
 
         print(f"\tInput List: {inLst}")
-        print()
-
-        numSet = set()
-        setLst = []
-        dupLst = []
-
-        for num in inLst:
-
-            if num in numSet:
-
-                dupLst.append('_')
-            else:
-                numSet.add(num)
-                setLst.append(num)
-
-        print(f"\t\tUniq. List: {setLst}")
-        print(f"\t\tList Set:   {numSet}")
-        print(f"\t\tDup. List:  {dupLst}")
-        print()
-
-        outLst = list(map(str, setLst)) + dupLst
-
-        print(f"\tOut List: ", end="[")
-        for i, itm in enumerate(outLst):
-            if (i + 1) >= len(outLst):
-
-                print(f"{itm}]")
-            else:
-                print(f"{itm}, ", end="")
 
         print("\n")
 
