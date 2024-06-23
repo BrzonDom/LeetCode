@@ -156,12 +156,12 @@ def Sol02A_WhlPop_Prt(InLst):
         print(f"{csCnt + 1}. Case\n")
 
         inLst = case
-        dupCnt = 0
 
         print(f"\tInput List: {inLst}")
         print()
 
         i = 1
+        dupCnt = 0
 
         while i < len(inLst):
 
@@ -191,12 +191,12 @@ if __name__ == '__main__':
         print(f"{csCnt + 1}. Case\n")
 
         inLst = case
-        dupCnt = 0
 
         print(f"\tInput List: {inLst}")
         print()
 
         i = 1
+        dupCnt = 0
 
         while i < len(inLst):
 
