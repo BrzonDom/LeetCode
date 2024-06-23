@@ -93,9 +93,7 @@ def Sol02_WhlPop(inLst):
         else:
             i += 1
 
-    outLen = len(inLst)
-
-    return outLen
+    return len(inLst)
 
 
 if __name__ == '__main__':
