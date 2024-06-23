@@ -165,14 +165,20 @@ if __name__ == '__main__':
         print(f"\tInput List: {inLst}")
         print()
 
-        lenLst = len(inLst)
+        # lenLst = len(inLst)
 
         i = 1
 
-        while i < lenLst:
-            print(f"\t\t{i}. {inLst[i]}")
+        while i < len(inLst):
 
+            if inLst[i] == inLst[i-1]:
+
+                inLst.pop(i)
+
+            # print(f"\t\t{i}. {inLst[i]}")
             i += 1
+
+        print(f"\tOutput List: {inLst}")
 
         print("\n")
 
