@@ -225,6 +225,7 @@ if __name__ == '__main__':
         print(f"{csCnt + 1}. Case\n")
 
         print(f"\tInput List: {inLst}")
+        print()
 
         slwP = 0
         fstP = 1
@@ -239,6 +240,8 @@ if __name__ == '__main__':
 
                 fstP += 1
                 slwP += 1
+
+        print(f"\tOut List: {inLst}")
 
         print("\n")
 
