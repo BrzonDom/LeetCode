@@ -241,7 +241,7 @@ if __name__ == '__main__':
                 fstP += 1
                 slwP += 1
 
-        print(f"\tOut List: {inLst}")
+        print(f"\tOut List: {inLst[:slwP + 1]}")
 
         print("\n")
 
