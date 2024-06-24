@@ -62,26 +62,28 @@ https://leetcode.com/problems/remove-element/description/
 InputLst = [[[3, 2, 2, 3], 3],
             [[0, 1, 2, 2, 3, 0, 4, 2], 2]]
 
-for csCnt, case in enumerate(InputLst):
+if __name__ == '__main__':
 
-    print(f"{csCnt + 1}. Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    inLst = case[0]
-    val = case[1]
+        print(f"{csCnt + 1}. Case\n")
 
-    print(f"\tInput List: {inLst}")
-    print(f"\t\tValue: {val}")
-    print()
+        inLst = case[0]
+        val = case[1]
 
-    nCnt = 0
-    while nCnt < len(inLst):
+        print(f"\tInput List: {inLst}")
+        print(f"\t\tValue: {val}")
+        print()
 
-        if inLst[nCnt] == val:
-            inLst.pop(nCnt)
+        nCnt = 0
+        while nCnt < len(inLst):
 
-        else:
-            nCnt += 1
+            if inLst[nCnt] == val:
+                inLst.pop(nCnt)
 
-    print(f"\tOutput List: {inLst}")
+            else:
+                nCnt += 1
 
-    print("\n")
+        print(f"\tOutput List: {inLst}")
+
+        print("\n")
