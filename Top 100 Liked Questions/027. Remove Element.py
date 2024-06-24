@@ -144,8 +144,10 @@ def Sol02_WhlIdxPop_Prt(case):
     inLst = case[0]
     val = case[1]
 
+    orgLen = len(inLst)
+
     print(f"\tInput List: {inLst}")
-    print(f"\t\tOrg. len.: {len(inLst)}")
+    print(f"\t\tOrg. len.: {orgLen}")
     print()
     print(f"\tValue: {val}")
     print()
@@ -156,10 +158,14 @@ def Sol02_WhlIdxPop_Prt(case):
 
         inLst.pop(idxVal)
 
+    outLen = len(inLst)
+
     print(f"\tOutput List: {inLst}")
-    print(f"\t\tOut  len.: {len(inLst)}")
+    print(f"\t\tOut  len.: {outLen}")
 
     print("\n")
+
+    return outLen
 
 
 if __name__ == '__main__':
