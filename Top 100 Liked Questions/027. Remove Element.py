@@ -146,28 +146,30 @@ if __name__ == '__main__':
 
     # Sol01A_WhlItrPop_Prt(InputLst)
 
-    for csCnt, case in enumerate(InputLst):
+    Sol02A_WhlIdxPop_Prt(InputLst)
 
-        print(f"{csCnt + 1}. Case\n")
-
-        inLst = case[0]
-        val = case[1]
-
-        print(f"\tInput List: {inLst}")
-        print(f"\t\tOrg. len.: {len(inLst)}")
-        print()
-        print(f"\tValue: {val}")
-        print()
-
-        while val in inLst:
-
-            idxVal = inLst.index(val)
-
-            inLst.pop(idxVal)
-
-        print(f"\tOutput List: {inLst}")
-        print(f"\t\tOut  len.: {len(inLst)}")
-
-        print("\n")
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case\n")
+    #
+    #     inLst = case[0]
+    #     val = case[1]
+    #
+    #     print(f"\tInput List: {inLst}")
+    #     print(f"\t\tOrg. len.: {len(inLst)}")
+    #     print()
+    #     print(f"\tValue: {val}")
+    #     print()
+    #
+    #     while val in inLst:
+    #
+    #         idxVal = inLst.index(val)
+    #
+    #         inLst.pop(idxVal)
+    #
+    #     print(f"\tOutput List: {inLst}")
+    #     print(f"\t\tOut  len.: {len(inLst)}")
+    #
+    #     print("\n")
 
         # Sol01_WhlItrPop_Prt(case)
