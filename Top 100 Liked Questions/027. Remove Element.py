@@ -123,4 +123,12 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_WhlPop_Prt(case)
+        inLst = case[0]
+        val = case[1]
+
+        print(f"\tInput List: {inLst}")
+        print(f"\t\tValue: {val}")
+
+        print("\n")
+
+        # Sol01_WhlPop_Prt(case)
