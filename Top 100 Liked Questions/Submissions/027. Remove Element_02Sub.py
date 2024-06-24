@@ -96,11 +96,11 @@ def Sol02_WhlIdxPop(case):
 
     orgLen = len(inLst)
 
-    print(f"\tInput List: {inLst}")
-    print(f"\t\tOrg. len.: {orgLen}")
-    print()
-    print(f"\tValue: {val}")
-    print()
+    # print(f"\tInput List: {inLst}")
+    # print(f"\t\tOrg. len.: {orgLen}")
+    # print()
+    # print(f"\tValue: {val}")
+    # print()
 
     while val in inLst:
 
@@ -110,10 +110,10 @@ def Sol02_WhlIdxPop(case):
 
     outLen = len(inLst)
 
-    print(f"\tOutput List: {inLst}")
-    print(f"\t\tOut  len.: {outLen}")
-
-    print("\n")
+    # print(f"\tOutput List: {inLst}")
+    # print(f"\t\tOut  len.: {outLen}")
+    #
+    # print("\n")
 
     return outLen
 
