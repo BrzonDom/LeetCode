@@ -90,10 +90,6 @@ def Sol01_WhlPop(case):
     inLst = case[0]
     val = case[1]
 
-    # print(f"\tInput List: {inLst}")
-    # print(f"\t\tValue: {val}")
-    # print()
-
     nCnt = 0
     while nCnt < len(inLst):
 
@@ -102,10 +98,6 @@ def Sol01_WhlPop(case):
 
         else:
             nCnt += 1
-
-    # print(f"\tOutput List: {inLst}")
-    #
-    # print("\n")
 
     return nCnt
 
