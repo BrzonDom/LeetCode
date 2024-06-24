@@ -128,12 +128,15 @@ if __name__ == '__main__':
 
         print(f"\tInput List: {inLst}")
         print(f"\t\tValue: {val}")
+        print()
 
         while val in inLst:
 
             idxVal = inLst.index(val)
 
             inLst.pop(idxVal)
+
+        print(f"\tOutput List: {inLst}")
 
         print("\n")
 
