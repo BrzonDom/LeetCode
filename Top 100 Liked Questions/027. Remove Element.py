@@ -97,23 +97,3 @@ if __name__ == '__main__':
     # for csCnt, case in enumerate(InputLst):
     #
     #     print(f"{csCnt + 1}. Case\n")
-    #
-    #     inLst = case[0]
-    #     val = case[1]
-    #
-    #     print(f"\tInput List: {inLst}")
-    #     print(f"\t\tValue: {val}")
-    #     print()
-    #
-    #     nCnt = 0
-    #     while nCnt < len(inLst):
-    #
-    #         if inLst[nCnt] == val:
-    #             inLst.pop(nCnt)
-    #
-    #         else:
-    #             nCnt += 1
-    #
-    #     print(f"\tOutput List: {inLst}")
-    #
-    #     print("\n")
