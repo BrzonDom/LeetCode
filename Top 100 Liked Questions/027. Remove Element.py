@@ -109,6 +109,8 @@ def Sol01_WhlPop_Prt(case):
 
     print("\n")
 
+    return nCnt
+
 
 if __name__ == '__main__':
 
