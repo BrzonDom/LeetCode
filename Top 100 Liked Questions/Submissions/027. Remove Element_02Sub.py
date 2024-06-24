@@ -89,6 +89,35 @@ def Sol02_WhlIdxPop_Prt(case):
     return outLen
 
 
+def Sol02_WhlIdxPop(case):
+
+    inLst = case[0]
+    val = case[1]
+
+    orgLen = len(inLst)
+
+    print(f"\tInput List: {inLst}")
+    print(f"\t\tOrg. len.: {orgLen}")
+    print()
+    print(f"\tValue: {val}")
+    print()
+
+    while val in inLst:
+
+        idxVal = inLst.index(val)
+
+        inLst.pop(idxVal)
+
+    outLen = len(inLst)
+
+    print(f"\tOutput List: {inLst}")
+    print(f"\t\tOut  len.: {outLen}")
+
+    print("\n")
+
+    return outLen
+
+
 if __name__ == '__main__':
 
     InputLst = [[[3, 2, 2, 3], 3],
