@@ -62,6 +62,34 @@ https://leetcode.com/problems/remove-element/description/
 InputLst = [[[3, 2, 2, 3], 3],
             [[0, 1, 2, 2, 3, 0, 4, 2], 2]]
 
+
+def Sol01A_WhlPop_Prt(InLst):
+
+    for csCnt, case in enumerate(InLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        inLst = case[0]
+        val = case[1]
+
+        print(f"\tInput List: {inLst}")
+        print(f"\t\tValue: {val}")
+        print()
+
+        nCnt = 0
+        while nCnt < len(inLst):
+
+            if inLst[nCnt] == val:
+                inLst.pop(nCnt)
+
+            else:
+                nCnt += 1
+
+        print(f"\tOutput List: {inLst}")
+
+        print("\n")
+
+
 if __name__ == '__main__':
 
     for csCnt, case in enumerate(InputLst):
