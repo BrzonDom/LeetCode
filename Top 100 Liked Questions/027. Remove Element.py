@@ -82,6 +82,8 @@ for csCnt, case in enumerate(InputLst):
         else:
             nCnt += 1
 
+    print(f"\tOutput List: {inLst}")
+
     # for num in inLst:
     #     print(f"\t\t{nCnt}. {num}")
     #
