@@ -59,9 +59,6 @@ https://leetcode.com/problems/remove-element/description/
 
 """
 
-InputLst = [[[3, 2, 2, 3], 3],
-            [[0, 1, 2, 2, 3, 0, 4, 2], 2]]
-
 
 def Sol01A_WhlPop_Prt(InLst):
 
@@ -91,6 +88,9 @@ def Sol01A_WhlPop_Prt(InLst):
 
 
 if __name__ == '__main__':
+
+    InputLst = [[[3, 2, 2, 3], 3],
+                [[0, 1, 2, 2, 3, 0, 4, 2], 2]]
 
     for csCnt, case in enumerate(InputLst):
 
