@@ -94,17 +94,13 @@ def Sol02_WhlIdxPop(case):
     inLst = case[0]
     val = case[1]
 
-    orgLen = len(inLst)
-
     while val in inLst:
 
         idxVal = inLst.index(val)
 
         inLst.pop(idxVal)
 
-    outLen = len(inLst)
-
-    return outLen
+    return len(inLst)
 
 
 if __name__ == '__main__':
