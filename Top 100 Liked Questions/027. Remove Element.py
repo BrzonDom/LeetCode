@@ -84,13 +84,4 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tOutput List: {inLst}")
 
-    # for num in inLst:
-    #     print(f"\t\t{nCnt}. {num}")
-    #
-    #     if num == val:
-    #         inLst.pop(nCnt)
-    #
-    #     else:
-    #         nCnt += 1
-
     print("\n")
