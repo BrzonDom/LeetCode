@@ -111,4 +111,6 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_WhlPop_Prt(case)
+        # Sol01_WhlPop_Prt(case)
+
+        Sol01_WhlPop(case)
