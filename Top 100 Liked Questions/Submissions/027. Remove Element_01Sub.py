@@ -60,7 +60,7 @@ https://leetcode.com/problems/remove-element/description/
 """
 
 
-def Sol01_WhlPop_Prt(case):
+def Sol01_WhlItrPop_Prt(case):
 
     inLst = case[0]
     val = case[1]
@@ -85,7 +85,7 @@ def Sol01_WhlPop_Prt(case):
     return nCnt
 
 
-def Sol01_WhlPop(case):
+def Sol01_WhlItrPop(case):
 
     inLst = case[0]
     val = case[1]
@@ -111,6 +111,6 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        # Sol01_WhlPop_Prt(case)
+        # Sol01_WhlItrPop_Prt(case)
 
-        Sol01_WhlPop(case)
+        Sol01_WhlItrPop(case)
