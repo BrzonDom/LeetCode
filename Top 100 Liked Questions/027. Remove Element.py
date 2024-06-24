@@ -127,7 +127,9 @@ if __name__ == '__main__':
         val = case[1]
 
         print(f"\tInput List: {inLst}")
-        print(f"\t\tValue: {val}")
+        print(f"\t\tOrg. len.: {len(inLst)}")
+        print()
+        print(f"\tValue: {val}")
         print()
 
         while val in inLst:
@@ -137,6 +139,7 @@ if __name__ == '__main__':
             inLst.pop(idxVal)
 
         print(f"\tOutput List: {inLst}")
+        print(f"\t\tOut  len.: {len(inLst)}")
 
         print("\n")
 
