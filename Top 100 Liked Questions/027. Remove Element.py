@@ -115,8 +115,10 @@ if __name__ == '__main__':
     InputLst = [[[3, 2, 2, 3], 3],
                 [[0, 1, 2, 2, 3, 0, 4, 2], 2]]
 
-    Sol01A_WhlPop_Prt(InputLst)
+    # Sol01A_WhlPop_Prt(InputLst)
 
-    # for csCnt, case in enumerate(InputLst):
-    #
-    #     print(f"{csCnt + 1}. Case\n")
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        Sol01_WhlPop_Prt(case)
