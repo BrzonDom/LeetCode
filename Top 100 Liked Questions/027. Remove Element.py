@@ -87,31 +87,27 @@ def Sol01A_WhlPop_Prt(InLst):
         print("\n")
 
 
-def Sol01A_WhlPop(InLst):
+def Sol01_WhlPop_Prt(case):
 
-    for csCnt, case in enumerate(InLst):
+    inLst = case[0]
+    val = case[1]
 
-        print(f"{csCnt + 1}. Case\n")
+    print(f"\tInput List: {inLst}")
+    print(f"\t\tValue: {val}")
+    print()
 
-        inLst = case[0]
-        val = case[1]
+    nCnt = 0
+    while nCnt < len(inLst):
 
-        print(f"\tInput List: {inLst}")
-        print(f"\t\tValue: {val}")
-        print()
+        if inLst[nCnt] == val:
+            inLst.pop(nCnt)
 
-        nCnt = 0
-        while nCnt < len(inLst):
+        else:
+            nCnt += 1
 
-            if inLst[nCnt] == val:
-                inLst.pop(nCnt)
+    print(f"\tOutput List: {inLst}")
 
-            else:
-                nCnt += 1
-
-        print(f"\tOutput List: {inLst}")
-
-        print("\n")
+    print("\n")
 
 
 if __name__ == '__main__':
