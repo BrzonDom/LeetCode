@@ -60,7 +60,7 @@ https://leetcode.com/problems/remove-element/description/
 """
 
 
-def Sol01A_WhlPop_Prt(InLst):
+def Sol01A_WhlItrPop_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
 
@@ -87,7 +87,7 @@ def Sol01A_WhlPop_Prt(InLst):
         print("\n")
 
 
-def Sol01_WhlPop_Prt(case):
+def Sol01_WhlItrPop_Prt(case):
 
     inLst = case[0]
     val = case[1]
@@ -112,7 +112,7 @@ def Sol01_WhlPop_Prt(case):
     return nCnt
 
 
-def Sol02A_WhlIdx_Prt(InLst):
+def Sol02A_WhlIdxPop_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
 
@@ -144,7 +144,7 @@ if __name__ == '__main__':
     InputLst = [[[3, 2, 2, 3], 3],
                 [[0, 1, 2, 2, 3, 0, 4, 2], 2]]
 
-    # Sol01A_WhlPop_Prt(InputLst)
+    # Sol01A_WhlItrPop_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
@@ -170,4 +170,4 @@ if __name__ == '__main__':
 
         print("\n")
 
-        # Sol01_WhlPop_Prt(case)
+        # Sol01_WhlItrPop_Prt(case)
