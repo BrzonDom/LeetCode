@@ -46,7 +46,7 @@ https://leetcode.com/problems/regular-expression-matching/
 """
 
 
-def regExpMatch_Prt(txt, pat):
+def Sol01_RngItr_Prt(txt, pat):
 
     print("\tStr: ", txt)
     print("\tPat.:", pat)
@@ -117,11 +117,11 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt + 1}. Case\n")
 
-    txt = case[0]
-    pat = case[1]
+    Strng = case[0]
+    Ptrn = case[1]
 
-    print("\tStr: ", txt)
-    print("\tPat.:", pat)
+    print("\tString: ", Strng)
+    print("\tPattern:", Ptrn)
 
     print("\n")
 
