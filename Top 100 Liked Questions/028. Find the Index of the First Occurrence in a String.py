@@ -55,28 +55,24 @@ def Sol01A_InIndx_Prt(InLst):
         print("\n")
 
 
-def Sol01_InIndx_Prt(InLst):
+def Sol01_InIndx_Prt(case):
 
-    for csCnt, case in enumerate(InputLst):
+    Str = case[0]
+    Sub = case[1]
 
-        print(f"{csCnt + 1}. Case\n")
+    print(f"\tString: {Str}")
+    print(f"\tSub-string: {Sub}")
+    print()
 
-        Str = case[0]
-        Sub = case[1]
+    if Sub in Str:
+        print(f"\tSub-string Found")
+        print(f"\tFound at index: {Str.index(Sub)}")
 
-        print(f"\tString: {Str}")
-        print(f"\tSub-string: {Sub}")
-        print()
+    else:
+        print(f"\tSub-string Not Found")
+        # print(-1)
 
-        if Sub in Str:
-            print(f"\tSub-string Found")
-            print(f"\tFound at index: {Str.index(Sub)}")
-
-        else:
-            print(f"\tSub-string Not Found")
-            # print(-1)
-
-        print("\n")
+    print("\n")
 
 
 if __name__ == '__main__':
