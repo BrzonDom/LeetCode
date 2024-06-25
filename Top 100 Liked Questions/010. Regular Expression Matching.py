@@ -115,17 +115,6 @@ Input_strsLst = [["aa", "a"],
 
 strsLst = Input_strsLst
 
-# print("Driver print:\n")
-#
-# for strPat in strsLst:
-#
-#     txt = strPat[0]
-#     pat = strPat[1]
-#
-#     print("\tStr: ", txt)
-#     print("\tPat.:", pat)
-#     print("\n")
-
 print("Driver solution:\n")
 
 for strPat in strsLst:
