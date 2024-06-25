@@ -162,7 +162,7 @@ Input_strsLst = [["aa", "a"],
                  ["mississippi", "mis*is*ip*."],
                  ["aabbb", "aab*"]]
 
-strsLst = Input_strsLst[4:5]
+strsLst = Input_strsLst
 
 print("Driver print:\n")
 
@@ -197,7 +197,6 @@ for strPat in strsLst:
         p = 0
         pDif = 0
         match = True
-
 
         for char in txt:
             # debug_pat = patS[p]
