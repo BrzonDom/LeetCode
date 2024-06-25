@@ -61,22 +61,22 @@ def Sol01_InIndx(case):
     Str = case[0]
     Sub = case[1]
 
-    print(f"\tString: {Str}")
-    print(f"\tSub-string: {Sub}")
-    print()
+    # print(f"\tString: {Str}")
+    # print(f"\tSub-string: {Sub}")
+    # print()
 
     if Sub in Str:
-        print(f"\tSub-string Found")
-        print(f"\tFound at index: {Str.index(Sub)}")
+        # print(f"\tSub-string Found")
+        # print(f"\tFound at index: {Str.index(Sub)}")
 
         subIdx = Str.index(Sub)
 
     else:
-        print(f"\tSub-string Not Found")
+        # print(f"\tSub-string Not Found")
 
         subIdx = -1
 
-    print("\n")
+    # print("\n")
 
     return subIdx
 
