@@ -30,6 +30,31 @@ https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string
 
 """
 
+
+def Sol01A_InIndx_Prt(InLst):
+
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case\n")
+
+        Str = case[0]
+        Sub = case[1]
+
+        print(f"\tString: {Str}")
+        print(f"\tSub-string: {Sub}")
+        print()
+
+        if Sub in Str:
+            print(f"\tSub-string Found")
+            print(f"\tFound at index: {Str.index(Sub)}")
+
+        else:
+            print(f"\tSub-string Not Found")
+            # print(-1)
+
+        print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [["sadbutsad", "sad"],
