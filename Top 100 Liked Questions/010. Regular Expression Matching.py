@@ -122,60 +122,6 @@ for csCnt, case in enumerate(InputLst):
 
     print("\tStr: ", txt)
     print("\tPat.:", pat)
-    print()
 
-    # match = False
-    #
-    # for pS in range(len(pat)):
-    #     # print("\t", pat[pS:])
-    #     if match:
-    #         break
-    #
-    #     patS = pat[pS:]
-    #     p = 0
-    #     pDif = 0
-    #     match = True
-    #
-    #     for char in txt:
-    #         # debug_pat = patS[p]
-    #
-    #         if p >= len(patS):
-    #             match = False
-    #             break
-    #
-    #         if char == patS[p]:
-    #             p += 1
-    #
-    #         elif patS[p] == '.':
-    #             p += 1
-    #
-    #         elif patS[p] == '*':
-    #
-    #             if p-1 >= 0:
-    #
-    #                 if char == patS[p-1]:
-    #                     pDif += 1
-    #
-    #                 elif patS[p-1] == '.':
-    #                     pDif += 1
-    #
-    #                 else:
-    #                     p += pDif + 1
-    #                     pDif = 0
-    #
-    #             else:
-    #                 match = False
-    #                 break
-    #
-    #         else:
-    #             match = False
-    #             break
-    #
-    # if match:
-    #     print("\t\tStrings DO match")
-    #     print("\t\t\tUsing pattern:", patS)
-    #     print("\n")
-    #
-    # else:
-    #     print("\t\tStrings DON'T match")
-    #     print("\n")
+    print("\n")
+
