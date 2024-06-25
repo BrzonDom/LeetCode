@@ -106,22 +106,24 @@ def Sol01_RngItr_Prt(txt, pat):
         print()
 
 
-InputLst = [["aa", "a"],
-            ["aa", "a*"],
-            ["ab", ".*"],
-            ["aab", "c*a*b"],
-            ["mississippi", "mis*is*ip*."],
-            ["aabbb", "aab*"]]
+if __name__ == '__main__':
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [["aa", "a"],
+                ["aa", "a*"],
+                ["ab", ".*"],
+                ["aab", "c*a*b"],
+                ["mississippi", "mis*is*ip*."],
+                ["aabbb", "aab*"]]
 
-    print(f"{csCnt + 1}. Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Strng = case[0]
-    Ptrn = case[1]
+        print(f"{csCnt + 1}. Case\n")
 
-    print("\tString: ", Strng)
-    print("\tPattern:", Ptrn)
+        Strng = case[0]
+        Ptrn = case[1]
 
-    print("\n")
+        print("\tString: ", Strng)
+        print("\tPattern:", Ptrn)
+
+        print("\n")
 
