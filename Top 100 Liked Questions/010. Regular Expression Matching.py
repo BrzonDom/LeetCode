@@ -115,7 +115,7 @@ InputLst = [["aa", "a"],
 
 for csCnt, case in enumerate(InputLst):
 
-    print("Driver solution:\n")
+    print(f"{csCnt + 1}. Case\n")
 
     txt = case[0]
     pat = case[1]
