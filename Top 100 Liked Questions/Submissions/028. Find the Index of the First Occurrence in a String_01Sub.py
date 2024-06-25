@@ -56,6 +56,31 @@ def Sol01_InIndx_Prt(case):
     return subIdx
 
 
+def Sol01_InIndx(case):
+
+    Str = case[0]
+    Sub = case[1]
+
+    print(f"\tString: {Str}")
+    print(f"\tSub-string: {Sub}")
+    print()
+
+    if Sub in Str:
+        print(f"\tSub-string Found")
+        print(f"\tFound at index: {Str.index(Sub)}")
+
+        subIdx = Str.index(Sub)
+
+    else:
+        print(f"\tSub-string Not Found")
+
+        subIdx = -1
+
+    print("\n")
+
+    return subIdx
+
+
 if __name__ == '__main__':
 
     InputLst = [["sadbutsad", "sad"],
