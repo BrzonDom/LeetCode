@@ -82,10 +82,8 @@ if __name__ == '__main__':
 
     Sol01A_InIndx_Prt(InputLst)
 
-    # for csCnt, case in enumerate(InputLst):
-    #
-    #     print(f"{csCnt + 1}. Case\n")
-    #
-    #     Str = case[0]
-    #     Sub = case[1]
+    for csCnt, case in enumerate(InputLst):
 
+        print(f"{csCnt + 1}. Case\n")
+
+        Sol01_InIndx_Prt(case)
