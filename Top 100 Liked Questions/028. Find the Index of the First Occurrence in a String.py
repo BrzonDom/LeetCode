@@ -50,7 +50,6 @@ def Sol01A_InIndx_Prt(InLst):
 
         else:
             print(f"\tSub-string Not Found")
-            # print(-1)
 
         print("\n")
 
@@ -76,6 +75,8 @@ def Sol01_InIndx_Prt(case):
         subIdx = -1
 
     print("\n")
+
+    return subIdx
 
 
 if __name__ == '__main__':
