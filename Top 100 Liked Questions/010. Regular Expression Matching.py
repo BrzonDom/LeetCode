@@ -106,21 +106,19 @@ def regExpMatch_Prt(txt, pat):
         print()
 
 
-Input_strsLst = [["aa", "a"],
+InputLst = [["aa", "a"],
                  ["aa", "a*"],
                  ["ab", ".*"],
                  ["aab", "c*a*b"],
                  ["mississippi", "mis*is*ip*."],
                  ["aabbb", "aab*"]]
 
-strsLst = Input_strsLst
+for csCnt, case in enumerate(InputLst):
 
-print("Driver solution:\n")
+    print("Driver solution:\n")
 
-for strPat in strsLst:
-
-    txt = strPat[0]
-    pat = strPat[1]
+    txt = case[0]
+    pat = case[1]
 
     print("\tStr: ", txt)
     print("\tPat.:", pat)
