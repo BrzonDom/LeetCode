@@ -60,6 +60,8 @@ if __name__ == '__main__':
     InputLst = [["sadbutsad", "sad"],
                 ["leetcode", "leeto"]]
 
+    Sol01A_InIndx_Prt(InputLst)
+
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}. Case\n")
@@ -67,16 +69,16 @@ if __name__ == '__main__':
         Str = case[0]
         Sub = case[1]
 
-        print(f"\tString: {Str}")
-        print(f"\tSub-string: {Sub}")
-        print()
-
-        if Sub in Str:
-            print(f"\tSub-string Found")
-            print(f"\tFound at index: {Str.index(Sub)}")
-
-        else:
-            print(f"\tSub-string Not Found")
-            # print(-1)
-
-        print("\n")
+        # print(f"\tString: {Str}")
+        # print(f"\tSub-string: {Sub}")
+        # print()
+        #
+        # if Sub in Str:
+        #     print(f"\tSub-string Found")
+        #     print(f"\tFound at index: {Str.index(Sub)}")
+        #
+        # else:
+        #     print(f"\tSub-string Not Found")
+        #     # print(-1)
+        #
+        # print("\n")
