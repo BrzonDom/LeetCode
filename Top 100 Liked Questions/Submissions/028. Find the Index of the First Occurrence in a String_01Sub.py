@@ -86,4 +86,6 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_InIndx_Prt(case)
+        # Sol01_InIndx_Prt(case)
+
+        Sol01_InIndx(case)
