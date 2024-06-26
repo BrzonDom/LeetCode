@@ -275,8 +275,8 @@ if __name__ == '__main__':
                     tmpDiv += div
                     tmpQuo += 1
 
-                rem -= div
-                quo += 1
+                rem -= tmpDiv
+                quo += tmpQuo
 
             if neg:
                 print(f"\tResult: {-quo}")
