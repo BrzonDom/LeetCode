@@ -223,4 +223,12 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_WhlAdd_Prt(case)
+        # Sol01_WhlAdd_Prt(case)
+
+        num = case[0]
+        div = case[1]
+
+        print(f"\tDividend: {num}")
+        print(f"\tDivisor:  {div}")
+
+        print("\n")
