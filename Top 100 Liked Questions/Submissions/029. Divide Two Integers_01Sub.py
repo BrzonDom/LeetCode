@@ -174,9 +174,11 @@ def Sol01_WhlAdd(case):
 
         if neg:
             res = -quo
+            return res
 
         else:
             res = quo
+            return res
 
         if 2 * rem >= div:
 
