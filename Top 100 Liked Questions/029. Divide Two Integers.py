@@ -211,7 +211,7 @@ def Sol01_WhlAdd_Prt(case):
 
 def Sol02A_WhlWhlDbl_Prt(InLst):
 
-    for csCnt, case in enumerate(InputLst):
+    for csCnt, case in enumerate(InLst):
 
         print(f"{csCnt + 1}. Case\n")
 
@@ -293,8 +293,8 @@ if __name__ == '__main__':
 
     # Sol01A_WhlAdd_Prt(InputLst)
 
-    for csCnt, case in enumerate(InputLst):
-
-        print(f"{csCnt + 1}. Case\n")
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case\n")
 
         # Sol01_WhlAdd_Prt(case)
