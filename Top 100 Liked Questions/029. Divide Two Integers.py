@@ -51,6 +51,7 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tDividend: {num}")
     print(f"\tDivisor:  {div}")
+    print()
 
     if (num * div) > 0:
         pol = 1
@@ -60,5 +61,7 @@ for csCnt, case in enumerate(InputLst):
 
     else:
         pol = 0
+
+    print(f"\t\tPolarity: {pol}")
 
     print("\n")
