@@ -212,7 +212,10 @@ def Sol01_WhlAdd_Prt(case):
 if __name__ == '__main__':
 
     InputLst = [[10, 3],
-                [7, -3]]
+                [7, -3],
+                [-17, 3],
+                [0, 5],
+                [-8, -2]]
 
     # Sol01A_WhlAdd_Prt(InputLst)
 
