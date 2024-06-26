@@ -270,10 +270,10 @@ if __name__ == '__main__':
                 tmpDiv = div
                 tmpQuo = 1
 
-                while rem >= (tmpDiv + div):
+                while rem >= (tmpDiv + tmpDiv):
 
-                    tmpDiv += div
-                    tmpQuo += 1
+                    tmpDiv += tmpDiv
+                    tmpQuo += tmpQuo
 
                 rem -= tmpDiv
                 quo += tmpQuo
