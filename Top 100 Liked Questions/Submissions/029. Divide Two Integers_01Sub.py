@@ -122,10 +122,7 @@ def Sol01_WhlAdd_Prt(case):
     print("\n")
 
 
-def Sol01_WhlAdd(case):
-
-    num = case[0]
-    div = case[1]
+def Sol01_WhlAdd(num, div):
 
     if num:
         if num < 0 and div < 0:
@@ -173,4 +170,6 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_WhlAdd_Prt(case)
+        # Sol01_WhlAdd_Prt(case)
+
+        Sol01_WhlAdd(case[0], case[1])
