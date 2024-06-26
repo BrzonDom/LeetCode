@@ -97,19 +97,19 @@ for csCnt, case in enumerate(InputLst):
         if 2 * rem >= div:
 
             if pol == 1:
-                res = quo + 1
+                rnd = quo + 1
 
             elif pol == -1:
-                res = -(quo + 1)
+                rnd = -(quo + 1)
 
         else:
             if pol == 1:
-                res = quo
+                rnd = quo
 
             elif pol == -1:
-                res = -quo
+                rnd = -quo
 
-        print(f"\tResult: {res}")
+        print(f"\tRounded: {rnd}")
 
     else:
         print(f"\t\tDividend is 0")
