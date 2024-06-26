@@ -56,12 +56,16 @@ for csCnt, case in enumerate(InputLst):
     if (num * div) > 0:
         pol = 1
 
+        print(f"\t\tPolarity:  1 ~ Positive")
+
     elif (num * div) < 0:
         pol = -1
+
+        print(f"\t\tPolarity: -1 ~ Negative")
 
     else:
         pol = 0
 
-    print(f"\t\tPolarity: {pol}")
+        print(f"\t\tPolarity:  0 ~ Zero")
 
     print("\n")
