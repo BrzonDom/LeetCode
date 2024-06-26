@@ -54,12 +54,7 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     if num:
-        if num > 0 and div > 0:
-            neg = False
-
-            print(f"\t\tPolarity:  1 ~ Positive")
-
-        elif num < 0 and div < 0:
+        if num < 0 and div < 0:
             neg = False
 
             num = abs(num)
@@ -80,6 +75,11 @@ for csCnt, case in enumerate(InputLst):
             num = abs(num)
 
             print(f"\t\tPolarity: -1 ~ Negative")
+
+        else:
+            neg = False
+
+            print(f"\t\tPolarity:  1 ~ Positive")
         print()
 
         rem = num
