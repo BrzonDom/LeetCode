@@ -232,7 +232,6 @@ if __name__ == '__main__':
         print(f"\tDivisor:  {div}")
 
         if num:
-
             if num > 0 and div > 0:
                 neg = False
 
@@ -259,5 +258,12 @@ if __name__ == '__main__':
                 num = abs(num)
 
                 print(f"\t\tPolarity: -1 ~ Negative")
+
+        else:
+
+            print(f"\t\tDividend is 0")
+            print()
+
+            print(f"\tResult: 0")
 
         print("\n")
