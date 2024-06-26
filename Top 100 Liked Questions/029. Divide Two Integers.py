@@ -232,12 +232,7 @@ if __name__ == '__main__':
         print(f"\tDivisor:  {div}")
 
         if num:
-            if num > 0 and div > 0:
-                neg = False
-
-                print(f"\t\tPolarity:  1 ~ Positive")
-
-            elif num < 0 and div < 0:
+            if num < 0 and div < 0:
                 neg = False
 
                 num = abs(num)
@@ -258,6 +253,11 @@ if __name__ == '__main__':
                 num = abs(num)
 
                 print(f"\t\tPolarity: -1 ~ Negative")
+
+            else:
+                neg = False
+
+                print(f"\t\tPolarity:  1 ~ Positive")
 
         else:
 
