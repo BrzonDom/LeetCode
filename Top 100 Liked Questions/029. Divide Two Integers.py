@@ -126,91 +126,87 @@ def Sol01A_WhlAdd_Prt(InLst):
         print("\n")
 
 
-def Sol01_WhlAdd_Prt(InLst):
+def Sol01_WhlAdd_Prt(case):
 
-    for csCnt, case in enumerate(InLst):
+    num = case[0]
+    div = case[1]
 
-        print(f"{csCnt + 1}. Case\n")
+    print(f"\tDividend: {num}")
+    print(f"\tDivisor:  {div}")
+    print()
 
-        num = case[0]
-        div = case[1]
+    if num:
+        if num < 0 and div < 0:
+            neg = False
 
-        print(f"\tDividend: {num}")
-        print(f"\tDivisor:  {div}")
-        print()
+            num = abs(num)
+            div = abs(div)
 
-        if num:
-            if num < 0 and div < 0:
-                neg = False
+            print(f"\t\tPolarity:  1 ~ Positive")
 
-                num = abs(num)
-                div = abs(div)
+        elif num > 0 and div < 0:
+            neg = True
 
-                print(f"\t\tPolarity:  1 ~ Positive")
+            div = abs(div)
 
-            elif num > 0 and div < 0:
-                neg = True
+            print(f"\t\tPolarity: -1 ~ Negative")
 
-                div = abs(div)
+        elif num < 0 and div > 0:
+            neg = True
 
-                print(f"\t\tPolarity: -1 ~ Negative")
+            num = abs(num)
 
-            elif num < 0 and div > 0:
-                neg = True
-
-                num = abs(num)
-
-                print(f"\t\tPolarity: -1 ~ Negative")
-
-            else:
-                neg = False
-
-                print(f"\t\tPolarity:  1 ~ Positive")
-            print()
-
-            rem = num
-            quo = 0
-
-            while div <= rem:
-
-                rem -= div
-                quo += 1
-
-            print(f"\t\tQuotient:  {quo}")
-            print(f"\t\tRemainder: {rem}")
-            print()
-
-            if neg:
-                res = -quo
-
-            else:
-                res = quo
-
-            if 2 * rem >= div:
-
-                if neg:
-                    rnd = -(quo + 1)
-
-                else:
-                    rnd = quo + 1
-
-            else:
-                if neg:
-                    rnd = -quo
-
-                else:
-                    rnd = quo
-
-            print(f"\tResult: {res}")
-            print(f"\t\tRounded: {rnd}")
+            print(f"\t\tPolarity: -1 ~ Negative")
 
         else:
-            print(f"\t\tDividend is 0")
-            print()
+            neg = False
 
-            print(f"\tResult: 0")
+            print(f"\t\tPolarity:  1 ~ Positive")
+        print()
 
-        print("\n")
+        rem = num
+        quo = 0
+
+        while div <= rem:
+
+            rem -= div
+            quo += 1
+
+        print(f"\t\tQuotient:  {quo}")
+        print(f"\t\tRemainder: {rem}")
+        print()
+
+        if neg:
+            res = -quo
+
+        else:
+            res = quo
+
+        if 2 * rem >= div:
+
+            if neg:
+                rnd = -(quo + 1)
+
+            else:
+                rnd = quo + 1
+
+        else:
+            if neg:
+                rnd = -quo
+
+            else:
+                rnd = quo
+
+        print(f"\tResult: {res}")
+        print(f"\t\tRounded: {rnd}")
+
+    else:
+        print(f"\t\tDividend is 0")
+        print()
+
+        print(f"\tResult: 0")
+
+    print("\n")
 
 
 if __name__ == '__main__':
