@@ -180,32 +180,6 @@ def Sol01_WhlAdd(case):
             res = quo
             return res
 
-        if 2 * rem >= div:
-
-            if neg:
-                rnd = -(quo + 1)
-
-            else:
-                rnd = quo + 1
-
-        else:
-            if neg:
-                rnd = -quo
-
-            else:
-                rnd = quo
-
-        print(f"\tResult: {res}")
-        print(f"\t\tRounded: {rnd}")
-
-    else:
-        print(f"\t\tDividend is 0")
-        print()
-
-        print(f"\tResult: 0")
-
-    print("\n")
-
 
 if __name__ == '__main__':
 
