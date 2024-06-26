@@ -67,5 +67,8 @@ for csCnt, case in enumerate(InputLst):
 
     else:
         print(f"\tDividend is 0")
+        print()
+
+        print(f"\tOutput: 0")
 
     print("\n")
