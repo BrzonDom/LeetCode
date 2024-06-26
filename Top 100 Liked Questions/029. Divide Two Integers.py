@@ -37,3 +37,19 @@ https://leetcode.com/problems/divide-two-integers/
         divisor != 0
 
 """
+
+
+InputLst = [[10, 3],
+            [7, -3]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}. Case\n")
+
+    num = case[0]
+    div = case[1]
+
+    print(f"\tDividend: {num}")
+    print(f"\tDivisor:  {div}")
+
+    print("\n")
