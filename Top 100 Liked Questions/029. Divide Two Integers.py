@@ -230,6 +230,7 @@ if __name__ == '__main__':
 
         print(f"\tDividend: {num}")
         print(f"\tDivisor:  {div}")
+        print()
 
         if num:
             if num < 0 and div < 0:
