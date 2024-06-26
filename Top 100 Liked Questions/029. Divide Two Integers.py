@@ -58,13 +58,12 @@ for csCnt, case in enumerate(InputLst):
             pol = 1
 
             print(f"\t\tPolarity:  1 ~ Positive")
-            print()
 
         elif (num * div) < 0:
             pol = -1
 
             print(f"\t\tPolarity: -1 ~ Negative")
-            print()
+        print()
 
         rem = num
         quo = 0
