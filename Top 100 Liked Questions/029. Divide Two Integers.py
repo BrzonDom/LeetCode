@@ -259,6 +259,14 @@ if __name__ == '__main__':
 
                 print(f"\t\tPolarity:  1 ~ Positive")
 
+            sumDiv = 0
+            quo = 0
+
+            while num >= sumDiv + div:
+
+                sumDiv += div
+                quo += 1
+
         else:
 
             print(f"\t\tDividend is 0")
