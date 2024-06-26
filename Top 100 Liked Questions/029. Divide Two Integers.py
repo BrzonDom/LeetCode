@@ -94,23 +94,25 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\tRemainder: {rem}")
         print()
 
+        if pol == 1:
+            res = quo
+
+        else:
+            res = -quo
+
         if 2 * rem >= div:
 
             if pol == 1:
-                res = quo
                 rnd = quo + 1
 
             elif pol == -1:
-                res = -quo
                 rnd = -(quo + 1)
 
         else:
             if pol == 1:
-                res = quo
                 rnd = quo
 
             elif pol == -1:
-                res = -quo
                 rnd = -quo
 
         print(f"\tResult: {res}")
