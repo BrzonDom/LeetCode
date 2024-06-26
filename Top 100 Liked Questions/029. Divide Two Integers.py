@@ -55,12 +55,12 @@ for csCnt, case in enumerate(InputLst):
 
     if num:
         if num > 0 and div > 0:
-            pol = 1
+            neg = False
 
             print(f"\t\tPolarity:  1 ~ Positive")
 
         elif num < 0 and div < 0:
-            pol = 1
+            neg = False
 
             num = abs(num)
             div = abs(div)
@@ -68,14 +68,14 @@ for csCnt, case in enumerate(InputLst):
             print(f"\t\tPolarity:  1 ~ Positive")
 
         elif num > 0 and div < 0:
-            pol = -1
+            neg = True
 
             div = abs(div)
 
             print(f"\t\tPolarity: -1 ~ Negative")
 
         elif num < 0 and div > 0:
-            pol = -1
+            neg = True
 
             num = abs(num)
 
@@ -94,26 +94,26 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\tRemainder: {rem}")
         print()
 
-        if pol == 1:
-            res = quo
+        if neg:
+            res = -quo
 
         else:
-            res = -quo
+            res = quo
 
         if 2 * rem >= div:
 
-            if pol == 1:
-                rnd = quo + 1
-
-            elif pol == -1:
+            if neg:
                 rnd = -(quo + 1)
 
-        else:
-            if pol == 1:
-                rnd = quo
+            else:
+                rnd = quo + 1
 
-            elif pol == -1:
+        else:
+            if neg:
                 rnd = -quo
+
+            else:
+                rnd = quo
 
         print(f"\tResult: {res}")
         print(f"\t\tRounded: {rnd}")
