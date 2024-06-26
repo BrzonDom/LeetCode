@@ -95,10 +95,10 @@ for csCnt, case in enumerate(InputLst):
         print()
 
         if 2 * rem >= div:
-            res = quo + 1
+            res = pol * (quo + 1)
 
         else:
-            res = quo
+            res = pol * quo
 
         print(f"\tResult: {res}")
 
