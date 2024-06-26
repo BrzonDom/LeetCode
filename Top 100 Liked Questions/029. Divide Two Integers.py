@@ -39,89 +39,91 @@ https://leetcode.com/problems/divide-two-integers/
 """
 
 
-InputLst = [[10, 3],
-            [7, -3]]
+if __name__ == '__main__':
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[10, 3],
+                [7, -3]]
 
-    print(f"{csCnt + 1}. Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    num = case[0]
-    div = case[1]
+        print(f"{csCnt + 1}. Case\n")
 
-    print(f"\tDividend: {num}")
-    print(f"\tDivisor:  {div}")
-    print()
+        num = case[0]
+        div = case[1]
 
-    if num:
-        if num < 0 and div < 0:
-            neg = False
-
-            num = abs(num)
-            div = abs(div)
-
-            print(f"\t\tPolarity:  1 ~ Positive")
-
-        elif num > 0 and div < 0:
-            neg = True
-
-            div = abs(div)
-
-            print(f"\t\tPolarity: -1 ~ Negative")
-
-        elif num < 0 and div > 0:
-            neg = True
-
-            num = abs(num)
-
-            print(f"\t\tPolarity: -1 ~ Negative")
-
-        else:
-            neg = False
-
-            print(f"\t\tPolarity:  1 ~ Positive")
+        print(f"\tDividend: {num}")
+        print(f"\tDivisor:  {div}")
         print()
 
-        rem = num
-        quo = 0
+        if num:
+            if num < 0 and div < 0:
+                neg = False
 
-        while div <= rem:
+                num = abs(num)
+                div = abs(div)
 
-            rem -= div
-            quo += 1
+                print(f"\t\tPolarity:  1 ~ Positive")
 
-        print(f"\t\tQuotient:  {quo}")
-        print(f"\t\tRemainder: {rem}")
-        print()
+            elif num > 0 and div < 0:
+                neg = True
 
-        if neg:
-            res = -quo
+                div = abs(div)
 
-        else:
-            res = quo
+                print(f"\t\tPolarity: -1 ~ Negative")
 
-        if 2 * rem >= div:
+            elif num < 0 and div > 0:
+                neg = True
 
-            if neg:
-                rnd = -(quo + 1)
+                num = abs(num)
+
+                print(f"\t\tPolarity: -1 ~ Negative")
 
             else:
-                rnd = quo + 1
+                neg = False
 
-        else:
+                print(f"\t\tPolarity:  1 ~ Positive")
+            print()
+
+            rem = num
+            quo = 0
+
+            while div <= rem:
+
+                rem -= div
+                quo += 1
+
+            print(f"\t\tQuotient:  {quo}")
+            print(f"\t\tRemainder: {rem}")
+            print()
+
             if neg:
-                rnd = -quo
+                res = -quo
 
             else:
-                rnd = quo
+                res = quo
 
-        print(f"\tResult: {res}")
-        print(f"\t\tRounded: {rnd}")
+            if 2 * rem >= div:
 
-    else:
-        print(f"\t\tDividend is 0")
-        print()
+                if neg:
+                    rnd = -(quo + 1)
 
-        print(f"\tResult: 0")
+                else:
+                    rnd = quo + 1
 
-    print("\n")
+            else:
+                if neg:
+                    rnd = -quo
+
+                else:
+                    rnd = quo
+
+            print(f"\tResult: {res}")
+            print(f"\t\tRounded: {rnd}")
+
+        else:
+            print(f"\t\tDividend is 0")
+            print()
+
+            print(f"\tResult: 0")
+
+        print("\n")
