@@ -90,8 +90,8 @@ for csCnt, case in enumerate(InputLst):
             rem -= div
             quo += 1
 
-        print(f"\tQuotient:  {quo}")
-        print(f"\tRemainder: {rem}")
+        print(f"\t\tQuotient:  {quo}")
+        print(f"\t\tRemainder: {rem}")
         print()
 
         if 2 * rem >= div:
@@ -103,7 +103,7 @@ for csCnt, case in enumerate(InputLst):
         print(f"\tResult: {res}")
 
     else:
-        print(f"\tDividend is 0")
+        print(f"\t\tDividend is 0")
         print()
 
         print(f"\tResult: 0")
