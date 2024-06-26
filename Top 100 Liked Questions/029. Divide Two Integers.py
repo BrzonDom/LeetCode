@@ -65,4 +65,7 @@ for csCnt, case in enumerate(InputLst):
 
             print(f"\t\tPolarity: -1 ~ Negative")
 
+    else:
+        print(f"\tDividend is 0")
+
     print("\n")
