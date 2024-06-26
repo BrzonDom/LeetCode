@@ -52,4 +52,11 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tDividend: {num}")
     print(f"\tDivisor:  {div}")
 
+    pol = 0
+
+    if (num * div) > 0:
+        pol = 1
+    elif (num * div) < 0:
+        pol = -1
+
     print("\n")
