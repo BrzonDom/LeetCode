@@ -90,7 +90,8 @@ for csCnt, case in enumerate(InputLst):
             rem -= div
             quo += 1
 
-        print(f"\tOutput: {quo}")
+        print(f"\tQuotient:  {quo}")
+        print(f"\tRemainder: {rem}")
 
     else:
         print(f"\tDividend is 0")
