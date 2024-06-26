@@ -268,7 +268,11 @@ if __name__ == '__main__':
                 sumDiv += div
                 quo += 1
 
-            print(f"\tResult: {quo}")
+            if neg:
+                print(f"\tResult: {-quo}")
+
+            else:
+                print(f"\tResult: {quo}")
 
         else:
 
