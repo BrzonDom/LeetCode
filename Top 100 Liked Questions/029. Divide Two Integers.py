@@ -377,6 +377,14 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
+        num = case[0]
+        div = case[1]
+
+        print(f"\tDividend: {num}")
+        print(f"\tDivisor:  {div}")
+
+        print("\n")
+
         # Sol01_WhlAdd_Prt(case)
 
-        Sol02_WhlWhlDbl_Prt(case)
+        # Sol02_WhlWhlDbl_Prt(case)
