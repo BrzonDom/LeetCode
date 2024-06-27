@@ -109,6 +109,76 @@ def Sol02_WhlWhlDbl_Prt(case):
     print("\n")
 
 
+def Sol02_WhlWhlDbl(case):
+
+    num = case[0]
+    div = case[1]
+
+    print(f"\tDividend: {num}")
+    print(f"\tDivisor:  {div}")
+    print()
+
+    if num:
+        if num < 0 and div < 0:
+            neg = False
+
+            num = abs(num)
+            div = abs(div)
+
+            print(f"\t\tPolarity:  1 ~ Positive")
+
+        elif num > 0 and div < 0:
+            neg = True
+
+            div = abs(div)
+
+            print(f"\t\tPolarity: -1 ~ Negative")
+
+        elif num < 0 and div > 0:
+            neg = True
+
+            num = abs(num)
+
+            print(f"\t\tPolarity: -1 ~ Negative")
+
+        else:
+            neg = False
+
+            print(f"\t\tPolarity:  1 ~ Positive")
+        print()
+
+        rem = num
+        quo = 0
+
+        while rem >= div:
+
+            tmpDiv = div
+            tmpQuo = 1
+
+            while rem >= (tmpDiv + tmpDiv):
+
+                tmpDiv += tmpDiv
+                tmpQuo += tmpQuo
+
+            rem -= tmpDiv
+            quo += tmpQuo
+
+        if neg:
+            print(f"\tResult: {-quo}")
+
+        else:
+            print(f"\tResult: {quo}")
+
+    else:
+
+        print(f"\t\tDividend is 0")
+        print()
+
+        print(f"\tResult: 0")
+
+    print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [[10, 3],
