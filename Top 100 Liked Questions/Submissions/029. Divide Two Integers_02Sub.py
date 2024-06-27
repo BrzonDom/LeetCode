@@ -109,10 +109,7 @@ def Sol02_WhlWhlDbl_Prt(case):
     print("\n")
 
 
-def Sol02_WhlWhlDbl(case):
-
-    num = case[0]
-    div = case[1]
+def Sol02_WhlWhlDbl(num, div):
 
     if num:
         if num < 0 and div < 0:
