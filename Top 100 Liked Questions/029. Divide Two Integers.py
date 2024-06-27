@@ -412,6 +412,13 @@ if __name__ == '__main__':
 
                 print(f"\t\tPolarity: -1 ~ Negative")
 
+        else:
+
+            print(f"\t\tDividend is 0")
+            print()
+
+            print(f"\tResult: 0")
+
         print("\n")
 
         # Sol01_WhlAdd_Prt(case)
