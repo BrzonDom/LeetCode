@@ -338,9 +338,13 @@ def Sol02_WhlWhlDbl_Prt(case):
             quo += tmpQuo
 
         if neg:
+            quo = max(-quo, -2147483648)
+
             print(f"\tResult: {-quo}")
 
         else:
+            quo = min(quo, 2147483647)
+
             print(f"\tResult: {quo}")
 
     else:
