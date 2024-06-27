@@ -383,6 +383,25 @@ if __name__ == '__main__':
         print(f"\tDividend: {num}")
         print(f"\tDivisor:  {div}")
 
+        if num > 0 and div > 0:
+            neg = False
+
+        elif num < 0 and div < 0:
+            neg = False
+
+            num = abs(num)
+            div = abs(div)
+
+        elif num > 0 and div < 0:
+            neg = True
+
+            div = abs(div)
+
+        elif num < 0 and div > 0:
+            neg = True
+
+            num = abs(num)
+
         print("\n")
 
         # Sol01_WhlAdd_Prt(case)
