@@ -166,8 +166,12 @@ def Sol02_WhlWhlDbl(case):
         if neg:
             print(f"\tResult: {-quo}")
 
+            return -quo
+
         else:
             print(f"\tResult: {quo}")
+
+            return quo
 
     else:
 
@@ -175,6 +179,8 @@ def Sol02_WhlWhlDbl(case):
         print()
 
         print(f"\tResult: 0")
+
+        return 0
 
     print("\n")
 
