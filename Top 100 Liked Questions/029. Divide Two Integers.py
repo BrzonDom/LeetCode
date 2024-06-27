@@ -385,32 +385,10 @@ if __name__ == '__main__':
 
         if num:
 
-            if num > 0 and div > 0:
-                neg = False
+            neg = (num > 0) ^ (div < 0)
 
-                print(f"\t\tPolarity:  1 ~ Positive")
-
-            elif num < 0 and div < 0:
-                neg = False
-
-                num = abs(num)
-                div = abs(div)
-
-                print(f"\t\tPolarity:  1 ~ Positive")
-
-            elif num > 0 and div < 0:
-                neg = True
-
-                div = abs(div)
-
-                print(f"\t\tPolarity: -1 ~ Negative")
-
-            elif num < 0 and div > 0:
-                neg = True
-
-                num = abs(num)
-
-                print(f"\t\tPolarity: -1 ~ Negative")
+            num = abs(num)
+            div = abs(div)
 
         else:
 
