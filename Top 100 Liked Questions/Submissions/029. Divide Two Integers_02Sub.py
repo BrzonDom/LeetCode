@@ -131,7 +131,6 @@ def Sol02_WhlWhlDbl(num, div):
         else:
             neg = False
 
-
         rem = num
         quo = 0
 
@@ -170,4 +169,6 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol02_WhlWhlDbl_Prt(case)
+        # Sol02_WhlWhlDbl_Prt(case)
+
+        Sol02_WhlWhlDbl(case[0], case[1])
