@@ -182,8 +182,6 @@ def Sol02_WhlWhlDbl(case):
 
         return 0
 
-    print("\n")
-
 
 if __name__ == '__main__':
 
