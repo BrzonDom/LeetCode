@@ -268,9 +268,13 @@ def Sol02A_WhlWhlDbl_Prt(InLst):
                 quo += tmpQuo
 
             if neg:
+                quo = max(-quo, -2147483648)
+
                 print(f"\tResult: {-quo}")
 
             else:
+                quo = min(quo, 2147483647)
+
                 print(f"\tResult: {quo}")
 
         else:
