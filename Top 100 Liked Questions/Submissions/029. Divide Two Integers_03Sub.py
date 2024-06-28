@@ -40,6 +40,7 @@ https://leetcode.com/problems/divide-two-integers/
 
 
 def Sol03_WhlWhlBit_Prt(num, div):
+
     print(f"\tDividend: {num}")
     print(f"\tDivisor:  {div}")
     print()
@@ -98,6 +99,7 @@ if __name__ == '__main__':
                 [-8, -2]]
 
     for csCnt, case in enumerate(InputLst):
+
         print(f"{csCnt + 1}. Case\n")
 
         Sol03_WhlWhlBit_Prt(case[0], case[1])
