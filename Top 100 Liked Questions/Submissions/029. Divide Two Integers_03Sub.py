@@ -115,10 +115,10 @@ def Sol03_WhlWhlBit(num, div):
             quo += tmpQuo
 
         if neg:
-            return -quo
+            return max(-quo, -2147483648)
 
         else:
-            return quo
+            return min(quo, 2147483647)
 
     else:
         return 0
