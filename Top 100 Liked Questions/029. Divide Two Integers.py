@@ -420,10 +420,7 @@ def Sol03A_WhlWhlBit_Prt(InLst):
         print("\n")
 
 
-def Sol03_WhlWhlBit_Prt(case):
-
-    num = case[0]
-    div = case[1]
+def Sol03_WhlWhlBit_Prt(num, div):
 
     print(f"\tDividend: {num}")
     print(f"\tDivisor:  {div}")
