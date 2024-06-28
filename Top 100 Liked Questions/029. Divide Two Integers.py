@@ -420,64 +420,60 @@ def Sol03A_WhlWhlBit_Prt(InLst):
         print("\n")
 
 
-def Sol03_WhlWhlBit_Prt(InLst):
+def Sol03_WhlWhlBit_Prt(case):
 
-    for csCnt, case in enumerate(InLst):
+    num = case[0]
+    div = case[1]
 
-        print(f"{csCnt + 1}. Case\n")
+    print(f"\tDividend: {num}")
+    print(f"\tDivisor:  {div}")
+    print()
 
-        num = case[0]
-        div = case[1]
+    if num:
 
-        print(f"\tDividend: {num}")
-        print(f"\tDivisor:  {div}")
-        print()
+        neg = (num > 0) ^ (div < 0)
 
-        if num:
+        num = abs(num)
+        div = abs(div)
 
-            neg = (num > 0) ^ (div < 0)
-
-            num = abs(num)
-            div = abs(div)
-
-            if neg:
-                print(f"\t\tPolarity: -1 ~ Negative")
-
-            else:
-                print(f"\t\tPolarity:  1 ~ Positive")
-            print()
-
-            rem = num
-            quo = 0
-
-            while rem >= div:
-
-                tmpDiv = div
-                tmpQuo = 1
-
-                while rem >= (tmpDiv << 1):
-
-                    tmpDiv <<= 1
-                    tmpQuo <<= 1
-
-                rem -= tmpDiv
-                quo += tmpQuo
-
-            if neg:
-                print(f"\tResult: {-quo}")
-
-            else:
-                print(f"\tResult: {quo}")
+        if neg:
+            print(f"\t\tPolarity: -1 ~ Negative")
 
         else:
+            print(f"\t\tPolarity:  1 ~ Positive")
+        print()
 
-            print(f"\t\tDividend is 0")
-            print()
+        rem = num
+        quo = 0
 
-            print(f"\tResult: 0")
+        while rem >= div:
 
-        print("\n")
+            tmpDiv = div
+            tmpQuo = 1
 
+            while rem >= (tmpDiv << 1):
+
+                tmpDiv <<= 1
+                tmpQuo <<= 1
+
+            rem -= tmpDiv
+            quo += tmpQuo
+
+        if neg:
+            print(f"\tResult: {-quo}")
+
+        else:
+            print(f"\tResult: {quo}")
+
+    else:
+
+        print(f"\t\tDividend is 0")
+        print()
+
+        print(f"\tResult: 0")
+
+    print("\n")
+    
 
 if __name__ == '__main__':
 
