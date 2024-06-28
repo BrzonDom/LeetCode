@@ -92,23 +92,12 @@ def Sol03_WhlWhlBit_Prt(num, div):
 
 def Sol03_WhlWhlBit(num, div):
 
-    # print(f"\tDividend: {num}")
-    # print(f"\tDivisor:  {div}")
-    # print()
-
     if num:
 
         neg = (num > 0) ^ (div < 0)
 
         num = abs(num)
         div = abs(div)
-
-        # if neg:
-        #     print(f"\t\tPolarity: -1 ~ Negative")
-        #
-        # else:
-        #     print(f"\t\tPolarity:  1 ~ Positive")
-        # print()
 
         rem = num
         quo = 0
@@ -126,22 +115,12 @@ def Sol03_WhlWhlBit(num, div):
             quo += tmpQuo
 
         if neg:
-            # print(f"\tResult: {-quo}")
-
             return -quo
 
         else:
-            # print(f"\tResult: {quo}")
-
             return quo
 
     else:
-
-        # print(f"\t\tDividend is 0")
-        # print()
-        #
-        # print(f"\tResult: 0")
-
         return 0
 
 
