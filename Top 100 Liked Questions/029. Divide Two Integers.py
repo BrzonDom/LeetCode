@@ -484,65 +484,13 @@ if __name__ == '__main__':
 
     # Sol02A_WhlWhlDbl_Prt(InputLst)
 
-    Sol03A_WhlWhlBit_Prt(InputLst)
+    # Sol03A_WhlWhlBit_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}. Case\n")
 
         Sol03_WhlWhlBit_Prt(case[0], case[1])
-
-        # num = case[0]
-        # div = case[1]
-        #
-        # print(f"\tDividend: {num}")
-        # print(f"\tDivisor:  {div}")
-        # print()
-        #
-        # if num:
-        #
-        #     neg = (num > 0) ^ (div < 0)
-        #
-        #     num = abs(num)
-        #     div = abs(div)
-        #
-        #     if neg:
-        #         print(f"\t\tPolarity: -1 ~ Negative")
-        #
-        #     else:
-        #         print(f"\t\tPolarity:  1 ~ Positive")
-        #     print()
-        #
-        #     rem = num
-        #     quo = 0
-        #
-        #     while rem >= div:
-        #
-        #         tmpDiv = div
-        #         tmpQuo = 1
-        #
-        #         while rem >= (tmpDiv << 1):
-        #
-        #             tmpDiv <<= 1
-        #             tmpQuo <<= 1
-        #
-        #         rem -= tmpDiv
-        #         quo += tmpQuo
-        #
-        #     if neg:
-        #         print(f"\tResult: {-quo}")
-        #
-        #     else:
-        #         print(f"\tResult: {quo}")
-        #
-        # else:
-        #
-        #     print(f"\t\tDividend is 0")
-        #     print()
-        #
-        #     print(f"\tResult: 0")
-        #
-        # print("\n")
 
         # Sol01_WhlAdd_Prt(case)
 
