@@ -284,10 +284,7 @@ def Sol02A_WhlWhlDbl_Prt(InLst):
         print("\n")
 
 
-def Sol02_WhlWhlDbl_Prt(case):
-
-    num = case[0]
-    div = case[1]
+def Sol02_WhlWhlDbl_Prt(num, div):
 
     print(f"\tDividend: {num}")
     print(f"\tDivisor:  {div}")
@@ -487,8 +484,8 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_WhlAdd_Prt(case[0], case[1])
+        # Sol01_WhlAdd_Prt(case[0], case[1])
 
-        # Sol02_WhlWhlDbl_Prt(case)
+        Sol02_WhlWhlDbl_Prt(case[0], case[1])
 
         # Sol03_WhlWhlBit_Prt(case[0], case[1])
