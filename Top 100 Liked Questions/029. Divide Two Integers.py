@@ -402,6 +402,14 @@ if __name__ == '__main__':
 
             while rem >= div:
 
+                tmpDiv = div
+                tmpQuo = 1
+
+                while rem >= (tmpDiv << 1):
+
+                    tmpDiv <<= 1
+                    tmpQuo <<= 1
+
                 rem -= div
                 quo += 1
 
