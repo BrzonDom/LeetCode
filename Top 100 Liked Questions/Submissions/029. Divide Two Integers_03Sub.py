@@ -144,8 +144,6 @@ def Sol03_WhlWhlBit(num, div):
 
         return 0
 
-    print("\n")
-
 
 if __name__ == '__main__':
 
