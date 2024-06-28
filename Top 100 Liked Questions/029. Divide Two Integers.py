@@ -372,6 +372,7 @@ def Sol03_WhlWhlBit_Prt(InLst):
 
         print(f"\tDividend: {num}")
         print(f"\tDivisor:  {div}")
+        print()
 
         if num:
 
@@ -440,6 +441,7 @@ if __name__ == '__main__':
 
         print(f"\tDividend: {num}")
         print(f"\tDivisor:  {div}")
+        print()
 
         if num:
 
