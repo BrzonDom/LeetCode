@@ -490,57 +490,59 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        num = case[0]
-        div = case[1]
+        Sol03_WhlWhlBit_Prt(case[0], case[1])
 
-        print(f"\tDividend: {num}")
-        print(f"\tDivisor:  {div}")
-        print()
-
-        if num:
-
-            neg = (num > 0) ^ (div < 0)
-
-            num = abs(num)
-            div = abs(div)
-
-            if neg:
-                print(f"\t\tPolarity: -1 ~ Negative")
-
-            else:
-                print(f"\t\tPolarity:  1 ~ Positive")
-            print()
-
-            rem = num
-            quo = 0
-
-            while rem >= div:
-
-                tmpDiv = div
-                tmpQuo = 1
-
-                while rem >= (tmpDiv << 1):
-
-                    tmpDiv <<= 1
-                    tmpQuo <<= 1
-
-                rem -= tmpDiv
-                quo += tmpQuo
-
-            if neg:
-                print(f"\tResult: {-quo}")
-
-            else:
-                print(f"\tResult: {quo}")
-
-        else:
-
-            print(f"\t\tDividend is 0")
-            print()
-
-            print(f"\tResult: 0")
-
-        print("\n")
+        # num = case[0]
+        # div = case[1]
+        #
+        # print(f"\tDividend: {num}")
+        # print(f"\tDivisor:  {div}")
+        # print()
+        #
+        # if num:
+        #
+        #     neg = (num > 0) ^ (div < 0)
+        #
+        #     num = abs(num)
+        #     div = abs(div)
+        #
+        #     if neg:
+        #         print(f"\t\tPolarity: -1 ~ Negative")
+        #
+        #     else:
+        #         print(f"\t\tPolarity:  1 ~ Positive")
+        #     print()
+        #
+        #     rem = num
+        #     quo = 0
+        #
+        #     while rem >= div:
+        #
+        #         tmpDiv = div
+        #         tmpQuo = 1
+        #
+        #         while rem >= (tmpDiv << 1):
+        #
+        #             tmpDiv <<= 1
+        #             tmpQuo <<= 1
+        #
+        #         rem -= tmpDiv
+        #         quo += tmpQuo
+        #
+        #     if neg:
+        #         print(f"\tResult: {-quo}")
+        #
+        #     else:
+        #         print(f"\tResult: {quo}")
+        #
+        # else:
+        #
+        #     print(f"\t\tDividend is 0")
+        #     print()
+        #
+        #     print(f"\tResult: 0")
+        #
+        # print("\n")
 
         # Sol01_WhlAdd_Prt(case)
 
