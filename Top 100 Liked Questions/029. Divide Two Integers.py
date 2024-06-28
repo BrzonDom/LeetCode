@@ -361,7 +361,7 @@ def Sol02_WhlWhlDbl_Prt(case):
     print("\n")
 
 
-def Sol03_WhlWhlBit_Prt(InLst):
+def Sol03A_WhlWhlBit_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
 
@@ -431,6 +431,8 @@ if __name__ == '__main__':
     # Sol01A_WhlAdd_Prt(InputLst)
 
     # Sol02A_WhlWhlDbl_Prt(InputLst)
+
+    Sol03A_WhlWhlBit_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
