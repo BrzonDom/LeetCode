@@ -395,6 +395,7 @@ if __name__ == '__main__':
 
             else:
                 print(f"\t\tPolarity:  1 ~ Positive")
+            print()
 
             sumDiv = 0
             quo = 0
@@ -403,6 +404,8 @@ if __name__ == '__main__':
 
                 sumDiv += div
                 quo += 1
+
+            print(f"\tResult: {quo}")
 
         else:
 
