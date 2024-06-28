@@ -376,7 +376,7 @@ def Sol03A_WhlWhlBit_Prt(InLst):
 
         if num:
 
-            neg = (num > 0) ^ (div < 0)
+            neg = (num < 0) ^ (div < 0)
 
             num = abs(num)
             div = abs(div)
