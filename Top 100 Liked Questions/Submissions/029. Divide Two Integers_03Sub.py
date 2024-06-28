@@ -128,8 +128,12 @@ def Sol03_WhlWhlBit(num, div):
         if neg:
             print(f"\tResult: {-quo}")
 
+            return -quo
+
         else:
             print(f"\tResult: {quo}")
+
+            return quo
 
     else:
 
@@ -137,6 +141,8 @@ def Sol03_WhlWhlBit(num, div):
         print()
 
         print(f"\tResult: 0")
+
+        return 0
 
     print("\n")
 
