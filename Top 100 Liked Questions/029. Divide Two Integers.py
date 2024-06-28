@@ -397,12 +397,12 @@ if __name__ == '__main__':
                 print(f"\t\tPolarity:  1 ~ Positive")
             print()
 
-            sumDiv = 0
+            rem = num
             quo = 0
 
-            while num >= sumDiv + div:
+            while rem >= div:
 
-                sumDiv += div
+                rem -= div
                 quo += 1
 
             if neg:
