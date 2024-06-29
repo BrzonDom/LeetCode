@@ -37,9 +37,9 @@ https://leetcode.com/problems/add-two-numbers/
 
 
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, nxt=None):
         self.val = val
-        self.next = next
+        self.nxt = nxt
 
 
 class LinkList:
@@ -55,10 +55,10 @@ class LinkList:
         else:
             curNd = self.head
 
-            while curNd.next:
-                curNd = curNd.next
+            while curNd.nxt:
+                curNd = curNd.nxt
 
-            curNd.next = newNd
+            curNd.nxt = newNd
 
 
 InputLst = [[[2, 4, 3], [5, 6, 4]],
