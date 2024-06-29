@@ -108,8 +108,20 @@ for csCnt, case in enumerate(InputLst):
     curNd1 = lnkLst1.head
     curNd2 = lnkLst2.head
 
+    prvNdVal = 0
+
     while curNd1 and curNd2:
-        outLnkLst.append(curNd1.val + curNd2.val)
+
+        outNdVal = curNd1.val + curNd2.val + prvNdVal
+
+        if outNdVal >= 10:
+            outNdVal -= 10
+            prvNdVal = 1
+
+        else:
+            prvNdVal = 0
+
+        outLnkLst.append(outNdVal)
 
         curNd1 = curNd1.nxt
         curNd2 = curNd2.nxt
