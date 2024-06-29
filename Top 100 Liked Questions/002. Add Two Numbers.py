@@ -33,3 +33,16 @@ https://leetcode.com/problems/add-two-numbers/
         It is guaranteed that the list represents a number that does not have leading zeros.
 
 """
+
+InputLst = [[[2,4,3], [5,6,4]],
+            [[0], [0]],
+            [[9,9,9,9,9,9,9], [9,9,9,9]]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}. Case\n")
+
+    print(f"\t1.List: {case[0]}")
+    print(f"\t2.List: {case[1]}")
+
+    print("\n")
