@@ -10,8 +10,8 @@ https://leetcode.com/problems/add-two-numbers/
 
     Example 1:
 
-        Input: l1 = [2,4,3], l2 = [5,6,4]
-        Output: [7,0,8]
+        Input: l1 = [2, 4, 3], l2 = [5, 6, 4]
+        Output: [7, 0, 8]
 
         Explanation: 342 + 465 = 807.
 
@@ -22,8 +22,8 @@ https://leetcode.com/problems/add-two-numbers/
 
     Example 3:
 
-        Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-        Output: [8,9,9,9,0,0,0,1]
+        Input: l1 = [9, 9, 9, 9, 9, 9, 9], l2 = [9, 9, 9, 9]
+        Output: [8, 9, 9, 9, 0, 0, 0, 1]
 
 
     Constraints:
@@ -34,12 +34,12 @@ https://leetcode.com/problems/add-two-numbers/
 
 """
 
-InputLst = [[[2,4,3], [5,6,4]],
+
+InputLst = [[[2, 4, 3], [5, 6, 4]],
             [[0], [0]],
-            [[9,9,9,9,9,9,9], [9,9,9,9]]]
+            [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
 
 for csCnt, case in enumerate(InputLst):
-
     print(f"{csCnt + 1}. Case\n")
 
     print(f"\t1.List: {case[0]}")
