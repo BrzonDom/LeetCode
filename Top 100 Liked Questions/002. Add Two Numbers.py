@@ -42,6 +42,11 @@ class ListNode:
         self.next = next
 
 
+class LinkList:
+    def __init__(self):
+        self.head = None
+
+
 InputLst = [[[2, 4, 3], [5, 6, 4]],
             [[0], [0]],
             [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
