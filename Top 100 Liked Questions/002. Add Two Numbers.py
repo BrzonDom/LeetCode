@@ -36,6 +36,12 @@ https://leetcode.com/problems/add-two-numbers/
 """
 
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 InputLst = [[[2, 4, 3], [5, 6, 4]],
             [[0], [0]],
             [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
