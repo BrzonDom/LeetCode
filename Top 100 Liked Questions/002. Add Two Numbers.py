@@ -75,4 +75,13 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t1.List: {lst1}")
     print(f"\t2.List: {lst2}")
 
+    lnkLst1 = LinkList()
+    lnkLst2 = LinkList()
+
+    for num in lst1:
+        lnkLst1.append(num)
+
+    for num in lst2:
+        lnkLst2.append(num)
+
     print("\n")
