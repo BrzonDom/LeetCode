@@ -84,4 +84,11 @@ for csCnt, case in enumerate(InputLst):
     for num in lst2:
         lnkLst2.append(num)
 
+    valLst1 = []
+    curNd = lnkLst1.head
+
+    while curNd:
+        valLst1.append(curNd.val)
+        curNd = curNd.nxt
+
     print("\n")
