@@ -69,7 +69,10 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt + 1}. Case\n")
 
-    print(f"\t1.List: {case[0]}")
-    print(f"\t2.List: {case[1]}")
+    lst1 = case[0]
+    lst2 = case[1]
+
+    print(f"\t1.List: {lst1}")
+    print(f"\t2.List: {lst2}")
 
     print("\n")
