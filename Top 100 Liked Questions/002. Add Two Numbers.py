@@ -101,6 +101,7 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\t\t1. Linked List: {valLst1}")
     print(f"\t\t2. Linked List: {valLst2}")
+    print()
 
     outLnkLst = LinkList()
 
@@ -119,5 +120,7 @@ for csCnt, case in enumerate(InputLst):
     while curNd:
         outValLst.append(curNd.val)
         curNd = curNd.nxt
+
+    print(f"\tOut Linked List: {outValLst}")
 
     print("\n")
