@@ -65,6 +65,14 @@ class LinkList:
         if strtNd is None:
             strtNd = self.head
 
+        lnkLst = []
+
+        while strtNd:
+            lnkLst.append(strtNd.val)
+            strtNd = strtNd.nxt
+
+        return lnkLst
+
 
 if __name__ == '__main__':
 
