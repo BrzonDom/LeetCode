@@ -191,7 +191,8 @@ def Sol01A_WhlIndv_Prt(InLst):
             curNd2 = curNd2.nxt
 
         if prvNdVal:
-            outLnkLst.append(1)
+            nxtOutNd = ListNode(1)
+            curOutNd.nxt = nxtOutNd
 
         outValLst = []
         curNd = outLnkLst.head
