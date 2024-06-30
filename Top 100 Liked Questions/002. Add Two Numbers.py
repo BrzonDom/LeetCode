@@ -101,26 +101,10 @@ if __name__ == '__main__':
         for num in lst2:
             lnkLst2.append(num)
 
-        # valLst1 = []
-        # curNd = lnkLst1.head
-        #
-        # while curNd:
-        #     valLst1.append(curNd.val)
-        #     curNd = curNd.nxt
-
         valLst1 = lnkLst1.valLst()
-
-        print(f"\t\t1. Linked List: {valLst1}")
-
-        # valLst2 = []
-        # curNd = lnkLst2.head
-        #
-        # while curNd:
-        #     valLst2.append(curNd.val)
-        #     curNd = curNd.nxt
-
         valLst2 = lnkLst2.valLst()
 
+        print(f"\t\t1. Linked List: {valLst1}")
         print(f"\t\t2. Linked List: {valLst2}")
         print()
 
