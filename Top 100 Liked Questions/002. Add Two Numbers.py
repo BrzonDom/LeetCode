@@ -114,12 +114,23 @@ def Sol01A_WhlIndv_Prt(InLst):
         print(f"\t\t2. Linked List: {valLst2}")
         print()
 
-        outLnkLst = LinkList()
+        # outLnkLst = LinkList()
 
         curNd1 = lnkLst1.head
         curNd2 = lnkLst2.head
 
+        outNdVal = curNd1.val + curNd2.val
         prvNdVal = 0
+
+        if outNdVal >= 10:
+            prvNdVal = 1
+            outNdVal -= 10
+
+        outHdNd = ListNode(outNdVal)
+        curOutNd = outHdNd
+
+        curNd1 = curNd1.nxt
+        curNd2 = curNd2.nxt
 
         while curNd1 and curNd2:
 
@@ -132,7 +143,11 @@ def Sol01A_WhlIndv_Prt(InLst):
             else:
                 prvNdVal = 0
 
-            outLnkLst.append(outNdVal)
+            # outLnkLst.append(outNdVal)
+
+            nxtOutNd = ListNode(outNdVal)
+            curOutNd.nxt = nxtOutNd
+            curOutNd = nxtOutNd
 
             curNd1 = curNd1.nxt
             curNd2 = curNd2.nxt
