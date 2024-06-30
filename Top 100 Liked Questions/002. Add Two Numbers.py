@@ -42,9 +42,14 @@ class ListNode:
         self.nxt = nxt
 
     def valLst(self):
-        
         curNd = self
-        nxtNd = curNd.nxt
+        valLst = []
+
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.nxt
+
+        return valLst
 
 
 class LinkList:
