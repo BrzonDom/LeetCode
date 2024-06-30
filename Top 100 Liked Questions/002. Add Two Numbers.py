@@ -163,7 +163,11 @@ def Sol01A_WhlIndv_Prt(InLst):
             else:
                 prvNdVal = 0
 
-            outLnkLst.append(outNdVal)
+            # outLnkLst.append(outNdVal)
+
+            nxtOutNd = ListNode(outNdVal)
+            curOutNd.nxt = nxtOutNd
+            curOutNd = nxtOutNd
 
             curNd1 = curNd1.nxt
 
@@ -178,7 +182,11 @@ def Sol01A_WhlIndv_Prt(InLst):
             else:
                 prvNdVal = 0
 
-            outLnkLst.append(outNdVal)
+            # outLnkLst.append(outNdVal)
+
+            nxtOutNd = ListNode(outNdVal)
+            curOutNd.nxt = nxtOutNd
+            curOutNd = nxtOutNd
 
             curNd2 = curNd2.nxt
 
