@@ -194,12 +194,14 @@ def Sol01A_WhlIndv_Prt(InLst):
             nxtOutNd = ListNode(1)
             curOutNd.nxt = nxtOutNd
 
-        outValLst = []
-        curNd = outLnkLst.head
+        # outValLst = []
+        # curNd = outLnkLst.head
+        #
+        # while curNd:
+        #     outValLst.append(curNd.val)
+        #     curNd = curNd.nxt
 
-        while curNd:
-            outValLst.append(curNd.val)
-            curNd = curNd.nxt
+        outValLst = outHdNd.valLst()
 
         print(f"\tOut Linked List: {outValLst}")
 
