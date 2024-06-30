@@ -41,6 +41,11 @@ class ListNode:
         self.val = val
         self.nxt = nxt
 
+    def valLst(self):
+        
+        curNd = self
+        nxtNd = curNd.nxt
+
 
 class LinkList:
     def __init__(self):
