@@ -156,6 +156,9 @@ for csCnt, case in enumerate(InputLst):
 
         curNd2 = curNd2.nxt
 
+    if prvNdVal:
+        outLnkLst.append(1)
+
     outValLst = []
     curNd = outLnkLst.head
 
