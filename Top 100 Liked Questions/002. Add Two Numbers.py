@@ -61,111 +61,113 @@ class LinkList:
             curNd.nxt = newNd
 
 
-InputLst = [[[2, 4, 3], [5, 6, 4]],
-            [[0], [0]],
-            [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
+if __name__ == '__main__':
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[2, 4, 3], [5, 6, 4]],
+                [[0], [0]],
+                [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
 
-    print(f"{csCnt + 1}. Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    lst1 = case[0]
-    lst2 = case[1]
+        print(f"{csCnt + 1}. Case\n")
 
-    print(f"\t1. List: {lst1}")
-    print(f"\t2. List: {lst2}")
-    print()
+        lst1 = case[0]
+        lst2 = case[1]
 
-    lnkLst1 = LinkList()
-    lnkLst2 = LinkList()
+        print(f"\t1. List: {lst1}")
+        print(f"\t2. List: {lst2}")
+        print()
 
-    for num in lst1:
-        lnkLst1.append(num)
+        lnkLst1 = LinkList()
+        lnkLst2 = LinkList()
 
-    for num in lst2:
-        lnkLst2.append(num)
+        for num in lst1:
+            lnkLst1.append(num)
 
-    valLst1 = []
-    curNd = lnkLst1.head
+        for num in lst2:
+            lnkLst2.append(num)
 
-    while curNd:
-        valLst1.append(curNd.val)
-        curNd = curNd.nxt
+        valLst1 = []
+        curNd = lnkLst1.head
 
-    valLst2 = []
-    curNd = lnkLst2.head
+        while curNd:
+            valLst1.append(curNd.val)
+            curNd = curNd.nxt
 
-    while curNd:
-        valLst2.append(curNd.val)
-        curNd = curNd.nxt
+        valLst2 = []
+        curNd = lnkLst2.head
 
-    print(f"\t\t1. Linked List: {valLst1}")
-    print(f"\t\t2. Linked List: {valLst2}")
-    print()
+        while curNd:
+            valLst2.append(curNd.val)
+            curNd = curNd.nxt
 
-    outLnkLst = LinkList()
+        print(f"\t\t1. Linked List: {valLst1}")
+        print(f"\t\t2. Linked List: {valLst2}")
+        print()
 
-    curNd1 = lnkLst1.head
-    curNd2 = lnkLst2.head
+        outLnkLst = LinkList()
 
-    prvNdVal = 0
+        curNd1 = lnkLst1.head
+        curNd2 = lnkLst2.head
 
-    while curNd1 and curNd2:
+        prvNdVal = 0
 
-        outNdVal = curNd1.val + curNd2.val + prvNdVal
+        while curNd1 and curNd2:
 
-        if outNdVal >= 10:
-            outNdVal -= 10
-            prvNdVal = 1
+            outNdVal = curNd1.val + curNd2.val + prvNdVal
 
-        else:
-            prvNdVal = 0
+            if outNdVal >= 10:
+                outNdVal -= 10
+                prvNdVal = 1
 
-        outLnkLst.append(outNdVal)
+            else:
+                prvNdVal = 0
 
-        curNd1 = curNd1.nxt
-        curNd2 = curNd2.nxt
+            outLnkLst.append(outNdVal)
 
-    while curNd1:
+            curNd1 = curNd1.nxt
+            curNd2 = curNd2.nxt
 
-        outNdVal = curNd1.val + prvNdVal
+        while curNd1:
 
-        if outNdVal >= 10:
-            outNdVal -= 10
-            prvNdVal = 1
+            outNdVal = curNd1.val + prvNdVal
 
-        else:
-            prvNdVal = 0
+            if outNdVal >= 10:
+                outNdVal -= 10
+                prvNdVal = 1
 
-        outLnkLst.append(outNdVal)
+            else:
+                prvNdVal = 0
 
-        curNd1 = curNd1.nxt
+            outLnkLst.append(outNdVal)
 
-    while curNd2:
+            curNd1 = curNd1.nxt
 
-        outNdVal = curNd2.val + prvNdVal
+        while curNd2:
 
-        if outNdVal >= 10:
-            outNdVal -= 10
-            prvNdVal = 1
+            outNdVal = curNd2.val + prvNdVal
 
-        else:
-            prvNdVal = 0
+            if outNdVal >= 10:
+                outNdVal -= 10
+                prvNdVal = 1
 
-        outLnkLst.append(outNdVal)
+            else:
+                prvNdVal = 0
 
-        curNd2 = curNd2.nxt
+            outLnkLst.append(outNdVal)
 
-    if prvNdVal:
-        outLnkLst.append(1)
+            curNd2 = curNd2.nxt
 
-    outValLst = []
-    curNd = outLnkLst.head
+        if prvNdVal:
+            outLnkLst.append(1)
 
-    while curNd:
-        outValLst.append(curNd.val)
-        curNd = curNd.nxt
+        outValLst = []
+        curNd = outLnkLst.head
 
-    print(f"\tOut Linked List: {outValLst}")
+        while curNd:
+            outValLst.append(curNd.val)
+            curNd = curNd.nxt
 
-    print("\n")
+        print(f"\tOut Linked List: {outValLst}")
+
+        print("\n")
