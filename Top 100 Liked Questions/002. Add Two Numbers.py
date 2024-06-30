@@ -114,8 +114,6 @@ def Sol01A_WhlIndv_Prt(InLst):
         print(f"\t\t2. Linked List: {valLst2}")
         print()
 
-        # outLnkLst = LinkList()
-
         curNd1 = lnkLst1.head
         curNd2 = lnkLst2.head
 
@@ -143,8 +141,6 @@ def Sol01A_WhlIndv_Prt(InLst):
             else:
                 prvNdVal = 0
 
-            # outLnkLst.append(outNdVal)
-
             nxtOutNd = ListNode(outNdVal)
             curOutNd.nxt = nxtOutNd
             curOutNd = nxtOutNd
@@ -163,8 +159,6 @@ def Sol01A_WhlIndv_Prt(InLst):
             else:
                 prvNdVal = 0
 
-            # outLnkLst.append(outNdVal)
-
             nxtOutNd = ListNode(outNdVal)
             curOutNd.nxt = nxtOutNd
             curOutNd = nxtOutNd
@@ -182,8 +176,6 @@ def Sol01A_WhlIndv_Prt(InLst):
             else:
                 prvNdVal = 0
 
-            # outLnkLst.append(outNdVal)
-
             nxtOutNd = ListNode(outNdVal)
             curOutNd.nxt = nxtOutNd
             curOutNd = nxtOutNd
@@ -194,19 +186,11 @@ def Sol01A_WhlIndv_Prt(InLst):
             nxtOutNd = ListNode(1)
             curOutNd.nxt = nxtOutNd
 
-        # outValLst = []
-        # curNd = outLnkLst.head
-        #
-        # while curNd:
-        #     outValLst.append(curNd.val)
-        #     curNd = curNd.nxt
-
         outValLst = outHdNd.valLst()
 
         print(f"\tOut Linked List: {outValLst}")
 
         print("\n")
-
 
 
 if __name__ == '__main__':
