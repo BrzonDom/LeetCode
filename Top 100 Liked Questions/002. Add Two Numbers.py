@@ -65,13 +65,14 @@ class LinkList:
         if strtNd is None:
             strtNd = self.head
 
-        lnkLst = []
+        valLst = []
+        curNd = strtNd
 
-        while strtNd:
-            lnkLst.append(strtNd.val)
-            strtNd = strtNd.nxt
+        while curNd:
+            valLst.append(curNd.val)
+            curNd = curNd.nxt
 
-        return lnkLst
+        return valLst
 
 
 if __name__ == '__main__':
