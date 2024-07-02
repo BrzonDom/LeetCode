@@ -192,15 +192,8 @@ def Sol01A_WhlIndv_Prt(InLst):
 
 def Sol01_WhlIndv_Prt(lst1, lst2):
 
-    # print(f"\t1. List: {lst1}")
-    # print(f"\t2. List: {lst2}")
-    # print()
-
     lnkLst1 = mkLnkLst(lst1)
     lnkLst2 = mkLnkLst(lst2)
-
-    # valLst1 = lnkLst1.valLst()
-    # valLst2 = lnkLst2.valLst()
 
     print(f"\t1. Linked List: {lnkLst1.valLst()}")
     print(f"\t2. Linked List: {lnkLst2.valLst()}")
