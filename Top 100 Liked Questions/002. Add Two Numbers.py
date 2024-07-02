@@ -195,9 +195,6 @@ def Sol01A_WhlIndv_Prt(InLst):
 
 def Sol01_WhlIndv_Prt(lst1, lst2):
 
-    # lst1 = case[0]
-    # lst2 = case[1]
-
     print(f"\t1. List: {lst1}")
     print(f"\t2. List: {lst2}")
     print()
@@ -309,4 +306,12 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        Sol01_WhlIndv_Prt(case[0], case[1])
+        lst1 = case[0]
+        lst2 = case[1]
+
+        print(f"\t1. List: {lst1}")
+        print(f"\t2. List: {lst2}")
+
+        print("\n")
+
+        # Sol01_WhlIndv_Prt(case[0], case[1])
