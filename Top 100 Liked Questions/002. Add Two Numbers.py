@@ -108,14 +108,17 @@ def Sol01A_WhlIndv_Prt(InLst):
         print(f"\t2. List: {lst2}")
         print()
 
-        lnkLst1 = LinkList()
-        lnkLst2 = LinkList()
+        lnkLst1 = mkLnkLst(lst1)
+        lnkLst2 = mkLnkLst(lst2)
 
-        for num in lst1:
-            lnkLst1.append(num)
-
-        for num in lst2:
-            lnkLst2.append(num)
+        # lnkLst1 = LinkList()
+        # lnkLst2 = LinkList()
+        #
+        # for num in lst1:
+        #     lnkLst1.append(num)
+        #
+        # for num in lst2:
+        #     lnkLst2.append(num)
 
         valLst1 = lnkLst1.valLst()
         valLst2 = lnkLst2.valLst()
