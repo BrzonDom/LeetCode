@@ -192,15 +192,12 @@ def Sol01A_WhlIndv_Prt(InLst):
 
 def Sol01_WhlIndv_Prt(hdNd1, hdNd2):
 
-    # lnkLst1 = mkLnkLst(lst1)
-    # lnkLst2 = mkLnkLst(lst2)
+    print(f"\t1. Linked List: {hdNd1.valLst()}")
+    print(f"\t2. Linked List: {hdNd2.valLst()}")
+    print()
 
     curNd1 = hdNd1
     curNd2 = hdNd2
-
-    print(f"\t1. Linked List: {curNd1.valLst()}")
-    print(f"\t2. Linked List: {curNd2.valLst()}")
-    print()
 
     outNdVal = curNd1.val + curNd2.val
     prvNdVal = 0
@@ -296,7 +293,4 @@ if __name__ == '__main__':
         lnkLst1 = mkLnkLst(lst1)
         lnkLst2 = mkLnkLst(lst2)
 
-        hdNd1 = lnkLst1.head
-        hdNd2 = lnkLst2.head
-
-        Sol01_WhlIndv_Prt(hdNd1, hdNd2)
+        Sol01_WhlIndv_Prt(lnkLst1.head, lnkLst2.head)
