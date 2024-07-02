@@ -107,11 +107,8 @@ def Sol01A_WhlIndv_Prt(InLst):
         lnkLst1 = mkLnkLst(lst1)
         lnkLst2 = mkLnkLst(lst2)
 
-        valLst1 = lnkLst1.valLst()
-        valLst2 = lnkLst2.valLst()
-
-        print(f"\t1. Linked List: {valLst1}")
-        print(f"\t2. Linked List: {valLst2}")
+        print(f"\t1. Linked List: {lnkLst1.valLst()}")
+        print(f"\t2. Linked List: {lnkLst2.valLst()}")
         print()
 
         curNd1 = lnkLst1.head
