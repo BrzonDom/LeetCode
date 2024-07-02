@@ -89,6 +89,9 @@ def mkLnkLst(lst):
 
     lnkLst = LinkList()
 
+    for num in lst:
+        lnkLst.append(num)
+
     return lnkLst
 
 
