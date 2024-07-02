@@ -104,9 +104,9 @@ def Sol01A_WhlIndv_Prt(InLst):
         lst1 = case[0]
         lst2 = case[1]
 
-        print(f"\t1. List: {lst1}")
-        print(f"\t2. List: {lst2}")
-        print()
+        # print(f"\t1. List: {lst1}")
+        # print(f"\t2. List: {lst2}")
+        # print()
 
         lnkLst1 = mkLnkLst(lst1)
         lnkLst2 = mkLnkLst(lst2)
@@ -123,8 +123,8 @@ def Sol01A_WhlIndv_Prt(InLst):
         valLst1 = lnkLst1.valLst()
         valLst2 = lnkLst2.valLst()
 
-        print(f"\t\t1. Linked List: {valLst1}")
-        print(f"\t\t2. Linked List: {valLst2}")
+        print(f"\t1. Linked List: {valLst1}")
+        print(f"\t2. Linked List: {valLst2}")
         print()
 
         curNd1 = lnkLst1.head
@@ -307,11 +307,11 @@ if __name__ == '__main__':
                 [[0], [0]],
                 [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
 
-    # Sol01A_WhlIndv_Prt(InputLst)
+    Sol01A_WhlIndv_Prt(InputLst)
 
-    for csCnt, case in enumerate(InputLst):
-
-        print(f"{csCnt + 1}. Case\n")
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case\n")
 
         # lst1 = case[0]
         # lst2 = case[1]
@@ -322,4 +322,4 @@ if __name__ == '__main__':
         # hdNd1 = lnkLst1.head
         # hdNd2 = lnkLst2.head
 
-        Sol01_WhlIndv_Prt(case[0], case[1])
+        # Sol01_WhlIndv_Prt(case[0], case[1])
