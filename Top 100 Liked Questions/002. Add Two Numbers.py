@@ -316,22 +316,22 @@ if __name__ == '__main__':
 
         print(f"{csCnt + 1}. Case\n")
 
-        lst1 = case[0]
-        lst2 = case[1]
+        # lst1 = case[0]
+        # lst2 = case[1]
+        #
+        # print(f"\t1. List: {lst1}")
+        # print(f"\t2. List: {lst2}")
+        # print()
+        #
+        # lnkLst1 = mkLnkLst(lst1)
+        # lnkLst2 = mkLnkLst(lst2)
+        #
+        # hdNd1 = lnkLst1.head
+        # hdNd2 = lnkLst2.head
+        #
+        # print(f"\t\t1. Linked List: {hdNd1.valLst()}")
+        # print(f"\t\t2. Linked List: {hdNd2.valLst()}")
+        #
+        # print("\n")
 
-        print(f"\t1. List: {lst1}")
-        print(f"\t2. List: {lst2}")
-        print()
-
-        lnkLst1 = mkLnkLst(lst1)
-        lnkLst2 = mkLnkLst(lst2)
-
-        hdNd1 = lnkLst1.head
-        hdNd2 = lnkLst2.head
-
-        print(f"\t\t1. Linked List: {hdNd1.valLst()}")
-        print(f"\t\t2. Linked List: {hdNd2.valLst()}")
-
-        print("\n")
-
-        # Sol01_WhlIndv_Prt(case[0], case[1])
+        Sol01_WhlIndv_Prt(case[0], case[1])
