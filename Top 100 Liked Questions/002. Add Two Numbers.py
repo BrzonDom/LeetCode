@@ -85,6 +85,13 @@ class LinkList:
         return valLst
 
 
+def mkLnkLst(lst):
+
+    lnkLst = LinkList()
+
+    return lnkLst
+
+
 def Sol01A_WhlIndv_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
@@ -311,6 +318,9 @@ if __name__ == '__main__':
 
         print(f"\t1. List: {lst1}")
         print(f"\t2. List: {lst2}")
+
+        lnkLst1 = mkLnkLst(lst1)
+        lnkLst2 = mkLnkLst(lst2)
 
         print("\n")
 
