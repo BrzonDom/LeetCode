@@ -321,12 +321,16 @@ if __name__ == '__main__':
 
         print(f"\t1. List: {lst1}")
         print(f"\t2. List: {lst2}")
+        print()
 
         lnkLst1 = mkLnkLst(lst1)
         lnkLst2 = mkLnkLst(lst2)
 
         hdNd1 = lnkLst1.head
         hdNd2 = lnkLst2.head
+
+        print(f"\t\t1. Linked List: {hdNd1.valLst()}")
+        print(f"\t\t2. Linked List: {hdNd2.valLst()}")
 
         print("\n")
 
