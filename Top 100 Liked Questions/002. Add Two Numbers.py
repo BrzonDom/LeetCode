@@ -325,6 +325,9 @@ if __name__ == '__main__':
         lnkLst1 = mkLnkLst(lst1)
         lnkLst2 = mkLnkLst(lst2)
 
+        hdNd1 = lnkLst1.head
+        hdNd2 = lnkLst2.head
+
         print("\n")
 
         # Sol01_WhlIndv_Prt(case[0], case[1])
