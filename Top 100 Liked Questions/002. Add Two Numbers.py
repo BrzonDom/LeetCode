@@ -212,15 +212,6 @@ def Sol01_WhlIndv_Prt(lst1, lst2):
     lnkLst1 = mkLnkLst(lst1)
     lnkLst2 = mkLnkLst(lst2)
 
-    # lnkLst1 = LinkList()
-    # lnkLst2 = LinkList()
-    #
-    # for num in lst1:
-    #     lnkLst1.append(num)
-    #
-    # for num in lst2:
-    #     lnkLst2.append(num)
-
     valLst1 = lnkLst1.valLst()
     valLst2 = lnkLst2.valLst()
 
@@ -322,19 +313,10 @@ if __name__ == '__main__':
         # lst1 = case[0]
         # lst2 = case[1]
         #
-        # print(f"\t1. List: {lst1}")
-        # print(f"\t2. List: {lst2}")
-        # print()
-        #
         # lnkLst1 = mkLnkLst(lst1)
         # lnkLst2 = mkLnkLst(lst2)
         #
         # hdNd1 = lnkLst1.head
         # hdNd2 = lnkLst2.head
-        #
-        # print(f"\t\t1. Linked List: {hdNd1.valLst()}")
-        # print(f"\t\t2. Linked List: {hdNd2.valLst()}")
-        #
-        # print("\n")
 
         Sol01_WhlIndv_Prt(case[0], case[1])
