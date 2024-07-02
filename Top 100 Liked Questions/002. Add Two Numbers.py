@@ -190,13 +190,13 @@ def Sol01A_WhlIndv_Prt(InLst):
         print("\n")
 
 
-def Sol01_WhlIndv_Prt(lst1, lst2):
+def Sol01_WhlIndv_Prt(hdNd1, hdNd2):
 
-    lnkLst1 = mkLnkLst(lst1)
-    lnkLst2 = mkLnkLst(lst2)
+    # lnkLst1 = mkLnkLst(lst1)
+    # lnkLst2 = mkLnkLst(lst2)
 
-    curNd1 = lnkLst1.head
-    curNd2 = lnkLst2.head
+    curNd1 = hdNd1
+    curNd2 = hdNd2
 
     print(f"\t1. Linked List: {curNd1.valLst()}")
     print(f"\t2. Linked List: {curNd2.valLst()}")
@@ -299,4 +299,4 @@ if __name__ == '__main__':
         hdNd1 = lnkLst1.head
         hdNd2 = lnkLst2.head
 
-        Sol01_WhlIndv_Prt(case[0], case[1])
+        Sol01_WhlIndv_Prt(hdNd1, hdNd2)
