@@ -49,9 +49,9 @@ for csCnt, case in enumerate(InputLst):
 
     cmbCnt = 0
 
-    for n1, num1 in enumerate(Nums):
-        for n2, num2 in enumerate(Nums):
-            for n3, num3 in enumerate(Nums):
+    for n1, num1 in enumerate(Nums[:2]):
+        for n2, num2 in enumerate(Nums[1:]):
+            for n3, num3 in enumerate(Nums[2:]):
                 ttl = num1 + num2 + num3
                 dif = abs(Trg - ttl)
 
