@@ -163,4 +163,8 @@ if __name__ == "__main__":
     InputLst = [[[-1, 2, 1, -4], 1],
                 [[0, 0, 0], 1]]
 
-    Sol01A_TrpFrLp_Prt(InputLst)
+    # Sol01A_TrpFrLp_Prt(InputLst)
+
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case:\n")
