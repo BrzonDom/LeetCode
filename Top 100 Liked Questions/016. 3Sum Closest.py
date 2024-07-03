@@ -69,6 +69,11 @@ for csCnt, case in enumerate(InputLst):
                     clstTtl = ttl
                     clstCmb = [num1, num2, num3]
 
+                elif dif == 0:
+                    clstDif = dif
+                    clstTtl = ttl
+                    clstCmb = [num1, num2, num3]
+
                 elif clstDif > dif:
                     clstDif = dif
                     clstTtl = ttl
