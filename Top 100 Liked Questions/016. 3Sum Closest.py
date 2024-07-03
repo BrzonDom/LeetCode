@@ -40,7 +40,10 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt + 1}. Case:\n")
 
-    print(f"\tNumbers: {case[0]}")
-    print(f"\tTarget: {case[1]}")
+    Nums = case[0]
+    Trg = case[1]
+
+    print(f"\tNumbers: {Nums}")
+    print(f"\tTarget: {Trg}")
 
     print("\n")
