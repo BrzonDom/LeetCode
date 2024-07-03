@@ -179,7 +179,7 @@ if __name__ == "__main__":
         print()
 
         clstTtl = sum(Nums[:-2])
-        clstDif = abs(Trg - clstTtl)
+        clstDfr = abs(Trg - clstTtl)
         clstCmb = Nums[:-2]
 
         numCmb = itertools.combinations(Nums, 3)
@@ -192,5 +192,10 @@ if __name__ == "__main__":
             print(f"\t\t\tTotal:      {ttl}")
             print(f"\t\t\tDifference: {dfr}")
             print()
+
+            if clstDfr > dfr:
+                clstDfr = dfr
+                clstTtl = ttl
+                clstCmb = cmb
 
         print("\n")
