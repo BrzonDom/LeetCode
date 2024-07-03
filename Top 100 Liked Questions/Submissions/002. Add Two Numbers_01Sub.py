@@ -180,6 +180,91 @@ def Sol01_WhlIndv_Prt(hdNd1, hdNd2):
     print("\n")
 
 
+def Sol01_WhlIndv(hdNd1, hdNd2):
+
+    print(f"\t1. Linked List: {hdNd1.valLst()}")
+    print(f"\t2. Linked List: {hdNd2.valLst()}")
+    print()
+
+    curNd1 = hdNd1
+    curNd2 = hdNd2
+
+    outNdVal = curNd1.val + curNd2.val
+    prvNdVal = 0
+
+    if outNdVal >= 10:
+        prvNdVal = 1
+        outNdVal -= 10
+
+    outHdNd = ListNode(outNdVal)
+    curOutNd = outHdNd
+
+    curNd1 = curNd1.nxt
+    curNd2 = curNd2.nxt
+
+    while curNd1 and curNd2:
+
+        outNdVal = curNd1.val + curNd2.val + prvNdVal
+
+        if outNdVal >= 10:
+            outNdVal -= 10
+            prvNdVal = 1
+
+        else:
+            prvNdVal = 0
+
+        nxtOutNd = ListNode(outNdVal)
+        curOutNd.nxt = nxtOutNd
+        curOutNd = nxtOutNd
+
+        curNd1 = curNd1.nxt
+        curNd2 = curNd2.nxt
+
+    while curNd1:
+
+        outNdVal = curNd1.val + prvNdVal
+
+        if outNdVal >= 10:
+            outNdVal -= 10
+            prvNdVal = 1
+
+        else:
+            prvNdVal = 0
+
+        nxtOutNd = ListNode(outNdVal)
+        curOutNd.nxt = nxtOutNd
+        curOutNd = nxtOutNd
+
+        curNd1 = curNd1.nxt
+
+    while curNd2:
+
+        outNdVal = curNd2.val + prvNdVal
+
+        if outNdVal >= 10:
+            outNdVal -= 10
+            prvNdVal = 1
+
+        else:
+            prvNdVal = 0
+
+        nxtOutNd = ListNode(outNdVal)
+        curOutNd.nxt = nxtOutNd
+        curOutNd = nxtOutNd
+
+        curNd2 = curNd2.nxt
+
+    if prvNdVal:
+        nxtOutNd = ListNode(1)
+        curOutNd.nxt = nxtOutNd
+
+    outValLst = outHdNd.valLst()
+
+    print(f"\tOut Linked List: {outValLst}")
+
+    print("\n")
+
+
 if __name__ == '__main__':
 
     InputLst = [[[2, 4, 3], [5, 6, 4]],
