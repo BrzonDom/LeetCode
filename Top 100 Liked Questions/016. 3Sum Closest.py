@@ -47,7 +47,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trg}")
     print()
 
-    for num in Nums:
-        print(f"\t\t{num}")
+    for n, num in enumerate(Nums):
+        print(f"\t\t{n+1}. {num}")
 
     print("\n")
