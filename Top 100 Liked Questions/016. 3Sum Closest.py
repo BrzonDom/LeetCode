@@ -50,11 +50,18 @@ for csCnt, case in enumerate(InputLst):
     clstDif = None
     clstTtl = None
     clstCmb = None
+    clstFnd = False
 
     cmbCnt = 0
 
     for n1, num1 in enumerate(Nums[:2]):
+        if clstFnd:
+            break
+
         for n2, num2 in enumerate(Nums[1 + n1:]):
+            if clstFnd:
+                break
+
             for n3, num3 in enumerate(Nums[2 + n1 + n2:]):
                 ttl = num1 + num2 + num3
                 dif = abs(Trg - ttl)
@@ -73,6 +80,9 @@ for csCnt, case in enumerate(InputLst):
                     clstDif = dif
                     clstTtl = ttl
                     clstCmb = [num1, num2, num3]
+
+                    clstFnd = True
+                    break
 
                 elif clstDif > dif:
                     clstDif = dif
