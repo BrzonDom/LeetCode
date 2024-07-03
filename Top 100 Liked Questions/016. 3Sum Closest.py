@@ -198,4 +198,8 @@ if __name__ == "__main__":
                 clstTtl = ttl
                 clstCmb = cmb
 
+        print(f"\tClosest difference: {clstDfr}")
+        print(f"\tClosest total:      {clstTtl}")
+        print(f"\t\tClosest combination: {clstCmb}")
+
         print("\n")
