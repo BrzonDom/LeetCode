@@ -194,9 +194,13 @@ if __name__ == "__main__":
             print()
 
             if clstDfr > dfr:
+
                 clstDfr = dfr
                 clstTtl = ttl
                 clstCmb = cmb
+
+                if dfr == 0:
+                    break
 
         print(f"\tClosest difference: {clstDfr}")
         print(f"\tClosest total:      {clstTtl}")
