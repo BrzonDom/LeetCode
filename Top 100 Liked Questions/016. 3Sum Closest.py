@@ -76,4 +76,8 @@ for csCnt, case in enumerate(InputLst):
 
                 cmbCnt += 1
 
+    print(f"\tClosest difference: {clstDif}")
+    print(f"\tClosest total:      {clstTtl}")
+    print(f"\t\tClosest combination: {clstCmb}")
+
     print("\n")
