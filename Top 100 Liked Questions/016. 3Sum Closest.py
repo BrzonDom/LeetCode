@@ -47,6 +47,9 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trg}")
     print()
 
+    clstDif = None
+    clstCmb = None
+
     cmbCnt = 0
 
     for n1, num1 in enumerate(Nums[:2]):
@@ -59,6 +62,10 @@ for csCnt, case in enumerate(InputLst):
                 print(f"\t\t\tTotal:      {ttl}")
                 print(f"\t\t\tDifference: {dif}")
                 print()
+
+                if cmbCnt == 0:
+                    clstDif = dif
+                    clstCmb = [num1, num2, num3]
 
                 cmbCnt += 1
 
