@@ -47,7 +47,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trg}")
     print()
 
-    for n1, num1 in enumerate(Nums):
+    for n1, num1 in enumerate(Nums[:2]):
         for n2, num2 in enumerate(Nums):
             for n3, num3 in enumerate(Nums):
                 ttl = num1 + num2 + num3
