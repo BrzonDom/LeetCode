@@ -95,101 +95,6 @@ def mkLnkLst(lst):
     return lnkLst
 
 
-def Sol01A_WhlIndv_Prt(InLst):
-
-    for csCnt, case in enumerate(InLst):
-
-        print(f"{csCnt + 1}. Case\n")
-
-        lst1 = case[0]
-        lst2 = case[1]
-
-        lnkLst1 = mkLnkLst(lst1)
-        lnkLst2 = mkLnkLst(lst2)
-
-        print(f"\t1. Linked List: {lnkLst1.valLst()}")
-        print(f"\t2. Linked List: {lnkLst2.valLst()}")
-        print()
-
-        curNd1 = lnkLst1.head
-        curNd2 = lnkLst2.head
-
-        outNdVal = curNd1.val + curNd2.val
-        prvNdVal = 0
-
-        if outNdVal >= 10:
-            prvNdVal = 1
-            outNdVal -= 10
-
-        outHdNd = ListNode(outNdVal)
-        curOutNd = outHdNd
-
-        curNd1 = curNd1.nxt
-        curNd2 = curNd2.nxt
-
-        while curNd1 and curNd2:
-
-            outNdVal = curNd1.val + curNd2.val + prvNdVal
-
-            if outNdVal >= 10:
-                outNdVal -= 10
-                prvNdVal = 1
-
-            else:
-                prvNdVal = 0
-
-            nxtOutNd = ListNode(outNdVal)
-            curOutNd.nxt = nxtOutNd
-            curOutNd = nxtOutNd
-
-            curNd1 = curNd1.nxt
-            curNd2 = curNd2.nxt
-
-        while curNd1:
-
-            outNdVal = curNd1.val + prvNdVal
-
-            if outNdVal >= 10:
-                outNdVal -= 10
-                prvNdVal = 1
-
-            else:
-                prvNdVal = 0
-
-            nxtOutNd = ListNode(outNdVal)
-            curOutNd.nxt = nxtOutNd
-            curOutNd = nxtOutNd
-
-            curNd1 = curNd1.nxt
-
-        while curNd2:
-
-            outNdVal = curNd2.val + prvNdVal
-
-            if outNdVal >= 10:
-                outNdVal -= 10
-                prvNdVal = 1
-
-            else:
-                prvNdVal = 0
-
-            nxtOutNd = ListNode(outNdVal)
-            curOutNd.nxt = nxtOutNd
-            curOutNd = nxtOutNd
-
-            curNd2 = curNd2.nxt
-
-        if prvNdVal:
-            nxtOutNd = ListNode(1)
-            curOutNd.nxt = nxtOutNd
-
-        outValLst = outHdNd.valLst()
-
-        print(f"\tOut Linked List: {outValLst}")
-
-        print("\n")
-
-
 def Sol01_WhlIndv_Prt(hdNd1, hdNd2):
 
     print(f"\t1. Linked List: {hdNd1.valLst()}")
@@ -280,8 +185,6 @@ if __name__ == '__main__':
     InputLst = [[[2, 4, 3], [5, 6, 4]],
                 [[0], [0]],
                 [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]]]
-
-    # Sol01A_WhlIndv_Prt(InputLst)
 
     for csCnt, case in enumerate(InputLst):
 
