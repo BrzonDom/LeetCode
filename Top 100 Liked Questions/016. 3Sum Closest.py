@@ -178,6 +178,10 @@ if __name__ == "__main__":
         print(f"\tTarget: {Trg}")
         print()
 
+        clstDif = None
+        clstTtl = None
+        clstCmb = None
+
         numCmb = itertools.combinations(Nums, 3)
 
         for cmbCnt, cmb in enumerate(numCmb):
