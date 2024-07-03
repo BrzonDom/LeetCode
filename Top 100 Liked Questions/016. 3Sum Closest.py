@@ -34,6 +34,9 @@ https://leetcode.com/problems/3sum-closest/description/
 """
 
 
+import itertools
+
+
 def Sol01A_TrpFrLp_Prt(InLst):
 
     for csCnt, case in enumerate(InLst):
@@ -173,5 +176,7 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nums}")
         print(f"\tTarget: {Trg}")
+
+        numbComb = itertools.combinations(Nums, 3)
 
         print("\n")
