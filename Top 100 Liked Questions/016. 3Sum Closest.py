@@ -184,6 +184,9 @@ if __name__ == "__main__":
             ttl = sum(cmb)
             dfr = abs(Trg - ttl)
 
-            print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]} = {ttl} | {dfr}")
+            print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]}")
+            print(f"\t\t\tTotal:      {ttl}")
+            print(f"\t\t\tDifference: {dfr}")
+            print()
 
         print("\n")
