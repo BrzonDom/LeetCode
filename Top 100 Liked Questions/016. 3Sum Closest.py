@@ -179,4 +179,7 @@ if __name__ == "__main__":
 
         numbComb = itertools.combinations(Nums, 3)
 
+        for comb in numbComb:
+            print(f"\t\t{comb}")
+
         print("\n")
