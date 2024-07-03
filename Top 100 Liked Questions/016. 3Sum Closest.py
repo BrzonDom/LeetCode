@@ -180,7 +180,10 @@ if __name__ == "__main__":
 
         numCmb = itertools.combinations(Nums, 3)
 
-        for cmb in numCmb:
-            print(f"\t\t{cmb[0]} + {cmb[1]} + {cmb[2]} = {sum(cmb)}")
+        for cmbCnt, cmb in enumerate(numCmb):
+            ttl = sum(cmb)
+            dfr = abs(Trg - ttl)
+
+            print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]} = {ttl} | {dfr}")
 
         print("\n")
