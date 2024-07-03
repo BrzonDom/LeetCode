@@ -211,45 +211,47 @@ if __name__ == "__main__":
 
     # Sol01A_TrpFrLp_Prt(InputLst)
 
-    for csCnt, case in enumerate(InputLst):
+    Sol02A_TlCmb_Prt(InputLst)
 
-        print(f"{csCnt + 1}. Case:\n")
+    # for csCnt, case in enumerate(InputLst):
+    #
+    #     print(f"{csCnt + 1}. Case:\n")
 
         # Sol01_TrpFrLp_Prt(case[0], case[1])
 
-        Nums = case[0]
-        Trg = case[1]
-
-        print(f"\tNumbers: {Nums}")
-        print(f"\tTarget: {Trg}")
-        print()
-
-        clstTtl = sum(Nums[:3])
-        clstDfr = abs(Trg - clstTtl)
-        clstCmb = Nums[:3]
-
-        numCmb = itertools.combinations(Nums, 3)
-
-        for cmbCnt, cmb in enumerate(numCmb):
-            ttl = sum(cmb)
-            dfr = abs(Trg - ttl)
-
-            print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]}")
-            print(f"\t\t\tTotal:      {ttl}")
-            print(f"\t\t\tDifference: {dfr}")
-            print()
-
-            if clstDfr > dfr:
-
-                clstDfr = dfr
-                clstTtl = ttl
-                clstCmb = cmb
-
-                if dfr == 0:
-                    break
-
-        print(f"\tClosest difference: {clstDfr}")
-        print(f"\tClosest total:      {clstTtl}")
-        print(f"\t\tClosest combination: {clstCmb}")
-
-        print("\n")
+        # Nums = case[0]
+        # Trg = case[1]
+        #
+        # print(f"\tNumbers: {Nums}")
+        # print(f"\tTarget: {Trg}")
+        # print()
+        #
+        # clstTtl = sum(Nums[:3])
+        # clstDfr = abs(Trg - clstTtl)
+        # clstCmb = Nums[:3]
+        #
+        # numCmb = itertools.combinations(Nums, 3)
+        #
+        # for cmbCnt, cmb in enumerate(numCmb):
+        #     ttl = sum(cmb)
+        #     dfr = abs(Trg - ttl)
+        #
+        #     print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]}")
+        #     print(f"\t\t\tTotal:      {ttl}")
+        #     print(f"\t\t\tDifference: {dfr}")
+        #     print()
+        #
+        #     if clstDfr > dfr:
+        #
+        #         clstDfr = dfr
+        #         clstTtl = ttl
+        #         clstCmb = cmb
+        #
+        #         if dfr == 0:
+        #             break
+        #
+        # print(f"\tClosest difference: {clstDfr}")
+        # print(f"\tClosest total:      {clstTtl}")
+        # print(f"\t\tClosest combination: {clstCmb}")
+        #
+        # print("\n")
