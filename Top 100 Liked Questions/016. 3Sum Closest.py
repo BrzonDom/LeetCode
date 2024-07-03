@@ -166,4 +166,12 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol01_TrpFrLp_Prt(case[0], case[1])
+        # Sol01_TrpFrLp_Prt(case[0], case[1])
+
+        Nums = case[0]
+        Trg = case[1]
+
+        print(f"\tNumbers: {Nums}")
+        print(f"\tTarget: {Trg}")
+
+        print("\n")
