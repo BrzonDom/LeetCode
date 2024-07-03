@@ -50,6 +50,6 @@ for csCnt, case in enumerate(InputLst):
     for n1, num1 in enumerate(Nums):
         for n2, num2 in enumerate(Nums):
             for n3, num3 in enumerate(Nums):
-                print(f"\t\t{num1} + {num2} + {num3}")
+                print(f"\t\t{num1} + {num2} + {num3} = {num1 + num2 + num3}")
 
     print("\n")
