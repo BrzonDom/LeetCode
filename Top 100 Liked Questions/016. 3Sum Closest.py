@@ -54,7 +54,7 @@ for csCnt, case in enumerate(InputLst):
 
     cmbCnt = 0
 
-    for n1, num1 in enumerate(Nums[:2]):
+    for n1, num1 in enumerate(Nums[:-2]):
         if clstFnd:
             break
 
