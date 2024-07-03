@@ -67,6 +67,10 @@ for csCnt, case in enumerate(InputLst):
                     clstDif = dif
                     clstCmb = [num1, num2, num3]
 
+                elif clstDif > dif:
+                    clstDif = dif
+                    clstCmb = [num1, num2, num3]
+
                 cmbCnt += 1
 
     print("\n")
