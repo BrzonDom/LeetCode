@@ -178,9 +178,9 @@ if __name__ == "__main__":
         print(f"\tTarget: {Trg}")
         print()
 
-        clstDif = None
-        clstTtl = None
-        clstCmb = None
+        clstTtl = sum(Nums[:-2])
+        clstDif = abs(Trg - clstTtl)
+        clstCmb = Nums[:-2]
 
         numCmb = itertools.combinations(Nums, 3)
 
