@@ -53,6 +53,9 @@ for csCnt, case in enumerate(InputLst):
                 ttl = num1 + num2 + num3
                 dif = abs(Trg - ttl)
 
-                print(f"\t\t{num1} + {num2} + {num3} = {ttl} | {dif}")
+                print(f"\t\t{num1} + {num2} + {num3}")
+                print(f"\t\t\tTotal:      {ttl}")
+                print(f"\t\t\tDifference: {dif}")
+                print()
 
     print("\n")
