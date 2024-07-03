@@ -33,66 +33,69 @@ https://leetcode.com/problems/3sum-closest/description/
 
 """
 
-InputLst = [[[-1, 2, 1, -4], 1],
-            [[0, 0, 0], 1]]
 
-for csCnt, case in enumerate(InputLst):
+if __name__ == "__main__":
 
-    print(f"{csCnt + 1}. Case:\n")
+    InputLst = [[[-1, 2, 1, -4], 1],
+                [[0, 0, 0], 1]]
 
-    Nums = case[0]
-    Trg = case[1]
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\tNumbers: {Nums}")
-    print(f"\tTarget: {Trg}")
-    print()
+        print(f"{csCnt + 1}. Case:\n")
 
-    clstDif = None
-    clstTtl = None
-    clstCmb = None
-    clstFnd = False
+        Nums = case[0]
+        Trg = case[1]
 
-    cmbCnt = 0
+        print(f"\tNumbers: {Nums}")
+        print(f"\tTarget: {Trg}")
+        print()
 
-    for n1, num1 in enumerate(Nums[: -2]):
-        if clstFnd:
-            break
+        clstDif = None
+        clstTtl = None
+        clstCmb = None
+        clstFnd = False
 
-        for n2, num2 in enumerate(Nums[1 + n1: -1]):
+        cmbCnt = 0
+
+        for n1, num1 in enumerate(Nums[: -2]):
             if clstFnd:
                 break
 
-            for n3, num3 in enumerate(Nums[2 + n1 + n2:]):
-                ttl = num1 + num2 + num3
-                dif = abs(Trg - ttl)
-
-                print(f"\t\t{cmbCnt}.Cmb.: {num1} + {num2} + {num3}")
-                print(f"\t\t\tTotal:      {ttl}")
-                print(f"\t\t\tDifference: {dif}")
-                print()
-
-                if cmbCnt == 0:
-                    clstDif = dif
-                    clstTtl = ttl
-                    clstCmb = [num1, num2, num3]
-
-                elif dif == 0:
-                    clstDif = dif
-                    clstTtl = ttl
-                    clstCmb = [num1, num2, num3]
-
-                    clstFnd = True
+            for n2, num2 in enumerate(Nums[1 + n1: -1]):
+                if clstFnd:
                     break
 
-                elif clstDif > dif:
-                    clstDif = dif
-                    clstTtl = ttl
-                    clstCmb = [num1, num2, num3]
+                for n3, num3 in enumerate(Nums[2 + n1 + n2:]):
+                    ttl = num1 + num2 + num3
+                    dif = abs(Trg - ttl)
 
-                cmbCnt += 1
+                    print(f"\t\t{cmbCnt}.Cmb.: {num1} + {num2} + {num3}")
+                    print(f"\t\t\tTotal:      {ttl}")
+                    print(f"\t\t\tDifference: {dif}")
+                    print()
 
-    print(f"\tClosest difference: {clstDif}")
-    print(f"\tClosest total:      {clstTtl}")
-    print(f"\t\tClosest combination: {clstCmb}")
+                    if cmbCnt == 0:
+                        clstDif = dif
+                        clstTtl = ttl
+                        clstCmb = [num1, num2, num3]
 
-    print("\n")
+                    elif dif == 0:
+                        clstDif = dif
+                        clstTtl = ttl
+                        clstCmb = [num1, num2, num3]
+
+                        clstFnd = True
+                        break
+
+                    elif clstDif > dif:
+                        clstDif = dif
+                        clstTtl = ttl
+                        clstCmb = [num1, num2, num3]
+
+                    cmbCnt += 1
+
+        print(f"\tClosest difference: {clstDif}")
+        print(f"\tClosest total:      {clstTtl}")
+        print(f"\t\tClosest combination: {clstCmb}")
+
+        print("\n")
