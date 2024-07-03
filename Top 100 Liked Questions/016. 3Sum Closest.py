@@ -32,3 +32,15 @@ https://leetcode.com/problems/3sum-closest/description/
         -10^4 <= target <= 10^4
 
 """
+
+InputLst = [[[-1,2,1,-4], 1],
+            [[0,0,0], 1]]
+
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}. Case:\n")
+
+    print(f"\tNumbers: {case[0]}")
+    print(f"\tTarget: {case[1]}")
+
+    print("\n")
