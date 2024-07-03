@@ -182,9 +182,9 @@ def Sol01_WhlIndv_Prt(hdNd1, hdNd2):
 
 def Sol01_WhlIndv(hdNd1, hdNd2):
 
-    print(f"\t1. Linked List: {hdNd1.valLst()}")
-    print(f"\t2. Linked List: {hdNd2.valLst()}")
-    print()
+    # print(f"\t1. Linked List: {hdNd1.valLst()}")
+    # print(f"\t2. Linked List: {hdNd2.valLst()}")
+    # print()
 
     curNd1 = hdNd1
     curNd2 = hdNd2
@@ -260,9 +260,9 @@ def Sol01_WhlIndv(hdNd1, hdNd2):
 
     outValLst = outHdNd.valLst()
 
-    print(f"\tOut Linked List: {outValLst}")
+    # print(f"\tOut Linked List: {outValLst}")
 
-    print("\n")
+    # print("\n")
 
 
 if __name__ == '__main__':
