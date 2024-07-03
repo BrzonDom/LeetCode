@@ -160,7 +160,7 @@ def Sol01_TrpFrLp_Prt(Nums, Trg):
 
 def Sol02A_TlCmb_Prt(InLst):
 
-    for csCnt, case in enumerate(InputLst):
+    for csCnt, case in enumerate(InLst):
 
         print(f"{csCnt + 1}. Case:\n")
 
