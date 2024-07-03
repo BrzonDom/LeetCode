@@ -48,6 +48,7 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     clstDif = None
+    clstTtl = None
     clstCmb = None
 
     cmbCnt = 0
@@ -65,10 +66,12 @@ for csCnt, case in enumerate(InputLst):
 
                 if cmbCnt == 0:
                     clstDif = dif
+                    clstTtl = ttl
                     clstCmb = [num1, num2, num3]
 
                 elif clstDif > dif:
                     clstDif = dif
+                    clstTtl = ttl
                     clstCmb = [num1, num2, num3]
 
                 cmbCnt += 1
