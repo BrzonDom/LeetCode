@@ -176,10 +176,11 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nums}")
         print(f"\tTarget: {Trg}")
+        print()
 
         numCmb = itertools.combinations(Nums, 3)
 
         for cmb in numCmb:
-            print(f"\t\t{cmb}")
+            print(f"\t\t{cmb[0]} + {cmb[1]} + {cmb[2]} = {sum(cmb)}")
 
         print("\n")
