@@ -47,15 +47,19 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trg}")
     print()
 
-    for n1, num1 in enumerate(Nums[:2]):
-        for n2, num2 in enumerate(Nums[1:]):
-            for n3, num3 in enumerate(Nums[2:]):
+    cmbCnt = 0
+
+    for n1, num1 in enumerate(Nums):
+        for n2, num2 in enumerate(Nums):
+            for n3, num3 in enumerate(Nums):
                 ttl = num1 + num2 + num3
                 dif = abs(Trg - ttl)
 
-                print(f"\t\t{num1} + {num2} + {num3}")
+                print(f"\t\t{cmbCnt}.Cmb.: {num1} + {num2} + {num3}")
                 print(f"\t\t\tTotal:      {ttl}")
                 print(f"\t\t\tDifference: {dif}")
                 print()
+
+                cmbCnt += 1
 
     print("\n")
