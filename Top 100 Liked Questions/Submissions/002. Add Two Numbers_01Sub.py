@@ -254,6 +254,8 @@ def Sol01_WhlIndv(hdNd1, hdNd2):
         nxtOutNd = ListNode(1)
         curOutNd.nxt = nxtOutNd
 
+    return outHdNd
+
 
 if __name__ == '__main__':
 
