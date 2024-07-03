@@ -177,9 +177,9 @@ if __name__ == "__main__":
         print(f"\tNumbers: {Nums}")
         print(f"\tTarget: {Trg}")
 
-        numbComb = itertools.combinations(Nums, 3)
+        numCmb = itertools.combinations(Nums, 3)
 
-        for comb in numbComb:
-            print(f"\t\t{comb}")
+        for cmb in numCmb:
+            print(f"\t\t{cmb}")
 
         print("\n")
