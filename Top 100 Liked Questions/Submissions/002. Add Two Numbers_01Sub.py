@@ -273,4 +273,6 @@ if __name__ == '__main__':
         lnkLst1 = mkLnkLst(lst1)
         lnkLst2 = mkLnkLst(lst2)
 
-        Sol01_WhlIndv_Prt(lnkLst1.head, lnkLst2.head)
+        # Sol01_WhlIndv_Prt(lnkLst1.head, lnkLst2.head)
+
+        Sol01_WhlIndv(lnkLst1.head, lnkLst2.head)
