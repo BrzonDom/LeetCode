@@ -98,10 +98,7 @@ def Sol01A_TrpFrLp_Prt(InLst):
         print("\n")
 
 
-def Sol01_TrpFrLp_Prt(case):
-
-    Nums = case[0]
-    Trg = case[1]
+def Sol01_TrpFrLp_Prt(Nums, Trg):
 
     print(f"\tNumbers: {Nums}")
     print(f"\tTarget: {Trg}")
@@ -169,4 +166,4 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol01_TrpFrLp_Prt(case)
+        Sol01_TrpFrLp_Prt(case[0], case[1])
