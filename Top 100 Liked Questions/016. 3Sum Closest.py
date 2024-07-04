@@ -204,10 +204,6 @@ def Sol02A_TlCmb_Prt(InLst):
 
 def Sol02_TlCmb_Prt(case):
 
-    # for csCnt, case in enumerate(InLst):
-    #
-    #     print(f"{csCnt + 1}. Case:\n")
-
     Nums = case[0]
     Trg = case[1]
 
