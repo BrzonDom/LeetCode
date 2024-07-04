@@ -48,23 +48,22 @@ https://leetcode.com/problems/3sum/description/
 from itertools import combinations
 
 
-def fndTrip_combSol(Nums):
+def Sol01_TlCmb_Prt(Nums):
 
-    tripComb = combinations(Nums, 3)
+    trpCmb = combinations(Nums, 3)
 
     OutLst = []
 
-    for trip in tripComb:
-        if sum(trip) == 0:
-            numI, numJ, numK = trip
+    for trp in trpCmb:
+        if sum(trp) == 0:
+            numI, numJ, numK = trp
 
             print(f"\t\t\t{numI:2} + {numJ:2} + {numK:2} = 0")
 
-            trip = sorted(list(trip))
+            trp = sorted(list(trip))
 
-            if trip not in OutLst:
-                OutLst.append(trip)
-
+            if trp not in OutLst:
+                OutLst.append(trp)
     print()
 
     print("\t\tOutput:")
@@ -87,7 +86,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\tList: {case}")
     print()
 
-    # fndTrip_combSol(InLst)
+    # Sol01_TlCmb_Prt(case)
 
     OutLst = []
     NumLst = sorted(case)
