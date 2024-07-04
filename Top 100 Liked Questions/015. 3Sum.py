@@ -49,7 +49,10 @@ InputLst = [[-1, 0, 1, 2, -1, -4],
             [0, 1, 1],
             [0, 0, 0]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(f"Nums: {case}")
-    print()
+    print(f"{csCnt + 1}. Case:\n")
+
+    print(f"\tNums: {case}")
+
+    print("\n")
