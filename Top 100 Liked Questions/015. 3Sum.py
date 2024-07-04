@@ -53,6 +53,12 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt + 1}. Case:\n")
 
-    print(f"\tNums: {case}")
+    Nums = case
+
+    print(f"\tNums: {Nums}")
+    print()
+
+    for num in Nums:
+        print(f"\t\t{num}")
 
     print("\n")
