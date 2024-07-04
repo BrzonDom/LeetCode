@@ -58,9 +58,9 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tNums: {Nums}")
     print()
 
-    for num1 in Nums[:-2]:
-        for num2 in Nums[1:]:
-            for num3 in Nums[2:]:
+    for n1, num1 in enumerate(Nums[:-2]):
+        for n2, num2 in enumerate(Nums[1:]):
+            for n3, num3 in enumerate(Nums[2:]):
                 print(f"\t\t{num1} + {num2} + {num3}")
 
     print("\n")
