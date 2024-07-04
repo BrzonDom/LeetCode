@@ -202,10 +202,7 @@ def Sol02A_TlCmb_Prt(InLst):
         print("\n")
 
 
-def Sol02_TlCmb_Prt(case):
-
-    Nums = case[0]
-    Trg = case[1]
+def Sol02_TlCmb_Prt(Nums, Trg):
 
     print(f"\tNumbers: {Nums}")
     print(f"\tTarget: {Trg}")
