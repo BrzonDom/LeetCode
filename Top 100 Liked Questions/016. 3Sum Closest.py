@@ -202,48 +202,48 @@ def Sol02A_TlCmb_Prt(InLst):
         print("\n")
 
 
-def Sol02_TlCmb_Prt(InLst):
+def Sol02_TlCmb_Prt(case):
 
-    for csCnt, case in enumerate(InLst):
+    # for csCnt, case in enumerate(InLst):
+    #
+    #     print(f"{csCnt + 1}. Case:\n")
 
-        print(f"{csCnt + 1}. Case:\n")
+    Nums = case[0]
+    Trg = case[1]
 
-        Nums = case[0]
-        Trg = case[1]
+    print(f"\tNumbers: {Nums}")
+    print(f"\tTarget: {Trg}")
+    print()
 
-        print(f"\tNumbers: {Nums}")
-        print(f"\tTarget: {Trg}")
+    clstTtl = sum(Nums[:3])
+    clstDfr = abs(Trg - clstTtl)
+    clstCmb = Nums[:3]
+
+    numCmb = itertools.combinations(Nums, 3)
+
+    for cmbCnt, cmb in enumerate(numCmb):
+        ttl = sum(cmb)
+        dfr = abs(Trg - ttl)
+
+        print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]}")
+        print(f"\t\t\tTotal:      {ttl}")
+        print(f"\t\t\tDifference: {dfr}")
         print()
 
-        clstTtl = sum(Nums[:3])
-        clstDfr = abs(Trg - clstTtl)
-        clstCmb = Nums[:3]
+        if clstDfr > dfr:
 
-        numCmb = itertools.combinations(Nums, 3)
+            clstDfr = dfr
+            clstTtl = ttl
+            clstCmb = cmb
 
-        for cmbCnt, cmb in enumerate(numCmb):
-            ttl = sum(cmb)
-            dfr = abs(Trg - ttl)
+            if dfr == 0:
+                break
 
-            print(f"\t\t{cmbCnt}.Cmb.: {cmb[0]} + {cmb[1]} + {cmb[2]}")
-            print(f"\t\t\tTotal:      {ttl}")
-            print(f"\t\t\tDifference: {dfr}")
-            print()
+    print(f"\tClosest difference: {clstDfr}")
+    print(f"\tClosest total:      {clstTtl}")
+    print(f"\t\tClosest combination: {clstCmb}")
 
-            if clstDfr > dfr:
-
-                clstDfr = dfr
-                clstTtl = ttl
-                clstCmb = cmb
-
-                if dfr == 0:
-                    break
-
-        print(f"\tClosest difference: {clstDfr}")
-        print(f"\tClosest total:      {clstTtl}")
-        print(f"\t\tClosest combination: {clstCmb}")
-
-        print("\n")
+    print("\n")
 
 
 if __name__ == "__main__":
