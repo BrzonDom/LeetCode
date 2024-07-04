@@ -61,7 +61,7 @@ for csCnt, case in enumerate(InputLst):
     cmbCnt = 1
 
     for n1, num1 in enumerate(Nums[:-2]):
-        for n2, num2 in enumerate(Nums[1+n1:]):
+        for n2, num2 in enumerate(Nums[1+n1:-1]):
             for n3, num3 in enumerate(Nums[2+n1+n2:]):
                 print(f"\t\t{cmbCnt}.Cmb.: [{num1}, {num2}, {num3}]")
 
