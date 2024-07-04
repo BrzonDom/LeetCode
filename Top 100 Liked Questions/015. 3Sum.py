@@ -43,11 +43,9 @@ https://leetcode.com/problems/3sum/description/
         -10^5 <= nums[i] <= 10^5
 
 """
-from itertools import combinations
 
-Input_Lst = [[-1, 0, 1, 2, -1, -4],
-             [0, 1, 1],
-             [0, 0, 0]]
+
+from itertools import combinations
 
 
 def fndTrip_combSol(InLst):
@@ -76,6 +74,10 @@ def fndTrip_combSol(InLst):
 
     return OutLst
 
+
+Input_Lst = [[-1, 0, 1, 2, -1, -4],
+             [0, 1, 1],
+             [0, 0, 0]]
 
 for case, InLst in enumerate(Input_Lst):
 
