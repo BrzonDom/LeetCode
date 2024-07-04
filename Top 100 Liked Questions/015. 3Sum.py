@@ -43,3 +43,13 @@ https://leetcode.com/problems/3sum/description/
         -10^5 <= nums[i] <= 10^5
 
 """
+
+
+InputLst = [[-1, 0, 1, 2, -1, -4],
+            [0, 1, 1],
+            [0, 0, 0]]
+
+for case in InputLst:
+
+    print(f"Nums: {case}")
+    print()
