@@ -58,6 +58,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tNums: {Nums}")
     print()
 
+    outCmb = []
     cmbCnt = 1
 
     for n1, num1 in enumerate(Nums[:-2]):
@@ -70,6 +71,8 @@ for csCnt, case in enumerate(InputLst):
                     print()
                     print(f"\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
                     print()
+
+                    outCmb.append(cmb)
 
                 else:
                     print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
