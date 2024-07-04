@@ -246,11 +246,12 @@ if __name__ == "__main__":
 
     # Sol01A_TrpFrLp_Prt(InputLst)
 
-    Sol02A_TlCmb_Prt(InputLst)
+    # Sol02A_TlCmb_Prt(InputLst)
 
-    # for csCnt, case in enumerate(InputLst):
-    #
-    #     print(f"{csCnt + 1}. Case:\n")
+    for csCnt, case in enumerate(InputLst):
+
+        print(f"{csCnt + 1}. Case:\n")
 
         # Sol01_TrpFrLp_Prt(case[0], case[1])
 
+        Sol02_TlCmb_Prt(case[0], case[1])
