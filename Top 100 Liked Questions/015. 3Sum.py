@@ -78,5 +78,10 @@ for csCnt, case in enumerate(InputLst):
                     print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                 cmbCnt += 1
+    print()
+
+    print(f"\tCombinations:")
+    for cmb in outCmb:
+        print(f"\t\t\t{cmb}")
 
     print("\n")
