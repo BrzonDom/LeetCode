@@ -48,9 +48,9 @@ https://leetcode.com/problems/3sum/description/
 from itertools import combinations
 
 
-def fndTrip_combSol(InLst):
+def fndTrip_combSol(Nums):
 
-    tripComb = combinations(InLst, 3)
+    tripComb = combinations(Nums, 3)
 
     OutLst = []
 
@@ -75,22 +75,22 @@ def fndTrip_combSol(InLst):
     return OutLst
 
 
-Input_Lst = [[-1, 0, 1, 2, -1, -4],
+InputLst = [[-1, 0, 1, 2, -1, -4],
              [0, 1, 1],
              [0, 0, 0]]
 
-for case, InLst in enumerate(Input_Lst):
+for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case+1}.Case:")
+    print(f"\t{csCnt+1}.Case:")
     print()
 
-    print(f"\t\tList: {InLst}")
+    print(f"\t\tList: {case}")
     print()
 
     # fndTrip_combSol(InLst)
 
     OutLst = []
-    NumLst = sorted(InLst)
+    NumLst = sorted(case)
 
     for i, num in enumerate(NumLst):
 
