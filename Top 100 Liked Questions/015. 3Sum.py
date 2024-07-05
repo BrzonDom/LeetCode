@@ -88,6 +88,11 @@ def Sol01_TrpFrLp_Prt(Nums):
     print("\n")
 
 
+def Out_Prt(outCmb):
+
+    print()
+
+
 if __name__ == "__main__":
 
     InputLst = [[-1, 0, 1, 2, -1, -4],
