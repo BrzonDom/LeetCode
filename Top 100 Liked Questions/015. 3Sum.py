@@ -117,7 +117,9 @@ if __name__ == "__main__":
         trpCmb = map(list, trpCmb)
 
         for cmbCnt, cmb in enumerate(trpCmb):
-            print(f"\t\t{cmbCnt+1}. {cmb}")
+            ttl = sum(cmb)
+
+            print(f"\t\t{cmbCnt+1}.Cmb.: \t{cmb} = {ttl}")
 
         print("\n")
 
