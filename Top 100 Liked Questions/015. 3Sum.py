@@ -74,7 +74,8 @@ for csCnt, case in enumerate(InputLst):
                     print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
                     print()
 
-                    outCmb.append(cmb)
+                    if cmb not in outCmb:
+                        outCmb.append(cmb)
 
                 else:
                     print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
