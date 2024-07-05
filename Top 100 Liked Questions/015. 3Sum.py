@@ -86,7 +86,11 @@ def Sol01_TrpFrLp_Prt(Nums):
 
 def Out_Prt(outCmb):
 
-    print()
+    print(f"\tOut combinations:")
+    for cmb in outCmb:
+        print(f"\t\t{cmb}")
+
+    print("\n")
 
 
 if __name__ == "__main__":
@@ -99,4 +103,4 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        outRes = Sol01_TrpFrLp_Prt(case)
+        outRtrn = Sol01_TrpFrLp_Prt(case)
