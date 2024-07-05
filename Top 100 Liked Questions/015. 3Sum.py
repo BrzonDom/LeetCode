@@ -114,6 +114,7 @@ if __name__ == "__main__":
         print()
 
         trpCmb = combinations(Nums, 3)
+        trpCmb = map(list, trpCmb)
 
         for cmb in trpCmb:
             print(f"\t\t{cmb}")
