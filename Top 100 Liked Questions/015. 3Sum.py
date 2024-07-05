@@ -83,12 +83,6 @@ def Sol01_TrpFrLp_Prt(Nums):
 
     return outCmb
 
-    print(f"\tOut combinations:")
-    for cmb in outCmb:
-        print(f"\t\t{cmb}")
-
-    print("\n")
-
 
 def Out_Prt(outCmb):
 
