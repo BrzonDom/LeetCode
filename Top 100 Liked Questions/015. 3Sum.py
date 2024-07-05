@@ -64,7 +64,7 @@ def Sol01_TrpFrLp_Prt(Nums):
 
                 if ttl == 0:
                     print()
-                    print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
+                    print(f"\t\t\t{cmbCnt+1}.Cmb.: \t{cmb} = {ttl}")
 
                     cmb.sort()
 
@@ -77,7 +77,7 @@ def Sol01_TrpFrLp_Prt(Nums):
                     print()
 
                 else:
-                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
 
                 cmbCnt += 1
     print()
@@ -116,8 +116,8 @@ if __name__ == "__main__":
         trpCmb = combinations(Nums, 3)
         trpCmb = map(list, trpCmb)
 
-        for cmb in trpCmb:
-            print(f"\t\t{cmb}")
+        for cmbCnt, cmb in enumerate(trpCmb):
+            print(f"\t\t{cmbCnt+1}. {cmb}")
 
         print("\n")
 
