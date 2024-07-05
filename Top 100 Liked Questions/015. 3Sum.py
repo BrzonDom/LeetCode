@@ -81,6 +81,8 @@ def Sol01_TrpFrLp_Prt(Nums):
                 cmbCnt += 1
     print()
 
+    return outCmb
+
     print(f"\tOut combinations:")
     for cmb in outCmb:
         print(f"\t\t{cmb}")
