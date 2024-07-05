@@ -107,6 +107,12 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
+        Nums = case
+
+        print(f"\tNums: {Nums}")
+
+        print("\n")
+
         # outRtrn = Sol01_TrpFrLp_Prt(case)
         #
         # Out_Prt(outRtrn)
