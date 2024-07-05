@@ -111,8 +111,12 @@ if __name__ == "__main__":
         Nums = case
 
         print(f"\tNums: {Nums}")
+        print()
 
         trpCmb = combinations(Nums, 3)
+
+        for cmb in trpCmb:
+            print(f"\t\t{cmb}")
 
         print("\n")
 
