@@ -43,6 +43,7 @@ https://leetcode.com/problems/3sum/description/
         -10^5 <= nums[i] <= 10^5
 
 """
+from itertools import combinations
 
 
 def Sol01_TrpFrLp_Prt(Nums):
@@ -110,6 +111,8 @@ if __name__ == "__main__":
         Nums = case
 
         print(f"\tNums: {Nums}")
+
+        trpCmb = combinations(Nums, 3)
 
         print("\n")
 
