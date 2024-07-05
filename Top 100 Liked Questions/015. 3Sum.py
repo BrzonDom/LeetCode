@@ -119,7 +119,13 @@ if __name__ == "__main__":
         for cmbCnt, cmb in enumerate(trpCmb):
             ttl = sum(cmb)
 
-            print(f"\t\t{cmbCnt+1}.Cmb.: \t{cmb} = {ttl}")
+            if ttl == 0:
+                print()
+                print(f"\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
+                print()
+
+            else:
+                print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
 
         print("\n")
 
