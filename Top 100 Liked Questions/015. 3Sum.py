@@ -72,10 +72,14 @@ for csCnt, case in enumerate(InputLst):
                 if ttl == 0:
                     print()
                     print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
-                    print()
 
                     if cmb not in outCmb:
+                        print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination")
+
                         outCmb.append(cmb)
+                    else:
+                        print("\t\t\t\tCombination already counted")
+                    print()
 
                 else:
                     print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
