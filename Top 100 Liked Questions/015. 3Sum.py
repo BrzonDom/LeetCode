@@ -45,52 +45,54 @@ https://leetcode.com/problems/3sum/description/
 """
 
 
-InputLst = [[-1, 0, 1, 2, -1, -4],
-            [0, 1, 1],
-            [0, 0, 0]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[-1, 0, 1, 2, -1, -4],
+                [0, 1, 1],
+                [0, 0, 0]]
 
-    print(f"{csCnt + 1}. Case:\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Nums = case
+        print(f"{csCnt + 1}. Case:\n")
 
-    print(f"\tNums: {Nums}")
-    print()
+        Nums = case
 
-    outCmb = []
+        print(f"\tNums: {Nums}")
+        print()
 
-    print(f"\t\tAll combinations:")
-    cmbCnt = 1
+        outCmb = []
 
-    for n1, num1 in enumerate(Nums[:-2]):
-        for n2, num2 in enumerate(Nums[1+n1:-1]):
-            for n3, num3 in enumerate(Nums[2+n1+n2:]):
-                cmb = [num1, num2, num3]
-                ttl = sum(cmb)
+        print(f"\t\tAll combinations:")
+        cmbCnt = 1
 
-                if ttl == 0:
-                    print()
-                    print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
+        for n1, num1 in enumerate(Nums[:-2]):
+            for n2, num2 in enumerate(Nums[1+n1:-1]):
+                for n3, num3 in enumerate(Nums[2+n1+n2:]):
+                    cmb = [num1, num2, num3]
+                    ttl = sum(cmb)
 
-                    cmb.sort()
+                    if ttl == 0:
+                        print()
+                        print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
 
-                    if cmb not in outCmb:
-                        print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination: {cmb}")
+                        cmb.sort()
 
-                        outCmb.append(cmb)
+                        if cmb not in outCmb:
+                            print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination: {cmb}")
+
+                            outCmb.append(cmb)
+                        else:
+                            print(f"\t\t\t\tCombination already counted: {cmb}")
+                        print()
+
                     else:
-                        print(f"\t\t\t\tCombination already counted: {cmb}")
-                    print()
+                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
-                else:
-                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    cmbCnt += 1
+        print()
 
-                cmbCnt += 1
-    print()
+        print(f"\tOut combinations:")
+        for cmb in outCmb:
+            print(f"\t\t{cmb}")
 
-    print(f"\tOut combinations:")
-    for cmb in outCmb:
-        print(f"\t\t{cmb}")
-
-    print("\n")
+        print("\n")
