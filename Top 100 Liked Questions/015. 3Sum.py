@@ -99,4 +99,4 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol01_TrpFrLp_Prt(case)
+        outRes = Sol01_TrpFrLp_Prt(case)
