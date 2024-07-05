@@ -45,6 +45,49 @@ https://leetcode.com/problems/3sum/description/
 """
 
 
+def Sol01_TrpFrLp_Prt(Nums):
+
+    print(f"\tNums: {Nums}")
+    print()
+
+    outCmb = []
+
+    print(f"\t\tAll combinations:")
+    cmbCnt = 1
+
+    for n1, num1 in enumerate(Nums[:-2]):
+        for n2, num2 in enumerate(Nums[1 + n1:-1]):
+            for n3, num3 in enumerate(Nums[2 + n1 + n2:]):
+                cmb = [num1, num2, num3]
+                ttl = sum(cmb)
+
+                if ttl == 0:
+                    print()
+                    print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
+
+                    cmb.sort()
+
+                    if cmb not in outCmb:
+                        print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination: {cmb}")
+
+                        outCmb.append(cmb)
+                    else:
+                        print(f"\t\t\t\tCombination already counted: {cmb}")
+                    print()
+
+                else:
+                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+
+                cmbCnt += 1
+    print()
+
+    print(f"\tOut combinations:")
+    for cmb in outCmb:
+        print(f"\t\t{cmb}")
+
+    print("\n")
+
+
 if __name__ == "__main__":
 
     InputLst = [[-1, 0, 1, 2, -1, -4],
@@ -55,44 +98,44 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Nums = case
-
-        print(f"\tNums: {Nums}")
-        print()
-
-        outCmb = []
-
-        print(f"\t\tAll combinations:")
-        cmbCnt = 1
-
-        for n1, num1 in enumerate(Nums[:-2]):
-            for n2, num2 in enumerate(Nums[1+n1:-1]):
-                for n3, num3 in enumerate(Nums[2+n1+n2:]):
-                    cmb = [num1, num2, num3]
-                    ttl = sum(cmb)
-
-                    if ttl == 0:
-                        print()
-                        print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
-
-                        cmb.sort()
-
-                        if cmb not in outCmb:
-                            print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination: {cmb}")
-
-                            outCmb.append(cmb)
-                        else:
-                            print(f"\t\t\t\tCombination already counted: {cmb}")
-                        print()
-
-                    else:
-                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
-
-                    cmbCnt += 1
-        print()
-
-        print(f"\tOut combinations:")
-        for cmb in outCmb:
-            print(f"\t\t{cmb}")
-
-        print("\n")
+        # Nums = case
+        #
+        # print(f"\tNums: {Nums}")
+        # print()
+        #
+        # outCmb = []
+        #
+        # print(f"\t\tAll combinations:")
+        # cmbCnt = 1
+        #
+        # for n1, num1 in enumerate(Nums[:-2]):
+        #     for n2, num2 in enumerate(Nums[1+n1:-1]):
+        #         for n3, num3 in enumerate(Nums[2+n1+n2:]):
+        #             cmb = [num1, num2, num3]
+        #             ttl = sum(cmb)
+        #
+        #             if ttl == 0:
+        #                 print()
+        #                 print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
+        #
+        #                 cmb.sort()
+        #
+        #                 if cmb not in outCmb:
+        #                     print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination: {cmb}")
+        #
+        #                     outCmb.append(cmb)
+        #                 else:
+        #                     print(f"\t\t\t\tCombination already counted: {cmb}")
+        #                 print()
+        #
+        #             else:
+        #                 print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+        #
+        #             cmbCnt += 1
+        # print()
+        #
+        # print(f"\tOut combinations:")
+        # for cmb in outCmb:
+        #     print(f"\t\t{cmb}")
+        #
+        # print("\n")
