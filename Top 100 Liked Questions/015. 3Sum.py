@@ -116,6 +116,8 @@ if __name__ == "__main__":
         trpCmb = combinations(Nums, 3)
         trpCmb = map(list, trpCmb)
 
+        outCmb = []
+
         for cmbCnt, cmb in enumerate(trpCmb):
             ttl = sum(cmb)
 
@@ -123,6 +125,8 @@ if __name__ == "__main__":
                 print()
                 print(f"\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
                 print()
+
+                outCmb.append(cmb)
 
             else:
                 print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
