@@ -138,8 +138,10 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}. Case:\n")
 
         Nums = case
+        print(f"\tNums unsorted: {Nums}")
 
-        print(f"\tNums: {Nums}")
+        Nums.sort()
+        print(f"\tNums sorted:   {Nums}")
 
         print("\n")
 
