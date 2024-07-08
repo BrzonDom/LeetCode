@@ -141,4 +141,4 @@ if __name__ == "__main__":
 
         # outRtrn = Sol01_TrpFrLp_Prt(case)
 
-        # Out_Prt(outRtrn)
+        Out_Prt(outRtrn)
