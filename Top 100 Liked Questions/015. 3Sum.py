@@ -85,6 +85,39 @@ def Sol01_TrpFrLp_Prt(Nums):
     return outCmb
 
 
+def Sol02_TlCmb_Prt(Nums):
+
+    print(f"\tNums: {Nums}")
+    print()
+
+    trpCmb = combinations(Nums, 3)
+    trpCmb = map(list, trpCmb)
+
+    outCmb = []
+
+    print(f"\t\tAll combinations:")
+    for cmbCnt, cmb in enumerate(trpCmb):
+        ttl = sum(cmb)
+
+        if ttl == 0:
+            print()
+            print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
+            print()
+
+            outCmb.append(cmb)
+
+        else:
+            print(f"\t\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
+
+    print()
+
+    print("\tOut combinations:")
+    for cmb in outCmb:
+        print(f"\t\t{cmb}")
+
+    print("\n")
+
+
 def Out_Prt(outCmb):
 
     print(f"\tOut combinations:")
