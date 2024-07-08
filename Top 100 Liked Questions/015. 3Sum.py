@@ -139,6 +139,10 @@ if __name__ == "__main__":
 
         Nums = case
 
+        print(f"\tNums: {Nums}")
+
+        print("\n")
+
         # outRtrn = Sol01_TrpFrLp_Prt(case)
 
         # outRtrn = Sol02_TlCmb_Prt(case)
