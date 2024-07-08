@@ -113,12 +113,6 @@ def Sol02_TlCmb_Prt(Nums):
 
     return outCmb
 
-    print("\tOut combinations:")
-    for cmb in outCmb:
-        print(f"\t\t{cmb}")
-
-    print("\n")
-
 
 def Out_Prt(outCmb):
 
