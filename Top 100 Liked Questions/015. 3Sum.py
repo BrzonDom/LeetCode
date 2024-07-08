@@ -131,6 +131,11 @@ if __name__ == "__main__":
             else:
                 print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
 
+        print()
+
+        for cmb in outCmb:
+            print(f"\t\t{cmb}")
+
         print("\n")
 
         # outRtrn = Sol01_TrpFrLp_Prt(case)
