@@ -118,21 +118,23 @@ if __name__ == "__main__":
 
         outCmb = []
 
+        print(f"\t\tAll combinations:")
         for cmbCnt, cmb in enumerate(trpCmb):
             ttl = sum(cmb)
 
             if ttl == 0:
                 print()
-                print(f"\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
+                print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
                 print()
 
                 outCmb.append(cmb)
 
             else:
-                print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
+                print(f"\t\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
 
         print()
 
+        print("\tOut combinations:")
         for cmb in outCmb:
             print(f"\t\t{cmb}")
 
