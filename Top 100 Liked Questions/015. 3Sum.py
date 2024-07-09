@@ -143,6 +143,9 @@ if __name__ == "__main__":
         Nums.sort()
         print(f"\tNums sorted:   {Nums}")
 
+        for n, num in enumerate(Nums):
+            print(f"\t\t{n+1}. {num}")
+
         print("\n")
 
         # outRtrn = Sol01_TrpFrLp_Prt(case)
