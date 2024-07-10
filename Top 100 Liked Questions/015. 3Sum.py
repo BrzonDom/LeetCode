@@ -144,12 +144,13 @@ if __name__ == "__main__":
         print(f"\tNums sorted:   {Nums}")
 
         lenNum = len(Nums)
+        print(f"\t\tNums size: {lenNum}")
+        print()
 
         for mdId in range(lenNum):
-
             nmMd = Nums[mdId]
 
-            print(f"\t\t{mdId+1}. {nmMd}")
+            print(f"\t\t\t{mdId+1}. {nmMd}")
 
         print("\n")
 
