@@ -147,10 +147,13 @@ if __name__ == "__main__":
         print(f"\t\tNums size: {lenNum}")
         print()
 
-        for stId in range(lenNum):
-            nmSt = Nums[stId]
+        for st in range(lenNum):
+            nSt = Nums[st]
 
-            print(f"\t\t\t{stId+1}. {nmSt}")
+            print(f"\t\t\t{st+1}. {nSt}")
+
+            lf = st + 1
+            rg = lenNum - 1
 
         print("\n")
 
