@@ -147,6 +147,8 @@ if __name__ == "__main__":
         print(f"\t\tNums size: {lenNum}")
         print()
 
+        outCmb = []
+
         for st in range(lenNum):
             nSt = Nums[st]
 
@@ -169,6 +171,7 @@ if __name__ == "__main__":
                     rg -= 1
 
                 else:
+                    outCmb.append(cmb)
                     break
 
         print("\n")
