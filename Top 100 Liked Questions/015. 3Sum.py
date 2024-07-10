@@ -162,19 +162,23 @@ if __name__ == "__main__":
                 cmb = [nSt, nLf, nRg]
                 ttl = sum(cmb)
 
-                print(f"\t\t\t{cmb} = {ttl}")
-
                 if ttl < 0:
                     lf += 1
 
+                    print(f"\t\t\t\t{cmb} = {ttl}")
+
                 elif ttl > 0:
                     rg -= 1
+
+                    print(f"\t\t\t\t{cmb} = {ttl}")
 
                 else:
                     outCmb.append(cmb)
 
                     lf += 1
                     rg -= 1
+
+                    print(f"\t\t\t{cmb}")
 
         print("\n")
 
