@@ -150,19 +150,17 @@ if __name__ == "__main__":
         for st in range(lenNum):
             nSt = Nums[st]
 
-            # print(f"\t\t\t{st+1}. {nSt}")
-
             lf = st + 1
             rg = lenNum - 1
 
             while lf < rg:
-
                 nLf = Nums[lf]
                 nRg = Nums[rg]
 
-                ttl = nSt + nLf + nRg
+                cmb = [nSt, nLf, nRg]
+                ttl = sum(cmb)
 
-                print(f"\t\t\t{nSt} + {nLf} + {nRg} = {ttl}")
+                print(f"\t\t\t{cmb} = {ttl}")
 
                 if ttl < 0:
                     lf += 1
