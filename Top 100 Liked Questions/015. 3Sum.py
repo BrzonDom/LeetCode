@@ -160,12 +160,14 @@ if __name__ == "__main__":
                 nLf = Nums[lf]
                 nRg = Nums[rg]
 
-                print(f"\t\t\t{nSt} + {nLf} + {nRg} = {nSt + nLf + nRg}")
+                ttl = nSt + nLf + nRg
 
-                if nSt + nLf + nRg < 0:
+                print(f"\t\t\t{nSt} + {nLf} + {nRg} = {ttl}")
+
+                if ttl < 0:
                     lf += 1
 
-                elif nSt + nLf + nRg > 0:
+                elif ttl > 0:
                     rg -= 1
 
                 else:
