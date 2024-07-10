@@ -143,8 +143,13 @@ if __name__ == "__main__":
         Nums.sort()
         print(f"\tNums sorted:   {Nums}")
 
-        for n, num in enumerate(Nums):
-            print(f"\t\t{n+1}. {num}")
+        lenNum = len(Nums)
+
+        for mdId in range(lenNum):
+
+            nmMd = Nums[mdId]
+
+            print(f"\t\t{mdId+1}. {nmMd}")
 
         print("\n")
 
