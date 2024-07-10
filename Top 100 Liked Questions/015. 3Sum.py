@@ -155,6 +155,20 @@ if __name__ == "__main__":
             lf = st + 1
             rg = lenNum - 1
 
+            while lf < rg:
+
+                nLf = Nums[lf]
+                nRg = Nums[rg]
+
+                if nSt + nLf + nRg < 0:
+                    lf += 1
+
+                elif nSt + nLf + nRg > 0:
+                    rg -= 1
+
+                else:
+                    break
+
         print("\n")
 
         # outRtrn = Sol01_TrpFrLp_Prt(case)
