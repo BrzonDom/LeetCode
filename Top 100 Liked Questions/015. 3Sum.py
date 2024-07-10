@@ -172,7 +172,9 @@ if __name__ == "__main__":
 
                 else:
                     outCmb.append(cmb)
-                    break
+
+                    lf += 1
+                    rg -= 1
 
         print("\n")
 
