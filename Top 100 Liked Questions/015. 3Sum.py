@@ -150,7 +150,7 @@ if __name__ == "__main__":
         for st in range(lenNum):
             nSt = Nums[st]
 
-            print(f"\t\t\t{st+1}. {nSt}")
+            # print(f"\t\t\t{st+1}. {nSt}")
 
             lf = st + 1
             rg = lenNum - 1
@@ -159,6 +159,8 @@ if __name__ == "__main__":
 
                 nLf = Nums[lf]
                 nRg = Nums[rg]
+
+                print(f"\t\t\t{nSt} + {nLf} + {nRg} = {nSt + nLf + nRg}")
 
                 if nSt + nLf + nRg < 0:
                     lf += 1
