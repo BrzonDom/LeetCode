@@ -163,12 +163,6 @@ def Sol03_StrPntr_Prt(Nums):
 
     return outCmb
 
-    print(f"\tOut combinations:")
-    for cmb in outCmb:
-        print(f"\t\t{cmb}")
-
-    print("\n")
-
 
 def Out_Prt(outCmb):
 
