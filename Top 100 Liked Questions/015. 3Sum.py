@@ -188,7 +188,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol03_StrPntr_Prt(case)
+        outRtrn = Sol03_StrPntr_Prt(case)
 
         # outRtrn = Sol01_TrpFrLp_Prt(case)
 
