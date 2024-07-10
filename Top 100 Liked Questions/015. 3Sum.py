@@ -131,7 +131,8 @@ if __name__ == "__main__":
 
     InputLst = [[-1, 0, 1, 2, -1, -4],
                 [0, 1, 1],
-                [0, 0, 0]]
+                [0, 0, 0],
+                [-1, -2, -3, -4, -5, 0, 1, 4, 5, 2]]
 
     for csCnt, case in enumerate(InputLst):
 
@@ -179,6 +180,10 @@ if __name__ == "__main__":
                     rg -= 1
 
                     print(f"\t\t\t{cmb}")
+        print()
+
+        for cmb in outCmb:
+            print(f"\t\t{cmb}")
 
         print("\n")
 
