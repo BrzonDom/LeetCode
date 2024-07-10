@@ -150,6 +150,7 @@ if __name__ == "__main__":
 
         outCmb = []
 
+        print(f"\t\tAll combinations:")
         for st in range(lenNum):
             nSt = Nums[st]
 
@@ -182,6 +183,7 @@ if __name__ == "__main__":
                     print(f"\t\t\t{cmb}")
         print()
 
+        print(f"\tOut combinations:")
         for cmb in outCmb:
             print(f"\t\t{cmb}")
 
