@@ -110,12 +110,12 @@ if __name__ == "__main__":
 
         outCmb = Sol03_StrPntr_Prt(case)
 
-        # print(f"\tOut combinations:")
-        # if outCmb:
-        #     for cmb in outCmb:
-        #         print(f"\t\t{cmb}")
-        #
-        # else:
-        #     print("\t\tNone")
+        print(f"\tOut combinations:")
+        if outCmb:
+            for cmb in outCmb:
+                print(f"\t\t{cmb}")
+
+        else:
+            print("\t\tNone")
 
         print("\n")
