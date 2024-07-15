@@ -43,75 +43,6 @@ https://leetcode.com/problems/3sum/description/
         -10^5 <= nums[i] <= 10^5
 
 """
-from itertools import combinations
-
-
-def Sol01_TrpFrLp_Prt(Nums):
-
-    print(f"\tNums: {Nums}")
-    print()
-
-    outCmb = []
-
-    print(f"\t\tAll combinations:")
-    cmbCnt = 1
-
-    for n1, num1 in enumerate(Nums[:-2]):
-        for n2, num2 in enumerate(Nums[1 + n1:-1]):
-            for n3, num3 in enumerate(Nums[2 + n1 + n2:]):
-                cmb = [num1, num2, num3]
-                ttl = sum(cmb)
-
-                if ttl == 0:
-                    print()
-                    print(f"\t\t\t{cmbCnt+1}.Cmb.: \t{cmb} = {ttl}")
-
-                    cmb.sort()
-
-                    if cmb not in outCmb:
-                        print(f"\t\t\t\t{len(outCmb) + 1}.Out Combination: {cmb}")
-
-                        outCmb.append(cmb)
-                    else:
-                        print(f"\t\t\t\tCombination already counted: {cmb}")
-                    print()
-
-                else:
-                    print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
-
-                cmbCnt += 1
-    print()
-
-    return outCmb
-
-
-def Sol02_TlCmb_Prt(Nums):
-
-    print(f"\tNums: {Nums}")
-    print()
-
-    trpCmb = combinations(Nums, 3)
-    trpCmb = map(list, trpCmb)
-
-    outCmb = []
-
-    print(f"\t\tAll combinations:")
-    for cmbCnt, cmb in enumerate(trpCmb):
-        ttl = sum(cmb)
-
-        if ttl == 0:
-            print()
-            print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
-            print()
-
-            outCmb.append(cmb)
-
-        else:
-            print(f"\t\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
-
-    print()
-
-    return outCmb
 
 
 def Sol03_StrPntr_Prt(Nums):
@@ -187,10 +118,6 @@ if __name__ == "__main__":
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}. Case:\n")
-
-        # outRtrn = Sol01_TrpFrLp_Prt(case)
-
-        # outRtrn = Sol02_TlCmb_Prt(case)
 
         outRtrn = Sol03_StrPntr_Prt(case)
 
