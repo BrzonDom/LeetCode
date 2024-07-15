@@ -97,6 +97,17 @@ def Sol03_StrPntr_Prt(Nums):
     return outCmb
 
 
+def Out_Prt(outCmb):
+
+    print(f"\tOut combinations:")
+    if outCmb:
+        for cmb in outCmb:
+            print(f"\t\t{cmb}")
+
+    else:
+        print("\t\tNone")
+
+
 if __name__ == "__main__":
 
     InputLst = [[-1, 0, 1, 2, -1, -4],
