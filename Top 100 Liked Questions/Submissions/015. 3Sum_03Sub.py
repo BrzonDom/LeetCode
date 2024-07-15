@@ -80,16 +80,22 @@ if __name__ == "__main__":
                 cmb = [nCr, nLf, nRg]
                 ttl = sum(cmb)
 
-                print(f"\t\t\t{cmb} = {ttl}")
-
                 if ttl < 0:
                     lf += 1
+
+                    print(f"\t\t\t\t{cmb} = {ttl}")
 
                 elif ttl > 0:
                     rg -= 1
 
+                    print(f"\t\t\t\t{cmb} = {ttl}")
+
                 else:
                     lf += 1
                     rg -= 1
+
+                    print()
+                    print(f"\t\t\t{cmb}")
+                    print()
 
         print("\n")
