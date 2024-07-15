@@ -123,12 +123,4 @@ if __name__ == "__main__":
 
         Out_Prt(outRtrn)
 
-        # print(f"\tOut combinations:")
-        # if outCmb:
-        #     for cmb in outCmb:
-        #         print(f"\t\t{cmb}")
-        #
-        # else:
-        #     print("\t\tNone")
-
         print("\n")
