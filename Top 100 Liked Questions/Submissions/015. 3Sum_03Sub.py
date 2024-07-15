@@ -165,6 +165,8 @@ if __name__ == "__main__":
 
         outRtrn = Sol03_StrPntr_Prt(case)
 
+        outRtrn = Sol03_StrPntr(case)
+
         Out_Prt(outRtrn)
 
         print("\n")
