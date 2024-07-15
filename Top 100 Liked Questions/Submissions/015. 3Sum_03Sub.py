@@ -94,6 +94,8 @@ def Sol03_StrPntr_Prt(Nums):
                 print()
     print()
 
+    return outCmb
+
 
 if __name__ == "__main__":
 
@@ -106,7 +108,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol03_StrPntr_Prt(case)
+        outCmb = Sol03_StrPntr_Prt(case)
 
         # print(f"\tOut combinations:")
         # if outCmb:
