@@ -106,60 +106,62 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Nums = case
-        print(f"\tNums unsorted: {Nums}")
+        # Nums = case
+        # print(f"\tNums unsorted: {Nums}")
+        #
+        # Nums.sort()
+        # print(f"\tNums sorted:   {Nums}")
+        #
+        # lenNum = len(Nums)
+        # print(f"\t\tNums size: {lenNum}")
+        # print()
+        #
+        # outCmb = []
+        #
+        # print(f"\t\tAll combinations:")
+        # for cr in range(lenNum-2):
+        #     nCr = Nums[cr]
+        #
+        #     lf = cr + 1
+        #     rg = lenNum - 1
+        #
+        #     while lf < rg:
+        #         nLf = Nums[lf]
+        #         nRg = Nums[rg]
+        #
+        #         cmb = [nCr, nLf, nRg]
+        #         ttl = sum(cmb)
+        #
+        #         if ttl < 0:
+        #             lf += 1
+        #
+        #             print(f"\t\t\t\t{cmb} = {ttl}")
+        #
+        #         elif ttl > 0:
+        #             rg -= 1
+        #
+        #             print(f"\t\t\t\t{cmb} = {ttl}")
+        #
+        #         else:
+        #             if cmb not in outCmb:
+        #                 outCmb.append(cmb)
+        #
+        #             lf += 1
+        #             rg -= 1
+        #
+        #             print()
+        #             print(f"\t\t\t{cmb}")
+        #             print()
+        # print()
 
-        Nums.sort()
-        print(f"\tNums sorted:   {Nums}")
+        Sol03_StrPntr_Prt(case)
 
-        lenNum = len(Nums)
-        print(f"\t\tNums size: {lenNum}")
-        print()
-
-        outCmb = []
-
-        print(f"\t\tAll combinations:")
-        for cr in range(lenNum-2):
-            nCr = Nums[cr]
-
-            lf = cr + 1
-            rg = lenNum - 1
-
-            while lf < rg:
-                nLf = Nums[lf]
-                nRg = Nums[rg]
-
-                cmb = [nCr, nLf, nRg]
-                ttl = sum(cmb)
-
-                if ttl < 0:
-                    lf += 1
-
-                    print(f"\t\t\t\t{cmb} = {ttl}")
-
-                elif ttl > 0:
-                    rg -= 1
-
-                    print(f"\t\t\t\t{cmb} = {ttl}")
-
-                else:
-                    if cmb not in outCmb:
-                        outCmb.append(cmb)
-
-                    lf += 1
-                    rg -= 1
-
-                    print()
-                    print(f"\t\t\t{cmb}")
-                    print()
-        print()
-
-        print(f"\tOut combinations:")
-        if outCmb:
-            for cmb in outCmb:
-                print(f"\t\t{cmb}")
-
-        else:
-            print("\t\tNone")
+        # print(f"\tOut combinations:")
+        # if outCmb:
+        #     for cmb in outCmb:
+        #         print(f"\t\t{cmb}")
+        #
+        # else:
+        #     print("\t\tNone")
 
         print("\n")
