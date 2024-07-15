@@ -107,19 +107,19 @@ def Sol03_StrPntr_Prt(Nums):
 
 def Sol03_StrPntr(Nums):
 
-    print(f"\tNums unsorted: {Nums}")
+    # print(f"\tNums unsorted: {Nums}")
 
     Nums.sort()
-    print(f"\tNums sorted:   {Nums}")
+    # print(f"\tNums sorted:   {Nums}")
 
     lenNum = len(Nums)
-    print(f"\t\tNums size: {lenNum}")
-    print()
+    # print(f"\t\tNums size: {lenNum}")
+    # print()
 
     outCmb = []
     notOut = True
 
-    print(f"\t\tAll combinations:")
+    # print(f"\t\tAll combinations:")
     for cr in range(lenNum - 2):
         nCr = Nums[cr]
 
@@ -136,13 +136,13 @@ def Sol03_StrPntr(Nums):
             if ttl < 0:
                 lf += 1
 
-                print(f"\t\t\t\t{cmb} = {ttl}")
+                # print(f"\t\t\t\t{cmb} = {ttl}")
                 notOut = True
 
             elif ttl > 0:
                 rg -= 1
 
-                print(f"\t\t\t\t{cmb} = {ttl}")
+                # print(f"\t\t\t\t{cmb} = {ttl}")
                 notOut = True
 
             else:
@@ -152,15 +152,15 @@ def Sol03_StrPntr(Nums):
                 lf += 1
                 rg -= 1
 
-                if notOut:
-                    print()
-                print(f"\t\t\t{cmb}")
-                print()
+                # if notOut:
+                    # print()
+                # print(f"\t\t\t{cmb}")
+                # print()
 
                 notOut = False
 
-    if notOut:
-        print()
+    # if notOut:
+    #     print()
 
     return outCmb
 
