@@ -45,6 +45,56 @@ https://leetcode.com/problems/3sum/description/
 """
 
 
+def Sol03_StrPntr_Prt(Nums):
+
+    print(f"\tNums unsorted: {Nums}")
+
+    Nums.sort()
+    print(f"\tNums sorted:   {Nums}")
+
+    lenNum = len(Nums)
+    print(f"\t\tNums size: {lenNum}")
+    print()
+
+    outCmb = []
+
+    print(f"\t\tAll combinations:")
+    for cr in range(lenNum - 2):
+        nCr = Nums[cr]
+
+        lf = cr + 1
+        rg = lenNum - 1
+
+        while lf < rg:
+            nLf = Nums[lf]
+            nRg = Nums[rg]
+
+            cmb = [nCr, nLf, nRg]
+            ttl = sum(cmb)
+
+            if ttl < 0:
+                lf += 1
+
+                print(f"\t\t\t\t{cmb} = {ttl}")
+
+            elif ttl > 0:
+                rg -= 1
+
+                print(f"\t\t\t\t{cmb} = {ttl}")
+
+            else:
+                if cmb not in outCmb:
+                    outCmb.append(cmb)
+
+                lf += 1
+                rg -= 1
+
+                print()
+                print(f"\t\t\t{cmb}")
+                print()
+    print()
+
+
 if __name__ == "__main__":
 
     InputLst = [[-1, 0, 1, 2, -1, -4],
