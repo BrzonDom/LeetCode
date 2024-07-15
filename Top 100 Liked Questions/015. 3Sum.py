@@ -158,7 +158,10 @@ def Sol03_StrPntr_Prt(Nums):
                 lf += 1
                 rg -= 1
 
+                print()
                 print(f"\t\t\t{cmb}")
+                print()
+
     print()
 
     return outCmb
