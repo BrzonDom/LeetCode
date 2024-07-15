@@ -82,6 +82,13 @@ if __name__ == "__main__":
 
                 print(f"\t\t\t{cmb} = {ttl}")
 
-                break
+                if ttl < 0:
+                    lf += 1
+
+                elif ttl > 0:
+                    rg -= 1
+
+                else:
+                    break
 
         print("\n")
