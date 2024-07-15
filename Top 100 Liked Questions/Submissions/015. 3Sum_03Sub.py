@@ -93,10 +93,11 @@ if __name__ == "__main__":
                     print(f"\t\t\t\t{cmb} = {ttl}")
 
                 else:
+                    if cmb not in outCmb:
+                        outCmb.append(cmb)
+
                     lf += 1
                     rg -= 1
-
-                    outCmb.append(cmb)
 
                     print()
                     print(f"\t\t\t{cmb}")
