@@ -66,6 +66,8 @@ if __name__ == "__main__":
         print(f"\t\tNums size: {lenNum}")
         print()
 
+        outCmb = []
+
         print(f"\t\tAll combinations:")
         for cr in range(lenNum-2):
             nCr = Nums[cr]
@@ -93,6 +95,8 @@ if __name__ == "__main__":
                 else:
                     lf += 1
                     rg -= 1
+
+                    outCmb.append(cmb)
 
                     print()
                     print(f"\t\t\t{cmb}")
