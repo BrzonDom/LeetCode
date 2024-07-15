@@ -52,6 +52,7 @@ def Sol01_TrpFrLp_Prt(Nums):
     print()
 
     outCmb = []
+    notOut = True
 
     print(f"\t\tAll combinations:")
     cmbCnt = 1
@@ -63,7 +64,9 @@ def Sol01_TrpFrLp_Prt(Nums):
                 ttl = sum(cmb)
 
                 if ttl == 0:
-                    print()
+
+                    if notOut:
+                        print()
                     print(f"\t\t\t{cmbCnt+1}.Cmb.: \t{cmb} = {ttl}")
 
                     cmb.sort()
@@ -76,11 +79,17 @@ def Sol01_TrpFrLp_Prt(Nums):
                         print(f"\t\t\t\tCombination already counted: {cmb}")
                     print()
 
+                    notOut = False
+
                 else:
                     print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
 
+                    notOut = True
+
                 cmbCnt += 1
-    print()
+
+    if notOut:
+        print()
 
     return outCmb
 
@@ -206,9 +215,9 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        # outRtrn = Sol01_TrpFrLp_Prt(case)
+        outRtrn = Sol01_TrpFrLp_Prt(case)
 
-        outRtrn = Sol02_TlCmb_Prt(case)
+        # outRtrn = Sol02_TlCmb_Prt(case)
 
         # outRtrn = Sol03_StrPntr_Prt(case)
 
