@@ -45,15 +45,17 @@ https://leetcode.com/problems/3sum/description/
 """
 
 
-InputLst = [[-1, 0, 1, 2, -1, -4],
-            [0, 1, 1],
-            [0, 0, 0],
-            [-1, -2, -3, -4, -5, 0, 1, 4, 5, 2]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[-1, 0, 1, 2, -1, -4],
+                [0, 1, 1],
+                [0, 0, 0],
+                [-1, -2, -3, -4, -5, 0, 1, 4, 5, 2]]
 
-    print(f"{csCnt + 1}. Case:\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\tNums: {case}")
+        print(f"{csCnt + 1}. Case:\n")
 
-    print("\n")
+        print(f"\tNums: {case}")
+
+        print("\n")
