@@ -89,6 +89,7 @@ if __name__ == "__main__":
                     rg -= 1
 
                 else:
-                    break
+                    lf += 1
+                    rg -= 1
 
         print("\n")
