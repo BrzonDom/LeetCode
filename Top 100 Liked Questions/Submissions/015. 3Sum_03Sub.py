@@ -71,4 +71,9 @@ if __name__ == "__main__":
 
             print(f"\t\t{crId+1}. {crNm}")
 
+            lfId = crId + 1
+            lfNm = Nums[lfId]
+            rgId = lenNum -1
+            rgNm = Nums[rgId]
+
         print("\n")
