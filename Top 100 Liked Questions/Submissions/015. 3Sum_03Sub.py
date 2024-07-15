@@ -98,9 +98,7 @@ def Sol03_StrPntr_Prt(Nums):
 def Sol03_StrPntr(Nums):
 
     Nums.sort()
-
     lenNum = len(Nums)
-
     outCmb = []
 
     for st in range(lenNum):
@@ -119,10 +117,8 @@ def Sol03_StrPntr(Nums):
             if ttl < 0:
                 lf += 1
 
-
             elif ttl > 0:
                 rg -= 1
-
 
             else:
                 if cmb not in outCmb:
