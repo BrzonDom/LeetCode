@@ -72,12 +72,16 @@ if __name__ == "__main__":
 
             lf = cr + 1
             rg = lenNum - 1
-            nLf = Nums[lf]
-            nRg = Nums[rg]
 
-            cmb = [nCr, nLf, nRg]
-            ttl = sum(cmb)
+            while lf < rg:
+                nLf = Nums[lf]
+                nRg = Nums[rg]
 
-            print(f"\t\t\t{cmb} = {ttl}")
+                cmb = [nCr, nLf, nRg]
+                ttl = sum(cmb)
+
+                print(f"\t\t\t{cmb} = {ttl}")
+
+                break
 
         print("\n")
