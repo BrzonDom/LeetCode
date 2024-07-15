@@ -57,6 +57,9 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}. Case:\n")
 
         Nums = case
-        print(f"\tNums: {Nums}")
+        print(f"\tNums unsorted: {Nums}")
+
+        Nums.sort()
+        print(f"\tNums sorted:   {Nums}")
 
         print("\n")
