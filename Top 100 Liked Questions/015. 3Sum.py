@@ -94,22 +94,30 @@ def Sol02_TlCmb_Prt(Nums):
     trpCmb = map(list, trpCmb)
 
     outCmb = []
+    notOut = True
 
     print(f"\t\tAll combinations:")
     for cmbCnt, cmb in enumerate(trpCmb):
         ttl = sum(cmb)
 
         if ttl == 0:
-            print()
+
+            outCmb.append(cmb)
+
+            if notOut:
+                print()
             print(f"\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
             print()
 
-            outCmb.append(cmb)
+            notOut = False
 
         else:
             print(f"\t\t\t\t{cmbCnt + 1}.Cmb.: \t{cmb} = {ttl}")
 
-    print()
+            notOut = True
+
+    if notOut:
+        print()
 
     return outCmb
 
@@ -200,8 +208,8 @@ if __name__ == "__main__":
 
         # outRtrn = Sol01_TrpFrLp_Prt(case)
 
-        # outRtrn = Sol02_TlCmb_Prt(case)
+        outRtrn = Sol02_TlCmb_Prt(case)
 
-        outRtrn = Sol03_StrPntr_Prt(case)
+        # outRtrn = Sol03_StrPntr_Prt(case)
 
         Out_Prt(outRtrn)
