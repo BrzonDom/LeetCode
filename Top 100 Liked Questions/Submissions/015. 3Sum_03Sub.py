@@ -66,14 +66,18 @@ if __name__ == "__main__":
         print(f"\t\tNums size: {lenNum}")
         print()
 
-        for crId in range(lenNum):
-            crNm = Nums[crId]
+        print(f"\t\tAll combinations:")
+        for cr in range(lenNum-2):
+            nCr = Nums[cr]
 
-            print(f"\t\t{crId+1}. {crNm}")
+            lf = cr + 1
+            rg = lenNum - 1
+            nLf = Nums[lf]
+            nRg = Nums[rg]
 
-            lfId = crId + 1
-            lfNm = Nums[lfId]
-            rgId = lenNum -1
-            rgNm = Nums[rgId]
+            cmb = [nCr, nLf, nRg]
+            ttl = sum(cmb)
+
+            print(f"\t\t\t{cmb} = {ttl}")
 
         print("\n")
