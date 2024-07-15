@@ -95,6 +95,56 @@ def Sol03_StrPntr_Prt(Nums):
     return outCmb
 
 
+def Sol03_StrPntr(Nums):
+
+    print(f"\tNums unsorted: {Nums}")
+
+    Nums.sort()
+    print(f"\tNums sorted:   {Nums}")
+
+    lenNum = len(Nums)
+    print(f"\t\tNums size: {lenNum}")
+    print()
+
+    outCmb = []
+
+    print(f"\t\tAll combinations:")
+    for st in range(lenNum):
+        nSt = Nums[st]
+
+        lf = st + 1
+        rg = lenNum - 1
+
+        while lf < rg:
+            nLf = Nums[lf]
+            nRg = Nums[rg]
+
+            cmb = [nSt, nLf, nRg]
+            ttl = sum(cmb)
+
+            if ttl < 0:
+                lf += 1
+
+                print(f"\t\t\t\t{cmb} = {ttl}")
+
+            elif ttl > 0:
+                rg -= 1
+
+                print(f"\t\t\t\t{cmb} = {ttl}")
+
+            else:
+                if cmb not in outCmb:
+                    outCmb.append(cmb)
+
+                lf += 1
+                rg -= 1
+
+                print(f"\t\t\t{cmb}")
+    print()
+
+    return outCmb
+
+
 def Out_Prt(outCmb):
 
     print(f"\tOut combinations:")
