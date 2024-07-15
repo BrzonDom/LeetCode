@@ -57,6 +57,7 @@ def Sol03_StrPntr_Prt(Nums):
     print()
 
     outCmb = []
+    notOut = True
 
     print(f"\t\tAll combinations:")
     for cr in range(lenNum - 2):
@@ -76,11 +77,13 @@ def Sol03_StrPntr_Prt(Nums):
                 lf += 1
 
                 print(f"\t\t\t\t{cmb} = {ttl}")
+                notOut = True
 
             elif ttl > 0:
                 rg -= 1
 
                 print(f"\t\t\t\t{cmb} = {ttl}")
+                notOut = True
 
             else:
                 if cmb not in outCmb:
@@ -89,10 +92,15 @@ def Sol03_StrPntr_Prt(Nums):
                 lf += 1
                 rg -= 1
 
-                print()
+                if notOut:
+                    print()
                 print(f"\t\t\t{cmb}")
                 print()
-    print()
+
+                notOut = False
+
+    if notOut:
+        print()
 
     return outCmb
 
