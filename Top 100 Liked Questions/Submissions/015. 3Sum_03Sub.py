@@ -62,8 +62,13 @@ if __name__ == "__main__":
         Nums.sort()
         print(f"\tNums sorted:   {Nums}")
 
-        for n, num in enumerate(Nums):
+        lenNum = len(Nums)
+        print(f"\t\tNums size: {lenNum}")
+        print()
 
-            print(f"\t\t{n+1}. {num}")
+        for crId in range(lenNum):
+            crNm = Nums[crId]
+
+            print(f"\t\t{crId+1}. {crNm}")
 
         print("\n")
