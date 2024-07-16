@@ -187,11 +187,16 @@ def Sol03_StrPntr_Prt(Nums):
                     rg -= 1
 
             else:
-                if cmb not in outCmb:
-                    outCmb.append(cmb)
+                outCmb.append(cmb)
 
                 lf += 1
                 rg -= 1
+
+                while nLf == Nums[lf] and lf < rg:
+                    lf += 1
+
+                while nRg == Nums[rg] and lf < rg:
+                    rg -= 1
 
                 if notOut:
                     print()
