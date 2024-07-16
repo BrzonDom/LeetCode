@@ -85,6 +85,50 @@ def Brt01_QdrFrLp_Prt(Nums, Trgt):
     return outCmb
 
 
+def Brt02_TlCmb_Prt(Nums, Trgt):
+
+    print(f"\tNumbers: {Nums}")
+    print(f"\tTarget: {Trgt}")
+    print()
+
+    qdrCmb = combinations(Nums, 4)
+    qdrCmb = map(list, qdrCmb)
+
+    outCmb = []
+
+    notOut = True
+
+    print(f"\t\tAll combinations:")
+    for cmbCnt, cmb in enumerate(qdrCmb):
+        ttl = sum(cmb)
+
+        if ttl == Trgt:
+
+            if cmb not in outCmb:
+                outCmb.append(cmb)
+
+            if notOut:
+                print()
+            print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
+            print()
+
+            notOut = False
+
+        else:
+            print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
+
+            notOut = True
+
+    if notOut:
+        print()
+
+    print(f"\tOut combinations:")
+    for cmbCnt, cmb in enumerate(outCmb):
+        print(f"\t\t{cmbCnt+1}. {cmb}")
+
+    print("\n")
+
+
 InputLst = [[[1, 0, -1, 0, -2, 2], 0],
             [[2, 2, 2, 2, 2], 8]]
 
