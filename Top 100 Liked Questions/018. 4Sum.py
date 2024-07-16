@@ -118,5 +118,9 @@ for csCnt, case in enumerate(InputLst):
 
         else:
             print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
+    print()
+
+    for cmb in outCmb:
+        print(f"\t\t{cmb}")
 
     print("\n")
