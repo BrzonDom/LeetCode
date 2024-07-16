@@ -128,6 +128,8 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 
     print("\n")
 
+    return outCmb
+
 
 InputLst = [[[1, 0, -1, 0, -2, 2], 0],
             [[2, 2, 2, 2, 2], 8]]
