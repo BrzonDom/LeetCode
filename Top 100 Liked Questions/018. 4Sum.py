@@ -134,8 +134,14 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 def Out_Prt(outCmb):
 
     print(f"\tOut combinations:")
-    for cmbCnt, cmb in enumerate(outCmb):
-        print(f"\t\t{cmbCnt+1}. {cmb}")
+    if outCmb:
+        for cmbCnt, cmb in enumerate(outCmb):
+            print(f"\t\t{cmbCnt+1}. {cmb}")
+
+    else:
+        print(f"\t\tNone")
+
+    print("\n")
 
 
 if __name__ == "__main__":
