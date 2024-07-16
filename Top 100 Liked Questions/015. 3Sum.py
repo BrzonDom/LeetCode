@@ -149,6 +149,9 @@ def Sol03_StrPntr_Prt(Nums):
     for st in range(lenNum):
         nSt = Nums[st]
 
+        if nSt > 0:
+            break
+
         lf = st + 1
         rg = lenNum - 1
 
