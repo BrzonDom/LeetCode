@@ -102,6 +102,7 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     qdrCmb = combinations(Nums, 4)
+    qdrCmb = map(list, qdrCmb)
 
     for cmbCnt, cmb in enumerate(qdrCmb):
         print(f"\t\t{cmbCnt+1}.Cmb.: {cmb}")
