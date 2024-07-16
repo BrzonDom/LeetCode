@@ -107,6 +107,12 @@ for csCnt, case in enumerate(InputLst):
     for cmbCnt, cmb in enumerate(qdrCmb):
         ttl = sum(cmb)
 
-        print(f"\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
+        if ttl == Trgt:
+            print()
+            print(f"\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
+            print()
+
+        else:
+            print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
 
     print("\n")
