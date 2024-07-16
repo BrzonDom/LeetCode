@@ -75,13 +75,6 @@ def Brt01_QdrFrLp_Prt(Nums, Trgt):
     if notOut:
         print()
 
-    print(f"\tOut combinations:")
-    for cmbCnt, cmb in enumerate(outCmb):
-
-        print(f"\t\t{cmbCnt+1}.Cmb.: {cmb}")
-
-    print("\n")
-
     return outCmb
 
 
@@ -121,12 +114,6 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 
     if notOut:
         print()
-
-    print(f"\tOut combinations:")
-    for cmbCnt, cmb in enumerate(outCmb):
-        print(f"\t\t{cmbCnt+1}. {cmb}")
-
-    print("\n")
 
     return outCmb
 
