@@ -52,8 +52,9 @@ for csCnt, case in enumerate(InputLst):
             for n3, num3 in enumerate(Nums[2+n1+n2:-1]):
                 for n4, num4 in enumerate(Nums[3+n1+n2+n3:]):
                     cmb = [num1, num2, num3, num4]
+                    ttl = sum(cmb)
 
-                    print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {sum(cmb)}")
+                    print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     cmbCnt += 1
 
