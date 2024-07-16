@@ -131,13 +131,15 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
-InputLst = [[[1, 0, -1, 0, -2, 2], 0],
-            [[2, 2, 2, 2, 2], 8]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[1, 0, -1, 0, -2, 2], 0],
+                [[2, 2, 2, 2, 2], 8]]
 
-    print(f"{csCnt + 1}. Case:\n")
+    for csCnt, case in enumerate(InputLst):
 
-    # Brt01_QdrFrLp_Prt(case[0], case[1])
+        print(f"{csCnt + 1}. Case:\n")
 
-    Brt02_TlCmb_Prt(case[0], case[1])
+        # Brt01_QdrFrLp_Prt(case[0], case[1])
+
+        Brt02_TlCmb_Prt(case[0], case[1])
