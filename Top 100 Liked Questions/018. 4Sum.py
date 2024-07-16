@@ -106,6 +106,8 @@ for csCnt, case in enumerate(InputLst):
 
     outCmb = []
 
+    notOut = True
+
     print(f"\t\tAll combinations:")
     for cmbCnt, cmb in enumerate(qdrCmb):
         ttl = sum(cmb)
@@ -113,16 +115,23 @@ for csCnt, case in enumerate(InputLst):
         if ttl == Trgt:
             outCmb.append(cmb)
 
-            print()
+            if notOut:
+                print()
             print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
             print()
 
+            notOut = False
+
         else:
             print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
-    print()
+
+            notOut = True
+
+    if notOut:
+        print()
 
     print(f"\tOut combinations:")
     for cmbCnt, cmb in enumerate(outCmb):
-        print(f"\t\t{cmbCnt}. {cmb}")
+        print(f"\t\t{cmbCnt+1}. {cmb}")
 
     print("\n")
