@@ -34,12 +34,14 @@ https://leetcode.com/problems/4sum/description/
 InputLst = [[[1, 0, -1, 0, -2, 2], 0],
               [[2, 2, 2, 2, 2], 8]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    numLst = case[0]
-    trgt = case[1]
+    print(f"{csCnt + 1}. Case:\n")
 
-    print(f"\tNumbers: {numLst}")
-    print(f"\tTarget: {trgt}")
+    Nums = case[0]
+    Trgt = case[1]
 
-    print()
+    print(f"\tNumbers: {Nums}")
+    print(f"\tTarget: {Trgt}")
+
+    print("\n")
