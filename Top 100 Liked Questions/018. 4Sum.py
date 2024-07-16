@@ -105,6 +105,8 @@ for csCnt, case in enumerate(InputLst):
     qdrCmb = map(list, qdrCmb)
 
     for cmbCnt, cmb in enumerate(qdrCmb):
-        print(f"\t\t{cmbCnt+1}.Cmb.: {cmb}")
+        ttl = sum(cmb)
+
+        print(f"\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
 
     print("\n")
