@@ -45,6 +45,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trgt}")
     print()
 
+    outCmb = []
     cmbCnt = 1
 
     for n1, num1 in enumerate(Nums[:-3]):
@@ -55,6 +56,8 @@ for csCnt, case in enumerate(InputLst):
                     ttl = sum(cmb)
 
                     if ttl == Trgt:
+                        outCmb.append(cmb)
+
                         print()
                         print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                         print()
