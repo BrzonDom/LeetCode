@@ -102,4 +102,7 @@ for csCnt, case in enumerate(InputLst):
 
     qdrCmb = combinations(Nums, 4)
 
+    for cmb in qdrCmb:
+        print(f"\t\t{cmb}")
+
     print("\n")
