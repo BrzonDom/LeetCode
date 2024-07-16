@@ -31,6 +31,9 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
+from itertools import combinations
+
+
 def Brt01_QdrFrLp_Prt(Nums, Trgt):
 
     print(f"\tNumbers: {Nums}")
@@ -96,5 +99,7 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tNumbers: {Nums}")
     print(f"\tTarget: {Trgt}")
+
+    qdrCmb = combinations(Nums, 4)
 
     print("\n")
