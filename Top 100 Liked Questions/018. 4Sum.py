@@ -113,7 +113,9 @@ for csCnt, case in enumerate(InputLst):
         ttl = sum(cmb)
 
         if ttl == Trgt:
-            outCmb.append(cmb)
+
+            if cmb not in outCmb:
+                outCmb.append(cmb)
 
             if notOut:
                 print()
