@@ -104,10 +104,14 @@ for csCnt, case in enumerate(InputLst):
     qdrCmb = combinations(Nums, 4)
     qdrCmb = map(list, qdrCmb)
 
+    outCmb = []
+
     for cmbCnt, cmb in enumerate(qdrCmb):
         ttl = sum(cmb)
 
         if ttl == Trgt:
+            outCmb.append(cmb)
+
             print()
             print(f"\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
             print()
