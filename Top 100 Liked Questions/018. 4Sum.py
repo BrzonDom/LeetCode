@@ -54,7 +54,13 @@ for csCnt, case in enumerate(InputLst):
                     cmb = [num1, num2, num3, num4]
                     ttl = sum(cmb)
 
-                    print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    if ttl == Trgt:
+                        print()
+                        print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print()
+
+                    else:
+                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     cmbCnt += 1
 
