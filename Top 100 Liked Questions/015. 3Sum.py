@@ -143,6 +143,7 @@ def Sol03_StrPntr_Prt(Nums):
     print()
 
     outCmb = []
+    pSt = None
     notOut = True
 
     print(f"\t\tAll combinations:")
@@ -151,6 +152,11 @@ def Sol03_StrPntr_Prt(Nums):
 
         if nSt > 0:
             break
+
+        if nSt == pSt:
+            continue
+
+        pSt = nSt
 
         lf = st + 1
         rg = lenNum - 1
