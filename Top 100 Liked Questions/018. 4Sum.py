@@ -45,7 +45,9 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trgt}")
     print()
 
-    for num1 in Nums:
+    # print(f"\t{Nums[:-3]}")
+
+    for num1 in Nums[:-3]:
         for num2 in Nums:
             for num3 in Nums:
                 for num4 in Nums:
