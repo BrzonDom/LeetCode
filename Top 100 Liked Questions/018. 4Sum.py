@@ -32,7 +32,7 @@ https://leetcode.com/problems/4sum/description/
 
 
 InputLst = [[[1, 0, -1, 0, -2, 2], 0],
-              [[2, 2, 2, 2, 2], 8]]
+            [[2, 2, 2, 2, 2], 8]]
 
 for csCnt, case in enumerate(InputLst):
 
@@ -59,7 +59,9 @@ for csCnt, case in enumerate(InputLst):
                     ttl = sum(cmb)
 
                     if ttl == Trgt:
-                        outCmb.append(cmb)
+
+                        if cmb not in outCmb:
+                            outCmb.append(cmb)
 
                         if notOut:
                             print()
