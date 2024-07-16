@@ -46,7 +46,9 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     outCmb = []
+
     cmbCnt = 1
+    notOut = True
 
     print(f"\t\tAll combinations:")
     for n1, num1 in enumerate(Nums[:-3]):
@@ -59,15 +61,22 @@ for csCnt, case in enumerate(InputLst):
                     if ttl == Trgt:
                         outCmb.append(cmb)
 
-                        print()
+                        if notOut:
+                            print()
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                         print()
+
+                        notOut = False
 
                     else:
                         print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
+                        notOut = True
+
                     cmbCnt += 1
-    print()
+
+    if notOut:
+        print()
 
     print(f"\tOut combinations:")
     for cmbCnt, cmb in enumerate(outCmb):
