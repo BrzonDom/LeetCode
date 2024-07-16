@@ -63,6 +63,9 @@ def Sol03_StrPntr_Prt(Nums):
     for cr in range(lenNum - 2):
         nCr = Nums[cr]
 
+        if nCr > 0:
+            break
+
         lf = cr + 1
         rg = lenNum - 1
 
@@ -115,6 +118,9 @@ def Sol03_StrPntr(Nums):
     for cr in range(lenNum - 2):
         nCr = Nums[cr]
 
+        if nCr > 0:
+            break
+
         lf = cr + 1
         rg = lenNum - 1
 
@@ -165,7 +171,7 @@ if __name__ == "__main__":
 
         outRtrn = Sol03_StrPntr_Prt(case)
 
-        outRtrn = Sol03_StrPntr(case)
+        # outRtrn = Sol03_StrPntr(case)
 
         Out_Prt(outRtrn)
 
