@@ -67,7 +67,7 @@ def Sol01_TrpFrLp_Prt(Nums):
 
                     if notOut:
                         print()
-                    print(f"\t\t\t{cmbCnt+1}.Cmb.: \t{cmb} = {ttl}")
+                    print(f"\t\t\t{cmbCnt}.Cmb.: \t{cmb} = {ttl}")
 
                     cmb.sort()
 
@@ -82,7 +82,7 @@ def Sol01_TrpFrLp_Prt(Nums):
                     notOut = False
 
                 else:
-                    print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb} = {ttl}")
+                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     notOut = True
 
