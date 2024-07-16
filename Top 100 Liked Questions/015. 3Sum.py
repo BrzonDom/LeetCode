@@ -209,16 +209,17 @@ if __name__ == "__main__":
     InputLst = [[-1, 0, 1, 2, -1, -4],
                 [0, 1, 1],
                 [0, 0, 0],
-                [-1, -2, -3, -4, -5, 0, 1, 4, 5, 2]]
+                [-1, -2, -3, -3, -4, -5, 0, 1, 1, 4, 5, 2],
+                [1, 1, 1, 0, -1, -1, -1, -1]]
 
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}. Case:\n")
 
-        outRtrn = Sol01_TrpFrLp_Prt(case)
+        # outRtrn = Sol01_TrpFrLp_Prt(case)
 
         # outRtrn = Sol02_TlCmb_Prt(case)
 
-        # outRtrn = Sol03_StrPntr_Prt(case)
+        outRtrn = Sol03_StrPntr_Prt(case)
 
         Out_Prt(outRtrn)
