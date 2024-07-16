@@ -45,7 +45,10 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tTarget: {Trgt}")
     print()
 
-    for num in Nums:
-        print(f"\t\t{num}")
+    for num1 in Nums:
+        for num2 in Nums:
+            for num3 in Nums:
+                for num4 in Nums:
+                    print(f"\t\t{num1} + {num2} + {num3} + {num4}")
 
     print("\n")
