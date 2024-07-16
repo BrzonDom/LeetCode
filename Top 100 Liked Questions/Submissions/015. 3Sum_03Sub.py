@@ -89,11 +89,17 @@ def Sol03_StrPntr_Prt(Nums):
                 print(f"\t\t\t\t{cmb} = {ttl}")
                 notOut = True
 
+                while nLf == Nums[lf] and lf < rg:
+                    lf += 1
+
             elif ttl > 0:
                 rg -= 1
 
                 print(f"\t\t\t\t{cmb} = {ttl}")
                 notOut = True
+
+                while nRg == Nums[rg] and lf < rg:
+                    rg -= 1
 
             else:
                 if cmb not in outCmb:
@@ -147,8 +153,14 @@ def Sol03_StrPntr(Nums):
             if ttl < 0:
                 lf += 1
 
+                while nLf == Nums[lf] and lf < rg:
+                    lf += 1
+
             elif ttl > 0:
                 rg -= 1
+
+                while nRg == Nums[rg] and lf < rg:
+                    rg -= 1
 
             else:
                 if cmb not in outCmb:
