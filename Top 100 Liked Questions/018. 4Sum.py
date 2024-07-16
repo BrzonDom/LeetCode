@@ -21,6 +21,7 @@ https://leetcode.com/problems/4sum/description/
         Input: nums = [2, 2, 2, 2, 2], target = 8
         Output: [[2, 2, 2, 2]]
 
+
     Constraints:
 
         1 <= nums.length <= 200
@@ -29,15 +30,16 @@ https://leetcode.com/problems/4sum/description/
 
 """
 
-Input_List = [[[1, 0, -1, 0, -2, 2], 0],
+
+InputLst = [[[1, 0, -1, 0, -2, 2], 0],
               [[2, 2, 2, 2, 2], 8]]
 
-for InCase in Input_List:
+for case in InputLst:
 
-    numLst = InCase[0]
-    trgt = InCase[1]
+    numLst = case[0]
+    trgt = case[1]
 
     print(f"\tNumbers: {numLst}")
-    print(f"\tTarger: {trgt}")
+    print(f"\tTarget: {trgt}")
 
     print()
