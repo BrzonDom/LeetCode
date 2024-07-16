@@ -140,6 +140,6 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        # Brt01_QdrFrLp_Prt(case[0], case[1])
+        # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
-        Brt02_TlCmb_Prt(case[0], case[1])
+        outRtrn = Brt02_TlCmb_Prt(case[0], case[1])
