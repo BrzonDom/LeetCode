@@ -140,8 +140,16 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
+        Nums = case[0]
+        Trgt = case[1]
+
+        print(f"\tNumbers: {Nums}")
+        print(f"\tTarget: {Trgt}")
+
+        print("\n")
+
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
-        outRtrn = Brt02_TlCmb_Prt(case[0], case[1])
+        # outRtrn = Brt02_TlCmb_Prt(case[0], case[1])
 
-        Out_Prt(outRtrn)
+        # Out_Prt(outRtrn)
