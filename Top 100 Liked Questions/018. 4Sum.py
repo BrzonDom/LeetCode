@@ -31,6 +31,55 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
+def Brt01_QdrFrLp_Prt(Nums, Trgt):
+
+    print(f"\tNumbers: {Nums}")
+    print(f"\tTarget: {Trgt}")
+    print()
+
+    outCmb = []
+
+    cmbCnt = 1
+    notOut = True
+
+    print(f"\t\tAll combinations:")
+    for n1, num1 in enumerate(Nums[:-3]):
+        for n2, num2 in enumerate(Nums[1+n1:-2]):
+            for n3, num3 in enumerate(Nums[2+n1+n2:-1]):
+                for n4, num4 in enumerate(Nums[3+n1+n2+n3:]):
+                    cmb = [num1, num2, num3, num4]
+                    ttl = sum(cmb)
+
+                    if ttl == Trgt:
+
+                        if cmb not in outCmb:
+                            outCmb.append(cmb)
+
+                        if notOut:
+                            print()
+                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print()
+
+                        notOut = False
+
+                    else:
+                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+
+                        notOut = True
+
+                    cmbCnt += 1
+
+    if notOut:
+        print()
+
+    print(f"\tOut combinations:")
+    for cmbCnt, cmb in enumerate(outCmb):
+
+        print(f"\t\t{cmbCnt+1}.Cmb.: {cmb}")
+
+    print("\n")
+
+
 InputLst = [[[1, 0, -1, 0, -2, 2], 0],
             [[2, 2, 2, 2, 2], 8]]
 
