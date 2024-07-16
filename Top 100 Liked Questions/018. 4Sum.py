@@ -99,10 +99,11 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tNumbers: {Nums}")
     print(f"\tTarget: {Trgt}")
+    print()
 
     qdrCmb = combinations(Nums, 4)
 
-    for cmb in qdrCmb:
-        print(f"\t\t{cmb}")
+    for cmbCnt, cmb in enumerate(qdrCmb):
+        print(f"\t\t{cmbCnt+1}.Cmb.: {cmb}")
 
     print("\n")
