@@ -145,6 +145,10 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nums}")
         print(f"\tTarget: {Trgt}")
+        print()
+
+        for num in Nums:
+            print(f"\t\t{num}")
 
         print("\n")
 
