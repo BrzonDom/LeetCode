@@ -185,7 +185,9 @@ if __name__ == "__main__":
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     else:
-                        outCmb.append(cmb)
+
+                        if cmb not in outCmb:
+                            outCmb.append(cmb)
 
                         lf += 1
                         rg -= 1
