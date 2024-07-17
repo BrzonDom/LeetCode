@@ -187,6 +187,10 @@ if __name__ == "__main__":
                         lf += 1
                         rg -= 1
 
+                        print()
+                        print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print()
+
         print("\n")
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
