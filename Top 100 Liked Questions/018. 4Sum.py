@@ -171,11 +171,20 @@ if __name__ == "__main__":
                     cmb = [nFr, nSc, nLf, nRg]
                     ttl = sum(cmb)
 
-                    print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
-
                     cmbCnt += 1
 
-                    break
+                    if ttl < Trgt:
+                        lf += 1
+
+                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+
+                    elif ttl > Trgt:
+                        rg -= 1
+
+                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+
+                    else:
+                        break
 
         print("\n")
 
