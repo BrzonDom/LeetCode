@@ -184,7 +184,8 @@ if __name__ == "__main__":
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     else:
-                        break
+                        lf += 1
+                        rg -= 1
 
         print("\n")
 
