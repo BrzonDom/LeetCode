@@ -192,11 +192,16 @@ if __name__ == "__main__":
 
                     else:
 
-                        if cmb not in outCmb:
-                            outCmb.append(cmb)
+                        outCmb.append(cmb)
 
                         lf += 1
                         rg -= 1
+
+                        while nLf == Nums[lf] and lf < rg:
+                            lf += 1
+
+                        while nRg == Nums[rg] and lf < rg:
+                            rg -= 1
 
                         print()
                         print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
