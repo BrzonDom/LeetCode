@@ -166,7 +166,9 @@ if __name__ == "__main__":
                 nLf = Nums[lf]
                 nRg = Nums[rg]
 
-                print(f"\t\t{cmbCnt}.Cmb.: {nFr} + {nSc}")
+                cmb = [nFr, nSc, nLf, nRg]
+
+                print(f"\t\t{cmbCnt}.Cmb.: {cmb}")
 
                 cmbCnt += 1
 
