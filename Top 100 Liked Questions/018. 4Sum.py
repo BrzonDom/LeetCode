@@ -153,12 +153,16 @@ if __name__ == "__main__":
 
         lenNum = len(Nums)
 
+        cmbCnt = 1
+
         for fr in range(lenNum):
             for sc in range(lenNum):
                 nFr = Nums[fr]
                 nSc = Nums[sc]
 
-                print(f"\t\t{nFr} + {nSc}")
+                print(f"\t\t{cmbCnt}.Cmb.: {nFr} + {nSc}")
+
+                cmbCnt += 1
 
         print("\n")
 
