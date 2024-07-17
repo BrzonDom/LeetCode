@@ -158,8 +158,9 @@ if __name__ == "__main__":
         cmbCnt = 1
 
         for fr in range(lenNum - 3):
+            nFr = Nums[fr]
+
             for sc in range(1, lenNum - 2):
-                nFr = Nums[fr]
                 nSc = Nums[sc]
 
                 lf = sc + 1
@@ -172,8 +173,6 @@ if __name__ == "__main__":
 
                     cmb = [nFr, nSc, nLf, nRg]
                     ttl = sum(cmb)
-
-                    cmbCnt += 1
 
                     if ttl < Trgt:
                         lf += 1
@@ -194,6 +193,8 @@ if __name__ == "__main__":
                         print()
                         print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                         print()
+
+                    cmbCnt += 1
 
         print("\n")
 
