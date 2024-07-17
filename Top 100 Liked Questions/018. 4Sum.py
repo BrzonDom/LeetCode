@@ -177,10 +177,16 @@ if __name__ == "__main__":
                     if ttl < Trgt:
                         lf += 1
 
+                        while nLf == Nums[lf] and lf < rg:
+                            lf += 1
+
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     elif ttl > Trgt:
                         rg -= 1
+
+                        while nRg == Nums[rg] and lf < rg:
+                            rg -= 1
 
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
