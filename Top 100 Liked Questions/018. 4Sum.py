@@ -157,21 +157,25 @@ if __name__ == "__main__":
 
         for fr in range(lenNum - 3):
             for sc in range(1, lenNum - 2):
+                nFr = Nums[fr]
+                nSc = Nums[sc]
 
                 lf = sc + 1
                 rg = lenNum - 1
 
-                nFr = Nums[fr]
-                nSc = Nums[sc]
-                nLf = Nums[lf]
-                nRg = Nums[rg]
+                while lf < rg:
 
-                cmb = [nFr, nSc, nLf, nRg]
-                ttl = sum(cmb)
+                    nLf = Nums[lf]
+                    nRg = Nums[rg]
 
-                print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    cmb = [nFr, nSc, nLf, nRg]
+                    ttl = sum(cmb)
 
-                cmbCnt += 1
+                    print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+
+                    cmbCnt += 1
+
+                    break
 
         print("\n")
 
