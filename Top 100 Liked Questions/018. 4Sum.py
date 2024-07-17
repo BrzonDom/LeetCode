@@ -153,6 +153,8 @@ if __name__ == "__main__":
 
         lenNum = len(Nums)
 
+        outCmb = []
+
         cmbCnt = 1
 
         for fr in range(lenNum - 3):
@@ -184,6 +186,8 @@ if __name__ == "__main__":
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     else:
+                        outCmb.append(cmb)
+
                         lf += 1
                         rg -= 1
 
