@@ -154,9 +154,11 @@ if __name__ == "__main__":
         lenNum = len(Nums)
 
         for fr in range(lenNum):
-            nFr = Nums[fr]
+            for sc in range(lenNum):
+                nFr = Nums[fr]
+                nSc = Nums[sc]
 
-            print(f"\t\t{nFr}")
+                print(f"\t\t{nFr} + {nSc}")
 
         print("\n")
 
