@@ -98,7 +98,11 @@ if __name__ == "__main__":
         print()
 
         print(f"\tOut combinations:")
-        for cmbCnt, cmb in enumerate(outCmb):
-            print(f"\t\t{cmbCnt+1}. {cmb}")
+        if outCmb:
+            for cmb in outCmb:
+                print(f"\t\t{cmb}")
+
+        else:
+            print("\t\tNone")
 
         print("\n")
