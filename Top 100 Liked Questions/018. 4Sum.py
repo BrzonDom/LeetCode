@@ -118,6 +118,94 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
+def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
+
+    print(f"\tNums unsorted: {Nums}")
+
+    Nums.sort()
+    print(f"\tNums sorted:   {Nums}")
+
+    print(f"\tTarget: {Trgt}")
+    print()
+
+    lenNum = len(Nums)
+
+    outCmb = []
+    pFr = None
+
+    cmbCnt = 1
+    notOut = True
+
+    print(f"\t\tAll combinations:")
+    for fr in range(lenNum - 3):
+        nFr = Nums[fr]
+
+        if nFr == pFr:
+            continue
+        pFr = nFr
+
+        pSc = None
+
+        for sc in range(fr + 1, lenNum - 2):
+            nSc = Nums[sc]
+
+            if nSc == pSc:
+                continue
+            pSc = nSc
+
+            lf = sc + 1
+            rg = lenNum - 1
+
+            while lf < rg:
+
+                nLf = Nums[lf]
+                nRg = Nums[rg]
+
+                cmb = [nFr, nSc, nLf, nRg]
+                ttl = sum(cmb)
+
+                if ttl < Trgt:
+                    lf += 1
+
+                    while nLf == Nums[lf] and lf < rg:
+                        lf += 1
+
+                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    notOut = True
+
+                elif ttl > Trgt:
+                    rg -= 1
+
+                    while nRg == Nums[rg] and lf < rg:
+                        rg -= 1
+
+                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    notOut = True
+
+                else:
+
+                    outCmb.append(cmb)
+
+                    lf += 1
+                    while nLf == Nums[lf] and lf < rg:
+                        lf += 1
+
+                    rg -= 1
+                    while nRg == Nums[rg] and lf < rg:
+                        rg -= 1
+
+                    if notOut:
+                        print()
+                    print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    print()
+                    notOut = False
+
+                cmbCnt += 1
+
+    if notOut:
+        print()
+
+
 def Out_Prt(outCmb):
 
     print(f"\tOut combinations:")
