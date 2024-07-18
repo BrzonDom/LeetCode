@@ -47,5 +47,9 @@ if __name__ == "__main__":
 
         Trgt = case[1]
         print(f"\tTarget: {Trgt}")
+        print()
+
+        for n, num in enumerate(Nums):
+            print(f"\t\t{n+1}. {num}")
 
         print("\n")
