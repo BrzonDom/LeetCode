@@ -59,7 +59,13 @@ if __name__ == "__main__":
             for sc in range(fr + 1, lnNm - 2):
                 nSc = Nums[sc]
 
-                cmb = [nFr, nSc]
+                lf = sc + 1
+                rg = lnNm - 1
+
+                nLf = Nums[lf]
+                nRg = Nums[rg]
+
+                cmb = [nFr, nSc, nLf, nRg]
 
                 print(f"\t\t{cmbCnt}.Cmb.: {cmb}")
                 cmbCnt += 1
