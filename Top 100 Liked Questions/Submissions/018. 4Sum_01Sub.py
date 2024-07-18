@@ -52,8 +52,10 @@ if __name__ == "__main__":
         lnNm = len(Nums)
 
         for fr in range(lnNm):
-            nFr = Nums[fr]
+            for sc in range(lnNm):
+                nFr = Nums[fr]
+                nSc = Nums[sc]
 
-            print(f"\t\t{fr+1}. {nFr}")
+                print(f"\t\t{nFr} + {nSc}")
 
         print("\n")
