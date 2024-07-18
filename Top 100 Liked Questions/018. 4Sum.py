@@ -157,7 +157,7 @@ if __name__ == "__main__":
         pFr = None
 
         cmbCnt = 1
-
+        print(f"\t\tAll combinations:")
         for fr in range(lenNum - 3):
             nFr = Nums[fr]
 
@@ -191,7 +191,7 @@ if __name__ == "__main__":
                         while nLf == Nums[lf] and lf < rg:
                             lf += 1
 
-                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     elif ttl > Trgt:
                         rg -= 1
@@ -199,7 +199,7 @@ if __name__ == "__main__":
                         while nRg == Nums[rg] and lf < rg:
                             rg -= 1
 
-                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     else:
 
@@ -214,10 +214,13 @@ if __name__ == "__main__":
                             rg -= 1
 
                         print()
-                        print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                         print()
 
                     cmbCnt += 1
+        print()
+
+        Out_Prt(outCmb)
 
         print("\n")
 
