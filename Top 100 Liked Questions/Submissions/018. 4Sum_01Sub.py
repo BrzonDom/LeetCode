@@ -29,3 +29,12 @@ https://leetcode.com/problems/4sum/description/
         -10^9 <= target <= 10^9
 
 """
+
+
+InputLst = [[[1, 0, -1, 0, -2, 2], 0],
+            [[2, 2, 2, 2, 2], 8]]
+
+for case in InputLst:
+
+    print(f"Input: {case}")
+    print()
