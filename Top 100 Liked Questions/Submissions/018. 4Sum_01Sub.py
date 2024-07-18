@@ -94,4 +94,9 @@ if __name__ == "__main__":
 
                     cmbCnt += 1
 
+        print()
+
+        for cmb in outCmb:
+            print(f"\t\t{cmb}")
+
         print("\n")
