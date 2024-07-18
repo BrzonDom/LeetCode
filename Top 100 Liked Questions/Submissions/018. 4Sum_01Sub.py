@@ -40,9 +40,12 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}. Case:\n")
 
         Nums = case[0]
-        Trgt = case[1]
+        print(f"\tNumbers unsorted: {Nums}")
 
-        print(f"\tNumbers: {Nums}")
+        Nums.sort()
+        print(f"\tNumbers sorted:   {Nums}")
+
+        Trgt = case[1]
         print(f"\tTarget: {Trgt}")
 
         print("\n")
