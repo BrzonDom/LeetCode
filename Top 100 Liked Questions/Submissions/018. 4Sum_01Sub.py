@@ -50,6 +50,7 @@ if __name__ == "__main__":
         print()
 
         lnNm = len(Nums)
+        outCmb = []
 
         cmbCnt = 1
 
@@ -80,6 +81,8 @@ if __name__ == "__main__":
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     else:
+                        outCmb.append(cmb)
+
                         lf += 1
                         rg -= 1
 
