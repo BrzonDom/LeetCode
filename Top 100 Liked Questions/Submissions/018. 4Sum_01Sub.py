@@ -66,8 +66,9 @@ if __name__ == "__main__":
                 nRg = Nums[rg]
 
                 cmb = [nFr, nSc, nLf, nRg]
+                ttl = sum(cmb)
 
-                print(f"\t\t{cmbCnt}.Cmb.: {cmb}")
+                print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                 cmbCnt += 1
 
         print("\n")
