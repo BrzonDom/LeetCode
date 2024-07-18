@@ -51,9 +51,9 @@ if __name__ == "__main__":
 
         lnNm = len(Nums)
 
-        for n in range(lnNm):
-            num = Nums[n]
+        for fr in range(lnNm):
+            nFr = Nums[fr]
 
-            print(f"\t\t{n+1}. {num}")
+            print(f"\t\t{fr+1}. {nFr}")
 
         print("\n")
