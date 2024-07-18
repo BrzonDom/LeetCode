@@ -49,7 +49,11 @@ if __name__ == "__main__":
         print(f"\tTarget: {Trgt}")
         print()
 
-        for n, num in enumerate(Nums):
+        lnNm = len(Nums)
+
+        for n in range(lnNm):
+            num = Nums[n]
+
             print(f"\t\t{n+1}. {num}")
 
         print("\n")
