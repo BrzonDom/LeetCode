@@ -56,7 +56,7 @@ if __name__ == "__main__":
         for fr in range(lnNm - 3):
             nFr = Nums[fr]
 
-            for sc in range(lnNm):
+            for sc in range(fr + 1, lnNm - 2):
                 nSc = Nums[sc]
 
                 cmb = [nFr, nSc]
