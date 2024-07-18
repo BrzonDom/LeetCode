@@ -230,7 +230,9 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol01_DblFrPntMtd_Ptr(case[0], case[1])
+        outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
+
+        Out_Prt(outRtrn)
 
         print("\n")
 
