@@ -62,13 +62,16 @@ if __name__ == "__main__":
                 lf = sc + 1
                 rg = lnNm - 1
 
-                nLf = Nums[lf]
-                nRg = Nums[rg]
+                while lf < rg:
+                    nLf = Nums[lf]
+                    nRg = Nums[rg]
 
-                cmb = [nFr, nSc, nLf, nRg]
-                ttl = sum(cmb)
+                    cmb = [nFr, nSc, nLf, nRg]
+                    ttl = sum(cmb)
 
-                print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
-                cmbCnt += 1
+                    print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    cmbCnt += 1
+
+                    break
 
         print("\n")
