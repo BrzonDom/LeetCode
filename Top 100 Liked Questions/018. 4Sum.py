@@ -205,6 +205,8 @@ def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
     if notOut:
         print()
 
+    return outCmb
+
 
 def Out_Prt(outCmb):
 
