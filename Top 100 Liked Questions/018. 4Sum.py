@@ -154,14 +154,24 @@ if __name__ == "__main__":
         lenNum = len(Nums)
 
         outCmb = []
+        pFr = None
+        pSc = None
 
         cmbCnt = 1
 
         for fr in range(lenNum - 3):
             nFr = Nums[fr]
 
+            if nFr == pFr:
+                continue
+            pFr = nFr
+
             for sc in range(fr+1, lenNum - 2):
                 nSc = Nums[sc]
+
+                if nSc == pSc:
+                    continue
+                pSc = nSc
 
                 lf = sc + 1
                 rg = lenNum - 1
