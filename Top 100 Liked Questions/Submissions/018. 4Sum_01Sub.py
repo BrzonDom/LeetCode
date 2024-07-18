@@ -54,6 +54,7 @@ if __name__ == "__main__":
 
         cmbCnt = 1
 
+        print(f"\t\tAll combinations:")
         for fr in range(lnNm - 3):
             nFr = Nums[fr]
 
@@ -73,12 +74,12 @@ if __name__ == "__main__":
                     if ttl < Trgt:
                         lf += 1
 
-                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     elif ttl > Trgt:
                         rg -= 1
 
-                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
 
                     else:
 
@@ -89,14 +90,15 @@ if __name__ == "__main__":
                         rg -= 1
 
                         print()
-                        print(f"\t\t{cmbCnt}.Cmb.: {cmb}")
+                        print(f"\t\t\t{cmbCnt}.Cmb.: {cmb}")
                         print()
 
                     cmbCnt += 1
 
         print()
 
-        for cmb in outCmb:
-            print(f"\t\t{cmb}")
+        print(f"\tOut combinations:")
+        for cmbCnt, cmb in enumerate(outCmb):
+            print(f"\t\t{cmbCnt+1}. {cmb}")
 
         print("\n")
