@@ -53,9 +53,10 @@ if __name__ == "__main__":
 
         cmbCnt = 1
 
-        for fr in range(lnNm):
+        for fr in range(lnNm - 3):
+            nFr = Nums[fr]
+
             for sc in range(lnNm):
-                nFr = Nums[fr]
                 nSc = Nums[sc]
 
                 cmb = [nFr, nSc]
