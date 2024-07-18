@@ -160,7 +160,7 @@ if __name__ == "__main__":
         for fr in range(lenNum - 3):
             nFr = Nums[fr]
 
-            for sc in range(1, lenNum - 2):
+            for sc in range(fr+1, lenNum - 2):
                 nSc = Nums[sc]
 
                 lf = sc + 1
