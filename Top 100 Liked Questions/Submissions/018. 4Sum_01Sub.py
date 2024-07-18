@@ -72,6 +72,13 @@ if __name__ == "__main__":
                     print(f"\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                     cmbCnt += 1
 
-                    break
+                    if ttl < Trgt:
+                        lf += 1
+
+                    elif ttl > Trgt:
+                        rg -= 1
+
+                    else:
+                        break
 
         print("\n")
