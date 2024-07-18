@@ -155,7 +155,6 @@ if __name__ == "__main__":
 
         outCmb = []
         pFr = None
-        pSc = None
 
         cmbCnt = 1
 
@@ -165,6 +164,8 @@ if __name__ == "__main__":
             if nFr == pFr:
                 continue
             pFr = nFr
+
+            pSc = None
 
             for sc in range(fr+1, lenNum - 2):
                 nSc = Nums[sc]
@@ -205,11 +206,10 @@ if __name__ == "__main__":
                         outCmb.append(cmb)
 
                         lf += 1
-                        rg -= 1
-
                         while nLf == Nums[lf] and lf < rg:
                             lf += 1
 
+                        rg -= 1
                         while nRg == Nums[rg] and lf < rg:
                             rg -= 1
 
