@@ -275,10 +275,12 @@ if __name__ == "__main__":
             if ttl == Trgt:
                 outCmb.append(cmb)
 
+                print()
                 print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+                print()
 
             else:
-                print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+                print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
 
         print("\n")
 
