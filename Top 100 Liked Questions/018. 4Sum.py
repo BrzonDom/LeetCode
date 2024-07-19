@@ -268,6 +268,8 @@ if __name__ == "__main__":
 
         outCmb = []
 
+        notOut = True
+
         print(f"\t\tAll combinations:")
         for cmbCnt, cmb in enumerate(allCmb):
             ttl = sum(cmb)
@@ -275,17 +277,22 @@ if __name__ == "__main__":
             if ttl == Trgt:
                 outCmb.append(cmb)
 
-                print()
+                if notOut:
+                    print()
                 print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
                 print()
 
+                notOut = False
+
             else:
                 print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-        print()
+
+                notOut = True
+
+        if notOut:
+            print()
 
         Out_Prt(outCmb)
-
-        print("\n")
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
