@@ -241,8 +241,12 @@ if __name__ == "__main__":
         print(f"\tTarget: {Trgt}")
         print()
 
-        for num in Nums:
-            print(f"\t\t{num}")
+        lenNum = len(Nums)
+
+        for fr in range(lenNum):
+            nFr = Nums[fr]
+
+            print(f"\t\t{nFr}")
 
         print("\n")
 
