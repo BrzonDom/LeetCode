@@ -31,7 +31,7 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
-def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
+def Sol01_DblFrPntMtd_Prt(Nums, Trgt):
 
     print(f"\tNumbers unsorted: {Nums}")
     Nums.sort()
@@ -123,6 +123,13 @@ def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
     return outCmb
 
 
+def Out_Prt(outCmb):
+
+    print(f"\tOut combinations:")
+    for cmb in outCmb:
+        print(f"\t\t{cmb}")
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 0, -1, 0, -2, 2], 0],
@@ -132,6 +139,6 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Sol01_DblFrPntMtd_Ptr(case[0], case[1])
+        Sol01_DblFrPntMtd_Prt(case[0], case[1])
 
         print("\n")
