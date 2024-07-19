@@ -128,7 +128,7 @@ def Hlp01_nSumFrLp_Prt(nmCmb, cmbCr, numsCr, trgtCr):
             cmbCnt = len(allCmb)
 
             print()
-            print(f"\t\t{cmbCnt}.Cmb.: {cmbCr}")
+            print(f"\t\t\t{cmbCnt}.Cmb.: {cmbCr}")
             print()
 
         else:
@@ -137,7 +137,7 @@ def Hlp01_nSumFrLp_Prt(nmCmb, cmbCr, numsCr, trgtCr):
             cmbCnt = len(allCmb)
             ttl = sum(cmbCr)
 
-            print(f"\t\t\t{cmbCnt}.Cmb.: {cmbCr} = {ttl}")
+            print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmbCr} = {ttl}")
 
     else:
         pNum = None
@@ -282,6 +282,7 @@ if __name__ == "__main__":
         allCmb = []
         outCmb = []
 
+        print(f"\t\tAll combinations:")
         Hlp01_nSumFrLp_Prt(4, [], Nums, Trgt)
 
         print()
