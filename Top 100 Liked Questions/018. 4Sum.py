@@ -118,9 +118,14 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp01_nSum_Prt(Nums, Trgt):
+def Hlp01_nSum_Prt(nmCmb, cmbCr, numsCr, trgtCr):
 
-    return
+    if nmCmb == 0:
+        print(f"\t\t{cmbCr}")
+
+    else:
+        for num in numsCr:
+            Hlp01_nSum_Prt(nmCmb-1, cmbCr + [num], numsCr, trgtCr - num)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
