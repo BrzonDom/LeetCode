@@ -65,7 +65,6 @@ if __name__ == "__main__":
             if nFr == pFr:
                 continue
             pFr = nFr
-
             pSc = None
 
             for sc in range(fr + 1, lnNm - 2):
@@ -87,6 +86,9 @@ if __name__ == "__main__":
 
                     if ttl < Trgt:
                         lf += 1
+
+                        while nLf == Nums[lf] and lf < rg:
+                            lf += 1
 
                         print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                         notOut = True
