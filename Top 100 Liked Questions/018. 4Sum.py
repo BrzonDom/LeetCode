@@ -257,10 +257,12 @@ if __name__ == "__main__":
 
         lenNum = len(Nums)
 
-        for fr in range(lenNum):
-            nFr = Nums[fr]
+        # for fr in range(lenNum):
+        #     nFr = Nums[fr]
+        #
+        #     print(f"\t\t{nFr}")
 
-            print(f"\t\t{nFr}")
+        Hlp01_nSum_Prt(4, [], Nums, Trgt)
 
         print("\n")
 
