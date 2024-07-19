@@ -119,7 +119,7 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 
 
 def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
-
+    
     print(f"\tNums unsorted: {Nums}")
 
     Nums.sort()
@@ -158,6 +158,8 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
 
     if notOut:
         print()
+
+    Out_Prt(outCmb)
 
 
 def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr):
