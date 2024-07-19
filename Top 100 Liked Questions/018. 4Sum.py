@@ -127,9 +127,9 @@ def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr, trgtCr):
 
             cmbCnt = len(allCmb)
 
-            print()
-            print(f"\t\t\t{cmbCnt}.Cmb.: {cmbCr}")
-            print()
+            # print()
+            # print(f"\t\t\t{cmbCnt}.Cmb.: {cmbCr}")
+            # print()
 
         else:
             allCmb.append(cmbCr)
@@ -137,7 +137,7 @@ def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr, trgtCr):
             cmbCnt = len(allCmb)
             ttl = sum(cmbCr)
 
-            print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmbCr} = {ttl}")
+            # print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmbCr} = {ttl}")
 
     else:
         pNum = None
