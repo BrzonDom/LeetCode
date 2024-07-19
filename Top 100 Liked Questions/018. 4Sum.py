@@ -121,7 +121,14 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 def Hlp01_nSumFrLp_Prt(nmCmb, cmbCr, numsCr, trgtCr):
 
     if nmCmb == 0:
-        print(f"\t\t{cmbCr} = {sum(cmbCr)}")
+        if trgtCr == 0:
+            print()
+            print(f"\t\t{cmbCr}")
+            print()
+
+        else:
+            ttl = sum(cmbCr)
+            print(f"\t\t\t{cmbCr} = {ttl}")
 
     else:
         pNum = None
