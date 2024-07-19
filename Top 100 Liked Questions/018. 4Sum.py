@@ -118,6 +118,48 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
+def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
+
+    print(f"\tNums unsorted: {Nums}")
+
+    Nums.sort()
+    print(f"\tNums sorted:   {Nums}")
+
+    print(f"\tTarget: {Trgt}")
+    print()
+
+    lenNum = len(Nums)
+    allCmb = []
+
+    Hlp01_nSumFrLp(4, [], Nums)
+
+    outCmb = []
+
+    notOut = True
+
+    print(f"\t\tAll combinations:")
+    for cmbCnt, cmb in enumerate(allCmb):
+        ttl = sum(cmb)
+
+        if ttl == Trgt:
+            outCmb.append(cmb)
+
+            if notOut:
+                print()
+            print(f"\t\t\t{cmbCnt + 1}.Cmb.: {cmb}")
+            print()
+
+            notOut = False
+
+        else:
+            print(f"\t\t\t\t{cmbCnt + 1}.Cmb.: {cmb}")
+
+            notOut = True
+
+    if notOut:
+        print()
+
+
 def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr):
 
     if nmCmb == 0:
