@@ -86,7 +86,6 @@ if __name__ == "__main__":
 
                     if ttl < Trgt:
                         lf += 1
-
                         while nLf == Nums[lf] and lf < rg:
                             lf += 1
 
@@ -95,7 +94,6 @@ if __name__ == "__main__":
 
                     elif ttl > Trgt:
                         rg -= 1
-
                         while nRg == Nums[rg] and lf < rg:
                             rg -= 1
 
@@ -103,12 +101,15 @@ if __name__ == "__main__":
                         notOut = True
 
                     else:
-
-                        if cmb not in outCmb:
-                            outCmb.append(cmb)
+                        outCmb.append(cmb)
 
                         lf += 1
+                        while nLf == Nums[lf] and lf < rg:
+                            lf += 1
+
                         rg -= 1
+                        while nRg == Nums[rg] and lf < rg:
+                            rg -= 1
 
                         if notOut:
                             print()
