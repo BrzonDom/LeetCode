@@ -180,8 +180,6 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
 
     return outCmb
 
-    Out_Prt(outCmb)
-
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
 
@@ -295,7 +293,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Brt03_RcrsQdeFrLp_Prt(case[0], case[1])
+        outRtrn = Brt03_RcrsQdeFrLp_Prt(case[0], case[1])
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
@@ -303,4 +301,4 @@ if __name__ == "__main__":
 
         # outRtrn = Brt02_TlCmb_Prt(case[0], case[1])
 
-        # Out_Prt(outRtrn)
+        Out_Prt(outRtrn)
