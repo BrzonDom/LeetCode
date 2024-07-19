@@ -118,7 +118,7 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr, trgtCr):
+def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr):
 
     if nmCmb == 0:
         allCmb.append(cmbCr)
@@ -134,9 +134,8 @@ def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr, trgtCr):
 
             cmbNx = cmbCr + [num]
             numsNx = numsCr[n+1:]
-            trgtNx = trgtCr - num
 
-            Hlp01_nSumFrLp(nmCmb - 1, cmbNx, numsNx, trgtNx)
+            Hlp01_nSumFrLp(nmCmb - 1, cmbNx, numsNx)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
@@ -267,7 +266,7 @@ if __name__ == "__main__":
         outCmb = []
 
         print(f"\t\tAll combinations:")
-        Hlp01_nSumFrLp(4, [], Nums, Trgt)
+        Hlp01_nSumFrLp(4, [], Nums)
 
         Out_Prt(outCmb)
 
