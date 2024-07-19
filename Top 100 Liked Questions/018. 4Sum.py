@@ -124,8 +124,12 @@ def Hlp01_nSum_Prt(nmCmb, cmbCr, numsCr, trgtCr):
         print(f"\t\t{cmbCr}")
 
     else:
-        for num in numsCr:
-            Hlp01_nSum_Prt(nmCmb-1, cmbCr + [num], numsCr, trgtCr - num)
+        for n, num in enumerate(numsCr):
+            cmbNx = cmbCr + [num]
+            numsNx = numsCr[:n] + numsCr[n+1:]
+            trgtNx = trgtCr - num
+
+            Hlp01_nSum_Prt(nmCmb-1, cmbNx, numsNx, trgtNx)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
