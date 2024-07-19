@@ -276,7 +276,11 @@ if __name__ == "__main__":
 
         Hlp01_nSumFrLp_Prt(4, [], Nums, Trgt)
 
-        print("\n")
+        print()
+
+        Out_Prt(outCmb)
+
+        # print("\n")
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
