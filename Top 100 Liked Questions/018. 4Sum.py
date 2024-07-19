@@ -263,12 +263,17 @@ if __name__ == "__main__":
 
         lenNum = len(Nums)
         allCmb = []
-        outCmb = []
 
-        print(f"\t\tAll combinations:")
         Hlp01_nSumFrLp(4, [], Nums)
 
-        Out_Prt(outCmb)
+        outCmb = []
+
+        for cmb in allCmb:
+            print(f"\t\t{cmb}")
+
+        print("\n")
+
+        # Out_Prt(outCmb)
 
         # print("\n")
 
