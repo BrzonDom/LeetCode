@@ -181,26 +181,6 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     Out_Prt(outCmb)
 
 
-def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr):
-
-    if nmCmb == 0:
-        allCmb.append(cmbCr)
-
-    else:
-        pNum = None
-
-        for n, num in enumerate(numsCr):
-
-            if num == pNum:
-                continue
-            pNum = num
-
-            cmbNx = cmbCr + [num]
-            numsNx = numsCr[n+1:]
-
-            Hlp01_nSumFrLp(nmCmb - 1, cmbNx, numsNx)
-
-
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
 
     print(f"\tNums unsorted: {Nums}")
