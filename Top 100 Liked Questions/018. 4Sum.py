@@ -233,7 +233,11 @@ if __name__ == "__main__":
         Nums = case[0]
         Trgt = case[1]
 
-        print(f"\tNumbers: {Nums}")
+        print(f"\tNums unsorted: {Nums}")
+
+        Nums.sort()
+        print(f"\tNums sorted:   {Nums}")
+
         print(f"\tTarget: {Trgt}")
         print()
 
