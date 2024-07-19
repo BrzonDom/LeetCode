@@ -281,12 +281,11 @@ if __name__ == "__main__":
 
             else:
                 print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+        print()
+
+        Out_Prt(outCmb)
 
         print("\n")
-
-        # Out_Prt(outCmb)
-
-        # print("\n")
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
