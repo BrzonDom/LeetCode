@@ -118,7 +118,7 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp01_nSum_Prt(nmCmb, cmbCr, numsCr, trgtCr):
+def Hlp01_nSumFrLp_Prt(nmCmb, cmbCr, numsCr, trgtCr):
 
     if nmCmb == 0:
         print(f"\t\t{cmbCr}")
@@ -136,7 +136,7 @@ def Hlp01_nSum_Prt(nmCmb, cmbCr, numsCr, trgtCr):
             numsNx = numsCr[:n] + numsCr[n+1:]
             trgtNx = trgtCr - num
 
-            Hlp01_nSum_Prt(nmCmb-1, cmbNx, numsNx, trgtNx)
+            Hlp01_nSumFrLp_Prt(nmCmb - 1, cmbNx, numsNx, trgtNx)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
@@ -269,7 +269,7 @@ if __name__ == "__main__":
         #
         #     print(f"\t\t{nFr}")
 
-        Hlp01_nSum_Prt(4, [], Nums, Trgt)
+        Hlp01_nSumFrLp_Prt(4, [], Nums, Trgt)
 
         print("\n")
 
