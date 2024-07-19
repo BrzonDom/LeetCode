@@ -194,6 +194,8 @@ if __name__ == "__main__":
 
         out = Sol01_DblFrPntMtd_Prt(case[0], case[1])
 
+        out = Sol01_DblFrPntMtd(case[0], case[1])
+
         Out_Prt(out)
 
         print("\n")
