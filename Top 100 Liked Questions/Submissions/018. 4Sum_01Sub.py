@@ -66,8 +66,14 @@ if __name__ == "__main__":
                 continue
             pFr = nFr
 
+            pSc = None
+
             for sc in range(fr + 1, lnNm - 2):
                 nSc = Nums[sc]
+
+                if nSc == pSc:
+                    continue
+                pSc = nSc
 
                 lf = sc + 1
                 rg = lnNm - 1
