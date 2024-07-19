@@ -292,12 +292,12 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        outRtrn = Brt03_RcrsQdeFrLp_Prt(case[0], case[1])
-
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
         # outRtrn = Brt02_TlCmb_Prt(case[0], case[1])
+
+        outRtrn = Brt03_RcrsQdeFrLp_Prt(case[0], case[1])
 
         Out_Prt(outRtrn)
