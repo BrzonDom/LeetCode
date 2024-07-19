@@ -118,14 +118,10 @@ def Sol01_DblFrPntMtd_Prt(Nums, Trgt):
 def Sol01_DblFrPntMtd(Nums, Trgt):
 
     Nums.sort()
-
     lnNm = len(Nums)
     outCmb = []
 
     pFr = None
-
-    cmbCnt = 1
-    notOut = True
 
     for fr in range(lnNm - 3):
         nFr = Nums[fr]
@@ -157,14 +153,10 @@ def Sol01_DblFrPntMtd(Nums, Trgt):
                     while nLf == Nums[lf] and lf < rg:
                         lf += 1
 
-                    notOut = True
-
                 elif ttl > Trgt:
                     rg -= 1
                     while nRg == Nums[rg] and lf < rg:
                         rg -= 1
-
-                    notOut = True
 
                 else:
                     outCmb.append(cmb)
@@ -176,10 +168,6 @@ def Sol01_DblFrPntMtd(Nums, Trgt):
                     rg -= 1
                     while nRg == Nums[rg] and lf < rg:
                         rg -= 1
-
-                    notOut = False
-
-                cmbCnt += 1
 
     return outCmb
 
