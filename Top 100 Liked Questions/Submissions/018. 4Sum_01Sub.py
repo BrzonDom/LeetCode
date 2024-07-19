@@ -53,6 +53,7 @@ if __name__ == "__main__":
         outCmb = []
 
         cmbCnt = 1
+        notOut = True
 
         print(f"\t\tAll combinations:")
         for fr in range(lnNm - 3):
@@ -75,11 +76,13 @@ if __name__ == "__main__":
                         lf += 1
 
                         print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        notOut = True
 
                     elif ttl > Trgt:
                         rg -= 1
 
                         print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                        notOut = True
 
                     else:
 
@@ -89,13 +92,16 @@ if __name__ == "__main__":
                         lf += 1
                         rg -= 1
 
-                        print()
+                        if notOut:
+                            print()
                         print(f"\t\t\t{cmbCnt}.Cmb.: {cmb}")
                         print()
+                        notOut = False
 
                     cmbCnt += 1
 
-        print()
+        if notOut:
+            print()
 
         print(f"\tOut combinations:")
         if outCmb:
