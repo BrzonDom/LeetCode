@@ -30,6 +30,7 @@ https://leetcode.com/problems/4sum/description/
 
 """
 
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 0, -1, 0, -2, 2], 0],
@@ -52,12 +53,18 @@ if __name__ == "__main__":
         lnNm = len(Nums)
         outCmb = []
 
+        pFr = None
+
         cmbCnt = 1
         notOut = True
 
         print(f"\t\tAll combinations:")
         for fr in range(lnNm - 3):
             nFr = Nums[fr]
+
+            if nFr == pFr:
+                continue
+            pFr = nFr
 
             for sc in range(fr + 1, lnNm - 2):
                 nSc = Nums[sc]
