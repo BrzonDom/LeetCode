@@ -142,7 +142,7 @@ def Hlp01_nSumFrLp_Prt(nmCmb, cmbCr, numsCr, trgtCr):
             pNum = num
 
             cmbNx = cmbCr + [num]
-            numsNx = numsCr[:n] + numsCr[n+1:]
+            numsNx = numsCr[n+1:]
             trgtNx = trgtCr - num
 
             Hlp01_nSumFrLp_Prt(nmCmb - 1, cmbNx, numsNx, trgtNx)
