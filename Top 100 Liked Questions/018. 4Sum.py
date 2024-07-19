@@ -268,8 +268,9 @@ if __name__ == "__main__":
 
         outCmb = []
 
-        for cmb in allCmb:
-            print(f"\t\t{cmb}")
+        print(f"\t\tAll combinations:")
+        for cmbCnt, cmb in enumerate(allCmb):
+            print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
 
         print("\n")
 
