@@ -112,14 +112,6 @@ def Sol01_DblFrPntMtd_Prt(Nums, Trgt):
     if notOut:
         print()
 
-    print(f"\tOut combinations:")
-    if outCmb:
-        for cmb in outCmb:
-            print(f"\t\t{cmb}")
-
-    else:
-        print("\t\tNone")
-
     return outCmb
 
 
