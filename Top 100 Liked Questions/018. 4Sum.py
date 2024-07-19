@@ -178,6 +178,8 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     if notOut:
         print()
 
+    return outCmb
+
     Out_Prt(outCmb)
 
 
