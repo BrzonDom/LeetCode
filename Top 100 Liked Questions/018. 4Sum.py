@@ -313,49 +313,51 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}. Case:\n")
 
-        Nums = case[0]
-        Trgt = case[1]
+        Brt03_RcrsQdeFrLp_Prt(case[0], case[1])
 
-        print(f"\tNums unsorted: {Nums}")
-
-        Nums.sort()
-        print(f"\tNums sorted:   {Nums}")
-
-        print(f"\tTarget: {Trgt}")
-        print()
-
-        lenNum = len(Nums)
-        allCmb = []
-
-        Hlp01_nSumFrLp(4, [], Nums)
-
-        outCmb = []
-
-        notOut = True
-
-        print(f"\t\tAll combinations:")
-        for cmbCnt, cmb in enumerate(allCmb):
-            ttl = sum(cmb)
-
-            if ttl == Trgt:
-                outCmb.append(cmb)
-
-                if notOut:
-                    print()
-                print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-                print()
-
-                notOut = False
-
-            else:
-                print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-
-                notOut = True
-
-        if notOut:
-            print()
-
-        Out_Prt(outCmb)
+        # Nums = case[0]
+        # Trgt = case[1]
+        #
+        # print(f"\tNums unsorted: {Nums}")
+        #
+        # Nums.sort()
+        # print(f"\tNums sorted:   {Nums}")
+        #
+        # print(f"\tTarget: {Trgt}")
+        # print()
+        #
+        # lenNum = len(Nums)
+        # allCmb = []
+        #
+        # Hlp01_nSumFrLp(4, [], Nums)
+        #
+        # outCmb = []
+        #
+        # notOut = True
+        #
+        # print(f"\t\tAll combinations:")
+        # for cmbCnt, cmb in enumerate(allCmb):
+        #     ttl = sum(cmb)
+        #
+        #     if ttl == Trgt:
+        #         outCmb.append(cmb)
+        #
+        #         if notOut:
+        #             print()
+        #         print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+        #         print()
+        #
+        #         notOut = False
+        #
+        #     else:
+        #         print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+        #
+        #         notOut = True
+        #
+        # if notOut:
+        #     print()
+        #
+        # Out_Prt(outCmb)
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
