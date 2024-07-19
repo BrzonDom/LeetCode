@@ -119,6 +119,25 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 
 
 def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
+
+    def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr):
+
+        if nmCmb == 0:
+            allCmb.append(cmbCr)
+
+        else:
+            pNum = None
+
+            for n, num in enumerate(numsCr):
+
+                if num == pNum:
+                    continue
+                pNum = num
+
+                cmbNx = cmbCr + [num]
+                numsNx = numsCr[n + 1:]
+
+                Hlp01_nSumFrLp(nmCmb - 1, cmbNx, numsNx)
     
     print(f"\tNums unsorted: {Nums}")
 
