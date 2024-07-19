@@ -121,12 +121,7 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
 def Hlp01_nSumFrLp(nmCmb, cmbCr, numsCr, trgtCr):
 
     if nmCmb == 0:
-        if trgtCr == 0:
-            outCmb.append(cmbCr)
-            allCmb.append(cmbCr)
-
-        else:
-            allCmb.append(cmbCr)
+        allCmb.append(cmbCr)
 
     else:
         pNum = None
