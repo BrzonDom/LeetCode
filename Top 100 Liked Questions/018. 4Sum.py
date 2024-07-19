@@ -118,6 +118,11 @@ def Brt02_TlCmb_Prt(Nums, Trgt):
     return outCmb
 
 
+def Hlp01_nSum_Prt(Nums, Trgt):
+
+    return
+
+
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
 
     print(f"\tNums unsorted: {Nums}")
