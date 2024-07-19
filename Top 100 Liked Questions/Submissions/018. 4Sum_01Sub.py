@@ -117,12 +117,12 @@ def Sol01_DblFrPntMtd_Prt(Nums, Trgt):
 
 def Sol01_DblFrPntMtd(Nums, Trgt):
 
-    print(f"\tNumbers unsorted: {Nums}")
+    # print(f"\tNumbers unsorted: {Nums}")
     Nums.sort()
-    print(f"\tNumbers sorted:   {Nums}")
+    # print(f"\tNumbers sorted:   {Nums}")
 
-    print(f"\tTarget: {Trgt}")
-    print()
+    # print(f"\tTarget: {Trgt}")
+    # print()
 
     lnNm = len(Nums)
     outCmb = []
@@ -132,7 +132,7 @@ def Sol01_DblFrPntMtd(Nums, Trgt):
     cmbCnt = 1
     notOut = True
 
-    print(f"\t\tAll combinations:")
+    # print(f"\t\tAll combinations:")
     for fr in range(lnNm - 3):
         nFr = Nums[fr]
 
@@ -163,7 +163,7 @@ def Sol01_DblFrPntMtd(Nums, Trgt):
                     while nLf == Nums[lf] and lf < rg:
                         lf += 1
 
-                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    # print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                     notOut = True
 
                 elif ttl > Trgt:
@@ -171,7 +171,7 @@ def Sol01_DblFrPntMtd(Nums, Trgt):
                     while nRg == Nums[rg] and lf < rg:
                         rg -= 1
 
-                    print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
+                    # print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                     notOut = True
 
                 else:
@@ -185,16 +185,16 @@ def Sol01_DblFrPntMtd(Nums, Trgt):
                     while nRg == Nums[rg] and lf < rg:
                         rg -= 1
 
-                    if notOut:
-                        print()
-                    print(f"\t\t\t{cmbCnt}.Cmb.: {cmb}")
-                    print()
+                    # if notOut:
+                    #     print()
+                    # print(f"\t\t\t{cmbCnt}.Cmb.: {cmb}")
+                    # print()
                     notOut = False
 
                 cmbCnt += 1
 
-    if notOut:
-        print()
+    # if notOut:
+    #     print()
 
     return outCmb
 
