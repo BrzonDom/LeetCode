@@ -270,7 +270,15 @@ if __name__ == "__main__":
 
         print(f"\t\tAll combinations:")
         for cmbCnt, cmb in enumerate(allCmb):
-            print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+            ttl = sum(cmb)
+
+            if ttl == Trgt:
+                outCmb.append(cmb)
+
+                print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+
+            else:
+                print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
 
         print("\n")
 
