@@ -120,6 +120,8 @@ def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
     else:
         print("\t\tNone")
 
+    return outCmb
+
 
 if __name__ == "__main__":
 
