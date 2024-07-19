@@ -96,6 +96,9 @@ if __name__ == "__main__":
                     elif ttl > Trgt:
                         rg -= 1
 
+                        while nRg == Nums[rg] and lf < rg:
+                            rg -= 1
+
                         print(f"\t\t\t\t{cmbCnt}.Cmb.: {cmb} = {ttl}")
                         notOut = True
 
