@@ -123,12 +123,15 @@ def Hlp01_nSumFrLp_Prt(nmCmb, cmbCr, numsCr, trgtCr):
     if nmCmb == 0:
         if trgtCr == 0:
             outCmb.append(cmbCr)
+            allCmb.append(cmbCr)
 
             print()
             print(f"\t\t{cmbCr}")
             print()
 
         else:
+            allCmb.append(cmbCr)
+
             ttl = sum(cmbCr)
             print(f"\t\t\t{cmbCr} = {ttl}")
 
@@ -272,6 +275,7 @@ if __name__ == "__main__":
         print()
 
         lenNum = len(Nums)
+        allCmb = []
         outCmb = []
 
         Hlp01_nSumFrLp_Prt(4, [], Nums, Trgt)
