@@ -147,7 +147,6 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     print(f"\tTarget: {Trgt}")
     print()
 
-    lenNum = len(Nums)
     allCmb = []
 
     Hlp01_nSumFrLp(4, [], Nums)
