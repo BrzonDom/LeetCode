@@ -180,6 +180,11 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     return outCmb
 
 
+def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCt):
+
+    return
+
+
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
 
     print(f"\tNums unsorted: {Nums}")
