@@ -198,6 +198,9 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCr):
             elif nLf + nRg > trgtCr:
                 rg += 1
 
+            else:
+                return
+
     return
 
 
