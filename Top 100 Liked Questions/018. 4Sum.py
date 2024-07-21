@@ -207,7 +207,12 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 rg += 1
 
     else:
-        Hlp02_nSumPntMtd_Prt(shftCr+1, rmNm-1, cmbCr, trgtCr)
+        for n, num in enumerate(Nums):
+
+                cmbNx = cmbCr + [num]
+                shftNx = shftCr + n
+
+            # Hlp02_nSumPntMtd_Prt(shftCr+1, rmNm-1, cmbCr, trgtCr)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
