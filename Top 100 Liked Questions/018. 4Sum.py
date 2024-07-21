@@ -199,7 +199,8 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCr):
                 rg += 1
 
             else:
-                return
+                lf -= 1
+                rg += 1
 
     return
 
