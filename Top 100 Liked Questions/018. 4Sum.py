@@ -195,16 +195,16 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
             cmbCr = cmbCr + [nLf, nRg]
 
             if nLf + nRg < trgtCr:
-                lf -= 1
+                lf += 1
 
             elif nLf + nRg > trgtCr:
-                rg += 1
+                rg -= 1
 
             else:
                 outCmb.append(cmbCr)
 
-                lf -= 1
-                rg += 1
+                lf += 1
+                rg -= 1
 
     else:
         for n, num in enumerate(Nums[shftCr:]):
