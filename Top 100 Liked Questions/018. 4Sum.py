@@ -192,7 +192,9 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
             nLf = Nums[lf]
             nRg = Nums[rg]
 
-            cmbCr = cmbCr + [nLf, nRg]
+            cmbNx = cmbCr + [nLf, nRg]
+
+            print(f"\t\t{cmbNx}")
 
             if nLf + nRg < trgtCr:
                 lf += 1
@@ -201,7 +203,7 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 rg -= 1
 
             else:
-                outCmb.append(cmbCr)
+                outCmb.append(cmbNx)
 
                 lf += 1
                 rg -= 1
