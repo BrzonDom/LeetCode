@@ -194,13 +194,15 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
 
             cmbNx = cmbCr + [nLf, nRg]
 
-            print(f"\t\t\t{cmbNx}")
-
             if nLf + nRg < trgtCr:
                 lf += 1
 
+                print(f"\t\t\t\t{cmbNx}")
+
             elif nLf + nRg > trgtCr:
                 rg -= 1
+
+                print(f"\t\t\t\t{cmbNx}")
 
             else:
 
@@ -209,6 +211,10 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
 
                 lf += 1
                 rg -= 1
+
+                print()
+                print(f"\t\t\t{cmbNx}")
+                print()
 
     else:
         for n, num in enumerate(Nums[shftCr:]):
