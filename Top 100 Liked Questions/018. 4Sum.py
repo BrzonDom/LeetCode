@@ -332,10 +332,12 @@ if __name__ == "__main__":
 
         lenNum = len(Nums)
 
-        for fr in range(lenNum):
-            nFr = Nums[fr]
+        Hlp02_nSumPntMtd_Prt(0, 4, Trgt)
 
-            print(f"\t\t{nFr}")
+        # for fr in range(lenNum):
+        #     nFr = Nums[fr]
+        #
+        #     print(f"\t\t{nFr}")
 
         print("\n")
 
