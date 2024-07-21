@@ -180,7 +180,7 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCr):
+def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
 
     if rmNm == 2:
 
@@ -192,6 +192,8 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCr):
             nLf = Nums[lf]
             nRg = Nums[rg]
 
+            cmbCr = cmbCr + [nLf, nRg]
+
             if nLf + nRg < trgtCr:
                 lf -= 1
 
@@ -199,7 +201,7 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCr):
                 rg += 1
 
             else:
-                outCmb.append([nLf, nRg])
+                outCmb.append(cmbCr)
 
                 lf -= 1
                 rg += 1
@@ -335,7 +337,7 @@ if __name__ == "__main__":
         lenNum = len(Nums)
         outCmb = []
 
-        Hlp02_nSumPntMtd_Prt(0, 4, Trgt)
+        Hlp02_nSumPntMtd_Prt(0, 4, [], Trgt)
 
         # for fr in range(lenNum):
         #     nFr = Nums[fr]
