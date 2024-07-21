@@ -203,7 +203,9 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 rg -= 1
 
             else:
-                outCmb.append(cmbNx)
+
+                if cmbNx not in outCmb:
+                    outCmb.append(cmbNx)
 
                 lf += 1
                 rg -= 1
