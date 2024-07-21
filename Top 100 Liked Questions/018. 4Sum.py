@@ -207,10 +207,10 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 rg += 1
 
     else:
-        for n, num in enumerate(Nums):
+        for n, num in enumerate(Nums[shftCr:]):
 
                 cmbNx = cmbCr + [num]
-                shftNx = shftCr + n
+                shftNx = shftCr + n + 1
 
             # Hlp02_nSumPntMtd_Prt(shftCr+1, rmNm-1, cmbCr, trgtCr)
 
