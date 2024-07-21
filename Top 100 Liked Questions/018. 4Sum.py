@@ -213,7 +213,7 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 shftNx = shftCr + n + 1
                 trgtNx = trgtCr - num
 
-            # Hlp02_nSumPntMtd_Prt(shftCr+1, rmNm-1, cmbCr, trgtCr)
+                Hlp02_nSumPntMtd_Prt(shftNx, rmNm-1, cmbNx, trgtNx)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
