@@ -197,10 +197,16 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
             if nLf + nRg < trgtCr:
                 lf += 1
 
+                while nLf == Nums[lf] and lf < rg:
+                    lf += 1
+
                 print(f"\t\t\t\t{cmbNx}")
 
             elif nLf + nRg > trgtCr:
                 rg -= 1
+
+                while nRg == Nums[rg] and lf < rg:
+                    rg -= 1
 
                 print(f"\t\t\t\t{cmbNx}")
 
