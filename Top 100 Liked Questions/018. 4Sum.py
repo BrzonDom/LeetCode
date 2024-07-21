@@ -206,7 +206,8 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 lf -= 1
                 rg += 1
 
-    return
+    else:
+        Hlp02_nSumPntMtd_Prt(shftCr+1, rmNm-1, cmbCr, trgtCr)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
