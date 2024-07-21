@@ -211,6 +211,7 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
 
                 cmbNx = cmbCr + [num]
                 shftNx = shftCr + n + 1
+                trgtNx = trgtCr - num
 
             # Hlp02_nSumPntMtd_Prt(shftCr+1, rmNm-1, cmbCr, trgtCr)
 
