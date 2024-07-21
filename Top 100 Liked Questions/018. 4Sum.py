@@ -180,12 +180,23 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCt):
+def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCr):
 
     if rmNm == 2:
 
         lf = shftCr
         rg = len(Nums) - 1
+
+        while lf < rg:
+
+            nLf = Nums[lf]
+            nRg = Nums[rg]
+
+            if nLf + nRg < trgtCr:
+                lf -= 1
+
+            elif nLf + nRg > trgtCr:
+                rg += 1
 
     return
 
