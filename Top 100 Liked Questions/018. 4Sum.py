@@ -350,11 +350,6 @@ if __name__ == "__main__":
 
         Hlp02_nSumPntMtd_Prt(0, 4, [], Trgt)
 
-        # for fr in range(lenNum):
-        #     nFr = Nums[fr]
-        #
-        #     print(f"\t\t{nFr}")
-
         print("\n")
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
