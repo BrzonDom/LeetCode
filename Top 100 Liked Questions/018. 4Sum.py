@@ -182,6 +182,11 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
 
 def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, trgtCt):
 
+    if rmNm == 2:
+
+        lf = shftCr
+        rg = len(Nums) - 1
+
     return
 
 
