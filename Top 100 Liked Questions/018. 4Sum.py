@@ -197,6 +197,8 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
             if nLf + nRg < trgtCr:
                 lf += 1
 
+                allCmb.append(cmbNx)
+
                 while nLf == Nums[lf] and lf < rg:
                     lf += 1
 
@@ -205,12 +207,15 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
             elif nLf + nRg > trgtCr:
                 rg -= 1
 
+                allCmb.append(cmbNx)
+
                 while nRg == Nums[rg] and lf < rg:
                     rg -= 1
 
                 print(f"\t\t\t\t{cmbNx}")
 
             else:
+                allCmb.append(cmbNx)
                 outCmb.append(cmbNx)
 
                 lf += 1
@@ -369,6 +374,7 @@ if __name__ == "__main__":
         lenNum = len(Nums)
         outCmb = []
 
+        allCmb = []
         print(f"\t\tAll combinations:")
         Hlp02_nSumPntMtd_Prt(0, 4, [], Trgt)
         print()
