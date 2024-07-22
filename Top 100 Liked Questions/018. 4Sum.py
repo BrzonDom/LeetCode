@@ -228,7 +228,13 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 print()
 
     else:
+        pNum = None
+
         for n, num in enumerate(Nums[shftCr:]):
+
+                if num == pNum:
+                    continue
+                pNum = num
 
                 cmbNx = cmbCr + [num]
                 shftNx = shftCr + n + 1
