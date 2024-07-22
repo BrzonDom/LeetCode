@@ -211,9 +211,7 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 print(f"\t\t\t\t{cmbNx}")
 
             else:
-
-                if cmbNx not in outCmb:
-                    outCmb.append(cmbNx)
+                outCmb.append(cmbNx)
 
                 lf += 1
                 while nLf == Nums[lf] and lf < rg:
