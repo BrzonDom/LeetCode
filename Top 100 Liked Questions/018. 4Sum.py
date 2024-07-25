@@ -361,6 +361,8 @@ def Sol02_RcrsPntMrd_Ptr(Nums, Trgt):
     if notOut:
         print()
 
+    return outCmb
+
 
 def Out_Prt(outCmb):
 
