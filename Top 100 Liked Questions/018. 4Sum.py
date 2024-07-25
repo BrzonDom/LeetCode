@@ -230,15 +230,15 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
 
         for n, num in enumerate(Nums[shftCr:]):
 
-                if num == pNum:
-                    continue
-                pNum = num
+            if num == pNum:
+                continue
+            pNum = num
 
-                cmbNx = cmbCr + [num]
-                shftNx = shftCr + n + 1
-                trgtNx = trgtCr - num
+            cmbNx = cmbCr + [num]
+            shftNx = shftCr + n + 1
+            trgtNx = trgtCr - num
 
-                Hlp02_nSumPntMtd_Prt(shftNx, rmNm-1, cmbNx, trgtNx)
+            Hlp02_nSumPntMtd_Prt(shftNx, rmNm-1, cmbNx, trgtNx)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
