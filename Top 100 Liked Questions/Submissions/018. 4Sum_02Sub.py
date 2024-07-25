@@ -31,6 +31,11 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
+def Hlp02_nSumPntMtd_Ptr():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 0, -1, 0, -2, 2], 0],
