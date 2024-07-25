@@ -31,17 +31,19 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
-InputLst = [[[1, 0, -1, 0, -2, 2], 0],
-            [[2, 2, 2, 2, 2], 8]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[1, 0, -1, 0, -2, 2], 0],
+                [[2, 2, 2, 2, 2], 8]]
 
-    print(f"{csCnt + 1}. Case:\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Nums = case[0]
-    Trgt = case[1]
+        print(f"{csCnt + 1}. Case:\n")
 
-    print(f"\tNumbers: {Nums}")
-    print(f"\tTarget: {Trgt}")
+        Nums = case[0]
+        Trgt = case[1]
 
-    print("\n")
+        print(f"\tNumbers: {Nums}")
+        print(f"\tTarget: {Trgt}")
+
+        print("\n")
