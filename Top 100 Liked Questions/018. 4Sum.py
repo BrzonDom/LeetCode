@@ -362,8 +362,13 @@ if __name__ == "__main__":
         outCmb = []
 
         allCmb = []
-        print(f"\t\tAll combinations:")
         Hlp02_nSumPntMtd(0, 4, [], Trgt)
+
+        print(f"\t\tAll combinations:")
+
+        for cmbCnt, cmb in enumerate(allCmb):
+            print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+
         print()
 
         print(f"\tOut combinations:")
