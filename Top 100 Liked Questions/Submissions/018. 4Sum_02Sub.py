@@ -35,6 +35,8 @@ def Hlp02_nSumPntMtd_Ptr(shft, cmb):
 
     for n, num in enumerate(Nums[shft:]):
 
+        print(f"\t\t{cmb + [num]}")
+
         Hlp02_nSumPntMtd_Ptr(shft + 1, cmb + [num])
 
 
@@ -63,6 +65,7 @@ if __name__ == "__main__":
             num = Nums[n]
 
             print(f"\t\t{n+1}. {num}")
+        print()
 
         Hlp02_nSumPntMtd_Ptr(0, [])
 
