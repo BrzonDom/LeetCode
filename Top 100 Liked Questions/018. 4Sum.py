@@ -325,6 +325,58 @@ def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
 
 def Sol02_RcrsPntMrd_Ptr(Nums, Trgt):
 
+    def Hlp02_nSumPntMtd(shftCr, rmNm, cmbCr, trgtCr):
+
+        if rmNm == 2:
+
+            lf = shftCr
+            rg = len(Nums) - 1
+
+            while lf < rg:
+
+                nLf = Nums[lf]
+                nRg = Nums[rg]
+
+                cmbNx = cmbCr + [nLf, nRg]
+
+                allCmb.append(cmbNx)
+
+                if nLf + nRg < trgtCr:
+                    lf += 1
+                    while nLf == Nums[lf] and lf < rg:
+                        lf += 1
+
+                elif nLf + nRg > trgtCr:
+                    rg -= 1
+                    while nRg == Nums[rg] and lf < rg:
+                        rg -= 1
+
+                else:
+                    outCmb.append(cmbNx)
+
+                    lf += 1
+                    while nLf == Nums[lf] and lf < rg:
+                        lf += 1
+
+                    rg -= 1
+                    while nRg == Nums[rg] and lf < rg:
+                        rg -= 1
+
+        else:
+            pNum = None
+
+            for n, num in enumerate(Nums[shftCr:]):
+
+                if num == pNum:
+                    continue
+                pNum = num
+
+                cmbNx = cmbCr + [num]
+                shftNx = shftCr + n + 1
+                trgtNx = trgtCr - num
+
+                Hlp02_nSumPntMtd(shftNx, rmNm - 1, cmbNx, trgtNx)
+
     print(f"\tNums unsorted: {Nums}")
 
     Nums.sort()
