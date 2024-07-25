@@ -31,9 +31,11 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
-def Hlp02_nSumPntMtd_Ptr():
+def Hlp02_nSumPntMtd_Ptr(shft, cmb):
 
-    return
+    for n, num in enumerate(Nums[shft:]):
+
+        Hlp02_nSumPntMtd_Ptr(shft + 1, cmb + [num])
 
 
 if __name__ == "__main__":
@@ -61,5 +63,7 @@ if __name__ == "__main__":
             num = Nums[n]
 
             print(f"\t\t{n+1}. {num}")
+
+        Hlp02_nSumPntMtd_Ptr(0, [])
 
         print("\n")
