@@ -387,11 +387,13 @@ if __name__ == "__main__":
         if notOut:
             print()
 
-        print(f"\tOut combinations:")
-        for cmb in outCmb:
-            print(f"\t\t{cmb}")
+        Out_Prt(outCmb)
 
-        print("\n")
+        # print(f"\tOut combinations:")
+        # for cmb in outCmb:
+        #     print(f"\t\t{cmb}")
+
+        # print("\n")
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
