@@ -180,59 +180,6 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp02_nSumPntMtd(shftCr, rmNm, cmbCr, trgtCr):
-
-    if rmNm == 2:
-
-        lf = shftCr
-        rg = len(Nums) - 1
-
-        while lf < rg:
-
-            nLf = Nums[lf]
-            nRg = Nums[rg]
-
-            cmbNx = cmbCr + [nLf, nRg]
-
-            allCmb.append(cmbNx)
-
-            if nLf + nRg < trgtCr:
-                lf += 1
-                while nLf == Nums[lf] and lf < rg:
-                    lf += 1
-
-            elif nLf + nRg > trgtCr:
-                rg -= 1
-                while nRg == Nums[rg] and lf < rg:
-                    rg -= 1
-
-            else:
-                outCmb.append(cmbNx)
-
-                lf += 1
-                while nLf == Nums[lf] and lf < rg:
-                    lf += 1
-
-                rg -= 1
-                while nRg == Nums[rg] and lf < rg:
-                    rg -= 1
-
-    else:
-        pNum = None
-
-        for n, num in enumerate(Nums[shftCr:]):
-
-            if num == pNum:
-                continue
-            pNum = num
-
-            cmbNx = cmbCr + [num]
-            shftNx = shftCr + n + 1
-            trgtNx = trgtCr - num
-
-            Hlp02_nSumPntMtd(shftNx, rmNm - 1, cmbNx, trgtNx)
-
-
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
 
     print(f"\tNums unsorted: {Nums}")
@@ -440,48 +387,6 @@ if __name__ == "__main__":
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
         Sol02_RcrsPntMrd_Ptr(case[0], case[1])
-
-        # Nums = case[0]
-        # Trgt = case[1]
-        #
-        # print(f"\tNums unsorted: {Nums}")
-        #
-        # Nums.sort()
-        # print(f"\tNums sorted:   {Nums}")
-        #
-        # print(f"\tTarget: {Trgt}")
-        # print()
-        #
-        # lenNum = len(Nums)
-        # outCmb = []
-        #
-        # allCmb = []
-        # Hlp02_nSumPntMtd(0, 4, [], Trgt)
-        #
-        # notOut = True
-        #
-        # print(f"\t\tAll combinations:")
-        # for cmbCnt, cmb in enumerate(allCmb):
-        #     ttl = sum(cmb)
-        #
-        #     if ttl == Trgt:
-        #
-        #         if notOut:
-        #             print()
-        #         print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-        #         print()
-        #
-        #         notOut = False
-        #
-        #     else:
-        #         print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-        #
-        #         notOut = True
-        #
-        # if notOut:
-        #     print()
-        #
-        # Out_Prt(outCmb)
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
