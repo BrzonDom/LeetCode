@@ -180,7 +180,7 @@ def Brt03_RcrsQdeFrLp_Prt(Nums, Trgt):
     return outCmb
 
 
-def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
+def Hlp02_nSumPntMtd(shftCr, rmNm, cmbCr, trgtCr):
 
     if rmNm == 2:
 
@@ -201,14 +201,10 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 while nLf == Nums[lf] and lf < rg:
                     lf += 1
 
-                # print(f"\t\t\t\t{cmbNx}")
-
             elif nLf + nRg > trgtCr:
                 rg -= 1
                 while nRg == Nums[rg] and lf < rg:
                     rg -= 1
-
-                # print(f"\t\t\t\t{cmbNx}")
 
             else:
                 outCmb.append(cmbNx)
@@ -220,10 +216,6 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
                 rg -= 1
                 while nRg == Nums[rg] and lf < rg:
                     rg -= 1
-
-                # print()
-                # print(f"\t\t\t{cmbNx}")
-                # print()
 
     else:
         pNum = None
@@ -238,7 +230,7 @@ def Hlp02_nSumPntMtd_Prt(shftCr, rmNm, cmbCr, trgtCr):
             shftNx = shftCr + n + 1
             trgtNx = trgtCr - num
 
-            Hlp02_nSumPntMtd_Prt(shftNx, rmNm-1, cmbNx, trgtNx)
+            Hlp02_nSumPntMtd(shftNx, rmNm - 1, cmbNx, trgtNx)
 
 
 def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
@@ -371,7 +363,7 @@ if __name__ == "__main__":
 
         allCmb = []
         print(f"\t\tAll combinations:")
-        Hlp02_nSumPntMtd_Prt(0, 4, [], Trgt)
+        Hlp02_nSumPntMtd(0, 4, [], Trgt)
         print()
 
         print(f"\tOut combinations:")
