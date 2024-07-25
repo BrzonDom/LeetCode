@@ -323,6 +323,46 @@ def Sol01_DblFrPntMtd_Ptr(Nums, Trgt):
     return outCmb
 
 
+def Sol02_RcrsPntMrd_Ptr(Nums, Trgt):
+
+    print(f"\tNums unsorted: {Nums}")
+
+    Nums.sort()
+    print(f"\tNums sorted:   {Nums}")
+
+    print(f"\tTarget: {Trgt}")
+    print()
+
+    lenNum = len(Nums)
+    outCmb = []
+
+    allCmb = []
+    Hlp02_nSumPntMtd(0, 4, [], Trgt)
+
+    notOut = True
+
+    print(f"\t\tAll combinations:")
+    for cmbCnt, cmb in enumerate(allCmb):
+        ttl = sum(cmb)
+
+        if ttl == Trgt:
+
+            if notOut:
+                print()
+            print(f"\t\t\t{cmbCnt + 1}.Cmb.: {cmb}")
+            print()
+
+            notOut = False
+
+        else:
+            print(f"\t\t\t\t{cmbCnt + 1}.Cmb.: {cmb}")
+
+            notOut = True
+
+    if notOut:
+        print()
+
+
 def Out_Prt(outCmb):
 
     print(f"\tOut combinations:")
@@ -388,12 +428,6 @@ if __name__ == "__main__":
             print()
 
         Out_Prt(outCmb)
-
-        # print(f"\tOut combinations:")
-        # for cmb in outCmb:
-        #     print(f"\t\t{cmb}")
-
-        # print("\n")
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
