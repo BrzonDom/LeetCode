@@ -37,7 +37,7 @@ def Hlp02_nSumPntMtd_Ptr(shft, cmb):
 
         print(f"\t\t{cmb + [num]}")
 
-        Hlp02_nSumPntMtd_Ptr(shft + 1, cmb + [num])
+        Hlp02_nSumPntMtd_Ptr(shft + n + 1, cmb + [num])
 
 
 if __name__ == "__main__":
