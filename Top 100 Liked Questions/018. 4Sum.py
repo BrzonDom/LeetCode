@@ -439,47 +439,49 @@ if __name__ == "__main__":
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
-        Nums = case[0]
-        Trgt = case[1]
+        Sol02_RcrsPntMrd_Ptr(case[0], case[1])
 
-        print(f"\tNums unsorted: {Nums}")
-
-        Nums.sort()
-        print(f"\tNums sorted:   {Nums}")
-
-        print(f"\tTarget: {Trgt}")
-        print()
-
-        lenNum = len(Nums)
-        outCmb = []
-
-        allCmb = []
-        Hlp02_nSumPntMtd(0, 4, [], Trgt)
-
-        notOut = True
-
-        print(f"\t\tAll combinations:")
-        for cmbCnt, cmb in enumerate(allCmb):
-            ttl = sum(cmb)
-
-            if ttl == Trgt:
-
-                if notOut:
-                    print()
-                print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-                print()
-
-                notOut = False
-
-            else:
-                print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
-
-                notOut = True
-
-        if notOut:
-            print()
-
-        Out_Prt(outCmb)
+        # Nums = case[0]
+        # Trgt = case[1]
+        #
+        # print(f"\tNums unsorted: {Nums}")
+        #
+        # Nums.sort()
+        # print(f"\tNums sorted:   {Nums}")
+        #
+        # print(f"\tTarget: {Trgt}")
+        # print()
+        #
+        # lenNum = len(Nums)
+        # outCmb = []
+        #
+        # allCmb = []
+        # Hlp02_nSumPntMtd(0, 4, [], Trgt)
+        #
+        # notOut = True
+        #
+        # print(f"\t\tAll combinations:")
+        # for cmbCnt, cmb in enumerate(allCmb):
+        #     ttl = sum(cmb)
+        #
+        #     if ttl == Trgt:
+        #
+        #         if notOut:
+        #             print()
+        #         print(f"\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+        #         print()
+        #
+        #         notOut = False
+        #
+        #     else:
+        #         print(f"\t\t\t\t{cmbCnt+1}.Cmb.: {cmb}")
+        #
+        #         notOut = True
+        #
+        # if notOut:
+        #     print()
+        #
+        # Out_Prt(outCmb)
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
