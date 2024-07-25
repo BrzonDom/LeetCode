@@ -388,7 +388,7 @@ if __name__ == "__main__":
 
         # outRtrn = Sol01_DblFrPntMtd_Ptr(case[0], case[1])
 
-        Sol02_RcrsPntMrd_Ptr(case[0], case[1])
+        outRtrn = Sol02_RcrsPntMrd_Ptr(case[0], case[1])
 
         # outRtrn = Brt01_QdrFrLp_Prt(case[0], case[1])
 
@@ -396,4 +396,4 @@ if __name__ == "__main__":
 
         # outRtrn = Brt03_RcrsQdeFrLp_Prt(case[0], case[1])
 
-        # Out_Prt(outRtrn)
+        Out_Prt(outRtrn)
