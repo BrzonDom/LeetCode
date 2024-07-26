@@ -41,7 +41,9 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
         nLf = Nums[lf]
         nRg = Nums[rg]
 
-        print(f"\t\t{cmbCr}")
+        cmbNx = cmbCr + [nLf, nRg]
+
+        print(f"\t\t{cmbNx}")
 
     else:
         for n, num in enumerate(Nums[shftCr:-2]):
