@@ -66,7 +66,14 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
                     outCmb.append(cmbNx)
 
                 lf += 1
+
+                while nLf == Nums[lf] and lf < rg:
+                    lf += 1
+
                 rg -= 1
+
+                while nRg == Nums[rg] and lf < rg:
+                    rg -= 1
 
     else:
         pNum = None
