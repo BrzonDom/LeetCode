@@ -101,7 +101,11 @@ if __name__ == "__main__":
         print()
 
         print(f"\tOut combinations:")
-        for cmb in outCmb:
-            print(f"\t\t{cmb}")
+        if outCmb:
+            for cmb in outCmb:
+                print(f"\t\t{cmb}")
+
+        else:
+            print("\t\tNone")
 
         print("\n")
