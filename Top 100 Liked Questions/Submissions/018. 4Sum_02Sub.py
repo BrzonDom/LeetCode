@@ -55,6 +55,8 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
                 rg -= 1
 
             else:
+                outCmb.append(cmbNx)
+
                 lf += 1
                 rg -= 1
 
@@ -89,6 +91,8 @@ if __name__ == "__main__":
         print()
 
         lnNm = len(Nums)
+
+        outCmb = []
 
         Hlp02_nSumPntMtd_Ptr(4, Trgt, 0, [])
 
