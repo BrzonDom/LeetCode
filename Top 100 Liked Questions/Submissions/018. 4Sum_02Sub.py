@@ -44,7 +44,7 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
         cmbNx = cmbCr + [nLf, nRg]
         ttl = sum(cmbNx)
 
-        print(f"\t\t{cmbNx}")
+        print(f"\t\t{cmbNx} = {ttl}")
 
     else:
         for n, num in enumerate(Nums[shftCr:-2]):
@@ -77,12 +77,6 @@ if __name__ == "__main__":
         print()
 
         lnNm = len(Nums)
-
-        for n in range(lnNm):
-            num = Nums[n]
-
-            print(f"\t\t{n+1}. {num}")
-        print()
 
         Hlp02_nSumPntMtd_Ptr(4, Trgt, 0, [])
 
