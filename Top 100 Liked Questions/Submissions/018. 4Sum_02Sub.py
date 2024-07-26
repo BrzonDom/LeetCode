@@ -33,11 +33,11 @@ https://leetcode.com/problems/4sum/description/
 
 def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
 
-    if rmNmCr == 0:
+    if rmNmCr == 2:
         print(f"\t\t{cmbCr}")
 
     else:
-        for n, num in enumerate(Nums[shftCr:]):
+        for n, num in enumerate(Nums[shftCr:-2]):
 
             rmNmNx = rmNmCr - 1
             trgtNx = trgtCr - num
