@@ -46,7 +46,7 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
             cmbNx = cmbCr + [nLf, nRg]
             ttl = sum(cmbNx)
 
-            print(f"\t\t{cmbNx} = {ttl}")
+            print(f"\t\t\t{cmbNx} = {ttl}")
 
             if ttl < Trgt:
                 lf += 1
@@ -96,9 +96,11 @@ if __name__ == "__main__":
 
         outCmb = []
 
+        print(f"\t\tAll combinations:")
         Hlp02_nSumPntMtd_Ptr(4, Trgt, 0, [])
         print()
 
+        print(f"\tOut combinations:")
         for cmb in outCmb:
             print(f"\t\t{cmb}")
 
