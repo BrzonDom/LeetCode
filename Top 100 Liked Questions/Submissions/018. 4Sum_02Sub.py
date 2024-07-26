@@ -34,6 +34,13 @@ https://leetcode.com/problems/4sum/description/
 def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
 
     if rmNmCr == 2:
+
+        lf = shftCr
+        rg = len(Nums) - 1
+
+        nLf = Nums[lf]
+        nRg = Nums[rg]
+
         print(f"\t\t{cmbCr}")
 
     else:
