@@ -42,6 +42,7 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
         nRg = Nums[rg]
 
         cmbNx = cmbCr + [nLf, nRg]
+        ttl = sum(cmbNx)
 
         print(f"\t\t{cmbNx}")
 
