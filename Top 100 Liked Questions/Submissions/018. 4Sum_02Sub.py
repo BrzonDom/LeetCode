@@ -48,6 +48,12 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
 
             print(f"\t\t{cmbNx} = {ttl}")
 
+            if ttl < Trgt:
+                lf += 1
+
+            elif ttl > Trgt:
+                rg -= 1
+
             break
 
     else:
