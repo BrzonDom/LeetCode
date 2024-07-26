@@ -63,7 +63,13 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
                 rg -= 1
 
     else:
+        pNum = None
+
         for n, num in enumerate(Nums[shftCr:-2]):
+
+            if num == pNum:
+                continue
+            pNum = num
 
             rmNmNx = rmNmCr - 1
             trgtNx = trgtCr - num
