@@ -97,5 +97,9 @@ if __name__ == "__main__":
         outCmb = []
 
         Hlp02_nSumPntMtd_Ptr(4, Trgt, 0, [])
+        print()
+
+        for cmb in outCmb:
+            print(f"\t\t{cmb}")
 
         print("\n")
