@@ -54,7 +54,9 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
             elif ttl > Trgt:
                 rg -= 1
 
-            break
+            else:
+                lf += 1
+                rg -= 1
 
     else:
         for n, num in enumerate(Nums[shftCr:-2]):
