@@ -31,13 +31,18 @@ https://leetcode.com/problems/4sum/description/
 """
 
 
-def Hlp02_nSumPntMtd_Ptr(rmNm, trgt, shft, cmb):
+def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
 
-    for n, num in enumerate(Nums[shft:]):
+    for n, num in enumerate(Nums[shftCr:]):
 
-        print(f"\t\t{cmb + [num]}")
+        rmNmNx = rmNmCr - 1
+        trgtNx = trgtCr - num
+        shftNx = shftCr + n + 1
+        cmbNx = cmbCr + [num]
 
-        Hlp02_nSumPntMtd_Ptr(rmNm - 1, trgt - num, shft + n + 1, cmb + [num])
+        print(f"\t\t{cmbNx}")
+
+        Hlp02_nSumPntMtd_Ptr(rmNmNx, trgtNx, shftNx, cmbNx)
 
 
 if __name__ == "__main__":
