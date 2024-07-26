@@ -51,6 +51,9 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
             if ttl < Trgt:
                 lf += 1
 
+                while nLf == Nums[lf] and lf < rg:
+                    lf += 1
+
             elif ttl > Trgt:
                 rg -= 1
 
