@@ -57,6 +57,9 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
             elif ttl > Trgt:
                 rg -= 1
 
+                while nRg == Nums[rg] and lf < rg:
+                    rg -= 1
+
             else:
 
                 if cmbNx not in outCmb:
