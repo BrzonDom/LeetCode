@@ -38,13 +38,17 @@ def Hlp02_nSumPntMtd_Ptr(rmNmCr, trgtCr, shftCr, cmbCr):
         lf = shftCr
         rg = len(Nums) - 1
 
-        nLf = Nums[lf]
-        nRg = Nums[rg]
+        while lf < rg:
 
-        cmbNx = cmbCr + [nLf, nRg]
-        ttl = sum(cmbNx)
+            nLf = Nums[lf]
+            nRg = Nums[rg]
 
-        print(f"\t\t{cmbNx} = {ttl}")
+            cmbNx = cmbCr + [nLf, nRg]
+            ttl = sum(cmbNx)
+
+            print(f"\t\t{cmbNx} = {ttl}")
+
+            break
 
     else:
         for n, num in enumerate(Nums[shftCr:-2]):
