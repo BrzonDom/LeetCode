@@ -121,6 +121,7 @@ if __name__ == "__main__":
         print()
 
         pNm = Prm[-1]
+        mxPrm = True
 
         for i, nm in enumerate(Prm[-2::-1]):
 
@@ -132,6 +133,7 @@ if __name__ == "__main__":
                 print()
                 print(f"\tOutput permutation: {Prm}")
 
+                mxPrm = False
                 break
 
             pNm = nm
