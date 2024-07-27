@@ -118,5 +118,9 @@ if __name__ == "__main__":
 
         nms = sorted(Prm)
         print(f"\t\tNumbers: {nms}")
+        print()
+
+        for nm in Prm[::-1]:
+            print(f"\t{nm}")
 
         print(f"\n")
