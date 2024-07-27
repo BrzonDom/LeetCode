@@ -46,6 +46,9 @@ https://leetcode.com/problems/next-permutation/description/
 """
 
 
+from itertools import permutations
+
+
 InputLst = [[1, 2, 3], [3, 2, 1], [1, 1, 5]]
 
 for csCnt, case in enumerate(InputLst):
@@ -55,5 +58,7 @@ for csCnt, case in enumerate(InputLst):
     prmIn = case
 
     print(f"\tInput permutation: {prmIn}")
+
+    PrmsLst = permutations(prmIn, 3)
 
     print("\n")
