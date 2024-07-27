@@ -110,7 +110,7 @@ def Sol01_RvsSwtch_Prt(Prm):
 
         if pNm > nm:
 
-            if pNm > ppNm:
+            if pNm > ppNm > nm:
                 print(f"\t\tPrPrv. Num.: {Prm[-i]}")
                 print(f"\t\tPrv. Num.:   {Prm[-(i+1)]}")
                 print(f"\t\tCrn. Num.:   {Prm[-(i+2)]}")
@@ -150,7 +150,8 @@ if __name__ == "__main__":
                 [1, 1, 5],
                 [1, 2, 3, 4],
                 [4, 3, 2, 1],
-                [1, 2, 4, 3, 1]]
+                [1, 2, 4, 3, 1],
+                [2, 3, 1]]
 
     for csCnt, case in enumerate(InputLst):
 
