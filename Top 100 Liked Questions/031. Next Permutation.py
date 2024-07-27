@@ -132,6 +132,8 @@ if __name__ == "__main__":
                 print()
                 print(f"\tOutput permutation: {Prm}")
 
+                break
+
             pNm = nm
 
         print(f"\n")
