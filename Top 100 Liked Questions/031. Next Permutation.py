@@ -98,9 +98,7 @@ def Brt01_PrmTl_Prt(prmIn):
     return prmOt
 
 
-def Sol01_RvsSwtch(case):
-
-    Prm = case
+def Sol01_RvsSwtch_Prt(Prm):
 
     print(f"\tInput permutation: {Prm}")
 
@@ -119,7 +117,6 @@ def Sol01_RvsSwtch(case):
             print(f"\t\tPr. Num.: {pNm} = {Prm[-i - 2]}")
             print(f"\t\tCr. Num.: {nm} = {Prm[-i - 1]}")
             print()
-            print(f"\tOutput permutation: {Prm}")
 
             mxPrm = False
             break
