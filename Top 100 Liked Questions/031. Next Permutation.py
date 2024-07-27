@@ -117,7 +117,7 @@ def Sol01_RvsSwtch_Prt(Prm):
                 print()
 
                 Prm[-i], Prm[-(i+2)] = Prm[-(i+2)], Prm[-i]
-                Prm[-i:] = sorted(Prm[-i:])
+                Prm[-(i+1):] = sorted(Prm[-(i+1):])
 
             else:
                 print(f"\t\tPrv. Num.: {Prm[-(i+1)]}")
