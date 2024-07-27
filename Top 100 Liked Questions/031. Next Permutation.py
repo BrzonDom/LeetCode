@@ -61,9 +61,8 @@ for csCnt, case in enumerate(InputLst):
 
     PrmsLst = permutations(prmIn, 3)
 
-    print(f"\t\tAll permutations:")
+    print(f"\t\tAll unsorted unset permutations:")
     for pCnt, prm in enumerate(PrmsLst):
         print(f"\t\t\t{pCnt+1}. {prm}")
-    print()
 
     print("\n")
