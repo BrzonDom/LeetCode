@@ -81,8 +81,8 @@ def Brt01_PrmTl_Prt(prmIn):
 
     print(f"\t\tNext permutations:")
     for cntC, prmCr in enumerate(PrmsLst):
-        nCnt = nxtPrms[str(prmCr)]
-        prmNx = PrmsLst[nCnt]
+        nxIdx = nxtPrms[str(prmCr)]
+        prmNx = PrmsLst[nxIdx]
 
         print(f"\t\t\t{cntC + 1}. {prmCr} => {prmNx}")
     print()
