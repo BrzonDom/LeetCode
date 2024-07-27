@@ -75,9 +75,13 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     PrmsLst = sorted(PrmsLst)
+    nxtPrms = {}
 
     print(f"\t\tAll sorted set permutations:")
     for pCnt, prm in enumerate(PrmsLst):
         print(f"\t\t\t{pCnt+1}. {prm}")
+
+        nxtPrms[str(prm)] = pCnt + 1
+    nxtPrms[str(PrmsLst[-1])] = 0
 
     print("\n")
