@@ -72,5 +72,12 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\tAll unsorted set permutations:")
     for pCnt, prm in enumerate(PrmsLst):
         print(f"\t\t\t{pCnt+1}. {prm}")
+    print()
+
+    PrmsLst = sorted(PrmsLst)
+
+    print(f"\t\tAll sorted set permutations:")
+    for pCnt, prm in enumerate(PrmsLst):
+        print(f"\t\t\t{pCnt+1}. {prm}")
 
     print("\n")
