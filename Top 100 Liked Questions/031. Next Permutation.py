@@ -92,5 +92,12 @@ for csCnt, case in enumerate(InputLst):
         prmNx = PrmsLst[nCnt]
 
         print(f"\t\t\t{cntC+1}. {prmCr} => {prmNx}")
+    print()
+
+    otIdx = nxtPrms[str(tuple(prmIn))]
+    prmOt = list(PrmsLst[otIdx])
+
+    print(f"\tInput permutation:  {prmIn}")
+    print(f"\tOutput permutation: {prmOt}")
 
     print("\n")
