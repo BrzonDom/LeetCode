@@ -110,11 +110,11 @@ if __name__ == "__main__":
 
         # Brt01_PrmTl_Prt(case)
 
-        prmIn = case
+        Prm = case
 
-        print(f"\tInput permutation: {prmIn}")
+        print(f"\tInput permutation: {Prm}")
 
-        nms = sorted(prmIn)
+        nms = sorted(Prm)
         print(f"\t\tNumbers: {nms}")
 
         print(f"\n")
