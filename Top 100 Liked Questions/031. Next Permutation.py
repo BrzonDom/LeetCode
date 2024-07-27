@@ -101,9 +101,6 @@ def Brt01_PrmTl_Prt(prmIn):
 def Sol01_RvsSwtch_Prt(Prm):
 
     print(f"\tInput permutation: {Prm}")
-
-    nms = sorted(Prm)
-    print(f"\t\tNumbers: {nms}")
     print()
 
     pNm = Prm[-1]
