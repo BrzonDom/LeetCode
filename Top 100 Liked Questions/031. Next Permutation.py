@@ -120,7 +120,8 @@ if __name__ == "__main__":
         print(f"\t\tNumbers: {nms}")
         print()
 
-        for nm in Prm[::-1]:
+        pNm = Prm[-1]
+        for nm in Prm[-2::-1]:
             print(f"\t{nm}")
 
         print(f"\n")
