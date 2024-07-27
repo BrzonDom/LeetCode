@@ -114,4 +114,7 @@ if __name__ == "__main__":
 
         print(f"\tInput permutation: {prmIn}")
 
+        nms = sorted(prmIn)
+        print(f"\t\tNumbers: {nms}")
+
         print(f"\n")
