@@ -65,4 +65,6 @@ for csCnt, case in enumerate(InputLst):
     for pCnt, prm in enumerate(PrmsLst):
         print(f"\t\t\t{pCnt+1}. {prm}")
 
+    PrmsLst = list(set(PrmsLst))
+
     print("\n")
