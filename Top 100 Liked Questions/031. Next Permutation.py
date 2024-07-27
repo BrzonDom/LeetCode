@@ -136,4 +136,6 @@ if __name__ == "__main__":
 
             pNm = nm
 
+        print(f"\tOutput permutation: {Prm}")
+
         print(f"\n")
