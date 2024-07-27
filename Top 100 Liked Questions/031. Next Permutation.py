@@ -83,5 +83,13 @@ for csCnt, case in enumerate(InputLst):
 
         nxtPrms[str(prm)] = pCnt + 1
     nxtPrms[str(PrmsLst[-1])] = 0
+    print()
+
+    for cntC, prmCr in enumerate(PrmsLst):
+
+        nCnt = nxtPrms[str(prmCr)]
+        prmNx = PrmsLst[nCnt]
+
+        print(f"\t\t{cntC+1}. {prmCr} => {prmNx}")
 
     print("\n")
