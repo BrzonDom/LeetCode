@@ -106,49 +106,51 @@ if __name__ == "__main__":
 
         print(f"{csCnt+1}.Case\n")
 
-        prmIn = case
+        Brt01_PrmTl_Prt(case)
 
-        print(f"\tInput permutation: {prmIn}")
-        print()
-
-        PrmsLst = list(permutations(prmIn, 3))
-
-        print(f"\t\t\tAll unsorted unset permutations:")
-        for pCnt, prm in enumerate(PrmsLst):
-            print(f"\t\t\t\t{pCnt+1}. {prm}")
-        print()
-
-        PrmsLst = list(set(PrmsLst))
-
-        print(f"\t\t\tAll unsorted set permutations:")
-        for pCnt, prm in enumerate(PrmsLst):
-            print(f"\t\t\t\t{pCnt+1}. {prm}")
-        print()
-
-        PrmsLst = sorted(PrmsLst)
-        nxtPrms = {}
-
-        print(f"\t\t\tAll sorted set permutations:")
-        for pCnt, prm in enumerate(PrmsLst):
-            print(f"\t\t\t\t{pCnt+1}. {prm}")
-
-            nxtPrms[str(prm)] = pCnt + 1
-        nxtPrms[str(PrmsLst[-1])] = 0
-        print()
-
-        print(f"\t\tNext permutations:")
-        for cntC, prmCr in enumerate(PrmsLst):
-
-            nCnt = nxtPrms[str(prmCr)]
-            prmNx = PrmsLst[nCnt]
-
-            print(f"\t\t\t{cntC+1}. {prmCr} => {prmNx}")
-        print()
-
-        otIdx = nxtPrms[str(tuple(prmIn))]
-        prmOt = list(PrmsLst[otIdx])
-
-        print(f"\tInput permutation:  {prmIn}")
-        print(f"\tOutput permutation: {prmOt}")
-
-        print("\n")
+        # prmIn = case
+        #
+        # print(f"\tInput permutation: {prmIn}")
+        # print()
+        #
+        # PrmsLst = list(permutations(prmIn, 3))
+        #
+        # print(f"\t\t\tAll unsorted unset permutations:")
+        # for pCnt, prm in enumerate(PrmsLst):
+        #     print(f"\t\t\t\t{pCnt+1}. {prm}")
+        # print()
+        #
+        # PrmsLst = list(set(PrmsLst))
+        #
+        # print(f"\t\t\tAll unsorted set permutations:")
+        # for pCnt, prm in enumerate(PrmsLst):
+        #     print(f"\t\t\t\t{pCnt+1}. {prm}")
+        # print()
+        #
+        # PrmsLst = sorted(PrmsLst)
+        # nxtPrms = {}
+        #
+        # print(f"\t\t\tAll sorted set permutations:")
+        # for pCnt, prm in enumerate(PrmsLst):
+        #     print(f"\t\t\t\t{pCnt+1}. {prm}")
+        #
+        #     nxtPrms[str(prm)] = pCnt + 1
+        # nxtPrms[str(PrmsLst[-1])] = 0
+        # print()
+        #
+        # print(f"\t\tNext permutations:")
+        # for cntC, prmCr in enumerate(PrmsLst):
+        #
+        #     nCnt = nxtPrms[str(prmCr)]
+        #     prmNx = PrmsLst[nCnt]
+        #
+        #     print(f"\t\t\t{cntC+1}. {prmCr} => {prmNx}")
+        # print()
+        #
+        # otIdx = nxtPrms[str(tuple(prmIn))]
+        # prmOt = list(PrmsLst[otIdx])
+        #
+        # print(f"\tInput permutation:  {prmIn}")
+        # print(f"\tOutput permutation: {prmOt}")
+        #
+        # print("\n")
