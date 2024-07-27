@@ -58,7 +58,11 @@ for csCnt, case in enumerate(InputLst):
     prmIn = case
 
     print(f"\tInput permutation: {prmIn}")
+    print()
 
     PrmsLst = permutations(prmIn, 3)
+
+    for prm in PrmsLst:
+        print(f"\t{prm}")
 
     print("\n")
