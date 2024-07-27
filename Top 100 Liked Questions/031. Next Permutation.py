@@ -124,9 +124,13 @@ if __name__ == "__main__":
 
         for i, nm in enumerate(Prm[-2::-1]):
 
-            print(f"\t\tPr. Num.: {pNm} = {Prm[-i-2]}")
-            print(f"\t\tCr. Num.: {nm} = {Prm[-i-1]}")
-            print()
+            if pNm > nm:
+                Prm[-i-1], Prm[-i-2] = Prm[-i-2], Prm[-i-1]
+
+                print(f"\t\tPr. Num.: {pNm} = {Prm[-i-2]}")
+                print(f"\t\tCr. Num.: {nm} = {Prm[-i-1]}")
+                print()
+                print(f"\tOutput permutation: {Prm}")
 
             pNm = nm
 
