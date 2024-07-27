@@ -49,55 +49,57 @@ https://leetcode.com/problems/next-permutation/description/
 from itertools import permutations
 
 
-InputLst = [[1, 2, 3], [3, 2, 1], [1, 1, 5]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[1, 2, 3], [3, 2, 1], [1, 1, 5]]
 
-    print(f"{csCnt+1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    prmIn = case
+        print(f"{csCnt+1}.Case\n")
 
-    print(f"\tInput permutation: {prmIn}")
-    print()
+        prmIn = case
 
-    PrmsLst = list(permutations(prmIn, 3))
+        print(f"\tInput permutation: {prmIn}")
+        print()
 
-    print(f"\t\t\tAll unsorted unset permutations:")
-    for pCnt, prm in enumerate(PrmsLst):
-        print(f"\t\t\t\t{pCnt+1}. {prm}")
-    print()
+        PrmsLst = list(permutations(prmIn, 3))
 
-    PrmsLst = list(set(PrmsLst))
+        print(f"\t\t\tAll unsorted unset permutations:")
+        for pCnt, prm in enumerate(PrmsLst):
+            print(f"\t\t\t\t{pCnt+1}. {prm}")
+        print()
 
-    print(f"\t\t\tAll unsorted set permutations:")
-    for pCnt, prm in enumerate(PrmsLst):
-        print(f"\t\t\t\t{pCnt+1}. {prm}")
-    print()
+        PrmsLst = list(set(PrmsLst))
 
-    PrmsLst = sorted(PrmsLst)
-    nxtPrms = {}
+        print(f"\t\t\tAll unsorted set permutations:")
+        for pCnt, prm in enumerate(PrmsLst):
+            print(f"\t\t\t\t{pCnt+1}. {prm}")
+        print()
 
-    print(f"\t\t\tAll sorted set permutations:")
-    for pCnt, prm in enumerate(PrmsLst):
-        print(f"\t\t\t\t{pCnt+1}. {prm}")
+        PrmsLst = sorted(PrmsLst)
+        nxtPrms = {}
 
-        nxtPrms[str(prm)] = pCnt + 1
-    nxtPrms[str(PrmsLst[-1])] = 0
-    print()
+        print(f"\t\t\tAll sorted set permutations:")
+        for pCnt, prm in enumerate(PrmsLst):
+            print(f"\t\t\t\t{pCnt+1}. {prm}")
 
-    print(f"\t\tNext permutations:")
-    for cntC, prmCr in enumerate(PrmsLst):
+            nxtPrms[str(prm)] = pCnt + 1
+        nxtPrms[str(PrmsLst[-1])] = 0
+        print()
 
-        nCnt = nxtPrms[str(prmCr)]
-        prmNx = PrmsLst[nCnt]
+        print(f"\t\tNext permutations:")
+        for cntC, prmCr in enumerate(PrmsLst):
 
-        print(f"\t\t\t{cntC+1}. {prmCr} => {prmNx}")
-    print()
+            nCnt = nxtPrms[str(prmCr)]
+            prmNx = PrmsLst[nCnt]
 
-    otIdx = nxtPrms[str(tuple(prmIn))]
-    prmOt = list(PrmsLst[otIdx])
+            print(f"\t\t\t{cntC+1}. {prmCr} => {prmNx}")
+        print()
 
-    print(f"\tInput permutation:  {prmIn}")
-    print(f"\tOutput permutation: {prmOt}")
+        otIdx = nxtPrms[str(tuple(prmIn))]
+        prmOt = list(PrmsLst[otIdx])
 
-    print("\n")
+        print(f"\tInput permutation:  {prmIn}")
+        print(f"\tOutput permutation: {prmOt}")
+
+        print("\n")
