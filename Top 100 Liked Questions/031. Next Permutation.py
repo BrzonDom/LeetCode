@@ -130,6 +130,8 @@ def Sol01_RvsSwtch_Prt(Prm):
 
     print(f"\n")
 
+    return Prm
+
 
 if __name__ == "__main__":
 
