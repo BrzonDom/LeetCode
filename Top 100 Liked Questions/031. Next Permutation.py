@@ -111,16 +111,16 @@ def Sol01_RvsSwtch_Prt(Prm):
         if pNm > nm:
 
             if pNm > ppNm:
-                print(f"\t\tPrPr. Num.: {ppNm} = {Prm[-i]}")
-                print(f"\t\tPr. Num.:   {pNm} = {Prm[-i-1]}")
-                print(f"\t\tCr. Num.:   {nm} = {Prm[-i-2]}")
+                print(f"\t\tPrPr. Num.: {Prm[-i]}")
+                print(f"\t\tPr. Num.:   {Prm[-i-1]}")
+                print(f"\t\tCr. Num.:   {Prm[-i-2]}")
                 print()
 
                 Prm[-i], Prm[-i - 2] = Prm[-i - 2], Prm[-i]
 
             else:
-                print(f"\t\tPr. Num.: {pNm}")
-                print(f"\t\tCr. Num.: {nm}")
+                print(f"\t\tPr. Num.: {Prm[-i-1]}")
+                print(f"\t\tCr. Num.: {Prm[-i-2]}")
                 print()
 
                 Prm[-i - 1], Prm[-i - 2] = Prm[-i - 2], Prm[-i - 1]
