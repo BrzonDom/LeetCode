@@ -146,36 +146,3 @@ if __name__ == "__main__":
         # Brt01_PrmTl_Prt(case)
 
         Sol01_RvsSwtch_Prt(case)
-
-        # Prm = case
-        #
-        # print(f"\tInput permutation: {Prm}")
-        #
-        # nms = sorted(Prm)
-        # print(f"\t\tNumbers: {nms}")
-        # print()
-        #
-        # pNm = Prm[-1]
-        # mxPrm = True
-        #
-        # for i, nm in enumerate(Prm[-2::-1]):
-        #
-        #     if pNm > nm:
-        #         Prm[-i-1], Prm[-i-2] = Prm[-i-2], Prm[-i-1]
-        #
-        #         print(f"\t\tPr. Num.: {pNm} = {Prm[-i-2]}")
-        #         print(f"\t\tCr. Num.: {nm} = {Prm[-i-1]}")
-        #         print()
-        #         print(f"\tOutput permutation: {Prm}")
-        #
-        #         mxPrm = False
-        #         break
-        #
-        #     pNm = nm
-        #
-        # if mxPrm:
-        #     Prm = Prm[::-1]
-        #
-        # print(f"\tOutput permutation: {Prm}")
-        #
-        # print(f"\n")
