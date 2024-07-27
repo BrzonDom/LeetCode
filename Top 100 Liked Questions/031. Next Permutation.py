@@ -61,12 +61,15 @@ for csCnt, case in enumerate(InputLst):
 
     PrmsLst = permutations(prmIn, 3)
 
+    print(f"\tAll permutations:")
     for prm in PrmsLst:
-        print(f"\t{prm}")
+        print(f"\t\t{prm}")
+    print()
 
     CmbsLst = combinations(prmIn, 3)
 
+    print(f"\tAll combinations:")
     for cmb in CmbsLst:
-        print(f"\t{cmb}")
+        print(f"\t\t{cmb}")
 
     print("\n")
