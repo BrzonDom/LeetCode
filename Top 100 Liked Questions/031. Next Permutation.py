@@ -121,7 +121,13 @@ if __name__ == "__main__":
         print()
 
         pNm = Prm[-1]
-        for nm in Prm[-2::-1]:
-            print(f"\t{nm}")
+
+        for i, nm in enumerate(Prm[-2::-1]):
+
+            print(f"\t\tPr. Num.: {pNm}")
+            print(f"\t\tCr. Num.: {nm}")
+            print()
+
+            pNm = nm
 
         print(f"\n")
