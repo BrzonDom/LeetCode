@@ -112,18 +112,18 @@ def Sol01_RvsSwtch_Prt(Prm):
 
             if pNm > ppNm:
                 print(f"\t\tPrPr. Num.: {Prm[-i]}")
-                print(f"\t\tPr. Num.:   {Prm[-i-1]}")
-                print(f"\t\tCr. Num.:   {Prm[-i-2]}")
+                print(f"\t\tPr. Num.:   {Prm[-(i+1)]}")
+                print(f"\t\tCr. Num.:   {Prm[-(i+2)]}")
                 print()
 
-                Prm[-i], Prm[-i - 2] = Prm[-i - 2], Prm[-i]
+                Prm[-i], Prm[-(i+2)] = Prm[-(i+2)], Prm[-i]
 
             else:
-                print(f"\t\tPr. Num.: {Prm[-i-1]}")
-                print(f"\t\tCr. Num.: {Prm[-i-2]}")
+                print(f"\t\tPr. Num.: {Prm[-(i+1)]}")
+                print(f"\t\tCr. Num.: {Prm[-(i+2)]}")
                 print()
 
-                Prm[-i - 1], Prm[-i - 2] = Prm[-i - 2], Prm[-i - 1]
+                Prm[-(i+1)], Prm[-(i+2)] = Prm[-(i+2)], Prm[-(i+1)]
 
             mxPrm = False
             break
