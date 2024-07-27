@@ -46,7 +46,7 @@ https://leetcode.com/problems/next-permutation/description/
 """
 
 
-from itertools import permutations, combinations
+from itertools import permutations
 
 InputLst = [[1, 2, 3], [3, 2, 1], [1, 1, 5]]
 
@@ -65,11 +65,5 @@ for csCnt, case in enumerate(InputLst):
     for pCnt, prm in enumerate(PrmsLst):
         print(f"\t\t\t{pCnt+1}. {prm}")
     print()
-
-    CmbsLst = combinations(prmIn, 3)
-
-    print(f"\t\tAll combinations:")
-    for cCnt, cmb in enumerate(CmbsLst):
-        print(f"\t\t\t{cCnt+1}. {cmb}")
 
     print("\n")
