@@ -138,6 +138,9 @@ if __name__ == "__main__":
 
             pNm = nm
 
+        if mxPrm:
+            Prm = Prm[::-1]
+
         print(f"\tOutput permutation: {Prm}")
 
         print(f"\n")
