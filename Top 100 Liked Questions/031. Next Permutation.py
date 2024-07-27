@@ -77,19 +77,20 @@ for csCnt, case in enumerate(InputLst):
     PrmsLst = sorted(PrmsLst)
     nxtPrms = {}
 
-    print(f"\t\tAll sorted set permutations:")
+    print(f"\t\t\tAll sorted set permutations:")
     for pCnt, prm in enumerate(PrmsLst):
-        print(f"\t\t\t{pCnt+1}. {prm}")
+        print(f"\t\t\t\t{pCnt+1}. {prm}")
 
         nxtPrms[str(prm)] = pCnt + 1
     nxtPrms[str(PrmsLst[-1])] = 0
     print()
 
+    print(f"\t\tNext permutations:")
     for cntC, prmCr in enumerate(PrmsLst):
 
         nCnt = nxtPrms[str(prmCr)]
         prmNx = PrmsLst[nCnt]
 
-        print(f"\t\t{cntC+1}. {prmCr} => {prmNx}")
+        print(f"\t\t\t{cntC+1}. {prmCr} => {prmNx}")
 
     print("\n")
