@@ -49,9 +49,7 @@ https://leetcode.com/problems/next-permutation/description/
 from itertools import permutations
 
 
-def Brt01_PrmTl_Prt(case):
-
-    prmIn = case
+def Brt01_PrmTl_Prt(prmIn):
 
     print(f"\tInput permutation: {prmIn}")
     print()
