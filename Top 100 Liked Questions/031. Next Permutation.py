@@ -95,6 +95,8 @@ def Brt01_PrmTl_Prt(prmIn):
 
     print("\n")
 
+    return prmOt
+
 
 if __name__ == "__main__":
 
