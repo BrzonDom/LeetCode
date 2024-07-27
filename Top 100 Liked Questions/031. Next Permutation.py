@@ -121,7 +121,7 @@ def Sol01_RvsSwtch_Prt(Prm):
         pNm = nm
 
     if mxPrm:
-        Prm = Prm[::-1]
+        Prm.reverse()
 
     print(f"\tOutput permutation: {Prm}")
 
