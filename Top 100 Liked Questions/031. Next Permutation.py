@@ -109,7 +109,12 @@ def Sol01_RvsSwtch_Prt(Prm):
     for i, nm in enumerate(Prm[-2::-1]):
 
         if pNm > nm:
-            Prm[-i - 1], Prm[-i - 2] = Prm[-i - 2], Prm[-i - 1]
+
+            if pNm > ppNm:
+                Prm[-i], Prm[-i - 2] = Prm[-i - 2], Prm[-i]
+
+            else:
+                Prm[-i - 1], Prm[-i - 2] = Prm[-i - 2], Prm[-i - 1]
 
             print(f"\t\tPr. Num.: {pNm}")
             print(f"\t\tCr. Num.: {nm}")
