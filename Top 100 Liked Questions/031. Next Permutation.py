@@ -124,8 +124,8 @@ if __name__ == "__main__":
 
         for i, nm in enumerate(Prm[-2::-1]):
 
-            print(f"\t\tPr. Num.: {pNm}")
-            print(f"\t\tCr. Num.: {nm}")
+            print(f"\t\tPr. Num.: {pNm} = {Prm[-i-2]}")
+            print(f"\t\tCr. Num.: {nm} = {Prm[-i-1]}")
             print()
 
             pNm = nm
