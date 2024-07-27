@@ -48,6 +48,7 @@ https://leetcode.com/problems/next-permutation/description/
 
 from itertools import permutations
 
+
 InputLst = [[1, 2, 3], [3, 2, 1], [1, 1, 5]]
 
 for csCnt, case in enumerate(InputLst):
@@ -59,7 +60,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tInput permutation: {prmIn}")
     print()
 
-    PrmsLst = permutations(prmIn, 3)
+    PrmsLst = list(permutations(prmIn, 3))
 
     print(f"\t\tAll unsorted unset permutations:")
     for pCnt, prm in enumerate(PrmsLst):
