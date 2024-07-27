@@ -52,6 +52,8 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt+1}.Case\n")
 
-    print(f"\tNumber permutation: {case}")
+    prmIn = case
+
+    print(f"\tInput permutation: {prmIn}")
 
     print("\n")
