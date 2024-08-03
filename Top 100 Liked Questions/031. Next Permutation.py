@@ -136,6 +136,9 @@ def Sol01_RvsSwtch_Prt(Prm):
     if mxPrm:
         Prm.reverse()
 
+        print("\t\tMaximum permutation")
+        print()
+
     print(f"\tOutput permutation: {Prm}")
 
     print(f"\n")
