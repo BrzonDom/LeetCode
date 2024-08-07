@@ -120,6 +120,13 @@ def Sol01_RvsSwtch_Prt(Prm):
         if pNm > nm:
 
             if pNm > ppNm > nm:
+
+                mNm = ppNm
+
+                for eNm in encNms:
+                    if mNm > eNm > nm:
+                        mNm = eNm
+
                 print()
                 print(f"\t\tPrPrv. Num.: {Prm[-i]}")
                 print(f"\t\tPrv. Num.:   {Prm[-(i+1)]}")
