@@ -119,6 +119,9 @@ def Sol01_RvsSwtch_Prt(Prm):
 
         if pNm > nm:
 
+            pId = -(i+1)
+            nIn = -(i+2)
+
             if pNm > ppNm > nm:
 
                 mNm = ppNm
