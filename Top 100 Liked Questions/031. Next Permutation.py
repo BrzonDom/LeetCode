@@ -103,7 +103,7 @@ def Sol01_RvsSwtch_Prt(Prm):
     print(f"\tInput permutation: {Prm}")
     print()
 
-    pNm = Prm[-1]
+    pNm = ppNm = Prm[-1]
     encNms = {Prm[-1] : -1}
 
     print("\t\tEncountered numbers:")
@@ -130,6 +130,7 @@ def Sol01_RvsSwtch_Prt(Prm):
             mxPrm = False
             break
 
+        ppNm = pNm
         pNm = nm
 
     if mxPrm:
