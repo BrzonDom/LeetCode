@@ -122,10 +122,12 @@ def Sol01_RvsSwtch_Prt(Prm):
             if pNm > ppNm > nm:
 
                 mNm = ppNm
+                mId = -i
 
                 for eNm in encNms:
                     if mNm > eNm > nm:
                         mNm = eNm
+                        mId = encNms[mNm]
 
                 print()
                 print(f"\t\tMin. Num.: {mNm}")
