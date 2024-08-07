@@ -110,15 +110,6 @@ def Sol01_RvsSwtch_Prt(Prm):
 
         if pNm > nm:
 
-            # if pNm > ppNm > nm:
-            #     print(f"\t\tPrPrv. Num.: {Prm[-i]}")
-            #     print(f"\t\tPrv. Num.:   {Prm[-(i+1)]}")
-            #     print(f"\t\tCrn. Num.:   {Prm[-(i+2)]}")
-            #     print()
-            #
-            #     Prm[-i], Prm[-(i+2)] = Prm[-(i+2)], Prm[-i]
-            #     Prm[-(i+1):] = sorted(Prm[-(i+1):])
-
             print(f"\t\tPrv. Num.: {Prm[-(i+1)]}")
             print(f"\t\tCrn. Num.: {Prm[-(i+2)]}")
             print()
