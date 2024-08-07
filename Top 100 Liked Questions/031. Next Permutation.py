@@ -110,6 +110,9 @@ def Sol01_RvsSwtch_Prt(Prm):
 
     for i, nm in enumerate(Prm[-2::-1]):
 
+        if nm not in rcdNms:
+            rcdNms[nm] = -(i+2)
+
         if pNm > nm:
 
             print(f"\t\tPrv. Num.: {Prm[-(i+1)]}")
