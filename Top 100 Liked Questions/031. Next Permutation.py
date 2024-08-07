@@ -128,9 +128,9 @@ def Sol01_RvsSwtch_Prt(Prm):
                         mNm = eNm
 
                 print()
-                print(f"\t\tPrPrv. Num.: {Prm[-i]}")
-                print(f"\t\tPrv. Num.:   {Prm[-(i+1)]}")
-                print(f"\t\tCrn. Num.:   {Prm[-(i+2)]}")
+                print(f"\t\tMin. Num.: {mNm}")
+                print(f"\t\tPrv. Num.: {Prm[-(i+1)]}")
+                print(f"\t\tCrn. Num.: {Prm[-(i+2)]}")
                 print()
 
                 Prm[-i], Prm[-(i+2)] = Prm[-(i+2)], Prm[-i]
