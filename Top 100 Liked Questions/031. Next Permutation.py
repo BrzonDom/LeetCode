@@ -106,15 +106,20 @@ def Sol01_RvsSwtch_Prt(Prm):
     pNm = Prm[-1]
     rcdNms = {Prm[-1] : -1}
 
+    print("\t\tEncountered numbers:")
+    print(f"\t\t\t{pNm} = Prm[{rcdNms[pNm]}]")
+
     mxPrm = True
 
     for i, nm in enumerate(Prm[-2::-1]):
 
         if nm not in rcdNms:
             rcdNms[nm] = -(i+2)
+            print(f"\t\t\t{nm} = Prm[{rcdNms[nm]}]")
 
         if pNm > nm:
 
+            print()
             print(f"\t\tPrv. Num.: {Prm[-(i+1)]}")
             print(f"\t\tCrn. Num.: {Prm[-(i+2)]}")
             print()
