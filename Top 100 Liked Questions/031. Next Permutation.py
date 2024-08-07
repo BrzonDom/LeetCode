@@ -120,7 +120,7 @@ def Sol01_RvsSwtch_Prt(Prm):
         if pNm > nm:
 
             pId = -(i+1)
-            nIn = -(i+2)
+            cId = -(i+2)
 
             if pNm > ppNm > nm:
 
@@ -134,21 +134,21 @@ def Sol01_RvsSwtch_Prt(Prm):
 
                 print()
                 print(f"\t\tMin. Num.: {mNm} = Prm[{mId}]")
-                print(f"\t\tPrv. Num.: {Prm[-(i+1)]} = Prm[{-(i+1)}]")
-                print(f"\t\tCrn. Num.: {Prm[-(i+2)]} = Prm[{-(i+2)}]")
+                print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
+                print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
                 print()
 
-                Prm[-i], Prm[-(i+2)] = Prm[-(i+2)], Prm[-i]
-                Prm[-(i+1):] = sorted(Prm[-(i+1):])
+                Prm[mId], Prm[cId] = Prm[cId], Prm[mId]
+                Prm[pId:] = sorted(Prm[pId:])
 
             else:
                 print()
-                print(f"\t\tPrv. Num.: {Prm[-(i+1)]} = Prm[{-(i+1)}]")
-                print(f"\t\tCrn. Num.: {Prm[-(i+2)]} = Prm[{-(i+2)}]")
+                print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
+                print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
                 print()
 
-                Prm[-(i+1)], Prm[-(i+2)] = Prm[-(i+2)], Prm[-(i+1)]
-                Prm[-(i+1):] = sorted(Prm[-(i+1):])
+                Prm[pId], Prm[cId] = Prm[cId], Prm[pId]
+                Prm[pId:] = sorted(Prm[pId:])
 
             mxPrm = False
             break
