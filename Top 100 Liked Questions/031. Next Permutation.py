@@ -106,8 +106,8 @@ def Sol01_RvsSwtch_Prt(Prm):
     pNm = ppNm = Prm[-1]
     encNms = {Prm[-1] : -1}
 
-    print("\t\tEncountered numbers:")
-    print(f"\t\t\t{pNm} = Prm[{encNms[pNm]}]")
+    # print("\t\tEncountered numbers:")
+    # print(f"\t\t\t{pNm} = Prm[{encNms[pNm]}]")
 
     mxPrm = True
 
@@ -115,7 +115,7 @@ def Sol01_RvsSwtch_Prt(Prm):
 
         if nm not in encNms:
             encNms[nm] = -(i+2)
-            print(f"\t\t\t{nm} = Prm[{encNms[nm]}]")
+            # print(f"\t\t\t{nm} = Prm[{encNms[nm]}]")
 
         if pNm > nm:
 
