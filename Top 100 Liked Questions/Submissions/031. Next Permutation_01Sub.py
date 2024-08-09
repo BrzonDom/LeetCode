@@ -50,7 +50,10 @@ InputLst = [[1, 2, 3],
             [3, 2, 1],
             [1, 1, 5]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt+1}.Case\n")
+
+    print(f"\tInput permutation: {case}")
+
+    print("\n")
