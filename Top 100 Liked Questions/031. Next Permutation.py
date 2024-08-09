@@ -119,36 +119,52 @@ def Sol01_RvsSwtch_Prt(Prm):
 
         if pNm > nm:
 
+            mNm = pNm
+
+            mId = -(i+1)
             pId = -(i+1)
             cId = -(i+2)
 
-            if pNm > ppNm > nm:
+            for eNm in encNms:
+                if mNm > eNm > nm:
+                    mNm = eNm
+                    mId = encNms[mNm]
 
-                mNm = ppNm
-                mId = -i
+            print(f"\t\tMin. Num.: {mNm} = Prm[{mId}]")
+            print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
+            print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
+            print()
 
-                for eNm in encNms:
-                    if mNm > eNm > nm:
-                        mNm = eNm
-                        mId = encNms[mNm]
+            Prm[mId], Prm[cId] = Prm[cId], Prm[mId]
+            Prm[pId:] = sorted(Prm[pId:])
 
-                # print()
-                print(f"\t\tMin. Num.: {mNm} = Prm[{mId}]")
-                print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
-                print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
-                print()
-
-                Prm[mId], Prm[cId] = Prm[cId], Prm[mId]
-                Prm[pId:] = sorted(Prm[pId:])
-
-            else:
-                # print()
-                print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
-                print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
-                print()
-
-                Prm[pId], Prm[cId] = Prm[cId], Prm[pId]
-                Prm[pId:] = sorted(Prm[pId:])
+            # if pNm > ppNm > nm:
+            #
+            #     mNm = ppNm
+            #     mId = -i
+            #
+            #     for eNm in encNms:
+            #         if mNm > eNm > nm:
+            #             mNm = eNm
+            #             mId = encNms[mNm]
+            #
+            #     # print()
+            #     print(f"\t\tMin. Num.: {mNm} = Prm[{mId}]")
+            #     print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
+            #     print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
+            #     print()
+            #
+            #     Prm[mId], Prm[cId] = Prm[cId], Prm[mId]
+            #     Prm[pId:] = sorted(Prm[pId:])
+            #
+            # else:
+            #     # print()
+            #     print(f"\t\tPrv. Num.: {Prm[pId]} = Prm[{pId}]")
+            #     print(f"\t\tCrn. Num.: {Prm[cId]} = Prm[{cId}]")
+            #     print()
+            #
+            #     Prm[pId], Prm[cId] = Prm[cId], Prm[pId]
+            #     Prm[pId:] = sorted(Prm[pId:])
 
             mxPrm = False
             break
