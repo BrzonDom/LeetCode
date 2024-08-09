@@ -64,7 +64,9 @@ if __name__ == "__main__":
         print(f"\t\tReverse permutation print:")
 
         pNm = Prm[-1]
-        # print(f"\t\t\t{pNm}")
+
+        pId = -1
+        cId = -2
 
         for cNm in Prm[-2::-1]:
 
@@ -73,5 +75,8 @@ if __name__ == "__main__":
             print()
 
             pNm = cNm
+
+            pId -= 1
+            cId -= 1
 
         print()
