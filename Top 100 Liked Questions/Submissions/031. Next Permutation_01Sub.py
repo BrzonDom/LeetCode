@@ -65,18 +65,15 @@ if __name__ == "__main__":
 
         pNm = Prm[-1]
 
-        pId = -1
-        cId = -2
+        for id, cNm in enumerate(Prm[-2::-1]):
 
-        for cNm in Prm[-2::-1]:
+            pId = -(id+1)
+            cId = -(id+2)
 
             print(f"\t\t\tPr. Num.: {pNm} = Prm[{pId}]")
             print(f"\t\t\tCr. Num.: {cNm} = Prm[{cId}]")
             print()
 
             pNm = cNm
-
-            pId -= 1
-            cId -= 1
 
         print()
