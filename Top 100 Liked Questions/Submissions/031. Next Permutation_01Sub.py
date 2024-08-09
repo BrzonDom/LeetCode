@@ -46,16 +46,18 @@ https://leetcode.com/problems/next-permutation/description/
 """
 
 
-InputLst = [[1, 2, 3],
-            [3, 2, 1],
-            [1, 1, 5]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[1, 2, 3],
+                [3, 2, 1],
+                [1, 1, 5]]
 
-    print(f"{csCnt+1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Prm = case
+        print(f"{csCnt+1}.Case\n")
 
-    print(f"\tInput permutation: {Prm}")
+        Prm = case
 
-    print("\n")
+        print(f"\tInput permutation: {Prm}")
+
+        print("\n")
