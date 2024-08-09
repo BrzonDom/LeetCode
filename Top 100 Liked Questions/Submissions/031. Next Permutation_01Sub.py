@@ -66,7 +66,7 @@ if __name__ == "__main__":
         pNm = Prm[-1]
         print(f"\t\t\t{pNm}")
 
-        for nm in Prm[-2::-1]:
-            print(f"\t\t\t{nm}")
+        for cNm in Prm[-2::-1]:
+            print(f"\t\t\t{cNm}")
 
         print("\n")
