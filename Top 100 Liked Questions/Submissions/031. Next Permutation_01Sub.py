@@ -70,8 +70,8 @@ if __name__ == "__main__":
 
         for cNm in Prm[-2::-1]:
 
-            print(f"\t\t\tPr. Num.: {pNm}")
-            print(f"\t\t\tCr. Num.: {cNm}")
+            print(f"\t\t\tPr. Num.: {pNm} = Prm[{pId}]")
+            print(f"\t\t\tCr. Num.: {cNm} = Prm[{cId}]")
             print()
 
             pNm = cNm
