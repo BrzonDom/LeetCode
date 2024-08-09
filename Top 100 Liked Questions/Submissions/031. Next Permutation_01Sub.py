@@ -59,5 +59,9 @@ if __name__ == "__main__":
         Prm = case
 
         print(f"\tInput permutation: {Prm}")
+        print()
+
+        for nm in Prm[::-1]:
+            print(f"\t\t{nm}")
 
         print("\n")
