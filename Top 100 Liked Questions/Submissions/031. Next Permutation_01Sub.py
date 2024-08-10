@@ -75,6 +75,8 @@ if __name__ == "__main__":
                 print(f"\t\t\tPr. Num.: {pNm} = Prm[{pId}]")
                 print(f"\t\t\tCr. Num.: {cNm} = Prm[{cId}]")
 
+                break
+
             pNm = cNm
 
         print("\n")
