@@ -67,13 +67,14 @@ if __name__ == "__main__":
 
         for id, cNm in enumerate(Prm[-2::-1]):
 
-            pId = -(id+1)
-            cId = -(id+2)
+            if pNm > cNm:
 
-            print(f"\t\t\tPr. Num.: {pNm} = Prm[{pId}]")
-            print(f"\t\t\tCr. Num.: {cNm} = Prm[{cId}]")
-            print()
+                pId = -(id+1)
+                cId = -(id+2)
+
+                print(f"\t\t\tPr. Num.: {pNm} = Prm[{pId}]")
+                print(f"\t\t\tCr. Num.: {cNm} = Prm[{cId}]")
 
             pNm = cNm
 
-        print()
+        print("\n")
