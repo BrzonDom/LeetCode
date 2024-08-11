@@ -54,7 +54,7 @@ for csCnt, case in enumerate(InputLst):
     Arr = case[0]
     Trg = case[1]
 
-    print(f"\t{Arr}")
-    print(f"\t{Trg}")
+    print(f"\tArray: {Arr}")
+    print(f"\tTarget: {Trg}")
 
     print("\n")
