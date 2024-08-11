@@ -70,9 +70,9 @@ for csCnt, case in enumerate(InputLst):
     nEn = Arr[iEn]
     nMd = Arr[iMd]
 
-    print(f"\t\t\tStart: {nSt} = Arr[{iSt}]")
-    print(f"\t\t\tEnd:   {nEn} = Arr[{iEn}]")
-    print(f"\t\t\tMid:   {nMd} = Arr[{iMd}]")
+    print(f"\t\t1. Start: {nSt} = Arr[{iSt}]")
+    print(f"\t\t1. End:   {nEn} = Arr[{iEn}]")
+    print(f"\t\t1. Mid:   {nMd} = Arr[{iMd}]")
     print()
 
     if nMd < Trg:
@@ -83,8 +83,8 @@ for csCnt, case in enumerate(InputLst):
         nnSt = Arr[niSt]
         nMd = Arr[iMd]
 
-        print(f"\t\t\tStart: {nSt} = Arr[{iSt}]")
-        print(f"\t\t\tEnd:   {nEn} = Arr[{iEn}]")
-        print(f"\t\t\tMid:   {nMd} = Arr[{iMd}]")
+        print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
+        print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
+        print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
 
     print("\n")
