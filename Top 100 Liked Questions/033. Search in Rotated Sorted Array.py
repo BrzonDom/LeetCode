@@ -66,11 +66,12 @@ for csCnt, case in enumerate(InputLst):
     iEn = ln - 1
     iMd = iSt + (iEn - iSt) // 2
 
+    nSt = Arr[iSt]
+    nEn = Arr[iEn]
     nMd = Arr[iMd]
 
     print(f"\t\t\tStart: {iSt}")
     print(f"\t\t\tEnd:   {iEn}")
     print(f"\t\t\tMid:   {iMd}")
-    print(f"\t\tNumber: {nMd}")
 
     print("\n")
