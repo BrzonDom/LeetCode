@@ -60,9 +60,14 @@ for csCnt, case in enumerate(InputLst):
 
     ln = len(Arr)
     print(f"\tLength: {ln}")
+    print()
 
     st = 0
     en = ln - 1
     md = st + (en - st) // 2
+
+    print(f"\t\tStart: {st}")
+    print(f"\t\tEnd:   {en}")
+    print(f"\t\tMid:   {md}")
 
     print("\n")
