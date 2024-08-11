@@ -44,7 +44,7 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
 
 InputLst = [[[4, 5, 6, 7, 0, 1, 2], 8],
-            [[4, 5, 6, 7, 0, 1, 2, 3], 3],
+            [[4, 5, 6, 7, 0, 1, 2], 3],
             [[1], 0]]
 
 for csCnt, case in enumerate(InputLst):
@@ -63,6 +63,6 @@ for csCnt, case in enumerate(InputLst):
 
     st = 0
     en = ln - 1
-    md = (st + en) // 2
+    md = st + (en - st) // 2
 
     print("\n")
