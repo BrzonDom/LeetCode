@@ -90,11 +90,11 @@ for csCnt, case in enumerate(InputLst):
     elif nMd > Trg and nSt <= Trg:
 
         niSt = iSt + 1
-        niEd = iMd - 1
-        iMd = niSt + (niEd - niSt) // 2
+        niEn = iMd - 1
+        iMd = niSt + (niEn - niSt) // 2
 
         nnSt = Arr[niSt]
-        nnEd = Arr[niEd]
+        nnEn = Arr[niEn]
         nMd = Arr[iMd]
 
         print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
