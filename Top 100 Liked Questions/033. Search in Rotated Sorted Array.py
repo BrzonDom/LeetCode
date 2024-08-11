@@ -83,7 +83,7 @@ for csCnt, case in enumerate(InputLst):
         nnSt = Arr[niSt]
         nMd = Arr[iMd]
 
-        print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
+        print(f"\t\t2. Start: {nnSt} = Arr[{niSt}]")
         print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
         print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
 
