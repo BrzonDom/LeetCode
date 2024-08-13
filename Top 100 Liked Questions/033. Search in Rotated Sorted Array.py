@@ -116,6 +116,9 @@ for csCnt, case in enumerate(InputLst):
 
     elif nMd == Trg:
 
+        print()
+        print(f"\tTarget found on index: {iMd}")
+
         continue
 
     print("\n")
