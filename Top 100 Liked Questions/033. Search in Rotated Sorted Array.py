@@ -88,6 +88,7 @@ for csCnt, case in enumerate(InputLst):
             print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
             print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
             print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            print()
 
         elif nMd > Trg and nSt <= Trg:
 
@@ -102,6 +103,7 @@ for csCnt, case in enumerate(InputLst):
             print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
             print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
             print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            print()
 
         elif nMd > Trg and nSt > Trg:
 
@@ -115,6 +117,7 @@ for csCnt, case in enumerate(InputLst):
             print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
             print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
             print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            print()
 
         elif nMd == Trg:
 
