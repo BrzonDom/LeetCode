@@ -75,50 +75,52 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\t1. Mid:   {nMd} = Arr[{iMd}]")
     print()
 
-    if nMd < Trg:
+    while iSt < iEn:
 
-        iSt = iMd + 1
-        iMd = iSt + (iEn - iSt) // 2
+        if nMd < Trg:
 
-        nSt = Arr[iSt]
-        nMd = Arr[iMd]
+            iSt = iMd + 1
+            iMd = iSt + (iEn - iSt) // 2
 
-        print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
-        print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
-        print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            nSt = Arr[iSt]
+            nMd = Arr[iMd]
 
-    elif nMd > Trg and nSt <= Trg:
+            print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
+            print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
+            print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
 
-        iSt = iSt + 1
-        iEn = iMd - 1
-        iMd = iSt + (iEn - iSt) // 2
+        elif nMd > Trg and nSt <= Trg:
 
-        nSt = Arr[iSt]
-        nEn = Arr[iEn]
-        nMd = Arr[iMd]
+            iSt = iSt + 1
+            iEn = iMd - 1
+            iMd = iSt + (iEn - iSt) // 2
 
-        print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
-        print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
-        print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            nSt = Arr[iSt]
+            nEn = Arr[iEn]
+            nMd = Arr[iMd]
 
-    elif nMd > Trg and nSt > Trg:
+            print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
+            print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
+            print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
 
-        iSt = iMd + 1
-        iMd = iSt + (iEn - iSt) // 2
+        elif nMd > Trg and nSt > Trg:
 
-        nSt = Arr[iSt]
-        nEn = Arr[iEn]
-        nMd = Arr[iMd]
+            iSt = iMd + 1
+            iMd = iSt + (iEn - iSt) // 2
 
-        print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
-        print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
-        print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            nSt = Arr[iSt]
+            nEn = Arr[iEn]
+            nMd = Arr[iMd]
 
-    elif nMd == Trg:
+            print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
+            print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
+            print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
 
-        print()
-        print(f"\tTarget found on index: {iMd}")
+        elif nMd == Trg:
 
-        continue
+            print()
+            print(f"\tTarget found on index: {iMd}")
+
+            continue
 
     print("\n")
