@@ -75,7 +75,10 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\t1. Mid:   {nMd} = Arr[{iMd}]")
     print()
 
+    stpCnt = 1
+
     while iSt < iEn:
+        stpCnt += 1
 
         if nMd < Trg:
 
@@ -85,9 +88,9 @@ for csCnt, case in enumerate(InputLst):
             nSt = Arr[iSt]
             nMd = Arr[iMd]
 
-            print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
-            print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
-            print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
+            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
+            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
             print()
 
         elif nMd > Trg and nSt <= Trg:
@@ -100,9 +103,9 @@ for csCnt, case in enumerate(InputLst):
             nEn = Arr[iEn]
             nMd = Arr[iMd]
 
-            print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
-            print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
-            print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
+            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
+            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
             print()
 
         elif nMd > Trg and nSt > Trg:
@@ -114,15 +117,15 @@ for csCnt, case in enumerate(InputLst):
             nEn = Arr[iEn]
             nMd = Arr[iMd]
 
-            print(f"\t\t2. Start: {nSt} = Arr[{iSt}]")
-            print(f"\t\t2. End:   {nEn} = Arr[{iEn}]")
-            print(f"\t\t2. Mid:   {nMd} = Arr[{iMd}]")
+            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
+            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
+            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
             print()
 
         elif nMd == Trg:
 
-            print()
             print(f"\tTarget found on index: {iMd}")
+            print()
 
             continue
 
