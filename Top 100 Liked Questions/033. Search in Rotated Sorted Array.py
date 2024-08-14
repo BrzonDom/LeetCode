@@ -70,15 +70,9 @@ for csCnt, case in enumerate(InputLst):
     nEn = Arr[iEn]
     nMd = Arr[iMd]
 
-    print(f"\t\t1. Start: {nSt} = Arr[{iSt}]")
-    print(f"\t\t1. End:   {nEn} = Arr[{iEn}]")
-    print(f"\t\t1. Mid:   {nMd} = Arr[{iMd}]")
-    print()
-
     stpCnt = 1
 
     while iSt < iEn:
-        stpCnt += 1
 
         if nMd < Trg:
 
@@ -128,5 +122,7 @@ for csCnt, case in enumerate(InputLst):
             print()
 
             break
+
+        stpCnt += 1
 
     print("\n")
