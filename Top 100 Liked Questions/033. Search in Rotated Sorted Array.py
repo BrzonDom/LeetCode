@@ -117,6 +117,11 @@ for csCnt, case in enumerate(InputLst):
             iEn = iMd - 1
             nEn = Arr[iEn]
 
+        elif nSt <= nMd and Trg < nSt:
+
+            iSt = iMd + 1
+            nSt = Arr[iSt]
+
         stpCnt += 1
 
     print("\n")
