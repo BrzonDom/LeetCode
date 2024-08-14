@@ -70,7 +70,7 @@ for csCnt, case in enumerate(InputLst):
 
     stpCnt = 1
 
-    while iSt < iEn:
+    while iSt <= iEn:
 
         iMd = (iSt + iEn) // 2
         nMd = Arr[iMd]
