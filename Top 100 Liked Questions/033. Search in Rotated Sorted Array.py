@@ -127,6 +127,6 @@ for csCnt, case in enumerate(InputLst):
             print(f"\tTarget found on index: {iMd}")
             print()
 
-            continue
+            break
 
     print("\n")
