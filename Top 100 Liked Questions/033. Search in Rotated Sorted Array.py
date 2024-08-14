@@ -64,13 +64,20 @@ for csCnt, case in enumerate(InputLst):
 
     iSt = 0
     iEn = ln - 1
-    iMd = (iSt + iEn) // 2
 
     nSt = Arr[iSt]
     nEn = Arr[iEn]
+
+    print(f"\t\t1. Start: {nSt} = Arr[{iSt}]")
+    print(f"\t\t1. End:   {nEn} = Arr[{iEn}]")
+
+    iMd = (iSt + iEn) // 2
     nMd = Arr[iMd]
 
-    stpCnt = 1
+    print(f"\t\t1. Mid:   {nMd} = Arr[{iMd}]")
+    print()
+
+    stpCnt = 2
 
     while iSt < iEn:
 
