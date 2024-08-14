@@ -95,10 +95,8 @@ for csCnt, case in enumerate(InputLst):
 
         elif nMd > Trg and nSt <= Trg:
 
-            iSt = iSt + 1
             iEn = iMd - 1
 
-            nSt = Arr[iSt]
             nEn = Arr[iEn]
 
         elif nMd > Trg and nSt > Trg:
