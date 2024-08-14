@@ -93,14 +93,11 @@ for csCnt, case in enumerate(InputLst):
         elif nMd < Trg and nSt > nMd and Trg <= nEn:
             iSt = iMd + 1
 
-        elif nMd > Trg and nSt > nMd and Trg > nEn:
+        elif nMd > Trg and nSt > nMd:
             iEn = iMd - 1
 
         elif nMd > Trg and nSt <= nMd and Trg >= nSt:
             iEn = iMd - 1
-
-        elif nMd > Trg and nSt > Trg:
-            iSt = iMd + 1
 
         elif nSt > nMd and Trg > nEn:
             iEn = iMd - 1
