@@ -62,48 +62,48 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tLength: {ln}")
     print()
 
-    iSt = 0
-    iEn = ln - 1
+    St = 0
+    En = ln - 1
 
     stpCnt = 1
 
-    while iSt <= iEn:
+    while St <= En:
 
-        nSt = Arr[iSt]
-        nEn = Arr[iEn]
+        nSt = Arr[St]
+        nEn = Arr[En]
 
-        iMd = (iSt + iEn) // 2
-        nMd = Arr[iMd]
+        Md = (St + En) // 2
+        nMd = Arr[Md]
 
-        print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
-        print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
-        print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
+        print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+        print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+        print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
         print()
 
         if nMd == Trg:
 
-            print(f"\tTarget found on index: {iMd}")
+            print(f"\tTarget found on index: {Md}")
             print()
 
             break
 
         if nMd < Trg and nSt <= nMd:
-            iSt = iMd + 1
+            St = Md + 1
 
         elif nMd < Trg and nSt > nMd and Trg <= nEn:
-            iSt = iMd + 1
+            St = Md + 1
 
         elif nMd > Trg and nSt > nMd:
-            iEn = iMd - 1
+            En = Md - 1
 
         elif nMd > Trg and nSt <= nMd and Trg >= nSt:
-            iEn = iMd - 1
+            En = Md - 1
 
         elif nSt > nMd and Trg > nEn:
-            iEn = iMd - 1
+            En = Md - 1
 
         elif nSt <= nMd and Trg < nSt:
-            iSt = iMd + 1
+            St = Md + 1
 
         stpCnt += 1
 
