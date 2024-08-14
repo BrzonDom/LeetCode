@@ -122,7 +122,7 @@ for csCnt, case in enumerate(InputLst):
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
             print()
 
-        elif nMd == Trg:
+        if nMd == Trg:
 
             print(f"\tTarget found on index: {iMd}")
             print()
