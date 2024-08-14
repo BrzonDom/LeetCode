@@ -74,7 +74,14 @@ for csCnt, case in enumerate(InputLst):
 
     while iSt < iEn:
 
-        if nMd < Trg:
+        if nMd == Trg:
+
+            print(f"\tTarget found on index: {iMd}")
+            print()
+
+            break
+
+        elif nMd < Trg:
 
             iSt = iMd + 1
             iMd = (iSt + iEn) // 2
@@ -115,13 +122,6 @@ for csCnt, case in enumerate(InputLst):
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
             print()
-
-        if nMd == Trg:
-
-            print(f"\tTarget found on index: {iMd}")
-            print()
-
-            break
 
         stpCnt += 1
 
