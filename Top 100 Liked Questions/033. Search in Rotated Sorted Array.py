@@ -80,8 +80,6 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
         print()
 
-        stpCnt += 1
-
         if nMd == Trg:
 
             print(f"\tTarget found on index: {iMd}")
@@ -108,5 +106,7 @@ for csCnt, case in enumerate(InputLst):
             iSt = iMd + 1
 
             nSt = Arr[iSt]
+
+        stpCnt += 1
 
     print("\n")
