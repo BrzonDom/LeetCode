@@ -71,15 +71,17 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\t1. Start: {nSt} = Arr[{iSt}]")
     print(f"\t\t1. End:   {nEn} = Arr[{iEn}]")
 
-    iMd = (iSt + iEn) // 2
-    nMd = Arr[iMd]
-
-    print(f"\t\t1. Mid:   {nMd} = Arr[{iMd}]")
-    print()
-
-    stpCnt = 2
+    stpCnt = 1
 
     while iSt < iEn:
+
+        iMd = (iSt + iEn) // 2
+        nMd = Arr[iMd]
+
+        print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
+        print()
+
+        stpCnt += 1
 
         if nMd == Trg:
 
@@ -98,8 +100,6 @@ for csCnt, case in enumerate(InputLst):
 
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
-            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
-            print()
 
         elif nMd > Trg and nSt <= Trg:
 
@@ -113,8 +113,6 @@ for csCnt, case in enumerate(InputLst):
 
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
-            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
-            print()
 
         elif nMd > Trg and nSt > Trg:
 
@@ -127,9 +125,5 @@ for csCnt, case in enumerate(InputLst):
 
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{iSt}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{iEn}]")
-            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{iMd}]")
-            print()
-
-        stpCnt += 1
 
     print("\n")
