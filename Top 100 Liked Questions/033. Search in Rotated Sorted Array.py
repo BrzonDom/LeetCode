@@ -64,7 +64,7 @@ for csCnt, case in enumerate(InputLst):
 
     iSt = 0
     iEn = ln - 1
-    iMd = iSt + (iEn - iSt) // 2
+    iMd = (iSt + iEn) // 2
 
     nSt = Arr[iSt]
     nEn = Arr[iEn]
@@ -83,7 +83,7 @@ for csCnt, case in enumerate(InputLst):
         if nMd < Trg:
 
             iSt = iMd + 1
-            iMd = iSt + (iEn - iSt) // 2
+            iMd = (iSt + iEn) // 2
 
             nSt = Arr[iSt]
             nMd = Arr[iMd]
@@ -97,7 +97,7 @@ for csCnt, case in enumerate(InputLst):
 
             iSt = iSt + 1
             iEn = iMd - 1
-            iMd = iSt + (iEn - iSt) // 2
+            iMd = (iSt + iEn) // 2
 
             nSt = Arr[iSt]
             nEn = Arr[iEn]
@@ -111,7 +111,7 @@ for csCnt, case in enumerate(InputLst):
         elif nMd > Trg and nSt > Trg:
 
             iSt = iMd + 1
-            iMd = iSt + (iEn - iSt) // 2
+            iMd = (iSt + iEn) // 2
 
             nSt = Arr[iSt]
             nEn = Arr[iEn]
