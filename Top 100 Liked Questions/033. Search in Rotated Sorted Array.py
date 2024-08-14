@@ -87,7 +87,7 @@ for csCnt, case in enumerate(InputLst):
 
             break
 
-        elif nMd < Trg and nSt <= nMd:
+        if nMd < Trg and nSt <= nMd:
 
             iSt = iMd + 1
             nSt = Arr[iSt]
