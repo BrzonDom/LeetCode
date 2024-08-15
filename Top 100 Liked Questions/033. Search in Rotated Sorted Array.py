@@ -43,10 +43,7 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 """
 
 
-def Brt01_ArrItr_Prt(case):
-
-    Arr = case[0]
-    Trg = case[1]
+def Brt01_ArrItr_Prt(Arr, Trg):
 
     print(f"\tArray: {Arr}")
     print(f"\tTarget: {Trg}")
@@ -152,6 +149,6 @@ if __name__ == "__main__":
 
         # Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        Brt01_ArrItr_Prt(case)
+        Brt01_ArrItr_Prt(case[0], case[1])
 
         print("\n")
