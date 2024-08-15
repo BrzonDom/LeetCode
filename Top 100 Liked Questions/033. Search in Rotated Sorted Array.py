@@ -136,11 +136,11 @@ if __name__ == "__main__":
         for id, nm in enumerate(Arr):
             print(f"\t\t{id+1}. {nm}")
 
-            if nm == Trg:
-                iTrg = {id}
+            if nm == Trg and not trgFnd:
+                iTrg = id
 
                 trgFnd = True
-                break
+
         print()
 
         if trgFnd:
