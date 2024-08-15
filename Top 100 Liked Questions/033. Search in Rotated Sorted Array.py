@@ -43,68 +43,70 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 """
 
 
-InputLst = [[[4, 5, 6, 7, 0, 1, 2], 0],
-            [[4, 5, 6, 7, 0, 1, 2], 3],
-            [[1], 0]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[4, 5, 6, 7, 0, 1, 2], 0],
+                [[4, 5, 6, 7, 0, 1, 2], 3],
+                [[1], 0]]
 
-    print(f"{csCnt+1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Arr = case[0]
-    Trg = case[1]
+        print(f"{csCnt+1}.Case\n")
 
-    print(f"\tArray: {Arr}")
-    print(f"\tTarget: {Trg}")
-    print()
+        Arr = case[0]
+        Trg = case[1]
 
-    ln = len(Arr)
-    print(f"\tLength: {ln}")
-    print()
-
-    St = 0
-    En = ln - 1
-
-    stpCnt = 1
-
-    while St <= En:
-
-        nSt = Arr[St]
-        nEn = Arr[En]
-
-        Md = (St + En) // 2
-        nMd = Arr[Md]
-
-        print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
-        print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
-        print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+        print(f"\tArray: {Arr}")
+        print(f"\tTarget: {Trg}")
         print()
 
-        if nMd == Trg:
+        ln = len(Arr)
+        print(f"\tLength: {ln}")
+        print()
 
-            print(f"\tTarget found on index: {Md}")
+        St = 0
+        En = ln - 1
+
+        stpCnt = 1
+
+        while St <= En:
+
+            nSt = Arr[St]
+            nEn = Arr[En]
+
+            Md = (St + En) // 2
+            nMd = Arr[Md]
+
+            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
             print()
 
-            break
+            if nMd == Trg:
 
-        if nMd < Trg and nSt <= nMd:
-            St = Md + 1
+                print(f"\tTarget found on index: {Md}")
+                print()
 
-        elif nMd < Trg and nSt > nMd and Trg <= nEn:
-            St = Md + 1
+                break
 
-        elif nMd > Trg and nSt > nMd:
-            En = Md - 1
+            if nMd < Trg and nSt <= nMd:
+                St = Md + 1
 
-        elif nMd > Trg and nSt <= nMd and Trg >= nSt:
-            En = Md - 1
+            elif nMd < Trg and nSt > nMd and Trg <= nEn:
+                St = Md + 1
 
-        elif nSt > nMd and Trg > nEn:
-            En = Md - 1
+            elif nMd > Trg and nSt > nMd:
+                En = Md - 1
 
-        elif nSt <= nMd and Trg < nSt:
-            St = Md + 1
+            elif nMd > Trg and nSt <= nMd and Trg >= nSt:
+                En = Md - 1
 
-        stpCnt += 1
+            elif nSt > nMd and Trg > nEn:
+                En = Md - 1
 
-    print("\n")
+            elif nSt <= nMd and Trg < nSt:
+                St = Md + 1
+
+            stpCnt += 1
+
+        print("\n")
