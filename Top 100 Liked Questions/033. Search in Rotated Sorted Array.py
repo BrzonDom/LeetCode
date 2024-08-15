@@ -105,9 +105,6 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
 
             return Md
 
-            trgFnd = True
-            break
-
         if nMd < Trg and nSt <= nMd:
             St = Md + 1
 
@@ -129,12 +126,6 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
         stpCnt += 1
 
     return -1
-
-    if trgFnd:
-        return Md
-
-    else:
-        return -1
 
 
 def Out_Prt(out):
