@@ -149,6 +149,8 @@ if __name__ == "__main__":
 
         print(f"{csCnt+1}.Case\n")
 
+        # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
+
         Arr = case[0]
         Trg = case[1]
 
@@ -158,9 +160,6 @@ if __name__ == "__main__":
 
         ln = len(Arr)
         print(f"\tLength: {ln}")
-        print()
-
-        # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
