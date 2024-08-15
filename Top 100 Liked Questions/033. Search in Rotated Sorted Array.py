@@ -125,6 +125,9 @@ if __name__ == "__main__":
 
         print(f"\tArray: {Arr}")
         print(f"\tTarget: {Trg}")
+        print()
 
+        ln = len(Arr)
+        print(f"\t\tLength: {ln}")
 
         print("\n")
