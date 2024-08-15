@@ -85,6 +85,9 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
     St = 0
     En = ln - 1
 
+    print(f"\tModified Binary Search:")
+    print()
+
     stpCnt = 1
 
     while St <= En:
