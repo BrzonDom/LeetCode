@@ -118,6 +118,13 @@ if __name__ == "__main__":
 
         print(f"{csCnt+1}.Case\n")
 
-        Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
+        # Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
+
+        Arr = case[0]
+        Trg = case[1]
+
+        print(f"\tArray: {Arr}")
+        print(f"\tTarget: {Trg}")
+
 
         print("\n")
