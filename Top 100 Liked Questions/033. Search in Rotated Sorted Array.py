@@ -99,13 +99,11 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
 
     if trgFnd:
         print(f"\tTarget found on index: {Md}")
-        print("\n")
 
         return Md
 
     else:
         print("\tTarget not found")
-        print("\n")
 
         return -1
 
@@ -121,3 +119,5 @@ if __name__ == "__main__":
         print(f"{csCnt+1}.Case\n")
 
         Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
+
+        print("\n")
