@@ -141,6 +141,11 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
         return -1
 
 
+def Out_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[4, 5, 6, 7, 0, 1, 2], 0],
@@ -151,8 +156,8 @@ if __name__ == "__main__":
 
         print(f"{csCnt+1}.Case\n")
 
-        # Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
+        Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        Brt01_ArrItr_Prt(case[0], case[1])
+        # Brt01_ArrItr_Prt(case[0], case[1])
 
         print("\n")
