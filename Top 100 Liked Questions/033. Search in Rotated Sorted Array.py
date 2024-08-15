@@ -43,6 +43,11 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 """
 
 
+def Brt01_ArrItr_Prt(case):
+
+    return
+
+
 def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
 
     print(f"\tArray: {Arr}")
