@@ -79,7 +79,7 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
     print()
 
     ln = len(Arr)
-    print(f"\tLength: {ln}")
+    print(f"\t\tLength: {ln}")
     print()
 
     St = 0
@@ -159,7 +159,7 @@ if __name__ == "__main__":
         print()
 
         ln = len(Arr)
-        print(f"\tLength: {ln}")
+        print(f"\t\tLength: {ln}")
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
