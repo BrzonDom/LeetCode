@@ -152,33 +152,35 @@ if __name__ == "__main__":
 
         # Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        Arr = case[0]
-        Trg = case[1]
+        Brt01_ArrItr_Prt(case)
 
-        print(f"\tArray: {Arr}")
-        print(f"\tTarget: {Trg}")
-        print()
-
-        ln = len(Arr)
-        print(f"\t\tLength: {ln}")
-        print()
-
-        trgFnd = False
-
-        for id, nm in enumerate(Arr):
-            print(f"\t\t{id+1}. {nm}")
-
-            if nm == Trg and not trgFnd:
-                iTrg = id
-
-                trgFnd = True
-
-        print()
-
-        if trgFnd:
-            print("\tTarget found")
-
-        else:
-            print("\tTarget not found")
+        # Arr = case[0]
+        # Trg = case[1]
+        #
+        # print(f"\tArray: {Arr}")
+        # print(f"\tTarget: {Trg}")
+        # print()
+        #
+        # ln = len(Arr)
+        # print(f"\t\tLength: {ln}")
+        # print()
+        #
+        # trgFnd = False
+        #
+        # for id, nm in enumerate(Arr):
+        #     print(f"\t\t{id+1}. {nm}")
+        #
+        #     if nm == Trg and not trgFnd:
+        #         iTrg = id
+        #
+        #         trgFnd = True
+        #
+        # print()
+        #
+        # if trgFnd:
+        #     print("\tTarget found")
+        #
+        # else:
+        #     print("\tTarget not found")
 
         print("\n")
