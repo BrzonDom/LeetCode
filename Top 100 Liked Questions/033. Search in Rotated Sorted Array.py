@@ -161,6 +161,9 @@ if __name__ == "__main__":
         ln = len(Arr)
         print(f"\t\tLength: {ln}")
 
+        St = 0
+        En = ln - 1
+
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
         # Out_Prt(outRtrn)
