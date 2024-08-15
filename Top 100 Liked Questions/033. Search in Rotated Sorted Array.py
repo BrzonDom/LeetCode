@@ -76,6 +76,7 @@ def Slt01_Css_BnrSrchMd_Prt(case):
         print()
 
         if nMd == Trg:
+
             trgFnd = True
             break
 
@@ -101,11 +102,15 @@ def Slt01_Css_BnrSrchMd_Prt(case):
 
     if trgFnd:
         print(f"\tTarget found on index: {Md}")
+        print("\n")
+
+        return Md
 
     else:
         print("\tTarget not found")
+        print("\n")
 
-    return
+        return -1
 
 
 if __name__ == "__main__":
