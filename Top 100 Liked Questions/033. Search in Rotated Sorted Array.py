@@ -154,6 +154,11 @@ if __name__ == "__main__":
 
         print(f"\tArray: {Arr}")
         print(f"\tTarget: {Trg}")
+        print()
+
+        ln = len(Arr)
+        print(f"\tLength: {ln}")
+        print()
 
         # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
