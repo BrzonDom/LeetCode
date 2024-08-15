@@ -68,8 +68,12 @@ def Brt01_ArrItr_Prt(Arr, Trg):
     if trgFnd:
         print(f"\tTarget found on index: {iTrg}")
 
+        return iTrg
+
     else:
         print("\tTarget not found")
+
+        return -1
 
 
 def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
