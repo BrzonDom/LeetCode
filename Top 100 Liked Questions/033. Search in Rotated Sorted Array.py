@@ -179,7 +179,12 @@ if __name__ == "__main__":
         print(f"\t\t1. Start: {nSt} = Arr[{St}]")
         print(f"\t\t1. End:   {nEn} = Arr[{En}]")
         print(f"\t\t1. Mid:   {nMd} = Arr[{Md}]")
+        print()
 
+        if nSt <= nMd and nMd < Trg:
+
+            St = Md + 1
+            nSt = Arr[St]    
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
