@@ -129,5 +129,9 @@ if __name__ == "__main__":
 
         ln = len(Arr)
         print(f"\t\tLength: {ln}")
+        print()
+
+        for nm in Arr:
+            print(f"\t\t{nm}")
 
         print("\n")
