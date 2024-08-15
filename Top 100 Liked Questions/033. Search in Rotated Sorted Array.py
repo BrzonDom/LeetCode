@@ -141,9 +141,13 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
         return -1
 
 
-def Out_Prt():
+def Out_Prt(out):
 
-    return
+    if out == -1:
+        print("\tTarget not found")
+
+    else:
+        print(f"\tTarget found on index: {out}")
 
 
 if __name__ == "__main__":
