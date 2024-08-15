@@ -165,6 +165,10 @@ if __name__ == "__main__":
         En = ln - 1
         Md = (St + En) // 2
 
+        nSt = Arr[St]
+        nEn = Arr[En]
+        nMd = Arr[Md]
+
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
         # Out_Prt(outRtrn)
