@@ -135,6 +135,9 @@ def Out_Prt(out):
     elif out >= 0:
         print(f"\tTarget found on index: {out}")
 
+    else:
+        print("\tOutput error")
+
 
 if __name__ == "__main__":
 
