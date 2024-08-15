@@ -108,4 +108,8 @@ if __name__ == "__main__":
 
             stpCnt += 1
 
+        if trgFnd:
+
+            print(f"\tTarget found on index: {Md}")
+
         print("\n")
