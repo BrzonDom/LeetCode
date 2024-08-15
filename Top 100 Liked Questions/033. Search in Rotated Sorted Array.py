@@ -142,4 +142,14 @@ if __name__ == "__main__":
                 trgFnd = True
                 break
 
+        if trgFnd:
+
+            print()
+            print("\tTarget found")
+
+        else:
+
+            print()
+            print("\tTarget not found")
+
         print("\n")
