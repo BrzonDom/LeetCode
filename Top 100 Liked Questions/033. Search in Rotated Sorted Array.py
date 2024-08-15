@@ -132,7 +132,7 @@ def Out_Prt(out):
     if out == -1:
         print("\tTarget not found")
 
-    else:
+    elif out >= 0:
         print(f"\tTarget found on index: {out}")
 
 
@@ -146,9 +146,9 @@ if __name__ == "__main__":
 
         print(f"{csCnt+1}.Case\n")
 
-        # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
+        outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
+        # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
         Out_Prt(outRtrn)
 
