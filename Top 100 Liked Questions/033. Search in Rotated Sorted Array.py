@@ -131,13 +131,9 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
         stpCnt += 1
 
     if trgFnd:
-        print(f"\tTarget found on index: {Md}")
-
         return Md
 
     else:
-        print("\tTarget not found")
-
         return -1
 
 
