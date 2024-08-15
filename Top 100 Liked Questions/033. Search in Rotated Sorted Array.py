@@ -43,6 +43,11 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 """
 
 
+def Sltn01_Css_BnrSrchMd_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[4, 5, 6, 7, 0, 1, 2], 0],
