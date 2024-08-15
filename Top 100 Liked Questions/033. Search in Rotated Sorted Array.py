@@ -131,10 +131,15 @@ if __name__ == "__main__":
         print(f"\t\tLength: {ln}")
         print()
 
+        trgFnd = False
+
         for id, nm in enumerate(Arr):
             print(f"\t\t{id+1}. {nm}")
 
             if nm == Trg:
+                iTrg = {id}
+
+                trgFnd = True
                 break
 
         print("\n")
