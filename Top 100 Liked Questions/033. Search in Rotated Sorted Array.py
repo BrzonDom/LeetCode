@@ -184,7 +184,12 @@ if __name__ == "__main__":
         if nSt <= nMd and nMd < Trg:
 
             St = Md + 1
-            nSt = Arr[St]    
+            nSt = Arr[St]
+
+        elif nSt <= nMd and nSt > Trg:
+
+            St = Md + 1
+            nSt = Arr[St]
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
