@@ -68,6 +68,7 @@ if __name__ == "__main__":
         En = ln - 1
 
         stpCnt = 1
+        trgFnd = False
 
         while St <= En:
 
@@ -84,9 +85,7 @@ if __name__ == "__main__":
 
             if nMd == Trg:
 
-                print(f"\tTarget found on index: {Md}")
-                print()
-
+                trgFnd = True
                 break
 
             if nMd < Trg and nSt <= nMd:
