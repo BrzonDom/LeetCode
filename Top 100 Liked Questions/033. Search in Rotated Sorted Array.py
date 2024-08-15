@@ -181,15 +181,13 @@ if __name__ == "__main__":
         print(f"\t\t1. Mid:   {nMd} = Arr[{Md}]")
         print()
 
-        if nSt <= nMd and nMd < Trg:
+        if nSt <= nMd:
 
-            St = Md + 1
-            nSt = Arr[St]
+            if nMd < Trg or nSt > Trg:
 
-        elif nSt <= nMd and nSt > Trg:
+                St = Md + 1
+                nSt = Arr[St]
 
-            St = Md + 1
-            nSt = Arr[St]
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
