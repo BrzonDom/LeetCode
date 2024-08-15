@@ -66,13 +66,9 @@ def Brt01_ArrItr_Prt(Arr, Trg):
     print()
 
     if trgFnd:
-        print(f"\tTarget found on index: {iTrg}")
-
         return iTrg
 
     else:
-        print("\tTarget not found")
-
         return -1
 
 
