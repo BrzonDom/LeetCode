@@ -170,6 +170,9 @@ if __name__ == "__main__":
         nEn = Arr[En]
         nMd = Arr[Md]
 
+        print(f"\tModified Binary Search:")
+        print()
+
         print(f"\t\t1. Start: {nSt} = Arr[{St}]")
         print(f"\t\t1. End:   {nEn} = Arr[{En}]")
         print(f"\t\t1. Mid:   {nMd} = Arr[{Md}]")
