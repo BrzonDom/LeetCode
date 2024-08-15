@@ -86,7 +86,6 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
     En = ln - 1
 
     stpCnt = 1
-    trgFnd = False
 
     while St <= En:
 
