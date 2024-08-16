@@ -184,11 +184,12 @@ if __name__ == "__main__":
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+            print()
 
             if nMd == Trg:
 
-                print()
                 print(f"\t\tTarget found")
+                print()
 
                 break
 
@@ -208,6 +209,8 @@ if __name__ == "__main__":
                 else:
                     St = Md + 1
 
+            stpCnt += 1
+
         Md = (St + En) // 2
         nMd = Arr[Md]
 
@@ -215,4 +218,4 @@ if __name__ == "__main__":
 
         # Out_Prt(outRtrn)
 
-        print("\n")
+        print()
