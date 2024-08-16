@@ -185,11 +185,8 @@ if __name__ == "__main__":
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
-            print()
 
             if nMd == Trg:
-
-                print(f"\t\tTarget found")
                 print()
 
                 trgFnd = True
@@ -210,6 +207,8 @@ if __name__ == "__main__":
 
                 else:
                     St = Md + 1
+
+            print()
 
             stpCnt += 1
 
