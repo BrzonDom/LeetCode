@@ -63,4 +63,7 @@ if __name__ == "__main__":
         ln = len(Arr)
         print(f"\t\tLength: {ln}")
 
+        St = 0
+        En = ln - 1
+
         print("\n")
