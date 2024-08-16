@@ -179,7 +179,6 @@ if __name__ == "__main__":
         print(f"\t\t1. Start: {nSt} = Arr[{St}]")
         print(f"\t\t1. End:   {nEn} = Arr[{En}]")
         print(f"\t\t1. Mid:   {nMd} = Arr[{Md}]")
-        print()
 
         if St <= En:
 
@@ -205,10 +204,6 @@ if __name__ == "__main__":
 
         Md = (St + En) // 2
         nMd = Arr[Md]
-
-        print(f"\t\t2. Start: {nSt} = Arr[{St}]")
-        print(f"\t\t2. End:   {nEn} = Arr[{En}]")
-        print(f"\t\t2. Mid:   {nMd} = Arr[{Md}]")
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
