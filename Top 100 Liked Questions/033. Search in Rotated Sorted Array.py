@@ -192,12 +192,7 @@ if __name__ == "__main__":
 
             elif nSt > nMd:
 
-                if nMd > Trg:
-
-                    En = Md - 1
-                    nEn = Arr[En]
-
-                elif nEn < Trg:
+                if nMd > Trg or nEn < Trg:
 
                     En = Md - 1
                     nEn = Arr[En]
