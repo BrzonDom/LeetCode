@@ -167,22 +167,23 @@ if __name__ == "__main__":
 
         St = 0
         En = ln - 1
-        Md = (St + En) // 2
-
-        nSt = Arr[St]
-        nEn = Arr[En]
-        nMd = Arr[Md]
 
         print(f"\tModified Binary Search:")
         print()
 
         stpCnt = 1
 
-        print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
-        print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
-        print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
-
         if St <= En:
+
+            Md = (St + En) // 2
+
+            nSt = Arr[St]
+            nEn = Arr[En]
+            nMd = Arr[Md]
+
+            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
 
             if nSt <= nMd:
 
