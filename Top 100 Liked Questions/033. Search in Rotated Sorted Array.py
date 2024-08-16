@@ -185,9 +185,9 @@ if __name__ == "__main__":
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+            print()
 
             if nMd == Trg:
-                print()
 
                 trgFnd = True
                 break
@@ -208,22 +208,16 @@ if __name__ == "__main__":
                 else:
                     St = Md + 1
 
-            print()
-
             stpCnt += 1
 
         if trgFnd:
-
             print(f"\tTarget found on: {Md}")
-            print()
 
         else:
-
             print("\tTarget not found")
-            print()
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
         # Out_Prt(outRtrn)
 
-        print()
+        print("\n")
