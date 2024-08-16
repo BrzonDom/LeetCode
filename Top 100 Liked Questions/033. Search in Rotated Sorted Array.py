@@ -130,6 +130,11 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
     return -1
 
 
+def Slt02_Splt_BnrSrchMd_Prt():
+
+    return
+
+
 def Out_Prt(out):
 
     if out == -1:
