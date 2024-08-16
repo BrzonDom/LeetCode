@@ -212,6 +212,11 @@ if __name__ == "__main__":
 
             stpCnt += 1
 
+        if trgFnd:
+
+            print(f"\tTarget found on: {Md}")
+            print()
+
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
         # Out_Prt(outRtrn)
