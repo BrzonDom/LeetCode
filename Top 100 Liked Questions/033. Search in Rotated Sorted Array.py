@@ -197,6 +197,11 @@ if __name__ == "__main__":
                     En = Md - 1
                     nEn = Arr[En]
 
+                elif nEn < Trg:
+
+                    En = Md - 1
+                    nEn = Arr[En]
+
         Md = (St + En) // 2
         nMd = Arr[Md]
 
