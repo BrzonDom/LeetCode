@@ -167,6 +167,8 @@ def Slt02_Splt_BnrSrchMd_Prt(case):
 
         if nMd == Trg:
 
+            return Md
+
             trgFnd = True
             break
 
@@ -187,6 +189,8 @@ def Slt02_Splt_BnrSrchMd_Prt(case):
                 St = Md + 1
 
         stpCnt += 1
+
+    return -1
 
     if trgFnd:
         print(f"\tTarget found on: {Md}")
