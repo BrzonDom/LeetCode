@@ -149,7 +149,6 @@ def Slt02_Splt_BnrSrchMd_Prt(case):
     print(f"\tModified Binary Search:")
     print()
 
-    trgFnd = False
     stpCnt = 1
 
     while St <= En:
@@ -168,9 +167,6 @@ def Slt02_Splt_BnrSrchMd_Prt(case):
         if nMd == Trg:
 
             return Md
-
-            trgFnd = True
-            break
 
         if nSt <= nMd:
 
@@ -191,12 +187,6 @@ def Slt02_Splt_BnrSrchMd_Prt(case):
         stpCnt += 1
 
     return -1
-
-    if trgFnd:
-        print(f"\tTarget found on: {Md}")
-
-    else:
-        print("\tTarget not found")
 
 
 def Out_Prt(out):
