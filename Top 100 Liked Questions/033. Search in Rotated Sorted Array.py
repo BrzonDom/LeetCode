@@ -213,10 +213,10 @@ if __name__ == "__main__":
 
         # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        Slt02_Splt_BnrSrchMd_Prt(case)
+        outRtrn = Slt02_Splt_BnrSrchMd_Prt(case)
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
-        # Out_Prt(outRtrn)
+        Out_Prt(outRtrn)
 
         print("\n")
