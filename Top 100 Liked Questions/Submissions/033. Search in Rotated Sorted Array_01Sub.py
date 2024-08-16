@@ -43,18 +43,20 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 """
 
 
-InputLst = [[[4, 5, 6, 7, 0, 1, 2], 8],
-            [[4, 5, 6, 7, 0, 1, 2], 3],
-            [[1], 0]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[4, 5, 6, 7, 0, 1, 2], 8],
+                [[4, 5, 6, 7, 0, 1, 2], 3],
+                [[1], 0]]
 
-    print(f"{csCnt+1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Arr = case[0]
-    Trg = case[1]
+        print(f"{csCnt+1}.Case\n")
 
-    print(f"\tArray: {Arr}")
-    print(f"\tTarget: {Trg}")
+        Arr = case[0]
+        Trg = case[1]
 
-    print("\n")
+        print(f"\tArray: {Arr}")
+        print(f"\tTarget: {Trg}")
+
+        print("\n")
