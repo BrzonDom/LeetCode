@@ -219,67 +219,69 @@ if __name__ == "__main__":
 
         # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        Arr = case[0]
-        Trg = case[1]
+        Slt02_Splt_BnrSrchMd_Prt(case)
 
-        print(f"\tArray: {Arr}")
-        print(f"\tTarget: {Trg}")
-        print()
-
-        ln = len(Arr)
-        print(f"\t\tLength: {ln}")
-        print()
-
-        St = 0
-        En = ln - 1
-
-        print(f"\tModified Binary Search:")
-        print()
-
-        trgFnd = False
-        stpCnt = 1
-
-        while St <= En:
-
-            Md = (St + En) // 2
-
-            nSt = Arr[St]
-            nEn = Arr[En]
-            nMd = Arr[Md]
-
-            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
-            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
-            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
-            print()
-
-            if nMd == Trg:
-
-                trgFnd = True
-                break
-
-            if nSt <= nMd:
-
-                if nMd < Trg or nSt > Trg:
-                    St = Md + 1
-
-                else:
-                    En = Md - 1
-
-            else:
-
-                if nMd > Trg or nEn < Trg:
-                    En = Md - 1
-
-                else:
-                    St = Md + 1
-
-            stpCnt += 1
-
-        if trgFnd:
-            print(f"\tTarget found on: {Md}")
-
-        else:
-            print("\tTarget not found")
+        # Arr = case[0]
+        # Trg = case[1]
+        #
+        # print(f"\tArray: {Arr}")
+        # print(f"\tTarget: {Trg}")
+        # print()
+        #
+        # ln = len(Arr)
+        # print(f"\t\tLength: {ln}")
+        # print()
+        #
+        # St = 0
+        # En = ln - 1
+        #
+        # print(f"\tModified Binary Search:")
+        # print()
+        #
+        # trgFnd = False
+        # stpCnt = 1
+        #
+        # while St <= En:
+        #
+        #     Md = (St + En) // 2
+        #
+        #     nSt = Arr[St]
+        #     nEn = Arr[En]
+        #     nMd = Arr[Md]
+        #
+        #     print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+        #     print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+        #     print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+        #     print()
+        #
+        #     if nMd == Trg:
+        #
+        #         trgFnd = True
+        #         break
+        #
+        #     if nSt <= nMd:
+        #
+        #         if nMd < Trg or nSt > Trg:
+        #             St = Md + 1
+        #
+        #         else:
+        #             En = Md - 1
+        #
+        #     else:
+        #
+        #         if nMd > Trg or nEn < Trg:
+        #             En = Md - 1
+        #
+        #         else:
+        #             St = Md + 1
+        #
+        #     stpCnt += 1
+        #
+        # if trgFnd:
+        #     print(f"\tTarget found on: {Md}")
+        #
+        # else:
+        #     print("\tTarget not found")
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
