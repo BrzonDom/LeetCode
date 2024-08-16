@@ -190,6 +190,11 @@ if __name__ == "__main__":
                     St = Md + 1
                     nSt = Arr[St]
 
+                else:
+
+                    En = Md - 1
+                    nEn = Arr[En]
+
             elif nSt > nMd:
 
                 if nMd > Trg or nEn < Trg:
