@@ -186,6 +186,10 @@ if __name__ == "__main__":
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
 
             if nMd == Trg:
+
+                print()
+                print(f"\t\tTarget found")
+
                 break
 
             if nSt <= nMd:
