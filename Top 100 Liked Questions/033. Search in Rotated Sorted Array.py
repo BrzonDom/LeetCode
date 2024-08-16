@@ -173,7 +173,7 @@ if __name__ == "__main__":
 
         stpCnt = 1
 
-        if St <= En:
+        while St <= En:
 
             Md = (St + En) // 2
 
