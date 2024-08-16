@@ -186,24 +186,20 @@ if __name__ == "__main__":
             if nSt <= nMd:
 
                 if nMd < Trg or nSt > Trg:
-
                     St = Md + 1
                     nSt = Arr[St]
 
                 else:
-
                     En = Md - 1
                     nEn = Arr[En]
 
-            elif nSt > nMd:
+            else:
 
                 if nMd > Trg or nEn < Trg:
-
                     En = Md - 1
                     nEn = Arr[En]
 
                 else:
-
                     St = Md + 1
                     nSt = Arr[St]
 
