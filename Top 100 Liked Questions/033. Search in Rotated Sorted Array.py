@@ -171,6 +171,7 @@ if __name__ == "__main__":
         print(f"\tModified Binary Search:")
         print()
 
+        trgFnd = False
         stpCnt = 1
 
         while St <= En:
@@ -191,6 +192,7 @@ if __name__ == "__main__":
                 print(f"\t\tTarget found")
                 print()
 
+                trgFnd = True
                 break
 
             if nSt <= nMd:
