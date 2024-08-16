@@ -185,6 +185,9 @@ if __name__ == "__main__":
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
 
+            if nMd == Trg:
+                break
+
             if nSt <= nMd:
 
                 if nMd < Trg or nSt > Trg:
