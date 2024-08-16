@@ -62,6 +62,7 @@ if __name__ == "__main__":
 
         ln = len(Arr)
         print(f"\t\tLength: {ln}")
+        print()
 
         St = 0
         En = ln - 1
@@ -71,5 +72,9 @@ if __name__ == "__main__":
         nSt = Arr[St]
         nEn = Arr[En]
         nMd = Arr[Md]
+
+        print(f"\t\t1. Start: {nSt}")
+        print(f"\t\t1. End:   {nEn}")
+        print(f"\t\t1. Mid:   {nMd}")
 
         print("\n")
