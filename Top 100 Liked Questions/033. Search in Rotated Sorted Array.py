@@ -130,10 +130,7 @@ def Slt01_Css_BnrSrchMd_Prt(Arr, Trg):
     return -1
 
 
-def Slt02_Splt_BnrSrchMd_Prt(case):
-
-    Arr = case[0]
-    Trg = case[1]
+def Slt02_Splt_BnrSrchMd_Prt(Arr, Trg):
 
     print(f"\tArray: {Arr}")
     print(f"\tTarget: {Trg}")
@@ -213,7 +210,7 @@ if __name__ == "__main__":
 
         # outRtrn = Slt01_Css_BnrSrchMd_Prt(case[0], case[1])
 
-        outRtrn = Slt02_Splt_BnrSrchMd_Prt(case)
+        outRtrn = Slt02_Splt_BnrSrchMd_Prt(case[0], case[1])
 
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
