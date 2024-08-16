@@ -181,12 +181,14 @@ if __name__ == "__main__":
         print(f"\t\t1. Mid:   {nMd} = Arr[{Md}]")
         print()
 
-        if nSt <= nMd:
+        if St <= En:
 
-            if nMd < Trg or nSt > Trg:
+            if nSt <= nMd:
 
-                St = Md + 1
-                nSt = Arr[St]
+                if nMd < Trg or nSt > Trg:
+
+                    St = Md + 1
+                    nSt = Arr[St]
 
         Md = (St + En) // 2
         nMd = Arr[Md]
