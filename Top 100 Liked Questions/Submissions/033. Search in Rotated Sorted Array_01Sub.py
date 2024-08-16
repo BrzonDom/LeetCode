@@ -51,7 +51,10 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt+1}.Case\n")
 
-    print(f"\tArray: {case[0]}")
-    print(f"\tTarget: {case[1]}")
+    Arr = case[0]
+    Trg = case[1]
+
+    print(f"\tArray: {Arr}")
+    print(f"\tTarget: {Trg}")
 
     print("\n")
