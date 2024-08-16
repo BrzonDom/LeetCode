@@ -211,9 +211,6 @@ if __name__ == "__main__":
 
             stpCnt += 1
 
-        Md = (St + En) // 2
-        nMd = Arr[Md]
-
         # outRtrn = Brt01_ArrItr_Prt(case[0], case[1])
 
         # Out_Prt(outRtrn)
