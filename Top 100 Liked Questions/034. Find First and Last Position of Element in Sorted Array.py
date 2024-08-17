@@ -38,108 +38,46 @@ https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-
 """
 
 
-InputOrg = [[[5, 7, 7, 8, 8, 10], 8],
-            [[5, 7, 7, 8, 8, 10], 6],
-            [[], 0]]
+if __name__ == "__main__":
 
-InputCstm = [[[1, 2, 3, 4, 4, 4, 4, 5, 6], 4],
-             [[2, 3, 3, 3, 3, 4, 5, 5, 6, 6, 6, 7, 8], 3]]
+    InputOrg = [[[5, 7, 7, 8, 8, 10], 8],
+                [[5, 7, 7, 8, 8, 10], 6],
+                [[], 0]]
 
-InputLst = InputOrg + InputCstm
+    InputCstm = [[[1, 2, 3, 4, 4, 4, 4, 5, 6], 4],
+                 [[2, 3, 3, 3, 3, 4, 5, 5, 6, 6, 6, 7, 8], 3]]
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = InputOrg + InputCstm
 
-    print(f"{csCnt+1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Arr = case[0]
-    Trg = case[1]
+        print(f"{csCnt+1}.Case\n")
 
-    print(f"\tArray: {Arr}")
-    print(f"\tTarget: {Trg}")
-    print()
+        Arr = case[0]
+        Trg = case[1]
 
-    ln = len(Arr)
-    print(f"\t\tLength: {ln}")
-    print()
-
-    if ln == 0:
-        print("\tArray is empty")
-        print("\n")
-
-        continue
-
-    St = 0
-    En = ln - 1
-
-    print("\tBinary Search:")
-    print()
-
-    trgFnd = False
-    stpCnt = 0
-
-    while St <= En:
-
-        Md = (St + En) // 2
-
-        nSt = Arr[St]
-        nEn = Arr[En]
-        nMd = Arr[Md]
-
-        stpCnt += 1
-        print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
-        print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
-        print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+        print(f"\tArray: {Arr}")
+        print(f"\tTarget: {Trg}")
         print()
 
-        if nMd == Trg:
-            idBnS = [St, Md, En]
+        ln = len(Arr)
+        print(f"\t\tLength: {ln}")
+        print()
 
-            trgFnd = True
-            break
+        if ln == 0:
+            print("\tArray is empty")
+            print("\n")
 
-        if nMd < Trg:
-            St = Md + 1
+            continue
 
-        elif nMd > Trg:
-            En = Md - 1
+        St = 0
+        En = ln - 1
 
-    if trgFnd:
+        print("\tBinary Search:")
+        print()
 
-        rgTrg = idBnS[1]
-        lfTrg = idBnS[1]
-
-        St = idBnS[1] + 1
-        En = idBnS[2]
-
-        while St <= En:
-
-            Md = (St + En) // 2
-
-            nSt = Arr[St]
-            nEn = Arr[En]
-            nMd = Arr[Md]
-
-            stpCnt += 1
-            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
-            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
-            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
-            print()
-
-            if nMd == Trg:
-
-                rgTrg = Md
-
-                St = Md + 1
-                continue
-
-            if nMd < Trg:
-                St = Md + 1
-
-            elif nMd > Trg:
-                En = Md - 1
-
-        St = idBnS[0]
-        En = idBnS[1] - 1
+        trgFnd = False
+        stpCnt = 0
 
         while St <= En:
 
@@ -156,11 +94,10 @@ for csCnt, case in enumerate(InputLst):
             print()
 
             if nMd == Trg:
+                idBnS = [St, Md, En]
 
-                lfTrg = Md
-
-                En = Md - 1
-                continue
+                trgFnd = True
+                break
 
             if nMd < Trg:
                 St = Md + 1
@@ -168,9 +105,74 @@ for csCnt, case in enumerate(InputLst):
             elif nMd > Trg:
                 En = Md - 1
 
-        print(f"\tTarget found on: {[lfTrg, rgTrg]}")
+        if trgFnd:
 
-    else:
-        print("\tTarget not found")
+            rgTrg = idBnS[1]
+            lfTrg = idBnS[1]
 
-    print("\n")
+            St = idBnS[1] + 1
+            En = idBnS[2]
+
+            while St <= En:
+
+                Md = (St + En) // 2
+
+                nSt = Arr[St]
+                nEn = Arr[En]
+                nMd = Arr[Md]
+
+                stpCnt += 1
+                print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+                print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+                print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+                print()
+
+                if nMd == Trg:
+
+                    rgTrg = Md
+
+                    St = Md + 1
+                    continue
+
+                if nMd < Trg:
+                    St = Md + 1
+
+                elif nMd > Trg:
+                    En = Md - 1
+
+            St = idBnS[0]
+            En = idBnS[1] - 1
+
+            while St <= En:
+
+                Md = (St + En) // 2
+
+                nSt = Arr[St]
+                nEn = Arr[En]
+                nMd = Arr[Md]
+
+                stpCnt += 1
+                print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+                print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+                print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+                print()
+
+                if nMd == Trg:
+
+                    lfTrg = Md
+
+                    En = Md - 1
+                    continue
+
+                if nMd < Trg:
+                    St = Md + 1
+
+                elif nMd > Trg:
+                    En = Md - 1
+
+            print(f"\tTarget found on: {[lfTrg, rgTrg]}")
+
+        else:
+            print("\tTarget not found")
+
+        print("\n")
