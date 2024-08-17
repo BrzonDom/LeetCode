@@ -97,4 +97,6 @@ for csCnt, case in enumerate(InputLst):
 
             En = Md - 1
 
+        stpCnt += 1
+
     print("\n")
