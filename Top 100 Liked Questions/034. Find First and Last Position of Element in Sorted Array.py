@@ -70,7 +70,7 @@ for csCnt, case in enumerate(InputLst):
 
     stpCnt = 1
 
-    if St <= En:
+    while St <= En:
 
         Md = (St + En) // 2
 
@@ -87,7 +87,7 @@ for csCnt, case in enumerate(InputLst):
             print("\tTarget found")
             print("\n")
 
-            continue
+            break
 
         if nMd < Trg:
 
