@@ -82,4 +82,8 @@ for csCnt, case in enumerate(InputLst):
 
         En = Md - 1
 
+    if St <= En:
+
+        Md = (St + En) // 2
+
     print("\n")
