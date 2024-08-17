@@ -87,7 +87,7 @@ for csCnt, case in enumerate(InputLst):
         print()
 
         if nMd == Trg:
-            idTrg = [St, Md, En]
+            idBnS = [St, Md, En]
 
             trgFnd = True
             break
@@ -100,11 +100,11 @@ for csCnt, case in enumerate(InputLst):
 
     if trgFnd:
 
-        rgTrg = idTrg[1]
-        lfTrg = idTrg[1]
+        rgTrg = idBnS[1]
+        lfTrg = idBnS[1]
 
-        St = idTrg[1] + 1
-        En = idTrg[2]
+        St = idBnS[1] + 1
+        En = idBnS[2]
 
         while St <= En:
 
@@ -133,8 +133,8 @@ for csCnt, case in enumerate(InputLst):
             elif nMd > Trg:
                 En = Md - 1
 
-        St = idTrg[0]
-        En = idTrg[1] - 1
+        St = idBnS[0]
+        En = idBnS[1] - 1
 
         while St <= En:
 
