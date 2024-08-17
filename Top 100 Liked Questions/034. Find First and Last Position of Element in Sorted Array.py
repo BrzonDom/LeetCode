@@ -85,10 +85,8 @@ for csCnt, case in enumerate(InputLst):
         print()
 
         if nMd == Trg:
-            print("\tTarget found")
-            print("\n")
-
             trgFnd = True
+
             break
 
         if nMd < Trg:
@@ -100,5 +98,11 @@ for csCnt, case in enumerate(InputLst):
             En = Md - 1
 
         stpCnt += 1
+
+    if trgFnd:
+        print("\tTarget found")
+
+    else:
+        print("\tTarget not found")
 
     print("\n")
