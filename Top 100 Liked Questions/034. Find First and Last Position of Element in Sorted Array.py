@@ -70,7 +70,7 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     trgFnd = False
-    stpCnt = 1
+    stpCnt = 0
 
     while St <= En:
 
@@ -80,6 +80,7 @@ for csCnt, case in enumerate(InputLst):
         nEn = Arr[En]
         nMd = Arr[Md]
 
+        stpCnt += 1
         print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
         print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
         print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
@@ -97,8 +98,6 @@ for csCnt, case in enumerate(InputLst):
         elif nMd > Trg:
             En = Md - 1
 
-        stpCnt += 1
-
     if trgFnd:
 
         St = idTrg[1] + 1
@@ -112,6 +111,7 @@ for csCnt, case in enumerate(InputLst):
             nEn = Arr[En]
             nMd = Arr[Md]
 
+            stpCnt += 1
             print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
             print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
             print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
@@ -126,8 +126,6 @@ for csCnt, case in enumerate(InputLst):
 
             elif nMd > Trg:
                 En = Md - 1
-
-            stpCnt += 1
 
         print(f"\tTarget found on: {idTrg[1]}")
 
