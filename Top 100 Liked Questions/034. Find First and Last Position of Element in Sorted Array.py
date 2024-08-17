@@ -50,6 +50,10 @@ def Hlp_BnrSrch_NxtMd_Prt(Arr, Trg):
     nEn = Arr[En]
     nMd = Arr[Md]
 
+    if nMd == Trg:
+
+        iTrg = Md
+
     if nMd < Trg:
         St = Md + 1
 
