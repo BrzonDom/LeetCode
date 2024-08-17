@@ -58,7 +58,7 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     if ln == 0:
-        print()
+        print("\n")
 
         continue
 
@@ -82,6 +82,11 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
         print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
         print()
+
+    if nMd == Trg:
+        print("\n")
+
+        continue
 
     if nMd < Trg:
 
