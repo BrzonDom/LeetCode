@@ -73,5 +73,10 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\tStart: {nSt}")
     print(f"\t\tEnd:   {nEn}")
     print(f"\t\tMid:   {nMd}")
+    print()
+
+    if nMd < Trg:
+
+        St = Md + 1
 
     print("\n")
