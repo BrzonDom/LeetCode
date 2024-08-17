@@ -86,4 +86,8 @@ for csCnt, case in enumerate(InputLst):
 
         Md = (St + En) // 2
 
+        nSt = Arr[St]
+        nEn = Arr[En]
+        nMd = Arr[Md]
+
     print("\n")
