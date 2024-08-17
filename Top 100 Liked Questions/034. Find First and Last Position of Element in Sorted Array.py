@@ -86,7 +86,7 @@ for csCnt, case in enumerate(InputLst):
         print()
 
         if nMd == Trg:
-            idTrg = Md
+            idTrg = [St, Md, En]
 
             trgFnd = True
             break
@@ -100,7 +100,7 @@ for csCnt, case in enumerate(InputLst):
         stpCnt += 1
 
     if trgFnd:
-        print(f"\tTarget found on: {idTrg}")
+        print(f"\tTarget found on: {idTrg[1]}")
 
     else:
         print("\tTarget not found")
