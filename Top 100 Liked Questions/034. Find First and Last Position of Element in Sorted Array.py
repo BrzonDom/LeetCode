@@ -65,6 +65,9 @@ for csCnt, case in enumerate(InputLst):
     St = 0
     En = ln - 1
 
+    print("\tBinary Search:")
+    print()
+
     stpCnt = 1
 
     if St <= En:
@@ -78,6 +81,7 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
         print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
         print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+        print()
 
     if nMd < Trg:
 
@@ -97,7 +101,6 @@ for csCnt, case in enumerate(InputLst):
 
         stpCnt += 1
 
-        print()
         print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
         print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
         print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
