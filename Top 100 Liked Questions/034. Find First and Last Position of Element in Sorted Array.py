@@ -52,7 +52,7 @@ def Hlp_BnrSrch_NxtMd_Prt(Arr, Trg):
 
     if nMd == Trg:
 
-        iTrg = Md
+        return Md
 
     if nMd < Trg:
         St = Md + 1
@@ -60,7 +60,7 @@ def Hlp_BnrSrch_NxtMd_Prt(Arr, Trg):
     elif nMd > Trg:
         En = Md - 1
 
-    return
+    return -1
 
 
 if __name__ == "__main__":
