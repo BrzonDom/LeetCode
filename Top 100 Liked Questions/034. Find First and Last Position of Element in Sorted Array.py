@@ -84,6 +84,7 @@ for csCnt, case in enumerate(InputLst):
         print()
 
     if nMd == Trg:
+        print("\tTarget found")
         print("\n")
 
         continue
