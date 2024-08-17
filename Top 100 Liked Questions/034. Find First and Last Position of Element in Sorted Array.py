@@ -38,7 +38,9 @@ https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-
 """
 
 
-def Hlp_BnrSrch_NxtMd_Prt():
+def Hlp_BnrSrch_NxtMd_Prt(Arr, Trg):
+
+    ln = len(Arr)
 
     return
 
