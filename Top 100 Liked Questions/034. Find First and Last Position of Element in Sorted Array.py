@@ -44,5 +44,6 @@ InputLst = [[[5, 7, 7, 8, 8, 10], 8],
 
 for case in InputLst:
 
-    print(case)
+    print(f"\tArray: {case[0]}")
+    print(f"\tTarget: {case[1]}")
     print()
