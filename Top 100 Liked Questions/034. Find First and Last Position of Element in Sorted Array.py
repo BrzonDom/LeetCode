@@ -38,9 +38,14 @@ https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-
 """
 
 
-InputLst = [[[5, 7, 7, 8, 8, 10], 8],
+InputOrg = [[[5, 7, 7, 8, 8, 10], 8],
             [[5, 7, 7, 8, 8, 10], 6],
             [[], 0]]
+
+InputCstm = [[[1, 2, 3, 4, 4, 4, 4, 5, 6], 4],
+             [[2, 3, 3, 3, 3, 4, 5, 5, 6, 6, 6, 7, 8], 3]]
+
+InputLst = InputOrg + InputCstm
 
 for csCnt, case in enumerate(InputLst):
 
