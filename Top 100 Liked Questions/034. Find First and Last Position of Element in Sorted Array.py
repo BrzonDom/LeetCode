@@ -68,6 +68,7 @@ for csCnt, case in enumerate(InputLst):
     print("\tBinary Search:")
     print()
 
+    trgFnd = False
     stpCnt = 1
 
     while St <= En:
@@ -87,6 +88,7 @@ for csCnt, case in enumerate(InputLst):
             print("\tTarget found")
             print("\n")
 
+            trgFnd = True
             break
 
         if nMd < Trg:
