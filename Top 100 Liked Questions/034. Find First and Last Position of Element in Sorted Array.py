@@ -38,6 +38,11 @@ https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-
 """
 
 
+def Hlp_BnrSrch_NxtMd_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputOrg = [[[5, 7, 7, 8, 8, 10], 8],
