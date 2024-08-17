@@ -101,7 +101,7 @@ for csCnt, case in enumerate(InputLst):
         stpCnt += 1
 
     if trgFnd:
-        print("\tTarget found")
+        print(f"\tTarget found on: {Md}")
 
     else:
         print("\tTarget not found")
