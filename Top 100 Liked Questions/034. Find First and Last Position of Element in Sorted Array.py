@@ -79,4 +79,8 @@ for csCnt, case in enumerate(InputLst):
 
         St = Md + 1
 
+    elif nMd > Trg:
+
+        En = Md - 1
+
     print("\n")
