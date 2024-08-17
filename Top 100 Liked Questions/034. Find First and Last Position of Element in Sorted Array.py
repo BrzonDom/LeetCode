@@ -100,8 +100,8 @@ for csCnt, case in enumerate(InputLst):
 
     if trgFnd:
 
-        rgTrg = None
-        lfTrg = None
+        rgTrg = idTrg[1]
+        lfTrg = idTrg[1]
 
         St = idTrg[1] + 1
         En = idTrg[2]
