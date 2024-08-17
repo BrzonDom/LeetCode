@@ -58,6 +58,7 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     if ln == 0:
+        print("\tArray is empty")
         print("\n")
 
         continue
