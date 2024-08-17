@@ -51,5 +51,9 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tArray: {Arr}")
     print(f"\tTarget: {Trg}")
+    print()
+
+    ln = len(Arr)
+    print(f"\t\tLength: {ln}")
 
     print("\n")
