@@ -55,6 +55,7 @@ for csCnt, case in enumerate(InputLst):
 
     ln = len(Arr)
     print(f"\t\tLength: {ln}")
+    print()
 
     St = 0
     En = ln - 1
@@ -63,5 +64,9 @@ for csCnt, case in enumerate(InputLst):
     nSt = Arr[St]
     nEn = Arr[En]
     nMd = Arr[Md]
+
+    print(f"\t\tStart: {nSt}")
+    print(f"\t\tEnd:   {nEn}")
+    print(f"\t\tMid:   {nMd}")
 
     print("\n")
