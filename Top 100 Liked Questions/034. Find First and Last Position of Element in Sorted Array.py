@@ -64,15 +64,16 @@ for csCnt, case in enumerate(InputLst):
 
     St = 0
     En = ln - 1
-    Md = (St + En) // 2
-
-    nSt = Arr[St]
-    nEn = Arr[En]
-    nMd = Arr[Md]
 
     stpCnt = 1
 
     if St <= En:
+
+        Md = (St + En) // 2
+
+        nSt = Arr[St]
+        nEn = Arr[En]
+        nMd = Arr[Md]
 
         print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
         print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
