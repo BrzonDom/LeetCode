@@ -58,5 +58,6 @@ for csCnt, case in enumerate(InputLst):
 
     St = 0
     En = ln - 1
+    Md = (St + En) // 2
 
     print("\n")
