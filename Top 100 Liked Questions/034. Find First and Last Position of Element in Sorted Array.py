@@ -152,7 +152,10 @@ for csCnt, case in enumerate(InputLst):
 
             if nMd == Trg:
 
-                break
+                lfTrg = Md
+
+                En = Md - 1
+                continue
 
             if nMd < Trg:
                 St = Md + 1
