@@ -44,8 +44,11 @@ def Hlp_BnrSrch_NxtMd_Prt(Arr, Trg):
 
     St = 0
     En = ln - 1
-
     Md = (St + En) // 2
+
+    nSt = Arr[St]
+    nEn = Arr[En]
+    nMd = Arr[Md]
 
     return
 
