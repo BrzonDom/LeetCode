@@ -163,7 +163,7 @@ for csCnt, case in enumerate(InputLst):
             elif nMd > Trg:
                 En = Md - 1
 
-        print(f"\tTarget found on: {idTrg[1]}")
+        print(f"\tTarget found on: {[lfTrg, rgTrg]}")
 
     else:
         print("\tTarget not found")
