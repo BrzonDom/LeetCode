@@ -83,18 +83,18 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
         print()
 
-    if nMd == Trg:
-        print("\tTarget found")
-        print("\n")
+        if nMd == Trg:
+            print("\tTarget found")
+            print("\n")
 
-        continue
+            continue
 
-    if nMd < Trg:
+        if nMd < Trg:
 
-        St = Md + 1
+            St = Md + 1
 
-    elif nMd > Trg:
+        elif nMd > Trg:
 
-        En = Md - 1
+            En = Md - 1
 
     print("\n")
