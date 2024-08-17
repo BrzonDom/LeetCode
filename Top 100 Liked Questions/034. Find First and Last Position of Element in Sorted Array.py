@@ -86,18 +86,15 @@ for csCnt, case in enumerate(InputLst):
         print()
 
         if nMd == Trg:
-
             idTrg = Md
-            trgFnd = True
 
+            trgFnd = True
             break
 
         if nMd < Trg:
-
             St = Md + 1
 
         elif nMd > Trg:
-
             En = Md - 1
 
         stpCnt += 1
