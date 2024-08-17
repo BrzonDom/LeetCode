@@ -90,4 +90,9 @@ for csCnt, case in enumerate(InputLst):
         nEn = Arr[En]
         nMd = Arr[Md]
 
+        print()
+        print(f"\t\t2. Start: {nSt} = Arr[{St}]")
+        print(f"\t\t2. End:   {nEn} = Arr[{En}]")
+        print(f"\t\t2. Mid:   {nMd} = Arr[{Md}]")
+
     print("\n")
