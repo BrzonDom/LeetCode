@@ -45,18 +45,20 @@ def Hlp_BnrSrch_NxtMd_Prt(Arr, Trg):
     St = 0
     En = ln - 1
 
-    Md = (St + En) // 2
-    nMd = Arr[Md]
+    while St <= En:
 
-    if nMd == Trg:
+        Md = (St + En) // 2
+        nMd = Arr[Md]
 
-        return Md
+        if nMd == Trg:
 
-    if nMd < Trg:
-        St = Md + 1
+            return Md
 
-    elif nMd > Trg:
-        En = Md - 1
+        if nMd < Trg:
+            St = Md + 1
+
+        elif nMd > Trg:
+            En = Md - 1
 
     return -1
 
