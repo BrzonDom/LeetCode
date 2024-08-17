@@ -100,6 +100,35 @@ for csCnt, case in enumerate(InputLst):
         stpCnt += 1
 
     if trgFnd:
+
+        St = idTrg[1] + 1
+        En = idTrg[2]
+
+        while St <= En:
+
+            Md = (St + En) // 2
+
+            nSt = Arr[St]
+            nEn = Arr[En]
+            nMd = Arr[Md]
+
+            print(f"\t\t{stpCnt}. Start: {nSt} = Arr[{St}]")
+            print(f"\t\t{stpCnt}. End:   {nEn} = Arr[{En}]")
+            print(f"\t\t{stpCnt}. Mid:   {nMd} = Arr[{Md}]")
+            print()
+
+            if nMd == Trg:
+
+                break
+
+            if nMd < Trg:
+                St = Md + 1
+
+            elif nMd > Trg:
+                En = Md - 1
+
+            stpCnt += 1
+
         print(f"\tTarget found on: {idTrg[1]}")
 
     else:
