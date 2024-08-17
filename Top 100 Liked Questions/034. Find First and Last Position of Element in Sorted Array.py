@@ -100,6 +100,9 @@ for csCnt, case in enumerate(InputLst):
 
     if trgFnd:
 
+        rgTrg = None
+        lfTrg = None
+
         St = idTrg[1] + 1
         En = idTrg[2]
 
@@ -119,7 +122,10 @@ for csCnt, case in enumerate(InputLst):
 
             if nMd == Trg:
 
-                break
+                rgTrg = Md
+
+                St = Md + 1
+                continue
 
             if nMd < Trg:
                 St = Md + 1
