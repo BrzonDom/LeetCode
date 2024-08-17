@@ -36,3 +36,13 @@ https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-
         -10^9 <= target <= 10^9
 
 """
+
+
+InputLst = [[[5, 7, 7, 8, 8, 10], 8],
+            [[5, 7, 7, 8, 8, 10], 6],
+            [[], 0]]
+
+for case in InputLst:
+
+    print(case)
+    print()
