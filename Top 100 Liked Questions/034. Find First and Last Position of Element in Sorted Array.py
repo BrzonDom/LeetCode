@@ -57,6 +57,11 @@ for csCnt, case in enumerate(InputLst):
     print(f"\t\tLength: {ln}")
     print()
 
+    if ln == 0:
+        print()
+
+        continue
+
     St = 0
     En = ln - 1
     Md = (St + En) // 2
