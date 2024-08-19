@@ -162,14 +162,15 @@ for csCnt, case in enumerate(InputLst):
                     if c <= 2:
                         b = 4
 
-                        if b not in boxs:
-                            boxs[b] = col
+                        if b in boxs:
 
-                        else:
                             if col in boxs[b]:
                                 Valid = False
 
                             boxs[b] += col
+
+                        else:
+                            boxs[b] = col
 
                     elif c <= 5:
                         b = 5
