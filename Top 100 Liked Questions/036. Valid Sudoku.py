@@ -94,6 +94,10 @@ for csCnt, case in enumerate(InputLst):
         for c, col in enumerate(row):
             print(col, end=" ")
 
+    for r, row in enumerate(case):
+
+        for c, col in enumerate(row):
+
             if '1' <= col <= '9':
 
                 if (r+1) in rows:
