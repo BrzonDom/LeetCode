@@ -109,34 +109,52 @@ for csCnt, case in enumerate(InputLst):
                 if r <= 2:
 
                     if c <= 2:
-                        continue
+
+                        if 1 not in boxs:
+                            continue
 
                     elif c <= 5:
-                        continue
+
+                        if 2 not in boxs:
+                            continue
 
                     elif c <= 8:
-                        continue
+
+                        if 3 not in boxs:
+                            continue
 
                 elif r <= 5:
 
                     if c <= 2:
-                        continue
+
+                        if 4 not in boxs:
+                            continue
 
                     elif c <= 5:
-                        continue
+
+                        if 5 not in boxs:
+                            continue
 
                     elif c <= 8:
-                        continue
+
+                        if 6 not in boxs:
+                            continue
 
                 elif r <= 8:
 
                     if c <= 2:
-                        continue
+
+                        if 7 not in boxs:
+                            continue
 
                     elif c <= 5:
-                        continue
+
+                        if 8 not in boxs:
+                            continue
 
                     elif c <= 8:
-                        continue
+
+                        if 9 not in boxs:
+                            continue
 
     print("\n")
