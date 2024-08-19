@@ -160,11 +160,13 @@ for csCnt, case in enumerate(InputLst):
 
                     elif c <= 5:
 
-                        if 5 not in boxs:
-                            boxs[5] = col
+                        b = 5
+
+                        if b not in boxs:
+                            boxs[b] = col
 
                         else:
-                            boxs[5] += col
+                            boxs[b] += col
 
                     elif c <= 8:
 
