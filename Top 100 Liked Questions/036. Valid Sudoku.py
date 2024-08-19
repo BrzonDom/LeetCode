@@ -80,11 +80,12 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt + 1}.Case\n")
 
-
     print("\tSudoku:")
-    for row in case:
+
+    for r, row in enumerate(case):
         print("\n\t\t", end="")
-        for col in row:
+
+        for c, col in enumerate(row):
             print(col, end=" ")
 
     print("\n")
