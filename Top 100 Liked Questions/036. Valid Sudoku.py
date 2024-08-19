@@ -202,10 +202,12 @@ for csCnt, case in enumerate(InputLst):
 
                     elif c <= 8:
 
-                        if 9 not in boxs:
-                            boxs[9] = col
+                        b = 9
+
+                        if b not in boxs:
+                            boxs[b] = col
 
                         else:
-                            boxs[9] += col
+                            boxs[b] += col
 
     print("\n")
