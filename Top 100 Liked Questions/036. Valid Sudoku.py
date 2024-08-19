@@ -105,6 +105,8 @@ for csCnt, case in enumerate(InputLst):
                 if (r+1) in rows:
 
                     if col in rows[r+1]:
+                        print("\t\tDuplicate at a row")
+
                         Valid = False
 
                     rows[r+1] += col
@@ -115,6 +117,8 @@ for csCnt, case in enumerate(InputLst):
                 if (c+1) in cols:
 
                     if col in cols[c+1]:
+                        print("\t\tDuplicate at a column")
+
                         Valid = False
 
                     cols[c+1] += col
