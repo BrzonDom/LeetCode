@@ -82,16 +82,16 @@ for csCnt, case in enumerate(InputLst):
 
     print("\tSudoku:")
 
+    for line in case:
+        print(f"\t\t{line}")
+
+    print("\n")
+
     rows = {}
     cols = {}
     boxs = {}
 
     Valid = True
-
-    for line in case:
-        print(f"\t\t{line}")
-
-    print("\n")
 
     for r, row in enumerate(case):
 
