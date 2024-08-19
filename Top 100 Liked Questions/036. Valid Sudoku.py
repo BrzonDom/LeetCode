@@ -182,11 +182,13 @@ for csCnt, case in enumerate(InputLst):
 
                     if c <= 2:
 
-                        if 7 not in boxs:
-                            boxs[7] = col
+                        b = 7
+
+                        if b not in boxs:
+                            boxs[b] = col
 
                         else:
-                            boxs[7] += col
+                            boxs[b] += col
 
                     elif c <= 5:
 
