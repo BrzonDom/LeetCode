@@ -229,3 +229,11 @@ for csCnt, case in enumerate(InputLst):
                             boxs[b] += col
 
     print("\n")
+
+    if Valid:
+        print("\tSudoku is Valid")
+
+    else:
+        print("\tSudoku is Not Valid")
+
+    print("\n")
