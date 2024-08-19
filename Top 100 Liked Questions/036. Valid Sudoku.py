@@ -84,6 +84,7 @@ for csCnt, case in enumerate(InputLst):
 
     rows = {}
     cols = {}
+    boxs = {}
 
     for r, row in enumerate(case):
         print("\n\t\t", end="")
@@ -104,5 +105,38 @@ for csCnt, case in enumerate(InputLst):
 
                 else:
                     cols[c+1] += col
+
+                if r <= 2:
+
+                    if c <= 2:
+                        continue
+
+                    elif c <= 5:
+                        continue
+
+                    elif c <= 8:
+                        continue
+
+                elif r <= 5:
+
+                    if c <= 2:
+                        continue
+
+                    elif c <= 5:
+                        continue
+
+                    elif c <= 8:
+                        continue
+
+                elif r <= 8:
+
+                    if c <= 2:
+                        continue
+
+                    elif c <= 5:
+                        continue
+
+                    elif c <= 8:
+                        continue
 
     print("\n")
