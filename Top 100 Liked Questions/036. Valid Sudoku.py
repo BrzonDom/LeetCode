@@ -179,6 +179,9 @@ for csCnt, case in enumerate(InputLst):
                     elif c <= 8:
 
                         if 9 not in boxs:
-                            continue
+                            boxs[9] = col
+
+                        else:
+                            boxs[9] += col
 
     print("\n")
