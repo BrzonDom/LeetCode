@@ -78,5 +78,7 @@ InputLst = [[["5", "3", ".", ".", "7", ".", ".", ".", "."],
 
 for case in InputLst:
 
-    print(case)
+    for line in case:
+        print(f"\t{line}")
+
     print()
