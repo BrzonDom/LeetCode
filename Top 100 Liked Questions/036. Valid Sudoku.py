@@ -86,7 +86,7 @@ for csCnt, case in enumerate(InputLst):
     cols = {}
     boxs = {}
 
-    isValid = True
+    Valid = True
 
     for r, row in enumerate(case):
         print("\n\t\t", end="")
@@ -100,6 +100,9 @@ for csCnt, case in enumerate(InputLst):
                     rows[r+1] = col
 
                 else:
+                    if col in rows[r+1]:
+                        Valid = False
+
                     rows[r+1] += col
 
                 if (c+1) not in cols:
