@@ -91,16 +91,18 @@ for csCnt, case in enumerate(InputLst):
         for c, col in enumerate(row):
             print(col, end=" ")
 
-            if (r+1) not in rows:
-                rows[r+1] = col
+            if '1' <= col <= '9':
 
-            else:
-                rows[r+1] += col
+                if (r+1) not in rows:
+                    rows[r+1] = col
 
-            if (c+1) not in cols:
-                cols[c+1] = col
+                else:
+                    rows[r+1] += col
 
-            else:
-                cols[c+1] += col
+                if (c+1) not in cols:
+                    cols[c+1] = col
+
+                else:
+                    cols[c+1] += col
 
     print("\n")
