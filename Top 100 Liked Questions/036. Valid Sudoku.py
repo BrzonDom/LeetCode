@@ -82,10 +82,25 @@ for csCnt, case in enumerate(InputLst):
 
     print("\tSudoku:")
 
+    rows = {}
+    cols = {}
+
     for r, row in enumerate(case):
         print("\n\t\t", end="")
 
         for c, col in enumerate(row):
             print(col, end=" ")
+
+            if (r+1) not in rows:
+                rows[r+1] = col
+
+            else:
+                rows[r+1] += col
+
+            if (c+1) not in cols:
+                cols[c+1] = col
+
+            else:
+                cols[c+1] += col
 
     print("\n")
