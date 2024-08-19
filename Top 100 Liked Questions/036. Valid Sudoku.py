@@ -86,6 +86,8 @@ for csCnt, case in enumerate(InputLst):
     cols = {}
     boxs = {}
 
+    isValid = True
+
     for r, row in enumerate(case):
         print("\n\t\t", end="")
 
