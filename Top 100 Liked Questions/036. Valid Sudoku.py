@@ -96,14 +96,15 @@ for csCnt, case in enumerate(InputLst):
 
             if '1' <= col <= '9':
 
-                if (r+1) not in rows:
-                    rows[r+1] = col
+                if (r+1) in rows:
 
-                else:
                     if col in rows[r+1]:
                         Valid = False
 
                     rows[r+1] += col
+
+                else:
+                    rows[r + 1] = col
 
                 if (c+1) not in cols:
                     cols[c+1] = col
