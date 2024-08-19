@@ -76,9 +76,11 @@ InputLst = [[["5", "3", ".", ".", "7", ".", ".", ".", "."],
              [".", ".", ".", "4", "1", "9", ".", ".", "5"],
              [".", ".", ".", ".", "8", ".", ".", "7", "9"]]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     for line in case:
         print(f"\t{line}")
 
-    print()
+    print("\n")
