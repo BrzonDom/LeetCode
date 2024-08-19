@@ -88,11 +88,13 @@ for csCnt, case in enumerate(InputLst):
 
     Valid = True
 
-    for r, row in enumerate(case):
+    for row in case:
         print("\n\t\t", end="")
 
-        for c, col in enumerate(row):
+        for col in row:
             print(col, end=" ")
+
+    print("\n")
 
     for r, row in enumerate(case):
 
@@ -242,8 +244,6 @@ for csCnt, case in enumerate(InputLst):
 
                         else:
                             boxs[b] = col
-
-    print("\n")
 
     if Valid:
         print("\tSudoku is Valid")
