@@ -106,14 +106,15 @@ for csCnt, case in enumerate(InputLst):
                 else:
                     rows[r + 1] = col
 
-                if (c+1) not in cols:
-                    cols[c+1] = col
+                if (c+1) in cols:
 
-                else:
                     if col in cols[c+1]:
                         Valid = False
 
                     cols[c+1] += col
+
+                else:
+                    cols[c+1] = col
 
                 if r <= 2:
 
