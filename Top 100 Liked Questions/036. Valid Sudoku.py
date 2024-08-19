@@ -109,6 +109,9 @@ for csCnt, case in enumerate(InputLst):
                     cols[c+1] = col
 
                 else:
+                    if col in cols[c+1]:
+                        Valid = False
+
                     cols[c+1] += col
 
                 if r <= 2:
