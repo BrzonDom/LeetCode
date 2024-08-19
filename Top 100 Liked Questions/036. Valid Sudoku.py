@@ -134,6 +134,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -147,6 +149,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -160,6 +164,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -175,6 +181,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -188,6 +196,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -201,6 +211,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -216,6 +228,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -229,6 +243,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
@@ -242,6 +258,8 @@ for csCnt, case in enumerate(InputLst):
                         if b in boxs:
 
                             if col in boxs[b]:
+                                print("\t\tDuplicate at a sub-box")
+
                                 Valid = False
 
                             boxs[b] += col
