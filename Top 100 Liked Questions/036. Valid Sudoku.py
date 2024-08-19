@@ -179,13 +179,15 @@ for csCnt, case in enumerate(InputLst):
                             boxs[b] += col
 
                     elif c <= 8:
-
                         b = 6
 
                         if b not in boxs:
                             boxs[b] = col
 
                         else:
+                            if col in boxs[b]:
+                                Valid = False
+
                             boxs[b] += col
 
                 elif r <= 8:
