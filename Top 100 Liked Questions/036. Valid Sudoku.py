@@ -253,6 +253,8 @@ for csCnt, case in enumerate(InputLst):
         print("\tSudoku is Valid")
 
     else:
+        print()
+
         print("\tSudoku is Not Valid")
 
     print("\n")
