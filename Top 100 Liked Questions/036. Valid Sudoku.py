@@ -88,11 +88,8 @@ for csCnt, case in enumerate(InputLst):
 
     Valid = True
 
-    for row in case:
-        print("\n\t\t", end="")
-
-        for col in row:
-            print(col, end=" ")
+    for line in case:
+        print(f"\t\t{line}")
 
     print("\n")
 
