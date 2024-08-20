@@ -13,6 +13,7 @@ https://leetcode.com/problems/sudoku-solver/description/
 
     The '.' character indicates empty cells.
 
+
     Example 1:
 
         Input: board =
@@ -47,3 +48,19 @@ https://leetcode.com/problems/sudoku-solver/description/
         It is guaranteed that the input board has only one solution.
 
 """
+
+
+InputLst = [[["5","3",".",".","7",".",".",".","."],
+             ["6",".",".","1","9","5",".",".","."],
+             [".","9","8",".",".",".",".","6","."],
+             ["8",".",".",".","6",".",".",".","3"],
+             ["4",".",".","8",".","3",".",".","1"],
+             ["7",".",".",".","2",".",".",".","6"],
+             [".","6",".",".",".",".","2","8","."],
+             [".",".",".","4","1","9",".",".","5"],
+             [".",".",".",".","8",".",".","7","9"]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
