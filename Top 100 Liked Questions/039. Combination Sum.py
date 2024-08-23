@@ -79,4 +79,7 @@ for csCnt, case in enumerate(InputLst):
 
         Hlp01_CmbRcrs_Prt([nm], nm)
 
+    for cmb in Cmbs:
+        print(f"\t\t{cmb}")
+
     print("\n")
