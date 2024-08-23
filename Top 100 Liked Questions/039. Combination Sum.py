@@ -44,7 +44,7 @@ https://leetcode.com/problems/combination-sum/description/
 """
 
 
-def Hpl01_CmbRcrs_Prt(cmb, ttl):
+def Hlp01_CmbRcrs_Prt(cmb, ttl):
 
     return
 
