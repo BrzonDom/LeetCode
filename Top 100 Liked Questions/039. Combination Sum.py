@@ -46,7 +46,9 @@ https://leetcode.com/problems/combination-sum/description/
 
 def Hlp01_CmbRcrs_Prt(cmb, ttl):
 
-    return
+    if ttl == Trg:
+
+        Cmbs.append(cmb)
 
 
 InputLst = [[[2, 3, 6, 7], 7],
@@ -63,6 +65,8 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
     print()
+
+    Cmbs = []
 
     for nm in Cnds:
         print(f"\t\t{nm}")
