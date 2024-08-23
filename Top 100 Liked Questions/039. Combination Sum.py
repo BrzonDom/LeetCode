@@ -58,4 +58,7 @@ for csCnt, case in enumerate(InputLst):
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
 
+    for nm in Cnds:
+        print(f"\t{nm}")
+
     print("\n")
