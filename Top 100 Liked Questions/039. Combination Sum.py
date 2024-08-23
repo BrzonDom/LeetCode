@@ -41,3 +41,13 @@ https://leetcode.com/problems/combination-sum/description/
         All elements of candidates are distinct.
         1 <= target <= 40
 """
+
+
+InputLst = [[[2, 3, 6, 7], 7],
+            [[2, 3, 5], 8],
+            [[2], 1]]
+
+for case in InputLst:
+
+    print(case)
+    print()
