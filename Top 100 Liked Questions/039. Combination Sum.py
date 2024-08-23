@@ -50,9 +50,11 @@ def Hlp01_CmbRcrs_Prt(cmb, ttl):
 
         Cmbs.append(cmb)
 
-    elif ttl > Trg:
+    elif ttl < Trg:
 
-        return
+        for nm in Cnds:
+
+            print(f"\t\t{cmb + [nm]} = {ttl + nm}")
 
 
 InputLst = [[[2, 3, 6, 7], 7],
@@ -73,7 +75,7 @@ for csCnt, case in enumerate(InputLst):
     Cmbs = []
 
     for nm in Cnds:
-        print(f"\t\t{nm}")
+        # print(f"\t\t{nm}")
 
         Hlp01_CmbRcrs_Prt([nm], nm)
 
