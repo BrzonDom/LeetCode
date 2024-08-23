@@ -54,7 +54,7 @@ def Hlp01_CmbRcrs_Prt(cmb, ttl):
 
         for nm in Cnds:
 
-            print(f"\t\t{cmb + [nm]} = {ttl + nm}")
+            Hlp01_CmbRcrs_Prt(cmb + [nm], ttl + nm)
 
 
 InputLst = [[[2, 3, 6, 7], 7],
