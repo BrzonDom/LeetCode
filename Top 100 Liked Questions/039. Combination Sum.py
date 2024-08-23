@@ -79,6 +79,8 @@ for csCnt, case in enumerate(InputLst):
 
         Hlp01_CmbRcrs_Prt([nm], nm)
 
+    print("\tCombinations:")
+
     for cmb in Cmbs:
         print(f"\t\t{cmb}")
 
