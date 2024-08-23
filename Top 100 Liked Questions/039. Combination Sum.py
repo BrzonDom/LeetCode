@@ -44,6 +44,11 @@ https://leetcode.com/problems/combination-sum/description/
 """
 
 
+def Hpl01_CmbRcrs_Prt():
+
+    return
+
+
 InputLst = [[[2, 3, 6, 7], 7],
             [[2, 3, 5], 8],
             [[2], 1]]
