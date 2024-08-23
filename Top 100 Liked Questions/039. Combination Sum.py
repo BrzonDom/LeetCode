@@ -52,7 +52,7 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt + 1}.Case\n")
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+    print(f"\tCandidates: {case[0]}")
+    print(f"\tTarget:      {case[1]}")
 
     print("\n")
