@@ -50,6 +50,10 @@ def Hlp01_CmbRcrs_Prt(cmb, ttl):
 
         Cmbs.append(cmb)
 
+    elif ttl > Trg:
+
+        return
+
 
 InputLst = [[[2, 3, 6, 7], 7],
             [[2, 3, 5], 8],
