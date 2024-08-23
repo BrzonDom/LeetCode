@@ -67,4 +67,6 @@ for csCnt, case in enumerate(InputLst):
     for nm in Cnds:
         print(f"\t\t{nm}")
 
+        Hlp01_CmbRcrs_Prt([nm], nm)
+
     print("\n")
