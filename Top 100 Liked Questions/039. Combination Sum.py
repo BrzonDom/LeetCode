@@ -15,8 +15,8 @@ https://leetcode.com/problems/combination-sum/description/
 
     Example 1:
 
-        Input: candidates = [2,3,6,7], target = 7
-        Output: [[2,2,3],[7]]
+        Input: candidates = [2, 3, 6, 7], target = 7
+        Output: [[2, 2, 3], [7]]
 
         Explanation:
             2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
@@ -25,8 +25,8 @@ https://leetcode.com/problems/combination-sum/description/
 
     Example 2:
 
-        Input: candidates = [2,3,5], target = 8
-        Output: [[2,2,2,2],[2,3,3],[3,5]]
+        Input: candidates = [2, 3, 5], target = 8
+        Output: [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
 
     Example 3:
 
@@ -40,6 +40,7 @@ https://leetcode.com/problems/combination-sum/description/
         2 <= candidates[i] <= 40
         All elements of candidates are distinct.
         1 <= target <= 40
+
 """
 
 
