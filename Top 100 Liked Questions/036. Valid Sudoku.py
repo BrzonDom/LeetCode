@@ -114,13 +114,6 @@ def Prt01_ShwBrd(Brd, nSpc=2):
 
 def Slt01_RwClBxCss_Prt(Brd):
 
-    print("\tSudoku:")
-
-    for line in Brd:
-        print(f"\t\t{line}")
-
-    print("\n")
-
     rows = {}
     cols = {}
     boxs = {}
