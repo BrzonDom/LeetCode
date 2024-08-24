@@ -76,6 +76,8 @@ def Hlp01_CnvBrd(Brd):
 
         print()
 
+    return Brd, BrdNm
+
 
 def Prt01_ShwBrd(Brd):
 
