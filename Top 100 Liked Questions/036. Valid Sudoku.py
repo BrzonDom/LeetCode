@@ -61,7 +61,7 @@ def Prt01_ShwBrd(Brd):
 
     print("\tSudoku:")
 
-    print("\t\t┼───┼───┼───┼───┼───┼───┼───┼───┼───┼")
+    print("\t\t╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
 
     for l, ln in enumerate(Brd):
         print("\t\t", end="║")
