@@ -59,6 +59,10 @@ def Hlp01_CmbRcrs(cmb, ttl):
 
 def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
+    if ttl == Trg:
+
+        Cmbs.append(cmb)
+
     return
 
 
