@@ -327,6 +327,16 @@ if __name__ == "__main__":
 
         Brd, BrdNm = Prt01_ShwBrd(case)
 
+        print()
+
+        for line in Brd:
+            print(f"\t\t\t{line}")
+
+        print()
+
+        for line in BrdNm:
+            print(f"\t\t\t{line}")
+
         # Slt01_RwClBxCss_Prt(case)
 
         print("\n")
