@@ -158,7 +158,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -173,7 +173,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -188,7 +188,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -205,7 +205,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -220,7 +220,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -235,7 +235,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -252,7 +252,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -267,7 +267,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
@@ -282,7 +282,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                         if b in boxs:
 
                             if col in boxs[b]:
-                                print(f"\t\tDuplicate at the {b}. Sub-Box")
+                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
 
                                 Valid = False
 
