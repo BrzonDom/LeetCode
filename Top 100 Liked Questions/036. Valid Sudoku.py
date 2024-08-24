@@ -57,6 +57,10 @@ https://leetcode.com/problems/valid-sudoku/description/
 """
 
 
+def Slt01_RwClBxCss_Prt():
+
+    return
+
 
 if __name__ == "__main__":
 
