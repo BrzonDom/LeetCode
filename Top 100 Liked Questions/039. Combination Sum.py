@@ -65,38 +65,40 @@ def Hlp01_SrtdCmbRcrs_Prt(cmb, ttl):
             Hlp01_SrtdCmbRcrs_Prt(nCmb, nTtl)
 
 
-InputLst = [[[2, 3, 6, 7], 7],
-            [[2, 3, 5], 8],
-            [[2], 1]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[2, 3, 6, 7], 7],
+                [[2, 3, 5], 8],
+                [[2], 1]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Cnds = case[0]
-    Trg = case[1]
+        print(f"{csCnt + 1}.Case\n")
 
-    print(f"\tCandidates: {Cnds}")
-    print(f"\tTarget:      {Trg}")
-    print()
+        Cnds = case[0]
+        Trg = case[1]
 
-    Cmbs = []
+        print(f"\tCandidates: {Cnds}")
+        print(f"\tTarget:      {Trg}")
+        print()
 
-    print("\t\tAll viable combination:")
+        Cmbs = []
 
-    for nm in Cnds:
+        print("\t\tAll viable combination:")
 
-        Hlp01_SrtdCmbRcrs_Prt([nm], nm)
+        for nm in Cnds:
 
-    print()
+            Hlp01_SrtdCmbRcrs_Prt([nm], nm)
 
-    if Cmbs:
-        print("\tCombinations:")
+        print()
 
-        for c, cmb in enumerate(Cmbs):
-            print(f"\t\t{c+1}. {cmb}")
+        if Cmbs:
+            print("\tCombinations:")
 
-    else:
-        print("\tNo Combinations found")
+            for c, cmb in enumerate(Cmbs):
+                print(f"\t\t{c+1}. {cmb}")
 
-    print("\n")
+        else:
+            print("\tNo Combinations found")
+
+        print("\n")
