@@ -70,7 +70,7 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
             nCmb = cmb + [nm]
             nTtl = ttl + nm
 
-            print(f"\t\t{cmb + [nm]} = {ttl + nm}")
+            print(f"\t\t{nCmb} = {nTtl}")
 
 
 InputLst = [[[2, 3, 6, 7], 7],
