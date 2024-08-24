@@ -59,6 +59,11 @@ https://leetcode.com/problems/valid-sudoku/description/
 
 def Prt01_ShwBrd():
 
+    print("\tSudoku:")
+
+    for line in Brd:
+        print(f"\t\t{line}")
+
     return
 
 
