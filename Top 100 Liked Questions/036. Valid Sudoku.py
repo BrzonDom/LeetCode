@@ -69,10 +69,12 @@ def Prt01_ShwBrd(Brd):
         for n, nm in enumerate(ln):
 
             if nm == '.':
-                print("   ", end="│")
+                print("   ", end="")
 
             else:
-                print(f" {nm} ", end="│")
+                print(f" {nm} ", end="")
+
+            print("│", end="")
         print()
 
         print("\t\t┼───┼───┼───┼───┼───┼───┼───┼───┼───┼")
