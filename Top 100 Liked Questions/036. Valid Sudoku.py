@@ -87,9 +87,11 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
+        Brd = case
+
         print("\tSudoku:")
 
-        for line in case:
+        for line in Brd:
             print(f"\t\t{line}")
 
         print("\n")
