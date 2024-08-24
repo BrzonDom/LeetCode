@@ -74,13 +74,14 @@ def Prt01_ShwBrd(Brd):
             else:
                 print(f" {nm} ", end="")
 
-            if n == 2 or n == 5 or n == 8:
+            if n == 2 or n == 5:
                 print("║", end="")
+
+            elif n == 8:
+                print("║")
 
             else:
                 print("│", end="")
-
-        print()
 
         if l == 2 or l == 5:
             print("\t\t╠═══╪═══╪═══╬═══╪═══╪═══╬═══╪═══╪═══╣")
