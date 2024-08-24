@@ -76,10 +76,12 @@ def Hlp01_CnvBrd(Brd):
 
 def Prt01_ShwBrd(Brd):
 
-    print("\t\t╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
+    spc = "\t\t"
+
+    print(f"{spc}╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
 
     for r, ln in enumerate(Brd):
-        print("\t\t", end="║")
+        print(f"{spc}", end="║")
 
         for c, nm in enumerate(ln):
 
@@ -99,13 +101,13 @@ def Prt01_ShwBrd(Brd):
                 print("│", end="")
 
         if r == 2 or r == 5:
-            print("\t\t╠═══╪═══╪═══╬═══╪═══╪═══╬═══╪═══╪═══╣")
+            print(f"{spc}╠═══╪═══╪═══╬═══╪═══╪═══╬═══╪═══╪═══╣")
 
         elif r == 8:
-            print("\t\t╚═══╧═══╧═══╩═══╧═══╧═══╩═══╧═══╧═══╝")
+            print(f"{spc}╚═══╧═══╧═══╩═══╧═══╧═══╩═══╧═══╧═══╝")
 
         else:
-            print("\t\t╟───┼───┼───╫───┼───┼───╫───┼───┼───╢")
+            print(f"{spc}╟───┼───┼───╫───┼───┼───╫───┼───┼───╢")
 
 
 def Slt01_RwClBxCss_Prt(Brd):
