@@ -67,6 +67,9 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
         for nm in Cnds:
 
+            nCmb = cmb + [nm]
+            nTtl = ttl + nm
+
             print(f"\t\t{cmb + [nm]} = {ttl + nm}")
 
 
