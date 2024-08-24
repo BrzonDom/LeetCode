@@ -57,9 +57,12 @@ https://leetcode.com/problems/valid-sudoku/description/
 """
 
 
-def Hlp01_CnvBrd():
+def Hlp01_CnvBrd(Brd):
 
-    return
+    for ln in Brd:
+        for nm in ln:
+            print(nm, end=" ")
+        print()
 
 
 def Prt01_ShwBrd(Brd):
@@ -330,7 +333,9 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Brd, BrdNm = Prt01_ShwBrd(case)
+        # Brd, BrdNm = Prt01_ShwBrd(case)
+
+        Hlp01_CnvBrd(case)
 
         # Slt01_RwClBxCss_Prt(case)
 
