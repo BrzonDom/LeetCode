@@ -85,4 +85,7 @@ for csCnt, case in enumerate(InputLst):
         for cmb in Cmbs:
             print(f"\t\t{cmb}")
 
+    else:
+        print("\tNo Combinations found")
+
     print("\n")
