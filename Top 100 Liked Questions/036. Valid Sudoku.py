@@ -74,9 +74,9 @@ def Hlp01_CnvBrd(Brd):
     return Brd, BrdNm
 
 
-def Prt01_ShwBrd(Brd):
+def Prt01_ShwBrd(Brd, nSpc=2):
 
-    spc = "\t\t"
+    spc = nSpc * '\t'
 
     print(f"{spc}╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
 
