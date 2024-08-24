@@ -76,8 +76,6 @@ def Hlp01_CnvBrd(Brd):
 
 def Prt01_ShwBrd(Brd):
 
-    BrdNm = [[0 for c in range(9)] for r in range(9)]
-
     print("\tSudoku:")
 
     print("\t\t╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
@@ -90,12 +88,8 @@ def Prt01_ShwBrd(Brd):
             if nm in ['.', ' ', 0]:
                 print("   ", end="")
 
-                Brd[r][c] = " "
-
             else:
                 print(f" {nm} ", end="")
-
-                BrdNm[r][c] = int(nm)
 
             if c == 2 or c == 5:
                 print("║", end="")
@@ -114,8 +108,6 @@ def Prt01_ShwBrd(Brd):
 
         else:
             print("\t\t╟───┼───┼───╫───┼───┼───╫───┼───┼───╢")
-
-    return Brd, BrdNm
 
 
 def Slt01_RwClBxCss_Prt(Brd):
@@ -344,7 +336,7 @@ if __name__ == "__main__":
 
         Brd, BrdNm = Hlp01_CnvBrd(case)
 
-        Prt01_ShwBrd(Brd)
+        Prt01_ShwBrd(BrdNm)
 
         # Slt01_RwClBxCss_Prt(case)
 
