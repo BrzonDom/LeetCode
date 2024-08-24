@@ -57,6 +57,11 @@ https://leetcode.com/problems/valid-sudoku/description/
 """
 
 
+def Prt01_ShwBrd():
+
+    return
+
+
 def Slt01_RwClBxCss_Prt(Brd):
 
     print("\tSudoku:")
