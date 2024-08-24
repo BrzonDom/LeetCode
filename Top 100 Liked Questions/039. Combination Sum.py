@@ -87,8 +87,12 @@ for csCnt, case in enumerate(InputLst):
 
     Cmbs = []
 
+    # for nm in Cnds:
+    #     Hlp01_CmbRcrs([nm], nm)
+
     for nm in Cnds:
-        Hlp01_CmbRcrs([nm], nm)
+
+        Brt01_SrtCmbRcrs_Prt([nm], nm)
 
     if Cmbs:
         print("\tCombinations:")
