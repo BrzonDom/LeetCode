@@ -71,6 +71,8 @@ def Prt01_ShwBrd(Brd):
             if nm == '.':
                 print("   ", end="")
 
+                Brd[l][n] = " "
+
             else:
                 print(f" {nm} ", end="")
 
