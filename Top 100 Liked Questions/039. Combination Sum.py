@@ -80,8 +80,6 @@ for csCnt, case in enumerate(InputLst):
     Cmbs = []
 
     for nm in Cnds:
-        # print(f"\t\t{nm}")
-
         Hlp01_CmbRcrs([nm], nm)
 
     if Cmbs:
