@@ -70,7 +70,7 @@ def Prt01_ShwBrd(Brd):
 
         for n, nm in enumerate(ln):
 
-            if nm == '.':
+            if nm in ['.', ' ', 0]:
                 print("   ", end="")
 
                 Brd[l][n] = " "
