@@ -63,10 +63,10 @@ def Prt01_ShwBrd(Brd):
 
     print("\t\t+---+---+---+---+---+---+---+---+---+")
 
-    for ln in Brd:
+    for l, ln in enumerate(Brd):
         print("\t\t", end="|")
 
-        for nm in ln:
+        for n, nm in enumerate(ln):
 
             if nm == '.':
                 print("   ", end="|")
