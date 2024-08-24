@@ -59,11 +59,11 @@ https://leetcode.com/problems/valid-sudoku/description/
 
 def Hlp01_CnvBrd(Brd):
 
-    for ln in Brd:
+    for l, ln in enumerate(Brd):
         print("\t\t", end="")
 
-        for nm in ln:
-            print(nm, end=" ")
+        for n, nm in enumerate(ln):
+            print(Brd[l][n], end=" ")
 
         print()
 
