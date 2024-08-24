@@ -61,18 +61,18 @@ def Hlp01_CnvBrd(Brd):
 
     BrdNm = [[0 for c in range(9)] for r in range(9)]
 
-    for l, ln in enumerate(Brd):
+    for r, ln in enumerate(Brd):
         print("\t\t", end="")
 
-        for n, nm in enumerate(ln):
+        for c, nm in enumerate(ln):
 
             if nm == '.':
-                Brd[l][n] = ' '
+                Brd[r][c] = ' '
 
             else:
-                Brd[l][n] = int(nm)
+                Brd[r][c] = int(nm)
 
-            print(Brd[l][n], end=" ")
+            print(Brd[r][c], end=" ")
 
         print()
 
@@ -85,34 +85,34 @@ def Prt01_ShwBrd(Brd):
 
     print("\t\t╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
 
-    for l, ln in enumerate(Brd):
+    for r, ln in enumerate(Brd):
         print("\t\t", end="║")
 
-        for n, nm in enumerate(ln):
+        for c, nm in enumerate(ln):
 
             if nm in ['.', ' ', 0]:
                 print("   ", end="")
 
-                Brd[l][n] = " "
+                Brd[r][c] = " "
 
             else:
                 print(f" {nm} ", end="")
 
-                BrdNm[l][n] = int(nm)
+                BrdNm[r][c] = int(nm)
 
-            if n == 2 or n == 5:
+            if c == 2 or c == 5:
                 print("║", end="")
 
-            elif n == 8:
+            elif c == 8:
                 print("║")
 
             else:
                 print("│", end="")
 
-        if l == 2 or l == 5:
+        if r == 2 or r == 5:
             print("\t\t╠═══╪═══╪═══╬═══╪═══╪═══╬═══╪═══╪═══╣")
 
-        elif l == 8:
+        elif r == 8:
             print("\t\t╚═══╧═══╧═══╩═══╧═══╧═══╩═══╧═══╧═══╝")
 
         else:
