@@ -119,30 +119,32 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Cnds = case[0]
-        Trg = case[1]
+        Slt01_SrtdCmbFnc_Prt(case[0], case[1])
 
-        print(f"\tCandidates: {Cnds}")
-        print(f"\tTarget:      {Trg}")
-        print()
-
-        Cmbs = []
-
-        print("\t\tAll viable combination:")
-
-        for nm in Cnds:
-
-            Hlp01_SrtdCmbRcrs_Prt([nm], nm)
-
-        print()
-
-        if Cmbs:
-            print("\tCombinations:")
-
-            for c, cmb in enumerate(Cmbs):
-                print(f"\t\t{c+1}. {cmb}")
-
-        else:
-            print("\tNo Combinations found")
+        # Cnds = case[0]
+        # Trg = case[1]
+        #
+        # print(f"\tCandidates: {Cnds}")
+        # print(f"\tTarget:      {Trg}")
+        # print()
+        #
+        # Cmbs = []
+        #
+        # print("\t\tAll viable combination:")
+        #
+        # for nm in Cnds:
+        #
+        #     Hlp01_SrtdCmbRcrs_Prt([nm], nm)
+        #
+        # print()
+        #
+        # if Cmbs:
+        #     print("\tCombinations:")
+        #
+        #     for c, cmb in enumerate(Cmbs):
+        #         print(f"\t\t{c+1}. {cmb}")
+        #
+        # else:
+        #     print("\tNo Combinations found")
 
         print("\n")
