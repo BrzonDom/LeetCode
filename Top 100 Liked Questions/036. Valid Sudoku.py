@@ -325,7 +325,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Prt01_ShwBrd(case)
+        Brd, BrdNm = Prt01_ShwBrd(case)
 
         # Slt01_RwClBxCss_Prt(case)
 
