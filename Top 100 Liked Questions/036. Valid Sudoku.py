@@ -65,7 +65,11 @@ def Prt01_ShwBrd(Brd):
         print("\t\t", end="")
 
         for nm in line:
-            print(nm, end=" ")
+            if nm == '.':
+                print(" ", end=" ")
+
+            else:
+                print(nm, end=" ")
         print()
 
 
