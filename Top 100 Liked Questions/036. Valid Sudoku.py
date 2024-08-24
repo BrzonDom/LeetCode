@@ -70,7 +70,7 @@ def Hlp01_CnvBrd(Brd):
                 Brd[r][c] = ' '
 
             else:
-                Brd[r][c] = int(nm)
+                BrdNm[r][c] = int(nm)
 
             print(Brd[r][c], end=" ")
 
