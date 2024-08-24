@@ -94,6 +94,8 @@ for csCnt, case in enumerate(InputLst):
 
         Brt01_SrtCmbRcrs_Prt([nm], nm)
 
+    print()
+
     if Cmbs:
         print("\tCombinations:")
 
