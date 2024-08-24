@@ -57,6 +57,11 @@ def Hlp01_CmbRcrs_Prt(cmb, ttl):
             Hlp01_CmbRcrs_Prt(cmb + [nm], ttl + nm)
 
 
+def Brt01_SrtCmbRcrs_Prt():
+
+    return
+
+
 InputLst = [[[2, 3, 6, 7], 7],
             [[2, 3, 5], 8],
             [[2], 1]]
