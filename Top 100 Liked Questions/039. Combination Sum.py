@@ -60,17 +60,17 @@ def Hlp01_CmbRcrs(cmb, ttl):
 def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
     if ttl == Trg:
+        print(f"\t\t{cmb} = {ttl}")
 
         Cmbs.append(cmb)
 
     elif ttl < Trg:
+        print(f"\t\t{cmb} = {ttl}")
 
         for nm in Cnds:
 
             nCmb = cmb + [nm]
             nTtl = ttl + nm
-
-            print(f"\t\t{nCmb} = {nTtl}")
 
 
 InputLst = [[[2, 3, 6, 7], 7],
