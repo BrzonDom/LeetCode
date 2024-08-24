@@ -94,6 +94,8 @@ def Prt01_ShwBrd(Brd):
         else:
             print("\t\t╟───┼───┼───╫───┼───┼───╫───┼───┼───╢")
 
+    return Brd
+
 
 def Slt01_RwClBxCss_Prt(Brd):
 
