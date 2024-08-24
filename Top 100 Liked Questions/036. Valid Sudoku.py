@@ -76,8 +76,6 @@ def Hlp01_CnvBrd(Brd):
 
 def Prt01_ShwBrd(Brd):
 
-    print("\tSudoku:")
-
     print("\t\t╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
 
     for r, ln in enumerate(Brd):
@@ -336,7 +334,7 @@ if __name__ == "__main__":
 
         Brd, BrdNm = Hlp01_CnvBrd(case)
 
-        Prt01_ShwBrd(BrdNm)
+        Prt01_ShwBrd(Brd)
 
         # Slt01_RwClBxCss_Prt(case)
 
