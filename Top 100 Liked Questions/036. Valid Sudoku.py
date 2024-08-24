@@ -63,6 +63,10 @@ def Hlp01_CnvBrd(Brd):
         print("\t\t", end="")
 
         for n, nm in enumerate(ln):
+
+            if nm == '.':
+                Brd[l][n] = ' '
+
             print(Brd[l][n], end=" ")
 
         print()
