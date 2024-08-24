@@ -327,28 +327,6 @@ if __name__ == "__main__":
 
         Brd, BrdNm = Prt01_ShwBrd(case)
 
-        print()
-
-        print("\t\tCharacter Board:")
-        for line in Brd:
-            print("\t\t\t", end="")
-
-            for chr in line:
-                print(chr, end=" ")
-
-            print()
-
-        print()
-
-        print("\t\tNumber Board:")
-        for line in BrdNm:
-            print("\t\t\t", end="")
-
-            for nm in line:
-                print(nm, end=" ")
-
-            print()
-
         # Slt01_RwClBxCss_Prt(case)
 
         print("\n")
