@@ -84,8 +84,12 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         for c, cmb in enumerate(Cmbs):
             print(f"\t\t{c + 1}. {cmb}")
 
+        return Cmbs
+
     else:
         print("\tNo Combinations found")
+
+        return Cmbs
 
 
 if __name__ == "__main__":
