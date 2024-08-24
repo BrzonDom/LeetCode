@@ -64,7 +64,8 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt+1}.Case\n")
 
+    print(f"\tSet Board:")
     for line in case:
-        print(f"\t{line}")
+        print(f"\t\t{line}")
 
     print("\n")
