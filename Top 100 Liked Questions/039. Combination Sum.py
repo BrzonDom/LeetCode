@@ -44,19 +44,6 @@ https://leetcode.com/problems/combination-sum/description/
 """
 
 
-def Hlp01_CmbRcrs(cmb, ttl):
-
-    if ttl == Trg:
-
-        Cmbs.append(cmb)
-
-    elif ttl < Trg:
-
-        for nm in Cnds:
-
-            Hlp01_CmbRcrs(cmb + [nm], ttl + nm)
-
-
 def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
     if ttl == Trg:
@@ -94,9 +81,6 @@ for csCnt, case in enumerate(InputLst):
     print()
 
     Cmbs = []
-
-    # for nm in Cnds:
-    #     Hlp01_CmbRcrs([nm], nm)
 
     print("\t\tAll viable combination:")
 
