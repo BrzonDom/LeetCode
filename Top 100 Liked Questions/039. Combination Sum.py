@@ -86,7 +86,27 @@ def Slt01_SrtdCmbFnc_Prt():
 
                 Hlp01_SrtdCmbRcrs_Prt(nCmb, nTtl)
 
-    return
+    print(f"\tCandidates: {Cnds}")
+    print(f"\tTarget:      {Trg}")
+    print()
+
+    Cmbs = []
+
+    print("\t\tAll viable combination:")
+
+    for nm in Cnds:
+        Hlp01_SrtdCmbRcrs_Prt([nm], nm)
+
+    print()
+
+    if Cmbs:
+        print("\tCombinations:")
+
+        for c, cmb in enumerate(Cmbs):
+            print(f"\t\t{c + 1}. {cmb}")
+
+    else:
+        print("\tNo Combinations found")
 
 
 if __name__ == "__main__":
