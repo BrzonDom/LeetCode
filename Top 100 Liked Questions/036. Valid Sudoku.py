@@ -343,6 +343,6 @@ if __name__ == "__main__":
 
         Prt01_ShwBrd(Brd)
 
-        # Slt01_RwClBxCss_Prt(case)
+        Slt01_RwClBxCss_Prt(case)
 
         print("\n")
