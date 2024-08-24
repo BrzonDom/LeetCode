@@ -63,7 +63,9 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
         Cmbs.append(cmb)
 
-    return
+    elif ttl > Trg:
+
+        return
 
 
 InputLst = [[[2, 3, 6, 7], 7],
