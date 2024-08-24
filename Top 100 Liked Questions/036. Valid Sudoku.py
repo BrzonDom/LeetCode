@@ -57,14 +57,12 @@ https://leetcode.com/problems/valid-sudoku/description/
 """
 
 
-def Prt01_ShwBrd():
+def Prt01_ShwBrd(Brd):
 
     print("\tSudoku:")
 
     for line in Brd:
         print(f"\t\t{line}")
-
-    return
 
 
 def Slt01_RwClBxCss_Prt(Brd):
