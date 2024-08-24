@@ -62,7 +62,10 @@ def Prt01_ShwBrd(Brd):
     print("\tSudoku:")
 
     for line in Brd:
-        print(f"\t\t{line}")
+        for nm in line:
+
+            print(nm, end=" ")
+        print()
 
 
 def Slt01_RwClBxCss_Prt(Brd):
