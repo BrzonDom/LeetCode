@@ -72,6 +72,8 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
             nCmb = cmb + [nm]
             nTtl = ttl + nm
 
+            Brt01_SrtCmbRcrs_Prt(nCmb, nTtl)
+
 
 InputLst = [[[2, 3, 6, 7], 7],
             [[2, 3, 5], 8],
