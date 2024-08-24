@@ -59,6 +59,8 @@ https://leetcode.com/problems/valid-sudoku/description/
 
 def Hlp01_CnvBrd(Brd):
 
+    BrdNm = [[0 for c in range(9)] for r in range(9)]
+
     for l, ln in enumerate(Brd):
         print("\t\t", end="")
 
@@ -66,6 +68,9 @@ def Hlp01_CnvBrd(Brd):
 
             if nm == '.':
                 Brd[l][n] = ' '
+
+            else:
+                Brd[l][n] = int(nm)
 
             print(Brd[l][n], end=" ")
 
