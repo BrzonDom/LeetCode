@@ -329,11 +329,13 @@ if __name__ == "__main__":
 
         print()
 
+        print("\t\tCharacter Board:")
         for line in Brd:
             print(f"\t\t\t{line}")
 
         print()
 
+        print("\t\tNumber Board:")
         for line in BrdNm:
             print(f"\t\t\t{line}")
 
