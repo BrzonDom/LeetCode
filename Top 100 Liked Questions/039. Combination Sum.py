@@ -62,7 +62,10 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
     if ttl == Trg:
         print(f"\t\t{cmb} = {ttl}")
 
-        Cmbs.append(cmb)
+        cmb.sort()
+
+        if cmb not in Cmbs:
+            Cmbs.append(cmb)
 
     elif ttl < Trg:
         print(f"\t\t{cmb} = {ttl}")
