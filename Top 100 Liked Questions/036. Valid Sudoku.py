@@ -74,7 +74,7 @@ def Prt01_ShwBrd(Brd):
                 print(f" {nm} ", end="|")
         print()
 
-    print("\t\t+---+---+---+---+---+---+---+---+---+")
+        print("\t\t+---+---+---+---+---+---+---+---+---+")
 
 
 def Slt01_RwClBxCss_Prt(Brd):
