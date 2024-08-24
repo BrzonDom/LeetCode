@@ -62,7 +62,6 @@ def Hlp01_CnvBrd(Brd):
     BrdNm = [[0 for c in range(9)] for r in range(9)]
 
     for r, ln in enumerate(Brd):
-        print("\t\t", end="")
 
         for c, nm in enumerate(ln):
 
@@ -71,10 +70,6 @@ def Hlp01_CnvBrd(Brd):
 
             else:
                 BrdNm[r][c] = int(nm)
-
-            print(Brd[r][c], end=" ")
-
-        print()
 
     return Brd, BrdNm
 
