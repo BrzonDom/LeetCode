@@ -59,6 +59,8 @@ https://leetcode.com/problems/valid-sudoku/description/
 
 def Prt01_ShwBrd(Brd):
 
+    BrdNm = [[0 for c in range(9)] for r in range(9)]
+
     print("\tSudoku:")
 
     print("\t\t╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
