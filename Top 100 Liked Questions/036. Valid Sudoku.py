@@ -57,7 +57,7 @@ https://leetcode.com/problems/valid-sudoku/description/
 """
 
 
-def Slt01_RwClBxCss_Prt():
+def Slt01_RwClBxCss_Prt(Brd):
 
     print("\tSudoku:")
 
@@ -250,8 +250,6 @@ def Slt01_RwClBxCss_Prt():
         print()
 
         print("\tSudoku is Not Valid")
-
-    return
 
 
 if __name__ == "__main__":
