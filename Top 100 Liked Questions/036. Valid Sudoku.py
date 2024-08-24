@@ -74,7 +74,7 @@ def Prt01_ShwBrd(Brd):
             else:
                 print(f" {nm} ", end="")
 
-            if ((n+1) % 3) == 0:
+            if n == 2 or n == 5 or n == 8:
                 print("║", end="")
 
             else:
@@ -82,7 +82,7 @@ def Prt01_ShwBrd(Brd):
 
         print()
 
-        if ((l+1) % 3) == 0:
+        if l == 2 or l == 5:
             print("\t\t╠═══╪═══╪═══╬═══╪═══╪═══╬═══╪═══╪═══╣")
 
         else:
