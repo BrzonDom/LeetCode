@@ -61,21 +61,21 @@ def Prt01_ShwBrd(Brd):
 
     print("\tSudoku:")
 
-    print("\t\t+---+---+---+---+---+---+---+---+---+")
+    print("\t\t┼───┼───┼───┼───┼───┼───┼───┼───┼───┼")
 
     for l, ln in enumerate(Brd):
-        print("\t\t", end="|")
+        print("\t\t", end="│")
 
         for n, nm in enumerate(ln):
 
             if nm == '.':
-                print("   ", end="|")
+                print("   ", end="│")
 
             else:
-                print(f" {nm} ", end="|")
+                print(f" {nm} ", end="│")
         print()
 
-        print("\t\t+---+---+---+---+---+---+---+---+---+")
+        print("\t\t┼───┼───┼───┼───┼───┼───┼───┼───┼───┼")
 
 
 def Slt01_RwClBxCss_Prt(Brd):
