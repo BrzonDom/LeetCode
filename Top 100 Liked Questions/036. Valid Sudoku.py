@@ -342,7 +342,12 @@ if __name__ == "__main__":
 
         print("\t\tNumber Board:")
         for line in BrdNm:
-            print(f"\t\t\t{line}")
+            print("\t\t\t", end="")
+
+            for nm in line:
+                print(nm, end=" ")
+
+            print()
 
         # Slt01_RwClBxCss_Prt(case)
 
