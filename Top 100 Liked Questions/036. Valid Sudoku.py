@@ -129,7 +129,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                 if (r + 1) in rows:
 
                     if nm in rows[r + 1]:
-                        print(f"\t\tDuplicate of {nm} at a {r + 1} row")
+                        print(f"\t\tDuplicate of {nm} at the {r + 1}. Row")
 
                         Valid = False
 
@@ -141,7 +141,7 @@ def Slt01_RwClBxCss_Prt(Brd):
                 if (c + 1) in cols:
 
                     if nm in cols[c + 1]:
-                        print(f"\t\tDuplicate of {nm} at a {c + 1} column")
+                        print(f"\t\tDuplicate of {nm} at the {c + 1}. Column")
 
                         Valid = False
 
