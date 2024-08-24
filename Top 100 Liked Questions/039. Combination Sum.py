@@ -79,9 +79,10 @@ for csCnt, case in enumerate(InputLst):
 
         Hlp01_CmbRcrs_Prt([nm], nm)
 
-    print("\tCombinations:")
+    if Cmbs:
+        print("\tCombinations:")
 
-    for cmb in Cmbs:
-        print(f"\t\t{cmb}")
+        for cmb in Cmbs:
+            print(f"\t\t{cmb}")
 
     print("\n")
