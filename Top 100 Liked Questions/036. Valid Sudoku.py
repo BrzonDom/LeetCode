@@ -74,7 +74,12 @@ def Prt01_ShwBrd(Brd):
             else:
                 print(f" {nm} ", end="")
 
-            print("│", end="")
+            if ((n+1) % 3) == 0:
+                print("║", end="")
+
+            else:
+                print("│", end="")
+
         print()
 
         print("\t\t┼───┼───┼───┼───┼───┼───┼───┼───┼───┼")
