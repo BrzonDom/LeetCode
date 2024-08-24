@@ -78,6 +78,8 @@ def Prt01_ShwBrd(Brd):
             else:
                 print(f" {nm} ", end="")
 
+                BrdNm[l][n] = int(nm)
+
             if n == 2 or n == 5:
                 print("║", end="")
 
@@ -96,7 +98,7 @@ def Prt01_ShwBrd(Brd):
         else:
             print("\t\t╟───┼───┼───╫───┼───┼───╫───┼───┼───╢")
 
-    return Brd
+    return Brd, BrdNm
 
 
 def Slt01_RwClBxCss_Prt(Brd):
