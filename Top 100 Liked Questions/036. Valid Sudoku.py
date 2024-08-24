@@ -246,10 +246,14 @@ def Slt01_RwClBxCss_Prt(Brd):
     if Valid:
         print("\tSudoku is Valid")
 
+        return True
+
     else:
         print()
 
         print("\tSudoku is Not Valid")
+
+        return False
 
 
 if __name__ == "__main__":
