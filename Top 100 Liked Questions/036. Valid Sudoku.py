@@ -57,219 +57,222 @@ https://leetcode.com/problems/valid-sudoku/description/
 """
 
 
-InputLst = [[["5", "3", ".", ".", "7", ".", ".", ".", "."],
-             ["6", ".", ".", "1", "9", "5", ".", ".", "."],
-             [".", "9", "8", ".", ".", ".", ".", "6", "."],
-             ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
-             ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
-             ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
-             [".", "6", ".", ".", ".", ".", "2", "8", "."],
-             [".", ".", ".", "4", "1", "9", ".", ".", "5"],
-             [".", ".", ".", ".", "8", ".", ".", "7", "9"]],
-            [["8", "3", ".", ".", "7", ".", ".", ".", "."],
-             ["6", ".", ".", "1", "9", "5", ".", ".", "."],
-             [".", "9", "8", ".", ".", ".", ".", "6", "."],
-             ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
-             ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
-             ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
-             [".", "6", ".", ".", ".", ".", "2", "8", "."],
-             [".", ".", ".", "4", "1", "9", ".", ".", "5"],
-             [".", ".", ".", ".", "8", ".", ".", "7", "9"]]]
 
-for csCnt, case in enumerate(InputLst):
+if __name__ == "__main__":
 
-    print(f"{csCnt + 1}.Case\n")
+    InputLst = [[["5", "3", ".", ".", "7", ".", ".", ".", "."],
+                 ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+                 [".", "9", "8", ".", ".", ".", ".", "6", "."],
+                 ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+                 ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+                 ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+                 [".", "6", ".", ".", ".", ".", "2", "8", "."],
+                 [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+                 [".", ".", ".", ".", "8", ".", ".", "7", "9"]],
+                [["8", "3", ".", ".", "7", ".", ".", ".", "."],
+                 ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+                 [".", "9", "8", ".", ".", ".", ".", "6", "."],
+                 ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+                 ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+                 ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+                 [".", "6", ".", ".", ".", ".", "2", "8", "."],
+                 [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+                 [".", ".", ".", ".", "8", ".", ".", "7", "9"]]]
 
-    print("\tSudoku:")
+    for csCnt, case in enumerate(InputLst):
 
-    for line in case:
-        print(f"\t\t{line}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print("\tSudoku:")
 
-    rows = {}
-    cols = {}
-    boxs = {}
+        for line in case:
+            print(f"\t\t{line}")
 
-    Valid = True
+        print("\n")
 
-    for r, row in enumerate(case):
+        rows = {}
+        cols = {}
+        boxs = {}
 
-        for c, col in enumerate(row):
+        Valid = True
 
-            if '1' <= col <= '9':
+        for r, row in enumerate(case):
 
-                if (r+1) in rows:
+            for c, col in enumerate(row):
 
-                    if col in rows[r+1]:
-                        print(f"\t\tDuplicate of {col} at a {r+1} row")
+                if '1' <= col <= '9':
 
-                        Valid = False
+                    if (r+1) in rows:
 
-                    rows[r+1] += col
+                        if col in rows[r+1]:
+                            print(f"\t\tDuplicate of {col} at a {r+1} row")
 
-                else:
-                    rows[r + 1] = col
+                            Valid = False
 
-                if (c+1) in cols:
+                        rows[r+1] += col
 
-                    if col in cols[c+1]:
-                        print(f"\t\tDuplicate of {col} at a {c+1} column")
+                    else:
+                        rows[r + 1] = col
 
-                        Valid = False
+                    if (c+1) in cols:
 
-                    cols[c+1] += col
+                        if col in cols[c+1]:
+                            print(f"\t\tDuplicate of {col} at a {c+1} column")
 
-                else:
-                    cols[c+1] = col
+                            Valid = False
 
-                if r <= 2:
+                        cols[c+1] += col
 
-                    if c <= 2:
-                        b = 1
+                    else:
+                        cols[c+1] = col
 
-                        if b in boxs:
+                    if r <= 2:
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        if c <= 2:
+                            b = 1
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                    elif c <= 5:
-                        b = 2
+                                boxs[b] += col
 
-                        if b in boxs:
+                            else:
+                                boxs[b] = col
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        elif c <= 5:
+                            b = 2
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                    elif c <= 8:
-                        b = 3
+                                boxs[b] += col
 
-                        if b in boxs:
+                            else:
+                                boxs[b] = col
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        elif c <= 8:
+                            b = 3
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                elif r <= 5:
+                                boxs[b] += col
 
-                    if c <= 2:
-                        b = 4
+                            else:
+                                boxs[b] = col
 
-                        if b in boxs:
+                    elif r <= 5:
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        if c <= 2:
+                            b = 4
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                    elif c <= 5:
-                        b = 5
+                                boxs[b] += col
 
-                        if b in boxs:
+                            else:
+                                boxs[b] = col
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        elif c <= 5:
+                            b = 5
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                    elif c <= 8:
-                        b = 6
+                                boxs[b] += col
 
-                        if b in boxs:
+                            else:
+                                boxs[b] = col
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        elif c <= 8:
+                            b = 6
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                elif r <= 8:
+                                boxs[b] += col
 
-                    if c <= 2:
-                        b = 7
+                            else:
+                                boxs[b] = col
 
-                        if b in boxs:
+                    elif r <= 8:
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        if c <= 2:
+                            b = 7
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                    elif c <= 5:
-                        b = 8
+                                boxs[b] += col
 
-                        if b in boxs:
+                            else:
+                                boxs[b] = col
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        elif c <= 5:
+                            b = 8
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-                    elif c <= 8:
-                        b = 9
+                                boxs[b] += col
 
-                        if b in boxs:
+                            else:
+                                boxs[b] = col
 
-                            if col in boxs[b]:
-                                print("\t\tDuplicate at a sub-box")
+                        elif c <= 8:
+                            b = 9
 
-                                Valid = False
+                            if b in boxs:
 
-                            boxs[b] += col
+                                if col in boxs[b]:
+                                    print("\t\tDuplicate at a sub-box")
 
-                        else:
-                            boxs[b] = col
+                                    Valid = False
 
-    if Valid:
-        print("\tSudoku is Valid")
+                                boxs[b] += col
 
-    else:
-        print()
+                            else:
+                                boxs[b] = col
 
-        print("\tSudoku is Not Valid")
+        if Valid:
+            print("\tSudoku is Valid")
 
-    print("\n")
+        else:
+            print()
+
+            print("\tSudoku is Not Valid")
+
+        print("\n")
