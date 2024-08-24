@@ -64,7 +64,7 @@ def Prt01_ShwBrd(Brd):
     print("\t\t┼───┼───┼───┼───┼───┼───┼───┼───┼───┼")
 
     for l, ln in enumerate(Brd):
-        print("\t\t", end="│")
+        print("\t\t", end="║")
 
         for n, nm in enumerate(ln):
 
