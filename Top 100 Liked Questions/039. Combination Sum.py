@@ -60,7 +60,7 @@ def Hlp01_CmbRcrs(cmb, ttl):
 def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
     if ttl == Trg:
-        print(f"\t\t{cmb} = {ttl}")
+        print(f"\t\t\t{cmb} = {ttl}")
 
         cmb.sort()
 
@@ -68,7 +68,7 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
             Cmbs.append(cmb)
 
     elif ttl < Trg:
-        print(f"\t\t{cmb} = {ttl}")
+        print(f"\t\t\t\t{cmb} = {ttl}")
 
         for nm in Cnds:
 
@@ -97,6 +97,8 @@ for csCnt, case in enumerate(InputLst):
 
     # for nm in Cnds:
     #     Hlp01_CmbRcrs([nm], nm)
+
+    print("\t\tAll viable combination:")
 
     for nm in Cnds:
 
