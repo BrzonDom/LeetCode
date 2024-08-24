@@ -57,7 +57,7 @@ def Hlp01_CmbRcrs(cmb, ttl):
             Hlp01_CmbRcrs(cmb + [nm], ttl + nm)
 
 
-def Brt01_SrtCmbRcrs_Prt():
+def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
     return
 
