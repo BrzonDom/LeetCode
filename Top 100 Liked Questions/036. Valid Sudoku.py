@@ -338,6 +338,9 @@ if __name__ == "__main__":
 
         Brd, BrdNm = Hlp01_CnvBrd(case)
 
+        print("\tSet Board:")
+        print()
+
         Prt01_ShwBrd(Brd)
 
         # Slt01_RwClBxCss_Prt(case)
