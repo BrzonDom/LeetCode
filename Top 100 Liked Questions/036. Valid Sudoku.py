@@ -120,35 +120,35 @@ def Slt01_RwClBxCss_Prt(Brd):
 
     Valid = True
 
-    for r, row in enumerate(Brd):
+    for r, ln in enumerate(Brd):
 
-        for c, col in enumerate(row):
+        for c, nm in enumerate(ln):
 
-            if '1' <= col <= '9':
+            if '1' <= nm <= '9':
 
                 if (r + 1) in rows:
 
-                    if col in rows[r + 1]:
-                        print(f"\t\tDuplicate of {col} at a {r + 1} row")
+                    if nm in rows[r + 1]:
+                        print(f"\t\tDuplicate of {nm} at a {r + 1} row")
 
                         Valid = False
 
-                    rows[r + 1] += col
+                    rows[r + 1] += nm
 
                 else:
-                    rows[r + 1] = col
+                    rows[r + 1] = nm
 
                 if (c + 1) in cols:
 
-                    if col in cols[c + 1]:
-                        print(f"\t\tDuplicate of {col} at a {c + 1} column")
+                    if nm in cols[c + 1]:
+                        print(f"\t\tDuplicate of {nm} at a {c + 1} column")
 
                         Valid = False
 
-                    cols[c + 1] += col
+                    cols[c + 1] += nm
 
                 else:
-                    cols[c + 1] = col
+                    cols[c + 1] = nm
 
                 if r <= 2:
 
@@ -157,45 +157,45 @@ def Slt01_RwClBxCss_Prt(Brd):
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                     elif c <= 5:
                         b = 2
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                     elif c <= 8:
                         b = 3
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                 elif r <= 5:
 
@@ -204,45 +204,45 @@ def Slt01_RwClBxCss_Prt(Brd):
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                     elif c <= 5:
                         b = 5
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                     elif c <= 8:
                         b = 6
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                 elif r <= 8:
 
@@ -251,45 +251,45 @@ def Slt01_RwClBxCss_Prt(Brd):
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                     elif c <= 5:
                         b = 8
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
                     elif c <= 8:
                         b = 9
 
                         if b in boxs:
 
-                            if col in boxs[b]:
-                                print(f"\t\tDuplicate of {col} at the {b}. Sub-Box")
+                            if nm in boxs[b]:
+                                print(f"\t\tDuplicate of {nm} at the {b}. Sub-Box")
 
                                 Valid = False
 
-                            boxs[b] += col
+                            boxs[b] += nm
 
                         else:
-                            boxs[b] = col
+                            boxs[b] = nm
 
     if Valid:
         print("\tSudoku is Valid")
