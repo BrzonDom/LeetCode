@@ -44,7 +44,7 @@ https://leetcode.com/problems/combination-sum/description/
 """
 
 
-def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
+def Hlp01_SrtdCmbRcrs_Prt(cmb, ttl):
 
     if ttl == Trg:
         print(f"\t\t\t{cmb} = {ttl}")
@@ -62,7 +62,7 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
             nCmb = cmb + [nm]
             nTtl = ttl + nm
 
-            Brt01_SrtCmbRcrs_Prt(nCmb, nTtl)
+            Hlp01_SrtdCmbRcrs_Prt(nCmb, nTtl)
 
 
 InputLst = [[[2, 3, 6, 7], 7],
@@ -86,7 +86,7 @@ for csCnt, case in enumerate(InputLst):
 
     for nm in Cnds:
 
-        Brt01_SrtCmbRcrs_Prt([nm], nm)
+        Hlp01_SrtdCmbRcrs_Prt([nm], nm)
 
     print()
 
