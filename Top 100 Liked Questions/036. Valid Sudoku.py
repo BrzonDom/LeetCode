@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
         Valid = True
 
-        for r, row in enumerate(case):
+        for r, row in enumerate(Brd):
 
             for c, col in enumerate(row):
 
