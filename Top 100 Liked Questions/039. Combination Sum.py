@@ -63,9 +63,11 @@ def Brt01_SrtCmbRcrs_Prt(cmb, ttl):
 
         Cmbs.append(cmb)
 
-    elif ttl > Trg:
+    elif ttl < Trg:
 
-        return
+        for nm in Cnds:
+
+            print(f"\t\t{cmb + [nm]} = {ttl + nm}")
 
 
 InputLst = [[[2, 3, 6, 7], 7],
