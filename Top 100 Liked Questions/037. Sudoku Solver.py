@@ -66,6 +66,11 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"\tSet Board:")
     for line in case:
-        print(f"\t\t{line}")
+        print(f"\t\t", end="")
+
+        for num in line:
+            print(num, end=" ")
+
+        print()
 
     print("\n")
