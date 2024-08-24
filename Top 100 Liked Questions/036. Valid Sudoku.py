@@ -61,16 +61,20 @@ def Prt01_ShwBrd(Brd):
 
     print("\tSudoku:")
 
+    print("\t\t+---+---+---+---+---+---+---+---+---+")
+
     for line in Brd:
-        print("\t\t", end="")
+        print("\t\t ", end="")
 
         for nm in line:
             if nm == '.':
-                print(" ", end=" ")
+                print("   ", end=" ")
 
             else:
-                print(nm, end=" ")
+                print(f" {nm} ", end=" ")
         print()
+
+    print("\t\t+---+---+---+---+---+---+---+---+---+")
 
 
 def Slt01_RwClBxCss_Prt(Brd):
