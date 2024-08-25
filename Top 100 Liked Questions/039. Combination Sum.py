@@ -207,6 +207,8 @@ if __name__ == "__main__":
         for nm in Cnds:
             print(f"\t\t{nm}")
 
+            Hlp03_BckTrckCndRcrs_Prt([nm], nm)
+
         # Out_Prt(outRtrn)
 
         print("\n")
