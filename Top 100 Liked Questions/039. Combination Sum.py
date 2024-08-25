@@ -129,6 +129,28 @@ def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
 
 def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
 
+    def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
+
+        if ttl == Trg:
+            print(f"\t\t\t{cmb} = {ttl}")
+            AllCmbs.append(cmb)
+
+            Cmbs.append(cmb)
+
+        elif ttl < Trg:
+            print(f"\t\t\t{cmb} = {ttl}")
+            AllCmbs.append(cmb)
+
+            for nm in Cnds:
+
+                nCmb = sorted(cmb + [nm])
+                nTtl = ttl + nm
+
+                if str(nCmb) not in Vstd:
+                    Vstd.add(str(nCmb))
+
+                    Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
+
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
 
