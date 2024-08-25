@@ -190,8 +190,8 @@ if __name__ == "__main__":
 
         # outRtrn = Slt01_SrtdCmbFnc_Prt(case[0], case[1])
 
-        outRtrn = Slt02_VstdCmbFnc_Prt(case[0], case[1])
+        # outRtrn = Slt02_VstdCmbFnc_Prt(case[0], case[1])
 
-        Out_Prt(outRtrn)
+        # Out_Prt(outRtrn)
 
         print("\n")
