@@ -149,8 +149,12 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
         for cmb in Cmbs:
             print(f"\t\t{cmb}")
 
+        return Cmbs
+
     else:
         print("\tNo Combinations Found")
+
+        return []
 
 
 def Out_Prt(Cmbs):
