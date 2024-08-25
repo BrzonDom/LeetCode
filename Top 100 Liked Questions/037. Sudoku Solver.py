@@ -69,10 +69,10 @@ for csCnt, case in enumerate(InputLst):
     BrdNm = [[0 for c in range(9)] for r in range(9)]
 
     print(f"\tSet Board:")
-    for ln in Brd:
+    for r, ln in enumerate(Brd):
         print(f"\t\t", end="")
 
-        for nm in ln:
+        for c, nm in enumerate(ln):
 
             if nm == '.':
                 print(' ', end=" ")
