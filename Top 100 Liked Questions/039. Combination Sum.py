@@ -154,6 +154,8 @@ if __name__ == "__main__":
             Hlp02_VstdCmbRcrs_Prt([nm], nm)
         print()
 
+        print("\tCombinations:")
+
         for cmb in Cmbs:
             print(f"\t\t{cmb}")
 
