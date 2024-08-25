@@ -64,8 +64,10 @@ for csCnt, case in enumerate(InputLst):
 
     print(f"{csCnt+1}.Case\n")
 
+    Brd = case
+
     print(f"\tSet Board:")
-    for line in case:
+    for line in Brd:
         print(f"\t\t", end="")
 
         for num in line:
