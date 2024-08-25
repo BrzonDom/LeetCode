@@ -61,4 +61,6 @@ if __name__ == "__main__":
         for nm in Cnds:
             print(f"\t\t{nm}")
 
+            Hlp01_SrtdCmbRcrs([nm], nm)
+
         print("\n")
