@@ -172,7 +172,9 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl):
 
         Cmbs.append(cmb)
 
-    return
+    elif ttl > Trg:
+
+        return
 
 
 def Out_Prt(Cmbs):
