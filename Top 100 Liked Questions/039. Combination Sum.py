@@ -135,10 +135,13 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     Vstd = set()
     AllCmbs = []
 
-    print("\t\tAll Combinations:")
-
     for nm in Cnds:
         Hlp02_VstdCmbRcrs_Prt([nm], nm)
+
+    print("\t\tAll Combinations:")
+
+    for cmb in AllCmbs:
+        print(f"\t\t\t{cmb}")
     print()
 
     if Cmbs:
