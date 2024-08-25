@@ -154,6 +154,11 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
 
+    Cmbs = []
+
+    Vstd = set()
+    AllCmbs = []
+
 
 def Out_Prt(Cmbs):
 
