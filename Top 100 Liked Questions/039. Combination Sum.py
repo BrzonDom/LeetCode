@@ -46,12 +46,12 @@ https://leetcode.com/problems/combination-sum/description/
 
 def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
-    def Hlp01_SrtdCmbRcrs_Prt(cmb, ttl):
+    def Hlp01_SrtdCmbRcrs(cmb, ttl):
 
         AllCmb.append(cmb)
 
         if ttl == Trg:
-            print(f"\t\t\t{cmb} = {ttl}")
+            # print(f"\t\t\t{cmb} = {ttl}")
 
             cmb.sort()
 
@@ -59,13 +59,13 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
                 Cmbs.append(cmb)
 
         elif ttl < Trg:
-            print(f"\t\t\t\t{cmb} = {ttl}")
+            # print(f"\t\t\t\t{cmb} = {ttl}")
 
             for nm in Cnds:
                 nCmb = cmb + [nm]
                 nTtl = ttl + nm
 
-                Hlp01_SrtdCmbRcrs_Prt(nCmb, nTtl)
+                Hlp01_SrtdCmbRcrs(nCmb, nTtl)
 
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
@@ -77,7 +77,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     print("\t\tAll viable combination:")
 
     for nm in Cnds:
-        Hlp01_SrtdCmbRcrs_Prt([nm], nm)
+        Hlp01_SrtdCmbRcrs([nm], nm)
 
     print()
 
