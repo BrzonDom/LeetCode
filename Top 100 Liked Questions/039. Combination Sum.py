@@ -103,7 +103,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     return Cmbs
 
 
-def Hlp02_VstdCmbRcrs_Prt():
+def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
 
     return
 
