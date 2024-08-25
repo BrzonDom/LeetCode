@@ -66,6 +66,8 @@ for csCnt, case in enumerate(InputLst):
 
     Brd = case
 
+    BrdNm = [[0 for c in range(9)] for r in range(9)]
+
     print(f"\tSet Board:")
     for line in Brd:
         print(f"\t\t", end="")
