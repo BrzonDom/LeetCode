@@ -125,6 +125,6 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Slt01_SrtdCmbFnc_Prt(case[0], case[1])
+        outRtrn = Slt01_SrtdCmbFnc_Prt(case[0], case[1])
 
         print("\n")
