@@ -109,13 +109,11 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
 
         if ttl == Trg:
-            print(f"\t\t\t{cmb} = {ttl}")
             AllCmbs.append(cmb)
 
             Cmbs.append(cmb)
 
         elif ttl < Trg:
-            print(f"\t\t\t{cmb} = {ttl}")
             AllCmbs.append(cmb)
 
             for nm in Cnds:
