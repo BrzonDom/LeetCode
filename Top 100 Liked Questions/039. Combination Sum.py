@@ -71,12 +71,8 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     AllCmb = []
     Cmbs = []
 
-    print("\t\tAll viable combination:")
-
     for nm in Cnds:
         Hlp01_SrtdCmbRcrs([nm], nm)
-
-    print()
 
     if Cmbs:
         print("\tCombinations:")
