@@ -105,6 +105,10 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
 def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
 
+    if ttl == Trg:
+
+        Cmbs.append(cmb)
+
     return
 
 
@@ -138,6 +142,8 @@ if __name__ == "__main__":
         print(f"\tCandidates: {Cnds}")
         print(f"\tTarget:      {Trg}")
         print()
+
+        Cmbs = []
 
         for nm in Cnds:
             Hlp02_VstdCmbRcrs_Prt([nm], nm)
