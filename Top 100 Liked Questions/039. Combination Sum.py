@@ -217,6 +217,10 @@ if __name__ == "__main__":
 
         for nm in Cnds:
             Hlp03_BckTrckCndRcrs_Prt([nm], nm)
+        print()
+
+        for cmb in Cmbs:
+            print(f"\t{cmb}")
 
         # Out_Prt(outRtrn)
 
