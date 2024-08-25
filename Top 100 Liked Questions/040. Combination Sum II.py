@@ -39,6 +39,10 @@ Constraints:
 
 def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
+    if ttl == Trg:
+
+        Cmbs.append(cmb)
+
     return
 
 
@@ -57,6 +61,8 @@ if __name__ == "__main__":
         print(f"\tCandidates: {Cnds}")
         print(f"\tTarget:      {Trg}")
         print()
+
+        Cmbs = []
 
         for n, nm in enumerate(Cnds):
             Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n+1:], nm)
