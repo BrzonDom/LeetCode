@@ -73,7 +73,12 @@ for csCnt, case in enumerate(InputLst):
         print(f"\t\t", end="")
 
         for num in line:
-            print(num, end=" ")
+
+            if num == '.':
+                print(' ', end=" ")
+
+            else:
+                print(num, end=" ")
 
         print()
 
