@@ -150,8 +150,8 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
         if Cmbs:
             print("\tCombinations:")
 
-            for cmb in Cmbs:
-                print(f"\t\t{cmb}")
+            for c, cmb in enumerate(Cmbs):
+                print(f"\t\t{c+1}. {cmb}")
 
             return Cmbs
 
