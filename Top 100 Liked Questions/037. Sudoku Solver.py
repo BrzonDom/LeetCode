@@ -80,6 +80,8 @@ for csCnt, case in enumerate(InputLst):
             else:
                 print(nm, end=" ")
 
+                BrdNm[r][c] = int(nm)
+
         print()
 
     print("\n")
