@@ -100,16 +100,6 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         if not fndCmb:
             print()
 
-        if Cmbs:
-            print("\tCombinations:")
-
-            for c, cmb in enumerate(Cmbs):
-                print(f"\t\t{c + 1}. {cmb}")
-
-            return Cmbs
-
-    print("\tNo Combinations found")
-
     return Cmbs
 
 
