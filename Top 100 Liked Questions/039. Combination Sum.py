@@ -112,7 +112,7 @@ def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
     elif ttl < Trg:
 
         for nm in Cnds:
-            print(f"\t\t{cmb + [nm]} = {ttl + nm}")
+            print(f"\t\t\t{cmb + [nm]} = {ttl + nm}")
 
 
 def Out_Prt(Cmbs):
@@ -147,6 +147,8 @@ if __name__ == "__main__":
         print()
 
         Cmbs = []
+
+        print("\t\tAll Combinations:")
 
         for nm in Cnds:
             Hlp02_VstdCmbRcrs_Prt([nm], nm)
