@@ -43,9 +43,10 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
         Cmbs.append(cmb)
 
-    elif ttl > Trg:
+    elif ttl < Trg:
 
-        return
+        for nm in Cnds:
+            print(f"\t\t{cmb + [nm]} = {ttl + nm}")
 
 
 if __name__ == "__main__":
