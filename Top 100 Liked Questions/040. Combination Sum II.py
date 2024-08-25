@@ -37,7 +37,7 @@ Constraints:
 """
 
 
-def Hlp01_SrtdCmbRcrs(cmb, ttl):
+def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
     return
 
@@ -61,6 +61,6 @@ if __name__ == "__main__":
         for n, nm in enumerate(Cnds):
             print(f"\t\t{nm} : {Cnds[:n]} {Cnds[n+1:]}")
 
-            Hlp01_SrtdCmbRcrs([nm], nm)
+            Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n+1:], nm)
 
         print("\n")
