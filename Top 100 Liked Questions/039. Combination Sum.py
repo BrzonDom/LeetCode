@@ -103,6 +103,11 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     return Cmbs
 
 
+def Hlp02_VstdCmbRcrs_Prt():
+
+    return
+
+
 def Out_Prt(Cmbs):
 
     if Cmbs:
