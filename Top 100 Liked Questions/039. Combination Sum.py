@@ -140,8 +140,6 @@ if __name__ == "__main__":
         print()
 
         for nm in Cnds:
-            print(f"\t\t{nm}")
-
             Hlp02_VstdCmbRcrs_Prt([nm], nm)
 
         # Out_Prt(outRtrn)
