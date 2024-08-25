@@ -141,19 +141,27 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     if AllCmbs:
         print("\t\tAll Combinations:")
 
+        fndCmb = False
+
         for cmb in AllCmbs:
             ttl = sum(cmb)
 
             if ttl == Trg:
 
-                print()
+                if not fndCmb:
+                    print()
                 print(f"\t\t\t\t{cmb}")
                 print()
+
+                fndCmb = True
 
             else:
                 print(f"\t\t\t{cmb} = {ttl}")
 
-        print()
+                fndCmb = False
+
+        if not fndCmb:
+            print()
 
         if Cmbs:
             print("\tCombinations:")
