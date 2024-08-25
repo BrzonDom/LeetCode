@@ -35,3 +35,12 @@ Constraints:
     1 <= target <= 30
 
 """
+
+
+InputLst = [[[10,1,2,7,6,1,5], 8],
+            [[2,5,2,1,2], 5]]
+
+for case in InputLst:
+
+    print(case)
+    print()
