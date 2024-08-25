@@ -115,10 +115,13 @@ def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
 
         for nm in Cnds:
 
-            nCmb = cmb + [nm]
+            nCmb = sorted(cmb + [nm])
             nTtl = ttl + nm
 
-            Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
+            if str(nCmb) not in Vstd:
+                Vstd.add(str(nCmb))
+
+                Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
 
 
 def Out_Prt(Cmbs):
