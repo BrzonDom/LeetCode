@@ -71,7 +71,9 @@ if __name__ == "__main__":
             Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n+1:], nm)
         print()
 
+        print("\tCombinations:")
+
         for cmb in Cmbs:
-            print(f"\t{cmb}")
+            print(f"\t\t{cmb}")
 
         print("\n")
