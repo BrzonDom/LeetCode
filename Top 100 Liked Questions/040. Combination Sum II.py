@@ -43,7 +43,9 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
         Cmbs.append(cmb)
 
-    return
+    elif ttl > Trg:
+
+        return
 
 
 if __name__ == "__main__":
