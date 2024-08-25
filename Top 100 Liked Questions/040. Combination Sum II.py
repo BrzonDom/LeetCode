@@ -69,5 +69,9 @@ if __name__ == "__main__":
 
         for n, nm in enumerate(Cnds):
             Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n+1:], nm)
+        print()
+
+        for cmb in Cmbs:
+            print(f"\t{cmb}")
 
         print("\n")
