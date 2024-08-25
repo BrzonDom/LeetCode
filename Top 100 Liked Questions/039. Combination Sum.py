@@ -81,7 +81,13 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         for cmb in AllCmb:
             ttl = sum(cmb)
 
-            print(f"\t\t\t{cmb} = {ttl}")
+            if ttl == Trg:
+                print()
+                print(f"\t\t\t\t{cmb}")
+                print()
+
+            else:
+                print(f"\t\t\t{cmb} = {ttl}")
         print()
 
         if Cmbs:
