@@ -45,8 +45,10 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
     elif ttl < Trg:
 
-        for nm in cnd:
+        for n, nm in enumerate(cnd):
+
             print(f"\t\t{cmb + [nm]} = {ttl + nm}")
+            print(f"\t\t{cnd[:n] + cnd[n+1:]}")
 
 
 if __name__ == "__main__":
