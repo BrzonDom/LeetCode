@@ -127,6 +127,11 @@ def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
                 Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
 
 
+def Slt02_VstdCmbFnc_Prt():
+
+    return
+
+
 def Out_Prt(Cmbs):
 
     if Cmbs:
