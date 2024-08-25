@@ -127,4 +127,7 @@ if __name__ == "__main__":
 
         outRtrn = Slt01_SrtdCmbFnc_Prt(case[0], case[1])
 
+        for cmb in outRtrn:
+            print(f"\t\t{cmb}")
+
         print("\n")
