@@ -40,7 +40,10 @@ Constraints:
 InputLst = [[[10, 1, 2, 7, 6, 1, 5], 8],
             [[2, 5, 2, 1, 2], 5]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(case)
-    print()
+
+    print("\n")
