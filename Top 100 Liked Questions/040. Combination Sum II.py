@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        print(case[0])
-        print(case[1])
+        print(f"\tCandidates: {case[0]}")
+        print(f"\tTarget:      {case[1]}")
 
         print("\n")
