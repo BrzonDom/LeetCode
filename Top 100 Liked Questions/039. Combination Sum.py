@@ -118,6 +118,8 @@ def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
             nCmb = cmb + [nm]
             nTtl = ttl + nm
 
+            Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
+
 
 def Out_Prt(Cmbs):
 
