@@ -48,15 +48,16 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
     def Hlp01_SrtdCmbRcrs(cmb, ttl):
 
-        AllCmb.append(cmb)
-
         if ttl == Trg:
+            AllCmb.append(cmb)
+
             cmb.sort()
 
             if cmb not in Cmbs:
                 Cmbs.append(cmb)
 
         elif ttl < Trg:
+            AllCmb.append(cmb)
 
             for nm in Cnds:
                 nCmb = cmb + [nm]
