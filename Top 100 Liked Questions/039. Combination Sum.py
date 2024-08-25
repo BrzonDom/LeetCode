@@ -115,7 +115,8 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
 def Out_Prt(Cmbs):
 
-    print(f"\t\t{Cmbs}")
+    for cmb in Cmbs:
+        print(f"\t\t{cmb}")
 
 
 if __name__ == "__main__":
