@@ -45,7 +45,7 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
     elif ttl < Trg:
 
-        for nm in Cnds:
+        for nm in cnd:
             print(f"\t\t{cmb + [nm]} = {ttl + nm}")
 
 
