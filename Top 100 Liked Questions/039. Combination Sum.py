@@ -202,33 +202,6 @@ if __name__ == "__main__":
 
         Slt02_VstdCmbFnc_Prt(case[0], case[1])
 
-        # Cnds = case[0]
-        # Trg = case[1]
-        #
-        # print(f"\tCandidates: {Cnds}")
-        # print(f"\tTarget:      {Trg}")
-        # print()
-        #
-        # Cmbs = []
-        #
-        # Vstd = set()
-        # AllCmbs = []
-        #
-        # print("\t\tAll Combinations:")
-        #
-        # for nm in Cnds:
-        #     Hlp02_VstdCmbRcrs_Prt([nm], nm)
-        # print()
-        #
-        # if Cmbs:
-        #     print("\tCombinations:")
-        #
-        #     for cmb in Cmbs:
-        #         print(f"\t\t{cmb}")
-        #
-        # else:
-        #     print("\tNo Combinations Found")
-
         # Out_Prt(outRtrn)
 
         print("\n")
