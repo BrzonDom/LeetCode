@@ -138,11 +138,12 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     for nm in Cnds:
         Hlp02_VstdCmbRcrs_Prt([nm], nm)
 
-    print("\t\tAll Combinations:")
+    if AllCmbs:
+        print("\t\tAll Combinations:")
 
-    for cmb in AllCmbs:
-        print(f"\t\t\t{cmb}")
-    print()
+        for cmb in AllCmbs:
+            print(f"\t\t\t{cmb}")
+        print()
 
     if Cmbs:
         print("\tCombinations:")
