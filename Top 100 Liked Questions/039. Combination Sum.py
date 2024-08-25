@@ -170,11 +170,13 @@ if __name__ == "__main__":
         print()
 
         if Cmbs:
-
             print("\tCombinations:")
 
             for cmb in Cmbs:
                 print(f"\t\t{cmb}")
+
+        else:
+            print("\tNo Combinations Found")
 
         # Out_Prt(outRtrn)
 
