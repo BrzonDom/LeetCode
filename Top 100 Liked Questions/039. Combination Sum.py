@@ -74,6 +74,14 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     for nm in Cnds:
         Hlp01_SrtdCmbRcrs([nm], nm)
 
+    if AllCmb:
+
+        print("\t\tAll Combinations:")
+
+        for cmb in AllCmb:
+            print(f"\t\t\t{cmb}")
+        print()
+
     if Cmbs:
         print("\tCombinations:")
 
