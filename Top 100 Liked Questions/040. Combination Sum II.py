@@ -37,6 +37,11 @@ Constraints:
 """
 
 
+def Hlp01_SrtdCmbRcrs():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[10, 1, 2, 7, 6, 1, 5], 8],
