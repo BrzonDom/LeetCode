@@ -37,7 +37,7 @@ Constraints:
 """
 
 
-def Hlp01_SrtdCmbRcrs():
+def Hlp01_SrtdCmbRcrs(cmb, ttl):
 
     return
 
