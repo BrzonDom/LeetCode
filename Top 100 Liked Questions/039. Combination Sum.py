@@ -154,6 +154,9 @@ if __name__ == "__main__":
 
         Cmbs = []
 
+        Vstd = set()
+        AllCmbs = []
+
         print("\t\tAll Combinations:")
 
         for nm in Cnds:
