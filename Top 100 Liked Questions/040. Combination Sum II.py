@@ -52,6 +52,10 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
             print(f"\t\t{cnd[:n]} {cnd[n+1:]}")
             print()
 
+            nCmb = cmb + [nm]
+            nTtl = ttl + nm
+            nCnd = cnd[:n] + cnd[n+1:]
+
 
 if __name__ == "__main__":
 
