@@ -127,9 +127,10 @@ def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
                 Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
 
 
-def Slt02_VstdCmbFnc_Prt():
+def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
 
-    return
+    print(f"\tCandidates: {Cnds}")
+    print(f"\tTarget:      {Trg}")
 
 
 def Out_Prt(Cmbs):
