@@ -59,8 +59,6 @@ if __name__ == "__main__":
         print()
 
         for n, nm in enumerate(Cnds):
-            print(f"\t\t{nm} : {Cnds[:n]} {Cnds[n+1:]}")
-
             Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n+1:], nm)
 
         print("\n")
