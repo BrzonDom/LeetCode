@@ -152,6 +152,10 @@ if __name__ == "__main__":
 
         for nm in Cnds:
             Hlp02_VstdCmbRcrs_Prt([nm], nm)
+        print()
+
+        for cmb in Cmbs:
+            print(f"\t\t{cmb}")
 
         # Out_Prt(outRtrn)
 
