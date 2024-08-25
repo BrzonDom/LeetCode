@@ -145,13 +145,18 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
             print(f"\t\t\t{cmb}")
         print()
 
-    if Cmbs:
-        print("\tCombinations:")
+        if Cmbs:
+            print("\tCombinations:")
 
-        for cmb in Cmbs:
-            print(f"\t\t{cmb}")
+            for cmb in Cmbs:
+                print(f"\t\t{cmb}")
 
-        return Cmbs
+            return Cmbs
+
+        else:
+            print("\tNo Combinations Found")
+
+            return []
 
     else:
         print("\tNo Combinations Found")
