@@ -149,31 +149,31 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        outRtrn = Slt01_SrtdCmbFnc_Prt(case[0], case[1])
+        # outRtrn = Slt01_SrtdCmbFnc_Prt(case[0], case[1])
 
-        # Cnds = case[0]
-        # Trg = case[1]
-        #
-        # print(f"\tCandidates: {Cnds}")
-        # print(f"\tTarget:      {Trg}")
-        # print()
-        #
-        # Cmbs = []
-        #
-        # Vstd = set()
-        # AllCmbs = []
-        #
-        # print("\t\tAll Combinations:")
-        #
-        # for nm in Cnds:
-        #     Hlp02_VstdCmbRcrs_Prt([nm], nm)
-        # print()
-        #
-        # print("\tCombinations:")
-        #
-        # for cmb in Cmbs:
-        #     print(f"\t\t{cmb}")
+        Cnds = case[0]
+        Trg = case[1]
 
-        # Out_Prt(outRtrn)
+        print(f"\tCandidates: {Cnds}")
+        print(f"\tTarget:      {Trg}")
+        print()
+
+        Cmbs = []
+
+        Vstd = set()
+        AllCmbs = []
+
+        print("\t\tAll Combinations:")
+
+        for nm in Cnds:
+            Hlp02_VstdCmbRcrs_Prt([nm], nm)
+        print()
+
+        print("\tCombinations:")
+
+        for cmb in Cmbs:
+            print(f"\t\t{cmb}")
+
+        Out_Prt(outRtrn)
 
         print("\n")
