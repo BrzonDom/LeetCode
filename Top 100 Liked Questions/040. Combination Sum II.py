@@ -37,13 +37,15 @@ Constraints:
 """
 
 
-InputLst = [[[10, 1, 2, 7, 6, 1, 5], 8],
-            [[2, 5, 2, 1, 2], 5]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[10, 1, 2, 7, 6, 1, 5], 8],
+                [[2, 5, 2, 1, 2], 5]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(case)
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(case)
+
+        print("\n")
