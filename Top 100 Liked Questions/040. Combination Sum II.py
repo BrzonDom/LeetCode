@@ -58,8 +58,8 @@ if __name__ == "__main__":
         print(f"\tTarget:      {Trg}")
         print()
 
-        for nm in Cnds:
-            print(f"\t\t{nm}")
+        for n, nm in enumerate(Cnds):
+            print(f"\t\t{nm} : {Cnds[:n]} {Cnds[n+1:]}")
 
             Hlp01_SrtdCmbRcrs([nm], nm)
 
