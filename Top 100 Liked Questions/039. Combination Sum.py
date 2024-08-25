@@ -106,7 +106,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
 def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
 
-    def Hlp02_VstdCmbRcrs_Prt(cmb, ttl):
+    def Hlp02_VstdCmbRcrs(cmb, ttl):
 
         if ttl == Trg:
             AllCmbs.append(cmb)
@@ -124,7 +124,7 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
                 if str(nCmb) not in Vstd:
                     Vstd.add(str(nCmb))
 
-                    Hlp02_VstdCmbRcrs_Prt(nCmb, nTtl)
+                    Hlp02_VstdCmbRcrs(nCmb, nTtl)
 
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
@@ -136,7 +136,7 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     AllCmbs = []
 
     for nm in Cnds:
-        Hlp02_VstdCmbRcrs_Prt([nm], nm)
+        Hlp02_VstdCmbRcrs([nm], nm)
 
     if AllCmbs:
         print("\t\tAll Combinations:")
