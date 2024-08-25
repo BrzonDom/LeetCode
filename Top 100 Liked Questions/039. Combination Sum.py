@@ -48,6 +48,8 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
     def Hlp01_SrtdCmbRcrs_Prt(cmb, ttl):
 
+        AllCmb.append(cmb)
+
         if ttl == Trg:
             print(f"\t\t\t{cmb} = {ttl}")
 
@@ -69,6 +71,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     print(f"\tTarget:      {Trg}")
     print()
 
+    AllCmb = []
     Cmbs = []
 
     print("\t\tAll viable combination:")
