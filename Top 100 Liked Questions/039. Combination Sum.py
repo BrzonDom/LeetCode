@@ -127,8 +127,11 @@ if __name__ == "__main__":
 
         # outRtrn = Slt01_SrtdCmbFnc_Prt(case[0], case[1])
 
-        print(f"\tCandidates: {case[0]}")
-        print(f"\tTarget:      {case[1]}")
+        Cnds = case[0]
+        Trg = case[1]
+
+        print(f"\tCandidates: {Cnds}")
+        print(f"\tTarget:      {Trg}")
 
         # Out_Prt(outRtrn)
 
