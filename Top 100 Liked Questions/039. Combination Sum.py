@@ -174,6 +174,6 @@ if __name__ == "__main__":
         for cmb in Cmbs:
             print(f"\t\t{cmb}")
 
-        Out_Prt(outRtrn)
+        # Out_Prt(outRtrn)
 
         print("\n")
