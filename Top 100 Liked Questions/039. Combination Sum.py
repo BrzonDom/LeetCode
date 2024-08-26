@@ -175,7 +175,11 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl):
     elif ttl < Trg:
 
         for nm in Cnds:
-            print(f"\t\t\t{cmb + [nm]} = {ttl + nm}")
+
+            nCmb = cmb + [nm]
+            nTtl = ttl + nm
+
+            print(f"\t\t\t{nCmb} = {nTtl}")
 
 
 def Out_Prt(Cmbs):
