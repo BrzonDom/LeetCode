@@ -108,9 +108,9 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     return []
 
 
-def Out_Prt():
+def Out_Prt(Cmbs):
 
-    return
+    print(f"\t\t{Cmbs}")
 
 
 if __name__ == "__main__":
