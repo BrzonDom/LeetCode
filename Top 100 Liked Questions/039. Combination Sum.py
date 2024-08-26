@@ -219,10 +219,11 @@ if __name__ == "__main__":
             Hlp03_BckTrckCndRcrs_Prt([nm], nm)
         print()
 
-        print("\tCombinations:")
+        if Cmbs:
+            print("\tCombinations:")
 
-        for cmb in Cmbs:
-            print(f"\t\t{cmb}")
+            for cmb in Cmbs:
+                print(f"\t\t{cmb}")
 
         # Out_Prt(outRtrn)
 
