@@ -222,7 +222,10 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
         if not fndCmb:
             print()
 
-    return Cmbs
+        return Cmbs
+
+    else:
+        return []
 
     #     if Cmbs:
     #         print("\tCombinations:")
