@@ -64,6 +64,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
+    print()
 
     Cmbs = []
 
