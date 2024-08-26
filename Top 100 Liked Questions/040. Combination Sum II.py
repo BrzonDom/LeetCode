@@ -66,10 +66,13 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     Cmbs = []
     AllCmbs = []
 
-    print("\t\tAll Combinations:")
-
     for n, nm in enumerate(Cnds):
         Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n + 1:], nm)
+
+    print("\t\tAll Combinations:")
+
+    for cmb in AllCmbs:
+        print(f"\t\t\t{cmb} = {sum(cmb)}")
     print()
 
     if Cmbs:
