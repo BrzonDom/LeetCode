@@ -62,6 +62,11 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
             Hlp01_SrtdCmbRcrs(nCmb, nCnd, nTtl)
 
 
+def Slt01_SrtdCmbFnc_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[10, 1, 2, 7, 6, 1, 5], 8],
