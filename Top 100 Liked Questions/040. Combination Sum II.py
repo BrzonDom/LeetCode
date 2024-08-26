@@ -95,15 +95,15 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         if not fndCmb:
             print()
 
-        if Cmbs:
-            print("\tCombinations:")
-
-            for cmb in Cmbs:
-                print(f"\t\t{cmb}")
-
-            return Cmbs
-
-    print("\tNo Combinations Found")
+    #     if Cmbs:
+    #         print("\tCombinations:")
+    #
+    #         for cmb in Cmbs:
+    #             print(f"\t\t{cmb}")
+    #
+    #         return Cmbs
+    #
+    # print("\tNo Combinations Found")
 
     return []
 
