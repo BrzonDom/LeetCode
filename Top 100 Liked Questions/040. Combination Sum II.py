@@ -40,7 +40,10 @@ Constraints:
 def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
     if ttl == Trg:
-        print(f"\t\t\t{cmb} = {ttl}")
+
+        print()
+        print(f"\t\t\t\t{cmb}")
+        print()
 
         cmb.sort()
 
