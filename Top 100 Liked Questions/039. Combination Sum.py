@@ -180,6 +180,7 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl, idx):
 
         nCmb = cmb + [nm]
         nTtl = ttl + nm
+        nIdx = idx + 1
 
         Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl, idx)
 
