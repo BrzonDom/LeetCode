@@ -224,17 +224,17 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
     return Cmbs
 
-    if Cmbs:
-        print("\tCombinations:")
-
-        for cmb in Cmbs:
-            print(f"\t\t{cmb}")
-
-        return Cmbs
-
-    print("\tNo Combinations found")
-
-    return []
+    #     if Cmbs:
+    #         print("\tCombinations:")
+    #
+    #         for cmb in Cmbs:
+    #             print(f"\t\t{cmb}")
+    #
+    #     return Cmbs
+    #
+    # print("\tNo Combinations found")
+    #
+    # return []
 
 
 def Out_Prt(Cmbs):
