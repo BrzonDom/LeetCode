@@ -181,6 +181,8 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl):
 
             print(f"\t\t\t{nCmb} = {nTtl}")
 
+            Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl)
+
 
 def Out_Prt(Cmbs):
 
