@@ -110,8 +110,11 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
 def Out_Prt(Cmbs):
 
-    for cmb in Cmbs:
-        print(f"\t\t{cmb}")
+    if Cmbs:
+        print("\tCombinations:")
+
+        for cmb in Cmbs:
+            print(f"\t\t{cmb}")
 
 
 if __name__ == "__main__":
