@@ -39,13 +39,13 @@ Constraints:
 
 def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
-    print(f"\t\t\t{cmb} = {ttl}")
-
     if ttl == Trg:
+        print(f"\t\t\t{cmb} = {ttl}")
 
         Cmbs.append(cmb)
 
     elif ttl < Trg:
+        print(f"\t\t\t{cmb} = {ttl}")
 
         for n, nm in enumerate(cnd):
 
