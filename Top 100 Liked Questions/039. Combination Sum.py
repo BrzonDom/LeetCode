@@ -221,12 +221,14 @@ if __name__ == "__main__":
         print()
 
         Cmbs = []
-
         AllCmbs = []
+
+        Hlp03_BckTrcCndRcr([], 0, 0)
 
         print("\t\tAll Combinations:")
 
-        Hlp03_BckTrcCndRcr([], 0, 0)
+        for cmb in AllCmbs:
+            print(f"\t\t\t{cmb}")
         print()
 
         if Cmbs:
