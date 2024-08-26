@@ -211,11 +211,21 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
+    print()
 
     Cmbs = []
     AllCmbs = []
 
     Hlp03_BckTrcCndRcr([], 0, 0)
+
+    if Cmbs:
+        print("\tCombinations:")
+
+        for cmb in Cmbs:
+            print(f"\t\t{cmb}")
+
+    else:
+        print("\tNo Combinations found")
 
 
 def Out_Prt(Cmbs):
