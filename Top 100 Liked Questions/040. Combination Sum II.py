@@ -62,7 +62,7 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
             Hlp01_SrtdCmbRcrs(nCmb, nCnd, nTtl)
 
 
-def Slt01_SrtdCmbFnc_Prt():
+def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
     return
 
