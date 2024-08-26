@@ -166,7 +166,7 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     return Cmbs
 
 
-def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl):
+def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl, idx):
 
     if ttl == Trg:
         print(f"\t\t\t{cmb} = {ttl}")
@@ -181,7 +181,7 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl):
             nCmb = cmb + [nm]
             nTtl = ttl + nm
 
-            Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl)
+            Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl, idx)
 
 
 def Out_Prt(Cmbs):
@@ -222,7 +222,7 @@ if __name__ == "__main__":
         print("\t\tAll Combinations:")
 
         for nm in Cnds:
-            Hlp03_BckTrckCndRcrs_Prt([nm], nm)
+            Hlp03_BckTrckCndRcrs_Prt([nm], nm, 0)
         print()
 
         if Cmbs:
