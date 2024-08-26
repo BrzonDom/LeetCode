@@ -173,7 +173,7 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl, idx):
 
         Cmbs.append(cmb)
 
-    elif ttl < Trg:
+    elif ttl < Trg and idx < len(Cnds):
         print(f"\t\t\t{cmb} = {ttl}")
 
         nm = Cnds[idx]
