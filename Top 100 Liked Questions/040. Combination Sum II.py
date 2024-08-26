@@ -39,6 +39,8 @@ Constraints:
 
 def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
+    print(f"\t\t\t{cmb} = {ttl}")
+
     if ttl == Trg:
 
         Cmbs.append(cmb)
@@ -46,11 +48,6 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
     elif ttl < Trg:
 
         for n, nm in enumerate(cnd):
-
-            print(f"\t\t\t{cmb + [nm]}")
-            print(f"\t\t\t{ttl + nm}")
-            print(f"\t\t\t{cnd[:n]} {cnd[n+1:]}")
-            print()
 
             nCmb = cmb + [nm]
             nTtl = ttl + nm
