@@ -74,15 +74,18 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n + 1:], nm)
     print()
 
-
     if Cmbs:
         print("\tCombinations:")
 
         for cmb in Cmbs:
             print(f"\t\t{cmb}")
 
+        return Cmbs
+
     else:
         print("\tNo Combinations Found")
+
+        return Cmbs
 
 
 if __name__ == "__main__":
