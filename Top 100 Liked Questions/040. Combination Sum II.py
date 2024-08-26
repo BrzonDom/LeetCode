@@ -75,9 +75,10 @@ if __name__ == "__main__":
 
         Cmbs = []
 
+        print("\t\tAll Combinations:")
+
         for n, nm in enumerate(Cnds):
             Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n+1:], nm)
-        print()
 
         print("\tCombinations:")
 
