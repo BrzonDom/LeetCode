@@ -108,6 +108,11 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     return []
 
 
+def Out_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[10, 1, 2, 7, 6, 1, 5], 8],
