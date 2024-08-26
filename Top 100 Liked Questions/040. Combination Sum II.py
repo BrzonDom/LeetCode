@@ -44,10 +44,6 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         if ttl == Trg:
             AllCmbs.append(cmb)
 
-            print()
-            print(f"\t\t\t\t{cmb}")
-            print()
-
             cmb.sort()
 
             if cmb not in Cmbs:
@@ -55,8 +51,6 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
         elif ttl < Trg:
             AllCmbs.append(cmb)
-
-            print(f"\t\t\t{cmb} = {ttl}")
 
             for n, nm in enumerate(cnd):
                 nCmb = cmb + [nm]
