@@ -222,6 +222,8 @@ if __name__ == "__main__":
 
         Cmbs = []
 
+        AllCmbs = []
+
         print("\t\tAll Combinations:")
 
         Hlp03_BckTrcCndRcr_Prt([], 0, 0)
