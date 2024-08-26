@@ -212,7 +212,9 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
 
-    return
+    Cmbs = []
+
+    AllCmbs = []
 
 
 def Out_Prt(Cmbs):
