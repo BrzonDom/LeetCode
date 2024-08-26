@@ -64,7 +64,8 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
 def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
-    return
+    print(f"\tCandidates: {Cnds}")
+    print(f"\tTarget:      {Trg}")
 
 
 if __name__ == "__main__":
