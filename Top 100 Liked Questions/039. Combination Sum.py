@@ -187,7 +187,10 @@ def Hlp03_BckTrcCndRcr(cmb, ttl, idx):
         Hlp03_BckTrcCndRcr(cmb, ttl, nIdx)
 
 
-def Slt03_BckTrcCndRcrFnc_Prt():
+def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
+
+    print(f"\tCandidates: {Cnds}")
+    print(f"\tTarget:      {Trg}")
 
     return
 
