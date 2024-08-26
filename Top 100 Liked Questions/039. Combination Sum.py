@@ -213,8 +213,9 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
     print(f"\tTarget:      {Trg}")
 
     Cmbs = []
-
     AllCmbs = []
+
+    Hlp03_BckTrcCndRcr([], 0, 0)
 
 
 def Out_Prt(Cmbs):
