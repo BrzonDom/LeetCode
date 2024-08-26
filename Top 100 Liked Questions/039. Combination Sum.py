@@ -207,7 +207,8 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
             if ttl == Trg:
 
-                print()
+                if not fndCmb:
+                    print()
                 print(f"\t\t\t\t{cmb}")
                 print()
 
@@ -218,7 +219,8 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
                 fndCmb = False
 
-        print()
+        if not fndCmb:
+            print()
 
         if Cmbs:
             print("\tCombinations:")
