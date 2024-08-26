@@ -42,7 +42,10 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
     if ttl == Trg:
         print(f"\t\t\t{cmb} = {ttl}")
 
-        Cmbs.append(cmb)
+        cmb.sort()
+
+        if cmb not in Cmbs:
+            Cmbs.append(cmb)
 
     elif ttl < Trg:
         print(f"\t\t\t{cmb} = {ttl}")
