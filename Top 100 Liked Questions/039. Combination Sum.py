@@ -260,32 +260,34 @@ if __name__ == "__main__":
 
         # outRtrn = Slt02_VstdCmbFnc_Prt(case[0], case[1])
 
-        Cnds = case[0]
-        Trg = case[1]
+        Slt03_BckTrcCndRcrFnc_Prt(case[0], case[1])
 
-        print(f"\tCandidates: {Cnds}")
-        print(f"\tTarget:      {Trg}")
-        print()
-
-        Cmbs = []
-        AllCmbs = []
-
-        Hlp03_BckTrcCndRcr([], 0, 0)
-
-        print("\t\tAll Combinations:")
-
-        for cmb in AllCmbs:
-            print(f"\t\t\t{cmb}")
-        print()
-
-        if Cmbs:
-            print("\tCombinations:")
-
-            for cmb in Cmbs:
-                print(f"\t\t{cmb}")
-
-        else:
-            print("\tNo Combinations found")
+        # Cnds = case[0]
+        # Trg = case[1]
+        #
+        # print(f"\tCandidates: {Cnds}")
+        # print(f"\tTarget:      {Trg}")
+        # print()
+        #
+        # Cmbs = []
+        # AllCmbs = []
+        #
+        # Hlp03_BckTrcCndRcr([], 0, 0)
+        #
+        # print("\t\tAll Combinations:")
+        #
+        # for cmb in AllCmbs:
+        #     print(f"\t\t\t{cmb}")
+        # print()
+        #
+        # if Cmbs:
+        #     print("\tCombinations:")
+        #
+        #     for cmb in Cmbs:
+        #         print(f"\t\t{cmb}")
+        #
+        # else:
+        #     print("\tNo Combinations found")
 
         # Out_Prt(outRtrn)
 
