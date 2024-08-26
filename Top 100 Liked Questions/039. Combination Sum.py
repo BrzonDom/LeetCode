@@ -222,13 +222,15 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
         if not fndCmb:
             print()
 
-        if Cmbs:
-            print("\tCombinations:")
+    return Cmbs
 
-            for cmb in Cmbs:
-                print(f"\t\t{cmb}")
+    if Cmbs:
+        print("\tCombinations:")
 
-            return Cmbs
+        for cmb in Cmbs:
+            print(f"\t\t{cmb}")
+
+        return Cmbs
 
     print("\tNo Combinations found")
 
