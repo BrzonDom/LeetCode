@@ -34,10 +34,12 @@ https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/?envTyp
 InputLst = [[1, 0, 3, 2, 4, 0, 5, 6],
             [1, 0, 2, 3, 4, 5, 0, 0, 6, 7, 0, 8, 0, 9, 10, 0, 0, 11, 0, 12, 0, 13, 0, 0, 14]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     ndTr = case
 
     print(f"\t{ndTr}")
 
-    print()
+    print("\n")
