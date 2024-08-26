@@ -42,6 +42,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
         if ttl == Trg:
+            AllCmbs.append(cmb)
 
             print()
             print(f"\t\t\t\t{cmb}")
@@ -53,6 +54,8 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
                 Cmbs.append(cmb)
 
         elif ttl < Trg:
+            AllCmbs.append(cmb)
+
             print(f"\t\t\t{cmb} = {ttl}")
 
             for n, nm in enumerate(cnd):
@@ -67,6 +70,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     print()
 
     Cmbs = []
+    AllCmbs = []
 
     print("\t\tAll Combinations:")
 
