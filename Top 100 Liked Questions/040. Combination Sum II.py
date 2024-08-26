@@ -37,31 +37,6 @@ Constraints:
 """
 
 
-def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
-
-    if ttl == Trg:
-
-        print()
-        print(f"\t\t\t\t{cmb}")
-        print()
-
-        cmb.sort()
-
-        if cmb not in Cmbs:
-            Cmbs.append(cmb)
-
-    elif ttl < Trg:
-        print(f"\t\t\t{cmb} = {ttl}")
-
-        for n, nm in enumerate(cnd):
-
-            nCmb = cmb + [nm]
-            nTtl = ttl + nm
-            nCnd = cnd[:n] + cnd[n+1:]
-
-            Hlp01_SrtdCmbRcrs(nCmb, nCnd, nTtl)
-
-
 def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
     def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
