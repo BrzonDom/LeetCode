@@ -13,13 +13,14 @@ https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/?envTyp
 
         Example 1:
 
-            Input: root = [1,null,3,2,4,null,5,6]
-            Output: [5,6,3,2,4,1]
+            Input: root = [1, null, 3, 2, 4, null, 5, 6]
+            Output: [5, 6, 3, 2, 4, 1]
 
         Example 2:
 
-            Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
-            Output: [2,6,14,11,7,3,12,8,4,13,9,10,5,1]
+            Input: root = [1, null, 2, 3, 4, 5, null, null, 6, 7, null, 8, null, 9, 10, null, null, 11, null,
+                           12, null, 13, null, null, 14]
+            Output: [2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1]
 
 
         Constraints:
@@ -30,9 +31,8 @@ https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/?envTyp
 
 """
 
-
-InputLst = [[1,0,3,2,4,0,5,6],
-            [1,0,2,3,4,5,0,0,6,7,0,8,0,9,10,0,0,11,0,12,0,13,0,0,14]]
+InputLst = [[1, 0, 3, 2, 4, 0, 5, 6],
+            [1, 0, 2, 3, 4, 5, 0, 0, 6, 7, 0, 8, 0, 9, 10, 0, 0, 11, 0, 12, 0, 13, 0, 0, 14]]
 
 for case in InputLst:
 
