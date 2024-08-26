@@ -218,6 +218,12 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
     Hlp03_BckTrcCndRcr([], 0, 0)
 
+    print("\t\tAll Combinations:")
+
+    for cmb in AllCmbs:
+        print(f"\t\t\t{cmb}")
+    print()
+
     if Cmbs:
         print("\tCombinations:")
 
