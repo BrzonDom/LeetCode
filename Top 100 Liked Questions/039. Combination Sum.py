@@ -46,7 +46,7 @@ https://leetcode.com/problems/combination-sum/description/
 
 def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
-    def Hlp01_SrtdCmbRcrs(cmb, ttl):
+    def Hlp01_SrtdCmbRcr(cmb, ttl):
 
         if ttl == Trg:
             AllCmb.append(cmb)
@@ -63,7 +63,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
                 nCmb = cmb + [nm]
                 nTtl = ttl + nm
 
-                Hlp01_SrtdCmbRcrs(nCmb, nTtl)
+                Hlp01_SrtdCmbRcr(nCmb, nTtl)
 
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
@@ -73,7 +73,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     Cmbs = []
 
     for nm in Cnds:
-        Hlp01_SrtdCmbRcrs([nm], nm)
+        Hlp01_SrtdCmbRcr([nm], nm)
 
     if AllCmb:
 
@@ -106,7 +106,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
 def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
 
-    def Hlp02_VstdCmbRcrs(cmb, ttl):
+    def Hlp02_VstdCmbRcr(cmb, ttl):
 
         if ttl == Trg:
             AllCmbs.append(cmb)
@@ -124,7 +124,7 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
                 if str(nCmb) not in Vstd:
                     Vstd.add(str(nCmb))
 
-                    Hlp02_VstdCmbRcrs(nCmb, nTtl)
+                    Hlp02_VstdCmbRcr(nCmb, nTtl)
 
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
@@ -136,7 +136,7 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     AllCmbs = []
 
     for nm in Cnds:
-        Hlp02_VstdCmbRcrs([nm], nm)
+        Hlp02_VstdCmbRcr([nm], nm)
 
     if AllCmbs:
         print("\t\tAll Combinations:")
