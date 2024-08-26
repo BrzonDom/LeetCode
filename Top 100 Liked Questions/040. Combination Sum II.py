@@ -53,6 +53,8 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
             nTtl = ttl + nm
             nCnd = cnd[:n] + cnd[n+1:]
 
+            Hlp01_SrtdCmbRcrs(nCmb, nCnd, nTtl)
+
 
 if __name__ == "__main__":
 
