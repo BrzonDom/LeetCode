@@ -47,9 +47,9 @@ def Hlp01_SrtdCmbRcrs(cmb, cnd, ttl):
 
         for n, nm in enumerate(cnd):
 
-            print(f"\t\t{cmb + [nm]}")
-            print(f"\t\t{ttl + nm}")
-            print(f"\t\t{cnd[:n]} {cnd[n+1:]}")
+            print(f"\t\t\t{cmb + [nm]}")
+            print(f"\t\t\t{ttl + nm}")
+            print(f"\t\t\t{cnd[:n]} {cnd[n+1:]}")
             print()
 
             nCmb = cmb + [nm]
