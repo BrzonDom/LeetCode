@@ -169,17 +169,17 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
 def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl):
 
     if ttl == Trg:
+        print(f"\t\t\t{cmb} = {ttl}")
 
         Cmbs.append(cmb)
 
     elif ttl < Trg:
+        print(f"\t\t\t{cmb} = {ttl}")
 
         for nm in Cnds:
 
             nCmb = cmb + [nm]
             nTtl = ttl + nm
-
-            print(f"\t\t\t{nCmb} = {nTtl}")
 
             Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl)
 
