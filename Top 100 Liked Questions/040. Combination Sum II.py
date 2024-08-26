@@ -81,6 +81,9 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
         for cmb in Cmbs:
             print(f"\t\t{cmb}")
 
+    else:
+        print("\tNo Combinations Found")
+
 
 if __name__ == "__main__":
 
