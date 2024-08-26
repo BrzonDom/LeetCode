@@ -189,6 +189,26 @@ def Hlp03_BckTrcCndRcr(cmb, ttl, idx):
 
 def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
+    def Hlp03_BckTrcCndRcr(cmb, ttl, idx):
+
+        if ttl == Trg:
+            AllCmbs.append(cmb)
+
+            Cmbs.append(cmb)
+
+        elif ttl < Trg and idx < len(Cnds):
+            AllCmbs.append(cmb)
+
+            nm = Cnds[idx]
+
+            nCmb = cmb + [nm]
+            nTtl = ttl + nm
+            nIdx = idx + 1
+
+            Hlp03_BckTrcCndRcr(nCmb, nTtl, idx)
+
+            Hlp03_BckTrcCndRcr(cmb, ttl, nIdx)
+
     print(f"\tCandidates: {Cnds}")
     print(f"\tTarget:      {Trg}")
 
