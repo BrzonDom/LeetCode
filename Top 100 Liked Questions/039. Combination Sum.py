@@ -166,7 +166,7 @@ def Slt02_VstdCmbFnc_Prt(Cnds, Trg):
     return Cmbs
 
 
-def Hlp03_BckTrcCndRcr_Prt(cmb, ttl, idx):
+def Hlp03_BckTrcCndRcr(cmb, ttl, idx):
 
     if ttl == Trg:
         AllCmbs.append(cmb)
@@ -182,9 +182,9 @@ def Hlp03_BckTrcCndRcr_Prt(cmb, ttl, idx):
         nTtl = ttl + nm
         nIdx = idx + 1
 
-        Hlp03_BckTrcCndRcr_Prt(nCmb, nTtl, idx)
+        Hlp03_BckTrcCndRcr(nCmb, nTtl, idx)
 
-        Hlp03_BckTrcCndRcr_Prt(cmb, ttl, nIdx)
+        Hlp03_BckTrcCndRcr(cmb, ttl, nIdx)
 
 
 def Out_Prt(Cmbs):
@@ -226,7 +226,7 @@ if __name__ == "__main__":
 
         print("\t\tAll Combinations:")
 
-        Hlp03_BckTrcCndRcr_Prt([], 0, 0)
+        Hlp03_BckTrcCndRcr([], 0, 0)
         print()
 
         if Cmbs:
