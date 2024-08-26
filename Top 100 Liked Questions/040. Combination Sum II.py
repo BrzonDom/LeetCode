@@ -85,7 +85,7 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     else:
         print("\tNo Combinations Found")
 
-        return Cmbs
+        return []
 
 
 if __name__ == "__main__":
