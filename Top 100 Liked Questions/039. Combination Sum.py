@@ -200,6 +200,8 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
     if AllCmbs:
         print("\t\tAll Combinations:")
 
+        fndCmb = False
+
         for cmb in AllCmbs:
             ttl = sum(cmb)
 
@@ -209,8 +211,12 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
                 print(f"\t\t\t\t{cmb}")
                 print()
 
+                fndCmb = True
+
             else:
                 print(f"\t\t\t{cmb} = {ttl}")
+
+                fndCmb = False
 
         print()
 
