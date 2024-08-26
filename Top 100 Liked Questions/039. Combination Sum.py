@@ -222,8 +222,7 @@ if __name__ == "__main__":
 
         print("\t\tAll Combinations:")
 
-        for nm in Cnds:
-            Hlp03_BckTrckCndRcrs_Prt([nm], nm, 0)
+        Hlp03_BckTrckCndRcrs_Prt([], 0, 0)
         print()
 
         if Cmbs:
