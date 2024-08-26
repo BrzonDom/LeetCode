@@ -184,6 +184,8 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl, idx):
 
         Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl, idx)
 
+        Hlp03_BckTrckCndRcrs_Prt(cmb, ttl, nIdx)
+
 
 def Out_Prt(Cmbs):
 
