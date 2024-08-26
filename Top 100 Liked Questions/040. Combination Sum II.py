@@ -138,6 +138,10 @@ if __name__ == "__main__":
 
         print(f"\tCandidates: {Cnds}")
         print(f"\tTarget:      {Trg}")
+        print()
+
+        for nm in Cnds:
+            print(f"\t\t{nm}")
 
         # Out_Prt(outRtrn)
 
