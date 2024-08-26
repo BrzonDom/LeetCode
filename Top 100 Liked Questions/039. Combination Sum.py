@@ -236,8 +236,7 @@ def Slt03_BckTrcCndRcrFnc_Prt(Cnds, Trg):
 
         return Cmbs
 
-    else:
-        return []
+    return []
 
 
 def Out_Prt(Cmbs):
