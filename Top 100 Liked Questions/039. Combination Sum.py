@@ -176,12 +176,12 @@ def Hlp03_BckTrckCndRcrs_Prt(cmb, ttl, idx):
     elif ttl < Trg:
         print(f"\t\t\t{cmb} = {ttl}")
 
-        for nm in Cnds:
+        nm = Cnds[idx]
 
-            nCmb = cmb + [nm]
-            nTtl = ttl + nm
+        nCmb = cmb + [nm]
+        nTtl = ttl + nm
 
-            Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl, idx)
+        Hlp03_BckTrckCndRcrs_Prt(nCmb, nTtl, idx)
 
 
 def Out_Prt(Cmbs):
