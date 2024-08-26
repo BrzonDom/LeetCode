@@ -69,18 +69,20 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
     for n, nm in enumerate(Cnds):
         Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n + 1:], nm)
 
-    print("\t\tAll Combinations:")
+    if AllCmbs:
 
-    for cmb in AllCmbs:
-        ttl = sum(cmb)
+        print("\t\tAll Combinations:")
 
-        if ttl == Trg:
-            print(f"\t\t\t{cmb}")
+        for cmb in AllCmbs:
+            ttl = sum(cmb)
 
-        else:
-            print(f"\t\t\t\t{cmb} = {ttl}")
+            if ttl == Trg:
+                print(f"\t\t\t{cmb}")
 
-    print()
+            else:
+                print(f"\t\t\t\t{cmb} = {ttl}")
+
+        print()
 
     if Cmbs:
         print("\tCombinations:")
