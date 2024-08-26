@@ -36,5 +36,8 @@ InputLst = [[1, 0, 3, 2, 4, 0, 5, 6],
 
 for case in InputLst:
 
-    print(case)
+    ndTr = case
+
+    print(f"\t{ndTr}")
+
     print()
