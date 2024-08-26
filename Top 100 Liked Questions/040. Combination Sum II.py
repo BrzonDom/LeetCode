@@ -92,6 +92,9 @@ def Slt01_SrtdCmbFnc_Prt(Cnds, Trg):
 
     Cnds = []
 
+    for n, nm in enumerate(Cnds):
+        Hlp01_SrtdCmbRcrs([nm], Cnds[:n] + Cnds[n + 1:], nm)
+
 
 if __name__ == "__main__":
 
