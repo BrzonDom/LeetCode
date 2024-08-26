@@ -225,6 +225,9 @@ if __name__ == "__main__":
             for cmb in Cmbs:
                 print(f"\t\t{cmb}")
 
+        else:
+            print("\tNo Combinations found")
+
         # Out_Prt(outRtrn)
 
         print("\n")
