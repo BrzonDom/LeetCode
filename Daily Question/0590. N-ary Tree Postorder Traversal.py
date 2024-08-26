@@ -41,6 +41,12 @@ https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/?envTyp
 """
 
 
+class Node:
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+
+
 if __name__ == "__main__":
 
     InputLst = [[1, 0, 3, 2, 4, 0, 5, 6],
