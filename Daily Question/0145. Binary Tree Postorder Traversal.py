@@ -42,16 +42,18 @@ https://leetcode.com/problems/binary-tree-postorder-traversal/description/?envTy
 """
 
 
-InputLst = [[1, 0, 2, 3],
-            [],
-            [1]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[1, 0, 2, 3],
+                [],
+                [1]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    BnTr = case
+        print(f"{csCnt + 1}.Case\n")
 
-    print(f"\t{BnTr}")
+        BnTr = case
 
-    print("\n")
+        print(f"\t{BnTr}")
+
+        print("\n")
