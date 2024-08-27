@@ -30,3 +30,13 @@ https://leetcode.com/problems/binary-tree-postorder-traversal/description/?envTy
         -100 <= Node.val <= 100
 
 """
+
+
+InputLst = [[1,0,2,3],
+            [],
+            [1]]
+
+for case in InputLst:
+
+    print(case)
+    print()
