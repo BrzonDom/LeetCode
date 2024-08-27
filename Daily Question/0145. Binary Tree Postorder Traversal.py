@@ -36,10 +36,12 @@ InputLst = [[1, 0, 2, 3],
             [],
             [1]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     BnTr = case
 
-    print(BnTr)
+    print(f"\t{BnTr}")
 
-    print()
+    print("\n")
