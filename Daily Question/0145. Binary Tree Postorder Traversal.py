@@ -38,5 +38,8 @@ InputLst = [[1, 0, 2, 3],
 
 for case in InputLst:
 
-    print(case)
+    BnTr = case
+
+    print(BnTr)
+
     print()
