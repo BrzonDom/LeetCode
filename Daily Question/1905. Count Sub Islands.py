@@ -102,6 +102,8 @@ if __name__ == "__main__":
         print("\tLand grid:")
 
         for ln in Lnd:
+            print("\t\t", end="")
+
             for sq in ln:
                 print(sq, end=" ")
             print()
@@ -110,6 +112,8 @@ if __name__ == "__main__":
         print("\tIsland grid:")
 
         for ln in Isl:
+            print("\t\t", end="")
+
             for sq in ln:
                 print(sq, end=" ")
             print()
