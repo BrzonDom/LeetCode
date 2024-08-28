@@ -102,13 +102,17 @@ if __name__ == "__main__":
         print("\tLand grid:")
 
         for ln in Lnd:
-            print(f"\t\t{ln}")
+            for sq in ln:
+                print(sq, end=" ")
+            print()
         print()
 
         print("\tIsland grid:")
 
         for ln in Isl:
-            print(f"\t\t{ln}")
+            for sq in ln:
+                print(sq, end=" ")
+            print()
         print()
 
         print("\tGrid dimensions:")
