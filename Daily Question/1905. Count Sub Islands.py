@@ -108,7 +108,7 @@ def Prt01_Grd_DspDt(Grd, Dt, spc=2):
                 print()
 
 
-def Prt02_Grd_DspIn(Grd):
+def Prt02_Grd_DspIn(Grd, Tp):
 
     return
 
