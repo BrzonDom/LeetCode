@@ -107,13 +107,13 @@ if __name__ == "__main__":
 
         print("\tLand grid:\n")
 
-        print("\t\t", end="")
+        print("\t\t", end="   ")
         for c in range(ClDm):
             print(f"{c:2}", end=" ")
         print()
 
-        for ln in Lnd:
-            print("\t\t", end="")
+        for r, ln in enumerate(Lnd):
+            print(f"\t\t{r:2}", end=" ")
 
             for sq in ln:
 
