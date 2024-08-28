@@ -241,38 +241,38 @@ if __name__ == "__main__":
                                                 "R": False,
                                                 "D": False}
 
-        print("\t\tLand moves:\n")
-        print(f"\t\t\t\t\t\t  L   U   R   D")
-
-        for r, ln in enumerate(Lnd):
-            for c, sq in enumerate(ln):
-
-                r += 1
-                c += 1
-
-                if (r, c) in Mvmt:
-                    print(f"\t\t\t{[r, c]}: ", end="\t|")
-
-                    if Mvmt[(r, c)]["L"]:
-                        print(" x ", end="|")
-                    else:
-                        print("   ", end="|")
-
-                    if Mvmt[(r, c)]["U"]:
-                        print(" x ", end="|")
-                    else:
-                        print("   ", end="|")
-
-                    if Mvmt[(r, c)]["R"]:
-                        print(" x ", end="|")
-                    else:
-                        print("   ", end="|")
-
-                    if Mvmt[(r, c)]["D"]:
-                        print(" x ", end="|")
-                    else:
-                        print("   ", end="|")
-
-                    print()
+        # print("\t\tLand moves:\n")
+        # print(f"\t\t\t\t\t\t  L   U   R   D")
+        #
+        # for r, ln in enumerate(Lnd):
+        #     for c, sq in enumerate(ln):
+        #
+        #         r += 1
+        #         c += 1
+        #
+        #         if (r, c) in Mvmt:
+        #             print(f"\t\t\t{[r, c]}: ", end="\t|")
+        #
+        #             if Mvmt[(r, c)]["L"]:
+        #                 print(" x ", end="|")
+        #             else:
+        #                 print("   ", end="|")
+        #
+        #             if Mvmt[(r, c)]["U"]:
+        #                 print(" x ", end="|")
+        #             else:
+        #                 print("   ", end="|")
+        #
+        #             if Mvmt[(r, c)]["R"]:
+        #                 print(" x ", end="|")
+        #             else:
+        #                 print("   ", end="|")
+        #
+        #             if Mvmt[(r, c)]["D"]:
+        #                 print(" x ", end="|")
+        #             else:
+        #                 print("   ", end="|")
+        #
+        #             print()
 
         print("\n")
