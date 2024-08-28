@@ -172,31 +172,6 @@ if __name__ == "__main__":
 
         continue
 
-
-        lftMv = []
-
-        r, c = 0, 1
-        for ln in Lnd:
-            for sq in ln[1:]:
-
-                # if c > 0 and Lnd[r][c - 1]:
-
-                if Lnd[r][c-1]:
-
-                    if (r, c) not in Mvmt:
-                        Mvmt[(r, c)] = {"L": False,
-                                        "U": False,
-                                        "R": False,
-                                        "D": False}
-
-                    Mvmt[(r, c)]["L"] = True
-
-                    lftMv.append((r, c))
-
-                c += 1
-            r += 1
-            c = 1
-
         upMv = []
 
         r, c = 1, 0
