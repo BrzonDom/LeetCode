@@ -144,11 +144,12 @@ if __name__ == "__main__":
 
                     if (r, c) not in Mvmt:
                         Mvmt[(r, c)] = {"L": False,
-                                        "U": False,
+                                        "U": True,
                                         "R": False,
                                         "D": False}
 
-                    Mvmt[(r, c)]["U"] = True
+                    else:
+                        Mvmt[(r, c)]["U"] = True
 
                 if c < ClDm-1 and Lnd[r][c+1]:
 
