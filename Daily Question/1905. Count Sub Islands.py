@@ -174,30 +174,6 @@ if __name__ == "__main__":
 
         continue
 
-        rgtMv = []
-
-        r, c = 0, 0
-        for ln in Lnd:
-            for sq in ln[:-1]:
-
-                # if c < ClDm-1 and Lnd[r][c+1]:
-
-                if Lnd[r][c + 1]:
-
-                    if (r, c) not in Mvmt:
-                        Mvmt[(r, c)] = {"L": False,
-                                        "U": False,
-                                        "R": False,
-                                        "D": False}
-
-                    Mvmt[(r, c)]["R"] = True
-
-                    rgtMv.append((r, c))
-
-                c += 1
-            r += 1
-            c = 0
-
         dwnMv = []
 
         r, c = 0, 0
