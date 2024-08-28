@@ -122,6 +122,7 @@ if __name__ == "__main__":
         print("\tGrid dimensions:")
         print(f"\t\tRows: {RwDm}")
         print(f"\t\tCols: {ClDm}")
+        print()
 
         Mvmt = {}
 
@@ -212,5 +213,11 @@ if __name__ == "__main__":
                 c += 1
             r += 1
             c = 0
+
+        for r, ln in enumerate(Lnd):
+            for c, sq in enumerate(ln):
+
+                if (r, c) in Mvmt:
+                    print(f"\t{[r, c]}")
 
         print("\n")
