@@ -146,8 +146,8 @@ if __name__ == "__main__":
 
         print("\t\tLand with up land:")
 
-        r, c = 0, 0
-        for ln in Lnd:
+        r, c = 1, 0
+        for ln in Lnd[1:]:
             for sq in ln:
 
                 if r > 0 and Lnd[r-1][c]:
