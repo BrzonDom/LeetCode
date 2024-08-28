@@ -88,5 +88,7 @@ InputLst = [[
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case[0]}")
+    print(f"\t{case[1]}")
+
     print()
