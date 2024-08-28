@@ -69,7 +69,7 @@ Symbols:
 """
 
 
-def Prt01_Grd_DspDt(Grd, Dt):
+def Prt01_Grd_DspDt(Grd, Dt, spc=3):
 
     print("\t\tLand moves:\n")
     print(f"\t\t\t\t\t\t  L   U   R   D")
