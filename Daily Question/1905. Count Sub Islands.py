@@ -182,6 +182,8 @@ if __name__ == "__main__":
         print(f"\t\tCols: {ClDm}")
         print()
 
+        """
+
         Mvmt = {}
 
         for r, ln in enumerate(Lnd):
@@ -239,5 +241,8 @@ if __name__ == "__main__":
                                                 "D": False}
 
         Prt02_Grd_DspDt(Lnd, Mvmt)
+        
+        """
+
 
         print("\n")
