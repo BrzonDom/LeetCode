@@ -109,5 +109,10 @@ if __name__ == "__main__":
 
         for ln in Isl:
             print(f"\t\t{ln}")
+        print()
+
+        print("\tGrid dimensions:")
+        print(f"\t\tRows: {dmR}")
+        print(f"\t\tCols: {dmC}")
 
         print("\n")
