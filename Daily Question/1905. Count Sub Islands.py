@@ -96,8 +96,8 @@ if __name__ == "__main__":
         Lnd = case[0]
         Isl = case[1]
 
-        dmR = len(Lnd)
-        dmC = len(Lnd[0])
+        RwDm = len(Lnd)
+        ClDm = len(Lnd[0])
 
         print("\tLand grid:")
 
@@ -112,7 +112,7 @@ if __name__ == "__main__":
         print()
 
         print("\tGrid dimensions:")
-        print(f"\t\tRows: {dmR}")
-        print(f"\t\tCols: {dmC}")
+        print(f"\t\tRows: {RwDm}")
+        print(f"\t\tCols: {ClDm}")
 
         print("\n")
