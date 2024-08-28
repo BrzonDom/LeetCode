@@ -123,4 +123,10 @@ if __name__ == "__main__":
         print(f"\t\tRows: {RwDm}")
         print(f"\t\tCols: {ClDm}")
 
+        lftMv = []
+
+        for r, ln in enumerate(Lnd):
+            for c, sq in enumerate(ln):
+                print(Lnd[r][c], end="")
+
         print("\n")
