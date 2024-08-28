@@ -279,6 +279,7 @@ if __name__ == "__main__":
                             if qR < RwDm - 1 and Lnd[qR + 1][qC]:
                                 flQu.append((qR + 1, qC))
 
+                    Prt01_Grd_DspIn(flLnd, "Connected land")
                     flLnd = copy.deepcopy(Lnd)
 
         print("\n")
