@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
         r, c = 0, 0
         for ln in Lnd:
-            for sq in ln:
+            for sq in ln[:-1]:
 
                 if c < ClDm-1 and Lnd[r][c+1]:
                     rgtMv.append((r, c))
