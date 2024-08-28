@@ -183,7 +183,7 @@ if __name__ == "__main__":
         print("\t\tLand with down land:")
 
         r, c = 0, 0
-        for ln in Lnd:
+        for ln in Lnd[:-1]:
             for sq in ln:
 
                 if r < RwDm-1 and Lnd[r+1][c]:
