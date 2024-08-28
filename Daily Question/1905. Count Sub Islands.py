@@ -257,24 +257,26 @@ if __name__ == "__main__":
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
 
-                if sq:
+                if sq and (r, c) not in vstd:
                     flQu.append((r, c))
 
                     while flQu:
 
                         (qR, qC) = flQu.pop(0)
 
-                        if qC > 0 and Lnd[qR][qC - 1]:
-                            flQu.append((qR, qC))
+                        if (qR, qC) not in vstd:
 
-                        if qR > 0 and Lnd[qR - 1][qC]:
-                            flQu.append((qR, qC))
+                            if qC > 0 and Lnd[qR][qC - 1]:
+                                flQu.append((qR, qC))
 
-                        if qC < ClDm - 1 and Lnd[qR][qC + 1]:
-                            flQu.append((qR, qC))
+                            if qR > 0 and Lnd[qR - 1][qC]:
+                                flQu.append((qR, qC))
 
-                        if qR < RwDm - 1 and Lnd[qR + 1][qC]:
-                            flQu.append((qR, qC))
+                            if qC < ClDm - 1 and Lnd[qR][qC + 1]:
+                                flQu.append((qR, qC))
+
+                            if qR < RwDm - 1 and Lnd[qR + 1][qC]:
+                                flQu.append((qR, qC))
 
                         break
 
