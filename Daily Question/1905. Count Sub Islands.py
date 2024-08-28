@@ -173,8 +173,6 @@ if __name__ == "__main__":
                     else:
                         Mvmt[(r, c)]["D"] = True
 
-        continue
-
         print("\t\tLand with a move:\n")
         print(f"\t\t\t\t\t\t  L   U   R   D")
 
