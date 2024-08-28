@@ -108,7 +108,6 @@ if __name__ == "__main__":
         print("\tLand grid:\n")
 
         print("\t\t", end="")
-
         for c in range(ClDm):
             print(f"{c:2}", end=" ")
         print()
@@ -123,9 +122,14 @@ if __name__ == "__main__":
                 else:
                     print("[ ]", end="")
             print()
-        print()
+        print("\n")
 
-        print("\tIsland grid:")
+        print("\tIsland grid:\n")
+
+        print("\t\t", end="")
+        for c in range(ClDm):
+            print(f"{c:2}", end=" ")
+        print()
 
         for ln in Isl:
             print("\t\t", end="")
@@ -137,7 +141,7 @@ if __name__ == "__main__":
                 else:
                     print("[ ]", end="")
             print()
-        print()
+        print("\n")
 
         print("\tGrid dimensions:")
         print(f"\t\tRows: {RwDm}")
