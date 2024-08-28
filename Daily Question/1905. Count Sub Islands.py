@@ -105,15 +105,15 @@ if __name__ == "__main__":
         RwDm = len(Lnd)
         ClDm = len(Lnd[0])
 
-        print("\tLand grid:\n")
+        print("\tLand grid:")
 
-        print("\t\t", end="   ")
+        print("\t\t\t\t", end="   ")
         for c in range(ClDm):
             print(f"{c:2}", end=" ")
         print()
 
         for r, ln in enumerate(Lnd):
-            print(f"\t\t{r:2}", end=" ")
+            print(f"\t\t\t\t{r:2}", end=" ")
 
             for sq in ln:
 
@@ -122,17 +122,17 @@ if __name__ == "__main__":
                 else:
                     print("[ ]", end="")
             print()
-        print("\n")
+        print()
 
-        print("\tIsland grid:\n")
+        print("\tIsland grid:")
 
-        print("\t\t", end="   ")
+        print("\t\t\t\t", end="   ")
         for c in range(ClDm):
             print(f"{c:2}", end=" ")
         print()
 
         for r, ln in enumerate(Isl):
-            print(f"\t\t{r:2}", end=" ")
+            print(f"\t\t\t\t{r:2}", end=" ")
 
             for sq in ln:
 
