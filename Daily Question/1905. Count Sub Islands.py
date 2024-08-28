@@ -263,6 +263,9 @@ if __name__ == "__main__":
                         if c < ClDm - 1 and Lnd[r][c + 1]:
                             flQu.append((r, c))
 
+                        if r < RwDm - 1 and Lnd[r + 1][c]:
+                            flQu.append((r, c))
+
                         break
 
                 print(sq, end=" ")
