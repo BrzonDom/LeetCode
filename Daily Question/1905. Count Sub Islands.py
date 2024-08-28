@@ -173,25 +173,6 @@ if __name__ == "__main__":
 
         Prt02_Grd_DspIn(Lnd, 0)
 
-        # print("\tLand grid:")
-        #
-        # print("\t\t\t\t", end="   ")
-        # for c in range(1, ClDm+1):
-        #     print(f"{c:2}", end=" ")
-        # print()
-        #
-        # for r, ln in enumerate(Lnd):
-        #     print(f"\t\t\t\t{r+1:2}", end=" ")
-        #
-        #     for sq in ln:
-        #
-        #         if sq:
-        #             print("[#]", end="")
-        #         else:
-        #             print("[ ]", end="")
-        #     print()
-        # print()
-
         print("\tIsland grid:")
 
         print("\t\t\t\t", end="   ")
