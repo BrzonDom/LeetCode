@@ -126,6 +126,15 @@ if __name__ == "__main__":
 
         Mvmt = {}
 
+        for r, ln in enumerate(Lnd):
+            for c, sq in enumerate(ln):
+                print(Lnd[r][c], end="")
+            print()
+
+        print()
+        continue
+
+
         lftMv = []
 
         r, c = 0, 1
