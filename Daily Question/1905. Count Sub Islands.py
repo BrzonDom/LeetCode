@@ -157,9 +157,9 @@ if __name__ == "__main__":
 
                     if (r+1, c+1) not in Mvmt:
                         Mvmt[(r+1, c+1)] = {"L": True,
-                                        "U": False,
-                                        "R": False,
-                                        "D": False}
+                                            "U": False,
+                                            "R": False,
+                                            "D": False}
 
                     else:
                         Mvmt[(r+1, c+1)]["L"] = True
@@ -168,9 +168,9 @@ if __name__ == "__main__":
 
                     if (r+1, c+1) not in Mvmt:
                         Mvmt[(r+1, c+1)] = {"L": False,
-                                        "U": True,
-                                        "R": False,
-                                        "D": False}
+                                            "U": True,
+                                            "R": False,
+                                            "D": False}
 
                     else:
                         Mvmt[(r+1, c+1)]["U"] = True
@@ -179,9 +179,9 @@ if __name__ == "__main__":
 
                     if (r+1, c+1) not in Mvmt:
                         Mvmt[(r+1, c+1)] = {"L": False,
-                                        "U": False,
-                                        "R": True,
-                                        "D": False}
+                                            "U": False,
+                                            "R": True,
+                                            "D": False}
 
                     else:
                         Mvmt[(r+1, c+1)]["R"] = True
@@ -190,9 +190,9 @@ if __name__ == "__main__":
 
                     if (r+1, c+1) not in Mvmt:
                         Mvmt[(r+1, c+1)] = {"L": False,
-                                        "U": False,
-                                        "R": False,
-                                        "D": True}
+                                            "U": False,
+                                            "R": False,
+                                            "D": True}
 
                     else:
                         Mvmt[(r+1, c+1)]["D"] = True
