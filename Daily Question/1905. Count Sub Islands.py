@@ -128,9 +128,9 @@ if __name__ == "__main__":
 
         print("\t\tLand with left land:")
 
-        r, c = 0, 0
+        r, c = 0, 1
         for ln in Lnd:
-            for sq in ln:
+            for sq in ln[1:]:
 
                 if c > 0 and Lnd[r][c-1]:
                     lftMv.append((r, c))
@@ -138,7 +138,7 @@ if __name__ == "__main__":
                     print(f"\t\t\t{[r, c]}")
                 c += 1
             r += 1
-            c = 0
+            c = 1
 
         print()
 
