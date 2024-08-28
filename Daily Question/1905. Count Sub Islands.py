@@ -69,7 +69,7 @@ Symbols:
 """
 
 
-def Prt01_Grd_DspDt(Grd, Dt, spc=2):
+def Prt02_Grd_DspDt(Grd, Dt, spc=2):
 
     spc = "\t" * spc
 
@@ -108,7 +108,7 @@ def Prt01_Grd_DspDt(Grd, Dt, spc=2):
                 print()
 
 
-def Prt02_Grd_DspIn(Grd, Tp):
+def Prt01_Grd_DspIn(Grd, Tp):
 
     rwGr = len(Grd)
     clGr = len(Grd[0])
@@ -171,9 +171,9 @@ if __name__ == "__main__":
         RwDm = len(Lnd)
         ClDm = len(Lnd[0])
 
-        Prt02_Grd_DspIn(Lnd, 0)
+        Prt01_Grd_DspIn(Lnd, 0)
 
-        Prt02_Grd_DspIn(Isl, 1)
+        Prt01_Grd_DspIn(Isl, 1)
 
         print()
 
@@ -238,6 +238,6 @@ if __name__ == "__main__":
                                                 "R": False,
                                                 "D": False}
 
-        Prt01_Grd_DspDt(Lnd, Mvmt)
+        Prt02_Grd_DspDt(Lnd, Mvmt)
 
         print("\n")
