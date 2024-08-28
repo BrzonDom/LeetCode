@@ -266,6 +266,8 @@ if __name__ == "__main__":
                     while flQu:
 
                         (qR, qC) = flQu.pop(0)
+                        flLnd[ilCnt].append((qR, qC))
+
                         crLnd[qR][qC] = 2
 
                         if (qR, qC) not in vstd:
@@ -281,6 +283,9 @@ if __name__ == "__main__":
 
                             if qR < RwDm - 1 and Lnd[qR + 1][qC]:
                                 flQu.append((qR + 1, qC))
+
+                    flLnd.append([])
+                    ilCnt += 1
 
                     Prt01_Grd_DspIn(crLnd, "Connected land")
                     crLnd = copy.deepcopy(Lnd)
