@@ -135,5 +135,13 @@ if __name__ == "__main__":
                     lftMv.append((r, c))
 
                     print(f"\t\t\t{[r, c]}")
+        print()
+
+        upMv = []
+
+        for r, ln in enumerate(Lnd):
+            for c, sq in enumerate(ln):
+                print(Lnd[r][c], end="")
+            print()
 
         print("\n")
