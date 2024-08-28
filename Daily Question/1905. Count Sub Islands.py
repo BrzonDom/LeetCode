@@ -256,17 +256,17 @@ if __name__ == "__main__":
 
                         (qR, qC) = flQu.pop(0)
 
-                        if c > 0 and Lnd[r][c - 1]:
-                            flQu.append((r, c))
+                        if qC > 0 and Lnd[qR][qC - 1]:
+                            flQu.append((qR, qC))
 
-                        if r > 0 and Lnd[r - 1][c]:
-                            flQu.append((r, c))
+                        if qR > 0 and Lnd[qR - 1][qC]:
+                            flQu.append((qR, qC))
 
-                        if c < ClDm - 1 and Lnd[r][c + 1]:
-                            flQu.append((r, c))
+                        if qC < ClDm - 1 and Lnd[qR][qC + 1]:
+                            flQu.append((qR, qC))
 
-                        if r < RwDm - 1 and Lnd[r + 1][c]:
-                            flQu.append((r, c))
+                        if qR < RwDm - 1 and Lnd[qR + 1][qC]:
+                            flQu.append((qR, qC))
 
                         break
 
