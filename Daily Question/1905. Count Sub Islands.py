@@ -204,7 +204,7 @@ if __name__ == "__main__":
                                                 "R": False,
                                                 "D": False}
 
-        print("\t\tLand with a move:\n")
+        print("\t\tLand moves:\n")
         print(f"\t\t\t\t\t\t  L   U   R   D")
 
         for r, ln in enumerate(Lnd):
