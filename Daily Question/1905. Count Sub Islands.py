@@ -110,10 +110,13 @@ def Prt01_Grd_DspDt(Grd, Dt, spc=2):
 
 def Prt02_Grd_DspIn(Grd, Tp):
 
+    rwGr = len(Grd)
+    clGr = len(Grd[0])
+
     print("\tLand grid:")
 
     print("\t\t\t\t", end="   ")
-    for c in range(1, ClDm + 1):
+    for c in range(1, clGr + 1):
         print(f"{c:2}", end=" ")
     print()
 
