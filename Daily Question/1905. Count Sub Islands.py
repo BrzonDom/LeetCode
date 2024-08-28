@@ -97,9 +97,14 @@ if __name__ == "__main__":
         Isl = case[1]
 
         print("\tLand grid:")
-        print(f"\t\t{Lnd}")
+
+        for ln in Lnd:
+            print(f"\t\t{ln}")
+        print()
 
         print("\tIsland grid:")
-        print(f"\t\t{Isl}")
+
+        for ln in Isl:
+            print(f"\t\t{ln}")
 
         print("\n")
