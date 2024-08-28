@@ -126,13 +126,13 @@ if __name__ == "__main__":
 
         print("\tIsland grid:\n")
 
-        print("\t\t", end="")
+        print("\t\t", end="   ")
         for c in range(ClDm):
             print(f"{c:2}", end=" ")
         print()
 
-        for ln in Isl:
-            print("\t\t", end="")
+        for r, ln in enumerate(Isl):
+            print(f"\t\t{r:2}", end=" ")
 
             for sq in ln:
 
