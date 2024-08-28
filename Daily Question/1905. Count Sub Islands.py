@@ -220,9 +220,24 @@ if __name__ == "__main__":
             for c, sq in enumerate(ln):
 
                 if (r, c) in Mvmt:
-                    print(f"\t\t\t{[r, c]}: ", end="\t")
+                    print(f"\t\t\t{[r, c]}: ", end="\t|")
 
                     if Mvmt[(r, c)]["L"]:
+                        print(" x ", end="|")
+                    else:
+                        print("   ", end="|")
+
+                    if Mvmt[(r, c)]["U"]:
+                        print(" x ", end="|")
+                    else:
+                        print("   ", end="|")
+
+                    if Mvmt[(r, c)]["R"]:
+                        print(" x ", end="|")
+                    else:
+                        print("   ", end="|")
+
+                    if Mvmt[(r, c)]["D"]:
                         print(" x ", end="|")
                     else:
                         print("   ", end="|")
