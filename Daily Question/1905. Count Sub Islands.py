@@ -153,49 +153,50 @@ if __name__ == "__main__":
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
 
-                if c > 0 and Lnd[r][c - 1]:
+                if sq:
+                    if c > 0 and Lnd[r][c - 1]:
 
-                    if (r+1, c+1) not in Mvmt:
-                        Mvmt[(r+1, c+1)] = {"L": True,
-                                            "U": False,
-                                            "R": False,
-                                            "D": False}
+                        if (r+1, c+1) not in Mvmt:
+                            Mvmt[(r+1, c+1)] = {"L": True,
+                                                "U": False,
+                                                "R": False,
+                                                "D": False}
 
-                    else:
-                        Mvmt[(r+1, c+1)]["L"] = True
+                        else:
+                            Mvmt[(r+1, c+1)]["L"] = True
 
-                if r > 0 and Lnd[r-1][c]:
+                    if r > 0 and Lnd[r-1][c]:
 
-                    if (r+1, c+1) not in Mvmt:
-                        Mvmt[(r+1, c+1)] = {"L": False,
-                                            "U": True,
-                                            "R": False,
-                                            "D": False}
+                        if (r+1, c+1) not in Mvmt:
+                            Mvmt[(r+1, c+1)] = {"L": False,
+                                                "U": True,
+                                                "R": False,
+                                                "D": False}
 
-                    else:
-                        Mvmt[(r+1, c+1)]["U"] = True
+                        else:
+                            Mvmt[(r+1, c+1)]["U"] = True
 
-                if c < ClDm-1 and Lnd[r][c+1]:
+                    if c < ClDm-1 and Lnd[r][c+1]:
 
-                    if (r+1, c+1) not in Mvmt:
-                        Mvmt[(r+1, c+1)] = {"L": False,
-                                            "U": False,
-                                            "R": True,
-                                            "D": False}
+                        if (r+1, c+1) not in Mvmt:
+                            Mvmt[(r+1, c+1)] = {"L": False,
+                                                "U": False,
+                                                "R": True,
+                                                "D": False}
 
-                    else:
-                        Mvmt[(r+1, c+1)]["R"] = True
+                        else:
+                            Mvmt[(r+1, c+1)]["R"] = True
 
-                if r < RwDm-1 and Lnd[r+1][c]:
+                    if r < RwDm-1 and Lnd[r+1][c]:
 
-                    if (r+1, c+1) not in Mvmt:
-                        Mvmt[(r+1, c+1)] = {"L": False,
-                                            "U": False,
-                                            "R": False,
-                                            "D": True}
+                        if (r+1, c+1) not in Mvmt:
+                            Mvmt[(r+1, c+1)] = {"L": False,
+                                                "U": False,
+                                                "R": False,
+                                                "D": True}
 
-                    else:
-                        Mvmt[(r+1, c+1)]["D"] = True
+                        else:
+                            Mvmt[(r+1, c+1)]["D"] = True
 
         print("\t\tLand with a move:\n")
         print(f"\t\t\t\t\t\t  L   U   R   D")
