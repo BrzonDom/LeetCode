@@ -75,9 +75,7 @@ def Prt01_Grd_DspIn(Grd, Tp):
     rwGr = len(Grd)
     clGr = len(Grd[0])
 
-    type = ("Land", "Island")
-
-    print(f"\t{type[Tp]} grid:")
+    print(f"\t{Tp} grid:")
 
     print("\t\t\t\t", end="   ")
     for c in range(1, clGr + 1):
@@ -177,9 +175,9 @@ if __name__ == "__main__":
         RwDm = len(Lnd)
         ClDm = len(Lnd[0])
 
-        Prt01_Grd_DspIn(Lnd, 0)
+        Prt01_Grd_DspIn(Lnd, "Land")
 
-        Prt01_Grd_DspIn(Isl, 1)
+        Prt01_Grd_DspIn(Isl, "Island")
 
         print()
 
