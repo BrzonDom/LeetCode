@@ -61,6 +61,7 @@ https://leetcode.com/problems/count-sub-islands/description/?envType=daily-quest
         grid1[i][j] and grid2[i][j] are either 0 or 1
 
 """
+import copy
 
 """
 Symbols:
@@ -249,6 +250,7 @@ if __name__ == "__main__":
         """
 
         flQu = []
+        flLnd = copy.deepcopy(Lnd)
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
