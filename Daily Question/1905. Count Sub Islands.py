@@ -122,13 +122,10 @@ if __name__ == "__main__":
         print("\tGrid dimensions:")
         print(f"\t\tRows: {RwDm}")
         print(f"\t\tCols: {ClDm}")
-        print()
 
         Mvmt = {}
 
         lftMv = []
-
-        print("\t\tLand with left land:")
 
         r, c = 0, 1
         for ln in Lnd:
@@ -146,16 +143,11 @@ if __name__ == "__main__":
 
                     lftMv.append((r, c))
 
-                    print(f"\t\t\t{[r, c]}")
                 c += 1
             r += 1
             c = 1
 
-        print()
-
         upMv = []
-
-        print("\t\tLand with up land:")
 
         r, c = 1, 0
         for ln in Lnd[1:]:
@@ -173,16 +165,11 @@ if __name__ == "__main__":
 
                     upMv.append((r, c))
 
-                    print(f"\t\t\t{[r, c]}")
                 c += 1
             r += 1
             c = 0
 
-        print()
-
         rgtMv = []
-
-        print("\t\tLand with right land:")
 
         r, c = 0, 0
         for ln in Lnd:
@@ -200,16 +187,11 @@ if __name__ == "__main__":
 
                     rgtMv.append((r, c))
 
-                    print(f"\t\t\t{[r, c]}")
                 c += 1
             r += 1
             c = 0
 
-        print()
-
         dwnMv = []
-
-        print("\t\tLand with down land:")
 
         r, c = 0, 0
         for ln in Lnd[:-1]:
@@ -227,7 +209,6 @@ if __name__ == "__main__":
 
                     dwnMv.append((r, c))
 
-                    print(f"\t\t\t{[r, c]}")
                 c += 1
             r += 1
             c = 0
