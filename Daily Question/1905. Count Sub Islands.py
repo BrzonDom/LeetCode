@@ -135,6 +135,15 @@ if __name__ == "__main__":
             for sq in ln[1:]:
 
                 if c > 0 and Lnd[r][c-1]:
+
+                    if (r, c) not in Mvmt:
+                        Mvmt[(r, c)] = {"L": False,
+                                        "U": False,
+                                        "R": False,
+                                        "D": False}
+                    else:
+                        Mvmt[(r, c)]["L"] = True
+
                     lftMv.append((r, c))
 
                     print(f"\t\t\t{[r, c]}")
