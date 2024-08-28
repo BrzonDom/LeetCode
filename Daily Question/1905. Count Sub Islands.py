@@ -122,13 +122,18 @@ if __name__ == "__main__":
         print("\tGrid dimensions:")
         print(f"\t\tRows: {RwDm}")
         print(f"\t\tCols: {ClDm}")
+        print()
 
         lftMv = []
+
+        print("\t\tLand with left land:")
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
 
                 if c > 0 and Lnd[r][c-1]:
                     lftMv.append((r, c))
+
+                    print(f"\t\t\t{[r, c]}")
 
         print("\n")
