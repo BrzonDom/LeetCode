@@ -74,31 +74,31 @@ def Prt01_Grd_DspDt(Grd, Dt):
     print("\t\tLand moves:\n")
     print(f"\t\t\t\t\t\t  L   U   R   D")
 
-    for r, ln in enumerate(Lnd):
+    for r, ln in enumerate(Grd):
         for c, sq in enumerate(ln):
 
             r += 1
             c += 1
 
-            if (r, c) in Mvmt:
+            if (r, c) in Dt:
                 print(f"\t\t\t{[r, c]}: ", end="\t|")
 
-                if Mvmt[(r, c)]["L"]:
+                if Dt[(r, c)]["L"]:
                     print(" x ", end="|")
                 else:
                     print("   ", end="|")
 
-                if Mvmt[(r, c)]["U"]:
+                if Dt[(r, c)]["U"]:
                     print(" x ", end="|")
                 else:
                     print("   ", end="|")
 
-                if Mvmt[(r, c)]["R"]:
+                if Dt[(r, c)]["R"]:
                     print(" x ", end="|")
                 else:
                     print("   ", end="|")
 
-                if Mvmt[(r, c)]["D"]:
+                if Dt[(r, c)]["D"]:
                     print(" x ", end="|")
                 else:
                     print("   ", end="|")
