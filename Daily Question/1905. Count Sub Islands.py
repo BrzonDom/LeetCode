@@ -132,7 +132,9 @@ if __name__ == "__main__":
         for ln in Lnd:
             for sq in ln[1:]:
 
-                if c > 0 and Lnd[r][c-1]:
+                # if c > 0 and Lnd[r][c - 1]:
+
+                if Lnd[r][c-1]:
 
                     if (r, c) not in Mvmt:
                         Mvmt[(r, c)] = {"L": False,
