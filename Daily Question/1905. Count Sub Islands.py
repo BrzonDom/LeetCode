@@ -175,30 +175,6 @@ if __name__ == "__main__":
 
         continue
 
-        dwnMv = []
-
-        r, c = 0, 0
-        for ln in Lnd[:-1]:
-            for sq in ln:
-
-                # if r < RwDm-1 and Lnd[r+1][c]:
-
-                if Lnd[r+1][c]:
-
-                    if (r, c) not in Mvmt:
-                        Mvmt[(r, c)] = {"L": False,
-                                        "U": False,
-                                        "R": False,
-                                        "D": False}
-
-                    Mvmt[(r, c)]["D"] = True
-
-                    dwnMv.append((r, c))
-
-                c += 1
-            r += 1
-            c = 0
-
         print("\t\tLand with a move:\n")
         print(f"\t\t\t\t\t\t  L   U   R   D")
 
