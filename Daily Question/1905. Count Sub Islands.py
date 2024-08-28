@@ -198,6 +198,12 @@ if __name__ == "__main__":
                         else:
                             Mvmt[(r+1, c+1)]["D"] = True
 
+                    if (r + 1, c + 1) not in Mvmt:
+                        Mvmt[(r + 1, c + 1)] = {"L": False,
+                                                "U": False,
+                                                "R": False,
+                                                "D": False}
+
         print("\t\tLand with a move:\n")
         print(f"\t\t\t\t\t\t  L   U   R   D")
 
