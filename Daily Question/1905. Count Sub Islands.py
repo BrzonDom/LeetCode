@@ -124,6 +124,8 @@ if __name__ == "__main__":
         print(f"\t\tCols: {ClDm}")
         print()
 
+        Mvmt = {}
+
         lftMv = []
 
         print("\t\tLand with left land:")
