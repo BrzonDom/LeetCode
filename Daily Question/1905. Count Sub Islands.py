@@ -168,9 +168,10 @@ if __name__ == "__main__":
                         Mvmt[(r, c)] = {"L": False,
                                         "U": False,
                                         "R": False,
-                                        "D": False}
+                                        "D": True}
 
-                    Mvmt[(r, c)]["D"] = True
+                    else:
+                        Mvmt[(r, c)]["D"] = True
 
         continue
 
