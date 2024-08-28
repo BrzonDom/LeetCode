@@ -148,13 +148,18 @@ if __name__ == "__main__":
                     upMv.append((r, c))
 
                     print(f"\t\t\t{[r, c]}")
+        print()
 
         rgtMv = []
+
+        print("\t\tLand with right land:")
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
 
                 if c < ClDm-1 and Lnd[r][c+1]:
                     rgtMv.append((r, c))
+
+                    print(f"\t\t\t{[r, c]}")
 
         print("\n")
