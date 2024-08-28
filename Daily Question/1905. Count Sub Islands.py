@@ -89,10 +89,15 @@ def Prt01_Grd_DspIn(Grd, Tp):
 
         for sq in ln:
 
-            if sq:
+            if sq == 1:
                 print("[#]", end="")
+
+            elif sq == 2:
+                print("{#}", end="")
+
             else:
                 print("[ ]", end="")
+
         print()
     print()
 
