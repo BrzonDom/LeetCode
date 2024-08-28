@@ -164,13 +164,18 @@ if __name__ == "__main__":
 
         print("\t\tLand with right land:")
 
-        for r, ln in enumerate(Lnd):
-            for c, sq in enumerate(ln):
+        r, c = 0, 0
+        for ln in Lnd:
+            for sq in ln:
 
                 if c < ClDm-1 and Lnd[r][c+1]:
                     rgtMv.append((r, c))
 
                     print(f"\t\t\t{[r, c]}")
+                c += 1
+            r += 1
+            c = 0
+
         print()
 
         dwnMv = []
