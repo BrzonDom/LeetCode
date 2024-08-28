@@ -111,7 +111,11 @@ if __name__ == "__main__":
             print("\t\t", end="")
 
             for sq in ln:
-                print(sq, end=" ")
+
+                if sq:
+                    print("[#]", end="")
+                else:
+                    print("[ ]", end="")
             print()
         print()
 
@@ -121,7 +125,11 @@ if __name__ == "__main__":
             print("\t\t", end="")
 
             for sq in ln:
-                print(sq, end=" ")
+
+                if sq:
+                    print("[#]", end="")
+                else:
+                    print("[ ]", end="")
             print()
         print()
 
