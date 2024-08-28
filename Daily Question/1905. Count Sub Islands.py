@@ -69,6 +69,33 @@ Symbols:
 """
 
 
+def Prt01_Grd_DspIn(Grd, Tp):
+
+    rwGr = len(Grd)
+    clGr = len(Grd[0])
+
+    type = ("Land", "Island")
+
+    print(f"\t{type[Tp]} grid:")
+
+    print("\t\t\t\t", end="   ")
+    for c in range(1, clGr + 1):
+        print(f"{c:2}", end=" ")
+    print()
+
+    for r, ln in enumerate(Grd):
+        print(f"\t\t\t\t{r + 1:2}", end=" ")
+
+        for sq in ln:
+
+            if sq:
+                print("[#]", end="")
+            else:
+                print("[ ]", end="")
+        print()
+    print()
+
+
 def Prt02_Grd_DspDt(Grd, Dt, spc=2):
 
     spc = "\t" * spc
@@ -106,33 +133,6 @@ def Prt02_Grd_DspDt(Grd, Dt, spc=2):
                     print("   ", end="|")
 
                 print()
-
-
-def Prt01_Grd_DspIn(Grd, Tp):
-
-    rwGr = len(Grd)
-    clGr = len(Grd[0])
-
-    type = ("Land", "Island")
-
-    print(f"\t{type[Tp]} grid:")
-
-    print("\t\t\t\t", end="   ")
-    for c in range(1, clGr + 1):
-        print(f"{c:2}", end=" ")
-    print()
-
-    for r, ln in enumerate(Grd):
-        print(f"\t\t\t\t{r + 1:2}", end=" ")
-
-        for sq in ln:
-
-            if sq:
-                print("[#]", end="")
-            else:
-                print("[ ]", end="")
-        print()
-    print()
 
 
 if __name__ == "__main__":
