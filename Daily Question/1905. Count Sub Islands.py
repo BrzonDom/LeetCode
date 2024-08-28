@@ -132,12 +132,13 @@ if __name__ == "__main__":
                 if c > 0 and Lnd[r][c - 1]:
 
                     if (r, c) not in Mvmt:
-                        Mvmt[(r, c)] = {"L": False,
+                        Mvmt[(r, c)] = {"L": True,
                                         "U": False,
                                         "R": False,
                                         "D": False}
 
-                    Mvmt[(r, c)]["L"] = True
+                    else:
+                        Mvmt[(r, c)]["L"] = True
 
                 if r > 0 and Lnd[r-1][c]:
 
