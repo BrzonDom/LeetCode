@@ -254,6 +254,8 @@ if __name__ == "__main__":
 
                     while flQu:
 
+                        (qR, qC) = flQu.pop(0)
+
                         if c > 0 and Lnd[r][c - 1]:
                             flQu.append((r, c))
 
