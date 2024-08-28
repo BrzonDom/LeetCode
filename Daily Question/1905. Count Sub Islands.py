@@ -128,10 +128,17 @@ if __name__ == "__main__":
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
-                print(Lnd[r][c], end="")
-            print()
 
-        print()
+                if c > 0 and Lnd[r][c - 1]:
+
+                    if (r, c) not in Mvmt:
+                        Mvmt[(r, c)] = {"L": False,
+                                        "U": False,
+                                        "R": False,
+                                        "D": False}
+
+                    Mvmt[(r, c)]["L"] = True
+
         continue
 
 
