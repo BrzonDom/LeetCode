@@ -161,13 +161,13 @@ if __name__ == "__main__":
                     rgtMv.append((r, c))
 
                     print(f"\t\t\t{[r, c]}")
-        print()
 
         dwnMv = []
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
-                print(Lnd[r][c], end="")
-            print()
+
+                if r < RwDm-1 and Lnd[r+1][c]:
+                    dwnMv.append((r, c))
 
         print("\n")
