@@ -241,6 +241,8 @@ if __name__ == "__main__":
                                                 "R": False,
                                                 "D": False}
 
+        Prt01_Grd_DspDt(Lnd, Mvmt)
+
         # print("\t\tLand moves:\n")
         # print(f"\t\t\t\t\t\t  L   U   R   D")
         #
