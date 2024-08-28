@@ -252,7 +252,7 @@ if __name__ == "__main__":
         flQu = []
         vstd = set()
 
-        flLnd = copy.deepcopy(Lnd)
+        crLnd = copy.deepcopy(Lnd)
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
@@ -263,7 +263,7 @@ if __name__ == "__main__":
                     while flQu:
 
                         (qR, qC) = flQu.pop(0)
-                        flLnd[qR][qC] = 2
+                        crLnd[qR][qC] = 2
 
                         if (qR, qC) not in vstd:
 
@@ -279,7 +279,7 @@ if __name__ == "__main__":
                             if qR < RwDm - 1 and Lnd[qR + 1][qC]:
                                 flQu.append((qR + 1, qC))
 
-                    Prt01_Grd_DspIn(flLnd, "Connected land")
-                    flLnd = copy.deepcopy(Lnd)
+                    Prt01_Grd_DspIn(crLnd, "Connected land")
+                    crLnd = copy.deepcopy(Lnd)
 
         print("\n")
