@@ -139,10 +139,14 @@ if __name__ == "__main__":
 
         upMv = []
 
+        print("\t\tLand with up land:")
+
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
 
                 if r > 0 and Lnd[r-1][c]:
                     upMv.append((r, c))
+
+                    print(f"\t\t\t{[r, c]}")
 
         print("\n")
