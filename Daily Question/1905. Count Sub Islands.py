@@ -96,6 +96,9 @@ if __name__ == "__main__":
         Lnd = case[0]
         Isl = case[1]
 
+        dmR = len(Lnd)
+        dmC = len(Lnd[0])
+
         print("\tLand grid:")
 
         for ln in Lnd:
