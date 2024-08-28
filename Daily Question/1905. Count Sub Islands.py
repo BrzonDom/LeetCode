@@ -263,10 +263,9 @@ if __name__ == "__main__":
                     while flQu:
 
                         (qR, qC) = flQu.pop(0)
+                        flLnd[qR][qC] = 2
 
                         if (qR, qC) not in vstd:
-
-                            vstd.add((qR, qC))
 
                             if qC > 0 and Lnd[qR][qC - 1]:
                                 flQu.append((qR, qC - 1))
@@ -279,5 +278,7 @@ if __name__ == "__main__":
 
                             if qR < RwDm - 1 and Lnd[qR + 1][qC]:
                                 flQu.append((qR + 1, qC))
+
+                    flLnd = copy.deepcopy(Lnd)
 
         print("\n")
