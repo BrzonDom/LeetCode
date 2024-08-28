@@ -108,12 +108,12 @@ if __name__ == "__main__":
         print("\tLand grid:")
 
         print("\t\t\t\t", end="   ")
-        for c in range(ClDm):
+        for c in range(1, ClDm+1):
             print(f"{c:2}", end=" ")
         print()
 
         for r, ln in enumerate(Lnd):
-            print(f"\t\t\t\t{r:2}", end=" ")
+            print(f"\t\t\t\t{r+1:2}", end=" ")
 
             for sq in ln:
 
@@ -127,12 +127,12 @@ if __name__ == "__main__":
         print("\tIsland grid:")
 
         print("\t\t\t\t", end="   ")
-        for c in range(ClDm):
+        for c in range(1, ClDm+1):
             print(f"{c:2}", end=" ")
         print()
 
         for r, ln in enumerate(Isl):
-            print(f"\t\t\t\t{r:2}", end=" ")
+            print(f"\t\t\t\t{r+1:2}", end=" ")
 
             for sq in ln:
 
