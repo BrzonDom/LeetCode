@@ -269,16 +269,16 @@ if __name__ == "__main__":
                             vstd.add((qR, qC))
 
                             if qC > 0 and Lnd[qR][qC - 1]:
-                                flQu.append((qR, qC))
+                                flQu.append((qR, qC - 1))
 
                             if qR > 0 and Lnd[qR - 1][qC]:
-                                flQu.append((qR, qC))
+                                flQu.append((qR - 1, qC))
 
                             if qC < ClDm - 1 and Lnd[qR][qC + 1]:
-                                flQu.append((qR, qC))
+                                flQu.append((qR, qC + 1))
 
                             if qR < RwDm - 1 and Lnd[qR + 1][qC]:
-                                flQu.append((qR, qC))
+                                flQu.append((qR + 1, qC))
 
                         break
 
