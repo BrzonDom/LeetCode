@@ -105,7 +105,13 @@ if __name__ == "__main__":
         RwDm = len(Lnd)
         ClDm = len(Lnd[0])
 
-        print("\tLand grid:")
+        print("\tLand grid:\n")
+
+        print("\t\t", end="")
+
+        for c in range(ClDm):
+            print(f"{c:2}", end=" ")
+        print()
 
         for ln in Lnd:
             print("\t\t", end="")
