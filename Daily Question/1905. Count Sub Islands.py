@@ -141,7 +141,8 @@ if __name__ == "__main__":
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
-                print(Lnd[r][c], end="")
-            print()
+
+                if r > 0 and Lnd[r-1][c]:
+                    upMv.append((r, c))
 
         print("\n")
