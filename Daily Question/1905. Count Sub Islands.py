@@ -244,8 +244,13 @@ if __name__ == "__main__":
         
         """
 
+        flQu = []
+
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
+
+                if sq:
+                    flQu.append((r, c))
 
                 print(sq, end=" ")
             print()
