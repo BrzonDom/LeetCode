@@ -127,6 +127,8 @@ if __name__ == "__main__":
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
-                print(Lnd[r][c], end="")
+
+                if c > 0 and Lnd[r][c-1]:
+                    lftMv.append((r, c))
 
         print("\n")
