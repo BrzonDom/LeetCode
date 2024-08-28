@@ -280,7 +280,4 @@ if __name__ == "__main__":
 
                         break
 
-                print(sq, end=" ")
-            print()
-
         print("\n")
