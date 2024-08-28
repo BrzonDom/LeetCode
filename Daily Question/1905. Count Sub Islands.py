@@ -138,8 +138,8 @@ if __name__ == "__main__":
                                         "U": False,
                                         "R": False,
                                         "D": False}
-                    else:
-                        Mvmt[(r, c)]["L"] = True
+
+                    Mvmt[(r, c)]["L"] = True
 
                     lftMv.append((r, c))
 
@@ -160,8 +160,8 @@ if __name__ == "__main__":
                                         "U": False,
                                         "R": False,
                                         "D": False}
-                    else:
-                        Mvmt[(r, c)]["U"] = True
+
+                    Mvmt[(r, c)]["U"] = True
 
                     upMv.append((r, c))
 
@@ -182,8 +182,8 @@ if __name__ == "__main__":
                                         "U": False,
                                         "R": False,
                                         "D": False}
-                    else:
-                        Mvmt[(r, c)]["R"] = True
+
+                    Mvmt[(r, c)]["R"] = True
 
                     rgtMv.append((r, c))
 
@@ -204,8 +204,8 @@ if __name__ == "__main__":
                                         "U": False,
                                         "R": False,
                                         "D": False}
-                    else:
-                        Mvmt[(r, c)]["D"] = True
+
+                    Mvmt[(r, c)]["D"] = True
 
                     dwnMv.append((r, c))
 
