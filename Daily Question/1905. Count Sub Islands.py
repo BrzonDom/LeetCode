@@ -175,6 +175,8 @@ if __name__ == "__main__":
 
         Prt02_Grd_DspIn(Isl, 1)
 
+        print()
+
         print("\tGrid dimensions:")
         print(f"\t\tRows: {RwDm}")
         print(f"\t\tCols: {ClDm}")
