@@ -69,10 +69,12 @@ Symbols:
 """
 
 
-def Prt01_Grd_DspDt(Grd, Dt, spc=3):
+def Prt01_Grd_DspDt(Grd, Dt, spc=2):
 
-    print("\t\tLand moves:\n")
-    print(f"\t\t\t\t\t\t  L   U   R   D")
+    spc = "\t" * spc
+
+    print(f"{spc}Land moves:\n")
+    print(f"{spc}\t\t\t\t  L   U   R   D")
 
     for r, ln in enumerate(Grd):
         for c, sq in enumerate(ln):
@@ -81,7 +83,7 @@ def Prt01_Grd_DspDt(Grd, Dt, spc=3):
             c += 1
 
             if (r, c) in Dt:
-                print(f"\t\t\t{[r, c]}: ", end="\t|")
+                print(f"{spc}\t{[r, c]}: ", end="\t|")
 
                 if Dt[(r, c)]["L"]:
                     print(" x ", end="|")
