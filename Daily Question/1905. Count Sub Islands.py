@@ -62,6 +62,12 @@ https://leetcode.com/problems/count-sub-islands/description/?envType=daily-quest
 
 """
 
+"""
+Symbols:
+    Water = [ ]
+    Land  = [#]
+"""
+
 
 if __name__ == "__main__":
 
