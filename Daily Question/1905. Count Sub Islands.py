@@ -214,7 +214,8 @@ if __name__ == "__main__":
             r += 1
             c = 0
 
-        print("\t\tLand with a move:")
+        print("\t\tLand with a move:\n")
+        print(f"\t\t\t\t\t\t  L   U   R   D")
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
