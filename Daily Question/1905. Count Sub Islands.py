@@ -250,6 +250,8 @@ if __name__ == "__main__":
         """
 
         flQu = []
+        vstd = set()
+
         flLnd = copy.deepcopy(Lnd)
 
         for r, ln in enumerate(Lnd):
