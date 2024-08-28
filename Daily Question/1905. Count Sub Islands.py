@@ -69,7 +69,7 @@ Symbols:
 """
 
 
-def Prt01_Grd_DspDt():
+def Prt01_Grd_DspDt(Grd, Dt):
 
     return
 
