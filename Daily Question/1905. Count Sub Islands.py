@@ -252,6 +252,10 @@ if __name__ == "__main__":
                 if sq:
                     flQu.append((r, c))
 
+                    while flQu:
+
+                        break
+
                 print(sq, end=" ")
             print()
 
