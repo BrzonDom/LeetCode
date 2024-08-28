@@ -214,10 +214,12 @@ if __name__ == "__main__":
             r += 1
             c = 0
 
+        print("\t\tLand with a move:")
+
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
 
                 if (r, c) in Mvmt:
-                    print(f"\t{[r, c]}")
+                    print(f"\t\t\t{[r, c]}")
 
         print("\n")
