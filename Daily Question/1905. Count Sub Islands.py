@@ -117,7 +117,7 @@ def Prt02_Grd_DspIn(Grd, Tp):
         print(f"{c:2}", end=" ")
     print()
 
-    for r, ln in enumerate(Lnd):
+    for r, ln in enumerate(Grd):
         print(f"\t\t\t\t{r + 1:2}", end=" ")
 
         for sq in ln:
