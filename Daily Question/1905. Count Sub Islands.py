@@ -108,6 +108,11 @@ def Prt01_Grd_DspDt(Grd, Dt, spc=2):
                 print()
 
 
+def Prt02_Grd_DspIn(Grd):
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[
