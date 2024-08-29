@@ -266,24 +266,23 @@ if __name__ == "__main__":
                     while flQu:
 
                         (qR, qC) = flQu.pop(0)
+
+                        vstd.add((qR, qC))
                         flLnd[ilCnt].append((qR, qC))
 
                         crLnd[qR][qC] = 2
 
-                        if (qR, qC) not in vstd:
-                            vstd.add((qR, qC))
+                        if qC > 0 and Lnd[qR][qC - 1] and (qR, qC - 1) not in vstd:
+                            flQu.append((qR, qC - 1))
 
-                            if qC > 0 and Lnd[qR][qC - 1] and (qR, qC - 1) not in vstd:
-                                flQu.append((qR, qC - 1))
+                        if qR > 0 and Lnd[qR - 1][qC] and (qR - 1, qC) not in vstd:
+                            flQu.append((qR - 1, qC))
 
-                            if qR > 0 and Lnd[qR - 1][qC] and (qR - 1, qC) not in vstd:
-                                flQu.append((qR - 1, qC))
+                        if qC < ClDm - 1 and Lnd[qR][qC + 1] and (qR, qC + 1) not in vstd:
+                            flQu.append((qR, qC + 1))
 
-                            if qC < ClDm - 1 and Lnd[qR][qC + 1] and (qR, qC + 1) not in vstd:
-                                flQu.append((qR, qC + 1))
-
-                            if qR < RwDm - 1 and Lnd[qR + 1][qC] and (qR + 1, qC) not in vstd:
-                                flQu.append((qR + 1, qC))
+                        if qR < RwDm - 1 and Lnd[qR + 1][qC] and (qR + 1, qC) not in vstd:
+                            flQu.append((qR + 1, qC))
 
                     flLnd.append([])
                     ilCnt += 1
