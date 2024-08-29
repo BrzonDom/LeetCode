@@ -171,7 +171,7 @@ def Hlp01_FlFldWhlLp(Str, Grd, Vstd):
     return lnd, Vstd
 
 
-def Hlp01_FlFldWhlLp_Prt(Str, Grd):
+def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd):
 
     dmRw = len(Grd)
     dmCl = len(Grd[0])
@@ -184,21 +184,21 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd):
     while flQu:
         (r, c) = flQu.pop(0)
 
-        vstd.add((r, c))
+        Vstd.add((r, c))
         lnd.append((r, c))
 
         crLnd[r][c] = 2
 
-        if c > 0 and Grd[r][c - 1] and (r, c - 1) not in vstd:
+        if c > 0 and Grd[r][c - 1] and (r, c - 1) not in Vstd:
             flQu.append((r, c - 1))
 
-        if r > 0 and Grd[r - 1][c] and (r - 1, c) not in vstd:
+        if r > 0 and Grd[r - 1][c] and (r - 1, c) not in Vstd:
             flQu.append((r - 1, c))
 
-        if c < dmCl - 1 and Grd[r][c + 1] and (r, c + 1) not in vstd:
+        if c < dmCl - 1 and Grd[r][c + 1] and (r, c + 1) not in Vstd:
             flQu.append((r, c + 1))
 
-        if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in vstd:
+        if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
     Prt01_Grd_DspIn(crLnd, f"{ilCnt+1}. Connected land", 2)
@@ -343,9 +343,9 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
+                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
 
-                    ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
+                    # ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
 
                     ilLnds.append(ilnd)
 
@@ -361,9 +361,9 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
+                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
 
-                    ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Isl)
+                    # ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Isl, vstd)
 
                     ilIsls.append(ilnd)
 
