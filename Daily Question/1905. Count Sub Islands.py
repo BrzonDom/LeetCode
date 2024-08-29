@@ -333,4 +333,10 @@ if __name__ == "__main__":
 
                     ilCnt += 1
 
+        for r, ln in enumerate(Lnd):
+            for c, sq in enumerate(ln):
+                print(sq, end=" ")
+            print()
+
+
         print("\n")
