@@ -153,6 +153,7 @@ def Hlp01_FlFldWhlLp(Str, Grd):
     while flQu:
 
         (r, c) = flQu.pop(0)
+        vstd.add((r, c))
 
         break
 
