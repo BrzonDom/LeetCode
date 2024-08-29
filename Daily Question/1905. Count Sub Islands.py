@@ -65,9 +65,9 @@ import copy
 
 """
 Symbols:
-    Water     = [ ]
-    Land      = [#]
-    Connected = {#}
+    Water     = ░░
+    Land      = ▒▒
+    Connected = ██
 """
 
 
