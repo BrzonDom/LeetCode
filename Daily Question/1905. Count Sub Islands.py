@@ -92,13 +92,13 @@ def Prt01_DspGrd(Grd, Typ, Spc=1):
         for sq in ln:
 
             if sq == 1:
-                print("[#]", end="")
+                print("▒▒", end=" ")
 
             elif sq == 2:
-                print("{#}", end="")
+                print("██", end=" ")
 
             else:
-                print("[ ]", end="")
+                print("░░", end=" ")
 
         print()
     print()
@@ -355,9 +355,10 @@ if __name__ == "__main__":
         """
 
         # ilLnds = Hlp02_FndIslWtFlFldMtd(Lnd)
-        ilLnds = Hlp02_FndIslWtFlFldMtd_Prt(Lnd, "Land")
+        # ilIsls = Hlp02_FndIslWtFlFldMtd(Isl)
 
-        ilIsls = Hlp02_FndIslWtFlFldMtd(Isl)
+        ilLnds = Hlp02_FndIslWtFlFldMtd_Prt(Lnd, "Land")
+        ilIsls = Hlp02_FndIslWtFlFldMtd_Prt(Isl, "Island")
 
         print("\tLand islands:")
         for isl in ilLnds:
