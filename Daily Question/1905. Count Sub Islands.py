@@ -328,10 +328,11 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilLnds.append([])
+                    ilLnds.append([])
+
                     # ilLnds[ilCnt] = Hlp01_FlFldWhlLp((r, c), Lnd)
 
-                    Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
+                    ilLnds[ilCnt] = Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
 
                     ilCnt += 1
 
