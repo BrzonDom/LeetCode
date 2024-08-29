@@ -142,7 +142,7 @@ def Prt02_Grd_DspDt(Grd, Dt, spc=2):
                 print()
 
 
-def Hlp01_FlFldWhlLp(Str, Grd):
+def Hlp01_FlFldWhlLp(Str, Grd, Vstd):
 
     rwGr = len(Grd)
     clGr = len(Grd[0])
@@ -153,19 +153,19 @@ def Hlp01_FlFldWhlLp(Str, Grd):
     while flQu:
         (r, c) = flQu.pop(0)
 
-        vstd.add((r, c))
+        Vstd.add((r, c))
         lnd.append((r, c))
 
-        if c > 0 and Grd[r][c - 1] and (r, c - 1) not in vstd:
+        if c > 0 and Grd[r][c - 1] and (r, c - 1) not in Vstd:
             flQu.append((r, c - 1))
 
-        if r > 0 and Grd[r - 1][c] and (r - 1, c) not in vstd:
+        if r > 0 and Grd[r - 1][c] and (r - 1, c) not in Vstd:
             flQu.append((r - 1, c))
 
-        if c < clGr - 1 and Grd[r][c + 1] and (r, c + 1) not in vstd:
+        if c < clGr - 1 and Grd[r][c + 1] and (r, c + 1) not in Vstd:
             flQu.append((r, c + 1))
 
-        if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in vstd:
+        if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
     return lnd
@@ -343,7 +343,7 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd = Hlp01_FlFldWhlLp((r, c), Lnd)
+                    # ilnd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
 
                     ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
 
@@ -361,7 +361,7 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd = Hlp01_FlFldWhlLp((r, c), Isl)
+                    # ilnd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
 
                     ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Isl)
 
