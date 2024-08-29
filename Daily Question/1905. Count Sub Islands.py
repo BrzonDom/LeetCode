@@ -343,11 +343,11 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    ilLnds.append([])
+                    # ilnd = Hlp01_FlFldWhlLp((r, c), Lnd)
 
-                    # ilLnds[ilCnt] = Hlp01_FlFldWhlLp((r, c), Lnd)
+                    ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
 
-                    ilLnds[ilCnt] = Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
+                    ilLnds.append(ilnd)
 
                     ilCnt += 1
 
@@ -361,11 +361,11 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    ilIsls.append([])
+                    # ilnd = Hlp01_FlFldWhlLp((r, c), Isl)
 
-                    # ilIsls[ilCnt] = Hlp01_FlFldWhlLp((r, c), Isl)
+                    ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Isl)
 
-                    ilIsls[ilCnt] = Hlp01_FlFldWhlLp_Prt((r, c), Isl)
+                    ilIsls.append(ilnd)
 
                     ilCnt += 1
 
