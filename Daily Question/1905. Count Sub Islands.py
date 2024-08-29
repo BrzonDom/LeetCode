@@ -221,7 +221,9 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
 
             if sq and (r, c) not in vstd:
 
-                vstd.add((r, c))
+                ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Grd, vstd)
+
+                islns.append(ilnd)
 
 
 if __name__ == "__main__":
