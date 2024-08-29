@@ -147,9 +147,12 @@ def Hlp01_FlFldWhlLp(Str, Grd):
     rwGr = len(Grd)
     clGr = len(Grd[0])
 
+    flQu = []
     flQu.append(Str)
 
     while flQu:
+
+        (r, c) = flQu.pop(0)
 
         break
 
