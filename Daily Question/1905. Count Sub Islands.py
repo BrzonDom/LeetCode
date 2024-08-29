@@ -338,7 +338,7 @@ if __name__ == "__main__":
 
         vstd = set()
 
-        for r, ln in enumerate(Lnd):
+        for r, ln in enumerate(Isl):
             for c, sq in enumerate(ln):
 
                 if sq and (r, c) not in vstd:
