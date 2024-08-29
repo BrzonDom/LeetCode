@@ -224,7 +224,7 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
     return islns
 
 
-def Hlp02_FndIslWtFlFldMtd_Prt(Grd):
+def Hlp02_FndIslWtFlFldMtd_Prt(Grd, Typ):
 
     islns = []
     vstd = set()
@@ -234,7 +234,7 @@ def Hlp02_FndIslWtFlFldMtd_Prt(Grd):
 
             if sq and (r, c) not in vstd:
 
-                ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Grd, vstd)
+                ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Grd, vstd, Typ)
 
                 islns.append(ilnd)
 
