@@ -151,8 +151,8 @@ def Hlp01_FlFldWhlLp(Str, Grd):
     flQu = [Str]
 
     while flQu:
-
         (r, c) = flQu.pop(0)
+
         vstd.add((r, c))
         lnd.append((r, c))
 
@@ -297,7 +297,6 @@ if __name__ == "__main__":
                     flLnd.append([])
 
                     while flQu:
-
                         (qR, qC) = flQu.pop(0)
 
                         vstd.add((qR, qC))
@@ -318,8 +317,8 @@ if __name__ == "__main__":
                             flQu.append((qR + 1, qC))
 
                     ilCnt += 1
-
                     Prt01_Grd_DspIn(crLnd, f"{ilCnt}. Connected land", 2)
+
                     crLnd = copy.deepcopy(Lnd)
 
         print("\n")
