@@ -229,6 +229,8 @@ def Hlp02_FndIslWtFlFldMtd_Prt(Grd, Typ):
     islns = []
     vstd = set()
 
+    ilCnt = 1
+
     for r, ln in enumerate(Grd):
         for c, sq in enumerate(ln):
 
@@ -237,6 +239,8 @@ def Hlp02_FndIslWtFlFldMtd_Prt(Grd, Typ):
                 ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Grd, vstd, Typ)
 
                 islns.append(ilnd)
+
+                ilCnt += 1
 
     return islns
 
