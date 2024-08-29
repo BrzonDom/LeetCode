@@ -292,33 +292,36 @@ if __name__ == "__main__":
             for c, sq in enumerate(ln):
 
                 if sq and (r, c) not in vstd:
-                    flQu.append((r, c))
 
-                    ilLnds.append([])
+                    Hlp01_FlFldWhlLp((r, c), Lnd)
 
-                    while flQu:
-                        (qR, qC) = flQu.pop(0)
-
-                        vstd.add((qR, qC))
-                        ilLnds[ilCnt].append((qR, qC))
-
-                        crLnd[qR][qC] = 2
-
-                        if qC > 0 and Lnd[qR][qC - 1] and (qR, qC - 1) not in vstd:
-                            flQu.append((qR, qC - 1))
-
-                        if qR > 0 and Lnd[qR - 1][qC] and (qR - 1, qC) not in vstd:
-                            flQu.append((qR - 1, qC))
-
-                        if qC < ClDm - 1 and Lnd[qR][qC + 1] and (qR, qC + 1) not in vstd:
-                            flQu.append((qR, qC + 1))
-
-                        if qR < RwDm - 1 and Lnd[qR + 1][qC] and (qR + 1, qC) not in vstd:
-                            flQu.append((qR + 1, qC))
-
-                    ilCnt += 1
-                    Prt01_Grd_DspIn(crLnd, f"{ilCnt}. Connected land", 2)
-
-                    crLnd = copy.deepcopy(Lnd)
+                    # flQu.append((r, c))
+                    #
+                    # ilLnds.append([])
+                    #
+                    # while flQu:
+                    #     (qR, qC) = flQu.pop(0)
+                    #
+                    #     vstd.add((qR, qC))
+                    #     ilLnds[ilCnt].append((qR, qC))
+                    #
+                    #     crLnd[qR][qC] = 2
+                    #
+                    #     if qC > 0 and Lnd[qR][qC - 1] and (qR, qC - 1) not in vstd:
+                    #         flQu.append((qR, qC - 1))
+                    #
+                    #     if qR > 0 and Lnd[qR - 1][qC] and (qR - 1, qC) not in vstd:
+                    #         flQu.append((qR - 1, qC))
+                    #
+                    #     if qC < ClDm - 1 and Lnd[qR][qC + 1] and (qR, qC + 1) not in vstd:
+                    #         flQu.append((qR, qC + 1))
+                    #
+                    #     if qR < RwDm - 1 and Lnd[qR + 1][qC] and (qR + 1, qC) not in vstd:
+                    #         flQu.append((qR + 1, qC))
+                    #
+                    # ilCnt += 1
+                    # Prt01_Grd_DspIn(crLnd, f"{ilCnt}. Connected land", 2)
+                    #
+                    # crLnd = copy.deepcopy(Lnd)
 
         print("\n")
