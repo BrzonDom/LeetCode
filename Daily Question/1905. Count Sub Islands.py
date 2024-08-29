@@ -208,7 +208,8 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd):
 
 def Hlp02_FndIslWtFlFldMtd(Grd):
 
-    return
+    dmRw = len(Grd)
+    dmCl = len(Grd[0])
 
 
 if __name__ == "__main__":
