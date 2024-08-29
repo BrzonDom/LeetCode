@@ -219,7 +219,9 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
     for r, ln in enumerate(Grd):
         for c, sq in enumerate(ln):
 
-            vstd.add((r, c))
+            if sq and (r, c) not in vstd:
+
+                vstd.add((r, c))
 
 
 if __name__ == "__main__":
