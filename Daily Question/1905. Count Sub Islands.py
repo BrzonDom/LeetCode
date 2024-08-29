@@ -201,6 +201,8 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd):
         if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in vstd:
             flQu.append((r + 1, c))
 
+    Prt01_Grd_DspIn(crLnd, f"{ilCnt+1}. Connected land", 2)
+
     return lnd
 
 
