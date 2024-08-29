@@ -173,8 +173,8 @@ def Hlp01_FlFldWhlLp(Str, Grd):
 
 def Hlp01_FlFldWhlLp_Prt(Str, Grd):
 
-    rwGr = len(Grd)
-    clGr = len(Grd[0])
+    dmRw = len(Grd)
+    dmCl = len(Grd[0])
 
     lnd = []
     flQu = [Str]
@@ -195,10 +195,10 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd):
         if r > 0 and Grd[r - 1][c] and (r - 1, c) not in vstd:
             flQu.append((r - 1, c))
 
-        if c < clGr - 1 and Grd[r][c + 1] and (r, c + 1) not in vstd:
+        if c < dmCl - 1 and Grd[r][c + 1] and (r, c + 1) not in vstd:
             flQu.append((r, c + 1))
 
-        if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in vstd:
+        if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in vstd:
             flQu.append((r + 1, c))
 
     Prt01_Grd_DspIn(crLnd, f"{ilCnt+1}. Connected land", 2)
@@ -245,8 +245,8 @@ if __name__ == "__main__":
         Lnd = case[0]
         Isl = case[1]
 
-        RwDm = len(Lnd)
-        ClDm = len(Lnd[0])
+        dmRw = len(Lnd)
+        dmCl = len(Lnd[0])
 
         Prt01_Grd_DspIn(Lnd, "Land")
 
@@ -255,8 +255,8 @@ if __name__ == "__main__":
         print()
 
         print("\tGrid dimensions:")
-        print(f"\t\tRows: {RwDm}")
-        print(f"\t\tCols: {ClDm}")
+        print(f"\t\tRows: {dmRw}")
+        print(f"\t\tCols: {dmCl}")
         print()
 
         """
@@ -289,7 +289,7 @@ if __name__ == "__main__":
                         else:
                             Mvmt[(r+1, c+1)]["U"] = True
 
-                    if c < ClDm-1 and Lnd[r][c+1]:
+                    if c < dmCl-1 and Lnd[r][c+1]:
 
                         if (r+1, c+1) not in Mvmt:
                             Mvmt[(r+1, c+1)] = {"L": False,
@@ -300,7 +300,7 @@ if __name__ == "__main__":
                         else:
                             Mvmt[(r+1, c+1)]["R"] = True
 
-                    if r < RwDm-1 and Lnd[r+1][c]:
+                    if r < dmRw-1 and Lnd[r+1][c]:
 
                         if (r+1, c+1) not in Mvmt:
                             Mvmt[(r+1, c+1)] = {"L": False,
