@@ -368,4 +368,13 @@ if __name__ == "__main__":
 
                     ilCnt += 1
 
+        print("\tLand islands:")
+        for isl in ilLnds:
+            print(f"\t\t{isl}")
+        print()
+
+        print("\tIslands:")
+        for isl in ilIsls:
+            print(f"\t\t{isl}")
+
         print("\n")
