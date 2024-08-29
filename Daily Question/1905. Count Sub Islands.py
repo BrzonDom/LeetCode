@@ -293,7 +293,7 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    Hlp01_FlFldWhlLp((r, c), Lnd)
+                    ilLnds.append(Hlp01_FlFldWhlLp((r, c), Lnd))
 
                     # flQu.append((r, c))
                     #
