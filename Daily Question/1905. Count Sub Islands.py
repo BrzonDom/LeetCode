@@ -73,18 +73,20 @@ Symbols:
 
 def Prt01_Grd_DspIn(Grd, Tp, spc=1):
 
+    spc = spc * "\t"
+
     rwGr = len(Grd)
     clGr = len(Grd[0])
 
-    print(f"\t{Tp} grid:")
+    print(f"{spc}{Tp} grid:")
 
-    print("\t\t\t\t", end="   ")
+    print(f"{spc}\t\t\t", end="   ")
     for c in range(1, clGr + 1):
         print(f"{c:2}", end=" ")
     print()
 
     for r, ln in enumerate(Grd):
-        print(f"\t\t\t\t{r + 1:2}", end=" ")
+        print(f"{spc}\t\t\t{r + 1:2}", end=" ")
 
         for sq in ln:
 
