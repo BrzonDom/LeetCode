@@ -233,7 +233,7 @@ def Hlp02_FndIslWtFlFldMtd_Prt(Grd):
 
             if sq and (r, c) not in vstd:
 
-                ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Grd, vstd)
+                ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Grd, vstd)
 
                 islns.append(ilnd)
 
