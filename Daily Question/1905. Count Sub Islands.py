@@ -211,6 +211,11 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
     dmRw = len(Grd)
     dmCl = len(Grd[0])
 
+    islns = []
+    isCnt = 0
+
+    vstd = set()
+
 
 if __name__ == "__main__":
 
