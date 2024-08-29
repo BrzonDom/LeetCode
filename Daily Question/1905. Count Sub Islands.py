@@ -168,7 +168,7 @@ def Hlp01_FlFldWhlLp(Str, Grd):
         if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in vstd:
             flQu.append((r + 1, c))
 
-        break
+    return lnd
 
 
 if __name__ == "__main__":
