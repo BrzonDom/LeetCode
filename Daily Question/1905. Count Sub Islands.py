@@ -289,7 +289,7 @@ if __name__ == "__main__":
                     flLnd.append([])
                     ilCnt += 1
 
-                    Prt01_Grd_DspIn(crLnd, f"{ilCnt}. Connected land")
+                    Prt01_Grd_DspIn(crLnd, f"{ilCnt}. Connected land", 2)
                     crLnd = copy.deepcopy(Lnd)
 
         print("\n")
