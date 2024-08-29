@@ -343,6 +343,10 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    Hlp01_FlFldWhlLp((r, c), Isl)
+                    ilIsls.append([])
+
+                    ilIsls[ilCnt] = Hlp01_FlFldWhlLp((r, c), Isl)
+
+                    ilCnt += 1
 
         print("\n")
