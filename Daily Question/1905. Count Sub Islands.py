@@ -342,10 +342,7 @@ if __name__ == "__main__":
             for c, sq in enumerate(ln):
 
                 if sq and (r, c) not in vstd:
-                    print(sq, end=" ")
 
-                else:
-                    print(" ", end=" ")
-            print()
+                    Hlp01_FlFldWhlLp((r, c), Isl)
 
         print("\n")
