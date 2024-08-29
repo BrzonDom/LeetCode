@@ -342,9 +342,9 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
+                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
 
-                    ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
+                    # ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
 
                     ilLnds.append(ilnd)
 
@@ -360,9 +360,9 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
+                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
 
-                    ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Isl, vstd)
+                    # ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Isl, vstd)
 
                     ilIsls.append(ilnd)
 
