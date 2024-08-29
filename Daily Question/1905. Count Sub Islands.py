@@ -71,14 +71,14 @@ Symbols:
 """
 
 
-def Prt01_DspGrd(Grd, Tp, spc=1):
+def Prt01_DspGrd(Grd, Typ, spc=1):
 
     spc = spc * "\t"
 
     rwGr = len(Grd)
     clGr = len(Grd[0])
 
-    print(f"{spc}{Tp} grid:")
+    print(f"{spc}{Typ} grid:")
 
     print(f"{spc}\t\t\t", end="   ")
     for c in range(1, clGr + 1):
