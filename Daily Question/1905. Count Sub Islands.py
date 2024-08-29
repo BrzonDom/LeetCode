@@ -340,7 +340,12 @@ if __name__ == "__main__":
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
-                print(sq, end=" ")
+
+                if sq and (r, c) not in vstd:
+                    print(sq, end=" ")
+
+                else:
+                    print(" ", end=" ")
             print()
 
         print("\n")
