@@ -225,7 +225,19 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
 
 def Hlp02_FndIslWtFlFldMtd_Prt(Grd):
 
-    return
+    islns = []
+    vstd = set()
+
+    for r, ln in enumerate(Grd):
+        for c, sq in enumerate(ln):
+
+            if sq and (r, c) not in vstd:
+
+                ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Grd, vstd)
+
+                islns.append(ilnd)
+
+    return islns
 
 
 if __name__ == "__main__":
