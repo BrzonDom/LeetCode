@@ -79,14 +79,15 @@ def Prt01_DspGrd(Grd, Typ, spc=1):
     clGr = len(Grd[0])
 
     print(f"{spc}{Typ} grid:")
+    print()
 
-    print(f"{spc}\t\t\t", end="   ")
+    print(f"{spc}\t\t", end="   ")
     for c in range(1, clGr + 1):
         print(f"{c:2}", end=" ")
     print()
 
     for r, ln in enumerate(Grd):
-        print(f"{spc}\t\t\t{r + 1:2}", end=" ")
+        print(f"{spc}\t\t{r + 1:2}", end=" ")
 
         for sq in ln:
 
