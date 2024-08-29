@@ -354,7 +354,8 @@ if __name__ == "__main__":
         
         """
 
-        ilLnds = Hlp02_FndIslWtFlFldMtd(Lnd)
+        # ilLnds = Hlp02_FndIslWtFlFldMtd(Lnd)
+        ilLnds = Hlp02_FndIslWtFlFldMtd_Prt(Lnd, "Land")
 
         ilIsls = Hlp02_FndIslWtFlFldMtd(Isl)
 
