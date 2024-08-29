@@ -283,7 +283,7 @@ if __name__ == "__main__":
         flQu = []
         vstd = set()
 
-        flLnd = []
+        ilLnds = []
         ilCnt = 0
 
         crLnd = copy.deepcopy(Lnd)
@@ -294,13 +294,13 @@ if __name__ == "__main__":
                 if sq and (r, c) not in vstd:
                     flQu.append((r, c))
 
-                    flLnd.append([])
+                    ilLnds.append([])
 
                     while flQu:
                         (qR, qC) = flQu.pop(0)
 
                         vstd.add((qR, qC))
-                        flLnd[ilCnt].append((qR, qC))
+                        ilLnds[ilCnt].append((qR, qC))
 
                         crLnd[qR][qC] = 2
 
