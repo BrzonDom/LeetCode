@@ -216,6 +216,11 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
 
     vstd = set()
 
+    for r, ln in enumerate(Grd):
+        for c, sq in enumerate(ln):
+
+            vstd.add((r, c))
+
 
 if __name__ == "__main__":
 
