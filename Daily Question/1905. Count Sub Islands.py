@@ -334,44 +334,7 @@ if __name__ == "__main__":
 
         ilLnds = Hlp02_FndIslWtFlFldMtd(Lnd)
 
-        # ilLnds = []
-        #
-        # ilCnt = 0
-        #
-        # vstd = set()
-        #
-        # for r, ln in enumerate(Lnd):
-        #     for c, sq in enumerate(ln):
-        #
-        #         if sq and (r, c) not in vstd:
-        #
-        #             ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
-        #
-        #             # ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
-        #
-        #             ilLnds.append(ilnd)
-        #
-        #             ilCnt += 1
-
         ilIsls = Hlp02_FndIslWtFlFldMtd(Isl)
-
-        # ilIsls = []
-        # ilCnt = 0
-        #
-        # vstd = set()
-        #
-        # for r, ln in enumerate(Isl):
-        #     for c, sq in enumerate(ln):
-        #
-        #         if sq and (r, c) not in vstd:
-        #
-        #             ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
-        #
-        #             # ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Isl, vstd)
-        #
-        #             ilIsls.append(ilnd)
-        #
-        #             ilCnt += 1
 
         print("\tLand islands:")
         for isl in ilLnds:
