@@ -315,13 +315,10 @@ if __name__ == "__main__":
         
         """
 
-        flQu = []
-        vstd = set()
-
         ilLnds = []
         ilCnt = 0
 
-        crLnd = copy.deepcopy(Lnd)
+        vstd = set()
 
         for r, ln in enumerate(Lnd):
             for c, sq in enumerate(ln):
