@@ -71,7 +71,7 @@ Symbols:
 """
 
 
-def Prt01_Grd_DspIn(Grd, Tp, spc=1):
+def Prt01_DspGrd(Grd, Tp, spc=1):
 
     spc = spc * "\t"
 
@@ -201,7 +201,7 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd):
         if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
-    Prt01_Grd_DspIn(crLnd, f"{ilCnt+1}. Connected land", 2)
+    Prt01_DspGrd(crLnd, f"{ilCnt + 1}. Connected land", 2)
 
     return lnd, Vstd
 
@@ -276,9 +276,9 @@ if __name__ == "__main__":
         dmRw = len(Lnd)
         dmCl = len(Lnd[0])
 
-        Prt01_Grd_DspIn(Lnd, "Land")
+        Prt01_DspGrd(Lnd, "Land")
 
-        Prt01_Grd_DspIn(Isl, "Island")
+        Prt01_DspGrd(Isl, "Island")
 
         print()
 
