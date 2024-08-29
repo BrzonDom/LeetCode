@@ -71,7 +71,7 @@ Symbols:
 """
 
 
-def Prt01_Grd_DspIn(Grd, Tp):
+def Prt01_Grd_DspIn(Grd, Tp, spc=1):
 
     rwGr = len(Grd)
     clGr = len(Grd[0])
