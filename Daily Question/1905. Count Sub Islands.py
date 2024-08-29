@@ -147,12 +147,14 @@ def Hlp01_FlFldWhlLp(Str, Grd):
     rwGr = len(Grd)
     clGr = len(Grd[0])
 
+    lnd = []
     flQu = [Str]
 
     while flQu:
 
         (r, c) = flQu.pop(0)
         vstd.add((r, c))
+        lnd.append((r, c))
 
         if c > 0 and Grd[r][c - 1] and (r, c - 1) not in vstd:
             flQu.append((r, c - 1))
