@@ -168,7 +168,7 @@ def Hlp01_FlFldWhlLp(Str, Grd, Vstd):
         if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
-    return lnd
+    return lnd, Vstd
 
 
 def Hlp01_FlFldWhlLp_Prt(Str, Grd):
@@ -343,7 +343,7 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
+                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
 
                     ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd)
 
@@ -361,7 +361,7 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    # ilnd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
+                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
 
                     ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Isl)
 
