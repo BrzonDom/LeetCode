@@ -144,7 +144,8 @@ def Prt02_Grd_DspDt(Grd, Dt, spc=2):
 
 def Hlp01_FlFldWhlLp(Str, Grd):
 
-    return
+    rwGr = len(Grd)
+    clGr = len(Grd[0])
 
 
 if __name__ == "__main__":
