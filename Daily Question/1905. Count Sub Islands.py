@@ -208,12 +208,7 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd):
 
 def Hlp02_FndIslWtFlFldMtd(Grd):
 
-    dmRw = len(Grd)
-    dmCl = len(Grd[0])
-
     islns = []
-    isCnt = 0
-
     vstd = set()
 
     for r, ln in enumerate(Grd):
