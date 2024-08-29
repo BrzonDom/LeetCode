@@ -345,7 +345,9 @@ if __name__ == "__main__":
 
                     ilIsls.append([])
 
-                    ilIsls[ilCnt] = Hlp01_FlFldWhlLp((r, c), Isl)
+                    # ilIsls[ilCnt] = Hlp01_FlFldWhlLp((r, c), Isl)
+
+                    ilIsls[ilCnt] = Hlp01_FlFldWhlLp_Prt((r, c), Isl)
 
                     ilCnt += 1
 
