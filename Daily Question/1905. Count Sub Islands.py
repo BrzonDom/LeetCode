@@ -203,7 +203,7 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd):
 
     Prt01_Grd_DspIn(crLnd, f"{ilCnt+1}. Connected land", 2)
 
-    return lnd
+    return lnd, Vstd
 
 
 def Hlp02_FndIslWtFlFldMtd(Grd):
@@ -343,9 +343,9 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
+                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
 
-                    # ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
+                    ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
 
                     ilLnds.append(ilnd)
 
@@ -361,9 +361,9 @@ if __name__ == "__main__":
 
                 if sq and (r, c) not in vstd:
 
-                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
+                    # ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Isl, vstd)
 
-                    # ilnd = Hlp01_FlFldWhlLp_Prt((r, c), Isl, vstd)
+                    ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Isl, vstd)
 
                     ilIsls.append(ilnd)
 
