@@ -332,23 +332,26 @@ if __name__ == "__main__":
         
         """
 
-        ilLnds = []
-        ilCnt = 0
+        ilLnds = Hlp02_FndIslWtFlFldMtd(Lnd)
 
-        vstd = set()
-
-        for r, ln in enumerate(Lnd):
-            for c, sq in enumerate(ln):
-
-                if sq and (r, c) not in vstd:
-
-                    ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
-
-                    # ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
-
-                    ilLnds.append(ilnd)
-
-                    ilCnt += 1
+        # ilLnds = []
+        #
+        # ilCnt = 0
+        #
+        # vstd = set()
+        #
+        # for r, ln in enumerate(Lnd):
+        #     for c, sq in enumerate(ln):
+        #
+        #         if sq and (r, c) not in vstd:
+        #
+        #             ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Lnd, vstd)
+        #
+        #             # ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Lnd, vstd)
+        #
+        #             ilLnds.append(ilnd)
+        #
+        #             ilCnt += 1
 
         ilIsls = []
         ilCnt = 0
