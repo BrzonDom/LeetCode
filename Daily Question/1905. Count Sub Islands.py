@@ -179,11 +179,15 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd):
     lnd = []
     flQu = [Str]
 
+    crLnd = copy.deepcopy(Grd)
+
     while flQu:
         (r, c) = flQu.pop(0)
 
         vstd.add((r, c))
         lnd.append((r, c))
+
+        crLnd[r][c] = 2
 
         if c > 0 and Grd[r][c - 1] and (r, c - 1) not in vstd:
             flQu.append((r, c - 1))
