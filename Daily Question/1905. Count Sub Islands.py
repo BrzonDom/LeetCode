@@ -172,7 +172,7 @@ def Hlp01_FlFldWhlLp(Str, Grd, Vstd):
     return lnd, Vstd
 
 
-def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd):
+def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd, Typ):
 
     dmRw = len(Grd)
     dmCl = len(Grd[0])
@@ -202,7 +202,7 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd):
         if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
-    Prt01_DspGrd(crLnd, f"{ilCnt + 1}. Connected land", 2)
+    Prt01_DspGrd(crLnd, Typ, 2)
 
     return lnd, Vstd
 
