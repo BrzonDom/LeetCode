@@ -154,6 +154,9 @@ def Hlp01_FlFldWhlLp(Str, Grd):
         (r, c) = flQu.pop(0)
         vstd.add((r, c))
 
+        if c > 0 and Grd[r][c - 1] and (r, c - 1) not in vstd:
+            flQu.append((r, c - 1))
+
         break
 
 
