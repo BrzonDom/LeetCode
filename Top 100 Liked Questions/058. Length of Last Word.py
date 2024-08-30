@@ -49,6 +49,7 @@ if __name__ == "__main__":
         InStr = case
 
         print(f"\tString: \"{InStr}\"")
+        print()
 
         rawStr = InStr
         stpStr = InStr
@@ -59,6 +60,6 @@ if __name__ == "__main__":
                 stpStr = rawStr[idx:]
                 break
 
-        print(f"\t\tStripped String: {stpStr}")
+        print(f"\t\tStripped String: \"{stpStr}\"")
 
         print("\n")
