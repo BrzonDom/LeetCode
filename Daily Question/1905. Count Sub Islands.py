@@ -292,9 +292,7 @@ if __name__ == "__main__":
         dmCl = len(LwLnd[0])
 
         Prt01_DspGrd(LwLnd, "Low Land")
-
         Prt01_DspGrd(HgLnd, "High Land")
-
         print()
 
         print("\tGrid dimensions:")
@@ -403,7 +401,6 @@ if __name__ == "__main__":
 
                     for ild in hgIld:
                         sbLnd[ild[0]][ild[1]] = 3
-
                         mrLnd[ild[0]][ild[1]] = 3
 
                     break
