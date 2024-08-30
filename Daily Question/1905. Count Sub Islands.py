@@ -367,6 +367,13 @@ if __name__ == "__main__":
         lwIsls = Hlp02_FndIslWtFlFldMtd_Prt(LwLnd, "Land")
         hgIsls = Hlp02_FndIslWtFlFldMtd_Prt(HgLnd, "Island")
 
+        sbIsls = [[0 for c in range(dmCl)] for r in range(dmRw)]
+
+        for r in range(dmRw):
+            for c in range(dmCl):
+
+                continue
+
         for lwIld in lwIsls:
             for hgIld in hgIsls:
 
