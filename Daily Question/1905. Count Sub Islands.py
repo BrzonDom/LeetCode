@@ -367,4 +367,9 @@ if __name__ == "__main__":
         lwIsls = Hlp02_FndIslWtFlFldMtd_Prt(LwLnd, "Land")
         hgIsls = Hlp02_FndIslWtFlFldMtd_Prt(HgLnd, "Island")
 
+        for hgIld in hgIsls:
+            for lwIld in lwIsls:
+
+                continue
+
         print("\n")
