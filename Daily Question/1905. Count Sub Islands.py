@@ -389,8 +389,8 @@ if __name__ == "__main__":
 
         Prt01_DspGrd(sbIsls, "Merged Land")
 
-        for lwIld in lwIsls:
-            for hgIld in hgIsls:
+        for hgIld in hgIsls:
+            for lwIld in lwIsls:
 
                 if all(ild in lwIld for ild in hgIld):
                     print(f"\t\t{hgIld}")
