@@ -148,14 +148,14 @@ def Hlp01_FlFldWhlLp(Str, Grd, Vstd):
     rwGr = len(Grd)
     clGr = len(Grd[0])
 
-    lnd = []
+    ild = []
     flQu = [Str]
 
     while flQu:
         (r, c) = flQu.pop(0)
 
         Vstd.add((r, c))
-        lnd.append((r, c))
+        ild.append((r, c))
 
         if c > 0 and Grd[r][c - 1] and (r, c - 1) not in Vstd:
             flQu.append((r, c - 1))
@@ -169,7 +169,7 @@ def Hlp01_FlFldWhlLp(Str, Grd, Vstd):
         if r < rwGr - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
-    return lnd, Vstd
+    return ild, Vstd
 
 
 def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd, Typ):
@@ -177,18 +177,18 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd, Typ):
     dmRw = len(Grd)
     dmCl = len(Grd[0])
 
-    lnd = []
+    ild = []
     flQu = [Str]
 
-    crLnd = copy.deepcopy(Grd)
+    lnd = copy.deepcopy(Grd)
 
     while flQu:
         (r, c) = flQu.pop(0)
 
         Vstd.add((r, c))
-        lnd.append((r, c))
+        ild.append((r, c))
 
-        crLnd[r][c] = 2
+        lnd[r][c] = 2
 
         if c > 0 and Grd[r][c - 1] and (r, c - 1) not in Vstd:
             flQu.append((r, c - 1))
@@ -202,14 +202,14 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd, Typ):
         if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
-    Prt01_DspGrd(crLnd, Typ, 2)
+    Prt01_DspGrd(lnd, Typ, 2)
 
-    return lnd, Vstd
+    return ild, Vstd
 
 
 def Hlp02_FndIslWtFlFldMtd(Grd):
 
-    islns = []
+    isls = []
     vstd = set()
 
     for r, ln in enumerate(Grd):
@@ -217,16 +217,16 @@ def Hlp02_FndIslWtFlFldMtd(Grd):
 
             if sq and (r, c) not in vstd:
 
-                ilnd, vstd = Hlp01_FlFldWhlLp((r, c), Grd, vstd)
+                ild, vstd = Hlp01_FlFldWhlLp((r, c), Grd, vstd)
 
-                islns.append(ilnd)
+                isls.append(ild)
 
-    return islns
+    return isls
 
 
 def Hlp02_FndIslWtFlFldMtd_Prt(Grd, Typ):
 
-    islns = []
+    isls = []
     vstd = set()
 
     ilCnt = 1
@@ -236,13 +236,13 @@ def Hlp02_FndIslWtFlFldMtd_Prt(Grd, Typ):
 
             if sq and (r, c) not in vstd:
 
-                ilnd, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Grd, vstd, f"{ilCnt}. Connected {Typ}")
+                ild, vstd = Hlp01_FlFldWhlLp_Prt((r, c), Grd, vstd, f"{ilCnt}. Connected {Typ}")
 
-                islns.append(ilnd)
+                isls.append(ild)
 
                 ilCnt += 1
 
-    return islns
+    return isls
 
 
 if __name__ == "__main__":
@@ -275,15 +275,15 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Lnd = case[0]
-        Isl = case[1]
+        LwLnd = case[0]
+        HgLnd = case[1]
 
-        dmRw = len(Lnd)
-        dmCl = len(Lnd[0])
+        dmRw = len(LwLnd)
+        dmCl = len(LwLnd[0])
 
-        Prt01_DspGrd(Lnd, "Land")
+        Prt01_DspGrd(LwLnd, "Land")
 
-        Prt01_DspGrd(Isl, "Island")
+        Prt01_DspGrd(HgLnd, "Island")
 
         print()
 
@@ -296,11 +296,11 @@ if __name__ == "__main__":
 
         Mvmt = {}
 
-        for r, ln in enumerate(Lnd):
+        for r, ln in enumerate(LwLnd):
             for c, sq in enumerate(ln):
 
                 if sq:
-                    if c > 0 and Lnd[r][c - 1]:
+                    if c > 0 and LwLnd[r][c - 1]:
 
                         if (r+1, c+1) not in Mvmt:
                             Mvmt[(r+1, c+1)] = {"L": True,
@@ -311,7 +311,7 @@ if __name__ == "__main__":
                         else:
                             Mvmt[(r+1, c+1)]["L"] = True
 
-                    if r > 0 and Lnd[r-1][c]:
+                    if r > 0 and LwLnd[r-1][c]:
 
                         if (r+1, c+1) not in Mvmt:
                             Mvmt[(r+1, c+1)] = {"L": False,
@@ -322,7 +322,7 @@ if __name__ == "__main__":
                         else:
                             Mvmt[(r+1, c+1)]["U"] = True
 
-                    if c < dmCl-1 and Lnd[r][c+1]:
+                    if c < dmCl-1 and LwLnd[r][c+1]:
 
                         if (r+1, c+1) not in Mvmt:
                             Mvmt[(r+1, c+1)] = {"L": False,
@@ -333,7 +333,7 @@ if __name__ == "__main__":
                         else:
                             Mvmt[(r+1, c+1)]["R"] = True
 
-                    if r < dmRw-1 and Lnd[r+1][c]:
+                    if r < dmRw-1 and LwLnd[r+1][c]:
 
                         if (r+1, c+1) not in Mvmt:
                             Mvmt[(r+1, c+1)] = {"L": False,
@@ -350,23 +350,23 @@ if __name__ == "__main__":
                                                 "R": False,
                                                 "D": False}
 
-        Prt02_Grd_DspDt(Lnd, Mvmt)
+        Prt02_Grd_DspDt(LwLnd, Mvmt)
         
         """
 
-        # ilLnds = Hlp02_FndIslWtFlFldMtd(Lnd)
-        # ilIsls = Hlp02_FndIslWtFlFldMtd(Isl)
+        # lwIsls = Hlp02_FndIslWtFlFldMtd(LwLnd)
+        # hgIsls = Hlp02_FndIslWtFlFldMtd(HgLnd)
 
-        ilLnds = Hlp02_FndIslWtFlFldMtd_Prt(Lnd, "Land")
-        ilIsls = Hlp02_FndIslWtFlFldMtd_Prt(Isl, "Island")
+        lwIsls = Hlp02_FndIslWtFlFldMtd_Prt(LwLnd, "Land")
+        hgIsls = Hlp02_FndIslWtFlFldMtd_Prt(HgLnd, "Island")
 
         print("\tLand islands:")
-        for isl in ilLnds:
-            print(f"\t\t{isl}")
+        for ild in lwIsls:
+            print(f"\t\t{ild}")
         print()
 
         print("\tIslands:")
-        for isl in ilIsls:
-            print(f"\t\t{isl}")
+        for ild in hgIsls:
+            print(f"\t\t{ild}")
 
         print("\n")
