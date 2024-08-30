@@ -104,6 +104,9 @@ def Prt01_DspGrd(Grd, Typ, Spc=1):
             elif sq == 3:
                 print("██", end=" ")
 
+            elif sq == 4:
+                print("▀▄", end=" ")
+
             else:
                 print("  ", end=" ")
 
