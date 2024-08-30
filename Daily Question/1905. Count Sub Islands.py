@@ -388,6 +388,7 @@ if __name__ == "__main__":
                     sbLnd[r][c] = 2
 
         Prt01_DspGrd(sbLnd, "Merged Land")
+        print()
 
         sbIsls = []
 
@@ -401,5 +402,7 @@ if __name__ == "__main__":
                         sbLnd[ild[0]][ild[1]] = 3
 
                     break
+
+        Prt01_DspGrd(sbLnd, "Sub Island")
 
         print("\n")
