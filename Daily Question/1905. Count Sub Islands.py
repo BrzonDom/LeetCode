@@ -395,4 +395,6 @@ if __name__ == "__main__":
                 if all(ild in lwIld for ild in hgIld):
                     print(f"\t\t{hgIld}")
 
+                    break
+
         print("\n")
