@@ -36,14 +36,16 @@ https://leetcode.com/problems/length-of-last-word/description/
 """
 
 
-InputLst = ["Hello World",
-            "   fly me   to   the moon  ",
-            "luffy is still joyboy"]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = ["Hello World",
+                "   fly me   to   the moon  ",
+                "luffy is still joyboy"]
 
-    print(f"{csCnt+1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt+1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
