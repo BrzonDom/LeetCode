@@ -50,4 +50,9 @@ if __name__ == "__main__":
 
         print(f"\tString: \"{InStr}\"")
 
+        rwStr = InStr
+
+        for chr in rwStr:
+            print(chr, end="")
+
         print("\n")
