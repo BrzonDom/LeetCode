@@ -368,7 +368,10 @@ if __name__ == "__main__":
         # hgIsls = Hlp02_FndIslWtFlFldMtd(HgLnd)
 
         lwIsls = Hlp02_FndIslWtFlFldMtd_Prt(LwLnd, "Land")
+        print()
+
         hgIsls = Hlp02_FndIslWtFlFldMtd_Prt(HgLnd, "Island")
+        print("\n")
 
         sbIsls = [[0 for c in range(dmCl)] for r in range(dmRw)]
 
@@ -385,7 +388,6 @@ if __name__ == "__main__":
                     sbIsls[r][c] = 2
 
         Prt01_DspGrd(sbIsls, "Merged Land")
-
 
         for lwIld in lwIsls:
             for hgIld in hgIsls:
