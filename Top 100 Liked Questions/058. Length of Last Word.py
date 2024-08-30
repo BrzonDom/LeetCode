@@ -29,7 +29,7 @@ https://leetcode.com/problems/length-of-last-word/description/
 
     Constraints:
 
-        1 <= s.length <= 104
+        1 <= s.length <= 10^4
         s consists of only English letters and spaces ' '.
         There will be at least one word in s.
 
