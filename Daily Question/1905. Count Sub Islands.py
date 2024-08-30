@@ -374,6 +374,7 @@ if __name__ == "__main__":
         print()
 
         mrLnd = [[0 for c in range(dmCl)] for r in range(dmRw)]
+        sbLnd = [[0 for c in range(dmCl)] for r in range(dmRw)]
 
         for r in range(dmRw):
             for c in range(dmCl):
@@ -399,6 +400,8 @@ if __name__ == "__main__":
                     sbIsls.append(hgIld)
 
                     for ild in hgIld:
+                        sbLnd[ild[0]][ild[1]] = 3
+
                         mrLnd[ild[0]][ild[1]] = 3
 
                     break
