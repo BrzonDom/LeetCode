@@ -52,7 +52,7 @@ if __name__ == "__main__":
 
         rwStr = InStr
 
-        for chr in rwStr:
-            print(chr, end="")
+        for idx, chr in enumerate(rwStr):
+            print(rwStr[idx], end="")
 
         print("\n")
