@@ -60,6 +60,12 @@ if __name__ == "__main__":
                 stpStr = rawStr[idx:]
                 break
 
+        for idx, chr in enumerate(rawStr[::-1]):
+
+            if chr != " ":
+                stpStr = stpStr[:-idx]
+                break
+
         print(f"\t\tStripped String: \"{stpStr}\"")
 
         print("\n")
