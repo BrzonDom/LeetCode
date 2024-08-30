@@ -212,7 +212,7 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd, Typ):
         if r < dmRw - 1 and Grd[r + 1][c] and (r + 1, c) not in Vstd:
             flQu.append((r + 1, c))
 
-    Prt01_DspGrd(lnd, Typ, 2)
+    Prt01_DspGrd(lnd, Typ, 3)
 
     return ild, Vstd
 
