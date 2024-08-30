@@ -373,21 +373,21 @@ if __name__ == "__main__":
         hgIsls = Hlp02_FndIslWtFlFldMtd_Prt(HgLnd, "Island")
         print()
 
-        sbLnd = [[0 for c in range(dmCl)] for r in range(dmRw)]
+        mrLnd = [[0 for c in range(dmCl)] for r in range(dmRw)]
 
         for r in range(dmRw):
             for c in range(dmCl):
 
                 if LwLnd[r][c] and HgLnd[r][c]:
-                    sbLnd[r][c] = 4
+                    mrLnd[r][c] = 4
 
                 elif LwLnd[r][c]:
-                    sbLnd[r][c] = 1
+                    mrLnd[r][c] = 1
 
                 elif HgLnd[r][c]:
-                    sbLnd[r][c] = 2
+                    mrLnd[r][c] = 2
 
-        Prt01_DspGrd(sbLnd, "Merged Land", 2)
+        Prt01_DspGrd(mrLnd, "Merged Land", 2)
         print()
 
         sbIsls = []
@@ -399,10 +399,10 @@ if __name__ == "__main__":
                     sbIsls.append(hgIld)
 
                     for ild in hgIld:
-                        sbLnd[ild[0]][ild[1]] = 3
+                        mrLnd[ild[0]][ild[1]] = 3
 
                     break
 
-        Prt01_DspGrd(sbLnd, "Sub Island")
+        Prt01_DspGrd(mrLnd, "Merged Land & Island")
 
         print("\n")
