@@ -51,8 +51,12 @@ if __name__ == "__main__":
         print(f"\tString: \"{InStr}\"")
 
         rawStr = InStr
+        stpStr = InStr
 
         for idx, chr in enumerate(rawStr):
-            print(rawStr[idx], end="")
+
+            if chr != " ":
+                stpStr = rawStr[idx:]
+                break
 
         print("\n")
