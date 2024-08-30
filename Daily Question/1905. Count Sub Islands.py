@@ -195,7 +195,7 @@ def Hlp01_FlFldWhlLp_Prt(Str, Grd, Vstd, Typ):
         Vstd.add((r, c))
         ild.append((r, c))
 
-        lnd[r][c] = 2
+        lnd[r][c] = 3
 
         if c > 0 and Grd[r][c - 1] and (r, c - 1) not in Vstd:
             flQu.append((r, c - 1))
