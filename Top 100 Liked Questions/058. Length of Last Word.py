@@ -59,4 +59,6 @@ if __name__ == "__main__":
                 stpStr = rawStr[idx:]
                 break
 
+        print(f"\t\tStripped String: {stpStr}")
+
         print("\n")
