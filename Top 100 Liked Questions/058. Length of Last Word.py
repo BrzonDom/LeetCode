@@ -63,6 +63,9 @@ if __name__ == "__main__":
         for idx, chr in enumerate(rawStr[::-1]):
 
             if chr != " ":
+                if idx == 0:
+                    break
+
                 stpStr = stpStr[:-idx]
                 break
 
