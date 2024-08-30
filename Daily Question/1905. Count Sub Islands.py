@@ -291,9 +291,9 @@ if __name__ == "__main__":
         dmRw = len(LwLnd)
         dmCl = len(LwLnd[0])
 
-        Prt01_DspGrd(LwLnd, "Land")
+        Prt01_DspGrd(LwLnd, "Low Land")
 
-        Prt01_DspGrd(HgLnd, "Island")
+        Prt01_DspGrd(HgLnd, "High Land")
 
         print()
 
