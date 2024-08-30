@@ -50,9 +50,9 @@ if __name__ == "__main__":
 
         print(f"\tString: \"{InStr}\"")
 
-        rwStr = InStr
+        rawStr = InStr
 
-        for idx, chr in enumerate(rwStr):
-            print(rwStr[idx], end="")
+        for idx, chr in enumerate(rawStr):
+            print(rawStr[idx], end="")
 
         print("\n")
