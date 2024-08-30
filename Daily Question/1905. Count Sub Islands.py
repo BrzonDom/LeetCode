@@ -407,5 +407,8 @@ if __name__ == "__main__":
                     break
 
         Prt01_DspGrd(mrLnd, "Merged Land & Island")
+        print()
+
+        Prt01_DspGrd(sbLnd, "Sub Island")
 
         print("\n")
