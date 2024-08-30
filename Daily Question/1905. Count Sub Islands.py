@@ -395,9 +395,13 @@ if __name__ == "__main__":
             for lwIld in lwIsls:
 
                 if all(ild in lwIld for ild in hgIld):
-                    print(f"\t\t\t{hgIld}")
+                    print(f"\t\t\t", end="")
 
                     sbIsls.append(hgIld)
+
+                    for ild in hgIld:
+                        print(ild, " ")
+                    print()
 
                     break
 
