@@ -105,7 +105,7 @@ def Prt01_DspGrd(Grd, Typ, Spc=1):
                 print("██", end=" ")
 
             elif sq == 4:
-                print("▀▄", end=" ")
+                print("▒▓", end=" ")
 
             else:
                 print("  ", end=" ")
@@ -383,6 +383,8 @@ if __name__ == "__main__":
 
                 elif HgLnd[r][c]:
                     sbIsls[r][c] = 2
+
+        Prt01_DspGrd(sbIsls, "Merged Land")
 
 
         for lwIld in lwIsls:
