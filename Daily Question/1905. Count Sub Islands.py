@@ -92,14 +92,20 @@ def Prt01_DspGrd(Grd, Typ, Spc=1):
 
         for sq in ln:
 
-            if sq == 1:
+            if sq == 0:
+                print("░░", end=" ")
+
+            elif sq == 1:
                 print("▒▒", end=" ")
 
             elif sq == 2:
+                print("▓▓", end=" ")
+
+            elif sq == 3:
                 print("██", end=" ")
 
             else:
-                print("░░", end=" ")
+                print("  ", end=" ")
 
         print()
     print()
