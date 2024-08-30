@@ -73,4 +73,9 @@ if __name__ == "__main__":
 
         wrdStr = copy.deepcopy(stpStr)
 
+        for idx, chr in enumerate(wrdStr):
+
+            if chr != " ":
+                continue
+
         print("\n")
