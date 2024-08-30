@@ -372,7 +372,10 @@ if __name__ == "__main__":
         for r in range(dmRw):
             for c in range(dmCl):
 
-                if LwLnd[r][c]:
+                if LwLnd[r][c] and HgLnd[r][c]:
+                    sbIsls[r][c] = 4
+
+                elif LwLnd[r][c]:
                     sbIsls[r][c] = 1
 
                 elif HgLnd[r][c]:
