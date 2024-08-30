@@ -72,10 +72,19 @@ if __name__ == "__main__":
         print(f"\t\tStripped String: \"{stpStr}\"")
 
         wrdStr = copy.deepcopy(stpStr)
+        wrdLst = []
+        wrd = ""
 
         for idx, chr in enumerate(wrdStr):
 
-            if chr != " ":
-                continue
+            if chr == " ":
+                if wrd:
+                    wrdLst.append(wrd)
+                    wrd = ""
+
+            else:
+                wrd += chr
+
+        print(wrdLst)
 
         print("\n")
