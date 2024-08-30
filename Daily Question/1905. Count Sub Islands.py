@@ -371,7 +371,7 @@ if __name__ == "__main__":
         print()
 
         hgIsls = Hlp02_FndIslWtFlFldMtd_Prt(HgLnd, "Island")
-        print("\n")
+        print()
 
         sbLnd = [[0 for c in range(dmCl)] for r in range(dmRw)]
 
@@ -387,7 +387,7 @@ if __name__ == "__main__":
                 elif HgLnd[r][c]:
                     sbLnd[r][c] = 2
 
-        Prt01_DspGrd(sbLnd, "Merged Land")
+        Prt01_DspGrd(sbLnd, "Merged Land", 2)
         print()
 
         sbIsls = []
