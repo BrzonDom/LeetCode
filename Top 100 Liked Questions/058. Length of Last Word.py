@@ -34,3 +34,13 @@ https://leetcode.com/problems/length-of-last-word/description/
         There will be at least one word in s.
 
 """
+
+
+InputLst = ["Hello World",
+            "   fly me   to   the moon  ",
+            "luffy is still joyboy"]
+
+for case in InputLst:
+
+    print(case)
+    print()
