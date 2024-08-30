@@ -66,7 +66,8 @@ import copy
 """
 Symbols:
     Water     = ░░
-    Land      = ▒▒
+    Low Land  = ▒▒
+    High Land = ▓▓
     Connected = ██
 """
 
