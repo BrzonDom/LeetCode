@@ -395,15 +395,10 @@ if __name__ == "__main__":
             for lwIld in lwIsls:
 
                 if all(ild in lwIld for ild in hgIld):
-                    print(f"\t\t\t", end="")
-
                     sbIsls.append(hgIld)
 
                     for ild in hgIld:
-                        print(ild, end=" ")
-
                         sbLnd[ild[0]][ild[1]] = 3
-                    print()
 
                     break
 
