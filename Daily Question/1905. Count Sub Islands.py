@@ -372,7 +372,12 @@ if __name__ == "__main__":
         for r in range(dmRw):
             for c in range(dmCl):
 
-                continue
+                if LwLnd[r][c]:
+                    sbIsls[r][c] = 1
+
+                elif HgLnd[r][c]:
+                    sbIsls[r][c] = 2
+
 
         for lwIld in lwIsls:
             for hgIld in hgIsls:
