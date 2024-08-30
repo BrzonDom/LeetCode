@@ -34,7 +34,7 @@ https://leetcode.com/problems/length-of-last-word/description/
         There will be at least one word in s.
 
 """
-
+import copy
 
 if __name__ == "__main__":
 
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         print()
 
         rawStr = InStr
-        stpStr = InStr
+        stpStr = copy.deepcopy(InStr)
 
         for idx, chr in enumerate(rawStr):
 
@@ -70,5 +70,7 @@ if __name__ == "__main__":
                 break
 
         print(f"\t\tStripped String: \"{stpStr}\"")
+
+        wrdStr = copy.deepcopy(stpStr)
 
         print("\n")
