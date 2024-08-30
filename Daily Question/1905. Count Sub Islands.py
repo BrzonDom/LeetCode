@@ -392,12 +392,14 @@ if __name__ == "__main__":
         print()
 
         sbIsls = []
+        sbCnt = 0
 
         for hgIld in hgIsls:
             for lwIld in lwIsls:
 
                 if all(ild in lwIld for ild in hgIld):
                     sbIsls.append(hgIld)
+                    sbCnt += 1
 
                     for ild in hgIld:
                         sbLnd[ild[0]][ild[1]] = 3
