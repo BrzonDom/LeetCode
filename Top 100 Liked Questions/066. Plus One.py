@@ -62,6 +62,6 @@ if __name__ == "__main__":
 
         Nmbr = case
 
-        print(f"\t{Nmbr}")
+        print(f"\tNumber list: {Nmbr}")
 
         print("\n")
