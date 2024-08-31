@@ -73,4 +73,8 @@ if __name__ == "__main__":
 
             nmbr += str(nm)
 
+        nmbr = int(nmbr)
+        nmbr += 1
+        nmbr = str(nmbr)
+
         print("\n")
