@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
         nmbr = ""
 
-        print("\t\tNumber: ", end="")
+        print("\t\tOriginal number: ", end="")
         for nm in Nmbr:
             print(nm, end="")
 
