@@ -49,8 +49,8 @@ https://leetcode.com/problems/plus-one/description/
 
 """
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
 
     InputLst = [[1, 2, 3],
                 [4, 3, 2, 1],
