@@ -64,4 +64,7 @@ if __name__ == "__main__":
 
         print(f"\tNumber list: {Nmbr}")
 
+        for nm in Nmbr:
+            print(nm, end="")
+
         print("\n")
