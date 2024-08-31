@@ -63,7 +63,9 @@ if __name__ == "__main__":
         Nmbr = case
 
         print(f"\tNumber list: {Nmbr}")
+        print()
 
+        print("\t\tNumber: ", end="")
         for nm in Nmbr:
             print(nm, end="")
 
