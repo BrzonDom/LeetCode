@@ -71,10 +71,6 @@ if __name__ == "__main__":
         for nm in Nmbr:
             print(nm, end="")
 
-            nmbr += nm
-
-        nmbr = int(nmbr)
-        nmbr += 1
-        nmbr = str(nmbr)
+            nmbr += str(nm)
 
         print("\n")
