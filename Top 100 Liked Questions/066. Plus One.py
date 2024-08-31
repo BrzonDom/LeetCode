@@ -48,3 +48,13 @@ https://leetcode.com/problems/plus-one/description/
         digits does not contain any leading 0's.
 
 """
+
+
+InputLst = [[1,2,3],
+            [4,3,2,1],
+            [9]]
+
+for case in InputLst:
+
+    print(case)
+    print()
