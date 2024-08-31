@@ -65,8 +65,12 @@ if __name__ == "__main__":
         print(f"\tNumber list: {Nmbr}")
         print()
 
+        nmbr = ""
+
         print("\t\tNumber: ", end="")
         for nm in Nmbr:
             print(nm, end="")
+
+            nmbr += nm
 
         print("\n")
