@@ -56,6 +56,8 @@ InputLst = [[1, 2, 3],
 
 for case in InputLst:
 
-    print(f"\t{case}")
+    Nmbr = case
+
+    print(f"\t{Nmbr}")
 
     print()
