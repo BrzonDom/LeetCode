@@ -62,12 +62,12 @@ if __name__ == "__main__":
 
         Nmbr = case
 
-        print(f"\tNumber list: {Nmbr}")
+        print(f"\tNumber input list: {Nmbr}")
         print()
 
         nmbr = ""
 
-        print("\t\tOriginal number: ", end="")
+        print("\t\tInput number: ", end="")
         for nm in Nmbr:
             print(nm, end="")
 
