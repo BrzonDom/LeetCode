@@ -70,6 +70,7 @@ if __name__ == "__main__":
                 break
 
         print(f"\t\tStripped String: \"{stpStr}\"")
+        print()
 
         wrdStr = copy.deepcopy(stpStr)
         wrdLst = []
@@ -85,6 +86,7 @@ if __name__ == "__main__":
             else:
                 wrd += chr
 
-        print(wrdLst)
+        print("\t\tWords:")
+        print(f"\t\t\t{wrdLst}")
 
         print("\n")
