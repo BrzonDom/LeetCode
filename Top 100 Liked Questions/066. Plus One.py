@@ -49,17 +49,19 @@ https://leetcode.com/problems/plus-one/description/
 
 """
 
+if __name__ == "__main__":
 
-InputLst = [[1, 2, 3],
-            [4, 3, 2, 1],
-            [9]]
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[1, 2, 3],
+                [4, 3, 2, 1],
+                [9]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    Nmbr = case
+        print(f"{csCnt + 1}.Case\n")
 
-    print(f"\t{Nmbr}")
+        Nmbr = case
 
-    print("\n")
+        print(f"\t{Nmbr}")
+
+        print("\n")
