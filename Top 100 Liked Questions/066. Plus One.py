@@ -50,7 +50,7 @@ https://leetcode.com/problems/plus-one/description/
 """
 
 
-def Slt01_TpCnvApp_Prt():
+def Slt01_TpCnvApp_Prt(InNmbLst):
 
     return
 
