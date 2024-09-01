@@ -50,6 +50,11 @@ https://leetcode.com/problems/plus-one/description/
 """
 
 
+def Slt01_TpCnvApp_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[1, 2, 3],
