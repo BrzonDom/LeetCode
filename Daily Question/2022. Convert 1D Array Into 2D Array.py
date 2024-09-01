@@ -99,6 +99,7 @@ def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
     print()
 
     if lnAr != DmCl * DmRw:
+        print("\tArray doesn't fit into the matrix")
 
         return []
 
