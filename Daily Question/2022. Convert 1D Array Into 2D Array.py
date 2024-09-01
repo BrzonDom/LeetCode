@@ -66,6 +66,10 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     print(f"\t\tCols: {DmCl}")
     print()
 
+    if lnAr != DmRw * DmCl:
+
+        return []
+
     mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
 
     idxCnt = 0
