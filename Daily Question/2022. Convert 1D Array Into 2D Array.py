@@ -83,7 +83,7 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     for row in mtrx:
         print(f"\t\t{row}")
 
-    return
+    return mtrx
 
 
 if __name__ == "__main__":
