@@ -62,10 +62,13 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
         print(nm, end="")
 
         inNmb += str(nm)
+    print()
 
     inNmb = int(inNmb)
 
     otNmb = str(inNmb + 1)
+
+    print(f"\t\tOutput number: {otNmb}")
 
     return
 
