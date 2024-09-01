@@ -64,6 +64,8 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     idxCnt = 0
     for r, row in enumerate(mtrx):
         for c, col in enumerate(row):
+            mtrx[r][c] = Arry[idxCnt]
+
             idxCnt += 1
 
     return
