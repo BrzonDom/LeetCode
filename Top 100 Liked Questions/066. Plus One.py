@@ -98,6 +98,7 @@ if __name__ == "__main__":
 
         nmDg = len(NmbLst)
         print(f"\t\tInput Number digits: {nmDg}")
+        print()
 
         fndItr = False
 
@@ -115,5 +116,7 @@ if __name__ == "__main__":
 
         if not fndItr:
             NmbLst = [1] + NmbLst
+
+        print(f"\tOutput Number list: {NmbLst}")
 
         print("\n")
