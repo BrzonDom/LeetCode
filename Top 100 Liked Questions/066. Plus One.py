@@ -65,7 +65,6 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
     print()
 
     inNmb = int(inNmb)
-
     otNmb = str(inNmb + 1)
 
     print(f"\t\tOutput number: {otNmb}")
@@ -78,7 +77,7 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
 
     print(f"\tOutput Number list: {OtNmbLst}")
 
-    return
+    return OtNmbLst
 
 
 if __name__ == "__main__":
