@@ -106,7 +106,7 @@ def Slt02_LstItrAdd_Prt(NmbLst):
 
     print(f"\tOutput Number list: {NmbLst}")
 
-    return
+    return NmbLst
 
 
 if __name__ == "__main__":
