@@ -98,8 +98,10 @@ def Slt02_LstItrAdd_Prt(NmbLst):
         else:
             NmbLst[-(idx + 1)] = dig + 1
 
+            print(f"\tOutput Number list: {NmbLst}")
+
             fndItr = True
-            break
+            return NmbLst
 
     if not fndItr:
         NmbLst = [1] + NmbLst
