@@ -104,6 +104,8 @@ def Slt02_LstItrAdd_Prt(NmbLst):
     if not fndItr:
         NmbLst = [1] + NmbLst
 
+    print(f"\tOutput Number list: {NmbLst}")
+
     return
 
 
