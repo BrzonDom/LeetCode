@@ -65,19 +65,19 @@ if __name__ == "__main__":
         print(f"\tNumber input list: {Nmbr}")
         print()
 
-        nmbr = ""
+        inNmb = ""
 
         print("\t\tInput number:  ", end="")
         for nm in Nmbr:
             print(nm, end="")
 
-            nmbr += str(nm)
+            inNmb += str(nm)
         print()
 
-        nmbr = int(nmbr)
-        # nmbr += 1
-        nmbr = str(nmbr + 1)
+        inNmb = int(inNmb)
 
-        print(f"\t\tOutput number: {nmbr}")
+        otNmb = str(inNmb + 1)
+
+        print(f"\t\tOutput number: {otNmb}")
 
         print("\n")
