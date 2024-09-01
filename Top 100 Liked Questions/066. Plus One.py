@@ -80,7 +80,7 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
     return OtNmbLst
 
 
-def Slt02_LstItrAdd_Prt():
+def Slt02_LstItrAdd_Prt(NmbLst):
 
     return
 
