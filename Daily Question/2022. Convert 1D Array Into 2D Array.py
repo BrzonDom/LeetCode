@@ -61,6 +61,7 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     print(f"\t\tLength: {lnAr}")
     print()
 
+    print("\tDimensions:")
     print(f"\t\tRows: {DmRw}")
     print(f"\t\tCols: {DmCl}")
     print()
