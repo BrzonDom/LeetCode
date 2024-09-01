@@ -67,8 +67,8 @@ if __name__ == "__main__":
         DmRw = case[1]
         DmCl = case[2]
 
-        print(f"\t{MtrxAr}")
-        print(f"\t{DmRw}")
-        print(f"\t{DmCl}")
+        print(f"\tArray: {MtrxAr}")
+        print(f"\t\tRows: {DmRw}")
+        print(f"\t\tCols: {DmCl}")
 
         print("\n")
