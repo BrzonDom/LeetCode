@@ -90,6 +90,8 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Slt01_TpCnvApp_Prt(case)
+        # Slt01_TpCnvApp_Prt(case)
+
+        print(f"\t{case}")
 
         print("\n")
