@@ -82,6 +82,8 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
 
 def Slt02_LstItrAdd_Prt(NmbLst):
 
+    print(f"\tInput Number list: {NmbLst}")
+
     return
 
 
