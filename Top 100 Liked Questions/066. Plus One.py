@@ -92,34 +92,4 @@ if __name__ == "__main__":
 
         Slt01_TpCnvApp_Prt(case)
 
-        # InNmbLst = case
-        #
-        # print(f"\tInput Number list: {InNmbLst}")
-        # print()
-        #
-        # inNmb = ""
-        #
-        # print("\t\tInput number:  ", end="")
-        # for nm in InNmbLst:
-        #     print(nm, end="")
-        #
-        #     inNmb += str(nm)
-        # print()
-        #
-        # inNmb = int(inNmb)
-        #
-        # otNmb = str(inNmb + 1)
-        #
-        # print(f"\t\tOutput number: {otNmb}")
-        # print()
-        #
-        # OtNmbLst = []
-        #
-        # for nm in str(otNmb):
-        #     # print(nm, end="")
-        #
-        #     OtNmbLst.append(int(nm))
-        #
-        # print(f"\tOutput Number list: {OtNmbLst}")
-
         print("\n")
