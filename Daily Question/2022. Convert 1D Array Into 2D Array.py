@@ -107,4 +107,7 @@ if __name__ == "__main__":
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
 
+        for nm in Arry:
+            print(nm)
+
         print("\n")
