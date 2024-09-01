@@ -71,4 +71,6 @@ if __name__ == "__main__":
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
 
+        mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
+
         print("\n")
