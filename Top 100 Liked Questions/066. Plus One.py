@@ -92,6 +92,8 @@ if __name__ == "__main__":
 
         # Slt01_TpCnvApp_Prt(case)
 
-        print(f"\t{case}")
+        InNmbLst = case
+
+        print(f"\tInput Number list: {InNmbLst}")
 
         print("\n")
