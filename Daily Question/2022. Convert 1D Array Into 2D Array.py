@@ -106,8 +106,10 @@ if __name__ == "__main__":
         print(f"\tArray: {Arry}")
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
+        print()
 
+        print("\t\t", end="")
         for nm in Arry:
-            print(nm)
+            print(nm, end=" ")
 
         print("\n")
