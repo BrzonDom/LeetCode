@@ -93,6 +93,11 @@ def Slt02_LstItrAdd_Prt(NmbLst):
         if dig == 9:
             NmbLst[-(idx + 1)] = 0
 
+        else:
+            NmbLst[-(idx + 1)] = dig + 1
+
+            break
+
     return
 
 
