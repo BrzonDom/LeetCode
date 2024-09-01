@@ -49,3 +49,13 @@ https://leetcode.com/problems/convert-1d-array-into-2d-array/description/?envTyp
         1 <= m, n <= 4 * 10^4
 
 """
+
+
+InputLst = [[[1,2,3,4], 2, 2],
+            [[1,2,3], 1, 3],
+            [[1,2], 1, 1]]
+
+for case in InputLst:
+
+    print(case)
+    print()
