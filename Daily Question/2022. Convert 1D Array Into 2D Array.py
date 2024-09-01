@@ -67,6 +67,7 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     print()
 
     if lnAr != DmRw * DmCl:
+        print("\tArray doesn't fit into the matrix")
 
         return []
 
