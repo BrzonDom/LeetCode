@@ -110,7 +110,7 @@ def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
 
         mtrx.append(Arry[idx: idx + DmCl])
 
-    return
+    return mtrx
 
 
 if __name__ == "__main__":
