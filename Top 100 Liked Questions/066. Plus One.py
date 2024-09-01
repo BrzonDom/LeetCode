@@ -88,6 +88,8 @@ def Slt02_LstItrAdd_Prt(NmbLst):
     print(f"\t\tInput Number digits: {nmDg}")
     print()
 
+    fndItr = False
+
     for idx, dig in enumerate(NmbLst[::-1]):
 
         if dig == 9:
@@ -96,6 +98,7 @@ def Slt02_LstItrAdd_Prt(NmbLst):
         else:
             NmbLst[-(idx + 1)] = dig + 1
 
+            fndItr = True
             break
 
     return
