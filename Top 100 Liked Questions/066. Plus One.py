@@ -99,7 +99,7 @@ if __name__ == "__main__":
         nmDg = len(InNmbLst)
         print(f"\t\tInput Number digits: {nmDg}")
 
-        for dig in InNmbLst[::-1]:
-            print(dig, end="")
+        for idx, dig in enumerate(InNmbLst[::-1]):
+            print(InNmbLst[-(idx+1)], end="")
 
         print("\n")
