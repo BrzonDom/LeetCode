@@ -98,9 +98,13 @@ def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
     print(f"\t\tCols: {DmCl}")
     print()
 
+    mtrx = []
+
     print("\tMatrix:")
     for idx in range(0, lnAr, DmCl):
         print(f"\t\t{Arry[idx: idx + DmCl]}")
+
+        mtrx.append(Arry[idx: idx + DmCl])
 
     return
 
