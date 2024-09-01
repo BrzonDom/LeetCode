@@ -75,8 +75,8 @@ if __name__ == "__main__":
         print()
 
         nmbr = int(nmbr)
-        nmbr += 1
-        nmbr = str(nmbr)
+        # nmbr += 1
+        nmbr = str(nmbr + 1)
 
         print(f"\t\tOutput number: {nmbr}")
 
