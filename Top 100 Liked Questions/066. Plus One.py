@@ -63,6 +63,10 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
 
         inNmb += str(nm)
 
+    inNmb = int(inNmb)
+
+    otNmb = str(inNmb + 1)
+
     return
 
 
