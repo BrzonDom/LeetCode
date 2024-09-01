@@ -113,6 +113,11 @@ if __name__ == "__main__":
         print(f"\t\tCols: {DmCl}")
         print()
 
+        if lnAr != DmCl * DmRw:
+            print("\n")
+
+            continue
+
         mtrx = []
 
         print("\tMatrix:")
