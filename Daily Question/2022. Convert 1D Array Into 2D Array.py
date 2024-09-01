@@ -76,13 +76,13 @@ if __name__ == "__main__":
         print("\tDimensions:")
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
+        print()
 
         if lnAr != DmCl * DmRw:
+            print("\tArray doesn't fit into the matrix")
+
             print("\n")
-
             continue
-
-        print()
 
         mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
 
