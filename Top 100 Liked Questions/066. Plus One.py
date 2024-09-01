@@ -80,4 +80,9 @@ if __name__ == "__main__":
 
         print(f"\t\tOutput number: {otNmb}")
 
+        OtNmbLst = []
+
+        for nm in str(otNmb):
+            print(nm, end="")
+
         print("\n")
