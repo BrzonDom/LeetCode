@@ -73,4 +73,9 @@ if __name__ == "__main__":
 
         mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
 
+        for r, row in enumerate(mtrx):
+            for c, col in enumerate(row):
+                print(col, end=" ")
+            print()
+
         print("\n")
