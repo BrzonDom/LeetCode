@@ -69,8 +69,9 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
 
             idxCnt += 1
 
+    print("\tMatrix:")
     for row in mtrx:
-        print(f"\t{row}")
+        print(f"\t\t{row}")
 
     return
 
