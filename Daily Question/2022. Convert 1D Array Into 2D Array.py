@@ -87,6 +87,11 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     return mtrx
 
 
+def Slt02_MtrxAppRw_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 2, 3, 4], 2, 2],
