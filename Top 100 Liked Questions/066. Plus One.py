@@ -55,6 +55,11 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
     print(f"\tInput Number list: {InNmbLst}")
     print()
 
+    inNmb = ""
+
+    for nm in InNmbLst:
+        inNmb += str(nm)
+
     return
 
 
