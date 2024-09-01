@@ -113,6 +113,7 @@ if __name__ == "__main__":
         print(f"\t\tCols: {DmCl}")
         print()
 
+        print("\tMatrix:")
         for idx in range(0, lnAr, DmCl):
             print(f"\t\t{Arry[idx: idx + DmCl]}")
 
