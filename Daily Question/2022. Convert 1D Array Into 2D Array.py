@@ -114,7 +114,7 @@ if __name__ == "__main__":
         print()
 
         print("\t\t", end="")
-        for nm in Arry:
-            print(nm, end=" ")
+        for idx in range(lnAr):
+            print(Arry[idx], end=" ")
 
         print("\n")
