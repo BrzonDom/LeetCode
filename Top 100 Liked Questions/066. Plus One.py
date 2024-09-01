@@ -67,14 +67,17 @@ if __name__ == "__main__":
 
         nmbr = ""
 
-        print("\t\tInput number: ", end="")
+        print("\t\tInput number:  ", end="")
         for nm in Nmbr:
             print(nm, end="")
 
             nmbr += str(nm)
+        print()
 
         nmbr = int(nmbr)
         nmbr += 1
         nmbr = str(nmbr)
+
+        print(f"\t\tOutput number: {nmbr}")
 
         print("\n")
