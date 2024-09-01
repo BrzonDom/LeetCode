@@ -73,9 +73,12 @@ if __name__ == "__main__":
 
         mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
 
+        idxCnt = 0
         for r, row in enumerate(mtrx):
             for c, col in enumerate(row):
                 print(col, end=" ")
+
+                idxCnt += 1
             print()
 
         print("\n")
