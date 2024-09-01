@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
         InNmbLst = case
 
-        print(f"\tNumber input list: {InNmbLst}")
+        print(f"\tInput Number list: {InNmbLst}")
         print()
 
         inNmb = ""
@@ -79,6 +79,7 @@ if __name__ == "__main__":
         otNmb = str(inNmb + 1)
 
         print(f"\t\tOutput number: {otNmb}")
+        print()
 
         OtNmbLst = []
 
@@ -86,5 +87,7 @@ if __name__ == "__main__":
             # print(nm, end="")
 
             OtNmbLst.append(int(nm))
+
+        print(f"\tOutput Number list: {OtNmbLst}")
 
         print("\n")
