@@ -58,6 +58,7 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     print(f"\tArray: {Arry}")
     print(f"\t\tRows: {DmRw}")
     print(f"\t\tCols: {DmCl}")
+    print()
 
     mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
 
@@ -67,6 +68,9 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
             mtrx[r][c] = Arry[idxCnt]
 
             idxCnt += 1
+
+    for row in mtrx:
+        print(f"\t{row}")
 
     return
 
