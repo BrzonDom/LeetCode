@@ -73,6 +73,7 @@ if __name__ == "__main__":
         print(f"\t\tLength: {lnAr}")
         print()
 
+        print("\tDimensions:")
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
         print()
