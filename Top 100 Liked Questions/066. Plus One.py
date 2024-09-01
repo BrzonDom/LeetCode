@@ -113,4 +113,7 @@ if __name__ == "__main__":
                 fndItr = False
                 break
 
+        if fndItr:
+            NmbLst = [1] + NmbLst
+
         print("\n")
