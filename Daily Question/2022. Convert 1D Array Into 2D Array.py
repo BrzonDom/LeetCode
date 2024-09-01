@@ -53,6 +53,11 @@ https://leetcode.com/problems/convert-1d-array-into-2d-array/description/?envTyp
 """
 
 
+def Slt01_MtrxCntIdx_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 2, 3, 4], 2, 2],
