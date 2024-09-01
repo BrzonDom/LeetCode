@@ -58,10 +58,10 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
     inNmb = ""
 
     print("\t\tInput number:  ", end="")
-    for nm in InNmbLst:
-        print(nm, end="")
+    for dg in InNmbLst:
+        print(dg, end="")
 
-        inNmb += str(nm)
+        inNmb += str(dg)
     print()
 
     inNmb = int(inNmb)
@@ -72,8 +72,8 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
 
     OtNmbLst = []
 
-    for nm in str(otNmb):
-        OtNmbLst.append(int(nm))
+    for dg in str(otNmb):
+        OtNmbLst.append(int(dg))
 
     print(f"\tOutput Number list: {OtNmbLst}")
 
