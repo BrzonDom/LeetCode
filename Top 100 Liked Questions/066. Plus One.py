@@ -70,6 +70,11 @@ def Slt01_TpCnvApp_Prt(InNmbLst):
 
     print(f"\t\tOutput number: {otNmb}")
 
+    OtNmbLst = []
+
+    for nm in str(otNmb):
+        OtNmbLst.append(int(nm))
+
     return
 
 
