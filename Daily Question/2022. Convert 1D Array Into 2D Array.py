@@ -96,10 +96,12 @@ def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
     print()
     print(f"\t\tRows: {DmRw}")
     print(f"\t\tCols: {DmCl}")
-    print()
+    # print()
 
-    print("\t\t", end="")
     for idx in range(lnAr):
+        if idx % DmCl == 0:
+            print("\n\t\t", end="")
+
         print(Arry[idx], end=" ")
 
     return
