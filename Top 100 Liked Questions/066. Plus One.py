@@ -96,4 +96,7 @@ if __name__ == "__main__":
 
         print(f"\tInput Number list: {InNmbLst}")
 
+        nmDg = len(InNmbLst)
+        print(f"\t\tInput Number digits: {nmDg}")
+
         print("\n")
