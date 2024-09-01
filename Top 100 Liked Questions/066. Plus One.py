@@ -92,21 +92,21 @@ if __name__ == "__main__":
 
         # Slt01_TpCnvApp_Prt(case)
 
-        InNmbLst = case
+        NmbLst = case
 
-        print(f"\tInput Number list: {InNmbLst}")
+        print(f"\tInput Number list: {NmbLst}")
 
-        nmDg = len(InNmbLst)
+        nmDg = len(NmbLst)
         print(f"\t\tInput Number digits: {nmDg}")
 
-        for idx, dig in enumerate(InNmbLst[::-1]):
+        for idx, dig in enumerate(NmbLst[::-1]):
             # print(InNmbLst[-(idx+1)], end="")
 
             if dig == 9:
-                InNmbLst[-(idx+1)] = 0
+                NmbLst[-(idx+1)] = 0
 
             else:
-                InNmbLst[-(idx+1)] = dig + 1
+                NmbLst[-(idx+1)] = dig + 1
                 break
 
         print("\n")
