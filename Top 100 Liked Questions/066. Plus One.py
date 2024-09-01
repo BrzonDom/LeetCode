@@ -60,15 +60,15 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Nmbr = case
+        InNmbLst = case
 
-        print(f"\tNumber input list: {Nmbr}")
+        print(f"\tNumber input list: {InNmbLst}")
         print()
 
         inNmb = ""
 
         print("\t\tInput number:  ", end="")
-        for nm in Nmbr:
+        for nm in InNmbLst:
             print(nm, end="")
 
             inNmb += str(nm)
