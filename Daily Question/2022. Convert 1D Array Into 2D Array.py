@@ -97,38 +97,40 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Arry = case[0]
-        lnAr = len(Arry)
+        Slt01_MtrxCntIdx_Prt(case[0], case[1], case[2])
 
-        DmRw = case[1]
-        DmCl = case[2]
-
-        print(f"\tArray: {Arry}")
-        print(f"\t\tLength: {lnAr}")
-        print()
-
-        print("\tDimensions:")
-        print(f"\t\tRows: {DmRw}")
-        print(f"\t\tCols: {DmCl}")
-        print()
-
-        if lnAr != DmCl * DmRw:
-            print("\tArray doesn't fit into the matrix")
-
-            print("\n")
-            continue
-
-        mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
-
-        idxCnt = 0
-        for r, row in enumerate(mtrx):
-            for c, col in enumerate(row):
-                mtrx[r][c] = Arry[idxCnt]
-
-                idxCnt += 1
-
-        print("\tMatrix:")
-        for row in mtrx:
-            print(f"\t\t{row}")
+        # Arry = case[0]
+        # lnAr = len(Arry)
+        #
+        # DmRw = case[1]
+        # DmCl = case[2]
+        #
+        # print(f"\tArray: {Arry}")
+        # print(f"\t\tLength: {lnAr}")
+        # print()
+        #
+        # print("\tDimensions:")
+        # print(f"\t\tRows: {DmRw}")
+        # print(f"\t\tCols: {DmCl}")
+        # print()
+        #
+        # if lnAr != DmCl * DmRw:
+        #     print("\tArray doesn't fit into the matrix")
+        #
+        #     print("\n")
+        #     continue
+        #
+        # mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
+        #
+        # idxCnt = 0
+        # for r, row in enumerate(mtrx):
+        #     for c, col in enumerate(row):
+        #         mtrx[r][c] = Arry[idxCnt]
+        #
+        #         idxCnt += 1
+        #
+        # print("\tMatrix:")
+        # for row in mtrx:
+        #     print(f"\t\t{row}")
 
         print("\n")
