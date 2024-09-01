@@ -114,8 +114,9 @@ if __name__ == "__main__":
         print()
 
         if lnAr != DmCl * DmRw:
-            print("\n")
+            print("\tArray doesn't fit into the matrix")
 
+            print("\n")
             continue
 
         mtrx = []
