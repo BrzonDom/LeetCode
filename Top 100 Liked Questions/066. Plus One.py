@@ -100,6 +100,9 @@ if __name__ == "__main__":
         print(f"\t\tInput Number digits: {nmDg}")
 
         for idx, dig in enumerate(InNmbLst[::-1]):
-            print(InNmbLst[-(idx+1)], end="")
+            # print(InNmbLst[-(idx+1)], end="")
+
+            if dig == 9:
+                InNmbLst[-(idx+1)] = 0
 
         print("\n")
