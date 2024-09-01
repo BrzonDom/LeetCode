@@ -87,7 +87,7 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
     return mtrx
 
 
-def Slt02_MtrxAppRw_Prt():
+def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
 
     return
 
