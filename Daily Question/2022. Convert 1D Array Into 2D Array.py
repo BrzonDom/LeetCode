@@ -80,4 +80,7 @@ if __name__ == "__main__":
 
                 idxCnt += 1
 
+        for row in mtrx:
+            print(f"\t{row}")
+
         print("\n")
