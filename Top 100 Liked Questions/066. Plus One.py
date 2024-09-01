@@ -105,4 +105,8 @@ if __name__ == "__main__":
             if dig == 9:
                 InNmbLst[-(idx+1)] = 0
 
+            else:
+                InNmbLst[-(idx+1)] = dig + 1
+                break
+
         print("\n")
