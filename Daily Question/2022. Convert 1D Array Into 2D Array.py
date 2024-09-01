@@ -70,6 +70,7 @@ if __name__ == "__main__":
         print(f"\tArray: {Arry}")
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
+        print()
 
         mtrx = [[0 for c in range(DmCl)] for r in range(DmRw)]
 
@@ -80,7 +81,8 @@ if __name__ == "__main__":
 
                 idxCnt += 1
 
+        print("\tMatrix:")
         for row in mtrx:
-            print(f"\t{row}")
+            print(f"\t\t{row}")
 
         print("\n")
