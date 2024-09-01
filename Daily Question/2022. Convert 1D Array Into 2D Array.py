@@ -55,6 +55,10 @@ https://leetcode.com/problems/convert-1d-array-into-2d-array/description/?envTyp
 
 def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
 
+    print(f"\tArray: {Arry}")
+    print(f"\t\tRows: {DmRw}")
+    print(f"\t\tCols: {DmCl}")
+
     return
 
 
