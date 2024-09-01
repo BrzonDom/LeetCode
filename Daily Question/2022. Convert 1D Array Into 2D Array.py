@@ -98,6 +98,10 @@ def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
     print(f"\t\tCols: {DmCl}")
     print()
 
+    if lnAr != DmCl * DmRw:
+
+        return []
+
     mtrx = []
 
     print("\tMatrix:")
