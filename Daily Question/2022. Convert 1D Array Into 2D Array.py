@@ -76,9 +76,8 @@ if __name__ == "__main__":
         idxCnt = 0
         for r, row in enumerate(mtrx):
             for c, col in enumerate(row):
-                print(col, end=" ")
+                mtrx[r][c] = Arry[idxCnt]
 
                 idxCnt += 1
-            print()
 
         print("\n")
