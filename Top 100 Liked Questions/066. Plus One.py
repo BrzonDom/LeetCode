@@ -83,6 +83,8 @@ if __name__ == "__main__":
         OtNmbLst = []
 
         for nm in str(otNmb):
-            print(nm, end="")
+            # print(nm, end="")
+
+            OtNmbLst.append(int(nm))
 
         print("\n")
