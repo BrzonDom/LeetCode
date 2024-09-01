@@ -97,6 +97,14 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Slt01_MtrxCntIdx_Prt(case[0], case[1], case[2])
+        # Slt01_MtrxCntIdx_Prt(case[0], case[1], case[2])
+
+        Arry = case[0]
+        DmRw = case[1]
+        DmCl = case[2]
+
+        print(f"\t{Arry}")
+        print(f"\t{DmRw}")
+        print(f"\t{DmCl}")
 
         print("\n")
