@@ -64,10 +64,15 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}.Case\n")
 
         Arry = case[0]
+        lnAr = len(Arry)
+
         DmRw = case[1]
         DmCl = case[2]
 
         print(f"\tArray: {Arry}")
+        print(f"\t\tLength: {lnAr}")
+        print()
+
         print(f"\t\tRows: {DmRw}")
         print(f"\t\tCols: {DmCl}")
         print()
