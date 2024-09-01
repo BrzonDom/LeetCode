@@ -84,6 +84,10 @@ def Slt02_LstItrAdd_Prt(NmbLst):
 
     print(f"\tInput Number list: {NmbLst}")
 
+    nmDg = len(NmbLst)
+    print(f"\t\tInput Number digits: {nmDg}")
+    print()
+
     return
 
 
