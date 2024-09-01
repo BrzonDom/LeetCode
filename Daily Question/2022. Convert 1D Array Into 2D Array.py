@@ -89,6 +89,10 @@ def Slt01_MtrxCntIdx_Prt(Arry, DmRw, DmCl):
 
 def Slt02_MtrxAppRw_Prt(Arry, DmRw, DmCl):
 
+    print(f"\tArray: {Arry}")
+    print(f"\t\tRows: {DmRw}")
+    print(f"\t\tCols: {DmCl}")
+
     return
 
 
