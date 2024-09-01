@@ -101,6 +101,9 @@ def Slt02_LstItrAdd_Prt(NmbLst):
             fndItr = True
             break
 
+    if not fndItr:
+        NmbLst = [1] + NmbLst
+
     return
 
 
