@@ -29,7 +29,7 @@ https://leetcode.com/problems/add-binary/description/
 """
 
 
-def Slt01_BldBnTls_Prt():
+def Slt01_BldBnTls_Prt(Bn1, Bn2):
 
     return
 
