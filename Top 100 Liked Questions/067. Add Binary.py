@@ -34,6 +34,9 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
     print(f"\t1. Binary: {Bn1}")
     print(f"\t2. Binary: {Bn2}")
 
+    nm1 = int(Bn1, 2)
+    nm2 = int(Bn2, 2)
+
     return
 
 
