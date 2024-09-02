@@ -117,9 +117,9 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
         else:
             rmChk -= std
 
-            print(f"\t\t{idx}. Student")
-            print(f"\t\t\tChalk Used:      {std}")
-            print(f"\t\t\tChalk Remaining: {rmChk}")
+            print(f"\t\t\t{idx}. Student")
+            print(f"\t\t\t\tChalk Used:      {std}")
+            print(f"\t\t\t\tChalk Remaining: {rmChk}")
 
 
 if __name__ == "__main__":
