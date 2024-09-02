@@ -89,8 +89,9 @@ if __name__ == "__main__":
         for idx, std in enumerate(Stds):
 
             if std > Chk:
-                fndStd = idx
+                print(f"\t\t{idx}. Student replaces chalk")
 
+                fndStd = idx
                 break
 
             else:
