@@ -55,7 +55,8 @@ if __name__ == "__main__":
         print(f"\t\t2. Int Binary: {bn2[2:]} = {nm2}")
         print()
 
-        bnRs = bin(nm1 + nm2)
+        nmRs = nm1 + nm2
+        bnRs = bin(nmRs)
 
         print(f"\tBinary result: {bnRs[2:]}")
 
