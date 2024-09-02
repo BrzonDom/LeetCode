@@ -84,7 +84,7 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
                 print(f"\t\t{idx}. Student replaces chalk")
 
                 fndStd = idx
-                break
+                return fndStd
 
             else:
                 Chk -= std
@@ -92,8 +92,6 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
                 print(f"\t\t\t{idx}. Student")
                 print(f"\t\t\t\tChalk Used:      {std}")
                 print(f"\t\t\t\tChalk Remaining: {Chk}")
-
-    return
 
 
 if __name__ == "__main__":
