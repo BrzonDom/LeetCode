@@ -61,7 +61,7 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 """
 
 
-def Brt01_WhlFrChkSbt_Prt():
+def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
 
     return
 
