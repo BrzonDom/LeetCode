@@ -33,6 +33,7 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
 
     print(f"\t1. Binary: {Bn1}")
     print(f"\t2. Binary: {Bn2}")
+    print()
 
     nm1 = int(Bn1, 2)
     nm2 = int(Bn2, 2)
@@ -40,8 +41,8 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
     bn1 = bin(nm1)
     bn2 = bin(nm2)
 
-    print(f"\t\t1. Int Binary: {bn1[2:]}")
-    print(f"\t\t2. Int Binary: {bn2[2:]}")
+    print(f"\t\t1. Int Binary: {bn1[2:]} = {nm1}")
+    print(f"\t\t2. Int Binary: {bn2[2:]} = {nm2}")
 
     return
 
