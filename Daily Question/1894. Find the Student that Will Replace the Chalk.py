@@ -18,7 +18,7 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 
     Example 1:
 
-        Input: chalk = [5,1,5], k = 22
+        Input: chalk = [5, 1, 5], k = 22
 
         Output: 0
 
@@ -33,7 +33,7 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 
     Example 2:
 
-        Input: chalk = [3,4,1,2], k = 25
+        Input: chalk = [3, 4, 1, 2], k = 25
 
         Output: 1
 
@@ -60,8 +60,8 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 """
 
 
-InputLst = [[[5,1,5], 22],
-            [[3,4,1,2], 25]]
+InputLst = [[[5, 1, 5], 22],
+            [[3, 4, 1, 2], 25]]
 
 for case in InputLst:
 
