@@ -70,11 +70,15 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
     print(f"\tChalk: {Chk}")
     print()
 
+    fndStd = -1
+
     print("\tStudents chalk usage:")
     print()
     for idx, std in enumerate(Stds):
 
         if std > Chk:
+            fndStd = idx
+
             break
 
         else:
