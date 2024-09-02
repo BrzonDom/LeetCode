@@ -84,6 +84,8 @@ if __name__ == "__main__":
 
         print("\tStudents chalk usage:")
         for idx, std in enumerate(Stds):
-            print(f"\t\t{idx}. Student: {std} chalk")
+            Chk -= std
+
+            print(f"\t\t{idx}. Student: Chalk Used {std} / Remaining {Chk}")
 
         print("\n")
