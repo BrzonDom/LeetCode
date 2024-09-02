@@ -102,23 +102,24 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
     print(f"\tChalk: {Chk}")
     print()
 
+    rmChk = Chk
+
     print("\tStudents chalk usage:")
     print()
     for idx, std in enumerate(Stds):
 
-        if std > Chk:
+        if std > rmChk:
             print()
             print(f"\t\t{idx}. Student replaces chalk")
 
             break
 
         else:
-            Chk -= std
+            rmChk -= std
 
             print(f"\t\t{idx}. Student")
             print(f"\t\t\tChalk Used:      {std}")
-            print(f"\t\t\tChalk Remaining: {Chk}")
-
+            print(f"\t\t\tChalk Remaining: {rmChk}")
 
     return
 
