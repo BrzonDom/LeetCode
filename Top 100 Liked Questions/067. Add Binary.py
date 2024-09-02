@@ -37,6 +37,9 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
     nm1 = int(Bn1, 2)
     nm2 = int(Bn2, 2)
 
+    bn1 = bin(nm1)
+    bn2 = bin(nm2)
+
     return
 
 
