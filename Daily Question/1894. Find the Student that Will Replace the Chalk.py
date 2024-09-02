@@ -102,39 +102,41 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Stds = case[0]
-        lnStd = len(Stds)
+        Brt01_WhlFrChkSbt_Prt(case[0], case[1])
 
-        Chk = case[1]
-
-        print(f"\tStudents: {Stds}")
-        print(f"\t\tStudents number: {lnStd}")
-        print()
-
-        print(f"\tChalk: {Chk}")
-        print()
-
-        fndStd = -1
-
-        print("\tStudents chalk usage:")
-        print()
-
-        while fndStd < 0:
-
-            for idx, std in enumerate(Stds):
-
-                if std > Chk:
-                    print()
-                    print(f"\t\t{idx}. Student replaces chalk")
-
-                    fndStd = idx
-                    break
-
-                else:
-                    Chk -= std
-
-                    print(f"\t\t\t{idx}. Student")
-                    print(f"\t\t\t\tChalk Used:      {std}")
-                    print(f"\t\t\t\tChalk Remaining: {Chk}")
+        # Stds = case[0]
+        # lnStd = len(Stds)
+        #
+        # Chk = case[1]
+        #
+        # print(f"\tStudents: {Stds}")
+        # print(f"\t\tStudents number: {lnStd}")
+        # print()
+        #
+        # print(f"\tChalk: {Chk}")
+        # print()
+        #
+        # fndStd = -1
+        #
+        # print("\tStudents chalk usage:")
+        # print()
+        #
+        # while fndStd < 0:
+        #
+        #     for idx, std in enumerate(Stds):
+        #
+        #         if std > Chk:
+        #             print()
+        #             print(f"\t\t{idx}. Student replaces chalk")
+        #
+        #             fndStd = idx
+        #             break
+        #
+        #         else:
+        #             Chk -= std
+        #
+        #             print(f"\t\t\t{idx}. Student")
+        #             print(f"\t\t\t\tChalk Used:      {std}")
+        #             print(f"\t\t\t\tChalk Remaining: {Chk}")
 
         print("\n")
