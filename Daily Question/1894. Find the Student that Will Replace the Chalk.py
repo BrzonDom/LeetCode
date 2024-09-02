@@ -102,7 +102,7 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
     print(f"\tChalk: {Chk}")
     print()
 
-    rmChk = Chk
+    rmChk = (Chk % sum(Stds))
 
     print("\tStudents chalk usage:")
     print()
