@@ -107,7 +107,7 @@ if __name__ == "__main__":
         Stds = case[0]
         Chk = case[1]
 
-        print(f"\t{Stds}")
-        print(f"\t{Chk}")
+        print(f"\tStudents: {Stds}")
+        print(f"\tChalk: {Chk}")
 
         print("\n")
