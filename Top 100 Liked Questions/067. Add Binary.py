@@ -25,3 +25,12 @@ https://leetcode.com/problems/add-binary/description/
         Each string does not contain leading zeros except for the zero itself.
 
 """
+
+
+InputLst = [["11", "1"],
+            ["1010", "1011"]]
+
+for case in InputLst:
+
+    print(case)
+    print()
