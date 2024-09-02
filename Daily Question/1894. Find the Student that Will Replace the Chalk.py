@@ -80,5 +80,9 @@ if __name__ == "__main__":
         print()
 
         print(f"\tChalk: {Chk}")
+        print()
+
+        for std in Stds:
+            print(std)
 
         print("\n")
