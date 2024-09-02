@@ -89,9 +89,9 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
             else:
                 Chk -= std
 
-                print(f"\t\t{idx}. Student")
-                print(f"\t\t\tChalk Used:      {std}")
-                print(f"\t\t\tChalk Remaining: {Chk}")
+                print(f"\t\t\t{idx}. Student")
+                print(f"\t\t\t\tChalk Used:      {std}")
+                print(f"\t\t\t\tChalk Remaining: {Chk}")
 
     return
 
