@@ -49,7 +49,7 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
 
     print(f"\tBinary result: {bnRs[2:]}")
 
-    return
+    return bnRs[2:]
 
 
 if __name__ == "__main__":
