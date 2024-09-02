@@ -64,9 +64,11 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 InputLst = [[[5, 1, 5], 22],
             [[3, 4, 1, 2], 25]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case[0]}")
     print(f"\t{case[1]}")
 
-    print()
+    print("\n")
