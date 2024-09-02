@@ -103,8 +103,8 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
     print()
 
     print("\tStudents chalk usage:")
-    for std in Stds:
-        print(f"\t\t{std}")
+    for idx, std in enumerate(Stds):
+        print(f"\t\t{idx}. Student: {std} chalk")
 
     return
 
