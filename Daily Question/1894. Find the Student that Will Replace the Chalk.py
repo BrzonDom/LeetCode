@@ -61,6 +61,11 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 """
 
 
+def Brt01_WhlFrChkSbt_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[5, 1, 5], 22],
