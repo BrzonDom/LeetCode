@@ -3,6 +3,7 @@
 
 https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/description/?envType=daily-question&envId=2024-09-01
 
+        Day: 2024/09/01
 
     There are n students in a class numbered from 0 to n - 1. The teacher will give each student a problem starting
     with the student number 0, then the student number 1, and so on until the teacher reaches the student number n - 1.
