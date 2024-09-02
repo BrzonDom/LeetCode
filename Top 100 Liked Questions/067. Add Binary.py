@@ -29,6 +29,11 @@ https://leetcode.com/problems/add-binary/description/
 """
 
 
+def Slt01_BldBnTls_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [["11", "1"],
