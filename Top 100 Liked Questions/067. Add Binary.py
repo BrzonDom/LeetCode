@@ -31,6 +31,9 @@ https://leetcode.com/problems/add-binary/description/
 
 def Slt01_BldBnTls_Prt(Bn1, Bn2):
 
+    print(f"\t1. Binary: {Bn1}")
+    print(f"\t2. Binary: {Bn2}")
+
     return
 
 
