@@ -72,7 +72,9 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
 
     print("\tStudents chalk usage:")
     for idx, std in enumerate(Stds):
-        print(f"\t\t{idx}. Student: {std} chalk")
+        Chk -= std
+
+        print(f"\t\t{idx}. Student: Chalk Used {std} / Remaining {Chk}")
 
     return
 
