@@ -41,7 +41,7 @@ if __name__ == "__main__":
         Bn1 = case[0]
         Bn2 = case[1]
 
-        print(f"\t{Bn1}")
-        print(f"\t{Bn2}")
+        print(f"\t1. Binary: {Bn1}")
+        print(f"\t2. Binary: {Bn2}")
 
         print("\n")
