@@ -138,8 +138,8 @@ if __name__ == "__main__":
             else:
                 rmChk -= std
 
-                print(f"\t\t{idx}. Student")
-                print(f"\t\t\tChalk Used:      {std}")
-                print(f"\t\t\tChalk Remaining: {rmChk}")
+                print(f"\t\t\t{idx}. Student")
+                print(f"\t\t\t\tChalk Used:      {std}")
+                print(f"\t\t\t\tChalk Remaining: {rmChk}")
 
         print("\n")
