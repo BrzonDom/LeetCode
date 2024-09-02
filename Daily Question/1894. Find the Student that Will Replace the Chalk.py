@@ -58,3 +58,12 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
         1 <= k <= 10^9
 
 """
+
+
+InputLst = [[[5,1,5], 22],
+            [[3,4,1,2], 25]]
+
+for case in InputLst:
+
+    print(case)
+    print()
