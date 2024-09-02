@@ -107,6 +107,9 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
     for idx, std in enumerate(Stds):
 
         if std > Chk:
+            print()
+            print(f"\t\t{idx}. Student replaces chalk")
+
             break
 
         else:
