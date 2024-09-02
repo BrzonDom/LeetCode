@@ -63,6 +63,8 @@ https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/descr
 
 def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
 
+    lnStd = len(Stds)
+
     print(f"\tStudents: {Stds}")
     print(f"\t\tStudents number: {lnStd}")
     print()
