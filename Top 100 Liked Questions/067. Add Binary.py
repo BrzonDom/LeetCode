@@ -47,7 +47,7 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
 
     bnRs = bin(nm1 + nm2)
 
-    print(f"\tBinary result: {bnRs}")
+    print(f"\tBinary result: {bnRs[2:]}")
 
     return
 
