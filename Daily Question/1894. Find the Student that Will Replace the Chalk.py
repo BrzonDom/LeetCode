@@ -82,23 +82,26 @@ if __name__ == "__main__":
         print(f"\tChalk: {Chk}")
         print()
 
-        fndStd = None
+        fndStd = -1
 
         print("\tStudents chalk usage:")
         print()
-        for idx, std in enumerate(Stds):
 
-            if std > Chk:
-                print(f"\t\t{idx}. Student replaces chalk")
+        while fndStd < 0:
 
-                fndStd = idx
-                break
+            for idx, std in enumerate(Stds):
 
-            else:
-                Chk -= std
+                if std > Chk:
+                    print(f"\t\t{idx}. Student replaces chalk")
 
-                print(f"\t\t{idx}. Student")
-                print(f"\t\t\tChalk Used:      {std}")
-                print(f"\t\t\tChalk Remaining: {Chk}")
+                    fndStd = idx
+                    break
+
+                else:
+                    Chk -= std
+
+                    print(f"\t\t{idx}. Student")
+                    print(f"\t\t\tChalk Used:      {std}")
+                    print(f"\t\t\tChalk Remaining: {Chk}")
 
         print("\n")
