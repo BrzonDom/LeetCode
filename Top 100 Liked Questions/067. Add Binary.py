@@ -44,6 +44,8 @@ def Slt01_BldBnTls_Prt(Bn1, Bn2):
     print(f"\t\t1. Int Binary: {bn1[2:]} = {nm1}")
     print(f"\t\t2. Int Binary: {bn2[2:]} = {nm2}")
 
+    bnRs = bin(nm1 + nm2)
+
     return
 
 
