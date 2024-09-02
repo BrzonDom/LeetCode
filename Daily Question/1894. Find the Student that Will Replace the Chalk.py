@@ -112,7 +112,7 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
             print()
             print(f"\t\t{idx}. Student replaces chalk")
 
-            break
+            return idx
 
         else:
             rmChk -= std
@@ -120,8 +120,6 @@ def Slt01_MdFrChkSbt_Prt(Stds, Chk):
             print(f"\t\t{idx}. Student")
             print(f"\t\t\tChalk Used:      {std}")
             print(f"\t\t\tChalk Remaining: {rmChk}")
-
-    return
 
 
 if __name__ == "__main__":
