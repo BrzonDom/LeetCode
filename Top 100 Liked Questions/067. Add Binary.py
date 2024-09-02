@@ -58,6 +58,6 @@ if __name__ == "__main__":
         nmRs = nm1 + nm2
         bnRs = bin(nmRs)
 
-        print(f"\tBinary result: {bnRs[2:]}")
+        print(f"\tBinary result: {bnRs[2:]} = {nmRs}")
 
         print("\n")
