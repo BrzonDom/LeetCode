@@ -82,7 +82,8 @@ if __name__ == "__main__":
         print(f"\tChalk: {Chk}")
         print()
 
+        print("\tStudents chalk usage:")
         for std in Stds:
-            print(std)
+            print(f"\t\t{std}")
 
         print("\n")
