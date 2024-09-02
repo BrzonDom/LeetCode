@@ -96,6 +96,9 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
 def Slt01_MdFrChkSbt_Prt(Stds, Chk):
 
     print(f"\tStudents: {Stds}")
+    print(f"\t\tStudents number: {lnStd}")
+    print()
+
     print(f"\tChalk: {Chk}")
 
     return
