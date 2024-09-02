@@ -122,7 +122,6 @@ if __name__ == "__main__":
         print()
 
         rmChk = (Chk % sum(Stds))
-        fndStd = -1
 
         print("\tStudents chalk usage:")
         print()
@@ -132,7 +131,6 @@ if __name__ == "__main__":
                 print()
                 print(f"\t\t{idx}. Student replaces chalk")
 
-                fndStd = idx
                 break
 
             else:
