@@ -29,14 +29,16 @@ https://leetcode.com/problems/add-binary/description/
 """
 
 
-InputLst = [["11", "1"],
-            ["1010", "1011"]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [["11", "1"],
+                ["1010", "1011"]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
