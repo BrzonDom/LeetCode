@@ -105,9 +105,14 @@ if __name__ == "__main__":
         # Brt01_WhlFrChkSbt_Prt(case[0], case[1])
 
         Stds = case[0]
+        lnStd = len(Stds)
+
         Chk = case[1]
 
         print(f"\tStudents: {Stds}")
+        print(f"\t\tStudents number: {lnStd}")
+        print()
+
         print(f"\tChalk: {Chk}")
 
         print("\n")
