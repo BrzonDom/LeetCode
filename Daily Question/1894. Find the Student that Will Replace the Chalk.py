@@ -116,8 +116,7 @@ if __name__ == "__main__":
         print(f"\tChalk: {Chk}")
         print()
 
-        rmChk = Chk
-
+        rmChk = (Chk % sum(Stds))
         fndStd = -1
 
         print("\tStudents chalk usage:")
