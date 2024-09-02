@@ -93,7 +93,7 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
                 print(f"\t\t\t\tChalk Remaining: {Chk}")
 
 
-def Slt01_MdFrChkSbt_Prt():
+def Slt01_MdFrChkSbt_Prt(Stds, Chk):
 
     return
 
