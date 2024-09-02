@@ -93,6 +93,11 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
                 print(f"\t\t\t\tChalk Remaining: {Chk}")
 
 
+def Slt01_MdFrChkSbt_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[5, 1, 5], 22],
