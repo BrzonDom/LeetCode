@@ -70,12 +70,10 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
     print(f"\tChalk: {Chk}")
     print()
 
-    fndStd = -1
-
     print("\tStudents chalk usage:")
     print()
 
-    while fndStd < 0:
+    while True:
 
         for idx, std in enumerate(Stds):
 
@@ -83,8 +81,7 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
                 print()
                 print(f"\t\t{idx}. Student replaces chalk")
 
-                fndStd = idx
-                return fndStd
+                return idx
 
             else:
                 Chk -= std
