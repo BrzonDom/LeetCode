@@ -68,6 +68,10 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
     print()
 
     print(f"\tChalk: {Chk}")
+    print()
+
+    for std in Stds:
+        print(std)
 
     return
 
