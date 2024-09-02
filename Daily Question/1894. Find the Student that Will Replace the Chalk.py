@@ -82,11 +82,15 @@ if __name__ == "__main__":
         print(f"\tChalk: {Chk}")
         print()
 
+        fndStd = None
+
         print("\tStudents chalk usage:")
         print()
         for idx, std in enumerate(Stds):
 
             if std > Chk:
+                fndStd = idx
+
                 break
 
             else:
