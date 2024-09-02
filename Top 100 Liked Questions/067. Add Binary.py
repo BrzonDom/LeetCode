@@ -45,8 +45,11 @@ if __name__ == "__main__":
         print(f"\t2. Binary: {Bn2}")
         print()
 
-        bn1 = bin(int(Bn1, 2))
-        bn2 = bin(int(Bn2, 2))
+        nm1 = int(Bn1, 2)
+        nm2 = int(Bn2, 2)
+
+        bn1 = bin(nm1)
+        bn2 = bin(nm2)
 
         print(f"\t\t1. Int Binary: {bn1[2:]}")
         print(f"\t\t2. Int Binary: {bn2[2:]}")
