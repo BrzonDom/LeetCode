@@ -77,8 +77,10 @@ def Brt01_WhlFrChkSbt_Prt(Stds, Chk):
     for idx, std in enumerate(Stds):
 
         if std > Chk:
-            fndStd = idx
+            print()
+            print(f"\t\t{idx}. Student replaces chalk")
 
+            fndStd = idx
             break
 
         else:
