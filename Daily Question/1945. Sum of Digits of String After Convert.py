@@ -76,7 +76,6 @@ if __name__ == "__main__":
         print(f"\tNumb. of transformations: {Trn}")
         print()
 
-
         val = { "a":  1, "b":  2,
                 "c":  3, "d":  4,
                 "e":  5, "f":  6,
@@ -90,15 +89,5 @@ if __name__ == "__main__":
                 "u": 21, "v": 22,
                 "w": 23, "x": 24,
                 "y": 25, "z": 26 }
-
-        a = ord("a")
-        z = ord("z")
-
-        idx = 1
-        print("\tCharacter dictionary:")
-        for val in range(a, z+1):
-            print(f"\t\t\"{chr(val)}\": {idx},")
-
-            idx += 1
 
         print("\n")
