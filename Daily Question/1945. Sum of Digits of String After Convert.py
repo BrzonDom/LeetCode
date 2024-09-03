@@ -74,5 +74,9 @@ if __name__ == "__main__":
 
         print(f"\tString convert: {Cnv}")
         print(f"\tNumb. of transformations: {Trn}")
+        print()
+
+        print("\ta")
+        print("\tz")
 
         print("\n")
