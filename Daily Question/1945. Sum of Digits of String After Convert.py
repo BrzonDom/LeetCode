@@ -120,5 +120,8 @@ if __name__ == "__main__":
 
                 trnVls.append(int(nm))
                 trnStr += nm
+        print()
+
+        print(f"\t{trnTtl}")
 
         print("\n")
