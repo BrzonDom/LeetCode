@@ -80,8 +80,9 @@ if __name__ == "__main__":
         z = ord("z")
 
         idx = 1
+        print("\tCharacter dictionary:")
         for val in range(a, z+1):
-            print(f"\t{chr(val)}: {idx}")
+            print(f"\t\t\"{chr(val)}\": {idx},")
 
             idx += 1
 
