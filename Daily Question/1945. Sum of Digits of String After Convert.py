@@ -59,15 +59,17 @@ https://leetcode.com/problems/sum-of-digits-of-string-after-convert/description/
 """
 
 
-InputLst = [["iiii", 1],
-            ["leetcode", 2],
-            ["zbax", 2]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [["iiii", 1],
+                ["leetcode", 2],
+                ["zbax", 2]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
