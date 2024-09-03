@@ -76,7 +76,10 @@ if __name__ == "__main__":
         print(f"\tNumb. of transformations: {Trn}")
         print()
 
-        print("\ta")
-        print("\tz")
+        a = ord("a")
+        z = ord("z")
+
+        print(f"\ta: {a}")
+        print(f"\tz: {z}")
 
         print("\n")
