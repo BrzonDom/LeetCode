@@ -101,10 +101,13 @@ if __name__ == "__main__":
             trnStr += str(val[chr])
         print()
 
-        trnTtl = sum(trnVls)
+        for cntTrn in range(Trn):
 
-        print(f"\tTransform values: {trnVls}")
-        print(f"\tTransform string: {trnStr}")
-        print(f"\tTransform sum:    {trnTtl}")
+            trnTtl = sum(trnVls)
+
+            print(f"\tTransform values: {trnVls}")
+            print(f"\tTransform string: {trnStr}")
+            print(f"\tTransform sum:    {trnTtl}")
+            print()
 
         print("\n")
