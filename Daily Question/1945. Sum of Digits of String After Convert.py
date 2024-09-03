@@ -72,7 +72,7 @@ if __name__ == "__main__":
         Cnv = case[0]
         Trn = case[1]
 
-        print(f"\t{Cnv}")
-        print(f"\t{Trn}")
+        print(f"\tString convert: {Cnv}")
+        print(f"\tNumb. of transformations: {Trn}")
 
         print("\n")
