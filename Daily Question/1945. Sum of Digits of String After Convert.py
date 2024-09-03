@@ -99,6 +99,6 @@ if __name__ == "__main__":
             print(f"\t\t{chr}: {val[chr]}")
 
             trnVls.append(val[chr])
-            trnChr += int(val[chr])
+            trnChr += str(val[chr])
 
         print("\n")
