@@ -90,35 +90,29 @@ if __name__ == "__main__":
                 "w": 23, "x": 24,
                 "y": 25, "z": 26 }
 
-        crVls = []
-        crStr = ""
+        trnVls = []
+        trnStr = ""
 
         print("\tConversion:")
         for chr in Cnv:
             print(f"\t\t{chr}: {val[chr]}")
 
             for nm in str(val[chr]):
-                crVls.append(int(nm))
+                trnVls.append(int(nm))
 
-            crStr += str(val[chr])
+            trnStr += str(val[chr])
         print()
 
         for cntTrn in range(Trn):
 
-            trnTtl = sum(crVls)
+            trnTtl = sum(trnVls)
 
-            print(f"\tTransform values: {crVls}")
-            print(f"\tTransform string: {crStr}")
+            print(f"\tTransform values: {trnVls}")
+            print(f"\tTransform string: {trnStr}")
             print(f"\tTransform sum:    {trnTtl}")
             print()
 
-            nxVls = []
-            nxStr = ""
-
             for nm in str(trnTtl):
                 print(f"\t\t{nm}")
-
-                nxVls.append(int(nm))
-                nxStr += nm
 
         print("\n")
