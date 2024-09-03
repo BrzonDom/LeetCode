@@ -79,7 +79,7 @@ if __name__ == "__main__":
         a = ord("a")
         z = ord("z")
 
-        print(f"\ta: {a}")
-        print(f"\tz: {z}")
+        for val in range(a, z+1):
+            print(f"\t{chr(val)}: {val}")
 
         print("\n")
