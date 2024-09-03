@@ -92,7 +92,6 @@ if __name__ == "__main__":
 
         trnVls = []
         trnStr = ""
-        trnTtl = 0
 
         print("\tConversion:")
         for chr in Cnv:
@@ -100,5 +99,12 @@ if __name__ == "__main__":
 
             trnVls.append(val[chr])
             trnStr += str(val[chr])
+        print()
+
+        trnTtl = sum(trnVls)
+
+        print(f"\tTransform values: {trnVls}")
+        print(f"\tTransform string: {trnStr}")
+        print(f"\tTransform sum:    {trnTtl}")
 
         print("\n")
