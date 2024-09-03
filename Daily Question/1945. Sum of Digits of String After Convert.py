@@ -90,4 +90,7 @@ if __name__ == "__main__":
                 "w": 23, "x": 24,
                 "y": 25, "z": 26 }
 
+        for chr in Cnv:
+            print(f"\t{chr}: {val[chr]}")
+
         print("\n")
