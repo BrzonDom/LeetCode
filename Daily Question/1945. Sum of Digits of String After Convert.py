@@ -112,4 +112,7 @@ if __name__ == "__main__":
             print(f"\tTransform sum:    {trnTtl}")
             print()
 
+            for nm in str(trnTtl):
+                print(f"\t\t{nm}")
+
         print("\n")
