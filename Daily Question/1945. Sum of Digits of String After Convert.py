@@ -90,6 +90,10 @@ if __name__ == "__main__":
                 "w": 23, "x": 24,
                 "y": 25, "z": 26 }
 
+        trnVls = []
+        trnChr = ""
+        trnSum = 0
+
         print("\tConversion:")
         for chr in Cnv:
             print(f"\t\t{chr}: {val[chr]}")
