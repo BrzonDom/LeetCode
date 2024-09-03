@@ -97,7 +97,9 @@ if __name__ == "__main__":
         for chr in Cnv:
             print(f"\t\t{chr}: {val[chr]}")
 
-            crVls.append(val[chr])
+            for nm in str(val[chr]):
+                crVls.append(int(nm))
+
             crStr += str(val[chr])
         print()
 
