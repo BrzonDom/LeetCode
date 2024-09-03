@@ -56,3 +56,13 @@ https://leetcode.com/problems/sum-of-digits-of-string-after-convert/description/
         s consists of lowercase English letters
 
 """
+
+
+InputLst = [["iiii", 1],
+            ["leetcode", 2],
+            ["zbax", 2]]
+
+for case in InputLst:
+
+    print(case)
+    print()
