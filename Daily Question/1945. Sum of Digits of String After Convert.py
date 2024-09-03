@@ -112,7 +112,13 @@ if __name__ == "__main__":
             print(f"\tTransform sum:    {trnTtl}")
             print()
 
+            nxVls = []
+            nxStr = ""
+
             for nm in str(trnTtl):
                 print(f"\t\t{nm}")
+
+                nxVls.append(int(nm))
+                nxStr += nm
 
         print("\n")
