@@ -98,4 +98,7 @@ if __name__ == "__main__":
         for chr in Cnv:
             print(f"\t\t{chr}: {val[chr]}")
 
+            trnVls.append(val[chr])
+            trnChr += int(val[chr])
+
         print("\n")
