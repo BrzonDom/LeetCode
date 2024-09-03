@@ -91,14 +91,14 @@ if __name__ == "__main__":
                 "y": 25, "z": 26 }
 
         trnVls = []
-        trnChr = ""
-        trnSum = 0
+        trnStr = ""
+        trnTtl = 0
 
         print("\tConversion:")
         for chr in Cnv:
             print(f"\t\t{chr}: {val[chr]}")
 
             trnVls.append(val[chr])
-            trnChr += str(val[chr])
+            trnStr += str(val[chr])
 
         print("\n")
