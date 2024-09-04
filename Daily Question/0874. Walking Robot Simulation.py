@@ -77,15 +77,17 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 """
 
 
-InputLst = [[[4, -1, 3], []],
-            [[4, -1, 4, -2, 4], [[2, 4]]],
-            [[6, -1, -1, 6], []]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[4, -1, 3], []],
+                [[4, -1, 4, -2, 4], [[2, 4]]],
+                [[6, -1, -1, 6], []]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
