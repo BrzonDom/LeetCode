@@ -94,4 +94,6 @@ if __name__ == "__main__":
         print(f"\tMoves: {Movs}")
         print(f"\tObstacles: {Obts}")
 
+        rbt = [[0, 0], 1]
+
         print("\n")
