@@ -115,6 +115,7 @@ if __name__ == "__main__":
                             break
 
                         rbt[0][1] += 1
+                        dst += 1
 
                 elif rbt[1] == 'E':
                     for _ in range(mv):
@@ -122,6 +123,7 @@ if __name__ == "__main__":
                             break
 
                         rbt[0][0] += 1
+                        dst += 1
 
                 elif rbt[1] == 'S':
                     for _ in range(mv):
@@ -129,6 +131,7 @@ if __name__ == "__main__":
                             break
 
                         rbt[0][1] -= 1
+                        dst += 1
 
                 elif rbt[1] == 'W':
                     for _ in range(mv):
@@ -136,8 +139,9 @@ if __name__ == "__main__":
                             break
 
                         rbt[0][0] -= 1
+                        dst += 1
 
-                print(f"\t\t{stp+1}. Move: {mv}")
+                print(f"\t\t{stp+1}. Move: {dst}")
                 print(f"\t\t{stp+1}. Position: {rbt[0]}")
                 print()
 
