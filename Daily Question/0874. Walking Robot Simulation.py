@@ -93,7 +93,7 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
     print("\tMoves:")
     print()
 
-    ecl = 0
+    mxEcl = ecl = 0
 
     for stp, mv in enumerate(Movs):
 
@@ -141,6 +141,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
                     dst += 1
 
             ecl = rbt[0][0] ** 2 + rbt[0][1] ** 2
+
+            if ecl > mxEcl:
+                mxEcl = ecl
 
             print(f"\t\t{stp + 1}. Move: {dst}")
             print(f"\t\t{stp + 1}. Position: {rbt[0]}")
