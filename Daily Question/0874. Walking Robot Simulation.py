@@ -117,7 +117,9 @@ if __name__ == "__main__":
                 elif rbt[1] == 'W':
                     rbt[0][0] -= mv
 
+                print(f"\t{stp+1}. Move: {mv}")
                 print(f"\t{stp+1}. Position: {rbt[0]}")
+                print()
 
             else:
                 rbt[1] = drc[mv][rbt[1]]
