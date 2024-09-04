@@ -16,12 +16,12 @@ https://leetcode.com/problems/merge-sorted-array/description/
 
     Example 1:
 
-        Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+        Input: nums1 = [1, 2, 3, 0, 0, 0], m = 3, nums2 = [2, 5, 6], n = 3
 
-        Output: [1,2,2,3,5,6]
+        Output: [1, 2, 2, 3, 5, 6]
 
-        Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
-            The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
+        Explanation: The arrays we are merging are [1, 2, 3] and [2, 5, 6].
+            The result of the merge is [1, 2, 2, 3, 5, 6] with the underlined elements coming from nums1.
 
     Example 2:
 
@@ -40,7 +40,8 @@ https://leetcode.com/problems/merge-sorted-array/description/
 
         Explanation: The arrays we are merging are [] and [1].
             The result of the merge is [1].
-            Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
+            Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result
+            can fit in nums1.
 
 
     Constraints:
@@ -62,7 +63,7 @@ https://leetcode.com/problems/merge-sorted-array/description/
 """
 
 
-InputLst = [[[1,2,3,0,0,0], 3, [2,5,6], 3],
+InputLst = [[[1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3],
             [[1], 1, [], 0],
             [[0], 0, [1], 1]]
 
