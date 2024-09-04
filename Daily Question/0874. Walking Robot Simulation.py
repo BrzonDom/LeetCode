@@ -101,6 +101,9 @@ if __name__ == "__main__":
         drc = {-1: {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
                -2: {'N': 'W', 'E': 'N', 'S': 'E', 'W': 'S'}}
 
+        print("\tMoves:")
+        print()
+
         for stp, mv in enumerate(Movs):
 
             if mv > 0:
@@ -117,14 +120,14 @@ if __name__ == "__main__":
                 elif rbt[1] == 'W':
                     rbt[0][0] -= mv
 
-                print(f"\t{stp+1}. Move: {mv}")
-                print(f"\t{stp+1}. Position: {rbt[0]}")
+                print(f"\t\t{stp+1}. Move: {mv}")
+                print(f"\t\t{stp+1}. Position: {rbt[0]}")
                 print()
 
             else:
                 rbt[1] = drc[mv][rbt[1]]
 
-                print(f"\t{stp+1}. Direction: {rbt[1]}")
+                print(f"\t\t{stp+1}. Direction: {rbt[1]}")
                 print()
 
         print("\n")
