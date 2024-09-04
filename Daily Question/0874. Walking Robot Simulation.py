@@ -112,9 +112,13 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             print(f"\t{stp + 1}. Move: {mv}")
             print(f"\t{stp + 1}. Position: {rbt[0]}")
             print()
+
         else:
 
             rbt[1] = drc[mv][rbt[1]]
+
+            print(f"\t{stp + 1}. Direction: {rbt[1]}")
+            print()
 
     return
 
