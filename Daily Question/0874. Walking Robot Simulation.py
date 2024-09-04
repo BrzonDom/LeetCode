@@ -105,7 +105,7 @@ if __name__ == "__main__":
         print()
 
         mxPs = [0, 0]
-        mxEc = 0
+        mxEc = ecl = 0
 
         for stp, mv in enumerate(Movs):
 
