@@ -96,6 +96,7 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
     for stp, mv in enumerate(Movs):
 
         if mv > 0:
+            dst = 0
 
             if rbt[1] == 'N':
                 for _ in range(mv):
@@ -103,6 +104,7 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
                         break
 
                     rbt[0][1] += 1
+                    dst += 1
 
             elif rbt[1] == 'E':
                 for _ in range(mv):
@@ -110,6 +112,7 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
                         break
 
                     rbt[0][0] += 1
+                    dst += 1
 
             elif rbt[1] == 'S':
                 for _ in range(mv):
@@ -117,6 +120,7 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
                         break
 
                     rbt[0][1] -= 1
+                    dst += 1
 
             elif rbt[1] == 'W':
                 for _ in range(mv):
@@ -124,8 +128,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
                         break
 
                     rbt[0][0] -= 1
+                    dst += 1
 
-            print(f"\t\t{stp + 1}. Move: {mv}")
+            print(f"\t\t{stp + 1}. Move: {dst}")
             print(f"\t\t{stp + 1}. Position: {rbt[0]}")
             print()
 
