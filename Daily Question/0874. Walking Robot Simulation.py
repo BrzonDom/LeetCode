@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        #"""
+        """
         Slt01_DctItrMv_Prt(case[0], case[1])
 
         print("\n")
