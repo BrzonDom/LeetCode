@@ -168,9 +168,11 @@ if __name__ == "__main__":
                 print(f"\t\t{stp+1}. Direction: {rbt[1]}")
                 print()
 
-        ecl = rbt[0][0]**2 + rbt[0][1]**2
-
         print(f"\tFinal position: {rbt[0]}")
         print(f"\tFinal Euclidean distance: {ecl}")
+        print()
+
+        print(f"\tMax position: {mxPs}")
+        print(f"\tMax Euclidean distance: {mxEc}")
 
         print("\n")
