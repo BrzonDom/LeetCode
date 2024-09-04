@@ -83,6 +83,8 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
     print(f"\tMoves: {Movs}")
     print(f"\tObstacles: {Obts}")
 
+    rbt = [[0, 0], 'N']
+
     return
 
 
