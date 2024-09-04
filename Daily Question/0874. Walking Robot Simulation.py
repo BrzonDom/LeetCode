@@ -90,6 +90,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
 
     rbt = [[0, 0], 'N']
 
+    print("\tMoves:")
+    print()
+
     for stp, mv in enumerate(Movs):
 
         if mv > 0:
@@ -106,15 +109,15 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             elif rbt[1] == 'W':
                 rbt[0][0] -= mv
 
-            print(f"\t{stp + 1}. Move: {mv}")
-            print(f"\t{stp + 1}. Position: {rbt[0]}")
+            print(f"\t\t{stp + 1}. Move: {mv}")
+            print(f"\t\t{stp + 1}. Position: {rbt[0]}")
             print()
 
         else:
 
             rbt[1] = drc[mv][rbt[1]]
 
-            print(f"\t{stp + 1}. Direction: {rbt[1]}")
+            print(f"\t\t{stp + 1}. Direction: {rbt[1]}")
             print()
 
     return
