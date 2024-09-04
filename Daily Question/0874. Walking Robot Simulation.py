@@ -80,6 +80,9 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 
 def Slt01_DctItrMv_Prt(Movs, Obts):
 
+    print(f"\tMoves: {Movs}")
+    print(f"\tObstacles: {Obts}")
+
     return
 
 
