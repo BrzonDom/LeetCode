@@ -3,6 +3,7 @@
 
 https://leetcode.com/problems/walking-robot-simulation/description/
 
+        Day: 2024/09/04
 
     A robot on an infinite XY-plane starts at point (0, 0) facing north. The robot can receive a sequence of these
     three possible types of commands:
