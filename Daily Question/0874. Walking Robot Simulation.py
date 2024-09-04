@@ -97,7 +97,9 @@ if __name__ == "__main__":
 
         rbt = [[0, 0], 1]
 
-        print(f"\t\tRobot start:     {rbt[0]}")
-        print(f"\t\tRobot direction: {rbt[1]}")
+        for mv in Movs:
+
+            if mv > 0:
+                rbt[0][1] += mv
 
         print("\n")
