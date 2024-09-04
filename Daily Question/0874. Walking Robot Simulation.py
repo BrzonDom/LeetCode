@@ -28,7 +28,7 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 
     Example 1:
 
-        Input: commands = [4,-1,3], obstacles = []
+        Input: commands = [4, -1, 3], obstacles = []
 
         Output: 25
 
@@ -40,7 +40,7 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 
     Example 2:
 
-        Input: commands = [4,-1,4,-2,4], obstacles = [[2,4]]
+        Input: commands = [4, -1, 4, -2, 4], obstacles = [[2, 4]]
 
         Output: 65
 
@@ -54,7 +54,7 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 
     Example 3:
 
-        Input: commands = [6,-1,-1,6], obstacles = []
+        Input: commands = [6, -1, -1, 6], obstacles = []
 
         Output: 36
 
@@ -77,9 +77,9 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 """
 
 
-InputLst = [[[4,-1,3], []],
-            [[4,-1,4,-2,4], [[2,4]]],
-            [[6,-1,-1,6], []]]
+InputLst = [[[4, -1, 3], []],
+            [[4, -1, 4, -2, 4], [[2, 4]]],
+            [[6, -1, -1, 6], []]]
 
 for case in InputLst:
 
