@@ -113,13 +113,16 @@ if __name__ == "__main__":
                         rbt[0][1] += 1
 
                 elif rbt[1] == 'E':
-                    rbt[0][0] += mv
+                    for _ in range(mv):
+                        rbt[0][0] += 1
 
                 elif rbt[1] == 'S':
-                    rbt[0][1] -= mv
+                    for _ in range(mv):
+                        rbt[0][1] -= 1
 
                 elif rbt[1] == 'W':
-                    rbt[0][0] -= mv
+                    for _ in range(mv):
+                        rbt[0][0] -= 1
 
                 print(f"\t\t{stp+1}. Move: {mv}")
                 print(f"\t\t{stp+1}. Position: {rbt[0]}")
