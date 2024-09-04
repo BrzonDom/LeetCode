@@ -156,6 +156,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             print(f"\t\t{stp + 1}. Direction: {rbt[1]}")
             print()
 
+    print(f"\tFinal Euclidean distance: {ecl}")
+    print()
+
     print(f"\tMax Euclidean distance: {mxEcl}")
 
     return
