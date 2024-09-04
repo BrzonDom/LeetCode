@@ -95,7 +95,7 @@ if __name__ == "__main__":
         print(f"\tObstacles: {Obts}")
         print()
 
-        rbt = [[0, 0], "N"]
+        rbt = [[0, 0], 'N']
 
         #N-E-S-W
         drc = {-1: {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
@@ -117,10 +117,7 @@ if __name__ == "__main__":
                 elif rbt[1] == 'W':
                     rbt[0][0] -= mv
 
-            elif mv == -1:
-                rbt[1] += 1
-
-            elif mv == -2:
-                rbt[1] -= 1
+            else:
+                rbt[1] = drc[mv][rbt[1]]
 
         print("\n")
