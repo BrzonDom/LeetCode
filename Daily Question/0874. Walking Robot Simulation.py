@@ -89,6 +89,13 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
     print(f"\t\tRobot start position: {rbt[0]}")
     print(f"\t\tRobot start direction: {rbt[1]}orth")
 
+    for mv in Movs:
+
+        if mv > 0:
+
+            if rbt[1] == 'N':
+                rbt[0][1] += mv
+
     return
 
 
