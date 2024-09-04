@@ -78,6 +78,11 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 """
 
 
+def Slt01_DctItrMv_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[4, -1, 3], []],
