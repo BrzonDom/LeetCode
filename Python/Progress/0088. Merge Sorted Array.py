@@ -69,5 +69,6 @@ InputLst = [[[1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3],
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
