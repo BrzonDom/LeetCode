@@ -60,3 +60,13 @@ https://leetcode.com/problems/merge-sorted-array/description/
         Sorting
     
 """
+
+
+InputLst = [[[1,2,3,0,0,0], 3, [2,5,6], 3],
+            [[1], 1, [], 0],
+            [[0], 0, [1], 1]]
+
+for case in InputLst:
+
+    print(case)
+    print()
