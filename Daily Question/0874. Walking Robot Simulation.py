@@ -78,7 +78,7 @@ https://leetcode.com/problems/walking-robot-simulation/description/
 """
 
 
-def Slt01_DctItrMv_Prt():
+def Slt01_DctItrMv_Prt(Movs, Obts):
 
     return
 
