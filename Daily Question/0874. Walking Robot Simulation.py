@@ -101,7 +101,7 @@ if __name__ == "__main__":
         drc = {-1: {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
                -2: {'N': 'W', 'E': 'N', 'S': 'E', 'W': 'S'}}
 
-        for mv in Movs:
+        for stp, mv in enumerate(Movs):
 
             if mv > 0:
 
@@ -116,6 +116,8 @@ if __name__ == "__main__":
 
                 elif rbt[1] == 'W':
                     rbt[0][0] -= mv
+
+                print(f"\t{stp+1}. Position: {rbt[0]}")
 
             else:
                 rbt[1] = drc[mv][rbt[1]]
