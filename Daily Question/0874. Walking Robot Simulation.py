@@ -97,6 +97,10 @@ if __name__ == "__main__":
 
         rbt = [[0, 0], "N"]
 
+        #N-E-S-W
+        drc = {-1: {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
+               -2: {'N': 'W', 'E': 'N', 'S': 'E', 'W': 'S'}}
+
         for mv in Movs:
 
             if mv > 0:
