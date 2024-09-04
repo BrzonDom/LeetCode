@@ -104,6 +104,9 @@ if __name__ == "__main__":
         print("\tMoves:")
         print()
 
+        mxPs = [0, 0]
+        mxEc = 0
+
         for stp, mv in enumerate(Movs):
 
             if mv > 0:
@@ -148,6 +151,12 @@ if __name__ == "__main__":
 
                         rbt[0][0] -= 1
                         dst += 1
+
+                ecl = rbt[0][0]**2 + rbt[0][1]**2
+
+                if ecl > mxEc:
+                    mxEc = ecl
+                    mxPs = rbt[0]
 
                 print(f"\t\t{stp+1}. Move: {dst}")
                 print(f"\t\t{stp+1}. Position: {rbt[0]}")
