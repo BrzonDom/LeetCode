@@ -93,7 +93,11 @@ if __name__ == "__main__":
 
         print(f"\tMoves: {Movs}")
         print(f"\tObstacles: {Obts}")
+        print()
 
         rbt = [[0, 0], 1]
+
+        print(f"\t\tRobot start:     {rbt[0]}")
+        print(f"\t\tRobot direction: {rbt[1]}")
 
         print("\n")
