@@ -113,6 +113,10 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
 
             rbt[1] = drc[-1][rbt[1]]
 
+        elif mv == -2:
+
+            rbt[1] = drc[-2][rbt[1]]
+
     return
 
 
