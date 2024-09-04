@@ -96,6 +96,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             if rbt[1] == 'N':
                 rbt[0][1] += mv
 
+            elif rbt[1] == 'E':
+                rbt[0][0] += mv
+
     return
 
 
