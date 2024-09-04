@@ -100,6 +100,8 @@ if __name__ == "__main__":
         for mv in Movs:
 
             if mv > 0:
-                rbt[0][1] += mv
+
+                if rbt[1] == 1:
+                    rbt[0][1] += mv
 
         print("\n")
