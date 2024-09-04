@@ -106,6 +106,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
 
             elif rbt[1] == 'E':
                 for _ in range(mv):
+                    if [rbt[0][0] + 1, rbt[0][1]] in Obts:
+                        break
+
                     rbt[0][0] += 1
 
             elif rbt[1] == 'S':
