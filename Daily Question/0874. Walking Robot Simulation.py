@@ -107,13 +107,16 @@ if __name__ == "__main__":
         for stp, mv in enumerate(Movs):
 
             if mv > 0:
+                dst = 0
 
                 if rbt[1] == 'N':
                     for _ in range(mv):
-                        if [rbt[0][0], rbt[0][1] + 1] in Obts:
+                        if [rbt[0][0], rbt[0][1] + dst + 1] in Obts:
+
+                            rbt[0][1] += dst
                             break
 
-                        rbt[0][1] += 1
+                        dst += 1
 
                 elif rbt[1] == 'E':
                     for _ in range(mv):
