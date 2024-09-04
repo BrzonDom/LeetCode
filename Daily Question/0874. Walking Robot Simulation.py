@@ -93,7 +93,7 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
     print(f"\t\tRobot start position: {rbt[0]}")
     print(f"\t\tRobot start direction: {rbt[1]}orth")
 
-    for mv in Movs:
+    for stp, mv in enumerate(Movs):
 
         if mv > 0:
 
@@ -108,6 +108,8 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
 
             elif rbt[1] == 'W':
                 rbt[0][0] -= mv
+
+            print(f"\t{stp + 1}. Position: {rbt[0]}")
 
         else:
 
