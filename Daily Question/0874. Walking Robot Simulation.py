@@ -82,8 +82,12 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
 
     print(f"\tMoves: {Movs}")
     print(f"\tObstacles: {Obts}")
+    print()
 
     rbt = [[0, 0], 'N']
+
+    print(f"\t\tRobot start position: {rbt[0]}")
+    print(f"\t\tRobot start direction: {rbt[1]}orth")
 
     return
 
