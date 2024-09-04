@@ -109,7 +109,8 @@ if __name__ == "__main__":
             if mv > 0:
 
                 if rbt[1] == 'N':
-                    rbt[0][1] += mv
+                    for _ in range(mv):
+                        rbt[0][1] += 1
 
                 elif rbt[1] == 'E':
                     rbt[0][0] += mv
