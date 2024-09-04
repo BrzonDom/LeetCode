@@ -91,7 +91,7 @@ if __name__ == "__main__":
         Movs = case[0]
         Obts = case[1]
 
-        print(f"\t{Movs}")
-        print(f"\t{Obts}")
+        print(f"\tMoves: {Movs}")
+        print(f"\tObstacles: {Obts}")
 
         print("\n")
