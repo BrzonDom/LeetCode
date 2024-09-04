@@ -95,11 +95,13 @@ if __name__ == "__main__":
         print(f"\tObstacles: {Obts}")
         print()
 
-        rbt = [[0, 0], 'N']
-
         #N-E-S-W
         drc = {-1: {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
                -2: {'N': 'W', 'E': 'N', 'S': 'E', 'W': 'S'}}
+
+        Obts = {tuple(obt) for obt in Obts}
+
+        rbt = [[0, 0], 'N']
 
         print("\tMoves:")
         print()
@@ -114,7 +116,7 @@ if __name__ == "__main__":
 
                 if rbt[1] == 'N':
                     for _ in range(mv):
-                        if [rbt[0][0], rbt[0][1] + 1] in Obts:
+                        if (rbt[0][0], rbt[0][1] + 1) in Obts:
 
                             print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0], rbt[0][1] + 1]}")
                             break
@@ -124,7 +126,7 @@ if __name__ == "__main__":
 
                 elif rbt[1] == 'E':
                     for _ in range(mv):
-                        if [rbt[0][0] + 1, rbt[0][1]] in Obts:
+                        if (rbt[0][0] + 1, rbt[0][1]) in Obts:
 
                             print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0] + 1, rbt[0][1]]}")
                             break
@@ -134,7 +136,7 @@ if __name__ == "__main__":
 
                 elif rbt[1] == 'S':
                     for _ in range(mv):
-                        if [rbt[0][0], rbt[0][1] - 1] in Obts:
+                        if (rbt[0][0], rbt[0][1] - 1) in Obts:
 
                             print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0], rbt[0][1] - 1]}")
                             break
@@ -144,7 +146,7 @@ if __name__ == "__main__":
 
                 elif rbt[1] == 'W':
                     for _ in range(mv):
-                        if [rbt[0][0] - 1, rbt[0][1]] in Obts:
+                        if (rbt[0][0] - 1, rbt[0][1]) in Obts:
 
                             print(f"\t\t{stp+1}. Robot blocked on {[rbt[0][0] - 1, rbt[0][1]]}")
                             break
