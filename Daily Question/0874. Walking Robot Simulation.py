@@ -95,22 +95,22 @@ if __name__ == "__main__":
         print(f"\tObstacles: {Obts}")
         print()
 
-        rbt = [[0, 0], 1]
+        rbt = [[0, 0], "N"]
 
         for mv in Movs:
 
             if mv > 0:
 
-                if rbt[1] == 1:
+                if rbt[1] == 'N':
                     rbt[0][1] += mv
 
-                elif rbt[1] == 2:
+                elif rbt[1] == 'E':
                     rbt[0][0] += mv
 
-                elif rbt[1] == 3:
+                elif rbt[1] == 'S':
                     rbt[0][1] -= mv
 
-                elif rbt[1] == 4:
+                elif rbt[1] == 'W':
                     rbt[0][0] -= mv
 
             elif mv == -1:
