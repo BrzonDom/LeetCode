@@ -120,6 +120,9 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
 
             elif rbt[1] == 'W':
                 for _ in range(mv):
+                    if [rbt[0][0] - 1, rbt[0][1]] in Obts:
+                        break
+
                     rbt[0][0] -= 1
 
             print(f"\t\t{stp + 1}. Move: {mv}")
