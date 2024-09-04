@@ -101,6 +101,8 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             if rbt[1] == 'N':
                 for _ in range(mv):
                     if [rbt[0][0], rbt[0][1] + 1] in Obts:
+
+                        print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0], rbt[0][1] + 1]}")
                         break
 
                     rbt[0][1] += 1
@@ -109,6 +111,8 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             elif rbt[1] == 'E':
                 for _ in range(mv):
                     if [rbt[0][0] + 1, rbt[0][1]] in Obts:
+
+                        print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0] + 1, rbt[0][1]]}")
                         break
 
                     rbt[0][0] += 1
@@ -117,6 +121,8 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             elif rbt[1] == 'S':
                 for _ in range(mv):
                     if [rbt[0][0], rbt[0][1] - 1] in Obts:
+
+                        print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0], rbt[0][1] - 1]}")
                         break
 
                     rbt[0][1] -= 1
@@ -125,6 +131,8 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
             elif rbt[1] == 'W':
                 for _ in range(mv):
                     if [rbt[0][0] - 1, rbt[0][1]] in Obts:
+
+                        print(f"\t\t{stp + 1}. Robot blocked on {[rbt[0][0] - 1, rbt[0][1]]}")
                         break
 
                     rbt[0][0] -= 1
