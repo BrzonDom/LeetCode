@@ -84,6 +84,10 @@ def Slt01_DctItrMv_Prt(Movs, Obts):
     print(f"\tObstacles: {Obts}")
     print()
 
+    # N-E-S-W
+    drc = {-1: {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
+           -2: {'N': 'W', 'E': 'N', 'S': 'E', 'W': 'S'}}
+
     rbt = [[0, 0], 'N']
 
     print(f"\t\tRobot start position: {rbt[0]}")
