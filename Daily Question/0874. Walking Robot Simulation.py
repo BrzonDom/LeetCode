@@ -75,3 +75,13 @@ https://leetcode.com/problems/walking-robot-simulation/description/
         The answer is guaranteed to be less than 2^31.
 
 """
+
+
+InputLst = [[[4,-1,3], []],
+            [[4,-1,4,-2,4], [[2,4]]],
+            [[6,-1,-1,6], []]]
+
+for case in InputLst:
+
+    print(case)
+    print()
