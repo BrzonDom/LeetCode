@@ -113,4 +113,8 @@ if __name__ == "__main__":
                 elif rbt[1] == 4:
                     rbt[0][0] -= mv
 
+            elif mv == -1:
+
+                rbt[1] += 1
+
         print("\n")
