@@ -88,4 +88,8 @@ if __name__ == "__main__":
         rlNmb = Rlls
         rlTtl = sum(Rlls)
 
+        alCnt = len(Rlls) + Mss
+        alNmb = Rlls + [0 for m in range(Mss)]
+        alTtl = Men * (Mss + len(Rlls))
+
         print("\n")
