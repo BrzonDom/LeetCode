@@ -56,19 +56,20 @@ if __name__ == "__main__":
     InputLst = ["A man, a plan, a canal: Panama",
                 "race a car",
                 " "]
-
-    print(f"\ta: {ord('a')}")
-    print(f"\tz: {ord('z')}")
+    """
+    print(f"\ta: {ord('a')}") = a: 97
+    print(f"\tz: {ord('z')}") = z: 122
     print()
 
-    print(f"\tA: {ord('A')}")
-    print(f"\tZ: {ord('Z')}")
+    print(f"\tA: {ord('A')}") = A: 65
+    print(f"\tZ: {ord('Z')}") = Z: 90
     print()
 
-    print(f"\ta - A: {ord('a') - ord('A')}")
-    print(f"\tz - Z: {ord('z') - ord('Z')}")
+    print(f"\ta - A: {ord('a') - ord('A')}") = a - A: 32
+    print(f"\tz - Z: {ord('z') - ord('Z')}") = z - Z: 32
 
     print("\n")
+    """
 
     for csCnt, case in enumerate(InputLst):
 
