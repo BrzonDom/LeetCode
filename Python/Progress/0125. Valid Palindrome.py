@@ -63,6 +63,10 @@ if __name__ == "__main__":
 
     print(f"\tA: {ord('A')}")
     print(f"\tZ: {ord('Z')}")
+    print()
+
+    print(f"\ta - A: {ord('a') - ord('A')}")
+    print(f"\tz - Z: {ord('z') - ord('Z')}")
 
     print("\n")
 
