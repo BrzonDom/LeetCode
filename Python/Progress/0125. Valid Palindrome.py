@@ -80,11 +80,12 @@ if __name__ == "__main__":
         print(f"\tOriginal string: \"{Org}\"")
         print()
 
+        raw = ""
+
         for chr in Org:
 
             if 'a' <= chr <= 'z':
-                continue
+                raw += chr
 
-            print(chr)
 
         print("\n")
