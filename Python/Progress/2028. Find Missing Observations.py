@@ -86,8 +86,8 @@ if __name__ == "__main__":
         msCnt = Mss
 
         orRls = Rlls
-        alRls = Rlls + [0 for m in range(msCnt)]
-        msRls = [0 for m in range(msCnt)]
+        alRls = Rlls + [0 for m in range(Mss)]
+        msRls = [0 for m in range(Mss)]
 
         orTtl = sum(Rlls)
         alTtl = Men * alCnt
@@ -109,5 +109,7 @@ if __name__ == "__main__":
 
         print(f"\t\tMissing count:   {msCnt}")
         print(f"\t\tMissing total:   {msTtl}")
+
+        dce = [1, 2, 3, 4, 5, 6]
 
         print("\n")
