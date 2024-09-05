@@ -87,7 +87,9 @@ if __name__ == "__main__":
         print()
 
         print(f"\t\tOriginal numbers:   {Nmbs1[:LnN1]}")
-        print(f"\t\tAdditional spaces:  {Nmbs1[LnN1:]}")
-        print(f"\t\tAdditional numbers: {Nmbs2}")
+
+        if Nmbs1[LnN1:]:
+            print(f"\t\tAdditional spaces:  {Nmbs1[LnN1:]}")
+            print(f"\t\tAdditional numbers: {Nmbs2}")
 
         print("\n")
