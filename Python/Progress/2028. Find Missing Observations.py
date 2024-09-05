@@ -76,8 +76,8 @@ if __name__ == "__main__":
         Men = case[1]
         Mss = case[2]
 
-        print(f"\t{Rlls}")
-        print(f"\t{Men}")
-        print(f"\t{Mss}")
+        print(f"\tRolls:  {Rlls}")
+        print(f"\tMean:    {Men}")
+        print(f"\tMissing: {Mss}")
 
         print("\n")
