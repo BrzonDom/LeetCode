@@ -135,4 +135,7 @@ if __name__ == "__main__":
                     msRls.append(rmTtl + 1)
                     rmTtl -= rmTtl
 
+            print()
+            print(f"\tMissing rolls: {msRls}")
+
         print("\n")
