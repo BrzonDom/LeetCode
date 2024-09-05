@@ -78,9 +78,9 @@ if __name__ == "__main__":
         Nmbs2 = case[2]
         LnN2 = case[3]
 
-        print(f"\t{Nmbs1}")
-        print(f"\t{LnN1}")
-        print(f"\t{Nmbs2}")
-        print(f"\t{LnN2}")
+        print(f"\t1. Numbers: {Nmbs1}")
+        print(f"\t\t1. Numbers length: {LnN1}")
+        print(f"\t2. Numbers: {Nmbs2}")
+        print(f"\t\t2. Numbers length: {LnN2}")
 
         print("\n")
