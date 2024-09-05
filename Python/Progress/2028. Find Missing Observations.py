@@ -93,16 +93,21 @@ if __name__ == "__main__":
         alTtl = Men * alCnt
         msTtl = alTtl - orTtl
 
+        print("\tKnown information:")
+        print()
+
         print(f"\t\tOriginal rolls: {orRls}")
+        print()
+
         print(f"\t\tOriginal count:  {orCnt}")
         print(f"\t\tOriginal total:  {orTtl}")
         print()
 
-        print(f"\t\tAll count: {alCnt}")
-        print(f"\t\tAll total: {alTtl}")
+        print(f"\t\tAll count:       {alCnt}")
+        print(f"\t\tAll total:       {alTtl}")
         print()
 
-        print(f"\t\tMissing count: {msCnt}")
-        print(f"\t\tMissing total: {msTtl}")
+        print(f"\t\tMissing count:   {msCnt}")
+        print(f"\t\tMissing total:   {msTtl}")
 
         print("\n")
