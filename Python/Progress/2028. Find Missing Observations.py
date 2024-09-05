@@ -109,7 +109,14 @@ if __name__ == "__main__":
 
         print(f"\t\tMissing count:   {msCnt}")
         print(f"\t\tMissing total:   {msTtl}")
+        print()
 
         dce = [1, 2, 3, 4, 5, 6]
+
+        msMn = 1 * msCnt
+        msMx = 6 * msCnt
+
+        if msTtl < msMn or msTtl > msMx:
+            print("\tInvalid mean")
 
         print("\n")
