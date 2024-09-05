@@ -62,16 +62,18 @@ https://leetcode.com/problems/find-missing-observations/description/
 """
 
 
-InputLst = [[[3, 2, 4, 3], 4, 2],
-            [[1, 5, 6], 3, 4],
-            [[1, 2, 3, 4], 6, 4]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[3, 2, 4, 3], 4, 2],
+                [[1, 5, 6], 3, 4],
+                [[1, 2, 3, 4], 6, 4]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
-    print(f"\t{case[2]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+        print(f"\t{case[2]}")
+
+        print("\n")
