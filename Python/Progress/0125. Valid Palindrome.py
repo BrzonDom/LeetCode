@@ -55,8 +55,10 @@ InputLst = ["A man, a plan, a canal: Panama",
             "race a car",
             " "]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case}")
 
-    print()
+    print("\n")
