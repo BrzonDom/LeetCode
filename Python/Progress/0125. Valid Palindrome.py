@@ -64,5 +64,9 @@ if __name__ == "__main__":
         Org = case
 
         print(f"\tOriginal string: \"{Org}\"")
+        print()
+
+        for chr in Org:
+            print(chr)
 
         print("\n")
