@@ -43,3 +43,13 @@ https://leetcode.com/problems/valid-palindrome/description/
         s consists only of printable ASCII characters.
 
 """
+
+
+InputLst = ["A man, a plan, a canal: Panama",
+            "race a car",
+            " "]
+
+for case in InputLst:
+
+    print(case)
+    print()
