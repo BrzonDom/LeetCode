@@ -91,8 +91,12 @@ if __name__ == "__main__":
         if Nmbs1[LnN1:]:
             print(f"\t\tAdditional spaces:  {Nmbs1[LnN1:]}")
             print(f"\t\tAdditional numbers: {Nmbs2}")
+        print()
 
         Nmbs1[LnN1:] = Nmbs2
+
+        print(f"\t\tAll numbers: {Nmbs1}")
+
         Nmbs1.sort()
 
         print("\n")
