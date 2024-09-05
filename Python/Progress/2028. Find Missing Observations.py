@@ -79,6 +79,7 @@ if __name__ == "__main__":
         print(f"\tRolls:  {Rlls}")
         print(f"\tMean:    {Men}")
         print(f"\tMissing: {Mss}")
+        print()
 
         rlCnt = len(Rlls)
         alCnt = rlCnt + Mss
@@ -91,5 +92,10 @@ if __name__ == "__main__":
         rlTtl = sum(Rlls)
         alTtl = Men * alCnt
         msTtl = alTtl - rlTtl
+
+        print("\tOriginal rolls:")
+        print(f"\t\tRolls: {Rlls}")
+        print(f"\t\tCount:  {rlCnt}")
+        print(f"\t\tTotal:  {rlTtl}")
 
         print("\n")
