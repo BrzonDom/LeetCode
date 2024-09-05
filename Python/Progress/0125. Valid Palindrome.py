@@ -80,6 +80,10 @@ if __name__ == "__main__":
         print()
 
         for chr in Org:
+
+            if 'a' <= chr <= 'z':
+                continue
+
             print(chr)
 
         print("\n")
