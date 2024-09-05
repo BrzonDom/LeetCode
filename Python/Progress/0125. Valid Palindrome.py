@@ -57,5 +57,6 @@ InputLst = ["A man, a plan, a canal: Panama",
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
