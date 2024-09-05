@@ -23,23 +23,23 @@ https://leetcode.com/problems/find-missing-observations/description/
 
     Example 1:
 
-        Input: rolls = [3,2,4,3], mean = 4, n = 2
+        Input: rolls = [3, 2, 4, 3], mean = 4, n = 2
 
-        Output: [6,6]
+        Output: [6, 6]
 
         Explanation: The mean of all n + m rolls is (3 + 2 + 4 + 3 + 6 + 6) / 6 = 4.
 
     Example 2:
 
-        Input: rolls = [1,5,6], mean = 3, n = 4
+        Input: rolls = [1, 5, 6], mean = 3, n = 4
 
-        Output: [2,3,2,2]
+        Output: [2, 3, 2, 2]
 
         Explanation: The mean of all n + m rolls is (1 + 5 + 6 + 2 + 3 + 2 + 2) / 7 = 3.
 
     Example 3:
 
-        Input: rolls = [1,2,3,4], mean = 6, n = 4
+        Input: rolls = [1, 2, 3, 4], mean = 6, n = 4
 
         Output: []
 
@@ -62,9 +62,9 @@ https://leetcode.com/problems/find-missing-observations/description/
 """
 
 
-InputLst = [[[3,2,4,3], 4, 2],
-            [[1,5,6], 3, 4],
-            [[1,2,3,4],6, 4]]
+InputLst = [[[3, 2, 4, 3], 4, 2],
+            [[1, 5, 6], 3, 4],
+            [[1, 2, 3, 4], 6, 4]]
 
 for csCnt, case in enumerate(InputLst):
 
