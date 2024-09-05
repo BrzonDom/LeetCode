@@ -52,3 +52,10 @@ https://leetcode.com/problems/find-missing-observations/description/
         1 <= rolls[i], mean <= 6
 
 """
+"""
+    Tags:
+    
+        Array
+        Math
+        Simulation
+"""
