@@ -122,4 +122,10 @@ if __name__ == "__main__":
             print("\tInvalid mean")
             print("\t\tGreater than maximum possible missing rolls")
 
+        else:
+            rmTtl = msTtl
+
+            for at in range(msCnt):
+                continue
+
         print("\n")
