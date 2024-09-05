@@ -92,4 +92,7 @@ if __name__ == "__main__":
             print(f"\t\tAdditional spaces:  {Nmbs1[LnN1:]}")
             print(f"\t\tAdditional numbers: {Nmbs2}")
 
+        Nmbs1[LnN1:] = Nmbs2
+        Nmbs1.sort()
+
         print("\n")
