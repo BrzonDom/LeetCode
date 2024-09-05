@@ -60,3 +60,13 @@ https://leetcode.com/problems/find-missing-observations/description/
         Math
         Simulation
 """
+
+
+InputLst = [[[3,2,4,3], 4, 2],
+            [[1,5,6], 3, 4],
+            [[1,2,3,4],6, 4]]
+
+for case in InputLst:
+
+    print(case)
+    print()
