@@ -90,4 +90,6 @@ if __name__ == "__main__":
             elif 'A' <= crc <= 'Z':
                 raw += chr(ord(crc) + 32)
 
+        print(f"\t\tRaw string: \"{raw}\"")
+
         print("\n")
