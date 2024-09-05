@@ -87,4 +87,7 @@ if __name__ == "__main__":
             if 'a' <= crc <= 'z':
                 raw += crc
 
+            elif 'A' <= crc <= 'Z':
+                raw += chr(ord(crc) + 32)
+
         print("\n")
