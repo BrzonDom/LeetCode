@@ -86,8 +86,8 @@ if __name__ == "__main__":
         msCnt = Mss
 
         orRls = Rlls
-        alRls = Rlls + [0 for m in range(Mss)]
-        msRls = [0 for m in range(Mss)]
+        alRls = Rlls + [1 for m in range(Mss)]
+        msRls = []
 
         orTtl = sum(Rlls)
         alTtl = Men * alCnt
@@ -123,9 +123,10 @@ if __name__ == "__main__":
             print("\t\tGreater than maximum possible missing rolls")
 
         else:
-            rmTtl = msTtl
+            rmTtl = msTtl - msCnt * 1
 
             for at in range(msCnt):
+
                 continue
 
         print("\n")
