@@ -80,4 +80,10 @@ if __name__ == "__main__":
         print(f"\tMean:    {Men}")
         print(f"\tMissing: {Mss}")
 
+        msCnt = Mss
+        msNmb = []
+
+        rlCnt = len(Rlls)
+        rlNmb = []
+
         print("\n")
