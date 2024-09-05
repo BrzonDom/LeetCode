@@ -72,8 +72,12 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        print(f"\t{case[0]}")
-        print(f"\t{case[1]}")
-        print(f"\t{case[2]}")
+        Rlls = case[0]
+        Men = case[1]
+        Mss = case[2]
+
+        print(f"\t{Rlls}")
+        print(f"\t{Men}")
+        print(f"\t{Mss}")
 
         print("\n")
