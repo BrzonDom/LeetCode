@@ -82,10 +82,9 @@ if __name__ == "__main__":
 
         raw = ""
 
-        for chr in Org:
+        for crc in Org:
 
-            if 'a' <= chr <= 'z':
-                raw += chr
-
+            if 'a' <= crc <= 'z':
+                raw += crc
 
         print("\n")
