@@ -63,6 +63,6 @@ if __name__ == "__main__":
 
         Org = case
 
-        print(f"\t{Org}")
+        print(f"\tOriginal string: \"{Org}\"")
 
         print("\n")
