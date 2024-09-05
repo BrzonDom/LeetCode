@@ -82,8 +82,10 @@ if __name__ == "__main__":
 
         msCnt = Mss
         msNmb = []
+        msTtl = 0
 
         rlCnt = len(Rlls)
-        rlNmb = []
+        rlNmb = Rlls
+        rlTtl = sum(Rlls)
 
         print("\n")
