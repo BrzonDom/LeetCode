@@ -51,14 +51,16 @@ https://leetcode.com/problems/valid-palindrome/description/
 """
 
 
-InputLst = ["A man, a plan, a canal: Panama",
-            "race a car",
-            " "]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = ["A man, a plan, a canal: Panama",
+                "race a car",
+                " "]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
