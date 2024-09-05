@@ -127,6 +127,12 @@ if __name__ == "__main__":
 
             for at in range(msCnt):
 
-                continue
+                if rmTtl > 5:
+                    msRls.append(6)
+                    rmTtl -= 5
+
+                else:
+                    msRls.append(rmTtl + 1)
+                    rmTtl -= rmTtl
 
         print("\n")
