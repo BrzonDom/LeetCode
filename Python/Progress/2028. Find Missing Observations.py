@@ -81,21 +81,22 @@ if __name__ == "__main__":
         print(f"\tMissing: {Mss}")
         print()
 
-        rlCnt = len(Rlls)
-        alCnt = rlCnt + Mss
+        orCnt = len(Rlls)
+        alCnt = orCnt + Mss
         msCnt = Mss
 
-        rlNmb = Rlls
-        alNmb = Rlls + [0 for m in range(msCnt)]
-        msNmb = [0 for m in range(msCnt)]
+        orRls = Rlls
+        alRls = Rlls + [0 for m in range(msCnt)]
+        msRls = [0 for m in range(msCnt)]
 
-        rlTtl = sum(Rlls)
+        orTtl = sum(Rlls)
         alTtl = Men * alCnt
-        msTtl = alTtl - rlTtl
+        msTtl = alTtl - orTtl
 
         print("\tOriginal rolls:")
-        print(f"\t\tRolls: {Rlls}")
-        print(f"\t\tCount:  {rlCnt}")
-        print(f"\t\tTotal:  {rlTtl}")
+        print(f"\t\tRolls: {orRls}")
+        print(f"\t\tCount:  {orCnt}")
+        print(f"\t\tTotal:  {orTtl}")
+        print()
 
         print("\n")
