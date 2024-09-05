@@ -96,7 +96,10 @@ if __name__ == "__main__":
         Nmbs1[LnN1:] = Nmbs2
 
         print(f"\t\tAll numbers: {Nmbs1}")
+        print()
 
         Nmbs1.sort()
+
+        print(f"\tSorted numbers: {Nmbs1}")
 
         print("\n")
