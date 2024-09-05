@@ -80,7 +80,12 @@ if __name__ == "__main__":
 
         print(f"\t1. Numbers: {Nmbs1}")
         print(f"\t\t1. Numbers length: {LnN1}")
+        print()
+
         print(f"\t2. Numbers: {Nmbs2}")
         print(f"\t\t2. Numbers length: {LnN2}")
+        print()
+
+        print(f"\t\tOriginal numbers: {Nmbs1[:LnN1]}")
 
         print("\n")
