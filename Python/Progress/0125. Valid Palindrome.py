@@ -57,6 +57,15 @@ if __name__ == "__main__":
                 "race a car",
                 " "]
 
+    print(f"\ta: {ord('a')}")
+    print(f"\tz: {ord('z')}")
+    print()
+
+    print(f"\tA: {ord('A')}")
+    print(f"\tZ: {ord('Z')}")
+
+    print("\n")
+
     for csCnt, case in enumerate(InputLst):
 
         print(f"{csCnt + 1}.Case\n")
