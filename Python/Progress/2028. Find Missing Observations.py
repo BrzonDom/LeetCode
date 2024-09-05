@@ -80,16 +80,16 @@ if __name__ == "__main__":
         print(f"\tMean:    {Men}")
         print(f"\tMissing: {Mss}")
 
-        msCnt = Mss
-        msNmb = []
-        msTtl = 0
-
         rlCnt = len(Rlls)
-        rlNmb = Rlls
-        rlTtl = sum(Rlls)
+        alCnt = rlCnt + Mss
+        msCnt = Mss
 
-        alCnt = len(Rlls) + Mss
-        alNmb = Rlls + [0 for m in range(Mss)]
-        alTtl = Men * (Mss + len(Rlls))
+        rlNmb = Rlls
+        alNmb = Rlls + [0 for m in range(msCnt)]
+        msNmb = [0 for m in range(msCnt)]
+
+        rlTtl = sum(Rlls)
+        alTtl = Men * alCnt
+        msTtl = alTtl - rlTtl
 
         print("\n")
