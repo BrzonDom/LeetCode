@@ -94,6 +94,9 @@ if __name__ == "__main__":
             elif 'A' <= crc <= 'Z':
                 raw += chr(ord(crc) + 32)
 
+            elif '0' <= crc <= '9':
+                raw += crc
+
         print(f"\t\tRaw string: \"{raw}\"")
 
         print("\n")
