@@ -112,15 +112,14 @@ if __name__ == "__main__":
 
         dce = [1, 2, 3, 4, 5, 6]
 
-        msMn = 1 * msCnt
-        msMx = 6 * msCnt
-
-        if msTtl < msMn:
+        if msTtl < 1 * msCnt:
             print()
-            print("\tInvalid mean, lesser than minimum possible missing rolls")
+            print("\tInvalid mean")
+            print("\t\tLesser than minimum possible missing rolls")
 
-        elif msTtl > msMx:
+        elif msTtl > 6 * msCnt:
             print()
-            print("\tInvalid mean, greater than maximum possible missing rolls")
+            print("\tInvalid mean")
+            print("\t\tGreater than maximum possible missing rolls")
 
         print("\n")
