@@ -51,6 +51,8 @@ if __name__ == "__main__":
         print(f"\tMatrix:")
 
         for rw in Mrx:
-            print(f"\t\t{rw}")
+            for cl in rw:
+                print(cl, end=" ")
+            print()
 
         print("\n")
