@@ -43,6 +43,14 @@ https://leetcode.com/problems/spiral-matrix-iv/description/
         0 <= Node.val <= 1000
 
 """
+"""
+    Tags:
+    
+        Array
+        Linked List
+        Matrix
+        Simulation
+"""
 
 
 InputLst = [[3, 5, [3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0]],
