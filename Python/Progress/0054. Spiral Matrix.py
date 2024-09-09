@@ -48,6 +48,9 @@ if __name__ == "__main__":
 
         Mrx = case
 
+        dmR = len(Mrx)
+        dmC = len(Mrx[0])
+
         print(f"\tMatrix:")
 
         for rw in Mrx:
