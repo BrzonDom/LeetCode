@@ -40,3 +40,12 @@ https://leetcode.com/problems/spiral-matrix-iv/description/
         0 <= Node.val <= 1000
 
 """
+
+
+InputLst = [[3, 5, [3,0,2,6,8,1,7,9,4,2,5,5,0]],
+            [1, 4, [0,1,2]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
