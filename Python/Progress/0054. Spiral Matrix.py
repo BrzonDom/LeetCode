@@ -62,13 +62,15 @@ if __name__ == "__main__":
 
         print(f"\tRows: {dmR}")
         print(f"\tCols: {dmC}")
+        print()
 
         brTp = 0
         brRg = dmC
         brDw = dmR
         brLf = 0
 
+        print("\t\t", end="")
         for idx in range(brLf, brRg):
-            print(Mrx[brTp][idx])
+            print(f"{Mrx[brTp][idx]:2}", end=" ")
 
         print("\n")
