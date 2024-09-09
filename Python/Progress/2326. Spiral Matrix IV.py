@@ -66,8 +66,9 @@ if __name__ == "__main__":
         DmC = case[1]
         Vals = case[2]
 
-        print(f"\tMatrix Rows: {DmR}")
-        print(f"\tMatrix Cols: {DmC}")
-        print(f"\tMatrix Values: {Vals}")
+        print(f"\tMatrix")
+        print(f"\t\tRows: {DmR}")
+        print(f"\t\tCols: {DmC}")
+        print(f"\t\tValues: {Vals}")
 
         print("\n")
