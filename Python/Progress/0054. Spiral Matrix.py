@@ -48,6 +48,9 @@ if __name__ == "__main__":
 
         Mrx = case
 
-        print(f"\tMatrix: {Mrx}")
+        print(f"\tMatrix:")
+
+        for rw in Mrx:
+            print(f"\t\t{rw}")
 
         print("\n")
