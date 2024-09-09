@@ -58,5 +58,9 @@ if __name__ == "__main__":
             for cl in rw:
                 print(f"{cl:2}", end=" ")
             print()
+        print()
+
+        print(f"\tRows: {dmR}")
+        print(f"\tCols: {dmC}")
 
         print("\n")
