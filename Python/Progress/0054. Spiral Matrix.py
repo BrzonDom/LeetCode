@@ -75,4 +75,9 @@ if __name__ == "__main__":
 
         brTp += 1
 
+        for idx in range(brTp, brDw):
+            print(Mrx[idx][brRg - 1])
+
+        brRg -= 1
+
         print("\n")
