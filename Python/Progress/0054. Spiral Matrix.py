@@ -72,11 +72,13 @@ if __name__ == "__main__":
         print("\t\t", end="")
         for idx in range(brLf, brRg):
             print(f"{Mrx[brTp][idx]:2}", end=" ")
+        print()
 
         brTp += 1
 
+        print("\t\t", end="")
         for idx in range(brTp, brDw):
-            print(Mrx[idx][brRg - 1])
+            print(f"{Mrx[idx][brRg - 1]:2}", end=" ")
 
         brRg -= 1
 
