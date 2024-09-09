@@ -59,6 +59,12 @@ https://leetcode.com/problems/spiral-matrix-iv/description/
 #         self.next = next
 
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 if __name__ == "__main__":
 
     InputLst = [[3, 5, [3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0]],
