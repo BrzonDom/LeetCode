@@ -86,10 +86,12 @@ if __name__ == "__main__":
         print("\t\t", end="")
         for idx in range(brRg - 1, brLf - 1, -1):
             print(f"{Mrx[brBt - 1][idx]:2}", end=" ")
+        print()
 
         brBt -= 1
 
+        print("\t\t", end="")
         for idx in range(brBt - 1, brTp - 1, -1):
-            print(Mrx[idx][brLf])
+            print(f"{Mrx[idx][brLf]:2}", end=" ")
 
         print("\n")
