@@ -66,7 +66,7 @@ if __name__ == "__main__":
 
         brTp = 0
         brRg = dmC
-        brDw = dmR
+        brBt = dmR
         brLf = 0
 
         print("\t\t", end="")
@@ -77,7 +77,7 @@ if __name__ == "__main__":
         brTp += 1
 
         print("\t\t", end="")
-        for idx in range(brTp, brDw):
+        for idx in range(brTp, brBt):
             print(f"{Mrx[idx][brRg - 1]:2}", end=" ")
         print()
 
@@ -85,8 +85,8 @@ if __name__ == "__main__":
 
         print("\t\t", end="")
         for idx in range(brRg - 1, brLf - 1, -1):
-            print(f"{Mrx[brDw - 1][idx]:2}", end=" ")
+            print(f"{Mrx[brBt - 1][idx]:2}", end=" ")
 
-        brDw += 1
+        brBt += 1
 
         print("\n")
