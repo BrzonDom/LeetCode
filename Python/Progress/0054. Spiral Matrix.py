@@ -68,9 +68,7 @@ if __name__ == "__main__":
         brDw = dmR
         brLf = 0
 
-        for iR, rw in enumerate(Mrx):
-            for iC, cl in enumerate(rw):
-                print(cl, end=" ")
-            print()
+        for idx in range(brLf, brRg):
+            print(Mrx[brTp][idx])
 
         print("\n")
