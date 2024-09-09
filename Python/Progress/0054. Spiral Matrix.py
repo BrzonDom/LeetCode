@@ -73,4 +73,6 @@ if __name__ == "__main__":
         for idx in range(brLf, brRg):
             print(f"{Mrx[brTp][idx]:2}", end=" ")
 
+        brTp += 1
+
         print("\n")
