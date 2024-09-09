@@ -68,4 +68,9 @@ if __name__ == "__main__":
         brDw = dmR
         brLf = 0
 
+        for rw in Mrx:
+            for cl in rw:
+                print(cl, end=" ")
+            print()
+
         print("\n")
