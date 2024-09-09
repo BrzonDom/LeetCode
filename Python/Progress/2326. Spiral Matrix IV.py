@@ -56,8 +56,10 @@ https://leetcode.com/problems/spiral-matrix-iv/description/
 InputLst = [[3, 5, [3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0]],
             [1, 4, [0, 1, 2]]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case}")
 
-    print()
+    print("\n")
