@@ -37,11 +37,13 @@ https://leetcode.com/problems/spiral-matrix/description/
 """
 
 
-InputLst = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]],
-            [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]]
+if __name__ == "__main__":
 
-for case in InputLst:
+    InputLst = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+                [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]]
 
-    print(f"\t{case}")
+    for case in InputLst:
 
-    print()
+        print(f"\t{case}")
+
+        print()
