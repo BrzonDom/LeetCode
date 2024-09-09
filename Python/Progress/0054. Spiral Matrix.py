@@ -87,6 +87,6 @@ if __name__ == "__main__":
         for idx in range(brRg - 1, brLf - 1, -1):
             print(f"{Mrx[brBt - 1][idx]:2}", end=" ")
 
-        brBt += 1
+        brBt -= 1
 
         print("\n")
