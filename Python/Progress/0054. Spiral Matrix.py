@@ -63,4 +63,9 @@ if __name__ == "__main__":
         print(f"\tRows: {dmR}")
         print(f"\tCols: {dmC}")
 
+        brTp = 0
+        brRg = dmC
+        brDw = dmR
+        brLf = 0
+
         print("\n")
