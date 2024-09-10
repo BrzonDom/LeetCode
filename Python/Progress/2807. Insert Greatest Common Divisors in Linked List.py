@@ -97,6 +97,9 @@ if __name__ == "__main__":
 
                     a, b = b, c
 
+                c = a
+                print(f"\t\t{c}")
+
                 print()
 
                 # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
