@@ -82,6 +82,7 @@ if __name__ == "__main__":
         print(f"\t\tLength: {lnLn}")
         print()
 
+        print("\tEuclidean algorithm:")
         for idx in range(lnLn - 1):
 
             a = max(Lnks[idx], Lnks[idx+1])
@@ -89,7 +90,7 @@ if __name__ == "__main__":
 
             c = a % b
 
-            print(a, b, c)
+            print(f"\t\t{a:2} % {b:2} = {c:2}")
 
             # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
 
