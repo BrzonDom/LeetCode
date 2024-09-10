@@ -60,6 +60,12 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
 #         self.next = next
 
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 if __name__ == "__main__":
 
     InputLst = [[18, 6, 10, 3],
