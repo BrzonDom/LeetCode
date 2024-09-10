@@ -66,6 +66,11 @@ class ListNode:
         self.nxt = nxt
 
 
+def Hlp01_EclGCD_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[18, 6, 10, 3],
