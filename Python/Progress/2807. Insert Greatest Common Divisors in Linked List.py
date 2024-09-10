@@ -86,10 +86,10 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
     return aNm
 
 
-def Hlp01_EclGCDItr(aNm, bNm):
+def Hlp01_EclGCDItr(A, B):
 
-    aNm = max(aNm, bNm)
-    bNm = min(aNm, bNm)
+    aNm = max(A, B)
+    bNm = min(A, B)
 
     return
 
