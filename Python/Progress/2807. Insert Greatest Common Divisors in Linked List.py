@@ -15,11 +15,12 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
 
     Example 1:
 
-        Input: head = [18,6,10,3]
+        Input: head = [18, 6, 10, 3]
 
-        Output: [18,6,6,2,10,1,3]
+        Output: [18, 6, 6, 2, 10, 1, 3]
 
-        Explanation: The 1st diagram denotes the initial linked list and the 2nd diagram denotes the linked list after inserting the new nodes (nodes in blue are the inserted nodes).
+        Explanation: The 1st diagram denotes the initial linked list and the 2nd diagram denotes the linked list after
+            inserting the new nodes (nodes in blue are the inserted nodes).
             - We insert the greatest common divisor of 18 and 6 = 6 between the 1st and the 2nd nodes.
             - We insert the greatest common divisor of 6 and 10 = 2 between the 2nd and the 3rd nodes.
             - We insert the greatest common divisor of 10 and 3 = 1 between the 3rd and the 4th nodes.
@@ -31,7 +32,8 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
 
         Output: [7]
 
-        Explanation: The 1st diagram denotes the initial linked list and the 2nd diagram denotes the linked list after inserting the new nodes.
+        Explanation: The 1st diagram denotes the initial linked list and the 2nd diagram denotes the linked list after
+            inserting the new nodes.
             There are no pairs of adjacent nodes, so we return the initial linked list.
 
 
@@ -43,7 +45,7 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
 """
 
 
-InputLst = [[18,6,10,3],
+InputLst = [[18, 6, 10, 3],
             [7]]
 
 for case in InputLst:
