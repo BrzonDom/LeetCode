@@ -66,6 +66,11 @@ class ListNode:
         self.nxt = nxt
 
 
+class LinkList:
+    def __init__(self):
+        self.head = None
+
+
 def Hlp01_EclGCDItr_Prt(A, B):
 
     aNm = max(A, B)
