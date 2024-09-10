@@ -104,6 +104,4 @@ if __name__ == "__main__":
                 print(f"\t\t\tGCD({a:3}, {b:2}) = {c:2}")
                 print()
 
-                # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
-
         print("\n")
