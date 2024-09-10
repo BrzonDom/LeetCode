@@ -81,6 +81,8 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
         aNm = bNm
         bNm = rNm
 
+    print(f"\t\t\tGCD({A:3}, {B:2}) = {aNm:2}")
+
     return aNm
 
 
