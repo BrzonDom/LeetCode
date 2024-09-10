@@ -97,6 +97,8 @@ def Hlp01_EclGCDItr(A, B):
         aNm = bNm
         bNm = rNm
 
+    return aNm
+
 
 if __name__ == "__main__":
 
