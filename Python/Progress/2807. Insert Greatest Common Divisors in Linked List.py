@@ -87,6 +87,10 @@ if __name__ == "__main__":
             a = max(Lnks[idx], Lnks[idx+1])
             b = min(Lnks[idx], Lnks[idx+1])
 
-            print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
+            c = a % b
+
+            print(a, b, c)
+
+            # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
 
         print("\n")
