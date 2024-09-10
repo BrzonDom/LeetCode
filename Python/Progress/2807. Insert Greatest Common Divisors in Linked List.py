@@ -89,7 +89,7 @@ def Hlp01_EclGCDItr(A, B):
     aNm = max(A, B)
     bNm = min(A, B)
 
-    return
+    rNm = aNm % bNm
 
 
 if __name__ == "__main__":
