@@ -82,16 +82,18 @@ if __name__ == "__main__":
         print(f"\t\tLength: {lnLn}")
         print()
 
-        print("\tEuclidean algorithm:")
-        for idx in range(lnLn - 1):
+        if lnLn > 1:
 
-            a = max(Lnks[idx], Lnks[idx+1])
-            b = min(Lnks[idx], Lnks[idx+1])
+            print("\tEuclidean algorithm:")
+            for idx in range(lnLn - 1):
 
-            c = a % b
+                a = max(Lnks[idx], Lnks[idx+1])
+                b = min(Lnks[idx], Lnks[idx+1])
 
-            print(f"\t\t{a:2} % {b:2} = {c:2}")
+                c = a % b
 
-            # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
+                print(f"\t\t{a:2} % {b:2} = {c:2}")
+
+                # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
 
         print("\n")
