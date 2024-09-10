@@ -78,8 +78,9 @@ if __name__ == "__main__":
         Lnks = case
 
         print(f"\tLinked list: {Lnks}")
+        print()
 
         for idx in range(len(Lnks)):
-            print(Lnks[idx])
+            print(f"\t\t{Lnks[idx]}")
 
         print("\n")
