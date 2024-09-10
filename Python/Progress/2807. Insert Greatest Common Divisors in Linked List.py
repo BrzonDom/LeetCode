@@ -76,11 +76,13 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}.Case\n")
 
         Lnks = case
+        lnLn = len(Lnks)
 
         print(f"\tLinked list: {Lnks}")
+        print(f"\t\tLength: {lnLn}")
         print()
 
-        for idx in range(len(Lnks)):
+        for idx in range(lnLn):
             print(f"\t\t{Lnks[idx]}")
 
         print("\n")
