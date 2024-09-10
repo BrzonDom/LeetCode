@@ -66,12 +66,10 @@ class ListNode:
         self.nxt = nxt
 
 
-def Hlp01_EclGCDItr_Prt(aNm, bNm):
+def Hlp01_EclGCDItr_Prt(A, B):
 
-    aNm = max(aNm, bNm)
-    bNm = min(aNm, bNm)
-
-    A, B = aNm, bNm
+    aNm = max(A, B)
+    bNm = min(A, B)
 
     while bNm:
         rNm = aNm % bNm
