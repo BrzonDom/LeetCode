@@ -82,7 +82,7 @@ if __name__ == "__main__":
         print(f"\t\tLength: {lnLn}")
         print()
 
-        for idx in range(lnLn):
-            print(f"\t\t{Lnks[idx]}")
+        for idx in range(lnLn - 1):
+            print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
 
         print("\n")
