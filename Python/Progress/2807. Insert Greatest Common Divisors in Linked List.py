@@ -86,7 +86,7 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
     return aNm
 
 
-def Hlp01_EclGCDItr():
+def Hlp01_EclGCDItr(aNm, bNm):
 
     return
 
