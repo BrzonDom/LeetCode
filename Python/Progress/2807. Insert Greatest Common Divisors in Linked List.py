@@ -61,9 +61,9 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
 
 
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, nxt=None):
         self.val = val
-        self.next = next
+        self.nxt = nxt
 
 
 if __name__ == "__main__":
