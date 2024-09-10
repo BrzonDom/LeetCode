@@ -68,6 +68,9 @@ class ListNode:
 
 def Hlp01_EclGCDItr_Prt(aNm, bNm):
 
+    aNm = max(aNm, bNm)
+    bNm = min(aNm, bNm)
+
     return
 
 
