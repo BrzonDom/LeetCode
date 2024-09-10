@@ -86,6 +86,11 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
     return aNm
 
 
+def Hlp01_EclGCDItr():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[18, 6, 10, 3],
