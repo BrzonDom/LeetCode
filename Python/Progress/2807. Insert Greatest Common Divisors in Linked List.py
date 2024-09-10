@@ -3,6 +3,8 @@
 
 https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/
 
+        Daily: 2024/09/10
+
 
     Given the head of a linked list head, in which each node contains an integer value.
 
