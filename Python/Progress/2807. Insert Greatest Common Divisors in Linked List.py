@@ -77,6 +77,6 @@ if __name__ == "__main__":
 
         Lnks = case
 
-        print(f"\t{Lnks}")
+        print(f"\tLinked list: {Lnks}")
 
         print("\n")
