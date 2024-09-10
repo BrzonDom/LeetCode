@@ -110,18 +110,18 @@ if __name__ == "__main__":
                 a = max(Lnks[idx], Lnks[idx+1])
                 b = min(Lnks[idx], Lnks[idx+1])
 
-                while b:
-                    c = a % b
-
-                    print(f"\t\t{a:2} % {b:2} = {c:2}")
-
-                    a, b = b, c
-
-                c = a
-                a = max(Lnks[idx], Lnks[idx+1])
-                b = min(Lnks[idx], Lnks[idx+1])
-
-                print(f"\t\t\tGCD({a:3}, {b:2}) = {c:2}")
-                print()
+                # while b:
+                #     c = a % b
+                #
+                #     print(f"\t\t{a:2} % {b:2} = {c:2}")
+                #
+                #     a, b = b, c
+                #
+                # c = a
+                # a = max(Lnks[idx], Lnks[idx+1])
+                # b = min(Lnks[idx], Lnks[idx+1])
+                #
+                # print(f"\t\t\tGCD({a:3}, {b:2}) = {c:2}")
+                # print()
 
         print("\n")
