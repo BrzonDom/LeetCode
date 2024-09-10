@@ -107,8 +107,8 @@ if __name__ == "__main__":
             print("\tEuclidean algorithm:")
             for idx in range(lnLn - 1):
 
-                a = max(Lnks[idx], Lnks[idx+1])
-                b = min(Lnks[idx], Lnks[idx+1])
+                # a = max(Lnks[idx], Lnks[idx+1])
+                # b = min(Lnks[idx], Lnks[idx+1])
 
                 # while b:
                 #     c = a % b
