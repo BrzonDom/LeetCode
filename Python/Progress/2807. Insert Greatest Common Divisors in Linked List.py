@@ -98,8 +98,10 @@ if __name__ == "__main__":
                     a, b = b, c
 
                 c = a
-                print(f"\t\t{c}")
+                a = max(Lnks[idx], Lnks[idx+1])
+                b = min(Lnks[idx], Lnks[idx+1])
 
+                print(f"\t\t\tGCD({a:3}, {b:2}) = {c:2}")
                 print()
 
                 # print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
