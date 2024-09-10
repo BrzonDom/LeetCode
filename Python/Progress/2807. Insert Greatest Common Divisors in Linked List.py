@@ -71,6 +71,8 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
     aNm = max(aNm, bNm)
     bNm = min(aNm, bNm)
 
+    A, B = aNm, bNm
+
     while bNm:
         rNm = aNm % bNm
 
