@@ -89,10 +89,13 @@ def Hlp01_EclGCDItr(A, B):
     aNm = max(A, B)
     bNm = min(A, B)
 
-    rNm = aNm % bNm
+    while bNm:
+        rNm = aNm % bNm
 
-    aNm = bNm
-    bNm = rNm
+        print(f"\t\t{aNm:2} % {bNm} = {rNm}")
+
+        aNm = bNm
+        bNm = rNm
 
 
 if __name__ == "__main__":
