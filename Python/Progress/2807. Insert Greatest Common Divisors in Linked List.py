@@ -73,6 +73,8 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
 
     rNm = aNm % bNm
 
+    print(aNm, bNm, rNm)
+
     aNm = bNm
     bNm = rNm
 
