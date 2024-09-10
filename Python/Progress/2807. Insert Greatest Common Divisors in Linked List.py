@@ -79,6 +79,8 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
         aNm = bNm
         bNm = rNm
 
+    return aNm
+
 
 if __name__ == "__main__":
 
