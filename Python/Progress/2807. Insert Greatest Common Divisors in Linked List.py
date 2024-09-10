@@ -44,6 +44,13 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
         The number of nodes in the list is in the range [1, 5000].
         1 <= Node.val <= 1000
 
+
+    Tags:
+
+        Linked List
+        Math
+        Number Theory
+
 """
 
 
