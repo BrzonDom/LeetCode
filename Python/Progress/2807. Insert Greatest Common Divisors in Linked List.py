@@ -73,7 +73,7 @@ def Hlp01_EclGCDItr_Prt(aNm, bNm):
 
     rNm = aNm % bNm
 
-    print(aNm, bNm, rNm)
+    print(f"\t\t{aNm:2} % {bNm} = {rNm}")
 
     aNm = bNm
     bNm = rNm
