@@ -83,6 +83,10 @@ if __name__ == "__main__":
         print()
 
         for idx in range(lnLn - 1):
+
+            a = max(Lnks[idx], Lnks[idx+1])
+            b = min(Lnks[idx], Lnks[idx+1])
+
             print(f"\t\t{Lnks[idx]:2} : {Lnks[idx+1]:2}")
 
         print("\n")
