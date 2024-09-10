@@ -41,3 +41,12 @@ https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/des
         1 <= Node.val <= 1000
 
 """
+
+
+InputLst = [[18,6,10,3],
+            [7]]
+
+for case in InputLst:
+
+    print(case)
+    print()
