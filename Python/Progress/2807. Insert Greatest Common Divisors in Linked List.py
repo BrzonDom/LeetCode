@@ -66,7 +66,7 @@ class ListNode:
         self.nxt = nxt
 
 
-def Hlp01_EclGCDItr_Prt():
+def Hlp01_EclGCDItr_Prt(aNm, bNm):
 
     return
 
