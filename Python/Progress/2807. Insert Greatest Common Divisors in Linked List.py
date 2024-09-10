@@ -79,4 +79,7 @@ if __name__ == "__main__":
 
         print(f"\tLinked list: {Lnks}")
 
+        for idx in range(len(Lnks)):
+            print(Lnks[idx])
+
         print("\n")
