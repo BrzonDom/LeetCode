@@ -73,6 +73,9 @@ class LinkList:
     def add(self, val):
         nwNd = ListNode(val)
 
+        if self.head is None:
+            self.head = nwNd
+
 
 def Hlp01_EclGCDItr_Prt(A, B):
 
