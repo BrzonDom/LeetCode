@@ -142,6 +142,11 @@ if __name__ == "__main__":
 
         crNd = lnkLst.head
 
+        while crNd:
+            print(crNd.val)
+
+            crNd = crNd.nxt
+
         if lnLn > 1:
 
             print("\tEuclidean algorithm:")
