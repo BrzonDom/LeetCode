@@ -140,6 +140,8 @@ if __name__ == "__main__":
         for val in Lnks:
             lnkLst.add(val)
 
+        crNd = lnkLst.head
+
         if lnLn > 1:
 
             print("\tEuclidean algorithm:")
