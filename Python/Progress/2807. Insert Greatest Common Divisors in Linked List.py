@@ -131,7 +131,7 @@ if __name__ == "__main__":
         Lnks = case
         lnLn = len(Lnks)
 
-        print(f"\tLinked list: {Lnks}")
+        print(f"\tLinked list values: {Lnks}")
         print(f"\t\tLength: {lnLn}")
         print()
 
