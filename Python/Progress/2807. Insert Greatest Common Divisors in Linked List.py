@@ -137,6 +137,9 @@ if __name__ == "__main__":
 
         lnkLst = LinkList()
 
+        for val in Lnks:
+            lnkLst.add(val)
+
         if lnLn > 1:
 
             print("\tEuclidean algorithm:")
