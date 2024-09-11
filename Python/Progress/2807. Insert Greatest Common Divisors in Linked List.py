@@ -142,11 +142,17 @@ if __name__ == "__main__":
 
         crNd = lnkLst.head
 
-        print("\t\tLinked list:")
+        print("\t\tLinked list: ", end="[")
         while crNd:
-            print(f"\t\t\t{crNd.val}")
+            print(f"{crNd.val}", end="")
 
             crNd = crNd.nxt
+
+            if crNd:
+                print(", ", end="")
+            else:
+                print("]")
+        print()
 
         if lnLn > 1:
 
