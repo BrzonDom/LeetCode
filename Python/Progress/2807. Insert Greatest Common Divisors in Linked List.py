@@ -135,6 +135,8 @@ if __name__ == "__main__":
         print(f"\t\tLength: {lnLn}")
         print()
 
+        lnkLst = LinkList()
+
         if lnLn > 1:
 
             print("\tEuclidean algorithm:")
