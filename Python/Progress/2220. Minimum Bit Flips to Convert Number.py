@@ -67,7 +67,7 @@ if __name__ == "__main__":
         Str = case[0]
         Gol = case[1]
 
-        print(f"\t{Str}")
-        print(f"\t{Gol}")
+        print(f"\tStart number: {Str}")
+        print(f"\tGoal number:  {Gol}")
 
         print("\n")
