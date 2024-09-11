@@ -75,7 +75,7 @@ if __name__ == "__main__":
         bnGol = bin(Gol)
 
         print("\tBinary numbers:")
-        print(f"\t\tStart: {Str} = {bnStr}")
-        print(f"\t\tGoal:  {Gol} = {bnGol}")
+        print(f"\t\tStart: {Str:2} = {bnStr[2:]}")
+        print(f"\t\tGoal:  {Gol:2} = {bnGol[2:]}")
 
         print("\n")
