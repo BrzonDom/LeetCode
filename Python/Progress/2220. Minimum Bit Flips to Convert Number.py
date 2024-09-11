@@ -48,3 +48,12 @@ https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/
         0 <= start, goal <= 10^9
 
 """
+
+
+InputLst = [[10, 7],
+            [3, 4]]
+
+for case in InputLst:
+
+    print(case)
+    print()
