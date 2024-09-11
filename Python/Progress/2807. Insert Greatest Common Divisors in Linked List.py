@@ -79,6 +79,11 @@ class LinkList:
         else:
             crNd = self.head
 
+            while crNd.nxt:
+                crNd = crNd.nxt
+
+            crNd.nxt = nwNd
+
 
 def Hlp01_EclGCDItr_Prt(A, B):
 
