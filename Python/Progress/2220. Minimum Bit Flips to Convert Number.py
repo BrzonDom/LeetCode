@@ -70,4 +70,7 @@ if __name__ == "__main__":
         print(f"\tStart number: {Str}")
         print(f"\tGoal number:  {Gol}")
 
+        bnStr = bin(Str)
+        bnGol = bin(Gol)
+
         print("\n")
