@@ -142,8 +142,9 @@ if __name__ == "__main__":
 
         crNd = lnkLst.head
 
+        print("\t\tLinked list:")
         while crNd:
-            print(crNd.val)
+            print(f"\t\t\t{crNd.val}")
 
             crNd = crNd.nxt
 
