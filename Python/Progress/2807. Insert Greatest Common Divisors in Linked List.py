@@ -76,6 +76,9 @@ class LinkList:
         if self.head is None:
             self.head = nwNd
 
+        else:
+            crNd = self.head
+
 
 def Hlp01_EclGCDItr_Prt(A, B):
 
