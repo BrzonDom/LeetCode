@@ -79,6 +79,7 @@ if __name__ == "__main__":
             print(f"\t\t{st}")
         print()
 
+        cnss = []
         cnsCnt = 0
 
         print("\tConsistent strings:")
@@ -92,6 +93,7 @@ if __name__ == "__main__":
             if fndCn:
                 print(f"\t\t{cnsCnt + 1:2}. {st}")
 
+                cnss.append(st)
                 cnsCnt += 1
 
         print("\n")
