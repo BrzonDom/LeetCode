@@ -80,7 +80,7 @@ if __name__ == "__main__":
         print()
 
         cnss = []
-        unCnss = []
+        inCnss = []
         cnsCnt = 0
 
         for st in Strs:
@@ -90,15 +90,15 @@ if __name__ == "__main__":
                 if ch not in Alw:
                     fndCn = False
 
-                    unCnss.append(st)
+                    inCnss.append(st)
                     break
 
             if fndCn:
                 cnss.append(st)
                 cnsCnt += 1
 
-        print("\tUnconsistent strings:")
-        for st in unCnss:
+        print("\tInconsistent strings:")
+        for st in inCnss:
             print(f"\t\t{st}")
 
         print("\n")
