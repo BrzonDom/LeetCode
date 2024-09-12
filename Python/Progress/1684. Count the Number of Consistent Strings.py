@@ -57,7 +57,7 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
 """
 
 
-def Slt01_FrItStr_Prt():
+def Slt01_FrItStr_Prt(Alw, Strs):
 
     return
 
