@@ -3,8 +3,6 @@
 
 https://leetcode.com/problems/split-linked-list-in-parts/description/
 
-        Daily: 2024/09/13
-
 
     Given the head of a singly linked list and an integer k, split the linked list into k consecutive linked list parts.
 
@@ -48,6 +46,11 @@ https://leetcode.com/problems/split-linked-list-in-parts/description/
     Topics:
 
         Linked List
+
+
+    Courses:
+
+        Daily: 2024/09/13
 
 """
 
