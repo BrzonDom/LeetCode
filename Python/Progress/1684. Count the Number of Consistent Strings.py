@@ -48,5 +48,6 @@ InputLst = [["ab", ["ad", "bd", "aaab", "baa", "badab"]],
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
