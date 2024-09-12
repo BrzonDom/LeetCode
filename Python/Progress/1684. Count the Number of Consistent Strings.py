@@ -4,7 +4,8 @@
 https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
 
 
-    You are given a string allowed consisting of distinct characters and an array of strings words. A string is consistent if all characters in the string appear in the string allowed.
+    You are given a string allowed consisting of distinct characters and an array of strings words. A string is
+    consistent if all characters in the string appear in the string allowed.
 
     Return the number of consistent strings in the array words.
 
@@ -30,7 +31,7 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
 
     Constraints:
 
-        1 <= words.length <= 104
+        1 <= words.length <= 10^4
         1 <= allowed.length <= 26
         1 <= words[i].length <= 10
         The characters in allowed are distinct.
