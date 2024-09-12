@@ -104,38 +104,40 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Alw = case[0]
-        Strs = case[1]
+        Slt01_FrItStr_Prt(case[0], case[1])
 
-        print(f"\tAllowed characters: {Alw}")
-        print(f"\tString list: {Strs}")
-        print()
-
-        cnss = []
-        inCnss = []
-        cnsCnt = 0
-
-        for st in Strs:
-            fndCn = True
-
-            for ch in st:
-                if ch not in Alw:
-                    fndCn = False
-
-                    inCnss.append(st)
-                    break
-
-            if fndCn:
-                cnss.append(st)
-                cnsCnt += 1
-
-        print("\t\tInconsistent strings:")
-        for id, st in enumerate(inCnss):
-            print(f"\t\t\t{id+1:2}. {st}")
-        print()
-
-        print("\tConsistent strings:")
-        for id, st in enumerate(cnss):
-            print(f"\t\t{id+1:2}. {st}")
+        # Alw = case[0]
+        # Strs = case[1]
+        #
+        # print(f"\tAllowed characters: {Alw}")
+        # print(f"\tString list: {Strs}")
+        # print()
+        #
+        # cnss = []
+        # inCnss = []
+        # cnsCnt = 0
+        #
+        # for st in Strs:
+        #     fndCn = True
+        #
+        #     for ch in st:
+        #         if ch not in Alw:
+        #             fndCn = False
+        #
+        #             inCnss.append(st)
+        #             break
+        #
+        #     if fndCn:
+        #         cnss.append(st)
+        #         cnsCnt += 1
+        #
+        # print("\t\tInconsistent strings:")
+        # for id, st in enumerate(inCnss):
+        #     print(f"\t\t\t{id+1:2}. {st}")
+        # print()
+        #
+        # print("\tConsistent strings:")
+        # for id, st in enumerate(cnss):
+        #     print(f"\t\t{id+1:2}. {st}")
 
         print("\n")
