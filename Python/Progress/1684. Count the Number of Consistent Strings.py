@@ -79,7 +79,7 @@ def Slt01_FrItStr_Prt(Alw, Strs):
                 cns = False
 
         if cns:
-            print(f"\t\t{st}")
+            print(f"\t\t{cnsCnt+1:2}. {st}")
 
             cnsCnt += 1
 
