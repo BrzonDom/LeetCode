@@ -74,6 +74,9 @@ def Slt01_FrItStr_Prt(Alw, Strs):
             if ch not in Alw:
                 cns = False
 
+        if cns:
+            print(st)
+
     return
 
 
