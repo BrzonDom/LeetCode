@@ -63,11 +63,6 @@ def Slt01_FrItStr_Prt(Alw, Strs):
     print(f"\tString list: {Strs}")
     print()
 
-    print("\tStrings:")
-    for st in Strs:
-        print(f"\t\t{st}")
-    print()
-
     cnss = []
     inCnss = []
     cnsCnt = 0
