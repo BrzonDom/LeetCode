@@ -90,6 +90,8 @@ if __name__ == "__main__":
                 if ch not in Alw:
                     fndCn = False
 
+                    break
+
             if fndCn:
                 print(f"\t\t{cnsCnt + 1:2}. {st}")
 
