@@ -79,7 +79,10 @@ if __name__ == "__main__":
         Lnks = case[0]
         Prt = case[1]
 
+        lnLnk = len(Lnks)
+
         print(f"\tLinked list: {Lnks}")
+        print(f"\t\tList length: {lnLnk}")
         print(f"\tParts: {Prt}")
 
         dvds = [0 for _ in range(Prt)]
