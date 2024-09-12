@@ -61,6 +61,11 @@ def Slt01_FrItStr_Prt(Alw, Strs):
 
     print(f"\tAllowed characters: {Alw}")
     print(f"\tString list: {Strs}")
+    print()
+
+    print("\tStrings:")
+    for st in Strs:
+        print(f"\t\t{st}")
 
     return
 
