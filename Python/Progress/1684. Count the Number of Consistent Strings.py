@@ -69,6 +69,7 @@ def Slt01_FrItStr_Prt(Alw, Strs):
     print()
 
     cnss = []
+    inCnss = []
     cnsCnt = 0
 
     print("\tConsistent strings:")
@@ -79,6 +80,7 @@ def Slt01_FrItStr_Prt(Alw, Strs):
             if ch not in Alw:
                 fndCn = False
 
+                inCnss.append(st)
                 break
 
         if fndCn:
