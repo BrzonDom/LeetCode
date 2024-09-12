@@ -90,7 +90,7 @@ if __name__ == "__main__":
                     cns = False
 
             if cns:
-                print(f"\t\t{st}")
+                print(f"\t\t{cnsCnt + 1:2}. {st}")
 
                 cnsCnt += 1
 
