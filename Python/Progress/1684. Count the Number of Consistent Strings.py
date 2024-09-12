@@ -104,6 +104,12 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Slt01_FrItStr_Prt(case[0], case[1])
+        # Slt01_FrItStr_Prt(case[0], case[1])
+
+        Alw = case[0]
+        Strs = case[1]
+
+        print(f"\t{Alw}")
+        print(f"\t{Strs}")
 
         print("\n")
