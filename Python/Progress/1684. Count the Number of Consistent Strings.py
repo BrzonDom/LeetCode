@@ -42,15 +42,17 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
 """
 
 
-InputLst = [["ab", ["ad", "bd", "aaab", "baa", "badab"]],
-            ["abc", ["a", "b", "c", "ab", "ac", "bc", "abc"]],
-            ["cad", ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"]]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [["ab", ["ad", "bd", "aaab", "baa", "badab"]],
+                ["abc", ["a", "b", "c", "ab", "ac", "bc", "abc"]],
+                ["cad", ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"]]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
