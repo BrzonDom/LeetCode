@@ -79,6 +79,8 @@ def Slt01_FrItStr_Prt(Alw, Strs):
             if ch not in Alw:
                 fndCn = False
 
+                break
+
         if fndCn:
             print(f"\t\t{cnsCnt+1:2}. {st}")
 
