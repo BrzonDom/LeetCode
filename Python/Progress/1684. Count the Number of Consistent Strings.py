@@ -67,6 +67,8 @@ def Slt01_FrItStr_Prt(Alw, Strs):
     for st in Strs:
         print(f"\t\t{st}")
 
+    cnsCnt = 0
+
     for st in Strs:
         cns = True
 
@@ -76,6 +78,8 @@ def Slt01_FrItStr_Prt(Alw, Strs):
 
         if cns:
             print(st)
+
+            cnsCnt += 1
 
     return
 
