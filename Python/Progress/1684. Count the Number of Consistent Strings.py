@@ -39,6 +39,15 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
         The characters in allowed are distinct.
         words[i] and allowed contain only lowercase English letters.
 
+
+    Topics:
+
+        Array
+        Hash Table
+        String
+        Bit Manipulation
+        Counting
+
 """
 
 
