@@ -55,8 +55,10 @@ https://leetcode.com/problems/split-linked-list-in-parts/description/
 InputLst = [[[1, 2, 3], 5],
             [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case}")
 
-    print()
+    print("\n")
