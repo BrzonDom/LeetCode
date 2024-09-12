@@ -73,7 +73,7 @@ if __name__ == "__main__":
         Lnks = case[0]
         Prt = case[1]
 
-        print(f"\t{Lnks}")
-        print(f"\t{Prt}")
+        print(f"\tLinked list: {Lnks}")
+        print(f"\tParts: {Prt}")
 
         print("\n")
