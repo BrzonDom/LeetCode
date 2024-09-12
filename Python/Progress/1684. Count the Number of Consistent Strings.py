@@ -97,9 +97,9 @@ if __name__ == "__main__":
                 cnss.append(st)
                 cnsCnt += 1
 
-        print("\tInconsistent strings:")
+        print("\t\tInconsistent strings:")
         for id, st in enumerate(inCnss):
-            print(f"\t\t{id+1:2}. {st}")
+            print(f"\t\t\t{id+1:2}. {st}")
         print()
 
         print("\tConsistent strings:")
