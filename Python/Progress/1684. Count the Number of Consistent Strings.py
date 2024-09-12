@@ -97,4 +97,7 @@ if __name__ == "__main__":
                 cnss.append(st)
                 cnsCnt += 1
 
+        for st in unCnss:
+            print(st)
+
         print("\n")
