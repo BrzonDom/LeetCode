@@ -80,6 +80,7 @@ if __name__ == "__main__":
         print()
 
         cnss = []
+        unCnss = []
         cnsCnt = 0
 
         print("\tConsistent strings:")
@@ -90,6 +91,7 @@ if __name__ == "__main__":
                 if ch not in Alw:
                     fndCn = False
 
+                    unCnss.append(st)
                     break
 
             if fndCn:
