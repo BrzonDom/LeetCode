@@ -101,4 +101,7 @@ if __name__ == "__main__":
         for st in inCnss:
             print(f"\t\t{st}")
 
+        for st in cnss:
+            print(st)
+
         print("\n")
