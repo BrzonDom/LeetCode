@@ -82,8 +82,10 @@ def Slt01_FrItStr_Prt(Alw, Strs):
 
             cnss.append(st)
 
+    print("\t\tInconsistent strings:")
     for st in inCnss:
-        print(st)
+        print(f"\t\t\t{st}")
+    print()
 
     print("\tConsistent strings:")
     for st in cnss:
