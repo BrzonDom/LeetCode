@@ -79,9 +79,10 @@ if __name__ == "__main__":
             print(f"\t\t{st}")
 
         for st in Strs:
+            cns = True
 
             for ch in st:
-                if ch in Alw:
-                    continue
+                if ch not in Alw:
+                    cns = False
 
         print("\n")
