@@ -82,4 +82,6 @@ if __name__ == "__main__":
         print(f"\tLinked list: {Lnks}")
         print(f"\tParts: {Prt}")
 
+        dvds = [0 for _ in range(Prt)]
+
         print("\n")
