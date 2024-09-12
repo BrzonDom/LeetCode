@@ -85,7 +85,7 @@ def Slt01_FrItStr_Prt(Alw, Strs):
             cnss.append(st)
             cnsCnt += 1
 
-    return
+    return cnsCnt
 
 
 if __name__ == "__main__":
