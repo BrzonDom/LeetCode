@@ -83,13 +83,13 @@ if __name__ == "__main__":
 
         print("\tConsistent strings:")
         for st in Strs:
-            cns = True
+            fndCn = True
 
             for ch in st:
                 if ch not in Alw:
-                    cns = False
+                    fndCn = False
 
-            if cns:
+            if fndCn:
                 print(f"\t\t{cnsCnt + 1:2}. {st}")
 
                 cnsCnt += 1
