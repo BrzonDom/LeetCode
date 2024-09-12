@@ -67,6 +67,12 @@ def Slt01_FrItStr_Prt(Alw, Strs):
     for st in Strs:
         print(f"\t\t{st}")
 
+    for st in Strs:
+
+        for ch in st:
+            if ch in Alw:
+                continue
+
     return
 
 
