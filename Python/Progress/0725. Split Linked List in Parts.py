@@ -42,4 +42,9 @@ https://leetcode.com/problems/split-linked-list-in-parts/description/
         0 <= Node.val <= 1000
         1 <= k <= 50
 
+
+    Topics:
+
+        Linked List
+
 """
