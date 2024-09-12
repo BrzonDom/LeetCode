@@ -85,4 +85,7 @@ if __name__ == "__main__":
                 if ch not in Alw:
                     cns = False
 
+            if cns:
+                print(st)
+
         print("\n")
