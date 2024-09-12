@@ -100,8 +100,10 @@ if __name__ == "__main__":
         print("\tInconsistent strings:")
         for st in inCnss:
             print(f"\t\t{st}")
+        print()
 
+        print("\tConsistent strings:")
         for st in cnss:
-            print(st)
+            print(f"\t\t{st}")
 
         print("\n")
