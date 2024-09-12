@@ -68,6 +68,7 @@ def Slt01_FrItStr_Prt(Alw, Strs):
         print(f"\t\t{st}")
     print()
 
+    cnss = []
     cnsCnt = 0
 
     print("\tConsistent strings:")
@@ -81,6 +82,7 @@ def Slt01_FrItStr_Prt(Alw, Strs):
         if fndCn:
             print(f"\t\t{cnsCnt+1:2}. {st}")
 
+            cnss.append(st)
             cnsCnt += 1
 
     return
