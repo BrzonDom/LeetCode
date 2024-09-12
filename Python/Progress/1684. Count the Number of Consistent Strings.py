@@ -74,12 +74,12 @@ if __name__ == "__main__":
         print(f"\tString list: {Strs}")
         print()
 
-        cnsCnt = 0
-
         print("\tStrings:")
         for st in Strs:
             print(f"\t\t{st}")
         print()
+
+        cnsCnt = 0
 
         print("\tConsistent strings:")
         for st in Strs:
