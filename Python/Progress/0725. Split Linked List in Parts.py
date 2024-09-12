@@ -88,6 +88,6 @@ if __name__ == "__main__":
         dvds = [0 for _ in range(Prt)]
 
         dfr = 0
-        prt = 0
+        prt = lnLnk // Prt
 
         print("\n")
