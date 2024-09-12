@@ -38,3 +38,13 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
         words[i] and allowed contain only lowercase English letters.
 
 """
+
+
+InputLst = [["ab", ["ad","bd","aaab","baa","badab"]],
+            ["abc", ["a","b","c","ab","ac","bc","abc"]],
+            ["cad", ["cc","acd","b","ba","bac","bad","ac","d"]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
