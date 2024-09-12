@@ -74,11 +74,6 @@ if __name__ == "__main__":
         print(f"\tString list: {Strs}")
         print()
 
-        print("\tStrings:")
-        for st in Strs:
-            print(f"\t\t{st}")
-        print()
-
         cnss = []
         inCnss = []
         cnsCnt = 0
