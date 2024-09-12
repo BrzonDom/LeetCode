@@ -59,6 +59,9 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
 
 def Slt01_FrItStr_Prt(Alw, Strs):
 
+    print(f"\tAllowed characters: {Alw}")
+    print(f"\tString list: {Strs}")
+
     return
 
 
