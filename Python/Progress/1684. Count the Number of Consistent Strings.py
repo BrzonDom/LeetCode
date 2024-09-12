@@ -72,8 +72,10 @@ if __name__ == "__main__":
 
         print(f"\tAllowed characters: {Alw}")
         print(f"\tString list: {Strs}")
+        print()
 
+        print("\tStrings:")
         for st in Strs:
-            print(st)
+            print(f"\t\t{st}")
 
         print("\n")
