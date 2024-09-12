@@ -82,6 +82,9 @@ def Slt01_FrItStr_Prt(Alw, Strs):
 
             cnss.append(st)
 
+    for st in cnss:
+        print(st)
+
     return cnsCnt
 
 
