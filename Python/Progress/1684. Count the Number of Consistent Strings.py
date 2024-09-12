@@ -74,6 +74,8 @@ if __name__ == "__main__":
         print(f"\tString list: {Strs}")
         print()
 
+        cnsCnt = 0
+
         print("\tStrings:")
         for st in Strs:
             print(f"\t\t{st}")
@@ -87,5 +89,7 @@ if __name__ == "__main__":
 
             if cns:
                 print(st)
+
+                cnsCnt += 1
 
         print("\n")
