@@ -57,6 +57,11 @@ https://leetcode.com/problems/count-the-number-of-consistent-strings/description
 """
 
 
+def Slt01_FrItStr_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [["ab", ["ad", "bd", "aaab", "baa", "badab"]],
