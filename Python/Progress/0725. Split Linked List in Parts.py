@@ -61,6 +61,12 @@ https://leetcode.com/problems/split-linked-list-in-parts/description/
 #         self.next = next
 
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 2, 3], 5],
