@@ -109,7 +109,7 @@ if __name__ == "__main__":
         Alw = case[0]
         Strs = case[1]
 
-        print(f"\t{Alw}")
-        print(f"\t{Strs}")
+        print(f"\tAllowed characters: {Alw}")
+        print(f"\tString list: {Strs}")
 
         print("\n")
