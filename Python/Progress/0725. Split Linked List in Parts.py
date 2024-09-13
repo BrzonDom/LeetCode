@@ -104,8 +104,11 @@ if __name__ == "__main__":
         print()
 
         dvLnks = [[] for pr in range(Prt)]
+        crLnks = Lnks
 
         for dv in dvds:
-            print(f"\t\t{dv}")
+            print(f"\t\t{dv}: {crLnks[:dv]}")
+
+            crLnks = crLnks[dv:]
 
         print("\n")
