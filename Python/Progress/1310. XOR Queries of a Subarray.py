@@ -77,7 +77,7 @@ if __name__ == "__main__":
         print()
 
         for nm in Arr:
-            print(f"\t\t{nm}")
+            print(f"\t\t{nm} = {bin(nm)[2:]}")
         print()
 
         for qr in Qurs:
