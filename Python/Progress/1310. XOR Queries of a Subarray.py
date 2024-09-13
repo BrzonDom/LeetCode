@@ -45,4 +45,11 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
         queries[i].length == 2
         0 <= left_i <= right_i < arr.length
 
+
+    Topics:
+
+        Array
+        Bit Manipulation
+        Prefix Sum
+
 """
