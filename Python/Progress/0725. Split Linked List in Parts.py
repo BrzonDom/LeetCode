@@ -88,8 +88,8 @@ if __name__ == "__main__":
 
         dvds = [0 for _ in range(Prt)]
 
-        dfr = lnLnk % Prt
         prt = lnLnk // Prt
+        dfr = lnLnk % Prt
 
         print(f"\t\tPart value: {prt}")
         print(f"\t\tDifferent parts: {dfr}")
