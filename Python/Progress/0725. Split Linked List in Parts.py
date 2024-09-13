@@ -105,6 +105,8 @@ if __name__ == "__main__":
         print(f"\tParts: {Prt}")
         print()
 
+        lnkLst = LinkList()
+
         dvds = [0 for _ in range(Prt)]
 
         prt = lnLnk // Prt
