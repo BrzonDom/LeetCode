@@ -129,6 +129,12 @@ if __name__ == "__main__":
         prt = lnLnk // Prt
         dfr = lnLnk % Prt
 
+        crNd = lnkLst.head
+
+        for id in range(Prt):
+
+            crNd = crNd.nxt
+
         print(f"\t\tPart value: {prt}")
         print(f"\t\tDifferent parts: {dfr}")
 
