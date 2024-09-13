@@ -107,6 +107,9 @@ if __name__ == "__main__":
 
         lnkLst = LinkList()
 
+        for val in Lnks:
+            lnkLst.add(val)
+
         dvds = [0 for _ in range(Prt)]
 
         prt = lnLnk // Prt
