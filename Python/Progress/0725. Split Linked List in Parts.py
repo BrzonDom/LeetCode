@@ -110,6 +110,8 @@ if __name__ == "__main__":
         for val in Lnks:
             lnkLst.add(val)
 
+        crNd = lnkLst.head
+
         dvds = [0 for _ in range(Prt)]
 
         prt = lnLnk // Prt
