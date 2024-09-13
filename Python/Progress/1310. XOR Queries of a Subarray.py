@@ -76,6 +76,9 @@ if __name__ == "__main__":
         print(f"\tQueries: {Qurs}")
         print()
 
+        for nm in Arr:
+            print(nm)
+
         for qr in Qurs:
             lf, rg = qr[0], qr[1]
 
