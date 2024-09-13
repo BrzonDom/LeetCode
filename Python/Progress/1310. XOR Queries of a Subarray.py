@@ -81,6 +81,8 @@ if __name__ == "__main__":
             print(f"\t\t\t{nm} = {bin(nm)[2:]}")
         print()
 
+        xrAr = []
+
         print("\t\tQueries arrays:")
         for qr in Qurs:
             lf, rg = qr[0], qr[1] + 1
@@ -89,6 +91,8 @@ if __name__ == "__main__":
             crNm = crAr[0]
             for nm in crAr[1:]:
                 crNm ^= nm
+
+            xrAr.append(crAr)
 
             print(f"\t\t\t{qr}: {crAr} = {crNm}")
 
