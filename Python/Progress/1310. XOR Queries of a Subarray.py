@@ -76,8 +76,9 @@ if __name__ == "__main__":
         print(f"\tQueries: {Qurs}")
         print()
 
+        print("\t\tBinary array:")
         for nm in Arr:
-            print(f"\t\t{nm} = {bin(nm)[2:]}")
+            print(f"\t\t\t{nm} = {bin(nm)[2:]}")
         print()
 
         for qr in Qurs:
