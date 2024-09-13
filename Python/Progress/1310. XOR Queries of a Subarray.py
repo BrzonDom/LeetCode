@@ -90,6 +90,6 @@ if __name__ == "__main__":
             for nm in crAr[1:]:
                 crNm ^= nm
 
-            print(f"\t\t\t{qr}: {crAr}")
+            print(f"\t\t\t{qr}: {crAr} = {crNm}")
 
         print("\n")
