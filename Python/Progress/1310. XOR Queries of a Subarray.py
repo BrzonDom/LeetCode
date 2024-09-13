@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
         print("\t\tQueries arrays:")
         for qr in Qurs:
-            lf, rg = qr[0], qr[1]
+            lf, rg = qr[0], qr[1] + 1
             crAr = Arr[lf:rg]
 
             print(f"\t\t\t{qr}: {crAr}")
