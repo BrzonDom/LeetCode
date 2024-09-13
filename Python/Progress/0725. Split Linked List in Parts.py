@@ -114,5 +114,10 @@ if __name__ == "__main__":
         print()
 
         print(f"\tDivided linked list: {dvLnks}")
+        print()
+
+        print(f"\tDivision parts:")
+        for dv in dvLnks:
+            print(f"\t\t{dv}")
 
         print("\n")
