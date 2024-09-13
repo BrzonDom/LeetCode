@@ -112,6 +112,11 @@ if __name__ == "__main__":
 
         crNd = lnkLst.head
 
+        while crNd:
+            print(crNd.val)
+
+            crNd = crNd.nxt
+
         dvds = [0 for _ in range(Prt)]
 
         prt = lnLnk // Prt
