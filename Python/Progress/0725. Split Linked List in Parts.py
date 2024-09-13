@@ -133,6 +133,11 @@ if __name__ == "__main__":
 
         for i in range(Prt):
 
+            if i < dfr:
+                crPrt = prt + 1
+            else:
+                crPrt = prt
+
             if crNd:
                 crNd = crNd.nxt
 
