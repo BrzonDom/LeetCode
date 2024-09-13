@@ -102,4 +102,6 @@ if __name__ == "__main__":
 
         print(f"\t\tLinked list division: {dvds}")
 
+        dvLnks = []
+
         print("\n")
