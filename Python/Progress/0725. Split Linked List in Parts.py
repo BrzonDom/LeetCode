@@ -84,10 +84,14 @@ if __name__ == "__main__":
         print(f"\tLinked list: {Lnks}")
         print(f"\t\tList length: {lnLnk}")
         print(f"\tParts: {Prt}")
+        print()
 
         dvds = [0 for _ in range(Prt)]
 
         dfr = lnLnk % Prt
         prt = lnLnk // Prt
+
+        print(f"\t\tPart value: {prt}")
+        print(f"\t\tDifferent parts: {dfr}")
 
         print("\n")
