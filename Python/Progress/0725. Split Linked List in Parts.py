@@ -106,9 +106,10 @@ if __name__ == "__main__":
         dvLnks = [[] for pr in range(Prt)]
         crLnks = Lnks
 
-        for dv in dvds:
+        for id, dv in enumerate(dvds):
             print(f"\t\t{dv}: {crLnks[:dv]}")
 
+            dvLnks[id] = crLnks[:dv]
             crLnks = crLnks[dv:]
 
         print("\n")
