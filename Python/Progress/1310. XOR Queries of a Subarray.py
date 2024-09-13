@@ -86,6 +86,10 @@ if __name__ == "__main__":
             lf, rg = qr[0], qr[1] + 1
             crAr = Arr[lf:rg]
 
+            crNm = crAr[0]
+            for nm in crAr[1:]:
+                crNm ^= nm
+
             print(f"\t\t\t{qr}: {crAr}")
 
         print("\n")
