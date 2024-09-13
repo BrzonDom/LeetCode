@@ -111,5 +111,8 @@ if __name__ == "__main__":
 
             dvLnks[id] = crLnks[:dv]
             crLnks = crLnks[dv:]
+        print()
+
+        print(f"\tDivided linked list: {dvLnks}")
 
         print("\n")
