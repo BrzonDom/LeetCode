@@ -129,6 +129,8 @@ if __name__ == "__main__":
         prt = lnLnk // Prt
         dfr = lnLnk % Prt
 
+        dvLnks = [[] for pr in range(Prt)]
+
         crNd = lnkLst.head
 
         for i in range(Prt):
