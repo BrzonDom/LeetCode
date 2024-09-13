@@ -58,3 +58,12 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
         Daily: 2024/09/13
 
 """
+
+
+InputLst = [[[1,3,4,8], [[0,1],[1,2],[0,3],[3,3]]],
+            [[4,8,2,10], [[2,3],[1,3],[0,0],[0,3]]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
