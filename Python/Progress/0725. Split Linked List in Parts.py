@@ -97,4 +97,7 @@ if __name__ == "__main__":
         for id in range(Prt):
             dvds[id] = prt
 
+        for id in range(dfr):
+            dvds[id] += 1
+
         print("\n")
