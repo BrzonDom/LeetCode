@@ -101,10 +101,11 @@ if __name__ == "__main__":
             dvds[id] += 1
 
         print(f"\t\tLinked list division: {dvds}")
+        print()
 
         dvLnks = [[] for pr in range(Prt)]
 
         for dv in dvds:
-            print(dv)
+            print(f"\t\t{dv}")
 
         print("\n")
