@@ -113,9 +113,10 @@ if __name__ == "__main__":
         crNd = lnkLst.head
 
         while crNd:
-            print(crNd.val)
+            print(crNd.val, end=" ")
 
             crNd = crNd.nxt
+        print("\n")
 
         dvds = [0 for _ in range(Prt)]
 
