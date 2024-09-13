@@ -75,4 +75,7 @@ if __name__ == "__main__":
         print(f"\tArray: {Arr}")
         print(f"\tQueries: {Qurs}")
 
+        for qr in Qurs:
+            print(qr)
+
         print("\n")
