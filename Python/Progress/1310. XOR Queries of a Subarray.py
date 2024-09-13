@@ -52,8 +52,9 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
         Bit Manipulation
         Prefix Sum
 
-        Courses:
 
-            Daily: 2024/09/13
+    Courses:
+
+        Daily: 2024/09/13
 
 """
