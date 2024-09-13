@@ -77,6 +77,9 @@ class LinkList:
         if self.head is None:
             self.head = nwNd
 
+        else:
+            crNd = self.head
+
 
 if __name__ == "__main__":
 
