@@ -94,4 +94,7 @@ if __name__ == "__main__":
         print(f"\t\tPart value: {prt}")
         print(f"\t\tDifferent parts: {dfr}")
 
+        for id in range(Prt):
+            dvds[id] = prt
+
         print("\n")
