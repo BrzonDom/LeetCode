@@ -21,15 +21,15 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
 
         Explanation:
             The binary representation of the elements in the array are:
-            1 = 0001
-            3 = 0011
-            4 = 0100
-            8 = 1000
-            The XOR values for queries are:
-            [0, 1] = 1 xor 3 = 2
-            [1, 2] = 3 xor 4 = 7
-            [0, 3] = 1 xor 3 xor 4 xor 8 = 14
-            [3, 3] = 8
+                1 = 0001
+                3 = 0011
+                4 = 0100
+                8 = 1000
+                The XOR values for queries are:
+                [0, 1] = 1 xor 3 = 2
+                [1, 2] = 3 xor 4 = 7
+                [0, 3] = 1 xor 3 xor 4 xor 8 = 14
+                [3, 3] = 8
 
     Example 2:
 
