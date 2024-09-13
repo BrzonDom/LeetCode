@@ -116,7 +116,12 @@ if __name__ == "__main__":
             print(crNd.val, end=" ")
 
             crNd = crNd.nxt
-        print("\n")
+
+            if crNd:
+                print(">", end=" ")
+            else:
+                print()
+        print()
 
         dvds = [0 for _ in range(Prt)]
 
