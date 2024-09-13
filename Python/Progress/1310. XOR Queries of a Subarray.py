@@ -77,7 +77,8 @@ if __name__ == "__main__":
         print()
 
         for nm in Arr:
-            print(nm)
+            print(f"\t\t{nm}")
+        print()
 
         for qr in Qurs:
             lf, rg = qr[0], qr[1]
