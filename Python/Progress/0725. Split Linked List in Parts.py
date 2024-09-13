@@ -104,4 +104,7 @@ if __name__ == "__main__":
 
         dvLnks = [[] for pr in range(Prt)]
 
+        for dv in dvds:
+            print(dv)
+
         print("\n")
