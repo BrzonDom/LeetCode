@@ -71,6 +71,9 @@ class LinkList:
     def __init__(self):
         self.head = None
 
+    def add(self, val):
+        nwNd = ListNode(val)
+
 
 if __name__ == "__main__":
 
