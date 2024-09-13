@@ -140,6 +140,11 @@ if __name__ == "__main__":
             else:
                 crPrt = prt
 
+            for pr in range(crPrt):
+
+                if crNd:
+                    crNd = crNd.nxt
+
             if crNd:
                 crNd = crNd.nxt
 
