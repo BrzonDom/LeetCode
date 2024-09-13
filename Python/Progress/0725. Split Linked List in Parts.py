@@ -141,9 +141,12 @@ if __name__ == "__main__":
                 crPrt = prt
 
             for pr in range(crPrt):
+                dvLnks[i].append(crNd)
 
                 if crNd:
                     crNd = crNd.nxt
+                else:
+                    break
 
             if crNd:
                 crNd = crNd.nxt
