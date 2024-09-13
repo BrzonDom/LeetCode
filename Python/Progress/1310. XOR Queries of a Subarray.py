@@ -81,9 +81,10 @@ if __name__ == "__main__":
             print(f"\t\t\t{nm} = {bin(nm)[2:]}")
         print()
 
+        print("\t\tQueries arrays:")
         for qr in Qurs:
             lf, rg = qr[0], qr[1]
 
-            print(f"\t\t{qr}: {Arr[lf:rg]}")
+            print(f"\t\t\t{qr}: {Arr[lf:rg]}")
 
         print("\n")
