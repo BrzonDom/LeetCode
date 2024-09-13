@@ -80,6 +80,11 @@ class LinkList:
         else:
             crNd = self.head
 
+            while crNd.nxt:
+                crNd = crNd.nxt
+
+            crNd.nxt = nwNd
+
 
 if __name__ == "__main__":
 
