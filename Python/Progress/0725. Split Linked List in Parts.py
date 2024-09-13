@@ -50,7 +50,7 @@ https://leetcode.com/problems/split-linked-list-in-parts/description/
 
     Courses:
 
-        Daily: 2024/09/13
+        Daily: 2024/09/08
 
 """
 
