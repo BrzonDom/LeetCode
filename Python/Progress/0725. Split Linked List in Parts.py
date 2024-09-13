@@ -134,6 +134,7 @@ if __name__ == "__main__":
         crNd = lnkLst.head
 
         for i in range(Prt):
+            dvLnks.append(crNd)
 
             if i < dfr:
                 crPrt = prt + 1
@@ -148,7 +149,7 @@ if __name__ == "__main__":
                     break
 
             if crNd:
-                crNd = crNd.nxt
+                crNd.next, crNd = None, crNd.nxt
 
         print(f"\t\tPart value: {prt}")
         print(f"\t\tDifferent parts: {dfr}")
