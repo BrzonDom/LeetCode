@@ -67,6 +67,11 @@ class ListNode:
         self.nxt = nxt
 
 
+class LinkList:
+    def __init__(self):
+        self.head = None
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 2, 3], 5],
