@@ -131,18 +131,18 @@ if __name__ == "__main__":
 
         crNd = lnkLst.head
 
-        for id in range(Prt):
+        for i in range(Prt):
 
             crNd = crNd.nxt
 
         print(f"\t\tPart value: {prt}")
         print(f"\t\tDifferent parts: {dfr}")
 
-        for id in range(Prt):
-            dvds[id] = prt
+        for i in range(Prt):
+            dvds[i] = prt
 
-        for id in range(dfr):
-            dvds[id] += 1
+        for i in range(dfr):
+            dvds[i] += 1
 
         print(f"\t\tLinked list division: {dvds}")
         print()
@@ -150,10 +150,10 @@ if __name__ == "__main__":
         dvLnks = [[] for pr in range(Prt)]
         crLnks = Lnks
 
-        for id, dv in enumerate(dvds):
+        for i, dv in enumerate(dvds):
             print(f"\t\t{dv}: {crLnks[:dv]}")
 
-            dvLnks[id] = crLnks[:dv]
+            dvLnks[i] = crLnks[:dv]
             crLnks = crLnks[dv:]
         print()
 
