@@ -95,5 +95,8 @@ if __name__ == "__main__":
             xrAr.append(crAr)
 
             print(f"\t\t\t{qr}: {crAr} = {crNm}")
+        print()
+
+        print(f"\tXOR Array: {xrAr}")
 
         print("\n")
