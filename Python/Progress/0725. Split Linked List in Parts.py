@@ -112,6 +112,7 @@ if __name__ == "__main__":
 
         crNd = lnkLst.head
 
+        print("\t\tLinked list: ", end="")
         while crNd:
             print(crNd.val, end=" ")
 
