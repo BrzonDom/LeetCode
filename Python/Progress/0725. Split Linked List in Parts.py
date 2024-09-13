@@ -141,8 +141,7 @@ if __name__ == "__main__":
             else:
                 crPrt = prt
 
-            for pr in range(crPrt):
-
+            for pr in range(crPrt-1):
                 if crNd:
                     crNd = crNd.nxt
                 else:
