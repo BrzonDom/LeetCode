@@ -129,7 +129,7 @@ if __name__ == "__main__":
         prt = lnLnk // Prt
         dfr = lnLnk % Prt
 
-        dvLnks = [[] for pr in range(Prt)]
+        dvLnks = []
 
         crNd = lnkLst.head
 
@@ -141,7 +141,6 @@ if __name__ == "__main__":
                 crPrt = prt
 
             for pr in range(crPrt):
-                dvLnks[i].append(crNd)
 
                 if crNd:
                     crNd = crNd.nxt
