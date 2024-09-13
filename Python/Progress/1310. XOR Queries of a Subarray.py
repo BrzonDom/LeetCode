@@ -60,14 +60,16 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
 """
 
 
-InputLst = [[[1, 3, 4, 8], [[0, 1], [1, 2], [0, 3], [3, 3]]],
-            [[4, 8, 2, 10], [[2, 3], [1, 3], [0, 0], [0, 3]]]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[1, 3, 4, 8], [[0, 1], [1, 2], [0, 3], [3, 3]]],
+                [[4, 8, 2, 10], [[2, 3], [1, 3], [0, 0], [0, 3]]]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
