@@ -100,4 +100,6 @@ if __name__ == "__main__":
         for id in range(dfr):
             dvds[id] += 1
 
+        print(f"\t\tLinked list division: {dvds}")
+
         print("\n")
