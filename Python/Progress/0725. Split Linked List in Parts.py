@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
         lnLnk = len(Lnks)
 
-        print(f"\tLinked list: {Lnks}")
+        print(f"\tLinked list values: {Lnks}")
         print(f"\t\tList length: {lnLnk}")
         print(f"\tParts: {Prt}")
         print()
