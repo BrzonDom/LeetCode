@@ -133,7 +133,8 @@ if __name__ == "__main__":
 
         for i in range(Prt):
 
-            crNd = crNd.nxt
+            if crNd:
+                crNd = crNd.nxt
 
         print(f"\t\tPart value: {prt}")
         print(f"\t\tDifferent parts: {dfr}")
