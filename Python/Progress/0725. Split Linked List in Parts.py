@@ -102,6 +102,6 @@ if __name__ == "__main__":
 
         print(f"\t\tLinked list division: {dvds}")
 
-        dvLnks = []
+        dvLnks = [[] for pr in range(Prt)]
 
         print("\n")
