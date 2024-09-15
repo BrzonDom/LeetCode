@@ -45,3 +45,12 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
             1 <= nums[i] <= 10^6
 
 """
+
+
+InputLst = [[1,2,3,3,2,2],
+            [1,2,3,4]]
+
+for case in InputLst:
+
+    print(case)
+    print()
