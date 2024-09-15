@@ -54,3 +54,13 @@ https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-ev
             Daily: 2024/09/15
 
 """
+
+
+InputLst = ["eleetminicoworoep",
+            "leetcodeisgreat",
+            "bcbcbc"]
+
+for case in InputLst:
+
+    print(case)
+    print()
