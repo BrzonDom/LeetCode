@@ -44,6 +44,13 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
             1 <= nums.length <= 10^5
             1 <= nums[i] <= 10^6
 
+
+        Topics:
+
+            Array
+            Bit Manipulation
+            Brainteaser
+
 """
 
 
