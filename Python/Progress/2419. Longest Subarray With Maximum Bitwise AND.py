@@ -62,8 +62,10 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
 InputLst = [[1, 2, 3, 3, 2, 2],
             [1, 2, 3, 4]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case}")
 
-    print()
+    print("\n")
