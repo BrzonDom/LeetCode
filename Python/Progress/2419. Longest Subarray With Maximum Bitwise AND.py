@@ -8,8 +8,8 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
 
     Consider a non-empty subarray from nums that has the maximum possible bitwise AND.
 
-        - In other words, let k be the maximum value of the bitwise AND of any subarray of nums. Then, only subarrays with
-          a bitwise AND equal to k should be considered.
+        - In other words, let k be the maximum value of the bitwise AND of any subarray of nums. Then, only subarrays
+          with a bitwise AND equal to k should be considered.
 
     Return the length of the longest such subarray.
 
@@ -20,17 +20,17 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
 
         Example 1:
 
-            Input: nums = [1,2,3,3,2,2]
+            Input: nums = [1, 2, 3, 3, 2, 2]
 
             Output: 2
 
             Explanation:
                 The maximum possible bitwise AND of a subarray is 3.
-                The longest subarray with that value is [3,3], so we return 2.
+                The longest subarray with that value is [3, 3], so we return 2.
 
         Example 2:
 
-            Input: nums = [1,2,3,4]
+            Input: nums = [1, 2, 3, 4]
 
             Output: 1
 
@@ -47,8 +47,8 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
 """
 
 
-InputLst = [[1,2,3,3,2,2],
-            [1,2,3,4]]
+InputLst = [[1, 2, 3, 3, 2, 2],
+            [1, 2, 3, 4]]
 
 for case in InputLst:
 
