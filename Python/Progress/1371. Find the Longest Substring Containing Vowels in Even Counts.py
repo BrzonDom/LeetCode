@@ -40,4 +40,11 @@ https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-ev
             1 <= s.length <= 5 x 10^5
             s contains only lowercase English letters.
 
+
+        Topics:
+
+            Hash Table
+            String
+            Bit Manipulation
+            Prefix Sum
 """
