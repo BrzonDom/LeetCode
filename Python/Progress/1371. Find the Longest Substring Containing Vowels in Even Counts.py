@@ -68,6 +68,6 @@ if __name__ == "__main__":
 
         Str = case
 
-        print(f"\t{Str}")
+        print(f"\tString: {Str}")
 
         print("\n")
