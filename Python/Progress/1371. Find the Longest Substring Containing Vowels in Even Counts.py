@@ -56,14 +56,16 @@ https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-ev
 """
 
 
-InputLst = ["eleetminicoworoep",
-            "leetcodeisgreat",
-            "bcbcbc"]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = ["eleetminicoworoep",
+                "leetcodeisgreat",
+                "bcbcbc"]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
