@@ -47,4 +47,10 @@ https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-ev
             String
             Bit Manipulation
             Prefix Sum
+
+
+        Courses:
+
+            Daily: 2024/09/15
+
 """
