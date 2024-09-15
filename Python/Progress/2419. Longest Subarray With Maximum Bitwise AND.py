@@ -51,6 +51,11 @@ https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/descript
             Bit Manipulation
             Brainteaser
 
+
+        Courses:
+
+            Daily: 2024/09/14
+
 """
 
 
