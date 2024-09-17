@@ -74,8 +74,9 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
     print("\t\tQueries arrays:")
     for qr in Qurs:
         lf, rg = qr[0], qr[1] + 1
+        crAr = Arr[lf:rg]
 
-        print(f"\t\t\t{qr}: {Arr[lf:rg]}")
+        print(f"\t\t\t{qr}: {crAr}")
 
 
 if __name__ == "__main__":
