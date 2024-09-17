@@ -85,6 +85,9 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
         xrAr.append(crNm)
 
         print(f"\t\t\t{qr}: {crAr} = {crNm}")
+    print()
+
+    print(f"\tXOR Array: {xrAr}")
 
     return xrAr
 
