@@ -116,5 +116,6 @@ if __name__ == "__main__":
 
         for qr in Qurs:
             print(qr[0], qr[1])
+            print(Arr[qr[0]:qr[1] + 1])
 
         print("\n")
