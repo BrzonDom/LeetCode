@@ -62,7 +62,8 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
 
 def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
 
-    return
+    print(f"\tArray: {Arr}")
+    print(f"\tQueries: {Qurs}")
 
 
 if __name__ == "__main__":
