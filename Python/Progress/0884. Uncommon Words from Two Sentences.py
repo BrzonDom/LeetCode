@@ -93,5 +93,8 @@ if __name__ == "__main__":
                     print(f"\t\t\t{wd}")
 
                     unqWrd.append(wd)
+        print()
+
+        print(f"\tAll unique words: {unqWrd}")
 
         print("\n")
