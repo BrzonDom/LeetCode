@@ -109,4 +109,7 @@ if __name__ == "__main__":
         print(f"\tArray: {Arr}")
         print(f"\tQueries: {Qurs}")
 
+        for nm in Arr:
+            print(nm)
+
         print("\n")
