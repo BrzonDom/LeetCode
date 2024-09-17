@@ -64,9 +64,10 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
 
     print(f"\tArray: {Arr}")
     print(f"\tQueries: {Qurs}")
+    print()
 
     for nm in Arr:
-        print(nm)
+        print(f"\t\t{nm}")
 
 
 if __name__ == "__main__":
