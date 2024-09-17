@@ -67,7 +67,7 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
     print()
 
     for nm in Arr:
-        print(f"\t\t{nm}")
+        print(f"\t\t{nm} = {bin(nm)[2:]}")
 
 
 if __name__ == "__main__":
