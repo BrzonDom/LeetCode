@@ -50,6 +50,11 @@ https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
 """
 
 
+def Brt01_TwWrdCmpItr_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [["this apple is sweet", "this apple is sour"],
