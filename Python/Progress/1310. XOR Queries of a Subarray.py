@@ -60,6 +60,11 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
 """
 
 
+def Brt01_QursItr_XorSum_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 3, 4, 8], [[0, 1], [1, 2], [0, 3], [3, 3]]],
