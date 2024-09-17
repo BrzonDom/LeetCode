@@ -50,7 +50,7 @@ https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
 """
 
 
-def Brt01_TwWrdCmpItr_Prt():
+def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
 
     return
 
