@@ -75,4 +75,7 @@ if __name__ == "__main__":
         for wd in wrd1:
             print(wd)
 
+        for wd in wrd2:
+            print(wd)
+
         print("\n")
