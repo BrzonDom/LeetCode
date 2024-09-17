@@ -106,7 +106,7 @@ if __name__ == "__main__":
         Arr = case[0]
         Qurs = case[1]
 
-        print(f"\t{Arr}")
-        print(f"\t{Qurs}")
+        print(f"\tArray: {Arr}")
+        print(f"\tQueries: {Qurs}")
 
         print("\n")
