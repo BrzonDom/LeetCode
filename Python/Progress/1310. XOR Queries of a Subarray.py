@@ -69,10 +69,12 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
     print("\t\tBinary array:")
     for nm in Arr:
         print(f"\t\t\t{nm} = {bin(nm)[2:]}")
+    print()
 
+    print("\t\tQueries arrays:")
     for qr in Qurs:
 
-        print(Arr[qr[0]:qr[1] + 1])
+        print(f"\t\t\t{qr}: {Arr[qr[0]:qr[1] + 1]}")
 
 
 if __name__ == "__main__":
