@@ -55,6 +55,9 @@ def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
     print(f"\t1. String: {Str1}")
     print(f"\t2. String: {Str2}")
 
+    wrd1 = Str1.split()
+    wrd2 = Str2.split()
+
 
 if __name__ == "__main__":
 
