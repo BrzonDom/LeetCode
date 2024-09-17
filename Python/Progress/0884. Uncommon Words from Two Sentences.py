@@ -53,9 +53,11 @@ https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
 InputLst = [["this apple is sweet", "this apple is sour"],
             ["apple apple", "banana"]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case[0]}")
     print(f"\t{case[1]}")
 
-    print()
+    print("\n")
