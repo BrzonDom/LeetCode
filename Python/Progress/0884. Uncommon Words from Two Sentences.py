@@ -72,4 +72,7 @@ if __name__ == "__main__":
         print(f"\t1. Words: {wrd1}")
         print(f"\t2. Words: {wrd2}")
 
+        for wd in wrd1:
+            print(wd)
+
         print("\n")
