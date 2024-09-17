@@ -113,9 +113,9 @@ if __name__ == "__main__":
         print("\t\tBinary array:")
         for nm in Arr:
             print(f"\t\t\t{nm} = {bin(nm)[2:]}")
+        print()
 
         for qr in Qurs:
-            print(qr[0], qr[1])
-            print(Arr[qr[0]:qr[1] + 1])
+            print(f"{qr}: {Arr[qr[0]: qr[1] + 1]}")
 
         print("\n")
