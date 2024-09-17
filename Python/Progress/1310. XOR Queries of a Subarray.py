@@ -60,7 +60,7 @@ https://leetcode.com/problems/xor-queries-of-a-subarray/description/
 """
 
 
-def Brt01_QursItr_XorSum_Prt():
+def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
 
     return
 
