@@ -114,4 +114,7 @@ if __name__ == "__main__":
         for nm in Arr:
             print(f"\t\t\t{nm} = {bin(nm)[2:]}")
 
+        for qr in Qurs:
+            print(qr[0], qr[1])
+
         print("\n")
