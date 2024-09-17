@@ -76,11 +76,11 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
         lf, rg = qr[0], qr[1] + 1
         crAr = Arr[lf:rg]
 
-        print(f"\t\t\t{qr}: {crAr}")
-
         crNm = crAr[0]
         for nm in crAr[1:]:
             crNm ^= nm
+
+        print(f"\t\t\t{qr}: {crAr} = {crNm}")
 
 
 if __name__ == "__main__":
