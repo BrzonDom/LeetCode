@@ -52,7 +52,8 @@ https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
 
 def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
 
-    return
+    print(f"\t1. String: {Str1}")
+    print(f"\t2. String: {Str2}")
 
 
 if __name__ == "__main__":
