@@ -77,19 +77,21 @@ if __name__ == "__main__":
 
         print("\t\t1. Unique words:")
         for wd in wrd1:
+            if wrd1.count(wd) < 2:
 
-            if wd not in wrd2:
-                print(f"\t\t\t{wd}")
+                if wd not in wrd2:
+                    print(f"\t\t\t{wd}")
 
-                unqWrd.append(wd)
+                    unqWrd.append(wd)
         print()
 
         print("\t\t2. Unique words:")
         for wd in wrd2:
+            if wrd2.count(wd) < 2:
 
-            if wd not in wrd1:
-                print(f"\t\t\t{wd}")
+                if wd not in wrd1:
+                    print(f"\t\t\t{wd}")
 
-                unqWrd.append(wd)
+                    unqWrd.append(wd)
 
         print("\n")
