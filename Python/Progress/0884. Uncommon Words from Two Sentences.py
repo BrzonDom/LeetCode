@@ -15,7 +15,7 @@ https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
 
         Input: s1 = "this apple is sweet", s2 = "this apple is sour"
 
-        Output: ["sweet","sour"]
+        Output: ["sweet", "sour"]
 
         Explanation:
             The word "sweet" appears only in s1, while the word "sour" appears only in s2.
