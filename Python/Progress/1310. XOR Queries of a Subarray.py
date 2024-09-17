@@ -101,6 +101,12 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Brt01_QursItr_XorSum_Prt(case[0], case[1])
+        # Brt01_QursItr_XorSum_Prt(case[0], case[1])
+
+        Arr = case[0]
+        Qurs = case[1]
+
+        print(f"\t{Arr}")
+        print(f"\t{Qurs}")
 
         print("\n")
