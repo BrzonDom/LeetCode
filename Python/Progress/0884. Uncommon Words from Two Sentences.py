@@ -48,3 +48,12 @@ https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
         Daily: 2024/09/17
 
 """
+
+
+InputLst = [["this apple is sweet", "this apple is sour"],
+            ["apple apple", "banana"]]
+
+for case in InputLst:
+
+    print(case)
+    print()
