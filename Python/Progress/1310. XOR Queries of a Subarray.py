@@ -86,6 +86,8 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
 
         print(f"\t\t\t{qr}: {crAr} = {crNm}")
 
+    return xrAr
+
 
 if __name__ == "__main__":
 
