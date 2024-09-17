@@ -87,34 +87,36 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Arr = case[0]
-        Qurs = case[1]
+        Brt01_QursItr_XorSum_Prt(case[0], case[1])
 
-        print(f"\tArray: {Arr}")
-        print(f"\tQueries: {Qurs}")
-        print()
-
-        print("\t\tBinary array:")
-        for nm in Arr:
-            print(f"\t\t\t{nm} = {bin(nm)[2:]}")
-        print()
-
-        xrAr = []
-
-        print("\t\tQueries arrays:")
-        for qr in Qurs:
-            lf, rg = qr[0], qr[1] + 1
-            crAr = Arr[lf:rg]
-
-            crNm = crAr[0]
-            for nm in crAr[1:]:
-                crNm ^= nm
-
-            xrAr.append(crAr)
-
-            print(f"\t\t\t{qr}: {crAr} = {crNm}")
-        print()
-
-        print(f"\tXOR Array: {xrAr}")
+        # Arr = case[0]
+        # Qurs = case[1]
+        #
+        # print(f"\tArray: {Arr}")
+        # print(f"\tQueries: {Qurs}")
+        # print()
+        #
+        # print("\t\tBinary array:")
+        # for nm in Arr:
+        #     print(f"\t\t\t{nm} = {bin(nm)[2:]}")
+        # print()
+        #
+        # xrAr = []
+        #
+        # print("\t\tQueries arrays:")
+        # for qr in Qurs:
+        #     lf, rg = qr[0], qr[1] + 1
+        #     crAr = Arr[lf:rg]
+        #
+        #     crNm = crAr[0]
+        #     for nm in crAr[1:]:
+        #         crNm ^= nm
+        #
+        #     xrAr.append(crAr)
+        #
+        #     print(f"\t\t\t{qr}: {crAr} = {crNm}")
+        # print()
+        #
+        # print(f"\tXOR Array: {xrAr}")
 
         print("\n")
