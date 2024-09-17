@@ -71,15 +71,19 @@ if __name__ == "__main__":
 
         print(f"\t1. Words: {wrd1}")
         print(f"\t2. Words: {wrd2}")
+        print()
 
+        print("\t\t1. Unique words:")
         for wd in wrd1:
 
             if wd not in wrd2:
-                print(wd)
+                print(f"\t\t\t{wd}")
+        print()
 
+        print("\t\t2. Unique words:")
         for wd in wrd2:
 
             if wd not in wrd1:
-                print(wd)
+                print(f"\t\t\t{wd}")
 
         print("\n")
