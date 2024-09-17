@@ -55,5 +55,6 @@ InputLst = [["this apple is sweet", "this apple is sour"],
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
