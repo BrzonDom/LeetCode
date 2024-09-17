@@ -71,6 +71,8 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
         print(f"\t\t\t{nm} = {bin(nm)[2:]}")
     print()
 
+    xrAr = []
+
     print("\t\tQueries arrays:")
     for qr in Qurs:
         lf, rg = qr[0], qr[1] + 1
@@ -79,6 +81,8 @@ def Brt01_QursItr_XorSum_Prt(Arr, Qurs):
         crNm = crAr[0]
         for nm in crAr[1:]:
             crNm ^= nm
+
+        xrAr.append(crNm)
 
         print(f"\t\t\t{qr}: {crAr} = {crNm}")
 
