@@ -67,6 +67,9 @@ def Brt01_PrmTl_Prt(Nmbs):
             mxNm = int(crNm)
 
         print(f"\t\t\t{crNm}")
+    print()
+
+    print(f"\tMax Number: {mxNm}")
 
 
 if __name__ == "__main__":
