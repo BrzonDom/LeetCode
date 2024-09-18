@@ -135,11 +135,6 @@ if __name__ == "__main__":
                 unqWrds.append(wd)
         print()
 
-        print("\tUnique words:")
-        for uq in unqWrds:
-            print(f"\t\t{uq}")
-        print()
-
         print(f"\tAll unique words: {unqWrds}")
 
         print("\n")
