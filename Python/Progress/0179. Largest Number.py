@@ -55,6 +55,12 @@ def Brt01_PrmTl_Prt(Nmbs):
 
     print("\t\tPermutations:")
     for prm in nmbPrms:
+
+        crNm = ""
+
+        for nm in prm:
+            crNm += str(nm)
+
         print(f"\t\t\t{prm}")
 
 
