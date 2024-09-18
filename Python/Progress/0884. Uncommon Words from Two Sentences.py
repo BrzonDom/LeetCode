@@ -90,7 +90,7 @@ def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
     return unqWrd
 
 
-def Slt01_WrdDctItr_Prt():
+def Slt01_WrdDctItr_Prt(Str1, Str2):
 
     return
 
