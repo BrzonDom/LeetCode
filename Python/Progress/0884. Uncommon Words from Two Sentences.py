@@ -134,4 +134,7 @@ if __name__ == "__main__":
             if nm == 1:
                 unqWrds.append(wd)
 
+        for uq in unqWrds:
+            print(uq)
+
         print("\n")
