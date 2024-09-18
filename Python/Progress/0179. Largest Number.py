@@ -46,7 +46,7 @@ https://leetcode.com/problems/largest-number/description/
 from itertools import permutations
 
 
-def Brt01_PrmTl_Prt():
+def Brt01_PrmTl_Prt(Nmbs):
 
     return
 
