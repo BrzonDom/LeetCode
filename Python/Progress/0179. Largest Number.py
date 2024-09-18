@@ -34,4 +34,9 @@ https://leetcode.com/problems/largest-number/description/
         Greedy
         Sorting
 
+
+    Course:
+
+        Daily: 2024/09/18
+
 """
