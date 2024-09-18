@@ -130,6 +130,8 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
 
     print(f"\tAll unique words: {unqWrds}")
 
+    return unqWrds
+
 
 if __name__ == "__main__":
 
