@@ -63,10 +63,14 @@ def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
     print(f"\t2. Words: {wrd2}")
 
     for wd in wrd1:
-        print(wd)
+
+        if wd not in wrd2:
+            print(wd)
 
     for wd in wrd2:
-        print(wd)
+
+        if wd not in wrd1:
+            print(wd)
 
 
 if __name__ == "__main__":
