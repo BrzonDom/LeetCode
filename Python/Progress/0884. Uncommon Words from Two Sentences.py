@@ -83,6 +83,9 @@ def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
                 print(f"\t\t\t{wd}")
 
                 unqWrd.append(wd)
+    print()
+
+    print(f"\tAll unique words: {unqWrd}")
 
     return unqWrd
 
