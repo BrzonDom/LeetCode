@@ -124,4 +124,7 @@ if __name__ == "__main__":
             else:
                 cntDct[wd] += 1
 
+        for wd in cntDct:
+            print(wd, cntDct[wd])
+
         print("\n")
