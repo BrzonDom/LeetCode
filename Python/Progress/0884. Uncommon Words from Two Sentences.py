@@ -113,6 +113,7 @@ if __name__ == "__main__":
 
         print(f"\t1. Words: {wrd1}")
         print(f"\t2. Words: {wrd2}")
+        print()
 
         cntDct = {}
 
@@ -124,7 +125,8 @@ if __name__ == "__main__":
             else:
                 cntDct[wd] += 1
 
+        print("\t\tWords count:")
         for wd in cntDct:
-            print(wd, cntDct[wd])
+            print(f"\t\t\t{wd} : {cntDct[wd]}")
 
         print("\n")
