@@ -113,9 +113,14 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
         else:
             cntDct[wd] += 1
 
+    unqWrds = []
+
     print("\t\tWords count:")
     for wd, nm in cntDct.items():
         print(f"\t\t\t{wd} : {nm}")
+
+        if nm == 1:
+            unqWrds.append(wd)
 
 
 if __name__ == "__main__":
