@@ -90,6 +90,11 @@ def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
     return unqWrd
 
 
+def Slt01_WrdDctItr_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [["this apple is sweet", "this apple is sour"],
