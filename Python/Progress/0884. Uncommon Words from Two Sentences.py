@@ -121,9 +121,11 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
 
         if nm == 1:
             unqWrds.append(wd)
+    print()
 
+    print("\tUnique words:")
     for uq in unqWrds:
-        print(uq)
+        print(f"\t\t{uq}")
 
 
 if __name__ == "__main__":
