@@ -138,5 +138,8 @@ if __name__ == "__main__":
         print("\tUnique words:")
         for uq in unqWrds:
             print(f"\t\t{uq}")
+        print()
+
+        print(f"\tAll unique words: {unqWrds}")
 
         print("\n")
