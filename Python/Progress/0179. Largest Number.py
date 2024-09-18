@@ -58,10 +58,12 @@ if __name__ == "__main__":
         Nmbs = case
 
         print(f"\tNumbers: {Nmbs}")
+        print()
 
         nmbPrms = permutations(Nmbs)
 
+        print("\t\tPermutations:")
         for prm in nmbPrms:
-            print(prm)
+            print(f"\t\t\t{prm}")
 
         print("\n")
