@@ -104,7 +104,7 @@ if __name__ == "__main__":
         Str1 = case[0]
         Str2 = case[1]
 
-        print(f"\t{Str1}")
-        print(f"\t{Str2}")
+        print(f"\t1. String: {Str1}")
+        print(f"\t2. String: {Str2}")
 
         print("\n")
