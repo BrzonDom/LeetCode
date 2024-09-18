@@ -50,7 +50,7 @@ def Brt01_PrmTl_Prt(Nmbs):
 
     print(f"\tNumbers: {Nmbs}")
 
-    return
+    nmbPrm = permutations(Nmbs)
 
 
 if __name__ == "__main__":
