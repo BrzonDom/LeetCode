@@ -49,11 +49,13 @@ from itertools import permutations
 def Brt01_PrmTl_Prt(Nmbs):
 
     print(f"\tNumbers: {Nmbs}")
+    print()
 
     nmbPrms = permutations(Nmbs)
 
+    print("\t\tPermutations:")
     for prm in nmbPrms:
-        print(prm)
+        print(f"\t\t\t{prm}")
 
 
 if __name__ == "__main__":
