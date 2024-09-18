@@ -125,8 +125,13 @@ if __name__ == "__main__":
             else:
                 cntDct[wd] += 1
 
+        unqWrds = []
+
         print("\t\tWords count:")
         for wd, nm in cntDct.items():
             print(f"\t\t\t{wd} : {nm}")
+
+            if nm == 1:
+                unqWrds.append(wd)
 
         print("\n")
