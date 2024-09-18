@@ -112,6 +112,9 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
         else:
             cntDct[wd] += 1
 
+    for wd in cntDct:
+        print(wd, cntDct[wd])
+
 
 if __name__ == "__main__":
 
