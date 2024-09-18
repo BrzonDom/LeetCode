@@ -46,6 +46,11 @@ https://leetcode.com/problems/largest-number/description/
 from itertools import permutations
 
 
+def Brt01_PrmTl_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[10, 2],
