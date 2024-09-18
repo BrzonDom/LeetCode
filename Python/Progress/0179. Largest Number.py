@@ -46,8 +46,10 @@ https://leetcode.com/problems/largest-number/description/
 InputLst = [[10, 2],
             [3, 30, 34, 5, 9]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case}")
 
-    print()
+    print("\n")
