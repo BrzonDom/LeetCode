@@ -83,29 +83,31 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Nmbs = case
+        Brt01_PrmTl_Prt(case)
 
-        print(f"\tNumbers: {Nmbs}")
-        print()
-
-        nmbPrms = permutations(Nmbs)
-
-        mxNm = 0
-
-        print("\t\tPermutations:")
-        for prm in nmbPrms:
-
-            crNm = ""
-
-            for nm in prm:
-                crNm += str(nm)
-
-            if int(crNm) > mxNm:
-                mxNm = int(crNm)
-
-            print(f"\t\t\t{crNm}")
-        print()
-
-        print(f"\tMax Number: {mxNm}")
+        # Nmbs = case
+        #
+        # print(f"\tNumbers: {Nmbs}")
+        # print()
+        #
+        # nmbPrms = permutations(Nmbs)
+        #
+        # mxNm = 0
+        #
+        # print("\t\tPermutations:")
+        # for prm in nmbPrms:
+        #
+        #     crNm = ""
+        #
+        #     for nm in prm:
+        #         crNm += str(nm)
+        #
+        #     if int(crNm) > mxNm:
+        #         mxNm = int(crNm)
+        #
+        #     print(f"\t\t\t{crNm}")
+        # print()
+        #
+        # print(f"\tMax Number: {mxNm}")
 
         print("\n")
