@@ -84,6 +84,8 @@ def Brt01_TwWrdCmpItr_Prt(Str1, Str2):
 
                 unqWrd.append(wd)
 
+    return unqWrd
+
 
 if __name__ == "__main__":
 
