@@ -48,6 +48,8 @@ from itertools import permutations
 
 def Brt01_PrmTl_Prt(Nmbs):
 
+    print(f"\tNumbers: {Nmbs}")
+
     return
 
 
