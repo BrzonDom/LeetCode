@@ -76,7 +76,8 @@ if __name__ == "__main__":
                 mxNm = int(crNm)
 
             print(f"\t\t\t{crNm}")
+        print()
 
-        print(mxNm)
+        print(f"\tMax Number: {mxNm}")
 
         print("\n")
