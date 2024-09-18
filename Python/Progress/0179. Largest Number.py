@@ -43,6 +43,9 @@ https://leetcode.com/problems/largest-number/description/
 """
 
 
+from itertools import permutations
+
+
 if __name__ == "__main__":
 
     InputLst = [[10, 2],
@@ -55,5 +58,7 @@ if __name__ == "__main__":
         Nmbs = case
 
         print(f"\tNumbers: {Nmbs}")
+
+        nmbPrm = permutations(Nmbs)
 
         print("\n")
