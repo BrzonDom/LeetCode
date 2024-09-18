@@ -142,42 +142,44 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
+        Slt01_WrdDctItr_Prt(case[0], case[1])
+
         # Brt01_TwWrdCmpItr_Prt(case[0], case[1])
 
-        Str1 = case[0]
-        Str2 = case[1]
-
-        print(f"\t1. String: {Str1}")
-        print(f"\t2. String: {Str2}")
-        print()
-
-        wrd1 = Str1.split()
-        wrd2 = Str2.split()
-
-        print(f"\t1. Words: {wrd1}")
-        print(f"\t2. Words: {wrd2}")
-        print()
-
-        cntDct = {}
-
-        for wd in wrd1 + wrd2:
-
-            if wd not in cntDct:
-                cntDct[wd] = 1
-
-            else:
-                cntDct[wd] += 1
-
-        unqWrds = []
-
-        print("\t\tWords count:")
-        for wd, nm in cntDct.items():
-            print(f"\t\t\t{wd} : {nm}")
-
-            if nm == 1:
-                unqWrds.append(wd)
-        print()
-
-        print(f"\tAll unique words: {unqWrds}")
+        # Str1 = case[0]
+        # Str2 = case[1]
+        #
+        # print(f"\t1. String: {Str1}")
+        # print(f"\t2. String: {Str2}")
+        # print()
+        #
+        # wrd1 = Str1.split()
+        # wrd2 = Str2.split()
+        #
+        # print(f"\t1. Words: {wrd1}")
+        # print(f"\t2. Words: {wrd2}")
+        # print()
+        #
+        # cntDct = {}
+        #
+        # for wd in wrd1 + wrd2:
+        #
+        #     if wd not in cntDct:
+        #         cntDct[wd] = 1
+        #
+        #     else:
+        #         cntDct[wd] += 1
+        #
+        # unqWrds = []
+        #
+        # print("\t\tWords count:")
+        # for wd, nm in cntDct.items():
+        #     print(f"\t\t\t{wd} : {nm}")
+        #
+        #     if nm == 1:
+        #         unqWrds.append(wd)
+        # print()
+        #
+        # print(f"\tAll unique words: {unqWrds}")
 
         print("\n")
