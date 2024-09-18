@@ -64,6 +64,12 @@ if __name__ == "__main__":
 
         print("\t\tPermutations:")
         for prm in nmbPrms:
+
+            crNm = ""
+
+            for nm in prm:
+                crNm += str(nm)
+
             print(f"\t\t\t{prm}")
 
         print("\n")
