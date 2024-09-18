@@ -101,6 +101,7 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
 
     print(f"\t1. Words: {wrd1}")
     print(f"\t2. Words: {wrd2}")
+    print()
 
     cntDct = {}
 
@@ -112,8 +113,9 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
         else:
             cntDct[wd] += 1
 
-    for wd in cntDct:
-        print(wd, cntDct[wd])
+    print("\t\tWords count:")
+    for wd, nm in cntDct.items():
+        print(f"\t\t\t{wd} : {nm}")
 
 
 if __name__ == "__main__":
