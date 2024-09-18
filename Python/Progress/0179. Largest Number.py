@@ -77,4 +77,6 @@ if __name__ == "__main__":
 
             print(f"\t\t\t{crNm}")
 
+        print(mxNm)
+
         print("\n")
