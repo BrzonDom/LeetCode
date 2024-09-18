@@ -59,6 +59,9 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nmbs}")
 
-        nmbPrm = permutations(Nmbs)
+        nmbPrms = permutations(Nmbs)
+
+        for prm in nmbPrms:
+            print(prm)
 
         print("\n")
