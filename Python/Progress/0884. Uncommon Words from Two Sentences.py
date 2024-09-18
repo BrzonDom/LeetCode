@@ -133,8 +133,10 @@ if __name__ == "__main__":
 
             if nm == 1:
                 unqWrds.append(wd)
+        print()
 
+        print("\tUnique words:")
         for uq in unqWrds:
-            print(uq)
+            print(f"\t\t{uq}")
 
         print("\n")
