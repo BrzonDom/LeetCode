@@ -53,6 +53,8 @@ def Brt01_PrmTl_Prt(Nmbs):
 
     nmbPrms = permutations(Nmbs)
 
+    mxNm = 0
+
     print("\t\tPermutations:")
     for prm in nmbPrms:
 
@@ -60,6 +62,9 @@ def Brt01_PrmTl_Prt(Nmbs):
 
         for nm in prm:
             crNm += str(nm)
+
+        if int(crNm) > mxNm:
+            mxNm = int(crNm)
 
         print(f"\t\t\t{crNm}")
 
