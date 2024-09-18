@@ -94,9 +94,13 @@ def Slt01_WrdDctItr_Prt(Str1, Str2):
 
     print(f"\t1. String: {Str1}")
     print(f"\t2. String: {Str2}")
+    print()
 
     wrd1 = Str1.split()
     wrd2 = Str2.split()
+
+    print(f"\t1. Words: {wrd1}")
+    print(f"\t2. Words: {wrd2}")
 
 
 if __name__ == "__main__":
