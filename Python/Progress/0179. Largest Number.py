@@ -61,7 +61,7 @@ def Brt01_PrmTl_Prt(Nmbs):
         for nm in prm:
             crNm += str(nm)
 
-        print(f"\t\t\t{prm}")
+        print(f"\t\t\t{crNm}")
 
 
 if __name__ == "__main__":
