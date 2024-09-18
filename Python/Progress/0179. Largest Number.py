@@ -41,3 +41,12 @@ https://leetcode.com/problems/largest-number/description/
         Daily: 2024/09/18
 
 """
+
+
+InputLst = [[10,2],
+            [3,30,34,5,9]]
+
+for case in InputLst:
+
+    print(case)
+    print()
