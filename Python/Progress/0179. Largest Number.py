@@ -26,4 +26,12 @@ https://leetcode.com/problems/largest-number/description/
         1 <= nums.length <= 100
         0 <= nums[i] <= 109
 
+
+    Topics:
+
+        Array
+        String
+        Greedy
+        Sorting
+
 """
