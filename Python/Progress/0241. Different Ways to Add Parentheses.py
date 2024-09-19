@@ -59,13 +59,15 @@ https://leetcode.com/problems/different-ways-to-add-parentheses/description/
 """
 
 
-InputLst = ["2-1-1",
-            "2*3-4*5"]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = ["2-1-1",
+                "2*3-4*5"]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
