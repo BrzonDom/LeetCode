@@ -57,3 +57,12 @@ https://leetcode.com/problems/different-ways-to-add-parentheses/description/
         Daily: 2024/09/19
 
 """
+
+
+InputLst = ["2-1-1",
+            "2*3-4*5"]
+
+for case in InputLst:
+
+    print(case)
+    print()
