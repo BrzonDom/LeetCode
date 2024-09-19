@@ -51,4 +51,9 @@ https://leetcode.com/problems/different-ways-to-add-parentheses/description/
         Recursion
         Memoization
 
+
+    Courses:
+
+        Daily: 2024/09/19
+
 """
