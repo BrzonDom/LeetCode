@@ -60,6 +60,7 @@ if __name__ == "__main__":
         Str = case
 
         print(f"\tString: {Str}")
+        print()
 
         rmn_Str = Str
         sfx_Str = ""
@@ -69,6 +70,9 @@ if __name__ == "__main__":
             fnd_Pln = Hlp01_PlnChck(rmn_Str)
 
             if fnd_Pln:
+                print(f"\t\t{rmn_Str}")
+                print(f"\t\t\t{sfx_Str}")
+
                 break
 
             sfx_Str = rmn_Str[-1] + sfx_Str
