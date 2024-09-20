@@ -82,14 +82,19 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
 
         rmn_Wrd1 = rmn_Wrd1[1:]
         rmn_Wrd2 = rmn_Wrd2[1:]
+    print()
 
     if rmn_Wrd1:
-        print(rmn_Wrd1)
+        print("\t\tRemaining 1. word:")
+        print(f"\t\t\t{rmn_Wrd1}")
+        print()
 
         mrg_Wrd += rmn_Wrd1
 
     elif rmn_Wrd2:
-        print(rmn_Wrd2)
+        print("\t\tRemaining 2. word:")
+        print(f"\t\t\t{rmn_Wrd2}")
+        print()
 
         mrg_Wrd += rmn_Wrd2
 
