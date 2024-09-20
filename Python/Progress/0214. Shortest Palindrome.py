@@ -68,6 +68,8 @@ if __name__ == "__main__":
 
         while rmn_Str:
 
+            fnd_Pln = Hlp01_PlnChck(rmn_Str)
+
             sfx_Str = rmn_Str[-1] + sfx_Str
             rmn_Str = rmn_Str[:-1]
 
