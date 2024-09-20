@@ -74,6 +74,11 @@ def Brt01_PrmTl_Prt(Nmbs):
     return str(mxNm)
 
 
+def Hlp01_SrtKy_CstFn():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[10, 2],
