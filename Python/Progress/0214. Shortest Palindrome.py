@@ -100,6 +100,10 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Brt01_WhlRvs_PlnChck_Prt(case)
+        # Brt01_WhlRvs_PlnChck_Prt(case)
+
+        Str = case
+
+        print(f"\t{Str}")
 
         print("\n")
