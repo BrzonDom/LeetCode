@@ -45,7 +45,7 @@ https://leetcode.com/problems/shortest-palindrome/description/
 
 def Hlp01_PlnChck(Str):
 
-    return
+    return Str == Str[::-1]
 
 
 if __name__ == "__main__":
