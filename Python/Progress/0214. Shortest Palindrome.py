@@ -49,10 +49,13 @@ def Hlp01_PlnChck(Str):
 
     while lft < rgh:
 
+        if Str[lft] != Str[rgh]:
+            return False
+
         lft += 1
         rgh -= 1
 
-    return Str == Str[::-1]
+    return True
 
 
 if __name__ == "__main__":
