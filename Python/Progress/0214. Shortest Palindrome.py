@@ -47,6 +47,11 @@ def Hlp01_PlnChck(Str):
 
     lft, rgh = 0, len(Str) - 1
 
+    while lft < rgh:
+
+        lft += 1
+        rgh -= 1
+
     return Str == Str[::-1]
 
 
