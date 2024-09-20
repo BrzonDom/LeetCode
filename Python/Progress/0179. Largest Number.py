@@ -108,4 +108,6 @@ if __name__ == "__main__":
 
         str_Nmbs = sorted(str_Nmbs, key=functools.cmp_to_key(Hlp01_SrtKy_CstFn))
 
+        mx_Nmb = "".join(str_Nmbs)
+
         print("\n")
