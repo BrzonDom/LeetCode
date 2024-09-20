@@ -102,34 +102,4 @@ if __name__ == "__main__":
 
         Brt01_WhlRvs_PlnChck_Prt(case)
 
-        # Str = case
-        #
-        # print(f"\tString: {Str}")
-        # print()
-        #
-        # rmn_Str = Str
-        # sfx_Str = ""
-        #
-        # while rmn_Str:
-        #
-        #     fnd_Pln = Hlp01_PlnChck(rmn_Str)
-        #
-        #     if fnd_Pln:
-        #         print(f"\t\tRemaining string: {rmn_Str}")
-        #         print(f"\t\t\tSuffix of string: {sfx_Str}")
-        #         print()
-        #
-        #         break
-        #
-        #     sfx_Str = rmn_Str[-1] + sfx_Str
-        #     rmn_Str = rmn_Str[:-1]
-        #
-        # pfx_Str = sfx_Str[::-1]
-        # pld_Str = pfx_Str + rmn_Str + sfx_Str
-        #
-        # print(f"\tPalindrome: {pld_Str}")
-        # print(f"\t\tPrefix:    {pfx_Str}")
-        # print(f"\t\tRemainder: {rmn_Str}")
-        # print(f"\t\tSuffix:    {sfx_Str}")
-
         print("\n")
