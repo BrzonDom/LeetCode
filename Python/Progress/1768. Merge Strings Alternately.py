@@ -95,15 +95,16 @@ if __name__ == "__main__":
         if Wrd1:
             print("\t\tRemaining 1. word:")
             print(f"\t\t\t{Wrd1}")
+            print()
 
             mrg_Wrd += Wrd1
 
         elif Wrd2:
             print("\t\tRemaining 2. word:")
             print(f"\t\t\t{Wrd2}")
+            print()
 
             mrg_Wrd += Wrd2
-        print()
 
         print(f"\tMerged words: {mrg_Wrd}")
 
