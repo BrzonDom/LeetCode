@@ -70,8 +70,8 @@ if __name__ == "__main__":
             fnd_Pln = Hlp01_PlnChck(rmn_Str)
 
             if fnd_Pln:
-                print(f"\t\t{rmn_Str}")
-                print(f"\t\t\t{sfx_Str}")
+                print(f"\t\tRemaining string: {rmn_Str}")
+                print(f"\t\t\tSuffix of string: {sfx_Str}")
 
                 break
 
