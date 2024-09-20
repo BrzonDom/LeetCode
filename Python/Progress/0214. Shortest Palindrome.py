@@ -50,6 +50,11 @@ def Brt01_WhlRvs_PlnChck_Prt(Str):
     rmn_Str = Str
     sfx_Str = ""
 
+    while rmn_Str:
+
+        sfx_Str = rmn_Str[-1] + sfx_Str
+        rmn_Str = rmn_Str[:-1]
+
 
 def Hlp01_PlnChck(Str):
 
