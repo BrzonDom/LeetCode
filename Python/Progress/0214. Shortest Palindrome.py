@@ -70,6 +70,9 @@ if __name__ == "__main__":
 
             fnd_Pln = Hlp01_PlnChck(rmn_Str)
 
+            if fnd_Pln:
+                break
+
             sfx_Str = rmn_Str[-1] + sfx_Str
             rmn_Str = rmn_Str[:-1]
 
