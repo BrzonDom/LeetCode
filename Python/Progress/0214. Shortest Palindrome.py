@@ -47,7 +47,8 @@ def Brt01_WhlRvs_PlnChck_Prt(Str):
 
     print(f"\tString: {Str}")
 
-    return
+    rmn_Str = Str
+    sfx_Str = ""
 
 
 def Hlp01_PlnChck(Str):
