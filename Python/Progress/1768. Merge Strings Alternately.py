@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
         mrg_Wrd = ""
 
-        print("\t\tWords characters:")
+        print("\t\tWord character pairs:")
         while Wrd1 and Wrd2:
             print(f"\t\t\t{Wrd1[0]} : {Wrd2[0]}")
 
