@@ -63,15 +63,17 @@ https://leetcode.com/problems/merge-strings-alternately/description/
 """
 
 
-InputLst = [["abc", "pqr"],
-            ["ab", "pqrs"],
-            ["abcd", "pq"]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [["abc", "pqr"],
+                ["ab", "pqrs"],
+                ["abcd", "pq"]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
