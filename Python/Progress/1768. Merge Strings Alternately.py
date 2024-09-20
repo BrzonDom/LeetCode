@@ -78,9 +78,11 @@ if __name__ == "__main__":
 
         print(f"\t1. Word: {Wrd1}")
         print(f"\t2. Word: {Wrd2}")
+        print()
 
+        print("\t\t1. Word characters:")
         while Wrd1:
-            print(Wrd1[0])
+            print(f"\t\t\t{Wrd1[0]}")
 
             Wrd1 = Wrd1[1:]
 
