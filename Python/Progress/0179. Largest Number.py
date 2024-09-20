@@ -87,6 +87,6 @@ if __name__ == "__main__":
 
         Nmbs = case
 
-        print(f"\t{Nmbs}")
+        print(f"\tNumbers: {Nmbs}")
 
         print("\n")
