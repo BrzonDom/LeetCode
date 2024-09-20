@@ -93,6 +93,8 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
 
         mrg_Wrd += rmn_Wrd2
 
+    return mrg_Wrd
+
 
 if __name__ == "__main__":
 
