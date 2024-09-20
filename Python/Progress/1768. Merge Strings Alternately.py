@@ -69,6 +69,7 @@ InputLst = [["abc", "pqr"],
 
 for case in InputLst:
 
-    print(f"\t{case}")
+    print(f"\t{case[0]}")
+    print(f"\t{case[1]}")
 
     print()
