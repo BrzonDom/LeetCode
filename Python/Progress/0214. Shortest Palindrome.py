@@ -41,3 +41,12 @@ https://leetcode.com/problems/shortest-palindrome/description/
         Daily: 2024/09/20
 
 """
+
+
+InputLst = ["aacecaaa",
+            "abcd"]
+
+for case in InputLst:
+
+    print(case)
+    print()
