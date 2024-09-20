@@ -86,8 +86,12 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
     if rmn_Wrd1:
         print(rmn_Wrd1)
 
+        mrg_Wrd += rmn_Wrd1
+
     elif rmn_Wrd2:
         print(rmn_Wrd2)
+
+        mrg_Wrd += rmn_Wrd2
 
 
 if __name__ == "__main__":
