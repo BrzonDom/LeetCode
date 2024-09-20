@@ -35,4 +35,9 @@ https://leetcode.com/problems/shortest-palindrome/description/
         String Matching
         Hash Function
 
+
+    Courses:
+
+        Daily: 2024/09/20
+
 """
