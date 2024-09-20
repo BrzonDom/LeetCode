@@ -43,6 +43,11 @@ https://leetcode.com/problems/shortest-palindrome/description/
 """
 
 
+def Hlp01_PlnChck():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = ["aacecaaa",
