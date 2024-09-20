@@ -58,6 +58,7 @@ def Brt01_WhlRvs_PlnChck_Prt(Str):
         if fnd_Pln:
             print(f"\t\tRemaining string: {rmn_Str}")
             print(f"\t\t\tSuffix of string: {sfx_Str}")
+            print()
 
             break
 
@@ -66,6 +67,11 @@ def Brt01_WhlRvs_PlnChck_Prt(Str):
 
     pfx_Str = sfx_Str[::-1]
     pld_Str = pfx_Str + rmn_Str + sfx_Str
+
+    print(f"\tPalindrome: {pld_Str}")
+    print(f"\t\tPrefix:    {pfx_Str}")
+    print(f"\t\tRemainder: {rmn_Str}")
+    print(f"\t\tSuffix:    {sfx_Str}")
 
     return pld_Str
 
