@@ -3,23 +3,23 @@
 
 https://leetcode.com/problems/shortest-palindrome/description/
 
-You are given a string s. You can convert s to a palindrome by adding characters in front of it.
+    You are given a string s. You can convert s to a palindrome by adding characters in front of it.
 
-Return the shortest palindrome you can find by performing this transformation.
+    Return the shortest palindrome you can find by performing this transformation.
 
-Example 1:
+    Example 1:
 
-    Input: s = "aacecaaa"
-    Output: "aaacecaaa"
+        Input: s = "aacecaaa"
+        Output: "aaacecaaa"
 
-Example 2:
+    Example 2:
 
-    Input: s = "abcd"
-    Output: "dcbabcd"
+        Input: s = "abcd"
+        Output: "dcbabcd"
 
-Constraints:
+    Constraints:
 
-    0 <= s.length <= 5 * 104
-    s consists of lowercase English letters only.
+        0 <= s.length <= 5 * 104
+        s consists of lowercase English letters only.
 
 """
