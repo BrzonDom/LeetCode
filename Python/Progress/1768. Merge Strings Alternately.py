@@ -63,6 +63,11 @@ https://leetcode.com/problems/merge-strings-alternately/description/
 """
 
 
+def Slt01_WhlBth_AppRmn_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [["abc", "pqr"],
