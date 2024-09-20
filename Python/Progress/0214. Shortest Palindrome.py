@@ -67,6 +67,8 @@ def Brt01_WhlRvs_PlnChck_Prt(Str):
     pfx_Str = sfx_Str[::-1]
     pld_Str = pfx_Str + rmn_Str + sfx_Str
 
+    return pld_Str
+
 
 def Hlp01_PlnChck(Str):
 
