@@ -101,5 +101,8 @@ if __name__ == "__main__":
             print(f"\t\t{Wrd2}")
 
             mrg_Wrd += Wrd2
+        print()
+
+        print(f"\tMerged words: {mrg_Wrd}")
 
         print("\n")
