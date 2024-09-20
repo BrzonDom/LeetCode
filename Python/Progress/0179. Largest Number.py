@@ -43,6 +43,7 @@ https://leetcode.com/problems/largest-number/description/
 """
 
 
+import functools
 from itertools import permutations
 
 
@@ -104,5 +105,7 @@ if __name__ == "__main__":
         print("\t\tString numbers:")
         for id in range(len(Nmbs)):
             print(f"\t\t\t{id+1}. \"{str_Nmbs[id]}\"")
+
+        str_Nmbs = sorted(str_Nmbs, key=functools.cmp_to_key(Hlp01_SrtKy_CstFn))
 
         print("\n")
