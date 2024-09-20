@@ -79,6 +79,9 @@ def Hlp01_SrtKy_CstFn(Nm1, Nm2):
     if Nm1 + Nm2 > Nm2 + Nm1:
         return -1
 
+    else:
+        return 1
+
 
 if __name__ == "__main__":
 
