@@ -65,7 +65,8 @@ https://leetcode.com/problems/merge-strings-alternately/description/
 
 def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
 
-    return
+    print(f"\t1. Word: {Wrd1}")
+    print(f"\t2. Word: {Wrd2}")
 
 
 if __name__ == "__main__":
