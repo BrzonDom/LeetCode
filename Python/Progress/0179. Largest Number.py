@@ -94,8 +94,8 @@ if __name__ == "__main__":
 
         print("\t\tNumbers:")
         for id, nm in enumerate(Nmbs):
-            print(f"\t\t\t{id+1}. {nm}")
-
             str_Nmbs.append(str(nm))
+
+            print(f"\t\t\t{id+1}. {str_Nmbs[id]}")
 
         print("\n")
