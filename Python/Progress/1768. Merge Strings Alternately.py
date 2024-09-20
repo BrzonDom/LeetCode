@@ -85,9 +85,11 @@ if __name__ == "__main__":
             print(f"\t\t\t{Wrd1[0]}")
 
             Wrd1 = Wrd1[1:]
+        print()
 
+        print("\t\t2. Word characters:")
         while Wrd2:
-            print(Wrd2[0])
+            print(f"\t\t\t{Wrd2[0]}")
 
             Wrd2 = Wrd2[1:]
 
