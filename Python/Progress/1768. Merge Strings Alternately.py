@@ -61,3 +61,14 @@ https://leetcode.com/problems/merge-strings-alternately/description/
         LeetCode 75
 
 """
+
+
+InputLst = [["abc", "pqr"],
+            ["ab", "pqrs"],
+            ["abcd", "pq"]]
+
+for case in InputLst:
+
+    print(case)
+    print()
+    
