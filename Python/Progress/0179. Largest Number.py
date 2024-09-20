@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nmbs}")
 
-        for nm in Nmbs:
-            print(nm)
+        for nm in range(len(Nmbs)):
+            print(Nmbs[nm])
 
         print("\n")
