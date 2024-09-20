@@ -27,4 +27,12 @@ https://leetcode.com/problems/shortest-palindrome/description/
         0 <= s.length <= 5 * 10^4
         s consists of lowercase English letters only.
 
+
+    Topics:
+
+        String
+        Rolling Hash
+        String Matching
+        Hash Function
+
 """
