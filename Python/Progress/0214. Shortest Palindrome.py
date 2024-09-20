@@ -43,7 +43,7 @@ https://leetcode.com/problems/shortest-palindrome/description/
 """
 
 
-def Hlp01_PlnChck():
+def Hlp01_PlnChck(Str):
 
     return
 
