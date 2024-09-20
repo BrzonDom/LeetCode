@@ -69,16 +69,19 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
     print(f"\t2. Word: {Wrd2}")
     print()
 
+    rmn_Wrd1 = Wrd1
+    rmn_Wrd2 = Wrd2
+
     mrg_Wrd = ""
 
     print("\t\tWords characters:")
-    while Wrd1 and Wrd2:
-        print(f"\t\t\t{Wrd1[0]} : {Wrd2[0]}")
+    while rmn_Wrd1 and rmn_Wrd2:
+        print(f"\t\t\t{rmn_Wrd1[0]} : {rmn_Wrd2[0]}")
 
-        mrg_Wrd += Wrd1[0] + Wrd2[0]
+        mrg_Wrd += rmn_Wrd1[0] + rmn_Wrd2[0]
 
-        Wrd1 = Wrd1[1:]
-        Wrd2 = Wrd2[1:]
+        rmn_Wrd1 = rmn_Wrd1[1:]
+        rmn_Wrd2 = rmn_Wrd2[1:]
 
 
 if __name__ == "__main__":
