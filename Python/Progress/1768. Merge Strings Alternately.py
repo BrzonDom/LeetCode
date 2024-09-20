@@ -68,6 +68,16 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
     print(f"\t1. Word: {Wrd1}")
     print(f"\t2. Word: {Wrd2}")
 
+    while Wrd1:
+        print(Wrd1[0])
+
+        Wrd1 = Wrd1[1:]
+
+    while Wrd2:
+        print(Wrd2[0])
+
+        Wrd2 = Wrd2[1:]
+
 
 if __name__ == "__main__":
 
