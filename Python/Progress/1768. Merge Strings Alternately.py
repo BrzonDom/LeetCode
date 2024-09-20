@@ -94,7 +94,11 @@ if __name__ == "__main__":
         if Wrd1:
             print(Wrd1)
 
+            mrg_Wrd += Wrd1
+
         elif Wrd2:
             print(Wrd2)
+
+            mrg_Wrd += Wrd2
 
         print("\n")
