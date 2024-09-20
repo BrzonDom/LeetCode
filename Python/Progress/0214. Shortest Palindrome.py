@@ -45,6 +45,8 @@ https://leetcode.com/problems/shortest-palindrome/description/
 
 def Brt01_WhlRvs_PlnChck_Prt(Str):
 
+    print(f"\tString: {Str}")
+
     return
 
 
