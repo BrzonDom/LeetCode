@@ -46,6 +46,7 @@ https://leetcode.com/problems/shortest-palindrome/description/
 def Brt01_WhlRvs_PlnChck_Prt(Str):
 
     print(f"\tString: {Str}")
+    print()
 
     rmn_Str = Str
     sfx_Str = ""
@@ -55,6 +56,9 @@ def Brt01_WhlRvs_PlnChck_Prt(Str):
         fnd_Pln = Hlp01_PlnChck(rmn_Str)
 
         if fnd_Pln:
+            print(f"\t\tRemaining string: {rmn_Str}")
+            print(f"\t\t\tSuffix of string: {sfx_Str}")
+
             break
 
         sfx_Str = rmn_Str[-1] + sfx_Str
