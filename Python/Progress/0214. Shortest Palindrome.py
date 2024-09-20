@@ -64,4 +64,6 @@ if __name__ == "__main__":
         rmn_Str = Str
         sfx_Str = ""
 
+        fnd_Pln = False
+
         print("\n")
