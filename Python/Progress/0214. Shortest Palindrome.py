@@ -83,5 +83,8 @@ if __name__ == "__main__":
         pld_Str = pfx_Str + rmn_Str + sfx_Str
 
         print(f"\tPalindrome: {pld_Str}")
+        print(f"\t\tPrefix:    {pfx_Str}")
+        print(f"\t\tRemainder: {rmn_Str}")
+        print(f"\t\tSuffix:    {sfx_Str}")
 
         print("\n")
