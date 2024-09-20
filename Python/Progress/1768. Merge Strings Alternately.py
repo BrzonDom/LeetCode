@@ -17,9 +17,9 @@ https://leetcode.com/problems/merge-strings-alternately/description/
         Output: "apbqcr"
 
         Explanation: The merged string will be merged as so:
-        word1:  a   b   c
-        word2:    p   q   r
-        merged: a p b q c r
+            word1:  a   b   c
+            word2:    p   q   r
+            merged: a p b q c r
 
     Example 2:
 
@@ -28,9 +28,9 @@ https://leetcode.com/problems/merge-strings-alternately/description/
         Output: "apbqrs"
 
         Explanation: Notice that as word2 is longer, "rs" is appended to the end.
-        word1:  a   b
-        word2:    p   q   r   s
-        merged: a p b q   r   s
+            word1:  a   b
+            word2:    p   q   r   s
+            merged: a p b q   r   s
 
     Example 3:
 
@@ -39,9 +39,9 @@ https://leetcode.com/problems/merge-strings-alternately/description/
         Output: "apbqcd"
 
         Explanation: Notice that as word1 is longer, "cd" is appended to the end.
-        word1:  a   b   c   d
-        word2:    p   q
-        merged: a p b q c   d
+            word1:  a   b   c   d
+            word2:    p   q
+            merged: a p b q c   d
 
 
     Constraints:
