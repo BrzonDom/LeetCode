@@ -74,7 +74,7 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
 
     mrg_Wrd = ""
 
-    print("\t\tWords characters:")
+    print("\t\tWord character pairs:")
     while rmn_Wrd1 and rmn_Wrd2:
         print(f"\t\t\t{rmn_Wrd1[0]} : {rmn_Wrd2[0]}")
 
