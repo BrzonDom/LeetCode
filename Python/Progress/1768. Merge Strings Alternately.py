@@ -90,14 +90,15 @@ if __name__ == "__main__":
 
             Wrd1 = Wrd1[1:]
             Wrd2 = Wrd2[1:]
+        print()
 
         if Wrd1:
-            print(Wrd1)
+            print(f"\t\t{Wrd1}")
 
             mrg_Wrd += Wrd1
 
         elif Wrd2:
-            print(Wrd2)
+            print(f"\t\t{Wrd2}")
 
             mrg_Wrd += Wrd2
 
