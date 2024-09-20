@@ -105,9 +105,12 @@ if __name__ == "__main__":
         print("\t\tString numbers:")
         for id in range(len(Nmbs)):
             print(f"\t\t\t{id+1}. \"{str_Nmbs[id]}\"")
+        print()
 
         str_Nmbs = sorted(str_Nmbs, key=functools.cmp_to_key(Hlp01_SrtKy_CstFn))
 
         mx_Nmb = str(int("".join(str_Nmbs)))
+
+        print(f"\tMax number: {mx_Nmb}")
 
         print("\n")
