@@ -72,6 +72,7 @@ if __name__ == "__main__":
             if fnd_Pln:
                 print(f"\t\tRemaining string: {rmn_Str}")
                 print(f"\t\t\tSuffix of string: {sfx_Str}")
+                print()
 
                 break
 
@@ -79,5 +80,7 @@ if __name__ == "__main__":
             rmn_Str = rmn_Str[:-1]
 
         pfx_Str = sfx_Str[::-1]
+
+        print(f"\tPalindrome: {pfx_Str}{rmn_Str}{sfx_Str}")
 
         print("\n")
