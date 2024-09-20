@@ -45,6 +45,8 @@ https://leetcode.com/problems/shortest-palindrome/description/
 
 def Hlp01_PlnChck(Str):
 
+    lft, rgh = 0, len(Str) - 1
+
     return Str == Str[::-1]
 
 
