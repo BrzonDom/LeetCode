@@ -84,4 +84,9 @@ if __name__ == "__main__":
 
             Wrd1 = Wrd1[1:]
 
+        while Wrd2:
+            print(Wrd2[0])
+
+            Wrd2 = Wrd2[1:]
+
         print("\n")
