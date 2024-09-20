@@ -76,7 +76,7 @@ if __name__ == "__main__":
         Wrd1 = case[0]
         Wrd2 = case[1]
 
-        print(f"\t{Wrd1}")
-        print(f"\t{Wrd2}")
+        print(f"\t1. Word: {Wrd1}")
+        print(f"\t2. Word: {Wrd2}")
 
         print("\n")
