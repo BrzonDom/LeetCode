@@ -88,8 +88,10 @@ if __name__ == "__main__":
         Nmbs = case
 
         print(f"\tNumbers: {Nmbs}")
+        print()
 
+        print("\t\tNumbers:")
         for id, nm in enumerate(Nmbs):
-            print(nm)
+            print(f"\t\t\t{id+1}. {nm}")
 
         print("\n")
