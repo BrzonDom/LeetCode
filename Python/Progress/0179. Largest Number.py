@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nmbs}")
 
-        for nm in range(len(Nmbs)):
-            print(Nmbs[nm])
+        for id, nm in enumerate(Nmbs):
+            print(nm)
 
         print("\n")
