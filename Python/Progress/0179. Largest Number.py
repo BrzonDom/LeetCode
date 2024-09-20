@@ -74,7 +74,7 @@ def Brt01_PrmTl_Prt(Nmbs):
     return str(mxNm)
 
 
-def Hlp01_SrtKy_CstFn():
+def Hlp01_SrtKy_CstFn(Nm1, Nm2):
 
     return
 
