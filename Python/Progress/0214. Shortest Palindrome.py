@@ -56,4 +56,7 @@ if __name__ == "__main__":
 
         print(f"\tString: {Str}")
 
+        rmn_Str = Str
+        sfx_Str = ""
+
         print("\n")
