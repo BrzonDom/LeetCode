@@ -63,7 +63,7 @@ https://leetcode.com/problems/merge-strings-alternately/description/
 """
 
 
-def Slt01_WhlBth_AppRmn_Prt():
+def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
 
     return
 
