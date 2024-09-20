@@ -115,39 +115,4 @@ if __name__ == "__main__":
 
         Slt01_WhlBth_AppRmn_Prt(case[0], case[1])
 
-        # Wrd1 = case[0]
-        # Wrd2 = case[1]
-        #
-        # print(f"\t1. Word: {Wrd1}")
-        # print(f"\t2. Word: {Wrd2}")
-        # print()
-        #
-        # mrg_Wrd = ""
-        #
-        # print("\t\tWord character pairs:")
-        # while Wrd1 and Wrd2:
-        #     print(f"\t\t\t{Wrd1[0]} : {Wrd2[0]}")
-        #
-        #     mrg_Wrd += Wrd1[0] + Wrd2[0]
-        #
-        #     Wrd1 = Wrd1[1:]
-        #     Wrd2 = Wrd2[1:]
-        # print()
-        #
-        # if Wrd1:
-        #     print("\t\tRemaining 1. word:")
-        #     print(f"\t\t\t{Wrd1}")
-        #     print()
-        #
-        #     mrg_Wrd += Wrd1
-        #
-        # elif Wrd2:
-        #     print("\t\tRemaining 2. word:")
-        #     print(f"\t\t\t{Wrd2}")
-        #     print()
-        #
-        #     mrg_Wrd += Wrd2
-        #
-        # print(f"\tMerged words: {mrg_Wrd}")
-
         print("\n")
