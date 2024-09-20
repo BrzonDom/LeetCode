@@ -69,9 +69,13 @@ def Slt01_WhlBth_AppRmn_Prt(Wrd1, Wrd2):
     print(f"\t2. Word: {Wrd2}")
     print()
 
+    mrg_Wrd = ""
+
     print("\t\tWords characters:")
     while Wrd1 and Wrd2:
         print(f"\t\t\t{Wrd1[0]} : {Wrd2[0]}")
+
+        mrg_Wrd += Wrd1[0] + Wrd2[0]
 
         Wrd1 = Wrd1[1:]
         Wrd2 = Wrd2[1:]
