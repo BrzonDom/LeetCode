@@ -92,10 +92,10 @@ if __name__ == "__main__":
 
         str_Nmbs = []
 
-        print("\t\tNumbers:")
+        print("\t\tString numbers:")
         for id, nm in enumerate(Nmbs):
             str_Nmbs.append(str(nm))
 
-            print(f"\t\t\t{id+1}. {str_Nmbs[id]}")
+            print(f"\t\t\t{id+1}. \"{str_Nmbs[id]}\"")
 
         print("\n")
