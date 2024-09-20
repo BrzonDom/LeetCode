@@ -80,7 +80,8 @@ if __name__ == "__main__":
             rmn_Str = rmn_Str[:-1]
 
         pfx_Str = sfx_Str[::-1]
+        pld_Str = pfx_Str + rmn_Str + sfx_Str
 
-        print(f"\tPalindrome: {pfx_Str}{rmn_Str}{sfx_Str}")
+        print(f"\tPalindrome: {pld_Str}")
 
         print("\n")
