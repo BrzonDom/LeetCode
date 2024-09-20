@@ -66,4 +66,9 @@ if __name__ == "__main__":
 
         fnd_Pln = False
 
+        while rmn_Str:
+
+            sfx_Str = rmn_Str[-1] + sfx_Str
+            rmn_Str = rmn_Str[:-1]
+
         print("\n")
