@@ -93,12 +93,14 @@ if __name__ == "__main__":
         print()
 
         if Wrd1:
-            print(f"\t\t{Wrd1}")
+            print("\t\tRemaining 1. word:")
+            print(f"\t\t\t{Wrd1}")
 
             mrg_Wrd += Wrd1
 
         elif Wrd2:
-            print(f"\t\t{Wrd2}")
+            print("\t\tRemaining 2. word:")
+            print(f"\t\t\t{Wrd2}")
 
             mrg_Wrd += Wrd2
         print()
