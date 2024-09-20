@@ -78,4 +78,6 @@ if __name__ == "__main__":
             sfx_Str = rmn_Str[-1] + sfx_Str
             rmn_Str = rmn_Str[:-1]
 
+        pfx_Str = sfx_Str[::-1]
+
         print("\n")
