@@ -26,4 +26,10 @@ https://leetcode.com/problems/lexicographical-numbers/description/
 
         1 <= n <= 5 * 10^4
 
+
+    Topics:
+
+        Depth-First Search
+        Trie
+
 """
