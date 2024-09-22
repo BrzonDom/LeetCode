@@ -62,7 +62,7 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 """
 
 
-def Slt01_Itr_ExtAdd_Prt():
+def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
 
     return
 
