@@ -79,7 +79,8 @@ if __name__ == "__main__":
         print(f"\tExtra candy: {Ext_Cnd}")
         print()
 
-        for cnd in Cnds:
-            print(f"\t\t{cnd}")
+        print("\t\tCandies:")
+        for idx, cnd in enumerate(Cnds):
+            print(f"\t\t\t{idx+1}. {cnd}")
 
         print("\n")
