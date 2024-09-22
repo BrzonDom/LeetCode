@@ -79,8 +79,12 @@ if __name__ == "__main__":
         print(f"\tExtra candy: {Ext_Cnd}")
         print()
 
+        mx_cnd = max(Cnds)
+
         print("\t\tCandies:")
         for idx, cnd in enumerate(Cnds):
             print(f"\t\t\t{idx+1:2}. {cnd:3}")
+
+            cr_cnd = cnd + Ext_Cnd
 
         print("\n")
