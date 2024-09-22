@@ -86,6 +86,9 @@ def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
 
         else:
             isMx_cnds.append(False)
+    print()
+
+    print(f"\tMax candies: {isMx_cnds}")
 
     return isMx_cnds
 
