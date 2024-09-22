@@ -92,4 +92,10 @@ if __name__ == "__main__":
 
             cr_cnd = cnd + Ext_Cnd
 
+            if cr_cnd >= mx_cnd:
+                is_max_cnd.append(True)
+
+            else:
+                is_max_cnd.append(False)
+
         print("\n")
