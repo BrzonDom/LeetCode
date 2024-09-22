@@ -38,3 +38,12 @@ https://leetcode.com/problems/lexicographical-numbers/description/
         Daily: 2024/09/21
 
 """
+
+
+InputLst = [13,
+            2]
+
+for case in InputLst:
+
+    print(case)
+    print()
