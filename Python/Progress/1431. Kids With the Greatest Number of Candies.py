@@ -87,6 +87,8 @@ def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
         else:
             isMx_cnds.append(False)
 
+    return isMx_cnds
+
 
 if __name__ == "__main__":
 
