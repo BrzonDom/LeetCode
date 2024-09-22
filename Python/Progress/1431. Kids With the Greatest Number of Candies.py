@@ -64,7 +64,8 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 
 def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
 
-    return
+    print(f"\tOriginal candies: {Cnds}")
+    print(f"\tExtra candy: {Ext_Cnd}")
 
 
 if __name__ == "__main__":
