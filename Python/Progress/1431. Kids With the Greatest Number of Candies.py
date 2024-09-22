@@ -73,11 +73,19 @@ def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
     print(f"\tOriginal max candy: {mx_cnd}")
     print()
 
+    isMx_cnds = []
+
     print("\t\tCandies:")
     for idx, cnd in enumerate(Cnds):
         print(f"\t\t\t{idx + 1:2}. {cnd:3}")
 
         cr_cnd = cnd + Ext_Cnd
+
+        if cr_cnd >= mx_cnd:
+            isMx_cnds.append(True)
+
+        else:
+            isMx_cnds.append(False)
 
 
 if __name__ == "__main__":
