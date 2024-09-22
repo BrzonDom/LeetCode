@@ -81,6 +81,6 @@ if __name__ == "__main__":
 
         print("\t\tCandies:")
         for idx, cnd in enumerate(Cnds):
-            print(f"\t\t\t{idx+1}. {cnd}")
+            print(f"\t\t\t{idx+1:2}. {cnd:3}")
 
         print("\n")
