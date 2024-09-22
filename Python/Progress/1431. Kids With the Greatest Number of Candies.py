@@ -62,15 +62,17 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 """
 
 
-InputLst = [[[2, 3, 5, 1, 3], 3],
-            [[4, 2, 1, 1, 2], 1],
-            [[12, 1, 12], 10]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[[2, 3, 5, 1, 3], 3],
+                [[4, 2, 1, 1, 2], 1],
+                [[12, 1, 12], 10]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
