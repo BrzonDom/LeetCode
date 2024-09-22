@@ -70,6 +70,9 @@ def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
 
     mx_cnd = max(Cnds)
 
+    print(f"\tOriginal max candy: {mx_cnd}")
+    print()
+
     print("\t\tCandies:")
     for idx, cnd in enumerate(Cnds):
         print(f"\t\t\t{idx + 1:2}. {cnd:3}")
