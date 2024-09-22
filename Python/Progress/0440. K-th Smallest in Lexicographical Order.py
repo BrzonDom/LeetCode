@@ -38,3 +38,12 @@ https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description
         Daily: 2024/09/22
 
 """
+
+
+InputLst = [[13, 2],
+            [1, 1]]
+
+for case in InputLst:
+
+    print(case)
+    print()
