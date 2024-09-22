@@ -15,9 +15,9 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 
     Example 1:
 
-        Input: candies = [2,3,5,1,3], extraCandies = 3
+        Input: candies = [2, 3, 5, 1, 3], extraCandies = 3
 
-        Output: [true,true,true,false,true]
+        Output: [true, true, true, false, true]
 
         Explanation: If you give all extraCandies to:
             - Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.
@@ -28,18 +28,18 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 
     Example 2:
 
-        Input: candies = [4,2,1,1,2], extraCandies = 1
+        Input: candies = [4, 2, 1, 1, 2], extraCandies = 1
 
-        Output: [true,false,false,false,false]
+        Output: [true, false, false, false, false]
 
         Explanation: There is only 1 extra candy.
             Kid 1 will always have the greatest number of candies, even if a different kid is given the extra candy.
 
     Example 3:
 
-        Input: candies = [12,1,12], extraCandies = 10
+        Input: candies = [12, 1, 12], extraCandies = 10
 
-        Output: [true,false,true]
+        Output: [true, false, true]
 
 
     Constraints:
@@ -62,9 +62,9 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 """
 
 
-InputLst = [[[2,3,5,1,3], 3],
-            [[4,2,1,1,2], 1],
-            [[12,1,12], 10]]
+InputLst = [[[2, 3, 5, 1, 3], 3],
+            [[4, 2, 1, 1, 2], 1],
+            [[12, 1, 12], 10]]
 
 for case in InputLst:
 
