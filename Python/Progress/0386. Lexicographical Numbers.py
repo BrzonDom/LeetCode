@@ -40,13 +40,15 @@ https://leetcode.com/problems/lexicographical-numbers/description/
 """
 
 
-InputLst = [13,
-            2]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [13,
+                2]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
