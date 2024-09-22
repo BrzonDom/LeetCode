@@ -40,14 +40,16 @@ https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description
 """
 
 
-InputLst = [[13, 2],
-            [1, 1]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[13, 2],
+                [1, 1]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
