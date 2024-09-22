@@ -60,3 +60,13 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
         LeetCode 75
 
 """
+
+
+InputLst = [[[2,3,5,1,3], 3],
+            [[4,2,1,1,2], 1],
+            [[12,1,12], 10]]
+
+for case in InputLst:
+
+    print(case)
+    print()
