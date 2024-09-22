@@ -66,9 +66,11 @@ InputLst = [[[2, 3, 5, 1, 3], 3],
             [[4, 2, 1, 1, 2], 1],
             [[12, 1, 12], 10]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case[0]}")
     print(f"\t{case[1]}")
 
-    print()
+    print("\n")
