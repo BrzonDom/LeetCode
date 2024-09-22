@@ -84,6 +84,8 @@ if __name__ == "__main__":
         print(f"\tOriginal max candy: {mx_cnd}")
         print()
 
+        is_max_cnd = []
+
         print("\t\tCandies:")
         for idx, cnd in enumerate(Cnds):
             print(f"\t\t\t{idx+1:2}. {cnd:3}")
