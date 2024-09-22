@@ -97,5 +97,8 @@ if __name__ == "__main__":
 
             else:
                 isMx_cnds.append(False)
+        print()
+
+        print(f"\tMax candies: {isMx_cnds}")
 
         print("\n")
