@@ -32,4 +32,9 @@ https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description
 
         Trie
 
+
+    Courses:
+
+        Daily: 2024/09/22
+
 """
