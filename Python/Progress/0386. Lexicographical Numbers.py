@@ -45,5 +45,6 @@ InputLst = [13,
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
