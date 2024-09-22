@@ -83,9 +83,11 @@ def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
 
         if cr_cnd >= mx_cnd:
             isMx_cnds.append(True)
+            print(f"\t\t\t\t{cr_cnd:3} = Max")
 
         else:
             isMx_cnds.append(False)
+            print(f"\t\t\t\t{cr_cnd:3} = Not max")
     print()
 
     print(f"\tMax candies: {isMx_cnds}")
