@@ -27,4 +27,9 @@ https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description
 
         1 <= k <= n <= 10^9
 
+
+    Topics:
+
+        Trie
+
 """
