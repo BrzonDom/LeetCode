@@ -84,7 +84,7 @@ if __name__ == "__main__":
         print(f"\tOriginal max candy: {mx_cnd}")
         print()
 
-        is_max_cnd = []
+        isMx_cnds = []
 
         print("\t\tCandies:")
         for idx, cnd in enumerate(Cnds):
@@ -93,9 +93,9 @@ if __name__ == "__main__":
             cr_cnd = cnd + Ext_Cnd
 
             if cr_cnd >= mx_cnd:
-                is_max_cnd.append(True)
+                isMx_cnds.append(True)
 
             else:
-                is_max_cnd.append(False)
+                isMx_cnds.append(False)
 
         print("\n")
