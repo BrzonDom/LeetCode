@@ -77,8 +77,9 @@ if __name__ == "__main__":
 
         print(f"\tCandies: {Cnds}")
         print(f"\tExtra candy: {Ext_Cnd}")
+        print()
 
         for cnd in Cnds:
-            print(cnd)
+            print(f"\t\t{cnd}")
 
         print("\n")
