@@ -62,6 +62,11 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 """
 
 
+def Slt01_Itr_ExtAdd_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = [[[2, 3, 5, 1, 3], 3],
