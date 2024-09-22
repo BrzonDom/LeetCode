@@ -105,35 +105,37 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Cnds = case[0]
-        Ext_Cnd = case[1]
+        Slt01_Itr_ExtAdd_Prt(case[0], case[1])
 
-        print(f"\tOriginal candies: {Cnds}")
-        print(f"\tExtra candy: {Ext_Cnd}")
-        print()
-
-        mx_cnd = max(Cnds)
-
-        print(f"\tOriginal max candy: {mx_cnd}")
-        print()
-
-        isMx_cnds = []
-
-        print("\t\tCandies:")
-        for idx, cnd in enumerate(Cnds):
-            print(f"\t\t\t{idx+1:2}. {cnd:3}")
-
-            cr_cnd = cnd + Ext_Cnd
-
-            if cr_cnd >= mx_cnd:
-                isMx_cnds.append(True)
-                print(f"\t\t\t\t{cr_cnd:3} = Max")
-
-            else:
-                isMx_cnds.append(False)
-                print(f"\t\t\t\t{cr_cnd:3} = Not max")
-        print()
-
-        print(f"\tMax candies: {isMx_cnds}")
+        # Cnds = case[0]
+        # Ext_Cnd = case[1]
+        #
+        # print(f"\tOriginal candies: {Cnds}")
+        # print(f"\tExtra candy: {Ext_Cnd}")
+        # print()
+        #
+        # mx_cnd = max(Cnds)
+        #
+        # print(f"\tOriginal max candy: {mx_cnd}")
+        # print()
+        #
+        # isMx_cnds = []
+        #
+        # print("\t\tCandies:")
+        # for idx, cnd in enumerate(Cnds):
+        #     print(f"\t\t\t{idx+1:2}. {cnd:3}")
+        #
+        #     cr_cnd = cnd + Ext_Cnd
+        #
+        #     if cr_cnd >= mx_cnd:
+        #         isMx_cnds.append(True)
+        #         print(f"\t\t\t\t{cr_cnd:3} = Max")
+        #
+        #     else:
+        #         isMx_cnds.append(False)
+        #         print(f"\t\t\t\t{cr_cnd:3} = Not max")
+        # print()
+        #
+        # print(f"\tMax candies: {isMx_cnds}")
 
         print("\n")
