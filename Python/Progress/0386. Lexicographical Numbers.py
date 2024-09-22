@@ -32,4 +32,9 @@ https://leetcode.com/problems/lexicographical-numbers/description/
         Depth-First Search
         Trie
 
+
+    Courses:
+
+        Daily: 2024/09/21
+
 """
