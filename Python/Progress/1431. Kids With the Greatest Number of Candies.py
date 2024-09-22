@@ -68,8 +68,9 @@ def Slt01_Itr_ExtAdd_Prt(Cnds, Ext_Cnd):
     print(f"\tExtra candy: {Ext_Cnd}")
     print()
 
-    for cnd in Cnds:
-        print(f"\t\t{cnd}")
+    print("\t\tCandies:")
+    for idx, cnd in enumerate(Cnds):
+        print(f"\t\t\t{idx + 1:2}. {cnd:3}")
 
 
 if __name__ == "__main__":
