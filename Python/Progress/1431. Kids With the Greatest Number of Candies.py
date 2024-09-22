@@ -75,11 +75,14 @@ if __name__ == "__main__":
         Cnds = case[0]
         Ext_Cnd = case[1]
 
-        print(f"\tCandies: {Cnds}")
+        print(f"\tOriginal candies: {Cnds}")
         print(f"\tExtra candy: {Ext_Cnd}")
         print()
 
         mx_cnd = max(Cnds)
+
+        print(f"\tOriginal max candy: {mx_cnd}")
+        print()
 
         print("\t\tCandies:")
         for idx, cnd in enumerate(Cnds):
