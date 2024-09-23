@@ -48,4 +48,9 @@ https://leetcode.com/problems/extra-characters-in-a-string/description/
         Dynamic Programming
         Trie
 
+
+    Courses:
+
+        Daily: 2024/09/23
+
 """
