@@ -13,7 +13,7 @@ https://leetcode.com/problems/extra-characters-in-a-string/description/
 
     Example 1:
 
-        Input: s = "leetscode", dictionary = ["leet","code","leetcode"]
+        Input: s = "leetscode", dictionary = ["leet", "code", "leetcode"]
 
         Output: 1
 
@@ -22,7 +22,7 @@ https://leetcode.com/problems/extra-characters-in-a-string/description/
 
     Example 2:
 
-        Input: s = "sayhelloworld", dictionary = ["hello","world"]
+        Input: s = "sayhelloworld", dictionary = ["hello", "world"]
 
         Output: 3
 
@@ -58,8 +58,8 @@ https://leetcode.com/problems/extra-characters-in-a-string/description/
 
 if __name__ == "__main__":
 
-    InputLst = [["leetscode", ["leet","code","leetcode"]],
-                ["sayhelloworld", ["hello","world"]]]
+    InputLst = [["leetscode", ["leet", "code", "leetcode"]],
+                ["sayhelloworld", ["hello", "world"]]]
 
     for csCnt, case in enumerate(InputLst):
 
