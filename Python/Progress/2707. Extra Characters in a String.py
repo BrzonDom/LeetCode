@@ -39,4 +39,13 @@ https://leetcode.com/problems/extra-characters-in-a-string/description/
         dictionary[i] and s consists of only lowercase English letters
         dictionary contains distinct words
 
+
+    Topics:
+
+        Array
+        Hash Table
+        String
+        Dynamic Programming
+        Trie
+
 """
