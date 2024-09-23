@@ -54,3 +54,12 @@ https://leetcode.com/problems/extra-characters-in-a-string/description/
         Daily: 2024/09/23
 
 """
+
+
+InputLst = [["leetscode", ["leet","code","leetcode"]],
+            ["sayhelloworld", ["hello","world"]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
