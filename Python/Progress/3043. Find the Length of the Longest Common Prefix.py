@@ -45,4 +45,12 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
         1 <= arr1.length, arr2.length <= 5 * 104
         1 <= arr1[i], arr2[i] <= 108
 
+
+    Topics:
+
+        Array
+        Hash Table
+        String
+        Trie
+
 """
