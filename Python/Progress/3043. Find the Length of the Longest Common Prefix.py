@@ -20,7 +20,7 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
 
     Example 1:
 
-        Input: arr1 = [1,10,100], arr2 = [1000]
+        Input: arr1 = [1, 10, 100], arr2 = [1000]
 
         Output: 3
 
@@ -32,7 +32,7 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
 
     Example 2:
 
-        Input: arr1 = [1,2,3], arr2 = [4,4,4]
+        Input: arr1 = [1, 2, 3], arr2 = [4, 4, 4]
 
         Output: 0
 
@@ -42,8 +42,8 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
 
     Constraints:
 
-        1 <= arr1.length, arr2.length <= 5 * 104
-        1 <= arr1[i], arr2[i] <= 108
+        1 <= arr1.length, arr2.length <= 5 * 10^4
+        1 <= arr1[i], arr2[i] <= 10^8
 
 
     Topics:
@@ -61,8 +61,8 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
 """
 
 
-InputLst = [[[1,10,100], [1000]],
-            [[1,2,3], [4,4,4]]]
+InputLst = [[[1, 10, 100], [1000]],
+            [[1, 2, 3], [4, 4, 4]]]
 
 for case in InputLst:
 
