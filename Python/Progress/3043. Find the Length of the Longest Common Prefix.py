@@ -59,3 +59,12 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
         Daily: 2024/09/24
 
 """
+
+
+InputLst = [[[1,10,100], [1000]],
+            [[1,2,3], [4,4,4]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
