@@ -53,4 +53,9 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
         String
         Trie
 
+
+    Courses:
+
+        Daily: 2024/09/24
+
 """
