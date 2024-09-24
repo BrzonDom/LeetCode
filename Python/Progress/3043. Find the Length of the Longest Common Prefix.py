@@ -64,9 +64,11 @@ https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/descr
 InputLst = [[[1, 10, 100], [1000]],
             [[1, 2, 3], [4, 4, 4]]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case[0]}")
     print(f"\t{case[1]}")
 
-    print()
+    print("\n")
