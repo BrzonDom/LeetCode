@@ -58,3 +58,11 @@ https://leetcode.com/problems/my-calendar-i/description/
         Daily: 2024/09/26
 
 """
+
+
+InputLst = [[["MyCalendar", "book", "book", "book"], [[], [10, 20], [15, 25], [20, 30]]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
