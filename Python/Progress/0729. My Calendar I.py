@@ -64,5 +64,6 @@ InputLst = [[["MyCalendar", "book", "book", "book"], [[], [10, 20], [15, 25], [2
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
