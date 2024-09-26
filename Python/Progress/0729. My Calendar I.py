@@ -52,4 +52,9 @@ https://leetcode.com/problems/my-calendar-i/description/
         Segment Tree
         Ordered Set
 
+
+    Courses:
+
+        Daily: 2024/09/26
+
 """
