@@ -74,4 +74,7 @@ if __name__ == "__main__":
         print(f"\tCommands: {Cld_Cmds}")
         print(f"\tTimes: {Tms}")
 
+        for tm in Tms:
+            print(tm)
+
         print("\n")
