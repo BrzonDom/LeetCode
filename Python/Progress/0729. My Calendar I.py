@@ -43,4 +43,13 @@ https://leetcode.com/problems/my-calendar-i/description/
         0 <= start < end <= 10^9
         At most 1000 calls will be made to book.
 
+
+    Topics:
+
+        Array
+        Binary Search
+        Design
+        Segment Tree
+        Ordered Set
+
 """
