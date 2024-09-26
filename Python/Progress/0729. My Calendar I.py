@@ -71,6 +71,7 @@ if __name__ == "__main__":
         Cld_Cmds = case[0]
         Tms = case[1]
 
-        print(f"\t{Cld_Cmds}")
-        print(f"\t{Tms}")
+        print(f"\tCommands: {Cld_Cmds}")
+        print(f"\tTimes: {Tms}")
+
         print("\n")
