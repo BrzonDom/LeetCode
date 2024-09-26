@@ -80,7 +80,12 @@ if __name__ == "__main__":
         for tm in Tms:
             print(f"\t\t{tm}")
 
+            fnd_bk = True
+
             for bk in bk_tms:
                 print(bk)
+
+            if fnd_bk:
+                bk_tms.append(tm)
 
         print("\n")
