@@ -66,10 +66,11 @@ https://leetcode.com/problems/my-calendar-ii/description/
 """
 
 
-InputLst = [[["MyCalendarTwo","book","book","book","book","book","book"],
+InputLst = [[["MyCalendarTwo", "book", "book", "book", "book", "book", "book"],
              [[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]]]
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
