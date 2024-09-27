@@ -58,4 +58,9 @@ https://leetcode.com/problems/my-calendar-ii/description/
         Prefix Sum
         Ordered Set
 
+
+    Courses:
+
+        Daily: 2024/09/27
+
 """
