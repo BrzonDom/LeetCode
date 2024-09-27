@@ -69,9 +69,11 @@ https://leetcode.com/problems/my-calendar-ii/description/
 InputLst = [[["MyCalendarTwo", "book", "book", "book", "book", "book", "book"],
              [[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case[0]}")
     print(f"\t{case[1]}")
 
-    print()
+    print("\n")
