@@ -66,14 +66,16 @@ https://leetcode.com/problems/my-calendar-ii/description/
 """
 
 
-InputLst = [[["MyCalendarTwo", "book", "book", "book", "book", "book", "book"],
-             [[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[["MyCalendarTwo", "book", "book", "book", "book", "book", "book"],
+                 [[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case[0]}")
-    print(f"\t{case[1]}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
