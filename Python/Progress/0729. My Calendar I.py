@@ -92,4 +92,7 @@ if __name__ == "__main__":
                 if fnd_bk:
                     bk_tms.append(tm)
 
+        else:
+            print("\tNo commands")
+
         print("\n")
