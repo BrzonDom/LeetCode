@@ -78,13 +78,14 @@ if __name__ == "__main__":
         bk_tms = []
 
         print("\tBooking times:")
-        for tm in Tms:
+        for tm in Tms[1:]:
             print(f"\t\t{tm}")
 
             fnd_bk = True
 
             for bk in bk_tms:
                 print(f"\t\t\t{bk}")
+            print()
 
             if fnd_bk:
                 bk_tms.append(tm)
