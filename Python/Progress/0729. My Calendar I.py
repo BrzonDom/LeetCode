@@ -80,17 +80,17 @@ if __name__ == "__main__":
             bk_tms = []
 
             print("\tBooking times:")
-            for tm in Tms[1:]:
-                print(f"\t\t{tm}")
+            for srt, end in Tms[1:]:
+                print(f"\t\t{[srt, end]}")
 
                 fnd_bk = True
 
-                for bk in bk_tms:
-                    print(f"\t\t\t{bk}")
+                for bk_srt, bk_end in bk_tms:
+                    print(f"\t\t\t{[bk_srt, bk_end]}")
                 print()
 
                 if fnd_bk:
-                    bk_tms.append(tm)
+                    bk_tms.append((srt, end))
 
         else:
             print("\tNo commands")
