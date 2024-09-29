@@ -60,6 +60,18 @@ https://leetcode.com/problems/my-calendar-i/description/
 """
 
 
+# class MyCalendar:
+#
+#     def __init__(self):
+#
+#     def book(self, start: int, end: int) -> bool:
+#
+#
+# # Your MyCalendar object will be instantiated and called as such:
+# # obj = MyCalendar()
+# # param_1 = obj.book(start,end)
+
+
 if __name__ == "__main__":
 
     InputLst = [[["MyCalendar", "book", "book", "book"], [[], [10, 20], [15, 25], [20, 30]]]]
