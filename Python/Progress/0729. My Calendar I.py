@@ -87,6 +87,9 @@ if __name__ == "__main__":
 
                 for bk_srt, bk_end in bk_tms:
                     print(f"\t\t\t{[bk_srt, bk_end]}")
+
+                    if srt < bk_end and bk_srt < end:
+                            fnd_bk = False
                 print()
 
                 if fnd_bk:
