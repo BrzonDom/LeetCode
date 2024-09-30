@@ -53,4 +53,11 @@ https://leetcode.com/problems/design-circular-deque/description/
         At most 2000 calls will be made to insertFront, insertLast, deleteFront, deleteLast, getFront, getRear,
         isEmpty, isFull.
 
+   Topics:
+
+        Array
+        Linked List
+        Design
+        Queue
+
 """
