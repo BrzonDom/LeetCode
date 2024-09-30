@@ -73,5 +73,6 @@ InputLst = [[["MyCircularDeque", "insertLast", "insertLast", "insertFront", "ins
 
 for case in InputLst:
 
-    print(case)
+    print(f"\t{case}")
+
     print()
