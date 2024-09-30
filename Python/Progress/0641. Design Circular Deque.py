@@ -66,3 +66,12 @@ https://leetcode.com/problems/design-circular-deque/description/
         Daily: 2024/09/28
 
 """
+
+
+InputLst = [[["MyCircularDeque", "insertLast", "insertLast", "insertFront", "insertFront", "getRear", "isFull", "deleteLast", "insertFront", "getFront"],
+             [[3], [1], [2], [3], [4], [], [], [], [4], []]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
