@@ -71,9 +71,11 @@ https://leetcode.com/problems/design-circular-deque/description/
 InputLst = [[["MyCircularDeque", "insertLast", "insertLast", "insertFront", "insertFront", "getRear", "isFull", "deleteLast", "insertFront", "getFront"],
              [[3], [1], [2], [3], [4], [], [], [], [4], []]]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
+
+    print(f"{csCnt + 1}.Case\n")
 
     print(f"\t{case[0]}")
     print(f"\t{case[1]}")
 
-    print()
+    print("\n")
