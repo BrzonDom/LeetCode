@@ -3,6 +3,7 @@
 
 https://leetcode.com/problems/design-circular-deque/description/
 
+
 Design your implementation of the circular double-ended queue (deque).
 
 Implement the MyCircularDeque class:
@@ -17,11 +18,13 @@ int getRear() Returns the last item from Deque. Returns -1 if the deque is empty
 boolean isEmpty() Returns true if the deque is empty, or false otherwise.
 boolean isFull() Returns true if the deque is full, or false otherwise.
 
+
 Example 1:
 
     Input
     ["MyCircularDeque", "insertLast", "insertLast", "insertFront", "insertFront", "getRear", "isFull", "deleteLast", "insertFront", "getFront"]
     [[3], [1], [2], [3], [4], [], [], [], [4], []]
+
     Output
     [null, true, true, true, false, 2, true, true, true, 4]
 
@@ -36,6 +39,7 @@ Example 1:
     myCircularDeque.deleteLast();   // return True
     myCircularDeque.insertFront(4); // return True
     myCircularDeque.getFront();     // return 4
+
 
 Constraints:
 
