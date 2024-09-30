@@ -60,4 +60,9 @@ https://leetcode.com/problems/design-circular-deque/description/
         Design
         Queue
 
+
+    Courses:
+
+        Daily: 2024/09/28
+
 """
