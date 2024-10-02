@@ -42,3 +42,12 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
         LeetCode 75
 
 """
+
+
+InputLst = ["IceCreAm",
+            "leetcode"]
+
+for case in InputLst:
+
+    print(case)
+    print()
