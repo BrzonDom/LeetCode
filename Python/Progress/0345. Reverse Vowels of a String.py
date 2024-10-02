@@ -62,9 +62,9 @@ if __name__ == "__main__":
                 'A', 'E', 'I', 'O', 'U')
 
         print("\t\tVowels in the string:")
-        for crc in Srt:
+        for idx, crc in enumerate(Srt):
 
             if crc in vwls:
-                print(f"\t\t\t{crc}")
+                print(f"\t\t\t{idx+1}. {crc}")
 
         print("\n")
