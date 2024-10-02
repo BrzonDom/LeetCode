@@ -44,9 +44,9 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 """
 
 
-def Slt01_WhlLp_TwPntrMtd_Prt():
+def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
-    return
+    print(f"\tString: {Srt}")
 
 
 if __name__ == "__main__":
