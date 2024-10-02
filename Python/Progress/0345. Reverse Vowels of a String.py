@@ -47,6 +47,7 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
     ln_srt = len(Srt)
+    srt_lst = list(Srt)
 
     print(f"\tString: {Srt}")
     print()
@@ -64,6 +65,11 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
     lft = 0
     rgt = ln_srt - 1
+
+    while lft < rgt:
+
+        lft += 1
+        rgt -= 1
 
 
 if __name__ == "__main__":
