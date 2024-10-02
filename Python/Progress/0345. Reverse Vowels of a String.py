@@ -60,8 +60,7 @@ if __name__ == "__main__":
         print(f"\t\tLength: {ln_srt}")
         print()
 
-        vwls = ('a', 'e', 'i', 'o', 'u',
-                'A', 'E', 'I', 'O', 'U')
+        vwls = set("aeiouAEIOU")
         vwl_cnt = 1
 
         print("\t\tVowels in the string:")
@@ -72,12 +71,14 @@ if __name__ == "__main__":
 
                 vwl_cnt += 1
 
+        srt_lst = list(Srt)
+
         lft = 0
         rgt = ln_srt - 1
 
         while lft < rgt:
 
-            print(Srt[lft])
+            print(srt_lst[lft])
 
             lft += 1
         print()
@@ -87,7 +88,7 @@ if __name__ == "__main__":
 
         while lft < rgt:
 
-            print(Srt[rgt])
+            print(srt_lst[rgt])
 
             rgt -= 1
 
