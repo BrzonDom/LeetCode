@@ -61,6 +61,8 @@ if __name__ == "__main__":
                 'A', 'E', 'I', 'O', 'U')
 
         for crc in Srt:
-            print(crc)
+
+            if crc in vwls:
+                print(crc)
 
         print("\n")
