@@ -47,13 +47,15 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
     print(f"\tString: {Srt}")
+    print()
 
     vwls = set("aeiouAEIOU")
 
+    print("\t\tVowels in the string:")
     for crc in Srt:
 
         if crc in vwls:
-            print(crc)
+            print(f"\t\t\t{crc}")
 
 
 if __name__ == "__main__":
