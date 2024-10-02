@@ -54,8 +54,10 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}.Case\n")
 
         Srt = case
+        ln_srt = len(Srt)
 
         print(f"\tString: {case}")
+        print(f"\t\tLength: {ln_srt}")
         print()
 
         vwls = ('a', 'e', 'i', 'o', 'u',
@@ -69,8 +71,6 @@ if __name__ == "__main__":
                 print(f"\t\t\t{vwl_cnt}. Str[{idx}] = {crc}")
 
                 vwl_cnt += 1
-
-        ln_srt = len(Srt)
 
         lft = 0
         rgt = ln_srt - 1
