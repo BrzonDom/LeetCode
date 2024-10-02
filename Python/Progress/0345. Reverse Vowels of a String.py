@@ -75,4 +75,11 @@ if __name__ == "__main__":
         lft = 0
         rgt = ln_srt - 1
 
+        while lft < rgt:
+
+            print(Srt[lft])
+
+            lft += 1
+
+
         print("\n")
