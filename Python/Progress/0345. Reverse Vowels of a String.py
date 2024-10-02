@@ -70,12 +70,14 @@ if __name__ == "__main__":
                 print(f"\t\t\t{vwl_cnt}. Str[{idx}] = {crc}")
 
                 vwl_cnt += 1
+        print()
 
         srt_lst = list(Srt)
 
         lft = 0
         rgt = ln_srt - 1
 
+        print("\t\tVowel swaps:")
         while lft < rgt:
 
             if srt_lst[lft] not in vwls:
@@ -85,6 +87,8 @@ if __name__ == "__main__":
                 rgt -= 1
 
             else:
+                print(f"\t\t\t{srt_lst[lft]} <-> {srt_lst[rgt]}")
+
                 srt_lst[lft], srt_lst[rgt] = srt_lst[rgt], srt_lst[lft]
 
                 lft += 1
