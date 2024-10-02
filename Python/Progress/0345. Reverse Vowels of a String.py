@@ -44,6 +44,11 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 """
 
 
+def Slt01_WhlLp_TwPntrMtd_Prt():
+
+    return
+
+
 if __name__ == "__main__":
 
     InputLst = ["IceCreAm",
