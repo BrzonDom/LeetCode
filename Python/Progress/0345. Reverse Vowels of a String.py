@@ -57,4 +57,10 @@ if __name__ == "__main__":
 
         print(f"\tString: {case}")
 
+        vwls = ('a', 'e', 'i', 'o', 'u',
+                'A', 'E', 'I', 'O', 'U')
+
+        for crc in Srt:
+            print(crc)
+
         print("\n")
