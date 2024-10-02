@@ -48,6 +48,13 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
     print(f"\tString: {Srt}")
 
+    vwls = set("aeiouAEIOU")
+
+    for crc in Srt:
+
+        if crc in vwls:
+            print(crc)
+
 
 if __name__ == "__main__":
 
