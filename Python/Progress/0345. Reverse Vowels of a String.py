@@ -47,7 +47,10 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 InputLst = ["IceCreAm",
             "leetcode"]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case}")
+
+    print("\n")
