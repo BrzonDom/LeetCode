@@ -60,11 +60,14 @@ if __name__ == "__main__":
 
         vwls = ('a', 'e', 'i', 'o', 'u',
                 'A', 'E', 'I', 'O', 'U')
+        vwl_cnt = 1
 
         print("\t\tVowels in the string:")
         for idx, crc in enumerate(Srt):
 
             if crc in vwls:
-                print(f"\t\t\t{idx+1}. {crc}")
+                print(f"\t\t\t{vwl_cnt}. Str[{idx}] = {crc}")
+
+                vwl_cnt += 1
 
         print("\n")
