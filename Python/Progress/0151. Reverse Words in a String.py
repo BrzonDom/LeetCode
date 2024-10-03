@@ -67,6 +67,8 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        print(f"\t{case}")
+        Srt = case
+
+        print(f"\tString: \"{Srt}\"")
 
         print("\n")
