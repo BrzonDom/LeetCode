@@ -55,3 +55,13 @@ https://leetcode.com/problems/reverse-words-in-a-string/description/
         LeetCode 75
 
 """
+
+
+InputLst = ["the sky is blue",
+            "  hello world  ",
+            "a good   example"]
+
+for case in InputLst:
+
+    print(case)
+    print()
