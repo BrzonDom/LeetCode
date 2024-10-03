@@ -125,6 +125,11 @@ if __name__ == "__main__":
 
                 vwl_cnt += 1
 
+        ln_srt = len(Srt)
+
+        lft = 0
+        rgt = ln_srt - 1
+
         print("\n")
 
     EndTime = time.time()
