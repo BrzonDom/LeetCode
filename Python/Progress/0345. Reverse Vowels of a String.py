@@ -107,7 +107,11 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        Slt01_WhlLp_TwPntrMtd_Prt(case)
+        # Slt01_WhlLp_TwPntrMtd_Prt(case)
+
+        Srt = case
+
+        print(f"\tString: {Srt}")
 
         print("\n")
 
