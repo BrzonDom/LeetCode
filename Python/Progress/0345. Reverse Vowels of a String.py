@@ -112,13 +112,15 @@ if __name__ == "__main__":
         Srt = case
 
         print(f"\tString: {Srt}")
+        print()
 
         vwls = set("aeiouAEIOU")
 
+        print("\t\tVowels in the string:")
         for crc in Srt:
 
             if crc in vwls:
-                print(crc)
+                print(f"\t\t\t{crc}")
 
         print("\n")
 
