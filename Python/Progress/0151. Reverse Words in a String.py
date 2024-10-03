@@ -61,7 +61,10 @@ InputLst = ["the sky is blue",
             "  hello world  ",
             "a good   example"]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case}")
+
+    print("\n")
