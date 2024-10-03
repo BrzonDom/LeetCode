@@ -71,4 +71,10 @@ if __name__ == "__main__":
 
         print(f"\tString: \"{Srt}\"")
 
+        wrd_lst = Srt.split()
+
+        for wrd in wrd_lst:
+
+            print(wrd)
+
         print("\n")
