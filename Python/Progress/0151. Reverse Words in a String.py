@@ -78,5 +78,10 @@ if __name__ == "__main__":
         for wrd in wrd_lst:
 
             print(f"\t\t\t{wrd}")
+        print()
+
+        srt_rvs = " ".join(reversed(wrd_lst))
+
+        print(f"\tReversed string: \"{srt_rvs}\"")
 
         print("\n")
