@@ -113,6 +113,9 @@ if __name__ == "__main__":
 
         print(f"\tString: {Srt}")
 
+        for crc in Srt:
+            print(crc)
+
         print("\n")
 
     EndTime = time.time()
