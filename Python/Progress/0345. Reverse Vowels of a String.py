@@ -84,8 +84,11 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
             lft += 1
             rgt -= 1
+    print()
 
     srt_swp = "".join(srt_lst)
+
+    print(f"\tSwapped string: {srt_swp}")
 
     return srt_swp
 
