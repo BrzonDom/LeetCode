@@ -44,6 +44,9 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 """
 
 
+import time
+
+
 def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
     ln_srt = len(Srt)
@@ -95,6 +98,8 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
 if __name__ == "__main__":
 
+    StartTime = time.time()
+
     InputLst = ["IceCreAm",
                 "leetcode"]
 
@@ -105,3 +110,7 @@ if __name__ == "__main__":
         Slt01_WhlLp_TwPntrMtd_Prt(case)
 
         print("\n")
+
+    EndTime = time.time()
+
+    print(f"Time: {EndTime - StartTime} seconds", end="")
