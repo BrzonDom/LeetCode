@@ -85,6 +85,10 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
             lft += 1
             rgt -= 1
 
+    srt_swp = "".join(srt_lst)
+
+    return srt_swp
+
 
 if __name__ == "__main__":
 
