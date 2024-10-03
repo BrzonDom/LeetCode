@@ -57,14 +57,16 @@ https://leetcode.com/problems/reverse-words-in-a-string/description/
 """
 
 
-InputLst = ["the sky is blue",
-            "  hello world  ",
-            "a good   example"]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = ["the sky is blue",
+                "  hello world  ",
+                "a good   example"]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
