@@ -113,8 +113,12 @@ if __name__ == "__main__":
 
         print(f"\tString: {Srt}")
 
+        vwls = set("aeiouAEIOU")
+
         for crc in Srt:
-            print(crc)
+
+            if crc in vwls:
+                print(crc)
 
         print("\n")
 
