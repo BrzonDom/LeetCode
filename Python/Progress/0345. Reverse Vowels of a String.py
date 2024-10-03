@@ -115,12 +115,15 @@ if __name__ == "__main__":
         print()
 
         vwls = set("aeiouAEIOU")
+        vwl_cnt = 1
 
         print("\t\tVowels in the string:")
-        for crc in Srt:
+        for idx, crc in enumerate(Srt):
 
             if crc in vwls:
-                print(f"\t\t\t{crc}")
+                print(f"\t\t\t{vwl_cnt}. Str[{idx}] = {crc}")
+
+                vwl_cnt += 1
 
         print("\n")
 
