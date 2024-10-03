@@ -113,4 +113,4 @@ if __name__ == "__main__":
 
     EndTime = time.time()
 
-    print(f"Time: {EndTime - StartTime} seconds", end="")
+    print(f"Time: {(EndTime - StartTime) * 1000} milliseconds", end="")
