@@ -133,18 +133,7 @@ if __name__ == "__main__":
 
         while lft < rgt:
 
-            print(srt_lst[lft])
-
             lft += 1
-        print()
-
-        lft = 0
-        rgt = ln_srt - 1
-
-        while lft < rgt:
-
-            print(srt_lst[rgt])
-
             rgt -= 1
 
         print("\n")
