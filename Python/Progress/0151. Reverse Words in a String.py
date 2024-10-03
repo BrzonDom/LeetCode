@@ -70,11 +70,13 @@ if __name__ == "__main__":
         Srt = case
 
         print(f"\tString: \"{Srt}\"")
+        print()
 
         wrd_lst = Srt.split()
 
+        print("\t\tWords:")
         for wrd in wrd_lst:
 
-            print(wrd)
+            print(f"\t\t\t{wrd}")
 
         print("\n")
