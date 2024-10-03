@@ -116,11 +116,12 @@ if __name__ == "__main__":
         print(f"\t\tLength: {ln_srt}")
         print()
 
+        srt_lst = list(Srt)
         vwls = set("aeiouAEIOU")
         vwl_cnt = 1
 
         print("\t\tVowels in the string:")
-        for idx, crc in enumerate(Srt):
+        for idx, crc in enumerate(srt_lst):
 
             if crc in vwls:
                 print(f"\t\t\t{vwl_cnt}. Str[{idx}] = {crc}")
@@ -132,7 +133,7 @@ if __name__ == "__main__":
 
         while lft < rgt:
 
-            print(Srt[lft])
+            print(srt_lst[lft])
 
             lft += 1
         print()
@@ -142,7 +143,7 @@ if __name__ == "__main__":
 
         while lft < rgt:
 
-            print(Srt[rgt])
+            print(srt_lst[rgt])
 
             rgt -= 1
 
