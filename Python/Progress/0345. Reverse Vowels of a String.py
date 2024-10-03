@@ -140,6 +140,8 @@ if __name__ == "__main__":
                 rgt -= 1
 
             else:
+                srt_lst[lft], srt_lst[rgt] = srt_lst[rgt], srt_lst[lft]
+
                 lft += 1
                 rgt -= 1
 
