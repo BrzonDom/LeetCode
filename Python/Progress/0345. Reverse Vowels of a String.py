@@ -148,6 +148,11 @@ if __name__ == "__main__":
 
                 lft += 1
                 rgt -= 1
+        print()
+
+        srt_swp = "".join(srt_lst)
+
+        print(f"\tSwapped string: {srt_swp}")
 
         print("\n")
 
