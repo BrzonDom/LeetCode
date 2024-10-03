@@ -68,8 +68,15 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
 
     while lft < rgt:
 
-        lft += 1
-        rgt -= 1
+        if srt_lst[lft] not in vwls:
+            lft += 1
+
+        elif srt_lst[rgt] not in vwls:
+            rgt -= 1
+
+        else:
+            lft += 1
+            rgt -= 1
 
 
 if __name__ == "__main__":
