@@ -75,6 +75,8 @@ def Slt01_WhlLp_TwPntrMtd_Prt(Srt):
             rgt -= 1
 
         else:
+            srt_lst[lft], srt_lst[rgt] = srt_lst[rgt], srt_lst[lft]
+
             lft += 1
             rgt -= 1
 
