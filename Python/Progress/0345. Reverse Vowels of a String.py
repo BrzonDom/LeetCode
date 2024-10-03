@@ -110,8 +110,10 @@ if __name__ == "__main__":
         # Slt01_WhlLp_TwPntrMtd_Prt(case)
 
         Srt = case
+        ln_srt = len(Srt)
 
-        print(f"\tString: {Srt}")
+        print(f"\tString: {case}")
+        print(f"\t\tLength: {ln_srt}")
         print()
 
         vwls = set("aeiouAEIOU")
@@ -124,8 +126,6 @@ if __name__ == "__main__":
                 print(f"\t\t\t{vwl_cnt}. Str[{idx}] = {crc}")
 
                 vwl_cnt += 1
-
-        ln_srt = len(Srt)
 
         lft = 0
         rgt = ln_srt - 1
