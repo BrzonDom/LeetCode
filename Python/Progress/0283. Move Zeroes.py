@@ -40,3 +40,12 @@ https://leetcode.com/problems/move-zeroes/description/
         LeetCode 75
 
 """
+
+
+InputLst = [[0,1,0,3,12],
+            [0]]
+
+for case in InputLst:
+
+    print(case)
+    print()
