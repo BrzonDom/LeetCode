@@ -28,4 +28,15 @@ https://leetcode.com/problems/move-zeroes/description/
         1 <= nums.length <= 10^4
         -2^31 <= nums[i] <= 2^31 - 1
 
+
+    Topics:
+
+        Array
+        Two Pointers
+
+
+    Courses:
+
+        LeetCode 75
+
 """
