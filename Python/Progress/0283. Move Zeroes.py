@@ -12,9 +12,9 @@ https://leetcode.com/problems/move-zeroes/description/
 
     Example 1:
 
-        Input: nums = [0,1,0,3,12]
+        Input: nums = [0, 1, 0, 3, 12]
 
-        Output: [1,3,12,0,0]
+        Output: [1, 3, 12, 0, 0]
 
     Example 2:
 
@@ -42,7 +42,7 @@ https://leetcode.com/problems/move-zeroes/description/
 """
 
 
-InputLst = [[0,1,0,3,12],
+InputLst = [[0, 1, 0, 3, 12],
             [0]]
 
 for case in InputLst:
