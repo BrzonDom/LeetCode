@@ -59,12 +59,15 @@ if __name__ == "__main__":
         print()
 
         print("\t\tNumbers:")
-        for idx in range(ln_nmbs):
+        for nm in Nmbs:
 
-            if Nmbs[idx]:
-                print(f"\t\t\t{Nmbs[idx]} is non-zero")
+            if nm:
+                print(f"\t\t\t{nm} is non-zero")
 
             else:
-                print(f"\t\t\t{Nmbs[idx]} is zero")
+                print(f"\t\t\t{nm} is zero")
+
+        ptr_zr = 0
+        prt_nzr = 0
 
         print("\n")
