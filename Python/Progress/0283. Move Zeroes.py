@@ -58,6 +58,11 @@ if __name__ == "__main__":
 
         print("\t\tNumbers:")
         for nm in Nmbs:
-            print(f"\t\t\t{nm}")
+
+            if nm:
+                print(f"\t\t\t{nm} is non-zero")
+
+            else:
+                print(f"\t\t\t{nm} is zero")
 
         print("\n")
