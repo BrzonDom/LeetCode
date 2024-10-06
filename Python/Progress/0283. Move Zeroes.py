@@ -52,17 +52,19 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}.Case\n")
 
         Nmbs = case
+        ln_nmbs = len(Nmbs)
 
         print(f"\tNumbers: {Nmbs}")
+        print(f"\t\tLength: {ln_nmbs}")
         print()
 
         print("\t\tNumbers:")
-        for nm in Nmbs:
+        for idx in range(ln_nmbs):
 
-            if nm:
-                print(f"\t\t\t{nm} is non-zero")
+            if Nmbs[idx]:
+                print(f"\t\t\t{Nmbs[idx]} is non-zero")
 
             else:
-                print(f"\t\t\t{nm} is zero")
+                print(f"\t\t\t{Nmbs[idx]} is zero")
 
         print("\n")
