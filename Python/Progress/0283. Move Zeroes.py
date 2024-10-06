@@ -45,7 +45,10 @@ https://leetcode.com/problems/move-zeroes/description/
 InputLst = [[0, 1, 0, 3, 12],
             [0]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case}")
+
+    print("\n")
