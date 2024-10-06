@@ -42,13 +42,15 @@ https://leetcode.com/problems/move-zeroes/description/
 """
 
 
-InputLst = [[0, 1, 0, 3, 12],
-            [0]]
+if __name__ == "__main__":
 
-for csCnt, case in enumerate(InputLst):
+    InputLst = [[0, 1, 0, 3, 12],
+                [0]]
 
-    print(f"{csCnt + 1}.Case\n")
+    for csCnt, case in enumerate(InputLst):
 
-    print(f"\t{case}")
+        print(f"{csCnt + 1}.Case\n")
 
-    print("\n")
+        print(f"\t{case}")
+
+        print("\n")
