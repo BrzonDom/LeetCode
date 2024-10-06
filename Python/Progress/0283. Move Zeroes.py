@@ -55,4 +55,7 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nmbs}")
 
+        for nm in Nmbs:
+            print(nm)
+
         print("\n")
