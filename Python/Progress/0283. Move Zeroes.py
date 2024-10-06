@@ -54,8 +54,10 @@ if __name__ == "__main__":
         Nmbs = case
 
         print(f"\tNumbers: {Nmbs}")
+        print()
 
+        print("\t\tNumbers:")
         for nm in Nmbs:
-            print(nm)
+            print(f"\t\t\t{nm}")
 
         print("\n")
