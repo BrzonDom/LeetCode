@@ -55,7 +55,10 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        print(f"\t{case[0]}")
-        print(f"\t{case[1]}")
+        Nmbs = case[0]
+        Rng = case[1]
+
+        print(f"\tNumbers: {Nmbs}")
+        print(f"\tRange: {Rng}")
 
         print("\n")
