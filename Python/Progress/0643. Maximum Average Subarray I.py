@@ -12,7 +12,7 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
 
     Example 1:
 
-        Input: nums = [1,12,-5,-6,50,3], k = 4
+        Input: nums = [1, 12, -5, -6, 50, 3], k = 4
 
         Output: 12.75000
 
@@ -35,7 +35,7 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
 """
 
 
-InputLst = [[[1,12,-5,-6,50,3], 4],
+InputLst = [[[1, 12, -5, -6, 50, 3], 4],
             [[5], 1]]
 
 for case in InputLst:
