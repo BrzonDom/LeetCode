@@ -49,7 +49,11 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
 InputLst = [[[1, 12, -5, -6, 50, 3], 4],
             [[5], 1]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case[0]}")
+    print(f"\t{case[1]}")
+
+    print("\n")
