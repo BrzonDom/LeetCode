@@ -6,7 +6,8 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
 
     You are given an integer array nums consisting of n elements, and an integer k.
 
-    Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10-5 will be accepted.
+    Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value.
+    Any answer with a calculation error less than 10^-5 will be accepted.
 
 
     Example 1:
@@ -28,7 +29,7 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
     Constraints:
 
         n == nums.length
-        1 <= k <= n <= 105
-        -104 <= nums[i] <= 104
+        1 <= k <= n <= 10^5
+        -10^4 <= nums[i] <= 10^4
 
 """
