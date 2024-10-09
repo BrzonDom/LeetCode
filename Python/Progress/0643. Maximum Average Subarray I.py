@@ -33,3 +33,12 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
         -10^4 <= nums[i] <= 10^4
 
 """
+
+
+InputLst = [[[1,12,-5,-6,50,3], 4],
+            [[5], 1]]
+
+for case in InputLst:
+
+    print(case)
+    print()
