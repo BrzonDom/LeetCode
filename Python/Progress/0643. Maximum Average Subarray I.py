@@ -32,6 +32,17 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
         1 <= k <= n <= 10^5
         -10^4 <= nums[i] <= 10^4
 
+
+    Topics:
+
+        Array
+        Sliding Window
+
+
+    Courses:
+
+        LeetCode 75
+
 """
 
 
