@@ -60,5 +60,9 @@ if __name__ == "__main__":
 
         print(f"\tNumbers: {Nmbs}")
         print(f"\tRange: {Rng}")
+        print()
+
+        for nm in Nmbs:
+            print(nm)
 
         print("\n")
