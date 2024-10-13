@@ -30,6 +30,18 @@ https://leetcode.com/problems/is-subsequence/description/
         0 <= t.length <= 10^4
         s and t consist only of lowercase English letters.
 
+
+    Topics:
+
+        Two Pointers
+        String
+        Dynamic Programming
+
+
+    Courses:
+
+        LeetCode 75
+
 """
 
 
