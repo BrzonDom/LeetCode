@@ -48,7 +48,11 @@ https://leetcode.com/problems/is-subsequence/description/
 InputLst = [["abc", "ahbgdc"],
             ["axc", "ahbgdc"]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case[0]}")
+    print(f"\t{case[1]}")
+
+    print("\n")
