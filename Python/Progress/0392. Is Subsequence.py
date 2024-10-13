@@ -31,3 +31,12 @@ https://leetcode.com/problems/is-subsequence/description/
         s and t consist only of lowercase English letters.
 
 """
+
+
+InputLst = [["abc", "ahbgdc"],
+            ["axc", "ahbgdc"]]
+
+for case in InputLst:
+
+    print(case)
+    print()
