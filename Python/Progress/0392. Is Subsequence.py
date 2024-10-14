@@ -54,7 +54,10 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        print(f"\t{case[0]}")
-        print(f"\t{case[1]}")
+        Sbs = case[0]
+        Srt = case[1]
+
+        print(f"\tSubset: {Sbs}")
+        print(f"\tString: {Srt}")
 
         print("\n")
