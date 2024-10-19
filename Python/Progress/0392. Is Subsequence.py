@@ -68,12 +68,12 @@ if __name__ == "__main__":
 
         cnt_sbs = 0
 
-        print("\t\tString characters:")
+        print("\t\tCommon characters:")
         for idx, crc in enumerate(Srt):
 
             if crc == Sbs[cnt_sbs]:
                 cnt_sbs += 1
 
-            print(f"\t\t\t{idx+1}. {crc}")
+                print(f"\t\t\tSrt[{idx+1}] = Sbs[{cnt_sbs-1}] = {crc}")
 
         print("\n")
