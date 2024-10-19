@@ -91,7 +91,11 @@ class AllOne:
 InputLst = [[["AllOne", "inc", "inc", "getMaxKey", "getMinKey", "inc", "getMaxKey", "getMinKey"],
              [[], ["hello"], ["hello"], [], [], ["leet"], [], []]]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case[0]}")
+    print(f"\t{case[1]}")
+
+    print("\n")
