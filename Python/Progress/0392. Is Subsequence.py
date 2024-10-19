@@ -57,7 +57,12 @@ if __name__ == "__main__":
         Sbs = case[0]
         Srt = case[1]
 
+        ln_sbs = len(Sbs)
+        ln_srt = len(Srt)
+
         print(f"\tSubset: {Sbs}")
+        print(f"\t\tLength: {ln_sbs}")
         print(f"\tString: {Srt}")
+        print(f"\t\tLength: {ln_srt}")
 
         print("\n")
