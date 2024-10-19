@@ -77,6 +77,13 @@ if __name__ == "__main__":
                 print(f"\t\t\tSrt[{idx+1}] = Sbs[{cnt_sbs-1}] = {crc}")
 
                 if cnt_sbs == lng_sbs:
+                    print()
+                    print("\tSubset is a subset of the string")
+
                     break
+
+            if cnt_sbs != lng_sbs:
+                print()
+                print("\tSubset is not a subset of the string")
 
         print("\n")
