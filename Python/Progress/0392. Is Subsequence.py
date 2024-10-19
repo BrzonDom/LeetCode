@@ -64,11 +64,14 @@ if __name__ == "__main__":
         print(f"\t\tLength: {ln_sbs}")
         print(f"\tString: {Srt}")
         print(f"\t\tLength: {ln_srt}")
+        print()
 
+        print("\t\tSubset characters:")
         for crc in Sbs:
-            print(crc)
+            print(f"\t\t\t{crc}")
 
+        print("\t\tString characters:")
         for crc in Srt:
-            print(crc)
+            print(f"\t\t\t{crc}")
 
         print("\n")
