@@ -86,3 +86,12 @@ class AllOne:
 # obj.dec(key)
 # param_3 = obj.getMaxKey()
 # param_4 = obj.getMinKey()
+
+
+InputLst = [[["AllOne", "inc", "inc", "getMaxKey", "getMinKey", "inc", "getMaxKey", "getMinKey"],
+             [[], ["hello"], ["hello"], [], [], ["leet"], [], []]]]
+
+for case in InputLst:
+
+    print(case)
+    print()
