@@ -46,4 +46,17 @@ Constraints:
     It is guaranteed that for each call to dec, key is existing in the data structure.
     At most 5 * 10^4 calls will be made to inc, dec, getMaxKey, and getMinKey.
 
+
+    Topics:
+
+        Hash Table
+        Linked List
+        Design
+        Doubly-Linked List
+
+
+    Course:
+
+        Daily: 2024/09/29
+
 """
