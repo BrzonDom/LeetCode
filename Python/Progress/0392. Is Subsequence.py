@@ -57,14 +57,16 @@ if __name__ == "__main__":
         Sbs = case[0]
         Srt = case[1]
 
-        ln_sbs = len(Sbs)
-        ln_srt = len(Srt)
+        lng_sbs = len(Sbs)
+        lng_srt = len(Srt)
 
         print(f"\tSubset: {Sbs}")
-        print(f"\t\tLength: {ln_sbs}")
+        print(f"\t\tLength: {lng_sbs}")
         print(f"\tString: {Srt}")
-        print(f"\t\tLength: {ln_srt}")
+        print(f"\t\tLength: {lng_srt}")
         print()
+
+        cnt_sbs = 0
 
         print("\t\tSubset characters:")
         for idx, crc in enumerate(Sbs):
