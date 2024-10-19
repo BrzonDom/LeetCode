@@ -65,4 +65,10 @@ if __name__ == "__main__":
         print(f"\tString: {Srt}")
         print(f"\t\tLength: {ln_srt}")
 
+        for crc in Sbs:
+            print(crc)
+
+        for crc in Srt:
+            print(crc)
+
         print("\n")
