@@ -67,11 +67,12 @@ if __name__ == "__main__":
         print()
 
         print("\t\tSubset characters:")
-        for crc in Sbs:
-            print(f"\t\t\t{crc}")
+        for idx, crc in enumerate(Sbs):
+            print(f"\t\t\t{idx+1}. {crc}")
+        print()
 
         print("\t\tString characters:")
-        for crc in Srt:
-            print(f"\t\t\t{crc}")
+        for idx, crc in enumerate(Srt):
+            print(f"\t\t\t{idx+1}. {crc}")
 
         print("\n")
