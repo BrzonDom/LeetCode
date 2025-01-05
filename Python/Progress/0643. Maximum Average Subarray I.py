@@ -62,13 +62,9 @@ if __name__ == "__main__":
         print(f"\tRange: {Rng}")
         print()
 
-        for nm in Nmbs:
-            print(nm)
-        print()
-
         i = 0
         while i <= (len(Nmbs) - Rng):
-            print(Nmbs[i: Rng + i])
+            print(f"\t{Nmbs[i: Rng + i]}")
 
             i += 1
 
