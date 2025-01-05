@@ -83,4 +83,13 @@ if __name__ == "__main__":
             print(f"\t\tAvg: {nmbs_avg}")
             print()
 
+            if nmbs_avg > max_avg:
+                max_nmbs = Nmbs[i: Rng + i]
+                max_sum = nmbs_sum
+                max_avg = nmbs_avg
+
+        print(max_nmbs)
+        print(max_sum)
+        print(max_avg)
+
         print()
