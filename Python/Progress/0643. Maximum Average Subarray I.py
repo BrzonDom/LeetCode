@@ -44,7 +44,7 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
         LeetCode 75
 
 """
-
+from parso.python.tree import Number
 
 if __name__ == "__main__":
 
@@ -64,5 +64,12 @@ if __name__ == "__main__":
 
         for nm in Nmbs:
             print(nm)
+        print()
+
+        i = 0
+        while i <= (len(Nmbs) - Rng):
+            print(Nmbs[i: Rng + i])
+
+            i += 1
 
         print("\n")
