@@ -56,9 +56,9 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
         nmbs_sum = sum(Nmbs[i: Rng + i])
         nmbs_avg = nmbs_sum / Rng
 
-        print(f"\t{Nmbs[i: Rng + i]}")
-        print(nmbs_sum)
-        print(nmbs_avg)
+        print(f"\t\t{Nmbs[i: Rng + i]}")
+        print(f"\t\t\tSum: {nmbs_sum}")
+        print(f"\t\t\tAvg: {nmbs_avg}")
 
 
 if __name__ == "__main__":
