@@ -46,9 +46,10 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
 """
 
 
-def Brt01_FrLp_SldWndw_Prt():
+def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
 
-    pass
+    print(f"\tNumbers: {Nmbs}")
+    print(f"\tRange: {Rng}")
 
 
 if __name__ == "__main__":
