@@ -63,6 +63,11 @@ if __name__ == "__main__":
         print()
 
         for i in range(len(Nmbs) - Rng + 1):
+            nmbs_sum = sum(Nmbs[i: Rng + i])
+            nmbs_avr = nmbs_sum / Rng
+
             print(f"\t{Nmbs[i: Rng + i]}")
+            print(nmbs_sum)
+            print(nmbs_avr)
 
         print("\n")
