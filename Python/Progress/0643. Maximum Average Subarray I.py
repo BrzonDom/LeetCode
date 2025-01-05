@@ -53,7 +53,12 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
     print()
 
     for i in range(len(Nmbs) - Rng + 1):
+        nmbs_sum = sum(Nmbs[i: Rng + i])
+        nmbs_avg = nmbs_sum / Rng
+
         print(f"\t{Nmbs[i: Rng + i]}")
+        print(nmbs_sum)
+        print(nmbs_avg)
 
 
 if __name__ == "__main__":
