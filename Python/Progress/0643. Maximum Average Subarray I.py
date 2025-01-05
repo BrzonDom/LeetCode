@@ -52,10 +52,18 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
     print(f"\tRange: {Rng}")
     print()
 
-    for i in range(len(Nmbs) - Rng + 1):
+    nmbs_sum = sum(Nmbs[:Rng])
+    nmbs_avg = nmbs_sum / Rng
+
+    print(f"\t\t{Nmbs[:Rng]}")
+    print(f"\t\t\tSum: {nmbs_sum}")
+    print(f"\t\t\tAvg: {nmbs_avg}")
+
+    for i in range(1, len(Nmbs) - Rng + 1):
         nmbs_sum = sum(Nmbs[i: Rng + i])
         nmbs_avg = nmbs_sum / Rng
 
+        print()
         print(f"\t\t{Nmbs[i: Rng + i]}")
         print(f"\t\t\tSum: {nmbs_sum}")
         print(f"\t\t\tAvg: {nmbs_avg}")
