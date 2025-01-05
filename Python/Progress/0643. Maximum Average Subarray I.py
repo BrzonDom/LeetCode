@@ -62,7 +62,15 @@ if __name__ == "__main__":
         print(f"\tRange: {Rng}")
         print()
 
-        for i in range(len(Nmbs) - Rng + 1):
+        nmbs_sum = sum(Nmbs[:Rng])
+        nmbs_avg = nmbs_sum / Rng
+
+        print(f"\t{Nmbs[:Rng]}")
+        print(f"\t\tSum: {nmbs_sum}")
+        print(f"\t\tAvg: {nmbs_avg}")
+        print()
+
+        for i in range(1, len(Nmbs) - Rng + 1):
             nmbs_sum = sum(Nmbs[i: Rng + i])
             nmbs_avg = nmbs_sum / Rng
 
