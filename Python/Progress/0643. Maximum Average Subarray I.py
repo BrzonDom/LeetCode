@@ -81,6 +81,8 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
     print(f"\tMax. sum: {max_sum}")
     print(f"\tMax. avg.: {max_avg}")
 
+    return max_avg
+
 
 if __name__ == "__main__":
 
