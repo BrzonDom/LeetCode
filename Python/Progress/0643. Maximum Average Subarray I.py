@@ -72,6 +72,15 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
         print(f"\t\t\tSum: {nmbs_sum}")
         print(f"\t\t\tAvg: {nmbs_avg}")
 
+        if nmbs_avg > max_avg:
+            max_nmbs = Nmbs[i: Rng + i]
+            max_sum = nmbs_sum
+            max_avg = nmbs_avg
+
+    print(max_nmbs)
+    print(max_sum)
+    print(max_avg)
+
 
 if __name__ == "__main__":
 
