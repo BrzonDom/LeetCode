@@ -95,43 +95,4 @@ if __name__ == "__main__":
 
         Brt01_FrLp_SldWndw_Prt(case[0], case[1])
 
-        print()
-
-        Nmbs = case[0]
-        Rng = case[1]
-
-        print(f"\tNumbers: {Nmbs}")
-        print(f"\tRange: {Rng}")
-        print()
-
-        nmbs_sum = sum(Nmbs[:Rng])
-        nmbs_avg = nmbs_sum / Rng
-
-        print(f"\t\t{Nmbs[:Rng]}")
-        print(f"\t\t\tSum: {nmbs_sum}")
-        print(f"\t\t\tAvg: {nmbs_avg}")
-        print()
-
-        max_nmbs = Nmbs[:Rng]
-        max_sum = sum(Nmbs[:Rng])
-        max_avg = max_sum / Rng
-
-        for i in range(1, len(Nmbs) - Rng + 1):
-            nmbs_sum = sum(Nmbs[i: Rng + i])
-            nmbs_avg = nmbs_sum / Rng
-
-            print(f"\t\t{Nmbs[i: Rng + i]}")
-            print(f"\t\t\tSum: {nmbs_sum}")
-            print(f"\t\t\tAvg: {nmbs_avg}")
-            print()
-
-            if nmbs_avg > max_avg:
-                max_nmbs = Nmbs[i: Rng + i]
-                max_sum = nmbs_sum
-                max_avg = nmbs_avg
-
-        print(f"\tMax. numbers: {max_nmbs}")
-        print(f"\tMax. sum: {max_sum}")
-        print(f"\tMax. avg.: {max_avg}")
-
         print("\n")
