@@ -58,6 +58,7 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
     print(f"\t\t{Nmbs[:Rng]}")
     print(f"\t\t\tSum: {nmbs_sum}")
     print(f"\t\t\tAvg: {nmbs_avg}")
+    print()
 
     max_nmbs = Nmbs[:Rng]
     max_sum = sum(Nmbs[:Rng])
@@ -67,7 +68,6 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
         nmbs_sum = sum(Nmbs[i: Rng + i])
         nmbs_avg = nmbs_sum / Rng
 
-        print()
         print(f"\t\t{Nmbs[i: Rng + i]}")
         print(f"\t\t\tSum: {nmbs_sum}")
         print(f"\t\t\tAvg: {nmbs_avg}")
@@ -77,9 +77,9 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
             max_sum = nmbs_sum
             max_avg = nmbs_avg
 
-    print(max_nmbs)
-    print(max_sum)
-    print(max_avg)
+    print(f"\tMax. numbers: {max_nmbs}")
+    print(f"\tMax. sum: {max_sum}")
+    print(f"\tMax. avg.: {max_avg}")
 
 
 if __name__ == "__main__":
