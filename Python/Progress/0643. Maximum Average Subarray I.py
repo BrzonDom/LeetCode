@@ -64,10 +64,11 @@ if __name__ == "__main__":
 
         for i in range(len(Nmbs) - Rng + 1):
             nmbs_sum = sum(Nmbs[i: Rng + i])
-            nmbs_avr = nmbs_sum / Rng
+            nmbs_avg = nmbs_sum / Rng
 
             print(f"\t{Nmbs[i: Rng + i]}")
-            print(nmbs_sum)
-            print(nmbs_avr)
+            print(f"\t\tSum: {nmbs_sum}")
+            print(f"\t\tAvg: {nmbs_avg}")
+            print()
 
-        print("\n")
+        print()
