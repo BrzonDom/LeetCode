@@ -46,6 +46,11 @@ https://leetcode.com/problems/maximum-average-subarray-i/description/
 """
 
 
+def Brt01_FrLp_SldWndw_Prt():
+
+    pass
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 12, -5, -6, 50, 3], 4],
