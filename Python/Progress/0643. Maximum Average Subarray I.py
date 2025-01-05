@@ -51,6 +51,9 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
     print(f"\tNumbers: {Nmbs}")
     print(f"\tRange: {Rng}")
 
+    for i in range(len(Nmbs) - Rng + 1):
+        print(Nmbs[i: Rng + i])
+
 
 if __name__ == "__main__":
 
