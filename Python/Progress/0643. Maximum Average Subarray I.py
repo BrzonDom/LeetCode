@@ -102,7 +102,10 @@ if __name__ == "__main__":
         print(f"\tRange: {Rng}")
         print()
 
-        for i in range(len(Nmbs) - Rng + 1):
-            print(f"\t{Nmbs[i: Rng + i]}")
+        nmbs_cur = Nmbs[:Rng]
+        print(f"\t{Nmbs[:Rng]}")
+
+        for i in range(1, len(Nmbs) - Rng + 1):
+            print(f"\t{Nmbs[i:Rng + i]}")
 
         print("\n")
