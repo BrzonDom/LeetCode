@@ -103,9 +103,13 @@ if __name__ == "__main__":
         print()
 
         nmbs_cur = Nmbs[:Rng]
-        print(f"\t{Nmbs[:Rng]}")
+        print(f"\t{nmbs_cur}")
 
         for i in range(1, len(Nmbs) - Rng + 1):
-            print(f"\t{Nmbs[i:Rng + i]}")
+            # print(f"\t{nmbs_cur[1:]} {[Nmbs[Rng+i-1]]}")
+            # print(f"\t{Nmbs[i:Rng + i]}")
+
+            nmbs_cur = nmbs_cur[1:] + [Nmbs[Rng+i-1]]
+            print(f"\t{nmbs_cur}")
 
         print("\n")
