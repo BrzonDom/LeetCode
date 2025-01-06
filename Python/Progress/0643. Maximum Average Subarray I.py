@@ -101,4 +101,7 @@ if __name__ == "__main__":
         print(f"\tNumbers: {Nmbs}")
         print(f"\tRange: {Rng}")
 
+        for i in range(len(Nmbs) - Rng + 1):
+            print(Nmbs[i: Rng + i])
+
         print("\n")
