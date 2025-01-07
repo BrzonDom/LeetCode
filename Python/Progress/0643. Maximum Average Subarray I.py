@@ -106,11 +106,13 @@ if __name__ == "__main__":
         sum_cur = sum(nmbs_cur)
 
         print(f"\t{nmbs_cur}")
+        print(f"\t\tSum: {sum_cur}")
 
         for i in range(1, len(Nmbs) - Rng + 1):
             nmbs_cur = nmbs_cur[1:] + [Nmbs[Rng+i-1]]
             sum_cur = sum(nmbs_cur)
 
             print(f"\t{nmbs_cur}")
+            print(f"\t\tSum: {sum_cur}")
 
         print("\n")
