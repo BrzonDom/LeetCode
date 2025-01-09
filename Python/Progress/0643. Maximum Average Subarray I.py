@@ -88,9 +88,10 @@ def Slt01_AddSub_SldWndw_Prt(Nmbs, Rng):
 
     print(f"\tNumbers: {Nmbs}")
     print(f"\tRange: {Rng}")
+    print()
 
     for i in range(len(Nmbs) - Rng + 1):
-        print(Nmbs[i: Rng + i])
+        print(f"\t{Nmbs[i: Rng + i]}")
 
 
 if __name__ == "__main__":
@@ -103,6 +104,7 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}.Case\n")
 
         Slt01_AddSub_SldWndw_Prt(case[0], case[1])
+        print()
 
         # Brt01_FrLp_SldWndw_Prt(case[0], case[1])
 
