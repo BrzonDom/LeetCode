@@ -84,9 +84,10 @@ def Brt01_FrLp_SldWndw_Prt(Nmbs, Rng):
     return max_avg
 
 
-def Slt01_AddSub_SldWndw_Prt():
+def Slt01_AddSub_SldWndw_Prt(Nmbs, Rng):
 
-    pass
+    print(f"\tNumbers: {Nmbs}")
+    print(f"\tRange: {Rng}")
 
 
 if __name__ == "__main__":
