@@ -110,9 +110,9 @@ if __name__ == "__main__":
         max_sum = nmbs_sum
         max_avg = nmbs_avg
 
-        print(f"\t{nmbs}")
-        print(f"\t\tSum:  {nmbs_sum}")
-        print(f"\t\tAvg.: {nmbs_avg}")
+        print(f"\t\t{nmbs}")
+        print(f"\t\t\tSum:  {nmbs_sum}")
+        print(f"\t\t\tAvg.: {nmbs_avg}")
         print()
 
         for i in range(1, len(Nmbs) - Rng + 1):
@@ -120,14 +120,18 @@ if __name__ == "__main__":
             nmbs_avg = nmbs_sum / Rng
             nmbs = nmbs[1:] + [Nmbs[Rng + i - 1]]
 
-            print(f"\t{nmbs}")
-            print(f"\t\tSum:  {nmbs_sum}")
-            print(f"\t\tAvg.: {nmbs_avg}")
+            print(f"\t\t{nmbs}")
+            print(f"\t\t\tSum:  {nmbs_sum}")
+            print(f"\t\t\tAvg.: {nmbs_avg}")
             print()
 
             if nmbs_sum > max_sum:
                 max_nmbs = nmbs
                 max_sum = nmbs_sum
                 max_avg = nmbs_avg
+
+        print(f"\tMax. numbers: {max_nmbs}")
+        print(f"\tMax. sum: {max_sum}")
+        print(f"\tMax. avg.: {max_avg}")
 
         print("\n")
