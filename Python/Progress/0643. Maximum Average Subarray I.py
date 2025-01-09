@@ -106,7 +106,6 @@ if __name__ == "__main__":
         nmbs_sum = sum(nmbs)
         nmbs_avg = nmbs_sum / Rng
 
-        max_nmbs = nmbs
         max_sum = nmbs_sum
         max_avg = nmbs_avg
 
@@ -126,11 +125,9 @@ if __name__ == "__main__":
             print()
 
             if nmbs_sum > max_sum:
-                max_nmbs = nmbs
                 max_sum = nmbs_sum
                 max_avg = nmbs_avg
 
-        print(f"\tMax. numbers: {max_nmbs}")
         print(f"\tMax. sum: {max_sum}")
         print(f"\tMax. avg.: {max_avg}")
 
