@@ -90,8 +90,12 @@ def Slt01_AddSub_SldWndw_Prt(Nmbs, Rng):
     print(f"\tRange: {Rng}")
     print()
 
-    for i in range(len(Nmbs) - Rng + 1):
-        print(f"\t{Nmbs[i: Rng + i]}")
+    nmbs = Nmbs[:Rng]
+    print(f"\t{nmbs}")
+
+    for i in range(1, len(Nmbs) - Rng + 1):
+        nmbs = nmbs[1:] + [Nmbs[Rng + i - 1]]
+        print(f"\t{nmbs}")
 
 
 if __name__ == "__main__":
