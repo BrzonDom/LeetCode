@@ -107,7 +107,9 @@ if __name__ == "__main__":
         avg_cur = sum_cur / Rng
 
         print(f"\t{nmbs_cur}")
-        print(f"\t\tSum: {sum_cur}")
+        print(f"\t\tSum:  {sum_cur}")
+        print(f"\t\tAvg.: {avg_cur}")
+        print()
 
         for i in range(1, len(Nmbs) - Rng + 1):
             sum_cur += -Nmbs[i-1] + Nmbs[Rng+i-1]
@@ -115,6 +117,8 @@ if __name__ == "__main__":
             nmbs_cur = nmbs_cur[1:] + [Nmbs[Rng+i-1]]
 
             print(f"\t{nmbs_cur}")
-            print(f"\t\tSum: {sum_cur}")
+            print(f"\t\tSum:  {sum_cur}")
+            print(f"\t\tAvg.: {avg_cur}")
+            print()
 
         print("\n")
