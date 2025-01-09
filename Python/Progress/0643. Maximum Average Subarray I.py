@@ -102,23 +102,23 @@ if __name__ == "__main__":
         print(f"\tRange: {Rng}")
         print()
 
-        nmbs_cur = Nmbs[:Rng]
-        sum_cur = sum(nmbs_cur)
-        avg_cur = sum_cur / Rng
+        nmbs = Nmbs[:Rng]
+        nmbs_sum = sum(nmbs)
+        nmbs_avg = nmbs_sum / Rng
 
-        print(f"\t{nmbs_cur}")
-        print(f"\t\tSum:  {sum_cur}")
-        print(f"\t\tAvg.: {avg_cur}")
+        print(f"\t{nmbs}")
+        print(f"\t\tSum:  {nmbs_sum}")
+        print(f"\t\tAvg.: {nmbs_avg}")
         print()
 
         for i in range(1, len(Nmbs) - Rng + 1):
-            sum_cur += -Nmbs[i-1] + Nmbs[Rng+i-1]
-            avg_cur = sum_cur / Rng
-            nmbs_cur = nmbs_cur[1:] + [Nmbs[Rng+i-1]]
+            nmbs_sum += -Nmbs[i - 1] + Nmbs[Rng + i - 1]
+            nmbs_avg = nmbs_sum / Rng
+            nmbs = nmbs[1:] + [Nmbs[Rng + i - 1]]
 
-            print(f"\t{nmbs_cur}")
-            print(f"\t\tSum:  {sum_cur}")
-            print(f"\t\tAvg.: {avg_cur}")
+            print(f"\t{nmbs}")
+            print(f"\t\tSum:  {nmbs_sum}")
+            print(f"\t\tAvg.: {nmbs_avg}")
             print()
 
         print("\n")
