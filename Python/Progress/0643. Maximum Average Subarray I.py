@@ -91,10 +91,14 @@ def Slt01_AddSub_SldWndw_Prt(Nmbs, Rng):
     print()
 
     nmbs = Nmbs[:Rng]
+    nmbs_sum = sum(nmbs)
+
     print(f"\t{nmbs}")
 
     for i in range(1, len(Nmbs) - Rng + 1):
         nmbs = nmbs[1:] + [Nmbs[Rng + i - 1]]
+        nmbs_sum = sum(nmbs)
+
         print(f"\t{nmbs}")
 
 
