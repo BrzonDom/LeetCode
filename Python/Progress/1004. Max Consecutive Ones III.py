@@ -52,7 +52,11 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
 InputLst = [[[1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2],
             [[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3]]
 
-for case in InputLst:
+for csCnt, case in enumerate(InputLst):
 
-    print(case)
-    print()
+    print(f"{csCnt + 1}.Case\n")
+
+    print(f"\t{case[0]}")
+    print(f"\t{case[1]}")
+
+    print("\n")
