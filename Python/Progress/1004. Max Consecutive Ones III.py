@@ -33,4 +33,17 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
         nums[i] is either 0 or 1.
         0 <= k <= nums.length
 
+
+    Topics:
+
+        Array
+        Binary Search
+        Sliding Window
+        Prefix Sum
+
+
+    Courses:
+
+        LeetCode 75
+
 """
