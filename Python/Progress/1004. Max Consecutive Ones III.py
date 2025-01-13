@@ -47,3 +47,12 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
         LeetCode 75
 
 """
+
+
+InputLst = [[[1,1,1,0,0,0,1,1,1,1,0], 2],
+            [[0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], 3]]
+
+for case in InputLst:
+
+    print(case)
+    print()
