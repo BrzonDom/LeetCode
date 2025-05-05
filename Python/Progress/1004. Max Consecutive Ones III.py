@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
         print(f"{csCnt + 1}.Case\n")
 
-        print(f"\t{case[0]}")
-        print(f"\t{case[1]}")
+        print(f"\tBinary Array: {case[0]}")
+        print(f"\tFlips: {case[1]}")
 
         print("\n")
