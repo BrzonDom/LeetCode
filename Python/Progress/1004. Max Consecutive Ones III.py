@@ -52,7 +52,9 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
 if __name__ == "__main__":
 
     InputLst = [[[1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2],
-                [[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3]]
+                [[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3],
+                [[0, 0, 0, 1], 4]
+                ]
 
     for csCnt, case in enumerate(InputLst):
 
@@ -60,5 +62,12 @@ if __name__ == "__main__":
 
         print(f"\tBinary Array: {case[0]}")
         print(f"\tFlips: {case[1]}")
+        print()
+
+        Bin_Arr = case[0]
+        Flp = case[1]
+
+        for num in Bin_Arr:
+            print(num)
 
         print("\n")
