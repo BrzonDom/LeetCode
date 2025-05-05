@@ -53,8 +53,7 @@ if __name__ == "__main__":
 
     InputLst = [[[1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2],
                 [[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3],
-                [[0, 0, 0, 1], 4]
-                ]
+                [[0, 0, 0, 1], 4]]
 
     for csCnt, case in enumerate(InputLst):
 
@@ -67,7 +66,10 @@ if __name__ == "__main__":
         Bin_Arr = case[0]
         Flp = case[1]
 
-        for num in Bin_Arr:
-            print(num)
+        rhg_ptr = 0
+
+        while rhg_ptr < len(Bin_Arr):
+            print(Bin_Arr[rhg_ptr])
+            rhg_ptr += 1
 
         print("\n")
