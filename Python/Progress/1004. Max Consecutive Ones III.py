@@ -75,9 +75,14 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
             cur_flp -= 1
 
         if cur_flp >= 0:
+            cur_sum += 1
             rgh_ptr += 1
         else:
             print(f"\t\t{Bin_Arr[:rgh_ptr]}")
+
+            max_sum = max(max_sum, cur_sum)
+
+            cur_sum = 0
             break
 
     print()
