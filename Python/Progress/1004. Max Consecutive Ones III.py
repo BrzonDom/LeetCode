@@ -65,6 +65,12 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
     print(f"\tBinary Array: {Bin_Arr}")
     print(f"\tFlips: {Flp}")
 
+    rgh_ptr = 0
+
+    while rgh_ptr < len(Bin_Arr):
+        print(Bin_Arr[rgh_ptr])
+        rgh_ptr += 1
+
     pass
 
 
