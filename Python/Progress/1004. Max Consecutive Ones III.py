@@ -66,10 +66,18 @@ if __name__ == "__main__":
         Bin_Arr = case[0]
         Flp = case[1]
 
+        cur_sum = max_sum = 0
+        cur_flp = Flp
         rhg_ptr = 0
 
         while rhg_ptr < len(Bin_Arr):
-            print(Bin_Arr[rhg_ptr])
-            rhg_ptr += 1
+            if Bin_Arr[rhg_ptr] == 0:
+                cur_flp -= 1
+
+            if cur_flp >= 0:
+                print(Bin_Arr[rhg_ptr])
+                rhg_ptr += 1
+            else:
+                break
 
         print("\n")
