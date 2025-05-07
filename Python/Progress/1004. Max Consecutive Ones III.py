@@ -118,10 +118,17 @@ if __name__ == "__main__":
         print(f"\tFlips: {Flp}")
         print()
 
+        cur_flp = Flp
         rgh_ptr = 0
 
         while rgh_ptr < len(Bin_Arr):
-            print(Bin_Arr[rgh_ptr])
-            rgh_ptr += 1
+            if Bin_Arr[rgh_ptr] == 0:
+                cur_flp -= 1
+
+            if cur_flp >= 0:
+                print(Bin_Arr[rgh_ptr])
+                rgh_ptr += 1
+            else:
+                break
 
         print("\n")
