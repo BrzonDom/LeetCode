@@ -49,7 +49,18 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
 """
 
 
-def Brt01_Incr_SldWndw_Prt():
+def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
+    """
+    Bruteforce print solution function
+
+    :param Bin_Arr: binary array
+        :type Bin_Arr: list[int]
+    :param Flp: number of allowed flips
+        :type Flp: int
+
+    :return: maximum number of consecutive 1's in the array
+        :rtype: int
+    """
 
     pass
 
