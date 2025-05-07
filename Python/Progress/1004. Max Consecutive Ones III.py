@@ -65,13 +65,21 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
     print(f"\tBinary Array: {Bin_Arr}")
     print(f"\tFlips: {Flp}")
 
+    cur_sum = max_sum = 0
+    cur_flp = Flp
     rgh_ptr = 0
 
     while rgh_ptr < len(Bin_Arr):
-        print(Bin_Arr[rgh_ptr])
-        rgh_ptr += 1
+        if Bin_Arr[rgh_ptr] == 0:
+            cur_flp -= 1
 
-    pass
+        if cur_flp >= 0:
+            rgh_ptr += 1
+        else:
+            print(Bin_Arr[:rgh_ptr])
+            break
+
+    return max_sum
 
 
 if __name__ == "__main__":
