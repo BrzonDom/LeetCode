@@ -64,6 +64,7 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
 
     print(f"\tBinary Array: {Bin_Arr}")
     print(f"\tFlips: {Flp}")
+    print()
 
     cur_sum = max_sum = 0
     cur_flp = Flp
@@ -76,8 +77,11 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
         if cur_flp >= 0:
             rgh_ptr += 1
         else:
-            print(Bin_Arr[:rgh_ptr])
+            print(f"\t\t{Bin_Arr[:rgh_ptr]}")
             break
+
+    print()
+    print(f"\tMax Consecutive Ones: {max_sum}")
 
     return max_sum
 
