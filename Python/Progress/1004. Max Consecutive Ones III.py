@@ -49,6 +49,11 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
 """
 
 
+def Brt01_Incr_SldWndw_Prt():
+
+    pass
+
+
 if __name__ == "__main__":
 
     InputLst = [[[1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2],
