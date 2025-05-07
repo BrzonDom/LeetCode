@@ -116,5 +116,12 @@ if __name__ == "__main__":
 
         print(f"\tBinary Array: {Bin_Arr}")
         print(f"\tFlips: {Flp}")
+        print()
+
+        rgh_ptr = 0
+
+        while rgh_ptr < len(Bin_Arr):
+            print(Bin_Arr[rgh_ptr])
+            rgh_ptr += 1
 
         print("\n")
