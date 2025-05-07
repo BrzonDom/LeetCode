@@ -110,8 +110,11 @@ if __name__ == "__main__":
         print(f"{csCnt + 1}.Case\n")
 
         # Brt01_Incr_SldWndw_Prt(case[0], case[1])
-        
-        print(f"\tBinary Array: {case[0]}")
-        print(f"\tFlips: {case[1]}")
+
+        Bin_Arr = case[0]
+        Flp = case[1]
+
+        print(f"\tBinary Array: {Bin_Arr}")
+        print(f"\tFlips: {Flp}")
 
         print("\n")
