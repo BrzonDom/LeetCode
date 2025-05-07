@@ -69,6 +69,7 @@ if __name__ == "__main__":
         cur_sum = max_sum = 0
         cur_flp = Flp
         lft_ptr = rgh_ptr = 0
+        sum_cnt = 1
 
         while rgh_ptr < len(Bin_Arr):
             if Bin_Arr[rgh_ptr] == 0:
@@ -79,14 +80,17 @@ if __name__ == "__main__":
                 rgh_ptr += 1
             else:
                 print(f"\t\t{Bin_Arr[lft_ptr:rgh_ptr]}")
+                print(f"\t\t\t{sum_cnt:2}. Sum: {cur_sum}")
                 max_sum = max(max_sum, cur_sum)
 
                 cur_flp = Flp
                 cur_sum = 0
                 lft_ptr += 1
                 rgh_ptr = lft_ptr
+                sum_cnt += 1
 
         print(f"\t\t{Bin_Arr[lft_ptr:rgh_ptr]}")
+        print(f"\t\t\t{sum_cnt:2}. Sum: {cur_sum}")
         max_sum = max(max_sum, cur_sum)
 
         print()
