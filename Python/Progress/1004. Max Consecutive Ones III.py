@@ -89,6 +89,8 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
             rgh_ptr = lft_ptr
             sum_cnt += 1
 
+    print(f"\t\t{Bin_Arr[lft_ptr:rgh_ptr]}")
+    print(f"\t\t\t{sum_cnt:2}. Sum: {cur_sum}")
     max_sum = max(max_sum, cur_sum)
 
     print()
