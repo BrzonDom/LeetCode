@@ -89,6 +89,7 @@ if __name__ == "__main__":
                 lft_ptr += 1
                 rgh_ptr = lft_ptr
 
+        max_sum = max(max_sum, cur_sum)
 
         # print("\n")
         print(f"\tMax Consecutive Ones: {max_sum}")
