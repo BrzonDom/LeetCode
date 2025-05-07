@@ -62,6 +62,9 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
         :rtype: int
     """
 
+    print(f"\tBinary Array: {Bin_Arr}")
+    print(f"\tFlips: {Flp}")
+
     pass
 
 
