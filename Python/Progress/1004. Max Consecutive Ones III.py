@@ -89,6 +89,8 @@ def Brt01_Incr_SldWndw_Prt(Bin_Arr: list[int], Flp: int) -> int:
             rgh_ptr = lft_ptr
             sum_cnt += 1
 
+    max_sum = max(max_sum, cur_sum)
+
     print()
     print(f"\tMax Consecutive Ones: {max_sum}")
 
