@@ -76,8 +76,10 @@ if __name__ == "__main__":
 
             if cur_flp >= 0:
                 print(Bin_Arr[rhg_ptr])
+                cur_sum += 1
                 rhg_ptr += 1
             else:
+                max_sum = max(max_sum, cur_sum)
                 break
 
         print("\n")
