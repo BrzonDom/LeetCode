@@ -68,24 +68,29 @@ if __name__ == "__main__":
 
         cur_sum = max_sum = 0
         cur_flp = Flp
-        rhg_ptr = 0
+        lft_ptr = rgh_ptr = 0
 
-        if Bin_Arr:
-            print("\t\t", end="")
+        # if Bin_Arr:
+        #     print("\t\t", end="")
 
-        while rhg_ptr < len(Bin_Arr):
-            if Bin_Arr[rhg_ptr] == 0:
+        while rgh_ptr < len(Bin_Arr):
+            if Bin_Arr[rgh_ptr] == 0:
                 cur_flp -= 1
 
             if cur_flp >= 0:
-                print(f"{Bin_Arr[rhg_ptr]}", end=" ")
+                # print(f"{Bin_Arr[rgh_ptr]}", end=" ")
                 cur_sum += 1
-                rhg_ptr += 1
+                rgh_ptr += 1
             else:
                 max_sum = max(max_sum, cur_sum)
-                break
 
-        print("\n")
+                cur_flp = Flp
+                cur_sum = 0
+                lft_ptr += 1
+                rgh_ptr = lft_ptr
+
+
+        # print("\n")
         print(f"\tMax Consecutive Ones: {max_sum}")
 
         print("\n")
