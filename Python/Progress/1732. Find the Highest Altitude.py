@@ -34,4 +34,15 @@ https://leetcode.com/problems/find-the-highest-altitude/description/
         1 <= n <= 100
         -100 <= gain[i] <= 100
 
+
+    Topics:
+
+        Array
+        Prefix Sum
+
+
+    Courses:
+
+        LeetCode 75
+
 """
