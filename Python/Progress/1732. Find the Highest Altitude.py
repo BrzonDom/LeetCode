@@ -59,6 +59,8 @@ if __name__ == '__main__':
 
         print(f"{cs_cnt}. Case\n")
 
-        print(f"\t{case}")
+        Gain_lst = case
+
+        print(f"\tNet gains in altitude: {Gain_lst}")
 
         print("\n")
