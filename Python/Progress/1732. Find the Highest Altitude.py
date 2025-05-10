@@ -53,7 +53,10 @@ https://leetcode.com/problems/find-the-highest-altitude/description/
 Input_Lst = [[-5, 1, 5, 0, -7],
              [-4, -3, -2, -1, 4, 3, 2]]
 
-for case in Input_Lst:
+for cs_cnt, case in enumerate(Input_Lst, start=1):
 
-    print(case)
-    print()
+    print(f"{cs_cnt}. Case\n")
+
+    print(f"\t{case}")
+
+    print("\n")
