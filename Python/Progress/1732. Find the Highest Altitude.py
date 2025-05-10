@@ -46,3 +46,12 @@ https://leetcode.com/problems/find-the-highest-altitude/description/
         LeetCode 75
 
 """
+
+
+Input_Lst = [[-5,1,5,0,-7],
+             [-4,-3,-2,-1,4,3,2]]
+
+for case in Input_Lst:
+
+    print(case)
+    print()
