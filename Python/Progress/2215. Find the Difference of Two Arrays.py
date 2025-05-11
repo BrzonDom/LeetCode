@@ -73,9 +73,14 @@ if __name__ == '__main__':
 
         print(f"\t1. Number array: {Nms_1}")
         print(f"\t2. Number array: {Nms_2}")
+        print()
 
         nms_1_set = set(Nms_1)
         nms_2_set = set(Nms_2)
+
+        print(f"\t\t1. Number set: {nms_1_set}")
+        print(f"\t\t2. Number set: {nms_2_set}")
+        print()
 
         dist_nms_arr = [[], []]
 
@@ -87,6 +92,7 @@ if __name__ == '__main__':
             if nm not in nms_1_set:
                 dist_nms_arr[1].append(nm)
 
-        print(dist_nms_arr)
+        print(f"\t1. Distinct numbers: {dist_nms_arr[0]}")
+        print(f"\t2. Distinct numbers: {dist_nms_arr[1]}")
 
         print("\n")
