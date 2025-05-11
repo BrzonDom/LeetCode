@@ -45,4 +45,15 @@ https://leetcode.com/problems/find-the-difference-of-two-arrays/description/
         1 <= nums1.length, nums2.length <= 1000
         -1000 <= nums1[i], nums2[i] <= 1000
 
+
+    Topics:
+
+        Array
+        Hash Table
+
+
+    Courses:
+
+        LeetCode 75
+
 """
