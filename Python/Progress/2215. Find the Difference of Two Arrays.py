@@ -68,7 +68,10 @@ if __name__ == '__main__':
 
         print(f"{cs_cnt}. Case\n")
 
-        print(f"\t{case[0]}")
-        print(f"\t{case[1]}")
+        Nms_1 = case[0]
+        Nms_2 = case[1]
+
+        print(f"\t1. Number array: {Nms_1}")
+        print(f"\t2. Number array: {Nms_2}")
 
         print("\n")
