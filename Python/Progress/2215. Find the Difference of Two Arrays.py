@@ -82,15 +82,8 @@ if __name__ == '__main__':
         print(f"\t\t2. Number set: {nms_2_set}")
         print()
 
-        dist_nms_arr = [[], []]
-
-        for nm in nms_1_set:
-            if nm not in nms_2_set:
-                dist_nms_arr[0].append(nm)
-
-        for nm in nms_2_set:
-            if nm not in nms_1_set:
-                dist_nms_arr[1].append(nm)
+        dist_nms_arr = [list(nms_1_set - nms_2_set),
+                        list(nms_2_set - nms_1_set)]
 
         print(f"\t1. Distinct numbers: {dist_nms_arr[0]}")
         print(f"\t2. Distinct numbers: {dist_nms_arr[1]}")
