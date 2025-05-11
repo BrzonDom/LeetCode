@@ -57,3 +57,15 @@ https://leetcode.com/problems/find-the-difference-of-two-arrays/description/
         LeetCode 75
 
 """
+
+
+if __name__ == '__main__':
+
+    Input_Lst = [[[1, 2, 3],[2, 4, 6]],
+                 [[1, 2, 3, 3],[1, 1, 2, 2]]]
+
+
+    for case in Input_Lst:
+
+        print(case)
+        print()
