@@ -64,8 +64,11 @@ if __name__ == '__main__':
     Input_Lst = [[[1, 2, 3],[2, 4, 6]],
                  [[1, 2, 3, 3],[1, 1, 2, 2]]]
 
+    for cs_cnt, case in enumerate(Input_Lst, start=1):
 
-    for case in Input_Lst:
+        print(f"{cs_cnt}. Case\n")
 
-        print(case)
-        print()
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
