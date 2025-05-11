@@ -79,4 +79,14 @@ if __name__ == '__main__':
 
         dist_nms_arr = [[], []]
 
+        for nm in nms_1_set:
+            if nm not in nms_2_set:
+                dist_nms_arr[0].append(nm)
+
+        for nm in nms_2_set:
+            if nm not in nms_1_set:
+                dist_nms_arr[1].append(nm)
+
+        print(dist_nms_arr)
+
         print("\n")
