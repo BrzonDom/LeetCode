@@ -62,11 +62,14 @@ if __name__ == '__main__':
         Gain_lst = case
 
         print(f"\tNet gains in altitude: {Gain_lst}")
+        print()
 
         cur_alt = max_alt = 0
 
         for gain in Gain_lst:
             cur_alt += gain
             max_alt = max(max_alt, cur_alt)
+
+        print(f"\tHighest altitude: {max_alt}")
 
         print("\n")
