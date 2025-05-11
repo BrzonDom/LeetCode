@@ -74,4 +74,9 @@ if __name__ == '__main__':
         print(f"\t1. Number array: {Nms_1}")
         print(f"\t2. Number array: {Nms_2}")
 
+        nms_1_set = set(Nms_1)
+        nms_2_set = set(Nms_2)
+
+        dist_nms_arr = [[], []]
+
         print("\n")
