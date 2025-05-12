@@ -70,10 +70,14 @@ class RecentCounter:
 
 if __name__ == '__main__':
 
-    InputLst = [[["RecentCounter", "ping", "ping", "ping", "ping"],
+    Input_Lst = [[["RecentCounter", "ping", "ping", "ping", "ping"],
                  [[], [1], [100], [3001], [3002]]]]
 
-    for case in InputLst:
+    for cs_cnt, case in enumerate(Input_Lst, start=1):
 
-        print(case)
-        print()
+        print(f"{cs_cnt}. Case\n")
+
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
