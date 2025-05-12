@@ -39,4 +39,16 @@ https://leetcode.com/problems/number-of-recent-calls/description/
         Each test case will call ping with strictly increasing values of t.
         At most 10^4 calls will be made to ping.
 
+
+    Topics:
+
+        Design
+        Queue
+        Data Stream
+
+
+    Courses:
+
+        LeetCode 75
+
 """
