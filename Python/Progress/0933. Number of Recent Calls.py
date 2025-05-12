@@ -66,3 +66,14 @@ class RecentCounter:
 # Your RecentCounter object will be instantiated and called as such:
 # obj = RecentCounter()
 # param_1 = obj.ping(t)
+
+
+if __name__ == '__main__':
+
+    InputLst = [[["RecentCounter", "ping", "ping", "ping", "ping"],
+                 [[], [1], [100], [3001], [3002]]]]
+
+    for case in InputLst:
+
+        print(case)
+        print()
