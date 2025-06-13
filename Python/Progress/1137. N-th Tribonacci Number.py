@@ -4,7 +4,7 @@
 https://leetcode.com/problems/n-th-tribonacci-number/description/
 
 
-    The Tribonacci sequence Tn is defined as follows:
+    The Tribonacci sequence T_n is defined as follows:
 
     T_0 = 0, T_1 = 1, T_2 = 1, and T_(n+3) = T_n + T_(n+1) + T_(n+2) for n >= 0.
 
@@ -46,3 +46,13 @@ https://leetcode.com/problems/n-th-tribonacci-number/description/
         LeetCode 75
 
 """
+
+
+if __name__ == '__main__':
+
+    Input_Lst = [3, 25]
+
+    for case in Input_Lst:
+
+        print(case)
+        print()
