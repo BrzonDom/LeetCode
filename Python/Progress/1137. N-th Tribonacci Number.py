@@ -58,4 +58,13 @@ if __name__ == '__main__':
 
         print(f"\tn: {case}")
 
+        trb_num_lst = [0, 1, 1]
+
+        if case < 3:
+            print(case)
+        else:
+            for i in range(3, case + 1):
+                trb_num_lst[0], trb_num_lst[1], trb_num_lst[2] = trb_num_lst[1], trb_num_lst[2], sum(trb_num_lst)
+            print(trb_num_lst[2])
+
         print("\n")
