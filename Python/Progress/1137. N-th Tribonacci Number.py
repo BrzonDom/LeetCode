@@ -50,9 +50,12 @@ https://leetcode.com/problems/n-th-tribonacci-number/description/
 
 if __name__ == '__main__':
 
-    Input_Lst = [3, 25]
+    Input_Lst = [4, 25]
 
-    for case in Input_Lst:
+    for cs_cnt, case in enumerate(Input_Lst, start=1):
 
-        print(case)
-        print()
+        print(f"{cs_cnt}. Case\n")
+
+        print(f"\tn: {case}")
+
+        print("\n")
