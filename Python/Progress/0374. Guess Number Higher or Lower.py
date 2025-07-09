@@ -42,4 +42,15 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
         1 <= n <= 2^31 - 1
         1 <= pick <= n
 
+
+    Topics:
+
+        Binary Search
+        Interactive
+
+
+    Courses:
+
+        LeetCode 75
+
 """
