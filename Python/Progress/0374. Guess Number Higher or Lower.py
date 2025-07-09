@@ -66,9 +66,15 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
 
 if __name__ == "__main__":
 
-    Input_Lst = [(10, 6), (1, 1), (2, 1)]
+    Input_Lst = [(10, 6),
+                 (1, 1),
+                 (2, 1)]
 
-    for case in Input_Lst:
+    for cs_cnt, case in enumerate(Input_Lst, start=1):
 
-        print(case)
-        print()
+        print(f"{cs_cnt}. Case\n")
+
+        print(f"\t{case[0]}")
+        print(f"\t{case[1]}")
+
+        print("\n")
