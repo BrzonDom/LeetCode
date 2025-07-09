@@ -61,11 +61,21 @@ if __name__ == '__main__':
 
         trb_num_lst = [0, 1, 1]
 
-        if case < 3:
+        if case < 2:
             print(f"\tT_{case} = {case}")
+
         else:
             for i in range(3, case + 1):
-                trb_num_lst[0], trb_num_lst[1], trb_num_lst[2] = trb_num_lst[1], trb_num_lst[2], sum(trb_num_lst)
+                (
+                    trb_num_lst[0],
+                    trb_num_lst[1],
+                    trb_num_lst[2]
+                ) = (
+                    trb_num_lst[1],
+                    trb_num_lst[2],
+                    sum(trb_num_lst)
+                )
+
             print(f"\tT_{case} = {trb_num_lst[2]}")
 
         print("\n")
