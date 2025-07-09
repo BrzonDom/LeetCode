@@ -55,6 +55,7 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
 
 """
 
+
 # The guess API is already defined for you.
 # @param num, your guess
 # @return -1 if num is higher than the picked number
@@ -62,3 +63,12 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
 #          otherwise return 0
 # def guess(num: int) -> int:
 
+
+if __name__ == "__main__":
+
+    Input_Lst = [(10, 6), (1, 1), (2, 1)]
+
+    for case in Input_Lst:
+
+        print(case)
+        print()
