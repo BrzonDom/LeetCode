@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
         print(f"{cs_cnt}. Case\n")
 
-        print(f"\t{case[0]}")
-        print(f"\t{case[1]}")
+        print(f"\tRange:  {case[0]}")
+        print(f"\tNumber: {case[1]}")
 
         print("\n")
