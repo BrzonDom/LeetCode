@@ -45,3 +45,14 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+
+if __name__ == "__main__":
+
+    Input_Lst = [[3, 9, 20, None, None, 15, 7],
+                 [1, None, 2]]
+
+    for case in Input_Lst:
+
+        print(case)
+        print()
