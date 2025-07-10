@@ -24,6 +24,19 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
         The number of nodes in the tree is in the range [0, 10^4].
         -100 <= Node.val <= 100
 
+
+    Topics:
+
+        Tree
+        Depth-First Search
+        Breadth-First Search
+        Binary Tree
+
+
+    Courses:
+
+        LeetCode 75
+
 """
 
 # Definition for a binary tree node.
