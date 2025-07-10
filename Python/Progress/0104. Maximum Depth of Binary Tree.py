@@ -52,7 +52,10 @@ if __name__ == "__main__":
     Input_Lst = [[3, 9, 20, None, None, 15, 7],
                  [1, None, 2]]
 
-    for case in Input_Lst:
+    for cs_cnt, case in enumerate(Input_Lst, start=1):
 
-        print(case)
-        print()
+        print(f"{cs_cnt}. Case\n")
+
+        print(f"\t{case}")
+
+        print("\n")
