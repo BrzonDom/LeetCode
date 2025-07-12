@@ -47,6 +47,13 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 #         self.right = right
 
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 if __name__ == "__main__":
 
     Input_Lst = [[3, 9, 20, None, None, 15, 7],
@@ -57,5 +64,7 @@ if __name__ == "__main__":
         print(f"{cs_cnt}. Case\n")
 
         print(f"\t{case}")
+
+        bin_tr = TreeNode(case[0])
 
         print("\n")
