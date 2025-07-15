@@ -65,6 +65,15 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
 
 
 def guess(nmb: int) -> int:
+    """
+    The guess function returns:
+        -1, if the number is higher than the picked number.
+         0, if the number is the picked number.
+         1, if the number is lower than the picked number.
+
+    :param nmb: number we guessed
+    :return: integer of values (-1, 0, 1)
+    """
 
     ...
 
