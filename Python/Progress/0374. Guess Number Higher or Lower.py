@@ -64,6 +64,11 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
 # def guess(num: int) -> int:
 
 
+def guess(nmb: int) -> int:
+
+    ...
+
+
 if __name__ == "__main__":
 
     Input_Lst = [(10, 6),
