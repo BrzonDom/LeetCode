@@ -75,7 +75,12 @@ def guess(nmb: int) -> int:
     :return: integer of values (-1, 0, 1)
     """
 
-    ...
+    if nmb > Nmb:
+        return -1
+    elif nmb < Nmb:
+        return 1
+    else:
+        return 0
 
 
 if __name__ == "__main__":
