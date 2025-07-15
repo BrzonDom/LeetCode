@@ -75,9 +75,9 @@ def guess(nmb: int) -> int:
     :return: integer of values (-1, 0, 1)
     """
 
-    if nmb > Nmb:
+    if nmb > Pck:
         return -1
-    elif nmb < Nmb:
+    elif nmb < Pck:
         return 1
     else:
         return 0
@@ -98,7 +98,7 @@ if __name__ == "__main__":
         print()
 
         Rng = case[0]
-        Nmb = case[1]
+        Pck = case[1]
 
         nmb_rng = [nmb for nmb in range(1, Rng)]
 
