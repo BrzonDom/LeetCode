@@ -76,12 +76,13 @@ if __name__ == "__main__":
 
         print(f"\tRange:  {case[0]}")
         print(f"\tNumber: {case[1]}")
+        print()
 
         Rng = case[0]
         Nmb = case[1]
 
         nmb_rng = [nmb for nmb in range(1, Rng)]
 
-        print(nmb_rng)
+        print(f"\t\tPossible numbers: {nmb_rng}")
 
         print("\n")
