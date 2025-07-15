@@ -104,4 +104,18 @@ if __name__ == "__main__":
 
         print(f"\t\tPossible numbers: {nmb_rng}")
 
+        lft = 1
+        rgh = Rng
+
+        while lft < rgh:
+            nmb = (lft + rgh) // 2
+
+            if guess(nmb) == 1:
+                lft = nmb + 1
+            elif guess(nmb) == -1:
+                rgh = nmb - 1
+            elif guess(nmb) == 0:
+                print(nmb)
+                break
+
         print("\n")
