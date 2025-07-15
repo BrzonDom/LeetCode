@@ -80,7 +80,8 @@ if __name__ == "__main__":
         Rng = case[0]
         Nmb = case[1]
 
-        for nmb in range(1, Rng):
-            print(nmb)
+        nmb_rng = [nmb for nmb in range(1, Rng)]
+
+        print(nmb_rng)
 
         print("\n")
