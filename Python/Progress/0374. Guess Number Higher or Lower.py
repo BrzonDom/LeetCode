@@ -109,12 +109,13 @@ if __name__ == "__main__":
 
         while lft < rgh:
             nmb = (lft + rgh) // 2
+            rsl = guess(nmb)
 
-            if guess(nmb) == 1:
+            if rsl == 1:
                 lft = nmb + 1
-            elif guess(nmb) == -1:
+            elif rsl == -1:
                 rgh = nmb - 1
-            elif guess(nmb) == 0:
+            elif rsl == 0:
                 print(nmb)
                 break
 
