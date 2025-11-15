@@ -1,0 +1,40 @@
+{
+  "id": 179,
+  "title": "Largest Number",
+
+  "types": {
+    "python3": {
+      "input": {
+        "nums": "list[int]"
+      },
+      "output": "str"
+    }
+  },
+
+  "cases": [
+    {
+      "input" : {
+        "nums": [10, 2]
+      },
+      "output": "210"
+    },
+    {
+      "input" : {
+        "nums": [3, 30, 34, 5, 9]
+      },
+      "output": "9534330"
+    },
+    {
+      "input" : {
+        "nums": [1, 5]
+      }
+    },
+    {
+      "input" : {
+        "nums": [1]
+      },
+      "output": "None"
+    }
+
+  ]
+}
